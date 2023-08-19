@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -44,7 +44,7 @@ class PorousMetalPlasticity:
     def __init__(
         self,
         table: tuple,
-        relativeDensity: Optional[float] = None,
+        relativeDensity: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

@@ -1,4 +1,6 @@
-from typing import Dict, Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -42,19 +44,19 @@ class ShapeTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: Dict[str, DesignResponse] = {}
+    designResponses: dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: dict[str, GeometricRestriction] = {}
 
     #: A repository of StopCondition objects.
-    stopConditions: Dict[str, StopCondition] = {}
+    stopConditions: dict[str, StopCondition] = {}
 
     #: A String specifying the optimization task repository key.
     name: str
@@ -89,7 +91,7 @@ class ShapeTask(OptimizationTask):
     durabilitySolver: str = FE_SAFE
 
     #: A Float specifying the equality constraint tolerance. The default value is 10⁻³.
-    equalityConstraintTolerance: Optional[float] = None
+    equalityConstraintTolerance: float | None = None
 
     #: A Float specifying the mesh smoothing feature recognition angle for edges and corners.
     #: The default value is 30.0.
@@ -101,11 +103,11 @@ class ShapeTask(OptimizationTask):
 
     #: None or a Float specifying the maximum influence radius for equivalent stress. The
     #: default value is None.
-    filterMaxRadius: Optional[float] = None
+    filterMaxRadius: float | None = None
 
     #: None or a Float specifying the reduction of the radius depending on surface bending,
     #: used when **filterMaxRadius** is specified. The default value is None.
-    filterRadiusReduction: Optional[float] = None
+    filterRadiusReduction: float | None = None
 
     #: A SymbolicConstant specifying the method of specifying volume that can be removed
     #: immediately in the first design cycle. Possible values are OFF, PERCENTAGE, and
@@ -136,7 +138,7 @@ class ShapeTask(OptimizationTask):
     #: None or a Region object specifying the region specifying the first node layer for mesh
     #: smoothing, used when **meshSmoothingRegionMethod** is TASK_REGION_LAYERS. The default
     #: value is None.
-    layerReferenceRegion: Optional[str] = None
+    layerReferenceRegion: str | None = None
 
     #: A SymbolicConstant specifying the method used to determine the mesh smoothing region.
     #: The REGION value uses the **smoothingRegion**. The NUMBER_OF_LAYERS value uses the
@@ -159,11 +161,11 @@ class ShapeTask(OptimizationTask):
     #: The SymbolicConstant FIX_NONE or an Int specifying the number of node layers adjoining
     #: the task region to remain free during mesh smoothing. A value of 0 indicates that no
     #: layers are free and all layers are fixed. The default value is 0.
-    numFreeNodeLayers: SymbolicConstant = 0
+    numFreeNodeLayers: SymbolicConstant | int = 0
 
     #: None or an Int specifying the number of layers for mesh smoothing when
     #: **meshSmoothingRegionMethod** is NUMBER_OF_LAYERS. The default value is None.
-    numSmoothedElementLayers: Optional[int] = None
+    numSmoothedElementLayers: int | None = None
 
     #: A Boolean specifying whether to ignore automatically frozen boundary condition regions
     #: in the first design cycle. This is used with **freezeBoundaryConditionRegions**. The
@@ -204,7 +206,7 @@ class ShapeTask(OptimizationTask):
 
     #: None or a Region object specifying the mesh smoothing region, used when
     #: **meshSmoothingRegionMethod** is REGION. The default value is None.
-    smoothingRegion: Optional[str] = None
+    smoothingRegion: str | None = None
 
     #: A SymbolicConstant specifying the target mesh quality for mesh smoothing. Possible
     #: values are NONE, LOW, MEDIUM, and HIGH. The default value is LOW.
@@ -250,23 +252,23 @@ class ShapeTask(OptimizationTask):
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
-        equalityConstraintTolerance: Optional[float] = None,
+        equalityConstraintTolerance: float | None = None,
         featureRecognitionAngle: float = 30,
         filterExponent: float = 1,
-        filterMaxRadius: Optional[float] = None,
-        filterRadiusReduction: Optional[float] = None,
+        filterMaxRadius: float | None = None,
+        filterRadiusReduction: float | None = None,
         firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
         geometricRestrictionEvaluationFrequency: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
-        layerReferenceRegion: Optional[str] = None,
+        layerReferenceRegion: str | None = None,
         meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
         meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
-        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
-        numSmoothedElementLayers: Optional[int] = None,
+        numFreeNodeLayers: Literal[C.FIX_NONE] | int = 0,
+        numSmoothedElementLayers: int | None = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
@@ -276,7 +278,7 @@ class ShapeTask(OptimizationTask):
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
-        smoothingRegion: Optional[str] = None,
+        smoothingRegion: str | None = None,
         targetMeshQuality: Literal[C.LOW, C.MEDIUM, C.NONE, C.HIGH] = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,
@@ -454,23 +456,23 @@ class ShapeTask(OptimizationTask):
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
-        equalityConstraintTolerance: Optional[float] = None,
+        equalityConstraintTolerance: float | None = None,
         featureRecognitionAngle: float = 30,
         filterExponent: float = 1,
-        filterMaxRadius: Optional[float] = None,
-        filterRadiusReduction: Optional[float] = None,
+        filterMaxRadius: float | None = None,
+        filterRadiusReduction: float | None = None,
         firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
         geometricRestrictionEvaluationFrequency: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
-        layerReferenceRegion: Optional[str] = None,
+        layerReferenceRegion: str | None = None,
         meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
         meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
-        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
-        numSmoothedElementLayers: Optional[int] = None,
+        numFreeNodeLayers: Literal[C.FIX_NONE] | int = 0,
+        numSmoothedElementLayers: int | None = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
@@ -480,7 +482,7 @@ class ShapeTask(OptimizationTask):
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
-        smoothingRegion: Optional[str] = None,
+        smoothingRegion: str | None = None,
         targetMeshQuality: Literal[C.LOW, C.MEDIUM, C.NONE, C.HIGH] = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,

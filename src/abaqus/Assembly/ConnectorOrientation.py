@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -23,21 +23,12 @@ class ConnectorOrientation:
             session.odbs[name].rootAssembly.connectorOrientations[i]
     """
 
-    region: Set
-    localCsys1: DatumCsys = DatumCsys()
-    axis1: SymbolicConstant = (AXIS_1,)
-    angle1: float = 0
-    orient2sameAs1: Boolean = ON
-    localCsys2: DatumCsys = DatumCsys()
-    axis2: SymbolicConstant = AXIS_1
-    angle2: float = 0
-
     #: A Set object specifying the region to which the orientation is assigned.
     region: Set
 
     #: A DatumCsys object specifying the local coordinate system of the first connector point.
     #: This value may be None, indicating the global coordinate system.
-    localCsys1: Optional[DatumCsys] = None
+    localCsys1: DatumCsys | None = DatumCsys()
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
@@ -53,7 +44,7 @@ class ConnectorOrientation:
 
     #: A DatumCsys object specifying the local coordinate system of the second connector point.
     #: This value may be None, indicating the global coordinate system.
-    localCsys2: Optional[DatumCsys] = None
+    localCsys2: DatumCsys | None = DatumCsys()
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. Possible values are AXIS_1, AXIS_2, and AXIS_3. The
@@ -67,11 +58,11 @@ class ConnectorOrientation:
     def __init__(
         self,
         region: Set,
-        localCsys1: Optional[DatumCsys] = None,
+        localCsys1: DatumCsys | None = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = ON,
-        localCsys2: Optional[DatumCsys] = None,
+        localCsys2: DatumCsys | None = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ):

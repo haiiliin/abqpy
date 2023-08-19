@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -31,7 +33,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry
@@ -69,7 +71,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two vertices. A horizontal
@@ -107,7 +109,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two vertices. An oblique dimension
@@ -144,10 +146,10 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         curve: ConstrainedSketchGeometry,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
-        majorRadius: Optional[float] = None,
-        minorRadius: Optional[float] = None,
+        majorRadius: float | None = None,
+        minorRadius: float | None = None,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical arc. A radial
         dimension indicates the radius of an arc or circle or the major or minor radius of an ellipse.
@@ -188,7 +190,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical dimension
@@ -226,7 +228,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
         textPoint: Sequence[float],
-        value: Optional[float] = None,
+        value: float | None = None,
         reference: Boolean = OFF,
     ) -> ConstrainedSketchDimension:
         """This method constructs a ConstrainedSketchDimension object between two ConstrainedSketchGeometry, or
