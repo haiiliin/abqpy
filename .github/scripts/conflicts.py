@@ -20,7 +20,7 @@ import re
 
 # Change the work directory to the root of the repository
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.chdir("..")
+os.chdir("../..")
 
 if os.path.exists("pull_request_body.txt"):
     # Get the pull request body
