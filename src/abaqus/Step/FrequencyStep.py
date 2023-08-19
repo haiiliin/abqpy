@@ -60,7 +60,7 @@ class FrequencyStep(AnalysisStep):
     #: **eigensolver** = AMS: **projectDamping**, **acousticRangeFactor**,
     #: **substructureCutoffMultiplier**, **firstCutoffMultiplier**, **secondCutoffMultiplier**,
     #: **residualModeRegion**, **regionalModeDof**, and **limitSavedEigenvectorRegion**.
-    eigensolver: Optional[SymbolicConstant] = None
+    eigensolver: SymbolicConstant
 
     #: The SymbolicConstant ALL or an Int specifying the number of eigenvalues to be calculated
     #: or ALL. The default value is ALL.
@@ -169,11 +169,11 @@ class FrequencyStep(AnalysisStep):
 
     #: None or a Region object specifying a region for which eigenvectors should be saved or
     #: the SymbolicConstant None representing the whole model. The default value is None.
-    limitSavedEigenvectorRegion: Optional[SymbolicConstant] = None
+    limitSavedEigenvectorRegion: SymbolicConstant
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -209,7 +209,7 @@ class FrequencyStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF

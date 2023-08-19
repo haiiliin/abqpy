@@ -51,7 +51,7 @@ class GeometricProperties:
     useUnsymmetricEqunProcedure: Boolean = OFF
 
     #: A SymbolicConstant specifying the surface interaction model type.
-    modelType: Optional[SymbolicConstant] = None
+    modelType: SymbolicConstant
 
     @abaqus_method_doc
     def __init__(

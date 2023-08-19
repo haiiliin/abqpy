@@ -92,7 +92,7 @@ class ContourOptions(DGContourOptions):
     #: maximum and minimum contour spectrum colors are used for values that exceed the limits
     #: of the plot. When **outsideLimitsMode** = SPECIFY, the values of **outsideLimitsAboveColor**
     #: and **outsideLimitsBelowColor** are used for values that exceed the limits of the plot.
-    outsideLimitsMode: Optional[SymbolicConstant] = None
+    outsideLimitsMode: SymbolicConstant
 
     #: A Boolean specifying whether to auto-compute contour limits using extrapolated values
     #: alone or extrapolated values that are averaged. The default value is OFF.
@@ -211,7 +211,7 @@ class ContourOptions(DGContourOptions):
     #: specifying the line style and line thickness. For possible values, refer to the
     #: **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The
     #: default is ((SOLID, VERY_THIN), ).
-    intervalLineAttributes: Optional[SymbolicConstant] = None
+    intervalLineAttributes: SymbolicConstant
 
     #: A Boolean specifying whether to hide the values outside the specified min/max in the
     #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the

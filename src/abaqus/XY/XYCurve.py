@@ -63,7 +63,7 @@ class XYCurve:
 
     #: A tuple of SymbolicConstants specifying that describe how curves are to be displayed.
     #: Possible values are LINE and SYMBOL. The default value is (LINE).
-    displayTypes: Optional[SymbolicConstant] = None
+    displayTypes: SymbolicConstant
 
     @abaqus_method_doc
     def Curve(self, name: str, data: XYData):

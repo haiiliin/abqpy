@@ -24,7 +24,7 @@ class OdbFrame:
 
     #: A SymbolicConstant specifying the domain of the step of which the frame is a member.
     #: Possible values are TIME, FREQUENCY, and MODAL.
-    domain: Optional[SymbolicConstant] = None
+    domain: SymbolicConstant
 
     #: A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
     #: the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.

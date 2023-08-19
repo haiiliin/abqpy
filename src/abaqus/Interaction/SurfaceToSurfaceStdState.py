@@ -29,42 +29,42 @@ class SurfaceToSurfaceStdState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interactionPropertyState: Optional[SymbolicConstant] = None
+    interactionPropertyState: SymbolicConstant
 
     #: A SymbolicConstant specifying the interference type. Possible values are NONE,
     #: SHRINK_FIT, and UNIFORM.
-    interferenceType: Optional[SymbolicConstant] = None
+    interferenceType: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **interferenceType** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interferenceTypeState: Optional[SymbolicConstant] = None
+    interferenceTypeState: SymbolicConstant
 
     #: A Float specifying the allowable overclosure.
     overclosure: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **overclosure** member.
     #: Possible values are COMPUTED and DIRECTION_COSINE.
-    overclosureState: Optional[SymbolicConstant] = None
+    overclosureState: SymbolicConstant
 
     #: A SymbolicConstant specifying the interference direction type. Possible values are
     #: COMPUTED and DIRECTION_COSINE.
-    interferenceDirectionType: Optional[SymbolicConstant] = None
+    interferenceDirectionType: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **interferenceDirectionType**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interferenceDirectionTypeState: Optional[SymbolicConstant] = None
+    interferenceDirectionTypeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **direction** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    directionState: Optional[SymbolicConstant] = None
+    directionState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **contactControls** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    contactControlsState: Optional[SymbolicConstant] = None
+    contactControlsState: SymbolicConstant
 
     #: A String specifying the name of the ContactProperty object associated with this
     #: interaction.
@@ -96,4 +96,4 @@ class SurfaceToSurfaceStdState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

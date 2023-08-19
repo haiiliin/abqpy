@@ -107,4 +107,4 @@ class DGContourOptions:
     #: specifying the line style and line thickness. For possible values, refer to the
     #: **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The
     #: default is ((SOLID, VERY_THIN), ).
-    intervalLineAttributes: Optional[SymbolicConstant] = None
+    intervalLineAttributes: SymbolicConstant

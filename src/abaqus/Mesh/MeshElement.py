@@ -56,7 +56,7 @@ class MeshElement:
     label: Optional[int] = None
 
     #: A SymbolicConstant specifying the Abaqus element code.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A String specifying the name of the part instance that owns this element.
     instanceName: str = ""

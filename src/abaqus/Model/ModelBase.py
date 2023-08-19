@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Dict, Optional
 
 from typing_extensions import Literal
@@ -92,7 +94,7 @@ class ModelBase:
 
     #: An Int specifying the increment, interval, iteration or cycle where the restart analysis
     #: will start. To select the end of the step use the SymbolicConstant STEP_END.
-    restartIncrement: Optional[SymbolicConstant] = None
+    restartIncrement: int | SymbolicConstant
 
     #: A Boolean specifying that the step specified by **restartStep** should be terminated at
     #: the increment specified by **restartIncrement**.

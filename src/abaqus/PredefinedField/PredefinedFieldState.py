@@ -38,4 +38,4 @@ class PredefinedFieldState:
     #: This member exists in all PredefinedFieldState objects, but different predefined fields
     #: use different subsets of the entire list of possible values depending on propagation
     #: rules.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

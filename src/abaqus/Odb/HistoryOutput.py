@@ -41,7 +41,7 @@ class HistoryOutput:
     #: A sequence of SymbolicConstants specifying which invariants should be calculated for
     #: this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
     #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
-    validInvariants: Optional[SymbolicConstant] = None
+    validInvariants: SymbolicConstant
 
     @abaqus_method_doc
     def __init__(

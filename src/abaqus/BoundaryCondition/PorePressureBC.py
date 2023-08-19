@@ -43,7 +43,7 @@ class PorePressureBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()

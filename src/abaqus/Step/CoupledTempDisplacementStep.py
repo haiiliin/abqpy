@@ -151,7 +151,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -187,7 +187,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF

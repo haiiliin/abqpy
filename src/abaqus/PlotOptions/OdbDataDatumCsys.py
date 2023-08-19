@@ -21,7 +21,7 @@ class OdbDataDatumCsys:
 
     #: A SymbolicConstant specifying the coordinate system type. This String is read-only.
     #: Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A tuple of three Floats specifying a sequence of three floats specifying the x-Axis
     #: vector. The default value is (1, 0, 0).

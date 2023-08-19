@@ -86,7 +86,7 @@ class CompositePly:
 
     #: The SymbolicConstant None or a DatumCsys object specifying a coordinate system reference
     #: for the relative orientation of this layer. The default value is None.
-    orientation: Optional[SymbolicConstant] = None
+    orientation: SymbolicConstant
 
     #: A String specifying the name of the field specifying the additional rotation. The
     #: default value is an empty string.

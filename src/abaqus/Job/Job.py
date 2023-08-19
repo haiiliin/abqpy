@@ -109,12 +109,12 @@ class Job:
     #: A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     #: Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
     #: the type JobFromInputFile, **analysis** = UNKNOWN.
-    analysis: Optional[SymbolicConstant] = None
+    analysis: SymbolicConstant
 
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the queue to which to submit the job. The default value
     #: is an empty string. Note: You can use the **queue** argument when creating a Job object on a

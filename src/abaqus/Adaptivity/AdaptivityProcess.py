@@ -21,7 +21,7 @@ class AdaptivityProcess:
 
     #: A SymbolicConstant specifying the status of the adaptivity process. Possible values are
     #: SUBMITTED, RUNNING, ABORTED, TERMINATED, and COMPLETED.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A repository of AdaptivityIteration objects specifying the AdaptivityIteration objects
     #: received during running the adaptivity process.

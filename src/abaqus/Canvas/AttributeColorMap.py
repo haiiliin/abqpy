@@ -21,7 +21,7 @@ class AttributeColorMap(_OptionsBase):
 
     #: A SymbolicConstant specifying the type of AttributeColorMap . Possible values are
     #: MATERIAL_MAP, SECTION_MAP, PART_MAP, ELSET_MAP, AVERAGING_REGION_MAP, and ELTYPE_MAP.
-    mapType: Optional[SymbolicConstant] = None
+    mapType: SymbolicConstant
 
     #: A Dictionary object specifying a color mapping. Each key is of String type and specifies
     #: an attribute in the map; the corresponding values specify the color definition to apply

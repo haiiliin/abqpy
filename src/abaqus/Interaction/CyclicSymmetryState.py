@@ -35,7 +35,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **extractedNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    extractedNodalDiameterState: Optional[SymbolicConstant] = None
+    extractedNodalDiameterState: SymbolicConstant
 
     #: An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
     #: The default value is 0.
@@ -43,7 +43,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **lowestNodalDiameter** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    lowestNodalDiameterState: Optional[SymbolicConstant] = None
+    lowestNodalDiameterState: SymbolicConstant
 
     #: An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
     #: This argument value should be less than or equal to the half of the total number of
@@ -52,7 +52,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **highestNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    highestNodalDiameterState: Optional[SymbolicConstant] = None
+    highestNodalDiameterState: SymbolicConstant
 
     #: An Int specifying the nodal diameter for which the modal-based steady-state dynamic
     #: analysis will be performed. This value should be greater than or equal to the lowest
@@ -63,7 +63,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **excitiationNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    excitiationNodalDiameterState: Optional[SymbolicConstant] = None
+    excitiationNodalDiameterState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -77,4 +77,4 @@ class CyclicSymmetryState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

@@ -40,7 +40,7 @@ class AxisData:
 
     #: A SymbolicConstant specifying the direction of the axis. Possible values are ABSCISSA
     #: and ORDINATE.
-    direction: Optional[SymbolicConstant] = None
+    direction: SymbolicConstant
 
     #: A SymbolicConstant specifying how tick labels are formatted. Possible values are
     #: AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is AUTOMATIC.

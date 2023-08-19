@@ -21,7 +21,7 @@ class HistoryOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the history output request
     #: variables. Possible values are UNSET, SET, and UNCHANGED.
-    variablesState: Optional[SymbolicConstant] = None
+    variablesState: SymbolicConstant
 
     #: The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
     #: increments. The default value is 1.
@@ -29,11 +29,11 @@ class HistoryOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the history output request
     #: frequency. Possible values are UNSET, SET, and UNCHANGED.
-    frequencyState: Optional[SymbolicConstant] = None
+    frequencyState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the history output request modes.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    modesState: Optional[SymbolicConstant] = None
+    modesState: SymbolicConstant
 
     #: The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
     #: which the output states are to be written. The default value is EVERY_TIME_INCREMENT.
@@ -41,7 +41,7 @@ class HistoryOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the history output request time
     #: interval. Possible values are UNSET, SET, and UNCHANGED.
-    timeIntervalState: Optional[SymbolicConstant] = None
+    timeIntervalState: SymbolicConstant
 
     #: An Int specifying the number of intervals during the step at which output database
     #: states are to be written. The default value is 20.
@@ -49,21 +49,21 @@ class HistoryOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the history output request.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    timePointState: Optional[SymbolicConstant] = None
+    timePointState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the history output request.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    numIntervalsState: Optional[SymbolicConstant] = None
+    numIntervalsState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the HistoryOutputRequestState
     #: object. Possible values are NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED,
     #: NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE, and INSTANCE_NOT_APPLICABLE.
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A tuple of Strings specifying output request variable or component names, or the
     #: SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
     #: the given step. ALL represents all valid output variables.
-    variables: Optional[SymbolicConstant] = None
+    variables: SymbolicConstant
 
     #: The SymbolicConstant ALL or a tuple of Ints specifying a list of eigenmodes for which
     #: output is desired. The default value is ALL.

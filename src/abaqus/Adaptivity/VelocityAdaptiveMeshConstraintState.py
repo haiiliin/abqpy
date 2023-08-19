@@ -49,38 +49,38 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v1State: Optional[SymbolicConstant] = None
+    v1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v2State: Optional[SymbolicConstant] = None
+    v2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    v3State: Optional[SymbolicConstant] = None
+    v3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr1State: Optional[SymbolicConstant] = None
+    vr1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr2State: Optional[SymbolicConstant] = None
+    vr2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    vr3State: Optional[SymbolicConstant] = None
+    vr3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState
     #: object. Possible values
     #: are: NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED, NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE
     #: INSTANCE_NOT_APPLICABLE, PROPAGATED_FROM_BASE_STATE, MODIFIED_FROM_BASE_STATE, DEACTIVATED_FROM_BASE_STATE,
     #: BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: adaptive mesh constraint has no amplitude reference.

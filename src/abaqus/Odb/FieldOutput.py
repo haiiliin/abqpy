@@ -69,7 +69,7 @@ class FieldOutput:
     #: Possible values
     #: are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
     #: default value is an empty sequence.
-    validInvariants: Optional[SymbolicConstant] = None
+    validInvariants: SymbolicConstant
 
     #: A Boolean specifying whether the field is an engineering tensor or not. Setting
     #: isEngineeringTensor to true makes a tensor field behave as a strain like quantity where

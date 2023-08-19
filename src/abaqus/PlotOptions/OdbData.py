@@ -45,7 +45,7 @@ class OdbData(_OptionsBase):
     #: - A String specifying a sequence of frame numbers; for example, `'3:5'` and `'3:15:3'`.
     #: For these expressions a negative number will indicate reverse numbering: -1 is the last
     #: frame of the step, -2 is the one before the last frame. Frame numbering starts at 0.
-    activeFrames: Optional[SymbolicConstant] = None
+    activeFrames: SymbolicConstant
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
     #: Alternatively, this member may take the value ODB_VALUES.

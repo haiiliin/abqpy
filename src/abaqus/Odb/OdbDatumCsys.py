@@ -28,7 +28,7 @@ class OdbDatumCsys:
 
     #: A SymbolicConstant specifying the type of coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: Optional[SymbolicConstant] = None
+    coordSysType: SymbolicConstant
 
     #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
     #: system.

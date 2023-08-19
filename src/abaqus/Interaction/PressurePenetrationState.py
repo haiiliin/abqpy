@@ -32,19 +32,19 @@ class PressurePenetrationState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **penetrationTime** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    penetrationTimeState: Optional[SymbolicConstant] = None
+    penetrationTimeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **criticalPressure** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    criticalPressureState: Optional[SymbolicConstant] = None
+    criticalPressureState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **penetrationPressure** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    penetrationPressureState: Optional[SymbolicConstant] = None
+    penetrationPressureState: SymbolicConstant
 
     #: A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
     #: analyses, a tuple of Complexes specifying the fluid pressure magnitude.
@@ -70,4 +70,4 @@ class PressurePenetrationState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

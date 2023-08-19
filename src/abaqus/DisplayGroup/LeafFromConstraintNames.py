@@ -27,7 +27,7 @@ class LeafFromConstraintNames(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are TIE,
     #: SHELL_TO_SOLID_COUPLING, DISTRIBUTING_COUPLING, KINEMATIC_COUPLING, RIGID_BODY, and MPC.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     @abaqus_method_doc
     def __init__(

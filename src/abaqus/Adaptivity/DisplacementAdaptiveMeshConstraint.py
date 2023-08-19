@@ -33,7 +33,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()

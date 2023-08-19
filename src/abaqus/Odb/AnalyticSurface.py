@@ -25,7 +25,7 @@ class AnalyticSurface:
 
     #: A SymbolicConstant specifying the type of AnalyticSurface object. Possible values are
     #: SEGMENTS, CYLINDER, and REVOLUTION.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A Float specifying radius of curvature to smooth discontinuities between adjoining
     #: segments. The default value is 0.0.

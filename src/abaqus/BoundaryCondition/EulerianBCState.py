@@ -35,7 +35,7 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    definitionState: Optional[SymbolicConstant] = None
+    definitionState: SymbolicConstant
 
     #: A SymbolicConstant specifying the material flow conditions to be defined. Possible
     #: values are FREE, NONE, and VOID. The default value is FREE.
@@ -43,7 +43,7 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    inflowTypeState: Optional[SymbolicConstant] = None
+    inflowTypeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the material flow conditions to be defined. Possible
     #: values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default value is
@@ -52,11 +52,11 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    outflowTypeState: Optional[SymbolicConstant] = None
+    outflowTypeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #:
@@ -72,7 +72,7 @@ class EulerianBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

@@ -29,18 +29,18 @@ class RadiationToAmbientState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureState: Optional[SymbolicConstant] = None
+    ambientTemperatureState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureAmpState: Optional[SymbolicConstant] = None
+    ambientTemperatureAmpState: SymbolicConstant
 
     #: A Float specifying the emissivity.
     emissivity: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    emissivityState: Optional[SymbolicConstant] = None
+    emissivityState: SymbolicConstant
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
     #: ambient temperature with time.
@@ -58,4 +58,4 @@ class RadiationToAmbientState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

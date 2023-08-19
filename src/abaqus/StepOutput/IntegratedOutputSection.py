@@ -29,7 +29,7 @@ class IntegratedOutputSection:
     #: None or a Region object specifying the anchor point about which the integrated moment
     #: over the output region is computed or the SymbolicConstant None representing the global
     #: origin. The default value is None.
-    refPoint: Optional[SymbolicConstant] = None
+    refPoint: SymbolicConstant
 
     #: A Boolean specifying that the **refPoint** be adjusted so that it coincides with the
     #: center of the output region in the initial configuration. This argument is valid only

@@ -29,11 +29,11 @@ class PropertyTableData:
     label: str = ""
 
     #: A SymbolicConstant specifying the type of regularize to the user-defined property data.
-    regularize: Optional[SymbolicConstant] = None
+    regularize: SymbolicConstant
 
     #: A SymbolicConstant specifying the type of extrapolation of dependent variables outside
     #: the specified range of the independent variables.
-    extrapolate: Optional[SymbolicConstant] = None
+    extrapolate: SymbolicConstant
 
     #: A Boolean specifying the dependency of properties on temperature.
     isTemp: Boolean = OFF

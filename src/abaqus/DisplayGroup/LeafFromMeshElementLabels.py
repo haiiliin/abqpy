@@ -22,7 +22,7 @@ class LeafFromMeshElementLabels(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     @abaqus_method_doc
     def __init__(self, elementSeq: Sequence[MeshElement]):

@@ -21,7 +21,7 @@ class LeafFromSurfaceSets(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     #: A sequence of Strings specifying surface sets, or a String specifying a single surface
     #: set.

@@ -133,7 +133,7 @@ class HeatTransferStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF

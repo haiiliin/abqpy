@@ -27,4 +27,4 @@ class HistoryVariable:
     #: specifying the step label. *stepNumber*: An Int specifying the step
     #: number. *procedureDomain*: A SymbolicConstant specifying the analysis type of the step,
     #: which can have these values: “TIME,” “FREQUENCY,” or “MODAL.”
-    steps: Optional[SymbolicConstant] = None
+    steps: SymbolicConstant

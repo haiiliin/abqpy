@@ -58,7 +58,7 @@ class GraphicsOptions:
     #: A SymbolicConstant specifying the graphics driver to use. Abaqus/CAE currently uses
     #: OpenGL exclusively so the only possible value is OPEN_GL. OPEN_GL takes advantage of
     #: graphics adapter hardware acceleration.
-    graphicsDriver: Optional[SymbolicConstant] = None
+    graphicsDriver: SymbolicConstant
 
     #: A Boolean specifying whether double buffering is used. The default value is ON.Double
     #: buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering** = OFF,
@@ -220,7 +220,7 @@ class GraphicsOptions:
 
     #: A SymbolicConstant specifying the highlight method. For the GraphicsOptions object,
     #: possible values of the member are HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, and BLEND.
-    highlightMethod: Optional[SymbolicConstant] = None
+    highlightMethod: SymbolicConstant
 
     #: A Boolean specifying if the graphics hardware supports hardware overlay.
     hardwareOverlayAvailable: Boolean = OFF

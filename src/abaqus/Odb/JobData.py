@@ -21,11 +21,11 @@ class JobData:
 
     #: A SymbolicConstant specifying the analysis code. Possible values are ABAQUS_STANDARD,
     #: ABAQUS_EXPLICIT, and UNKNOWN_ANALYSIS_CODE.
-    analysisCode: Optional[SymbolicConstant] = None
+    analysisCode: SymbolicConstant
 
     #: A SymbolicConstant specifying the precision. Only SINGLE_PRECISION is currently
     #: supported. Possible values are DOUBLE_PRECISION and SINGLE_PRECISION.
-    precision: Optional[SymbolicConstant] = None
+    precision: SymbolicConstant
 
     #: A String specifying the release of the analysis code.
     version: str = ""

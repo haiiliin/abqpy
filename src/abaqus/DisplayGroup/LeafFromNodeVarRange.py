@@ -26,7 +26,7 @@ class LeafFromNodeVarRange(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     #: A Float specifying the minimum value for the variable range. The default value is
     #: −3.40282346639E38.

@@ -21,7 +21,7 @@ class LeafFromPartInstance(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     #: A sequence of Strings specifying the names of the part instances.
     partInstanceName: tuple

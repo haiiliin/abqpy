@@ -30,7 +30,7 @@ class MassScaling:
     #: A SymbolicConstant specifying whether mass scaling should be performed at the beginning
     #: of the step or throughout the step. Possible values are AT_BEGINNING and
     #: THROUGHOUT_STEP.
-    occurs: Optional[SymbolicConstant] = None
+    occurs: SymbolicConstant
 
     #: A SymbolicConstant specifying the type of scaling. Possible values are UNIFORM,
     #: BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is BELOW_MIN.

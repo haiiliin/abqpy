@@ -27,22 +27,22 @@ class BoltLoadState(LoadState):
 
     #: A SymbolicConstant specifying the type of bolt load. Possible values are APPLY_FORCE,
     #: ADJUST_LENGTH, and FIX_LENGTH.
-    boltMethod: Optional[SymbolicConstant] = None
+    boltMethod: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the bolt load type. Possible
     #: values are UNSET, SET, UNCHANGED, and MODIFIED.
-    boltMethodState: Optional[SymbolicConstant] = None
+    boltMethodState: SymbolicConstant
 
     #: A Float specifying the bolt load magnitude.
     magnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the bolt load magnitude. Possible
     #: values are UNSET, SET, UNCHANGED, and MODIFIED.
-    magnitudeState: Optional[SymbolicConstant] = None
+    magnitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -56,7 +56,7 @@ class BoltLoadState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

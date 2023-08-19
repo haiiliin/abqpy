@@ -32,14 +32,14 @@ class FieldValue:
     #:   radiation that are defined for the surface facets of an element.
     #: - CENTROID, specifying the value at the centroid obtained by extrapolating results
     #:   calculated at the integration points.
-    position: Optional[SymbolicConstant] = None
+    position: SymbolicConstant
 
     #: A SymbolicConstant specifying the precision of the output in the element. Possible
     #: values are:
     #:
     #: - SINGLE_PRECISION, specifying that the output values are in single precision.
     #: - DOUBLE_PRECISION, specifying that the output values are in double precision.
-    precision: Optional[SymbolicConstant] = None
+    precision: SymbolicConstant
 
     #: An Int specifying the element label of the element containing the location.
     #: **elementLabel** is available only if **position** = INTEGRATION_POINT, CENTROID,
@@ -56,12 +56,12 @@ class FieldValue:
 
     #: A SymbolicConstant specifying the face of the element. **face** is available only if
     #: **position** = ELEMENT_FACE.
-    face: Optional[SymbolicConstant] = None
+    face: SymbolicConstant
 
     #: A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
     #: TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
     #: TENSOR_2D_SURFACE.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: A Float specifying the length or magnitude of the vector. **magnitude** is valid only when
     #: **type** = VECTOR.

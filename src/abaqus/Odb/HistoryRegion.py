@@ -26,7 +26,7 @@ class HistoryRegion:
 
     #: A SymbolicConstant specifying the position of the history output. Possible values are
     #: NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
-    position: Optional[SymbolicConstant] = None
+    position: SymbolicConstant
 
     #: A repository of HistoryOutput objects.
     historyOutputs: Dict[str, HistoryOutput] = {}

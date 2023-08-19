@@ -30,12 +30,12 @@ class FieldBulkData:
     #: - ELEMENT_FACE.
     #: - CENTROID, specifying the value at the centroid obtained by extrapolating results
     #:   calculated at the integration points.
-    position: Optional[SymbolicConstant] = None
+    position: SymbolicConstant
 
     #: A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
     #: TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
     #: TENSOR_2D_SURFACE.
-    type: Optional[SymbolicConstant] = None
+    type: SymbolicConstant
 
     #: An OdbInstance object specifying the part to which the labels belong.
     instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))

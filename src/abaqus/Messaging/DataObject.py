@@ -16,7 +16,7 @@ class DataObject:
     #: A SymbolicConstant specifying the phase of the analysis. Possible values are
     #: BATCHPRE_PHASE, PACKAGER_PHASE, STANDARD_PHASE, EXPLICIT_PHASE, CALCULATOR_PHASE, and
     #: UNKNOWN_PHASE.
-    phase: Optional[SymbolicConstant] = None
+    phase: SymbolicConstant
 
     #: An Int specifying the process ID of the analysis product.
     processId: Optional[int] = None

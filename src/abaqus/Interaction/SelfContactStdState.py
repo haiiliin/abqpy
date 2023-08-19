@@ -28,11 +28,11 @@ class SelfContactStdState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interactionPropertyState: Optional[SymbolicConstant] = None
+    interactionPropertyState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **contactControls** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    contactControlsState: Optional[SymbolicConstant] = None
+    contactControlsState: SymbolicConstant
 
     #: A String specifying the ContactProperty object associated with this interaction.
     interactionProperty: str = ""
@@ -53,4 +53,4 @@ class SelfContactStdState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

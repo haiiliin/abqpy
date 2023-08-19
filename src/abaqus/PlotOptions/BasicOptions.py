@@ -80,7 +80,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the extrapolation algorithm. This member is for internal
     #: use only. The only possible value is EXTRAP_COMPUTE_AVERAGE.
-    extrapAlgorithm: Optional[SymbolicConstant] = None
+    extrapAlgorithm: SymbolicConstant
 
     #: A SymbolicConstant specifying the refinement level for drawing curves. Possible values
     #: are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COARSE.

@@ -22,7 +22,7 @@ class BeamOrientation:
 
     #: A SymbolicConstant specifying the orientation assignment method. Possible values are
     #: N1_COSINES, CSYS, and VECT.
-    method: Optional[SymbolicConstant] = None
+    method: SymbolicConstant
 
     #: An OdbSet object specifying a region for which the beam orientation is defined.
     region: OdbSet = OdbSet("set", ())

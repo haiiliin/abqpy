@@ -46,7 +46,7 @@ class XYData(tuple):
 
     #: A SymbolicConstant specifying the source type of the XYData object. Possible values are
     #: FROM_ODB, FROM_KEYBOARD, FROM_ASCII_FILE, FROM_OPERATION, and FROM_USER_DEFINED.
-    sourceType: Optional[SymbolicConstant] = None
+    sourceType: SymbolicConstant
 
     #: A String specifying the source file name of the XYData object.
     fileName: str = ""

@@ -37,19 +37,19 @@ class LineLoadState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the load component in the global
     #: or the beam local 1-direction. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp1State: Optional[SymbolicConstant] = None
+    comp1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the load component in the global
     #: or the beam local 2-direction. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp2State: Optional[SymbolicConstant] = None
+    comp2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the load component in the global
     #: 3-direction. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp3State: Optional[SymbolicConstant] = None
+    comp3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -63,7 +63,7 @@ class LineLoadState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

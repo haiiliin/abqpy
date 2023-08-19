@@ -72,7 +72,7 @@ class StdContactControl(ContactControl):
     #: - DELAYED, specifying the application of friction is delayed until the increment after
     #:
     #: contact occurs.
-    frictionOnset: Optional[SymbolicConstant] = None
+    frictionOnset: SymbolicConstant
 
     #: A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
     #: tolerance and a separation tolerance to prevent chattering in contact. The default value

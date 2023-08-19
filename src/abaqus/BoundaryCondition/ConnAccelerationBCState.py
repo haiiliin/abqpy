@@ -52,36 +52,36 @@ class ConnAccelerationBCState(BoundaryConditionState):
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 1-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    a1State: Optional[SymbolicConstant] = None
+    a1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 2-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    a2State: Optional[SymbolicConstant] = None
+    a2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 3-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    a3State: Optional[SymbolicConstant] = None
+    a3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 4-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    ar1State: Optional[SymbolicConstant] = None
+    ar1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 5-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    ar2State: Optional[SymbolicConstant] = None
+    ar2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the connector acceleration
     #: component in the connector's local 6-direction. Possible values are UNSET, SET,
     #: UNCHANGED, FREED, and MODIFIED.
-    ar3State: Optional[SymbolicConstant] = None
+    ar3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #:
@@ -97,7 +97,7 @@ class ConnAccelerationBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

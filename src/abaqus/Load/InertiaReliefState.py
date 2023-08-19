@@ -45,32 +45,32 @@ class InertiaReliefState(LoadState):
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local 1-direction as a free direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    u1State: Optional[SymbolicConstant] = None
+    u1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local 2-direction as a free direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    u2State: Optional[SymbolicConstant] = None
+    u2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local the 3-direction as a free direction. Possible values are UNSET, SET, UNCHANGED,
     #: and MODIFIED.
-    u3State: Optional[SymbolicConstant] = None
+    u3State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies
     #: rotation about the local 1-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur1State: Optional[SymbolicConstant] = None
+    ur1State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: rotation about the local the 2-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur2State: Optional[SymbolicConstant] = None
+    ur2State: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: rotation about the local the 3-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur3State: Optional[SymbolicConstant] = None
+    ur3State: SymbolicConstant
 
     #: A Boolean specifying whether the inertia relief loading should remain fixed at the
     #: current loading at the start of the step. The default value is OFF.
@@ -79,11 +79,11 @@ class InertiaReliefState(LoadState):
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies
     #: whether the inertia relief load should remain fixed at current level at the start of the
     #: step. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    fixedState: Optional[SymbolicConstant] = None
+    fixedState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the reference point of the
     #: inertia relief load. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    referencePointState: Optional[SymbolicConstant] = None
+    referencePointState: SymbolicConstant
 
     #: A tuple of Floats specifying the point about which rotations are defined. The point can
     #: be specified only for certain combinations of free directions. The **referencePoint**
@@ -95,7 +95,7 @@ class InertiaReliefState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: Optional[SymbolicConstant] = None
+    amplitudeState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -109,7 +109,7 @@ class InertiaReliefState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

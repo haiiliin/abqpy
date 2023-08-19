@@ -231,19 +231,19 @@ class OdbDisplay:
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    statusVariable: Optional[SymbolicConstant] = None
+    statusVariable: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    symbolVariable: Optional[SymbolicConstant] = None
+    symbolVariable: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed in undeformed states based on an active status variable
-    applyStatusToUndeformed: Optional[SymbolicConstant] = None
+    applyStatusToUndeformed: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
     #: be inside a specified minimum and maximum. The range will be outside when false.
-    statusInsideRange: Optional[SymbolicConstant] = None
+    statusInsideRange: SymbolicConstant
 
     #: A tuple of Floats specifying a Float value for the minimum status range value.
     statusMinimum: Optional[float] = None
@@ -253,7 +253,7 @@ class OdbDisplay:
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed based on the status variable
-    useStatus: Optional[SymbolicConstant] = None
+    useStatus: SymbolicConstant
 
     #: A pair of Ints specifying the step index and the frame index of the first available
     #: frame. This sequence is read-only.

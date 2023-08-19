@@ -83,11 +83,11 @@ class ViewportBase(_OptionsBase):
     #: A SymbolicConstant specifying the display mode of the viewport. Possible values
     #: are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
     #: to be displayed simultaneously—each layer contains one **displayedObject**.
-    displayMode: Optional[SymbolicConstant] = None
+    displayMode: SymbolicConstant
 
     #: A SymbolicConstant specifying which layer or layers will be controlled by the view
     #: manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
-    viewManipLayers: Optional[SymbolicConstant] = None
+    viewManipLayers: SymbolicConstant
 
     #: A Float specifying a factor to be used in offsetting layers in the screen Z direction.
     #: Possible values are -1 to 1. A negative value reverses the apparent order in which the
@@ -96,7 +96,7 @@ class ViewportBase(_OptionsBase):
 
     #: A SymbolicConstant specifying the current state of a viewport. Possible values are
     #: NORMAL, MAXIMIZED, and MINIMIZED.
-    windowState: Optional[SymbolicConstant] = None
+    windowState: SymbolicConstant
 
     #: A Float specifying the width in millimeters of the current viewport, regardless of the
     #: value of **windowState**.

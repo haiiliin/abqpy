@@ -36,7 +36,7 @@ class DisplayGroup:
 
     #: A SymbolicConstant specifying the module in which the display group has been created.
     #: The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
-    module: Optional[SymbolicConstant] = None
+    module: SymbolicConstant
 
     #: A String specifying the name of the model to which the display group belongs when the
     #: module is part- or assembly-based.

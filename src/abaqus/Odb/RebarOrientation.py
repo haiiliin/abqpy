@@ -23,7 +23,7 @@ class RebarOrientation:
     #: A SymbolicConstant specifying the axis of a cylindrical or spherical datum coordinate
     #: system about which an additional rotation is applied. Possible values are AXIS_1,
     #: AXIS_2, and AXIS_3.
-    axis: Optional[SymbolicConstant] = None
+    axis: SymbolicConstant
 
     #: A Float specifying the angle of the additional rotation.
     angle: Optional[float] = None

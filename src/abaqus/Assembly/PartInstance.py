@@ -56,7 +56,7 @@ class PartInstance:
 
     #: A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
     #: EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
-    analysisType: Optional[SymbolicConstant] = None
+    analysisType: SymbolicConstant
 
     #: An Int specifying the reference node number. This member is valid only if
     #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.

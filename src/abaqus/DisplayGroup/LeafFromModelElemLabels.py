@@ -21,7 +21,7 @@ class LeafFromModelElemLabels(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: Optional[SymbolicConstant] = None
+    leafType: SymbolicConstant
 
     #: A sequence of Strings specifying expressions that denote element labels per part
     #: instance in the model. Each part instance element expression is a sequence of a String
