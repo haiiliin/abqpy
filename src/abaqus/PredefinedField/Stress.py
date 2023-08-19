@@ -30,12 +30,12 @@ class Stress(PredefinedField):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
-        sigma11: float = ...,
-        sigma22: float = ...,
-        sigma33: float = ...,
-        sigma12: float = ...,
-        sigma13: float = ...,
-        sigma23: float = ...,
+        sigma11: float = 0,
+        sigma22: float = 0,
+        sigma33: float = 0,
+        sigma12: float = 0,
+        sigma13: float = 0,
+        sigma23: float = 0,
     ) -> None:
         """This method creates a Stress predefined field object.
 
@@ -77,12 +77,12 @@ class Stress(PredefinedField):
     def setValues(
         self,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
-        sigma11: float = ...,
-        sigma22: float = ...,
-        sigma33: float = ...,
-        sigma12: float = ...,
-        sigma13: float = ...,
-        sigma23: float = ...,
+        sigma11: float = 0,
+        sigma22: float = 0,
+        sigma33: float = 0,
+        sigma12: float = 0,
+        sigma13: float = 0,
+        sigma23: float = 0,
     ) -> None:
         """This method modifies the Stress object.
 

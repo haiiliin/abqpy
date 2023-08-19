@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -16,10 +16,10 @@ class InteractionContactInitializationModel(ModelBase):
         self,
         name: str,
         overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,
-        interferenceDistance: Optional[float] = None,
-        clearanceDistance: Optional[float] = None,
-        openingTolerance: Optional[float] = None,
-        overclosureTolerance: Optional[float] = None,
+        interferenceDistance: float | None = None,
+        clearanceDistance: float | None = None,
+        openingTolerance: float | None = None,
+        overclosureTolerance: float | None = None,
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 

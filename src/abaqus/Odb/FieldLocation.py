@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -26,7 +26,7 @@ class FieldLocation:
     #: obtained by extrapolating results calculated at the integration
     #: points.ELEMENT_FACE.CENTROID, specifying the value at the centroid obtained by
     #: extrapolating results calculated at the integration points.
-    position: Optional[SymbolicConstant] = None
+    position: SymbolicConstant
 
     #: A SectionPointArray object.
     sectionPoints: SectionPointArray = []

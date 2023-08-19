@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -9,6 +11,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class ArcByCenterEnds(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(
+        self,
         center: Sequence[float],
         point1: Sequence[float],
         point2: Sequence[float],

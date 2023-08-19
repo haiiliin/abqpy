@@ -284,7 +284,7 @@ class QuantityType:
             C.VOLUME_FLUX,
             C.VOLUME_FLUX_AREA,
             C.VOLUME_FRACTION,
-        ],
+        ] = NONE,
         label: str = "",
     ):
         """This method creates a QuantityType object.

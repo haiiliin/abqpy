@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -34,21 +34,21 @@ class ConnectorFailure(ConnectorBehaviorOption):
 
     #: None or a Float specifying the lower bound for the connector's relative position for all
     #: specified components, or no lower bound. The default value is None.
-    minMotion: Optional[float] = None
+    minMotion: float | None = None
 
     #: None or a Float specifying the upper bound for the connector's relative position for all
     #: specified components, or no upper bound. The default value is None.
-    maxMotion: Optional[float] = None
+    maxMotion: float | None = None
 
     #: None or a Float specifying the lower bound of the force or moment in the directions of
     #: the specified components at which locking occurs, or no lower bound. The default value
     #: is None.
-    minForce: Optional[float] = None
+    minForce: float | None = None
 
     #: None or a Float specifying the upper bound of the force or moment in the directions of
     #: the specified components at which locking occurs, or no upper bound. The default value
     #: is None.
-    maxForce: Optional[float] = None
+    maxForce: float | None = None
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
@@ -59,10 +59,10 @@ class ConnectorFailure(ConnectorBehaviorOption):
     def __init__(
         self,
         releaseComponent: Literal[C.ALL] = ALL,
-        minMotion: Optional[float] = None,
-        maxMotion: Optional[float] = None,
-        minForce: Optional[float] = None,
-        maxForce: Optional[float] = None,
+        minMotion: float | None = None,
+        maxMotion: float | None = None,
+        minForce: float | None = None,
+        maxForce: float | None = None,
         components: tuple = (),
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.

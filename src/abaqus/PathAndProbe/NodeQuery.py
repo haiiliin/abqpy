@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -17,8 +17,8 @@ class NodeQuery:
 
     #: An Int specifying the ID of the most recently queried node. If the last query was
     #: unsuccessful, **nodeID** = −1.
-    nodeId: Optional[int] = None
+    nodeId: int | None = None
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the most recently
     #: queried node.
-    nodePos: Optional[float] = None
+    nodePos: float | None = None

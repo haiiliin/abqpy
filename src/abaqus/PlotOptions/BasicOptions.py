@@ -1,4 +1,6 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Sequence
 
 from typing_extensions import Literal
 
@@ -80,7 +82,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the extrapolation algorithm. This member is for internal
     #: use only. The only possible value is EXTRAP_COMPUTE_AVERAGE.
-    extrapAlgorithm: Optional[SymbolicConstant] = None
+    extrapAlgorithm: SymbolicConstant
 
     #: A SymbolicConstant specifying the refinement level for drawing curves. Possible values
     #: are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COARSE.
@@ -186,11 +188,11 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of segments to display when **sweepArs** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsArs: Optional[int] = None
+    numSweepSegmentsArs: int | None = None
 
     #: An Int specifying the number of segments to display when **sweepElem** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsElem: Optional[int] = None
+    numSweepSegmentsElem: int | None = None
 
     #: A SymbolicConstant specifying the numeric form in which to display results that contain
     #: complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -355,7 +357,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the types of sweepable elements and surfaces contained in the model,
     #: if any.
-    sweepModelType: Optional[int] = None
+    sweepModelType: int | None = None
 
     #: A Boolean specifying whether to average the element output. The default value is ON.
     averageElementOutput: Boolean = ON
@@ -383,15 +385,15 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of sectors of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    numSectors: Optional[int] = None
+    numSectors: int | None = None
 
     #: A Float specifying the sector angle of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    sectorAngle: Optional[float] = None
+    sectorAngle: float | None = None
 
     #: A Float specifying the automatic extrude depth used to extrude analytical rigid surfaces
     #: in the default setting. This value is read-only.
-    automaticExtrudeDepth: Optional[float] = None
+    automaticExtrudeDepth: float | None = None
 
     #: A String specifying the name of the coordinate system driving the moving camera.
     cameraCsysName: str = ""
@@ -416,7 +418,7 @@ class BasicOptions(_CopyOptionsBase):
     #: A tuple of Ints specifying which sectors to display when
     #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
     #: ≤ the number of sectors. The default value is (1).
-    selectedSectorNumbers: Optional[Sequence[int]] = None
+    selectedSectorNumbers: Sequence[int] | None = None
 
     #: A tuple of Strings specifying either element set or display group names (depending on
     #: the value of regionBoundaries) defining the averaging region boundaries. The default
@@ -426,7 +428,7 @@ class BasicOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: Optional["BasicOptions"] = None,
+        options: "BasicOptions" | None = None,
         *,
         cameraCsysName: str = "",
         cameraMovesWithCsys: Boolean = OFF,
@@ -461,8 +463,8 @@ class BasicOptions(_CopyOptionsBase):
         sweepStartAngleElem: float = 0,
         sweepEndAngleArs: float = 360,
         sweepEndAngleElem: float = 180,
-        numSweepSegmentsArs: Optional[int] = None,
-        numSweepSegmentsElem: Optional[int] = None,
+        numSweepSegmentsArs: int | None = None,
+        numSweepSegmentsElem: int | None = None,
         numericForm: Literal[
             C.COMPLEX_ENVELOPE_MAX_ABS,
             C.COMPLEX_PHASE,
@@ -518,7 +520,7 @@ class BasicOptions(_CopyOptionsBase):
         transformationType: Literal[
             C.USER_SPECIFIED, C.NODAL, C.DEFAULT, C.LAYUP_ORIENTATION, C.TRANSFORM, C.ANGULAR
         ] = DEFAULT,
-        datumCsys: Optional[DatumCsys] = None,
+        datumCsys: DatumCsys | None = None,
         rigidTransformPrimary: Boolean = OFF,
         rigidTransformDeformed: Boolean = OFF,
         transformOnDeformed: Boolean = ON,
