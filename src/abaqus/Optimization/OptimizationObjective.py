@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc

@@ -123,7 +123,7 @@ class SectionAssignment:
 
         Returns
         -------
-        Sequence[Tuple[float, ...]]
+        Sequence[tuple[float, ...]]
             A sequence of tuples of floats.
 
         Raises

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -59,7 +59,7 @@ class TwoPointSpringDashpot(SpringDashpot):
     #: dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
     #: coordinate system. The default value is None.The **orientation** argument applies only
     #: when **axis** = FIXED_DOFS.
-    orientation: Optional[str] = None
+    orientation: str | None = None
 
     #: A Boolean specifying whether to apply spring behavior to the selected point pairs. The
     #: default value is OFF.At least one of the arguments **springBehavior** = ON or
@@ -87,7 +87,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         axis: Literal[C.FIXED_DOF, C.NODAL_LINE],
         dof1: int = 0,
         dof2: int = 0,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -152,7 +152,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         self,
         dof1: int = 0,
         dof2: int = 0,
-        orientation: Optional[str] = None,
+        orientation: str | None = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
