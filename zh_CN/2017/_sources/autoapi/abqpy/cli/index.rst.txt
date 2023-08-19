@@ -67,7 +67,7 @@ Attributes
 
    .. autoclasstoc::
 
-   .. py:method:: optimization(task: str, job: str, *, cpus: int = None, gpus: int = None, memory: int = None, interactive: bool = False, globalmodel: str = None, scratch: str = None, **kwargs)
+   .. py:method:: optimization(task: str, job: str, *, cpus: int | None = None, gpus: int | None = None, memory: int | None = None, interactive: bool = False, globalmodel: str | None = None, scratch: str | None = None, **kwargs)
 
       Run Abaqus optimization command.
 
@@ -236,7 +236,7 @@ Attributes
 
       
 
-   .. py:method:: cae(script: str, *args, database: str = None, replay: str = None, recover: str = None, gui: bool = False, noenvstartup: bool = False, noSavedOptions: bool = False, noStartupDialog: bool = False, guiRecord: bool = False, guiNoRecord: bool = False, **kwargs)
+   .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, gui: bool = False, noenvstartup: bool = False, noSavedOptions: bool = False, noStartupDialog: bool = False, guiRecord: bool = False, guiNoRecord: bool = False, **kwargs)
 
       Run Abaqus/CAE command.
 
@@ -265,7 +265,7 @@ Attributes
       :param kwargs: Other unrecognized keyword arguments
 
 
-   .. py:method:: python(script: str, *args, sim: str = None, log: str = None, **kwargs)
+   .. py:method:: python(script: str, *args, sim: str | None = None, log: str | None = None, **kwargs)
 
       Run Abaqus/Python command.
 
