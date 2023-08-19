@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,11 +31,11 @@ class TopologyOverhangControl(GeometricRestriction):
         name: str,
         pullDirection: tuple,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         draftAngle: float = 45,
         overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
-        radius: Optional[float] = None,
+        radius: float | None = None,
         technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ):
         """This method creates a TopologyOverhangControl object.
@@ -85,11 +85,11 @@ class TopologyOverhangControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         draftAngle: float = 45,
         overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
-        radius: Optional[float] = None,
+        radius: float | None = None,
         technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ):
         """This method modifies the TopologyOverhangControl object.

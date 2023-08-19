@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -59,8 +59,8 @@ class ConnectorSection(SectionBase):
         evolutionDependencies: int = 0,
         evolutionPotentialOperator: Literal[C.SUM, C.MOTION, C.MOTION_TYPE, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         evolutionPotentialExponent: float = 2,
-        initiationPotentials: Optional[ConnectorPotentialArray] = None,
-        evolutionPotentials: Optional[ConnectorPotentialArray] = None,
+        initiationPotentials: ConnectorPotentialArray | None = None,
+        evolutionPotentials: ConnectorPotentialArray | None = None,
         initiationTable: tuple = (),
         evolutionTable: tuple = (),
         affectedComponents: tuple = (),
@@ -331,10 +331,10 @@ class ConnectorSection(SectionBase):
     def ConnectorFailure(
         self,
         releaseComponent: Literal[C.ALL] = ALL,
-        minMotion: Optional[float] = None,
-        maxMotion: Optional[float] = None,
-        minForce: Optional[float] = None,
-        maxForce: Optional[float] = None,
+        minMotion: float | None = None,
+        maxMotion: float | None = None,
+        minForce: float | None = None,
+        maxForce: float | None = None,
         components: tuple = (),
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
@@ -390,8 +390,8 @@ class ConnectorSection(SectionBase):
         self,
         frictionModel: Literal[C.PREDEFINED, C.USER_CUSTOMIZED] = PREDEFINED,
         slipStyle: Literal[C.COMPUTE, C.SPECIFY, C.USER_CUSTOMIZED] = SPECIFY,
-        tangentDirection: Optional[int] = None,
-        stickStiffness: Optional[float] = None,
+        tangentDirection: int | None = None,
+        stickStiffness: float | None = None,
         componentType: Literal[C.POSITION, C.MOTION, C.NO_INDEPENDENT_COMPONENTS] = NO_INDEPENDENT_COMPONENTS,
         slipDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -401,7 +401,7 @@ class ConnectorSection(SectionBase):
         contactForceComponent: int = 0,
         forcePotentialOperator: Literal[C.SUM, C.COMPUTE, C.USER_CUSTOMIZED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: Optional[ConnectorPotentialArray] = None,
+        connectorPotentials: ConnectorPotentialArray | None = None,
         table: tuple = (),
         independentComponents: tuple = (),
     ):
@@ -522,10 +522,10 @@ class ConnectorSection(SectionBase):
     def ConnectorLock(
         self,
         lockingComponent: Literal[C.ALL] = ALL,
-        minMotion: Optional[float] = None,
-        maxMotion: Optional[float] = None,
-        minForce: Optional[float] = None,
-        maxForce: Optional[float] = None,
+        minMotion: float | None = None,
+        maxMotion: float | None = None,
+        minForce: float | None = None,
+        maxForce: float | None = None,
         components: tuple = (),
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
@@ -591,7 +591,7 @@ class ConnectorSection(SectionBase):
         kinematicDependencies: int = 0,
         forcePotentialOperator: Literal[C.SUM, C.COUPLED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: Optional[ConnectorPotentialArray] = None,
+        connectorPotentials: ConnectorPotentialArray | None = None,
         isotropicTable: tuple = (),
         kinematicTable: tuple = (),
         components: tuple = (),
@@ -737,9 +737,7 @@ class ConnectorSection(SectionBase):
         return option
 
     @abaqus_method_doc
-    def ConnectorStop(
-        self, minMotion: Optional[float] = None, maxMotion: Optional[float] = None, components: tuple = ()
-    ):
+    def ConnectorStop(self, minMotion: float | None = None, maxMotion: float | None = None, components: tuple = ()):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
         .. note::

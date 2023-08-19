@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -21,11 +21,11 @@ class ElasticFoundationState(InteractionState):
     """
 
     #: A Float specifying the foundation stiffness per area.
-    stiffness: Optional[float] = None
+    stiffness: float | None = None
 
     #: A SymbolicConstant specifying the propagation state of the stiffness member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    stiffnessState: Optional[SymbolicConstant] = None
+    stiffnessState: SymbolicConstant
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -39,4 +39,4 @@ class ElasticFoundationState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: Optional[SymbolicConstant] = None
+    status: SymbolicConstant

@@ -1,4 +1,6 @@
-from typing import Dict, List, Optional, Sequence, Tuple, Union, overload
+from __future__ import annotations
+
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -33,6 +35,7 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     SUPPRESS,
+    THREE_D,
     Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
@@ -57,13 +60,13 @@ class AssemblyBase(AssemblyFeature):
 
     #: An Int specifying that feature parameters have been modified but that the assembly has
     #: not been regenerated. Possible values are 0 and 1.
-    isOutOfDate: Optional[int] = None
+    isOutOfDate: int | None = None
 
     #: A Float specifying which gives an indication when the assembly was last modified.
-    timeStamp: Optional[float] = None
+    timeStamp: float | None = None
 
     #: An Int specifying whether the assembly is locked or not. Possible values are 0 and 1.
-    isLocked: Optional[int] = None
+    isLocked: int | None = None
 
     #: A Boolean specifying whether the positioning constraints in the assembly should be
     #: regenerated together before regenerating other assembly features. The default value is
@@ -88,57 +91,57 @@ class AssemblyBase(AssemblyFeature):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of PartInstance objects.
-    instances: Dict[str, PartInstance] = {}
+    instances: dict[str, PartInstance] = {}
 
     #: A repository of Datum objects specifying all Datum objects in the assembly.
-    datums: List[Datum] = []
+    datums: list[Datum] = []
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.
-    features: Dict[str, AssemblyFeature] = {}
+    features: dict[str, AssemblyFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.The
     #: Feature objects in the featuresById repository are the same as the Feature objects in
     #: the features repository. However, the key to the objects in the featuresById repository
     #: is an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: Dict[str, AssemblyFeature] = {}
+    featuresById: dict[str, AssemblyFeature] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: Dict[str, Surface] = {}
+    surfaces: dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSurfaces: Dict[str, Surface] = {}
+    allSurfaces: dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: Dict[str, Surface] = {}
+    allInternalSurfaces: dict[str, Surface] = {}
 
     #: A repository of Set objects.
-    sets: Dict[str, Set] = {}
+    sets: dict[str, Set] = {}
 
     #: A repository of Set objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSets: Dict[str, Set] = {}
+    allSets: dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: Dict[str, Set] = {}
+    allInternalSets: dict[str, Set] = {}
 
     #: A repository of Skin objects specifying the skins created on the assembly.
-    skins: Dict[str, Skin] = {}
+    skins: dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the assembly.
-    stringers: Dict[str, Stringer] = {}
+    stringers: dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
-    referencePoints: Dict[str, ReferencePoint] = {}
+    referencePoints: dict[str, ReferencePoint] = {}
 
     #: A repository of ModelInstance objects.
-    modelInstances: Dict[str, ModelInstance] = {}
+    modelInstances: dict[str, ModelInstance] = {}
 
     #: A PartInstance object specifying the PartInstances and A ModelInstance object specifying
     #: the ModelInstances.
-    allInstances: Dict[str, Union[PartInstance, ModelInstance]] = {}
+    allInstances: dict[str, Union[PartInstance, ModelInstance]] = {}
 
     #: An EngineeringFeature object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
@@ -276,7 +279,7 @@ class AssemblyBase(AssemblyFeature):
         PartInstance
             A PartInstance object.
         """
-        return PartInstance(name, Part())
+        return PartInstance(name, Part("", THREE_D))
 
     @abaqus_method_doc
     def InstanceFromBooleanMerge(
@@ -287,7 +290,7 @@ class AssemblyBase(AssemblyFeature):
         originalInstances: Literal[C.SUPPRESS, C.DELETE] = SUPPRESS,
         domain: Literal[C.MESH, C.BOTH, C.GEOMETRY] = GEOMETRY,
         mergeNodes: Literal[C.MESH, C.ALL, C.BOUNDARY_ONLY, C.NONE] = BOUNDARY_ONLY,
-        nodeMergingTolerance: Optional[float] = None,
+        nodeMergingTolerance: float | None = None,
         removeDuplicateElements: Boolean = True,
     ):
         """This method creates a PartInstance in the instances repository after merging two or more part
@@ -334,7 +337,7 @@ class AssemblyBase(AssemblyFeature):
         PartInstance
             A PartInstance object.
         """
-        return PartInstance(name, Part())
+        return PartInstance(name, Part("", THREE_D))
 
     @abaqus_method_doc
     def LinearInstancePattern(
@@ -383,7 +386,7 @@ class AssemblyBase(AssemblyFeature):
         Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
-        return [PartInstance(name, Part()) for name in instanceList]
+        return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
     @abaqus_method_doc
     def RadialInstancePattern(
@@ -427,7 +430,7 @@ class AssemblyBase(AssemblyFeature):
         Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
-        return [PartInstance(name, Part()) for name in instanceList]
+        return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
     @abaqus_method_doc
     def backup(self):
@@ -492,7 +495,7 @@ class AssemblyBase(AssemblyFeature):
         specifyThickness: Boolean = False,
         thickness: str = "",
         miAboutCenterOfMass: Boolean = True,
-        miAboutPoint: Tuple[float, float, float] = ...,
+        miAboutPoint: tuple[float, float, float] = ...,
     ):
         """This method returns the mass properties of the assembly, or instances or regions. Only beams,
         trusses, shells, solids, point, nonstructural mass, and rotary inertia elements are supported.
@@ -643,7 +646,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        Tuple[float, float]
+        tuple[float, float]
             A tuple of three Floats representing the coordinates of the specified point.
         """
         ...
@@ -863,7 +866,7 @@ class AssemblyBase(AssemblyFeature):
         self,
         sketch: ConstrainedSketch,
         filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
-        upToFeature: Optional[AssemblyFeature] = None,
+        upToFeature: AssemblyFeature | None = None,
         edges: Sequence[Edge] = (),
         vertices: Sequence[Vertex] = (),
     ):
@@ -1035,7 +1038,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
+    def writeAcisFile(self, fileName: str, version: float | None = None):
         """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT) format.
 
         Parameters
@@ -1089,8 +1092,8 @@ class AssemblyBase(AssemblyFeature):
     def setMeshNumberingControl(
         self,
         instances: Sequence[PartInstance],
-        startNodeLabel: Optional[int] = None,
-        startElemLabel: Optional[int] = None,
+        startNodeLabel: int | None = None,
+        startElemLabel: int | None = None,
     ):
         """This method changes the start node and/or element labels on the specified independent part instances
         before or after Abaqus/CAE generates the meshes. For the meshed instances, Abaqus/CAE changes the node
@@ -1113,7 +1116,7 @@ class AssemblyBase(AssemblyFeature):
         elements: Sequence[MeshElement] = (),
         faces: Sequence[Face] = (),
         elemFaces: Sequence[MeshFace] = (),
-        targetFace: Optional[MeshFace] = None,
+        targetFace: MeshFace | None = None,
         nodes: Sequence[MeshNode] = (),
         coordinates: tuple = (),
     ):

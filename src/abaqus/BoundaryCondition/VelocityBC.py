@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -36,7 +38,7 @@ class VelocityBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: Optional[SymbolicConstant] = None
+    category: SymbolicConstant
 
     #: A Region object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -44,7 +46,7 @@ class VelocityBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     @abaqus_method_doc
     def __init__(
@@ -60,7 +62,7 @@ class VelocityBC(BoundaryCondition):
         vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method creates a VelocityBC object.
@@ -136,7 +138,7 @@ class VelocityBC(BoundaryCondition):
         vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method modifies the data for an existing VelocityBC object in the step where it is created.

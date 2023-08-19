@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -64,8 +64,8 @@ class FreeBodyOptions(_OptionsBase):
         numDigitsM: int = 3,
         sizePercentageF: float = 10,
         sizePercentageM: float = 10,
-        thresholdF: Optional[float] = None,
-        thresholdM: Optional[float] = None,
+        thresholdF: float | None = None,
+        thresholdM: float | None = None,
         drawLabelF: Boolean = ON,
         drawLabelM: Boolean = ON,
         showComp1F: Boolean = ON,

@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -75,7 +75,7 @@ class PointMassInertia(Inertia):
     #: mass terms (when specified), and the rotary inertia (when specified). If
     #: **localCsys** = None, the anisotropic mass and rotary inertia data are defined in the global
     #: coordinate system. The default value is None.
-    localCsys: Optional[str] = None
+    localCsys: str | None = None
 
     #: A Float specifying the alpha damping magnitude. The default value is 0.0.This argument
     #: applies only to Abaqus/Standard analyses.
@@ -100,7 +100,7 @@ class PointMassInertia(Inertia):
         i12: float = 0,
         i13: float = 0,
         i23: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         alpha: float = 0,
         composite: float = 0,
     ):
@@ -177,7 +177,7 @@ class PointMassInertia(Inertia):
         i12: float = 0,
         i13: float = 0,
         i23: float = 0,
-        localCsys: Optional[str] = None,
+        localCsys: str | None = None,
         alpha: float = 0,
         composite: float = 0,
     ):

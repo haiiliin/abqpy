@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -37,7 +37,7 @@ class ExpContactControl(ContactControl):
     #: An Int specifying the maximum number of increments between global contact searches. The
     #: **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
     #: 100 for surface-to-surface contact and 4 for self-contact.
-    globTrkInc: Optional[int] = None
+    globTrkInc: int | None = None
 
     #: A Boolean specifying whether to use the more computationally efficient local tracking
     #: method. The default value is ON.
@@ -61,7 +61,7 @@ class ExpContactControl(ContactControl):
         self,
         name: str,
         globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,
-        globTrkInc: Optional[int] = None,
+        globTrkInc: int | None = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,
@@ -115,7 +115,7 @@ class ExpContactControl(ContactControl):
     def setValues(
         self,
         globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,
-        globTrkInc: Optional[int] = None,
+        globTrkInc: int | None = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,

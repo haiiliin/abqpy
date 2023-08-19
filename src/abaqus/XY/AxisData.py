@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -40,7 +40,7 @@ class AxisData:
 
     #: A SymbolicConstant specifying the direction of the axis. Possible values are ABSCISSA
     #: and ORDINATE.
-    direction: Optional[SymbolicConstant] = None
+    direction: SymbolicConstant
 
     #: A SymbolicConstant specifying how tick labels are formatted. Possible values are
     #: AUTOMATIC, DECIMAL, SCIENTIFIC, and ENGINEERING. The default value is AUTOMATIC.
@@ -55,32 +55,32 @@ class AxisData:
     maxAutoCompute: Boolean = ON
 
     #: A Float specifying the maximum value when **maxAutoCompute** is true.
-    maxAutoValue: Optional[float] = None
+    maxAutoValue: float | None = None
 
     #: A Float specifying the maximum value when **maxAutoCompute** is false. By default,
     #: **maxValue** is set to **maxAutoValue**.
-    maxValue: Optional[float] = None
+    maxValue: float | None = None
 
     #: A Float specifying the current maximum value displayed for this axis. This value is
     #: different from **maxAutoValue** or **maxValue** when the axis is being transformed (zoom or
     #: pan).
-    maxShownValue: Optional[float] = None
+    maxShownValue: float | None = None
 
     #: A Boolean specifying whether or not to use the automatically computed minimum value for
     #: the axis. The default value is ON.
     minAutoCompute: Boolean = ON
 
     #: A Float specifying the minimum value when **minAutoCompute** is true.
-    minAutoValue: Optional[float] = None
+    minAutoValue: float | None = None
 
     #: A Float specifying the minimum value when **minAutoCompute** is false. By default,
     #: **minValue** is set to **minAutoValue**.
-    minValue: Optional[float] = None
+    minValue: float | None = None
 
     #: A Float specifying the current minimum value displayed for this axis. This value is
     #: different from **minAutoValue** or **minValue** when the axis is being transformed (zoom or
     #: pan).
-    minShownValue: Optional[float] = None
+    minShownValue: float | None = None
 
     #: An Int specifying the number the number of minor tick marks between major ticks.
     #: Possible values are 0 ≤ **minorTickCount** ≤ 20. When the **scale** is set to LOG, the
@@ -106,22 +106,22 @@ class AxisData:
     #: =TOTAL_NUMBER. Possible values are 0 ≤ **tickCount** ≤ 30. The default value is computed
     #: based on the range of the axis. When the **scale** is set to LOG, the tickCount is
     #: interpreted as the number of ticks per decade and acceptable values are 1, 4, 8, and 17.
-    tickCount: Optional[int] = None
+    tickCount: int | None = None
 
     #: An Int specifying the number of major ticks effectively shown. This value takes zoom,
     #: pan and rounding into account.
-    tickCountShown: Optional[int] = None
+    tickCountShown: int | None = None
 
     #: A Float specifying the increment of the major tick marks on the axis when **tickMode** =
     #: INCREMENT. Valid values are 0 < **tickIncrement**. The default value is computed based on
     #: the results of the automatic method and the range being plotted. When the **scale** is set
     #: to LOG, the tickIncrement is interpreted as a value per decade and should be between
     #: 0.05 and 1.
-    tickIncrement: Optional[float] = None
+    tickIncrement: float | None = None
 
     #: A Float specifying the shown tick increment of the major ticks. This value takes
     #: zoom/pan into account.
-    tickIncrementShown: Optional[float] = None
+    tickIncrementShown: float | None = None
 
     #: A Boolean specifying whether the title to use for the axis title is system defined or
     #: user defined. The default value is ON.
@@ -136,7 +136,7 @@ class AxisData:
     quantityType: QuantityType = QuantityType()
 
     #: A tuple of Floats specifying the read-only major tick values shown.
-    tickValues: Optional[float] = None
+    tickValues: float | None = None
 
     #: A tuple of Strings specifying the read-only major tick labels shown.
     tickLabels: tuple = ()
@@ -152,18 +152,18 @@ class AxisData:
     @abaqus_method_doc
     def setValues(
         self,
-        axisData: Optional["AxisData"] = None,
+        axisData: "AxisData" | None = None,
         labelFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         labelNumDigits: int = 2,
         scale: Literal[C.LINEAR] = LINEAR,
         dbReference: float = 1,
         minAutoCompute: Boolean = ON,
-        minValue: Optional[float] = None,
+        minValue: float | None = None,
         maxAutoCompute: Boolean = ON,
-        maxValue: Optional[float] = None,
+        maxValue: float | None = None,
         tickMode: Literal[C.AUTOCOMPUTE] = AUTOCOMPUTE,
-        tickIncrement: Optional[float] = None,
-        tickCount: Optional[int] = None,
+        tickIncrement: float | None = None,
+        tickCount: int | None = None,
         minorTickCount: int = 1,
         title: str = "",
         useSystemTitle: Boolean = ON,
