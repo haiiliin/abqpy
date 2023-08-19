@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -27,4 +27,4 @@ class OdbPretensionSection:
     surface: OdbSet = OdbSet("set", ())
 
     #: A tuple of Floats specifying the components of the normal to the pretension section.
-    normal: Optional[float] = None
+    normal: float | None = None

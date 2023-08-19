@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -28,7 +28,7 @@ class BeadFixedRegion(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: Optional[int] = None
+    csys: int | None = None
 
     #: A Boolean specifying whether to fix the region in the 1-direction. The default value is
     #: OFF.
@@ -47,7 +47,7 @@ class BeadFixedRegion(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: Optional[int] = None,
+        csys: int | None = None,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
         u3: Boolean = OFF,
@@ -87,7 +87,7 @@ class BeadFixedRegion(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, csys: Optional[int] = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF):
+    def setValues(self, csys: int | None = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF):
         """This method modifies the BeadFixedRegion object.
 
         Parameters

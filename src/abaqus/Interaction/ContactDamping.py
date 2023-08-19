@@ -1,4 +1,6 @@
-from typing import Optional, Union
+from __future__ import annotations
+
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -60,7 +62,7 @@ class ContactDamping:
 
     #: A tuple of pairs of Floats specifying the damping properties. The items in the table
     #: data are described below.
-    table: Optional[float] = None
+    table: float | None = None
 
     @abaqus_method_doc
     def __init__(

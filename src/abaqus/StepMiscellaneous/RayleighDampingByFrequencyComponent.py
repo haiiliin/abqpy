@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -16,10 +16,10 @@ class RayleighDampingByFrequencyComponent:
     """
 
     #: A Float specifying the frequency value in cycles/time.
-    frequency: Optional[float] = None
+    frequency: float | None = None
 
     #: A Float specifying the mass proportional damping, αM.
-    alpha: Optional[float] = None
+    alpha: float | None = None
 
     #: A Float specifying the stiffness proportional damping, βM.
-    beta: Optional[float] = None
+    beta: float | None = None
