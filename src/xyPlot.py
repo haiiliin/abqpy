@@ -397,10 +397,10 @@ def XYDataFromShellThickness(
         ],
         ...,
     ],
-    elementSets: Union[str, Sequence[str]] = ...,
-    elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-    nodeSets: Union[str, Sequence[str]] = ...,
-    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+    elementSets: Union[str, Sequence[str]] = (),
+    elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+    nodeSets: Union[str, Sequence[str]] = (),
+    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
     numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
 ) -> List[XYData]:
@@ -515,10 +515,10 @@ def xyDataListFromField(
         ],
         ...,
     ],
-    elementSets: Union[Sequence[str], str] = ...,
-    elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-    nodeSets: Union[str, Sequence[str]] = ...,
-    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+    elementSets: Union[Sequence[str], str] = (),
+    elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
+    nodeSets: Union[str, Sequence[str]] = (),
+    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
     numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
     operator: Literal[
@@ -556,7 +556,8 @@ def xyDataListFromField(
         C.MAXIMUM_ENVELOPE,
         C.MINIMUM_ENVELOPE,
         C.RANGE_ALL,
-    ] = ...,
+    ]
+    | None = None,
 ) -> List[XYData]:
     """This method creates a list of XYData objects by reading field data from an Odb object.
 

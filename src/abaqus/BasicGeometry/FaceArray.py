@@ -187,12 +187,12 @@ class FaceArray(List[Face]):
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: float = ...,
-        yMin: float = ...,
-        zMin: float = ...,
-        xMax: float = ...,
-        yMax: float = ...,
-        zMax: float = ...,
+        xMin: float = 0,
+        yMin: float = 0,
+        zMin: float = 0,
+        xMax: float = 0,
+        yMax: float = 0,
+        zMax: float = 0,
     ) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding box.
 

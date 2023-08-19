@@ -621,7 +621,7 @@ class CompositeLayup:
         HomogeneousShellSection
             A HomogeneousShellSection object.
         """
-        self.section[name] = homogeneousShellSection = HomogeneousShellSection(
+        homogeneousShellSection = HomogeneousShellSection(
             name,
             material,
             thickness,

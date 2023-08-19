@@ -2240,11 +2240,11 @@ class Feature:
     @abaqus_method_doc
     def setValues(
         self,
-        parameter: float = ...,
-        parameter1: float = ...,
-        parameter2: float = ...,
+        parameter: float = 0,
+        parameter1: float = 0,
+        parameter2: float = 0,
         sketch: ConstrainedSketch = ...,
-        distance: float = ...,
+        distance: float = 0,
     ) -> None:
         """This method modifies the Feature object.
 

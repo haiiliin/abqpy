@@ -4,7 +4,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, TOTAL
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
 
@@ -41,19 +42,19 @@ class TabularAmplitude(Amplitude):
     #: Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
     #: degree of smoothing will be determined by the solver. The default value is
     #: SOLVER_DEFAULT.
-    smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT
+    smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.
-    timeSpan: Literal[STEP, TOTAL] = STEP
+    timeSpan: Literal[C.STEP, C.TOTAL] = STEP
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         data: Sequence[Sequence[float]],
-        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
-        timeSpan: Literal[STEP, TOTAL] = STEP,
+        smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method creates a TabularAmplitude object.
 
@@ -94,8 +95,8 @@ class TabularAmplitude(Amplitude):
     @abaqus_method_doc
     def setValues(
         self,
-        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
-        timeSpan: Literal[STEP, TOTAL] = STEP,
+        smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method modifies the TabularAmplitude object.
 

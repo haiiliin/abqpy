@@ -233,7 +233,7 @@ class MeshEditAssembly(AssemblyBase):
         numLayers: int,
         offsetDirection: str = OUTWARD,
         initialOffset: float = 0.0,
-        shareNodes: str = False,
+        shareNodes: Boolean = False,
         deleteBaseElements: Boolean = False,
         constantThicknessCorners: Boolean = False,
         extendElementSets: Boolean = False,

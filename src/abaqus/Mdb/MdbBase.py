@@ -108,7 +108,7 @@ class MdbBase:
         Mdb
             A Mdb object
         """
-        ...
+        return Mdb()
 
     @abaqus_method_doc
     def openMdb(self, pathName: str) -> Mdb:
@@ -146,7 +146,7 @@ class MdbBase:
             cannot open file;
             If the command fails to open the model database file for reasons not mentioned above
         """
-        ...
+        return Mdb(pathName)
 
     @abaqus_method_doc
     def close(self):
@@ -253,7 +253,7 @@ class MdbBase:
             The auxiliary Mdb was not opened;
             If the auxiliary Mdb was not opened earlier
         """
-        ...
+        return []
 
     @abaqus_method_doc
     def copyAuxMdbModel(self, fromName: str, toName: str = ""):

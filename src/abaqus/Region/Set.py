@@ -20,13 +20,8 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import (
-    DIFFERENCE,
-    INTERSECTION,
-    OVERWRITE,
-    UNION,
-    Boolean,
-)
+from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Region import Region
 
 
@@ -206,7 +201,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
+        self, name: str, sets: Sequence[Set], operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 

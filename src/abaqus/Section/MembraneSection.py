@@ -71,7 +71,7 @@ class MembraneSection(Section):
         material: str,
         thickness: float = 1,
         thicknessType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
-        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT, C.VALUE] = DEFAULT,
         poisson: float = 0,
         thicknessField: str = "",
     ):

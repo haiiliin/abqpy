@@ -144,6 +144,9 @@ class OdbFrame:
         """
         ...
 
+    def __init__(self, *args, **kwargs):
+        ...
+
     @abaqus_method_doc
     def Frame(self, *args, **kwargs):
         ...

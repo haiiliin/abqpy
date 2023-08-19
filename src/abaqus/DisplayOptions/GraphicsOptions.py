@@ -264,7 +264,7 @@ class GraphicsOptions:
     #: alternative.You can use a single value to set the first element of the list, or you can
     #: use a tuple with one to four unique values. Abaqus sets any remaining elements of the
     #: tuple to unique values based on the default order.
-    highlightMethodHint: SymbolicConstant = (HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, BLEND)
+    highlightMethodHint: tuple[SymbolicConstant, ...] = (HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, BLEND)
 
     #: A String specifying one of the two background colors for all viewport windows. The
     #: initial color is black. A list of valid color strings is in the **colors** map in the

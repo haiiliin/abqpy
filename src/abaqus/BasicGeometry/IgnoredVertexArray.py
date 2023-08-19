@@ -86,12 +86,12 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     @overload
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> IgnoredVertex:
-        ...
+        return IgnoredVertex()
 
     @overload
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> List[IgnoredVertex]:
-        ...
+        return [IgnoredVertex()]
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, List[IgnoredVertex]]:
@@ -109,10 +109,10 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         IgnoredVertex
             An IgnoredVertex object or a sequence of IgnoredVertex objects.
         """
-        ...
+        return IgnoredVertex() if isinstance(mask, str) else [IgnoredVertex()]
 
     @abaqus_method_doc
-    def getMask(self):
+    def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
         Returns
@@ -120,10 +120,10 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         str
             A String specifying the object or objects.
         """
-        ...
+        return ""
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict[int, Tuple[IgnoredVertex, tuple]]:
         """This method returns a object or objects in the IgnoredVertexArray closest to the given set of points,
         where the given points need not lie on the vertices in the IgnoredVertexArray.
 
@@ -158,4 +158,4 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return {0: (IgnoredVertex(), (0.0, 0.0, 0.0))}

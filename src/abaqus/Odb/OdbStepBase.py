@@ -260,7 +260,7 @@ class OdbStepBase:
 
     @abaqus_method_doc
     def getFrame(self, *args, **kwargs) -> OdbFrame:
-        ...
+        return OdbFrame(0, 0.0)
 
     def getHistoryRegion(self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")) -> HistoryRegion:
         """This method retrieves a HistoryRegion object associated with a HistoryPoint in the model.
@@ -282,7 +282,7 @@ class OdbStepBase:
         OdbError
             HistoryRegion not found, If a HistoryRegion object is not found.
         """
-        ...
+        return HistoryRegion("", "", point)
 
     @abaqus_method_doc
     def setDefaultDeformedField(self, field: FieldOutput) -> None:

@@ -1,4 +1,4 @@
-from typing import Optional, overload
+from typing import Optional, Sequence, overload
 
 from typing_extensions import Literal
 
@@ -10,6 +10,8 @@ from .FieldLocation import FieldLocation
 from .FieldLocationArray import FieldLocationArray
 from .FieldValueArray import FieldValueArray
 from .OdbInstance import OdbInstance
+from .OdbMeshElement import OdbMeshElement
+from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
 
@@ -75,6 +77,7 @@ class FieldOutput:
     #: parameter applies only to tensor field outputs. The default value is OFF.
     isEngineeringTensor: Boolean = OFF
 
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -128,6 +131,7 @@ class FieldOutput:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same output
@@ -356,7 +360,8 @@ class FieldOutput:
         ...
 
     @overload
-    def getSubset(self, position: Optional[SymbolicConstant] = None, readOnly: Boolean = OFF):
+    @abaqus_method_doc
+    def getSubset(self, position: SymbolicConstant, readOnly: Boolean = OFF) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -391,7 +396,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbSet) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -409,7 +414,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, localCoordSystem: tuple = ()):
+    def getSubset(self, localCoordSystem: Sequence[Sequence[float]]) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -427,7 +432,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, sectionPoint: Optional[SectionPoint] = None):
+    def getSubset(self, sectionPoint: SectionPoint) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -444,7 +449,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, location: FieldLocation = FieldLocation()):
+    def getSubset(self, location: FieldLocation) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -461,7 +466,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbMeshElement) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -478,7 +483,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbMeshNode) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -495,7 +500,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: "FieldOutput") -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -512,7 +517,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, elementType: str = ""):
+    def getSubset(self, elementType: str) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -529,8 +534,8 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def getSubset(self, *args, **kwargs):
-        ...
+    def getSubset(self, *args, **kwargs) -> "FieldOutput":
+        return FieldOutput("", "", C.SCALAR)
 
     @overload
     def getTransformedField(self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""):

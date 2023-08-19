@@ -65,7 +65,7 @@ class MeshFaceArray(List[MeshFace]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-        ...
+        return MeshFaceArray([])
 
     @abaqus_method_doc
     def getMask(self):

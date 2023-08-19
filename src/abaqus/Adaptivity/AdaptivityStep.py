@@ -318,7 +318,6 @@ class AdaptivityStep(StepBase):
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        super().__init__(amplitudeState, status, amplitude)
         self.adaptiveMeshConstraintStates[
             amplitude
         ] = adaptiveMeshConstraintState = VelocityAdaptiveMeshConstraintState(

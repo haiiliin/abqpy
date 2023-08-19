@@ -25,7 +25,7 @@ class HistoryOutputRequestState:
 
     #: The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
     #: increments. The default value is 1.
-    frequency: SymbolicConstant = 1
+    frequency: SymbolicConstant | int = 1
 
     #: A SymbolicConstant specifying the propagation state of the history output request
     #: frequency. Possible values are UNSET, SET, and UNCHANGED.

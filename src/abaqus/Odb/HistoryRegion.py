@@ -10,6 +10,7 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .HistoryOutput import HistoryOutput
 from .HistoryPoint import HistoryPoint
+from .OdbMeshNode import OdbMeshNode
 
 
 @abaqus_class_doc
@@ -134,7 +135,7 @@ class HistoryRegion:
 
     @abaqus_method_doc
     def getSubset(self, *args, **kwargs) -> HistoryRegion:
-        ...
+        return HistoryRegion("", "", HistoryPoint(OdbMeshNode()))
 
     def HistoryOutput(
         self,

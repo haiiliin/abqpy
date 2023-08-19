@@ -186,7 +186,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: Sequence[Cell]):
@@ -528,7 +528,7 @@ class MeshPart(PartBase):
 
             A value of NONE indicates that the edge is not seeded.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getElementType(
@@ -571,7 +571,7 @@ class MeshPart(PartBase):
             The region cannot be associated with element types or the **elemShape** is not
             consistent with the dimension of the **region**.
         """
-        ...
+        return ElemType(C.C3D8R)
 
     @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()) -> Sequence[Face]:
@@ -587,7 +587,7 @@ class MeshPart(PartBase):
         Sequence[Face]
             A sequence of Face objects.
         """
-        ...
+        return (Face(),)
 
     @abaqus_method_doc
     def getMeshControl(
@@ -655,7 +655,7 @@ class MeshPart(PartBase):
         TypeError
             The region cannot carry mesh controls.
         """
-        ...
+        return False
 
     @abaqus_method_doc
     def getMeshStats(self, regions: Sequence[ConstrainedSketchGeometry]) -> MeshStats:
@@ -671,7 +671,7 @@ class MeshPart(PartBase):
         MeshStats
             A MeshStats object.
         """
-        ...
+        return MeshStats()
 
     @abaqus_method_doc
     def getPartSeeds(
@@ -719,7 +719,7 @@ class MeshPart(PartBase):
         Error
             Part does not contain native geometry, An exception occurs if the part does not contain native geometry.
         """
-        ...
+        return 0.0
 
     @abaqus_method_doc
     def getUnmeshedRegions(self) -> Union[Region, None]:
@@ -731,7 +731,7 @@ class MeshPart(PartBase):
         Region
             A Region object, or None.
         """
-        ...
+        return Region()
 
     @abaqus_method_doc
     def ignoreEntity(self, entities: tuple) -> Feature:
@@ -749,7 +749,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]) -> Feature:
@@ -766,7 +766,7 @@ class MeshPart(PartBase):
         feature: Feature
             A Feature object
         """
-        ...
+        return Feature()
 
     @abaqus_method_doc
     def seedEdgeByBias(
@@ -776,10 +776,10 @@ class MeshPart(PartBase):
         end2Edges: Sequence[Edge] = ...,
         centerEdges: Sequence[Edge] = ...,
         endEdges: Sequence[Edge] = ...,
-        ratio: float = ...,
+        ratio: float = 0,
         number: int = ...,
-        minSize: float = ...,
-        maxSize: float = ...,
+        minSize: float = 0,
+        maxSize: float = 0,
         constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges nonuniformly using the specified number of elements and bias ratio

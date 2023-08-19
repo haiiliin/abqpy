@@ -237,7 +237,7 @@ class InteractionModel(
               surface.
             - A boolean specifying whether or not contact surfaces are overclosed.
         """
-        ...
+        return (("main", "secondary", 0.0, False),)
 
     @abaqus_method_doc
     def AcousticImpedance(

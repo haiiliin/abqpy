@@ -12,7 +12,6 @@ from ..UtilityAndView.abaqusConstants import (
     EXCLUDE,
     INTEGRATION_POINTS,
     MODEL,
-    NODES,
     OFF,
     ON,
     PRESELECT,
@@ -251,7 +250,7 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, NODES] = INTEGRATION_POINTS,
+        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES] = INTEGRATION_POINTS,
     ) -> None:
         """This method modifies the data for an existing FieldOutputRequest object in the step where it is
         created.

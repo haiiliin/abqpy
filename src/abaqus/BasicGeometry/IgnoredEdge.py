@@ -26,7 +26,7 @@ class IgnoredEdge:
     pointOn: Optional[float] = None
 
     @abaqus_method_doc
-    def getSize(self, printResults: str = True):
+    def getSize(self, printResults: bool = True):
         """This method returns a Float indicating the length of the edge.
 
         Parameters

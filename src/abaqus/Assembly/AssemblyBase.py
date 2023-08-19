@@ -33,6 +33,7 @@ from ..UtilityAndView.abaqusConstants import (
     OFF,
     ON,
     SUPPRESS,
+    THREE_D,
     Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
@@ -276,7 +277,7 @@ class AssemblyBase(AssemblyFeature):
         PartInstance
             A PartInstance object.
         """
-        return PartInstance(name, Part())
+        return PartInstance(name, Part("", THREE_D))
 
     @abaqus_method_doc
     def InstanceFromBooleanMerge(
@@ -334,7 +335,7 @@ class AssemblyBase(AssemblyFeature):
         PartInstance
             A PartInstance object.
         """
-        return PartInstance(name, Part())
+        return PartInstance(name, Part("", THREE_D))
 
     @abaqus_method_doc
     def LinearInstancePattern(
@@ -383,7 +384,7 @@ class AssemblyBase(AssemblyFeature):
         Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
-        return [PartInstance(name, Part()) for name in instanceList]
+        return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
     @abaqus_method_doc
     def RadialInstancePattern(
@@ -427,7 +428,7 @@ class AssemblyBase(AssemblyFeature):
         Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
-        return [PartInstance(name, Part()) for name in instanceList]
+        return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
     @abaqus_method_doc
     def backup(self):

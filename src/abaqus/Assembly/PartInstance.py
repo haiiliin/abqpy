@@ -1,7 +1,5 @@
 from typing import Dict, List, Optional, Sequence, Tuple
 
-from typing_extensions import Literal
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.CellArray import CellArray
@@ -23,15 +21,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import (
-    BOUNDARY_ONLY,
-    GEOMETRY,
-    OFF,
-    SUPPRESS,
-    Boolean,
-    SymbolicConstant,
-)
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -95,13 +85,13 @@ class PartInstance:
     vertices: VertexArray = VertexArray([])
 
     #: An IgnoredVertexArray object.
-    ignoredVertices: IgnoredVertexArray = []
+    ignoredVertices: IgnoredVertexArray = IgnoredVertexArray([])
 
     #: An EdgeArray object.
     edges: EdgeArray = EdgeArray([])
 
     #: An IgnoredEdgeArray object.
-    ignoredEdges: IgnoredEdgeArray = []
+    ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray([])
 
     #: A FaceArray object.
     faces: FaceArray = FaceArray([])
@@ -285,7 +275,7 @@ class PartInstance:
         Tuple[float, float, float]
             A tuple of three Floats representing the translation.
         """
-        ...
+        return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
     def replace(self, instanceOf: Part, applyConstraints: Boolean = True):

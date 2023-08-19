@@ -1,8 +1,9 @@
-from typing import Sequence
+from typing import Sequence, Tuple
 
 from abqpy.decorators import abaqus_function_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
@@ -51,7 +52,7 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 
 
 @abaqus_function_doc
-def maxEnvelope() -> Sequence[FieldOutput]:
+def maxEnvelope() -> Sequence[Tuple[FieldOutput, FieldOutput]]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Returns
@@ -68,16 +69,16 @@ def maxEnvelope() -> Sequence[FieldOutput]:
     TypeError
         This function takes no keyword arguments.
     """
-    ...
+    return ((FieldOutput("", "", C.SCALAR), FieldOutput("", "", C.SCALAR)),)
 
 
 @abaqus_function_doc
-def minEnvelope() -> Sequence[FieldOutput]:
+def minEnvelope() -> Sequence[Tuple[FieldOutput, FieldOutput]]:
     """Retrieve the minimum value of an output variable over a number of fields.
 
     Returns
     -------
-    Sequence[FieldOutput]
+    Sequence[tuple[FieldOutput, FieldOutput]]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum
         value. The second fieldOutput object contains the index of the field containing the
         minimum value. The index follows the order in which fields are positioned in the list of
@@ -89,7 +90,7 @@ def minEnvelope() -> Sequence[FieldOutput]:
     TypeError
         This function takes no keyword arguments.
     """
-    ...
+    return ((FieldOutput("", "", C.SCALAR), FieldOutput("", "", C.SCALAR)),)
 
 
 @abaqus_function_doc

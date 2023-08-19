@@ -237,7 +237,7 @@ class OdbDatumCsys:
         Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
-        ...
+        return (0.0, 0.0, 0.0)
 
     @abaqus_method_doc
     def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
@@ -257,4 +257,4 @@ class OdbDatumCsys:
         Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
-        ...
+        return (0.0, 0.0, 0.0)

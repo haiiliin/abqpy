@@ -160,6 +160,7 @@ class RegionAssembly(RegionAssemblyBase):
             A Surface object.
         """
         surface = Surface(
+            name,
             side1Faces,
             side2Faces,
             side12Faces,
@@ -180,7 +181,6 @@ class RegionAssembly(RegionAssemblyBase):
             end1Elements,
             end2Elements,
             circumElements,
-            name,
         )
         self.surfaces[name] = surface
         self.allSurfaces[name] = surface
