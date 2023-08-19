@@ -1,4 +1,6 @@
-from typing import Dict, List, Optional, Sequence, overload
+from __future__ import annotations
+
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -75,10 +77,10 @@ class PartBase(PartFeature):
 
     #: An Int specifying that feature parameters have been modified but that the part has not
     #: been regenerated. Possible values are 0 and 1.
-    isOutOfDate: Optional[int] = None
+    isOutOfDate: int | None = None
 
     #: A Float specifying when the part was last modified.
-    timeStamp: Optional[float] = None
+    timeStamp: float | None = None
 
     #: A VertexArray object specifying all the vertices in the part.
     vertices: VertexArray = VertexArray([])
@@ -99,17 +101,17 @@ class PartBase(PartFeature):
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
-    features: Dict[str, PartFeature] = {}
+    features: dict[str, PartFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the part. The Feature
     #: objects in the featuresById repository are the same as the Feature objects in the
     #: features' repository. However, the key to the objects in the featuresById repository is
     #: an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: Dict[str, PartFeature] = {}
+    featuresById: dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: List[Datum] = []
+    datums: list[Datum] = []
 
     #: A MeshElementArray object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
@@ -118,7 +120,7 @@ class PartBase(PartFeature):
     #: given element and a given face index within that element, the corresponding MeshFace
     #: object can be retrieved from the repository by using the key calculated as (i*8 + j),
     #: where i and j are zero-based element and face indices, respectively.
-    elemFaces: Dict[str, MeshFace] = {}
+    elemFaces: dict[str, MeshFace] = {}
 
     #: A MeshFaceArray object specifying all the unique element faces in the part.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -130,30 +132,30 @@ class PartBase(PartFeature):
     retainedNodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Set objects specifying for more information, see Set.
-    sets: Dict[str, Set] = {}
+    sets: dict[str, Set] = {}
 
     #: A repository of Set objects specifying the contents of the **allSets** repository is the
     #: same as the contents of the **sets** repository.
-    allSets: Dict[str, Set] = {}
+    allSets: dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: Dict[str, Set] = {}
+    allInternalSets: dict[str, Set] = {}
 
     #: A repository of Surface objects specifying for more information, see Surface.
-    surfaces: Dict[str, Surface] = {}
+    surfaces: dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying the contents of the **allSurfaces** repository
     #: is the same as the contents of the **surfaces** repository.
-    allSurfaces: Dict[str, Surface] = {}
+    allSurfaces: dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: Dict[str, Surface] = {}
+    allInternalSurfaces: dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part.
-    skins: Dict[str, Skin] = {}
+    skins: dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part.
-    stringers: Dict[str, Stringer] = {}
+    stringers: dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
     referencePoints: ReferencePoints = ReferencePoints()
@@ -168,14 +170,14 @@ class PartBase(PartFeature):
     materialOrientations: MaterialOrientationArray = []
 
     #: A repository of CompositeLayup objects.
-    compositeLayups: Dict[str, CompositeLayup] = {}
+    compositeLayups: dict[str, CompositeLayup] = {}
 
     #: A repository of MeshEdge objects specifying all the element edges in the part. For a
     #: given element and a given edge index on a given face within that element, the
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: Dict[str, MeshEdge] = {}
+    elemEdges: dict[str, MeshEdge] = {}
 
     #: A MeshEdgeArray object specifying all the unique element edges in the part.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
@@ -304,7 +306,7 @@ class PartBase(PartFeature):
         instances: Sequence[PartInstance],
         keepIntersections: Boolean = False,
         mergeNodes: Literal[C.ALL, C.BOUNDARY_ONLY, C.NONE] = BOUNDARY_ONLY,
-        nodeMergingTolerance: Optional[float] = None,
+        nodeMergingTolerance: float | None = None,
         removeDuplicateElements: Boolean = ON,
         domain: Literal[C.MESH, C.BOTH, C.GEOMETRY] = GEOMETRY,
     ):
@@ -653,8 +655,8 @@ class PartBase(PartFeature):
         instance: str = "",
         elementSet: str = "",
         shape: Literal[C.DEFORMED, C.UNDEFORMED] = UNDEFORMED,
-        step: Optional[int] = None,
-        frame: Optional[int] = None,
+        step: int | None = None,
+        frame: int | None = None,
         twist: Boolean = OFF,
     ):
         """This method creates an orphan mesh Part object by reading an output database. The new part is placed
@@ -901,7 +903,7 @@ class PartBase(PartFeature):
     def assignThickness(
         self,
         faces: Sequence[Face],
-        thickness: Optional[float] = None,
+        thickness: float | None = None,
         topFaces: Sequence[Face] = (),
         bottomFaces: Sequence[Face] = (),
     ):
@@ -945,7 +947,7 @@ class PartBase(PartFeature):
         self,
         detailed: Boolean = OFF,
         reportFacetErrors: Boolean = OFF,
-        level: Optional[int] = None,
+        level: int | None = None,
     ):
         """This method checks the validity of the geometry of the part and prints a count of all topological
         entities on the part (faces, edges, vertices, etc.).
@@ -1472,7 +1474,7 @@ class PartBase(PartFeature):
         self,
         sketch: ConstrainedSketch,
         filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
-        upToFeature: Optional[PartFeature] = None,
+        upToFeature: PartFeature | None = None,
         edges: Sequence[Edge] = (),
         vertices: Sequence[Vertex] = (),
     ):
@@ -1674,7 +1676,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
+    def writeAcisFile(self, fileName: str, version: float | None = None):
         """This method exports the geometry of the part to a named file in ACIS format.
 
         Parameters

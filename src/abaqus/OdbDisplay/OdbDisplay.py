@@ -1,4 +1,6 @@
-from typing import Dict, Optional, Sequence, Union, overload
+from __future__ import annotations
+
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -95,13 +97,13 @@ class OdbDisplay:
     modelVariableList: OdbModelFieldVarList = OdbModelFieldVarList()
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    nodeSet: Dict[str, OdbSet] = {}
+    nodeSet: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    elementSet: Dict[str, OdbSet] = {}
+    elementSet: dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    surfaceSet: Dict[str, OdbSet] = {}
+    surfaceSet: dict[str, OdbSet] = {}
 
     #: A DisplayOptions object.
     display: DisplayOptions = DisplayOptions()
@@ -131,7 +133,7 @@ class OdbDisplay:
     viewCutOptions: ViewCutOptions = ViewCutOptions()
 
     #: A repository of ViewCut objects.
-    viewCuts: Dict[str, ViewCut] = {}
+    viewCuts: dict[str, ViewCut] = {}
 
     #: A DisplayGroup object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
@@ -231,29 +233,29 @@ class OdbDisplay:
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    statusVariable: Optional[SymbolicConstant] = None
+    statusVariable: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    symbolVariable: Optional[SymbolicConstant] = None
+    symbolVariable: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed in undeformed states based on an active status variable
-    applyStatusToUndeformed: Optional[SymbolicConstant] = None
+    applyStatusToUndeformed: SymbolicConstant
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
     #: be inside a specified minimum and maximum. The range will be outside when false.
-    statusInsideRange: Optional[SymbolicConstant] = None
+    statusInsideRange: SymbolicConstant
 
     #: A tuple of Floats specifying a Float value for the minimum status range value.
-    statusMinimum: Optional[float] = None
+    statusMinimum: float | None = None
 
     #: A tuple of Floats specifying a Float value for the maximum status range value.
-    statusMaximum: Optional[float] = None
+    statusMaximum: float | None = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed based on the status variable
-    useStatus: Optional[SymbolicConstant] = None
+    useStatus: SymbolicConstant
 
     #: A pair of Ints specifying the step index and the frame index of the first available
     #: frame. This sequence is read-only.
@@ -359,8 +361,8 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
-        sectionPoint: Optional[dict] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
+        sectionPoint: dict | None = None,
     ):
         """This method specifies the field output variable for which to obtain results.
 
@@ -441,10 +443,10 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
-        sectionPoint: Optional[dict] = None,
-        statusMinimum: Optional[float] = None,
-        statusMaximum: Optional[float] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
+        sectionPoint: dict | None = None,
+        statusMinimum: float | None = None,
+        statusMaximum: float | None = None,
         statusInsideRange: Boolean = OFF,
         useStatus: Boolean = OFF,
         applyStatusToUndeformed: Boolean = False,
@@ -516,10 +518,10 @@ class OdbDisplay:
             C.WHOLE_PART_INSTANCE,
             C.WHOLE_REGION,
         ],
-        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
-        sectionPoint: Optional[dict] = None,
-        tensorQuantity: Optional[SymbolicConstant] = None,
-        vectorQuantity: Optional[SymbolicConstant] = None,
+        refinement: Literal[C.COMPONENT, C.INVARIANT] | None = None,
+        sectionPoint: dict | None = None,
+        tensorQuantity: SymbolicConstant | None = None,
+        vectorQuantity: SymbolicConstant | None = None,
     ):
         """This method specifies the field output variable for which to obtain results used for symbol plots.
         This variable must be in the form of vector or tensor data. The output quantity can also be specified

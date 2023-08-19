@@ -1,4 +1,4 @@
-from typing import Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -31,23 +31,22 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def AdaptiveMeshConstraintState(
         self,
-        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-        ] = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
@@ -98,35 +97,34 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def DisplacementAdaptiveMeshConstraintState(
         self,
-        u1: Optional[float] = None,
-        u2: Optional[float] = None,
-        u3: Optional[float] = None,
-        ur1: Optional[float] = None,
-        ur2: Optional[float] = None,
-        ur3: Optional[float] = None,
-        u1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        u2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        u3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        ur3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-        ] = None,
+        u1: float | None = None,
+        u2: float | None = None,
+        u3: float | None = None,
+        ur1: float | None = None,
+        ur2: float | None = None,
+        ur3: float | None = None,
+        u1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        u2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        u3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        ur3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
         """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
@@ -220,35 +218,34 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def VelocityAdaptiveMeshConstraintState(
         self,
-        v1: Optional[float] = None,
-        v2: Optional[float] = None,
-        v3: Optional[float] = None,
-        vr1: Optional[float] = None,
-        vr2: Optional[float] = None,
-        vr3: Optional[float] = None,
-        v1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        v2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        v3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        vr1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        vr2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        vr3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-        ] = None,
+        v1: float | None = None,
+        v2: float | None = None,
+        v3: float | None = None,
+        vr1: float | None = None,
+        vr2: float | None = None,
+        vr3: float | None = None,
+        v1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        v2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        v3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        vr1State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        vr2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        vr3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
@@ -318,7 +315,6 @@ class AdaptivityStep(StepBase):
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        super().__init__(amplitudeState, status, amplitude)
         self.adaptiveMeshConstraintStates[
             amplitude
         ] = adaptiveMeshConstraintState = VelocityAdaptiveMeshConstraintState(

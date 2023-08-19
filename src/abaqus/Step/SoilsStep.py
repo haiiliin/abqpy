@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from __future__ import annotations
 
 from typing_extensions import Literal
 
@@ -76,7 +76,7 @@ class SoilsStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
     #: value is 2x10⁻⁴.
-    stabilizationMagnitude: Optional[float] = None
+    stabilizationMagnitude: float | None = None
 
     #: A Boolean specifying whether a creep response occurs during this step. The default value
     #: is ON.
@@ -88,15 +88,15 @@ class SoilsStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: Optional[float] = None
+    initialInc: float | None = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: Optional[float] = None
+    minInc: float | None = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: Optional[float] = None
+    maxInc: float | None = None
 
     #: An Int specifying the maximum number of increments in a step. The default value is 100.
     maxNumInc: int = 100
@@ -107,7 +107,7 @@ class SoilsStep(AnalysisStep):
 
     #: None or a Float specifying the maximum pore pressure change permitted in any increment
     #: (in pressure units) in a transient consolidation analysis. The default value is None.
-    utol: Optional[float] = None
+    utol: float | None = None
 
     #: A Float specifying the maximum allowable difference in the creep strain increment
     #: calculated from the creep strain rates at the beginning and end of the increment. The
@@ -163,7 +163,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: Optional[SymbolicConstant] = None
+    explicit: SymbolicConstant
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -199,31 +199,31 @@ class SoilsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: Optional[SymbolicConstant] = None
+    procedureType: SymbolicConstant
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: dict[str, HistoryOutputRequestState] = {}
 
     #: A DiagnosticPrint object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A Monitor object.
-    monitor: Optional[Monitor] = None
+    monitor: Monitor | None = None
 
     #: A Restart object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: dict[str, AdaptiveMeshDomain] = {}
 
     #: A Control object.
     control: Control = Control()
@@ -232,19 +232,19 @@ class SoilsStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: Optional[int] = None
+    interactionStates: int | None = None
 
     #: A repository of LoadState objects.
-    loadStates: Dict[str, LoadState] = {}
+    loadStates: dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: Dict[str, LoadCase] = {}
+    loadCases: dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -256,15 +256,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
-        stabilizationMagnitude: Optional[float] = None,
+        stabilizationMagnitude: float | None = None,
         creep: Boolean = ON,
         timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         maxNumInc: int = 100,
         end: Literal[C.SS, C.PERIOD] = PERIOD,
-        utol: Optional[float] = None,
+        utol: float | None = None,
         cetol: float = 0,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR,
@@ -389,15 +389,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
-        stabilizationMagnitude: Optional[float] = None,
+        stabilizationMagnitude: float | None = None,
         creep: Boolean = ON,
         timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
-        initialInc: Optional[float] = None,
-        minInc: Optional[float] = None,
-        maxInc: Optional[float] = None,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
         maxNumInc: int = 100,
         end: Literal[C.SS, C.PERIOD] = PERIOD,
-        utol: Optional[float] = None,
+        utol: float | None = None,
         cetol: float = 0,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR,

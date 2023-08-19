@@ -1,4 +1,6 @@
-from typing import Optional, overload
+from __future__ import annotations
+
+from typing import Sequence, overload
 
 from typing_extensions import Literal
 
@@ -10,6 +12,8 @@ from .FieldLocation import FieldLocation
 from .FieldLocationArray import FieldLocationArray
 from .FieldValueArray import FieldValueArray
 from .OdbInstance import OdbInstance
+from .OdbMeshElement import OdbMeshElement
+from .OdbMeshNode import OdbMeshNode
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
 
@@ -27,10 +31,10 @@ class FieldOutput:
 
     #: An Int specifying the dimension of vector or the first dimension (number of rows) of
     #: matrix.
-    dim: Optional[int] = None
+    dim: int | None = None
 
     #: An Int specifying the second dimension (number of columns) of matrix.
-    dim2: Optional[int] = None
+    dim2: int | None = None
 
     #: A Boolean specifying whether the data are complex.
     isComplex: Boolean = OFF
@@ -41,7 +45,7 @@ class FieldOutput:
     #: A FieldValueArray object specifying the order of the objects in the array is determined
     #: by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
     #: description of the order.
-    values: Optional[FieldValueArray] = None
+    values: FieldValueArray | None = None
 
     #: A String specifying the output variable name.
     name: str
@@ -67,7 +71,7 @@ class FieldOutput:
     #: Possible values
     #: are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
     #: default value is an empty sequence.
-    validInvariants: Optional[SymbolicConstant] = None
+    validInvariants: SymbolicConstant
 
     #: A Boolean specifying whether the field is an engineering tensor or not. Setting
     #: isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
@@ -75,6 +79,7 @@ class FieldOutput:
     #: parameter applies only to tensor field outputs. The default value is OFF.
     isEngineeringTensor: Boolean = OFF
 
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -82,7 +87,7 @@ class FieldOutput:
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: Optional[SymbolicConstant] = None,
+        validInvariants: SymbolicConstant | None = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.
@@ -128,6 +133,7 @@ class FieldOutput:
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def __init__(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same output
@@ -166,7 +172,7 @@ class FieldOutput:
         instance: OdbInstance,
         labels: tuple,
         data: tuple,
-        sectionPoint: Optional[SectionPoint] = None,
+        sectionPoint: SectionPoint | None = None,
         localCoordSystem: tuple = (),
     ):
         """This method adds data to a FieldOutput object.
@@ -253,8 +259,8 @@ class FieldOutput:
         position: SymbolicConstant,
         set: OdbSet,
         data: tuple,
-        sectionPoint: Optional[SectionPoint] = None,
-        conjugateData: Optional[float] = None,
+        sectionPoint: SectionPoint | None = None,
+        conjugateData: float | None = None,
     ):
         """This method adds data to a FieldOutput object.
 
@@ -356,7 +362,8 @@ class FieldOutput:
         ...
 
     @overload
-    def getSubset(self, position: Optional[SymbolicConstant] = None, readOnly: Boolean = OFF):
+    @abaqus_method_doc
+    def getSubset(self, position: SymbolicConstant, readOnly: Boolean = OFF) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -391,7 +398,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbSet) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -409,7 +416,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, localCoordSystem: tuple = ()):
+    def getSubset(self, localCoordSystem: Sequence[Sequence[float]]) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -427,7 +434,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, sectionPoint: Optional[SectionPoint] = None):
+    def getSubset(self, sectionPoint: SectionPoint) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -444,7 +451,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, location: FieldLocation = FieldLocation()):
+    def getSubset(self, location: FieldLocation) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -461,7 +468,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbMeshElement) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -478,7 +485,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: OdbMeshNode) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -495,7 +502,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, region: str = ""):
+    def getSubset(self, region: "FieldOutput") -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -512,7 +519,7 @@ class FieldOutput:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, elementType: str = ""):
+    def getSubset(self, elementType: str) -> "FieldOutput":
         """A FieldOutput object with a subset of the field values.
 
         Parameters
@@ -529,11 +536,11 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def getSubset(self, *args, **kwargs):
-        ...
+    def getSubset(self, *args, **kwargs) -> "FieldOutput":
+        return FieldOutput("", "", C.SCALAR)
 
     @overload
-    def getTransformedField(self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""):
+    def getTransformedField(self, datumCsys: str, projected22Axis: int | None = None, projectionTol: str = ""):
         """This method generates a new vector or tensor field containing the transformed component values of the
         parent field. The new field will hold values for the same nodes or elements as the parent field. Results
         will be transformed based on the orientations specified by the input DatumCsys object. Abaqus will
@@ -573,8 +580,8 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: Optional["FieldOutput"] = None,
-        projected22Axis: Optional[int] = None,
+        deformationField: "FieldOutput" | None = None,
+        projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component values of the
@@ -619,9 +626,9 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: Optional["FieldOutput"] = None,
-        rotationField: Optional["FieldOutput"] = None,
-        projected22Axis: Optional[int] = None,
+        deformationField: "FieldOutput" | None = None,
+        rotationField: "FieldOutput" | None = None,
+        projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component values of the
@@ -669,7 +676,7 @@ class FieldOutput:
     def getTransformedField(self, *args, **kwargs):
         ...
 
-    def getConnectorFieldXformedToNodeA(self, deformationField: Optional["FieldOutput"] = None):
+    def getConnectorFieldXformedToNodeA(self, deformationField: "FieldOutput" | None = None):
         """This method generates a new vector field containing the transformed component values of the parent
         connector field to the node A coordinate system. The new field will hold values for the same connector
         elements as the parent field. Some connection types such as Axial, Link, Slip Ring, and Radial Thrust
