@@ -307,20 +307,4 @@ class Face:
         Boolean
             A Boolean value of True if the normal is flipped and False if not.
         """
-<<<<<<< HEAD
-        ...
-=======
         return True
-
-    @abaqus_method_doc
-    def getCADAttributes(self) -> list[str]:
-        """This method returns an array of CAD attribute strings associated with the Face when the part was
-        created from CAD data.
-
-        Returns
-        -------
-        list[str]
-            An array of String.
-        """
-        return [""]
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

@@ -1,15 +1,7 @@
 from __future__ import annotations
 
-<<<<<<< HEAD
-from typing import Dict, List, Sequence, Tuple, Union
+from typing import List, Sequence, Union
 
-=======
-from typing import TYPE_CHECKING, List, Sequence, Union
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
-
-from abaqus.BasicGeometry.Edge import Edge
-from abaqus.BasicGeometry.Face import Face
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .MeshElement import MeshElement
@@ -224,38 +216,4 @@ class MeshElementArray(List[MeshElement]):
         Error
             The mask results in an empty sequence, An exception occurs if the resulting sequence is empty.
         """
-<<<<<<< HEAD
-        ...
-=======
         return MeshElementArray([MeshElement()])
-
-    @abaqus_method_doc
-    def getExteriorEdges(self) -> EdgeArray:
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it returns the
-        edges that are referenced by exactly one of the faces in the sequence.
-
-        .. versionadded:: 2018
-            The ``getExteriorEdges`` method was added.
-
-        Returns
-        -------
-        EdgeArray
-            An EdgeArray object specifying the exterior edges.
-        """
-        return EdgeArray([Edge()])
-
-    @abaqus_method_doc
-    def getExteriorFaces(self) -> FaceArray:
-        """This method returns the cell faces on the exterior of the CellArray. That is, it returns the faces
-        that are referenced by exactly one of the cells in the sequence.
-
-        .. versionadded:: 2018
-            The ``getExteriorFaces`` method was added.
-
-        Returns
-        -------
-        FaceArray
-            A FaceArray object representing the faces on the exterior of the cells.
-        """
-        return FaceArray([Face()])
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

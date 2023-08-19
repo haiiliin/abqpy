@@ -286,12 +286,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-<<<<<<< HEAD
-        userDefinedInc: Optional[float] = None,
-=======
         userDefinedInc: float | None = None,
-        improvedDtMethod: Boolean = ON,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method modifies the ExplicitDynamicsStep object.
 

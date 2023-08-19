@@ -45,14 +45,7 @@ class DrillControl(GeometricRestriction):
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-<<<<<<< HEAD
-    masterPoint: Optional[str] = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute ``masterPoint`` was renamed to ``mainPoint``.
-    mainPoint: str | None = None
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
+    masterPoint: str | None = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -85,13 +78,8 @@ class DrillControl(GeometricRestriction):
         region: Region,
         csys: int | None = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
-        masterPoint: Optional[str] = None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        mainPoint: str | None = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -156,13 +144,8 @@ class DrillControl(GeometricRestriction):
         self,
         csys: int | None = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
-        masterPoint: Optional[str] = None,
+        masterPoint: str | None = None,
         masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
-=======
-        mainPoint: str | None = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

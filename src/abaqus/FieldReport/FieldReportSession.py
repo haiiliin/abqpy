@@ -48,17 +48,9 @@ class FieldReportSession(SessionBase):
             C.GENERAL_PARTICLE,
             C.WHOLE_PART_INSTANCE,
         ],
-<<<<<<< HEAD
-        numericForm: Optional[
-            Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
-        ] = None,
-        complexAngle: Optional[float] = None,
-=======
         numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
         | None = None,
         complexAngle: float | None = None,
-        stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 

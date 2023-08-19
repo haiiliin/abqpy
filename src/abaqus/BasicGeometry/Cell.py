@@ -128,18 +128,3 @@ class Cell:
             A MeshElementArray object which is a sequence of MeshElement objects.
         """
         ...
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the cell when the part was
-        created from CAD data.
-
-        Returns
-        -------
-        list[str]
-            An array of String.
-        """
-        ...
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

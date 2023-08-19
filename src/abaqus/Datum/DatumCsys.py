@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-from typing import Optional
-
-=======
 from __future__ import annotations
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -51,46 +45,3 @@ class DatumCsys(Datum):
 
     #: A DatumAxis object specifying the 3-direction of the coordinate system.
     axis3: DatumAxis = DatumAxis()
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def globalToLocal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
-        """This method transforms specified coordinates in the global coordinate system into this local
-        coordinate system.
-
-        .. versionadded:: 2022
-            The ``globalToLocal`` method was added.
-
-        Parameters
-        ----------
-        coordinates
-            A tuple of three Floats representing the coordinates in the global coordinate system.
-
-        Returns
-        -------
-        tuple[float, float, float]
-            A tuple of three Floats representing the coordinates in this local coordinate system.
-        """
-        return (0.0, 0.0, 0.0)
-
-    @abaqus_method_doc
-    def localToGlobal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
-        """This method transforms specified coordinates in this local coordinate system into the global
-        coordinate system.
-
-        .. versionadded:: 2022
-            The ``localToGlobal`` method was added.
-
-        Parameters
-        ----------
-        coordinates
-            A tuple of three Floats representing the coordinates in the local coordinate system.
-
-        Returns
-        -------
-        tuple[float, float, float]
-            A tuple of three Floats representing the coordinates in this global coordinate system.
-        """
-        return (0.0, 0.0, 0.0)
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))

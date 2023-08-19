@@ -227,27 +227,6 @@ class ModelBase:
     #: A repository of OptimizationTask objects.
     optimizationTasks: dict[str, OptimizationTask] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of TableCollection objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``tableCollections`` attribute was added.
-    tableCollections: dict[str, TableCollection] = {}
-
-    #: A repository of EventSeriesType objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``eventSeriesTypes`` attribute was added.
-    eventSeriesTypes: dict[str, EventSeriesType] = {}
-
-    #: A repository of EventSeriesData objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The ``eventSeriesDatas`` attribute was added.
-    eventSeriesDatas: dict[str, EventSeriesData] = {}
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
     @abaqus_method_doc
     def __init__(
         self,

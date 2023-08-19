@@ -226,12 +226,7 @@ class ContourOptions(DGContourOptions):
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",
-<<<<<<< HEAD
-        outsideLimitsMode: Optional[Literal[C.SPECIFY, C.SPECTRUM]] = None,
-=======
-        reversedContourLegendRange: Boolean = OFF,
         outsideLimitsMode: Literal[C.SPECIFY, C.SPECTRUM] | None = None,
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         outsideLimitsAboveColor: str = "",
         outsideLimitsBelowColor: str = "",
         intervalLineAttributes: Literal[C.LINE] | None = None,

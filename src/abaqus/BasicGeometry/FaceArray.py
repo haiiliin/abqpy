@@ -5,13 +5,6 @@ from typing import List, Sequence, Union, overload
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
-
-<<<<<<< HEAD
-=======
-from .Edge import Edge
-from .EdgeArray import EdgeArray
-
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
 from .Face import Face
 
 
@@ -140,33 +133,7 @@ class FaceArray(List[Face]):
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
-<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
-=======
-    def getExteriorEdges(self) -> EdgeArray:
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it returns the
-        edges that are referenced by exactly one of the faces in the sequence.
-
-        Returns
-        -------
-        EdgeArray
-            An EdgeArray object specifying the exterior edges.
-        """
-        return EdgeArray([Edge()])
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Face:  # type: ignore
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> list[Face]:  # type: ignore
-        ...
-
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, list[Face]]:  # type: ignore
->>>>>>> d7be4b47 ([typing] Fix wrong mypy typing annotations (#4879))
         """This method returns the object or objects in the FaceArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
         objects are involved, this method is highly efficient.
