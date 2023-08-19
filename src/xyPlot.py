@@ -27,11 +27,11 @@ def XYDataFromFile(
     legendLabel: str = "",
     xValuesLabel: str = "",
     yValuesLabel: str = "",
-    axis1QuantityType: Optional[QuantityType] = None,
-    axis2QuantityType: Optional[QuantityType] = None,
+    axis1QuantityType: QuantityType | None = None,
+    axis2QuantityType: QuantityType | None = None,
     xField: int = 1,
     yField: int = 2,
-    skipFrequency: Optional[int] = None,
+    skipFrequency: int | None = None,
 ) -> XYData:
     """This method creates an XYData object from data in an ASCII file.
 
@@ -160,10 +160,10 @@ def XYDataFromHistory(
     contentDescription: str = "",
     positionDescription: str = "",
     legendLabel: str = "",
-    skipFrequency: Optional[int] = None,
+    skipFrequency: int | None = None,
     numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
-    stepTuple: Optional[int] = None,
+    stepTuple: int | None = None,
 ) -> XYData:
     """This method creates an XYData object by reading history data from an Odb object.
 
@@ -247,10 +247,10 @@ def XYDataFromPath(
     viewport: str = "",
     removeDuplicateXYPairs: Boolean = True,
     includeAllElements: Boolean = False,
-    step: Optional[int] = None,
-    frame: Optional[int] = None,
-    variable: Optional[SymbolicConstant] = None,
-    deformedMag: Optional[float] = None,
+    step: int | None = None,
+    frame: int | None = None,
+    variable: SymbolicConstant | None = None,
+    deformedMag: float | None = None,
     numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
     complexAngle: float = 0,
     projectOntoMesh: Boolean = False,
