@@ -1,7 +1,15 @@
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Sequence, Tuple, Union
+from abaqus.XY.XYDataCommands import (
+    XYDataFromFile,
+    XYDataFromFreeBody,
+    XYDataFromHistory,
+    XYDataFromPath,
+    XYDataFromShellThickness,
+    xyDataListFromField,
+)
 
+<<<<<<< HEAD
 from typing_extensions import Literal
 
 from abaqus.Odb.Odb import Odb
@@ -650,3 +658,13 @@ def xyDataListFromField(
     RangeError
     """
     return [XYData(())]
+=======
+__all__ = [
+    "XYDataFromFile",
+    "XYDataFromHistory",
+    "xyDataListFromField",
+    "XYDataFromFreeBody",
+    "XYDataFromShellThickness",
+    "XYDataFromPath",
+]
+>>>>>>> f5073cb8 ([typing] Define __all__ for modules and remove unused imports (#4895))
