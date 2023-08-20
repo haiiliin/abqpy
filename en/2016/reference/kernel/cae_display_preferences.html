@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abaqus CAE Display Preferences &mdash; abqpy 2016.5.6.dev3+g8cd5f05cb documentation</title>
+  <title>Abaqus CAE Display Preferences &mdash; abqpy 2016.5.6.dev8+g66d129a98 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -284,7 +284,7 @@ represents.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.save">
-<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L24-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.save" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">backupFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L24-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeKerPrefs.save" title="Permalink to this definition"></a></dt>
 <dd><p>This method saves the sessionOptions in the current <strong>fileName</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -331,7 +331,7 @@ supplied. The <strong>fileName</strong> or <strong>directory</strong> arguments 
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences">
-<span class="sig-name descname"><span class="pre">getDisplayNamesInGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L41-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">getDisplayNamesInGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L42-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences" title="Permalink to this definition"></a></dt>
 <dd><p>The abaqus_2021.gpr file stores a separate guiPreferences record for each display that you use. This
 function returns a list of every displayName recorded in the preferences file.</p>
 <div class="admonition note">
@@ -353,14 +353,14 @@ function returns a list of every displayName recorded in the preferences file.</
 <dd class="field-even"><p>A list of Strings of displayNames.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List[str]</span></code></p>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">list[str]</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName">
-<span class="sig-name descname"><span class="pre">getGuiPrefsFileName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L23-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">getGuiPrefsFileName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L25-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName" title="Permalink to this definition"></a></dt>
 <dd><p>This function enables you to retrieve the location of your abaqus_2021.gpr file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -381,7 +381,7 @@ function returns a list of every displayName recorded in the preferences file.</
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences">
-<span class="sig-name descname"><span class="pre">openGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L102-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">openGuiPreferences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">displayName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L101-L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences" title="Permalink to this definition"></a></dt>
 <dd><p>This function enables you to examine and change many default behaviors in the Abaqus/CAE graphical user
 interface. Abaqus stores preferences for each display you use in a separate guiPreferences section of the
 abaqus_2021.gpr file.</p>
@@ -419,7 +419,7 @@ opened.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions">
-<span class="sig-name descname"><span class="pre">openSessionOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.HOME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L133-L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">openSessionOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.HOME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L132-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions" title="Permalink to this definition"></a></dt>
 <dd><p>This function enables you to examine and change the default behavior for many session options Abaqus/CAE;
 that is, the settings that you can save in Abaqus/CAE from the FileSave Display ConstrainedSketchOptions
 menu option. Abaqus stores default session options in the sessionOptions section of the abaqus_2021.gpr
@@ -466,7 +466,7 @@ supplied. The <code class="docutils literal notranslate"><span class="pre">fileN
 
 <dl class="py function">
 <dt class="sig sig-object py" id="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList">
-<span class="sig-name descname"><span class="pre">printValuesList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNLIMITED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L65-L99"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">printValuesList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxRecursionDepth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNLIMITED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asString</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py#L65-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="Permalink to this definition"></a></dt>
 <dd><p>This function enables you to print all of the options and their values for a set of guiPreferences or
 sessionOptions settings derived from the abaqus_2021.gpr file.</p>
 <div class="admonition note">

@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Command Line Interface — abqpy 2016.5.6.dev3+g8cd5f05cb documentation</title>
+<title>Command Line Interface — abqpy 2016.5.6.dev8+g66d129a98 documentation</title>
 <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
@@ -335,15 +335,15 @@ POSITIONAL ARGUMENTS
 
 FLAGS
     -d, --database=DATABASE
-        Type: Optional['str']
+        Type: Optional['str | None']
         Default: None
         The name of the database file to open, by default None
     --replay=REPLAY
-        Type: Optional['str']
+        Type: Optional['str | None']
         Default: None
         The name of the replay file to open, by default None
     --recover=RECOVER
-        Type: Optional['str']
+        Type: Optional['str | None']
         Default: None
         The name of the journal file to open, by default None
     --gui=GUI
@@ -401,11 +401,11 @@ POSITIONAL ARGUMENTS
 
 FLAGS
     -s, --sim=SIM
-        Type: Optional['str']
+        Type: Optional['str | None']
         Default: None
         The name of the simulation file to open, by default None
     -l, --log=LOG
-        Type: Optional['str']
+        Type: Optional['str | None']
         Default: None
         The name of the log file to open, by default None
     Additional flags are accepted.
