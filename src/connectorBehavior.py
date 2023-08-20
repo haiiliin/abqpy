@@ -9,3 +9,15 @@ from abaqus.Connector.ConnectorLock import ConnectorLock
 from abaqus.Connector.ConnectorPlasticity import ConnectorPlasticity
 from abaqus.Connector.ConnectorPotential import ConnectorPotential
 from abaqus.Connector.ConnectorStop import ConnectorStop
+
+__all__ = [
+    "ConnectorDamage",
+    "ConnectorDamping",
+    "ConnectorElasticity",
+    "ConnectorFailure",
+    "ConnectorFriction",
+    "ConnectorLock",
+    "ConnectorPlasticity",
+    "ConnectorPotential",
+    "ConnectorStop",
+]
