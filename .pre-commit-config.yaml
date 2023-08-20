@@ -26,3 +26,9 @@ repos:
     hooks:
       - id: mypy
         files: ^src/
+  - repo: https://github.com/hakancelikdev/unimport
+    rev: "1.0.0"
+    hooks:
+      - id: unimport
+        args:
+          - --include=src
