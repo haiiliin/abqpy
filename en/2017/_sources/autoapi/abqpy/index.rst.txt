@@ -19,13 +19,21 @@ Submodules
 Package Contents
 ----------------
 
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   abqpy.AbqpyCLI
+
+
 
 Functions
 ~~~~~~~~~
 
 .. autoapisummary::
 
-   abqpy._get_version
+   abqpy.run
 
 
 
@@ -34,26 +42,9 @@ Attributes
 
 .. autoapisummary::
 
-   abqpy._default_version
-   abqpy.__version__
-   abqpy.__semver__
+   abqpy.abaqus
 
 
-.. py:data:: _default_version
-   :value: '2017.0.0-dev'
-
-   
-
-.. py:function:: _get_version()
-
-   Return the version string used for __version__.
 
 
-.. py:data:: __version__
-
-   
-
-.. py:data:: __semver__
-
-   
 
