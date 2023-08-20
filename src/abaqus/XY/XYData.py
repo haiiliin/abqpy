@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Sequence, Union, overload
 
-from typing_extensions import Literal
+from typing_extensions import TYPE_CHECKING, Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -11,9 +11,8 @@ from ..UtilityAndView.abaqusConstants import OFF, ON, REAL, Boolean, SymbolicCon
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .QuantityType import QuantityType
 
-
-class Odb:
-    ...
+if TYPE_CHECKING:
+    from ..Odb.Odb import Odb
 
 
 @abaqus_class_doc
@@ -267,7 +266,7 @@ class XYData(tuple):
     @abaqus_method_doc
     def XYDataFromHistory(
         self,
-        odb: Odb,
+        odb: "Odb",
         outputVariableName: str,
         steps: tuple,
         name: str = "",
@@ -343,7 +342,7 @@ class XYData(tuple):
     @abaqus_method_doc
     def xyDataListFromField(
         self,
-        odb: Odb,
+        odb: "Odb",
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: tuple[
             tuple[
@@ -512,7 +511,7 @@ class XYData(tuple):
     @abaqus_method_doc
     def XYDataFromFreeBody(
         self,
-        odb: Odb,
+        odb: "Odb",
         force: Boolean = ON,
         moment: Boolean = OFF,
         heatFlowRate: Boolean = OFF,
@@ -568,7 +567,7 @@ class XYData(tuple):
     @abaqus_method_doc
     def XYDataFromShellThickness(
         self,
-        odb: Odb,
+        odb: "Odb",
         outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: tuple[
             tuple[

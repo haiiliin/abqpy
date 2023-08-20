@@ -13,3 +13,16 @@ from odbAccess import (
 
 # from odbAccess import closeOdb
 # from odbAccess import truncateOdb
+
+__all__ = [
+    "Job",
+    "AnalyticSurfaceSegment",
+    "HistoryPoint",
+    "AnalyticSurfaceProfile",
+    "Odb",
+    "isUpgradeRequiredForOdb",
+    "openOdb",
+    "upgradeOdb",
+    # "closeOdb",
+    # "truncateOdb",
+]
