@@ -535,8 +535,6 @@ def XYDataFromPath(
         C.Z_COORDINATE,
     ],
     viewport: str = "",
-    removeDuplicateXYPairs: Boolean = True,
-    includeAllElements: Boolean = False,
     step: int | None = None,
     frame: int | None = None,
     variable: Literal[
@@ -595,18 +593,6 @@ def XYDataFromPath(
     viewport
         A String specifying the viewport name or an Int specifying the viewport id from which to
         obtain values. The default is the current viewport.
-    removeDuplicateXYPairs
-        A Boolean specifying whether to remove duplicate XY values from the final result. The
-        default value is True.
-
-        .. versionadded:: 2018
-            The ``removeDuplicateXYPairs`` argument was added.
-    includeAllElements
-        A Boolean specifying whether to include elements which do not lie in the direction of
-        the path. The default value is False.
-
-        .. versionadded:: 2018
-            The ``includeAllElements`` argument was added.
     step
         An Int identifying the step from which to obtain values. The default value is the
         current step.
