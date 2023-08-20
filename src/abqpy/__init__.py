@@ -32,3 +32,9 @@ def _get_version():
 
 __version__ = _get_version()
 __semver__ = __version__.split("+")[0]
+
+__all__ = [
+    "run",
+    "abaqus",
+    "AbqpyCLI",
+]
