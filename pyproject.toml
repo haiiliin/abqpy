@@ -113,3 +113,6 @@ black = true
 
 [tool.mypy]
 ignore_missing_imports = true
+
+[tool.unimport]
+include = "src"
