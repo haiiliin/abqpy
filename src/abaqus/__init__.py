@@ -28,3 +28,17 @@ NO = abaqusConstants.NO
 run(cae=True)
 
 __main__ = sys.modules["__main__"]
+__all__ = [
+    "backwardCompatibility",
+    "BackwardCompatibility",
+    "Boolean",
+    "Mdb",
+    "mdb",
+    "Odb",
+    "session",
+    "Session",
+    "SymbolicConstant",
+    "YES",
+    "NO",
+    "OFF",
+]
