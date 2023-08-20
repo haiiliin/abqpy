@@ -1,4 +1,6 @@
-from typing import TYPE_CHECKING, Literal, Sequence, Union
+from typing import TYPE_CHECKING, Sequence, Union
+
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_function_doc
 
