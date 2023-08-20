@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>abqpy &mdash; abqpy 2023.5.6.dev5+gd7be4b472 文档</title>
+  <title>abqpy &mdash; abqpy 2023.5.6.dev7+gf5073cb8a 文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -136,6 +136,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#package-contents">Package Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#classes">Classes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#attributes">Attributes</a></li>
 </ul>
@@ -204,12 +205,22 @@ commentsRunWhenDOMLoaded(addUtterances);
 </section>
 <section id="package-contents">
 <h2>Package Contents<a class="headerlink" href="#package-contents" title="此标题的永久链接"></a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="此标题的永久链接"></a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbqpyCLI</span></code></p></td>
+<td><p>The abqpy command line interface.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="此标题的永久链接"></a></h3>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy._get_version" title="abqpy._get_version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_get_version</span></code></a>()</p></td>
-<td><p>Return the version string used for __version__.</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="run/index.html#module-abqpy.run" title="abqpy.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>(→ None)</p></td>
+<td><p>Runs Abaqus command in system's CLI.</p></td>
 </tr>
 </tbody>
 </table>
@@ -218,38 +229,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h3>Attributes<a class="headerlink" href="#attributes" title="此标题的永久链接"></a></h3>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy._default_version" title="abqpy._default_version"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_default_version</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.__version__" title="abqpy.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abqpy.__semver__" title="abqpy.__semver__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__semver__</span></code></a></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">abaqus</span></code></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
 </table>
-<dl class="py data">
-<dt class="sig sig-object py" id="abqpy._default_version">
-<span class="sig-name descname"><span class="pre">_default_version</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'2023.0.0-dev'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy.py#L0-L33"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy._default_version" title="永久链接至目标"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="abqpy._get_version">
-<span class="sig-name descname"><span class="pre">_get_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy.py#L12-L30"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy._get_version" title="永久链接至目标"></a></dt>
-<dd><p>Return the version string used for __version__.</p>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="abqpy.__version__">
-<span class="sig-name descname"><span class="pre">__version__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy.py#L0-L33"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.__version__" title="永久链接至目标"></a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="abqpy.__semver__">
-<span class="sig-name descname"><span class="pre">__semver__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy.py#L0-L33"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.__semver__" title="永久链接至目标"></a></dt>
-<dd></dd></dl>
-
 </section>
 </section>
 </section>
