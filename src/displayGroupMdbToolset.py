@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 from abaqus.DisplayGroup.Leaf import Leaf
-
 from abaqus.DisplayGroup.LeafFromDatums import LeafFromDatums
-
 from abaqus.DisplayGroup.LeafFromDisplayGroup import LeafFromDisplayGroup
 from abaqus.DisplayGroup.LeafFromGeometry import LeafFromGeometry
 from abaqus.DisplayGroup.LeafFromInstance import LeafFromInstance
