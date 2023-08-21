@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from abaqus.DisplayGroup.Leaf import Leaf
+
 <<<<<<< HEAD
 =======
 from abaqus.DisplayGroup.LeafFromDatums import LeafFromDatums
+
 >>>>>>> 3f0c20aa ([bugfix] Fix dgm and dgo modules (#4904))
 from abaqus.DisplayGroup.LeafFromDisplayGroup import LeafFromDisplayGroup
 from abaqus.DisplayGroup.LeafFromGeometry import LeafFromGeometry
