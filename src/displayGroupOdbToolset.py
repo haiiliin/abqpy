@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from abaqus.DisplayGroup.Leaf import Leaf
-from abaqus.DisplayGroup.LeafFromConstraintNames import LeafFromConstraintNames
 from abaqus.DisplayGroup.LeafFromDisplayGroup import LeafFromDisplayGroup
 from abaqus.DisplayGroup.LeafFromElementLabels import LeafFromElementLabels
 from abaqus.DisplayGroup.LeafFromElementSets import LeafFromElementSets
@@ -92,7 +91,6 @@ __all__ = [
     # "EnumerationLeafType",
     "INTERSECTION",
     "Leaf",
-    "LeafFromConstraintNames",
     # "LeafFromConstraintNodes",
     "LeafFromDisplayGroup",
     "LeafFromElementLabels",
