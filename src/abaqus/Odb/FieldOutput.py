@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, overload
+from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -580,7 +580,7 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: "FieldOutput" | None = None,
+        deformationField: Union["FieldOutput", None] = None,
         projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
@@ -626,8 +626,8 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: "FieldOutput" | None = None,
-        rotationField: "FieldOutput" | None = None,
+        deformationField: Union["FieldOutput", None] = None,
+        rotationField: Union["FieldOutput", None] = None,
         projected22Axis: int | None = None,
         projectionTol: str = "",
     ):
@@ -676,7 +676,7 @@ class FieldOutput:
     def getTransformedField(self, *args, **kwargs):
         ...
 
-    def getConnectorFieldXformedToNodeA(self, deformationField: "FieldOutput" | None = None):
+    def getConnectorFieldXformedToNodeA(self, deformationField: Union["FieldOutput", None] = None):
         """This method generates a new vector field containing the transformed component values of the parent
         connector field to the node A coordinate system. The new field will hold values for the same connector
         elements as the parent field. Some connection types such as Axial, Link, Slip Ring, and Radial Thrust

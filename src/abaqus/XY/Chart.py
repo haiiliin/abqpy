@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence
+from typing import Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -212,7 +212,7 @@ class Chart:
     @abaqus_method_doc
     def setValues(
         self,
-        chart: "Chart" | None = None,
+        chart: Union["Chart", None] = None,
         curvesToPlot: Sequence[XYCurve] = (),
         aspectRatio: float | None = None,
         transform: tuple = (),
