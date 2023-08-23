@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -126,7 +126,7 @@ class ImageOptions(_CopyOptionsBase):
         yScale: float = 1.0,
         origin: Sequence[float] = (0.0, 0.0),
         translucency: float = 1.0,
-        options: "ImageOptions" | None = None,
+        options: Union["ImageOptions", None] = None,
     ):
         """This method modifies the ImageOptions object.
 
