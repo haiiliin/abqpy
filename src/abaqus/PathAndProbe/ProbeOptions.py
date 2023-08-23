@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -113,7 +115,7 @@ class ProbeOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        options: "ProbeOptions" | None = None,
+        options: Union["ProbeOptions", None] = None,
         probeEntity: Literal[C.NODE, C.ODB, C.ELEMENT] = ELEMENT,
         probeOutputPosition: Literal[
             C.ELEMENT_NODAL,
