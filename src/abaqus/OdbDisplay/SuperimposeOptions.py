@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -205,7 +207,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "SuperimposeOptions" | None = None,
+        options: Union["SuperimposeOptions", None] = None,
         renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,
         visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = FEATURE,
         edgeColorWireHide: str = "",
