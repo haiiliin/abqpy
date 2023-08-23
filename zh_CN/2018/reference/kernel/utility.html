@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Utility and View &mdash; abqpy 2018.5.6.dev8+gbf37a43d1 文档</title>
+  <title>Utility and View &mdash; abqpy 2018.5.7.dev2+ga9c15443b 文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -14111,11 +14111,11 @@ for Session and Viewport Views.</p>
 <dl class="field-list simple">
 <dt class="field-odd">参数<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>layerTransform</strong> (tuple, default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) -- A sequence of 16 Floats specifying the transformation matrix.</p></li>
-<li><p><strong>options</strong> (View' | None, default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A View object from which the view settings are to be copied. If the <strong>layerTransform</strong>
+<li><p><strong>layerTransform</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) -- A sequence of 16 Floats specifying the transformation matrix.</p></li>
+<li><p><strong>options</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- A View object from which the view settings are to be copied. If the <strong>layerTransform</strong>
 argument is also supplied to setLayerTransform, it will override the values in the View
 object specified by <strong>view</strong>.</p></li>
-<li><p><strong>drawImmediately</strong> (Boolean, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying the viewport should refresh immediately after the command is
+<li><p><strong>drawImmediately</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying the viewport should refresh immediately after the command is
 processed. This argument is typically used only when writing a script and it is
 desirable to show intermediate results before the script completes. The default value is
 False.</p></li>
