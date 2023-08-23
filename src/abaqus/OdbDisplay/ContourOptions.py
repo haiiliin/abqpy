@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -208,7 +210,7 @@ class ContourOptions(DGContourOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "ContourOptions" | None = None,
+        options: Union["ContourOptions", None] = None,
         contourType: Literal[C.ISOSURFACE, C.BANDED, C.LINE, C.QUILT] = BANDED,
         contourMethod: Literal[C.TESSELLATED, C.TEXTURE_MAPPED] = TEXTURE_MAPPED,
         tickmarkPlots: Boolean = OFF,
