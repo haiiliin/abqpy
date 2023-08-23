@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -300,7 +300,7 @@ class View:
     def setLayerTransform(
         self,
         layerTransform: tuple = (),
-        options: "View" | None = None,
+        options: Union["View", None] = None,
         drawImmediately: Boolean = False,
     ):
         """This method modifies the transformation used to position a Layer. Note:This method is not available
