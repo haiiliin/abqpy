@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canvas &mdash; abqpy 2023.5.6.dev8+g3f0c20aaa 文档</title>
+  <title>Canvas &mdash; abqpy 2023.5.7.dev2+g4ea2002eb 文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
@@ -939,11 +939,11 @@ viewport using the specified <strong>origin</strong>.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">参数<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>imageName</strong> (str, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the name of the image. A list of valid image names is in the
+<li><p><strong>imageName</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the name of the image. A list of valid image names is in the
 <strong>images</strong> repository in the <strong>session</strong> object.</p></li>
-<li><p><strong>showImage</strong> (Boolean, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- A Boolean specifying whether an image should be displayed in the viewport background.
+<li><p><strong>showImage</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) -- A Boolean specifying whether an image should be displayed in the viewport background.
 The default value is OFF.</p></li>
-<li><p><strong>positionMethod</strong> (Literal[C.FIT_TO_VIEWPORT, C.MANUAL, C.AUTO_ALIGN], default: <code class="docutils literal notranslate"><span class="pre">FIT_TO_VIEWPORT</span></code>) -- <p>A SymbolicConstant specifying which positioning method is used to determine how the
+<li><p><strong>positionMethod</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">FIT_TO_VIEWPORT</span></code>, <code class="docutils literal notranslate"><span class="pre">MANUAL</span></code>, <code class="docutils literal notranslate"><span class="pre">AUTO_ALIGN</span></code>], default: <code class="docutils literal notranslate"><span class="pre">FIT_TO_VIEWPORT</span></code>) -- <p>A SymbolicConstant specifying which positioning method is used to determine how the
 image will be scaled and positioned in the viewport. Possible values are:</p>
 <ul>
 <li><p>FIT_TO_VIEWPORT, specifying a display mode where the image is scaled to fit in the
@@ -957,7 +957,7 @@ viewport using the specified <strong>origin</strong>.</p></li>
 </ul>
 <p>The default value is FIT_TO_VIEWPORT.</p>
 </p></li>
-<li><p><strong>fitMethod</strong> (Literal[C.FIT_TO_VIEWPORT, C.FIT_WIDTH, C.BEST_FIT, C.FIT_HEIGHT], default: <code class="docutils literal notranslate"><span class="pre">BEST_FIT</span></code>) -- <p>A SymbolicConstant specifying which type of fit is performed to scale and position the
+<li><p><strong>fitMethod</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">FIT_TO_VIEWPORT</span></code>, <code class="docutils literal notranslate"><span class="pre">FIT_WIDTH</span></code>, <code class="docutils literal notranslate"><span class="pre">BEST_FIT</span></code>, <code class="docutils literal notranslate"><span class="pre">FIT_HEIGHT</span></code>], default: <code class="docutils literal notranslate"><span class="pre">BEST_FIT</span></code>) -- <p>A SymbolicConstant specifying which type of fit is performed to scale and position the
 image in the viewport when <strong>positionMethod</strong> =FIT_TO_VIEWPORT. Possible values are:</p>
 <ul>
 <li><p>BEST_FIT, specifying a mode where the image is scaled to completely fit within the
@@ -969,7 +969,7 @@ the viewport height.</p></li>
 </ul>
 <p>The default value is BEST_FIT.</p>
 </p></li>
-<li><p><strong>alignment</strong> (Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.AUTO_ALIGN, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], default: <code class="docutils literal notranslate"><span class="pre">CENTER</span></code>) -- <p>A SymbolicConstant specifying the relative position of the image in the viewport when
+<li><p><strong>alignment</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[<code class="docutils literal notranslate"><span class="pre">CENTER_RIGHT</span></code>, <code class="docutils literal notranslate"><span class="pre">TOP_CENTER</span></code>, <code class="docutils literal notranslate"><span class="pre">BOTTOM_RIGHT</span></code>, <code class="docutils literal notranslate"><span class="pre">BOTTOM_LEFT</span></code>, <code class="docutils literal notranslate"><span class="pre">CENTER</span></code>, <code class="docutils literal notranslate"><span class="pre">AUTO_ALIGN</span></code>, <code class="docutils literal notranslate"><span class="pre">TOP_RIGHT</span></code>, <code class="docutils literal notranslate"><span class="pre">CENTER_LEFT</span></code>, <code class="docutils literal notranslate"><span class="pre">TOP_LEFT</span></code>, <code class="docutils literal notranslate"><span class="pre">BOTTOM_CENTER</span></code>], default: <code class="docutils literal notranslate"><span class="pre">CENTER</span></code>) -- <p>A SymbolicConstant specifying the relative position of the image in the viewport when
 <strong>positionMethod</strong> =AUTO_ALIGN. Possible values are:</p>
 <ul>
 <li><p>BOTTOM_LEFT</p></li>
@@ -984,19 +984,19 @@ the viewport height.</p></li>
 </ul>
 <p>The default value is CENTER.</p>
 </p></li>
-<li><p><strong>xScale</strong> (float, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the scale applied to the image width. The <strong>xScale</strong> argument is
+<li><p><strong>xScale</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the scale applied to the image width. The <strong>xScale</strong> argument is
 ignored when <strong>positionMethod</strong> =FIT_TO_VIEWPORT. The default value is 1.0.When <strong>xScale</strong>
 is negative, the image is mirrored about its y-axis but its position is not affected.</p></li>
-<li><p><strong>yScale</strong> (float, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the scale applied to the image height. The <strong>yScale</strong> argument is
+<li><p><strong>yScale</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the scale applied to the image height. The <strong>yScale</strong> argument is
 ignored when <strong>positionMethod</strong> =FIT_TO_VIEWPORT. The default value is 1.0.When <strong>yScale</strong>
 is negative, the image is mirrored about its x-axis but its position is not affected.</p></li>
-<li><p><strong>origin</strong> (Sequence[float], default: <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.0)</span></code>) -- A pair of Floats specifying the <strong>X</strong>  and <strong>Y</strong> offsets in millimeters from the lower-left
+<li><p><strong>origin</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">(0.0,</span> <span class="pre">0.0)</span></code>) -- A pair of Floats specifying the <strong>X</strong>  and <strong>Y</strong> offsets in millimeters from the lower-left
 corner of the viewport. The <strong>origin</strong> argument is ignored unless <strong>positionMethod</strong>
 =MANUAL. The default value is (0, 0).</p></li>
-<li><p><strong>translucency</strong> (float, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the translucency factor to use when displaying the image. Possible
+<li><p><strong>translucency</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">1.0</span></code>) -- A Float specifying the translucency factor to use when displaying the image. Possible
 values are 0.0 ≤ <strong>translucency</strong> ≤ 1.0 with 0.0 being invisible and 1.0 being opaque.
 The default value is 1.0.</p></li>
-<li><p><strong>options</strong> (ImageOptions' | None, default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- None or an ImageOptions object specifying the object from which values are to be copied.
+<li><p><strong>options</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.11）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Canvas.ViewportBase.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) -- None or an ImageOptions object specifying the object from which values are to be copied.
 If other arguments are also supplied to setValues, they will override the values in the
 <strong>options</strong> member. The default value is None.</p></li>
 </ul>
