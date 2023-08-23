@@ -217,7 +217,7 @@ class SymbolOptions(DGSymbolOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "SymbolOptions" | None = None,
+        options: Union["SymbolOptions", None] = None,
         vectorQuantity: Literal[C.RESULTANT, C.VECTOR_COMPONENT] = RESULTANT,
         vectorLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         vectorArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
