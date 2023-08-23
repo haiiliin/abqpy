@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -102,7 +104,7 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "DisplayBodyOptions" | None = None,
+        options: Union["DisplayBodyOptions", None] = None,
         visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = EXTERIOR,
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",
