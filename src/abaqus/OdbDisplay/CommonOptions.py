@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -217,7 +219,7 @@ class CommonOptions(DGCommonOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "CommonOptions" | None = None,
+        options: Union["CommonOptions", None] = None,
         renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = SHADED,
         visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = EXTERIOR,
         deformationScaling: Literal[C.NONUNIFORM, C.UNIFORM, C.AUTO] = AUTO,
