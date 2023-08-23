@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -95,7 +97,7 @@ class OrientationOptions(DGOrientationOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "OrientationOptions" | None = None,
+        options: Union["OrientationOptions", None] = None,
         axis1Color: str = "",
         showAxis1: Boolean = ON,
         axis2Color: str = "",

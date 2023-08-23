@@ -127,7 +127,7 @@ class ViewCutOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "ViewCutOptions" | None = None,
+        options: Union["ViewCutOptions", None] = None,
         *,
         belowOptions: str | None = None,
         useBelowOptions: Boolean = OFF,

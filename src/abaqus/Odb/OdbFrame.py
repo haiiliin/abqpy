@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import overload
+from typing import Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -37,7 +37,7 @@ class OdbFrame:
 
     #: An OdbFrame object specifying the real or imaginary portion of the data corresponding to
     #: this cyclic symmetry mode.
-    associatedFrame: "OdbFrame" | None = None
+    associatedFrame: Union["OdbFrame", None] = None
 
     #: A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository
     #: is a String representing an output variable.

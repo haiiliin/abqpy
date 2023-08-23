@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -152,7 +154,7 @@ class AxisData:
     @abaqus_method_doc
     def setValues(
         self,
-        axisData: "AxisData" | None = None,
+        axisData: Union["AxisData", None] = None,
         labelFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         labelNumDigits: int = 2,
         scale: Literal[C.LINEAR] = LINEAR,
