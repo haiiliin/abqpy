@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence
+from typing import Sequence, Union
 
 from typing_extensions import Literal
 
@@ -432,7 +432,7 @@ class BasicOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "BasicOptions" | None = None,
+        options: Union["BasicOptions", None] = None,
         *,
         cameraCsysName: str = "",
         cameraMovesWithCsys: Boolean = OFF,
