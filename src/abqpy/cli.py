@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import os
 
+from typeguard import typechecked
 from typing_extensions import Self
 
 
+@typechecked
 class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
@@ -15,7 +17,8 @@ class AbqpyCLIBase:
         boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option
         will be ignored.
         """
-        return " ".join([f"{k}={v}" if isinstance(v, (str, int)) else k for k, v in options.items() if v])
+        return " ".join([f"{k}={v}" if isinstance(v, (str, int)) and not isinstance(v, bool) else
+                         k for k, v in options.items() if v])  # fmt: skip
 
     def run(self, cmd: str):
         """Run custom command."""
@@ -38,6 +41,7 @@ class AbqpyCLIBase:
         self.run(f"{abaqus} {args} {options}")
 
 
+@typechecked
 class AbqpyCLI(AbqpyCLIBase):
     """The abqpy command line interface."""
 
@@ -54,11 +58,13 @@ class AbqpyCLI(AbqpyCLIBase):
         replay: str | None = None,
         recover: str | None = None,
         gui: bool = False,
-        noenvstartup: bool = False,
-        noSavedOptions: bool = False,
-        noStartupDialog: bool = False,
-        guiRecord: bool = False,
-        guiNoRecord: bool = False,
+        envstartup: bool = True,
+        savedOptions: bool = True,
+        savedGuiPrefs: bool = True,
+        startupDialog: bool = True,
+        custom: str | None = None,
+        guiTester: str | None = None,
+        guiRecord: bool | None = None,
     ):
         """Run Abaqus/CAE command.
 
@@ -76,22 +82,29 @@ class AbqpyCLI(AbqpyCLIBase):
             The name of the journal file to open, by default None
         gui : bool, optional
             Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
-        noenvstartup : bool, optional
-            Do not execute the Abaqus/CAE startup file, by default False
-        noSavedOptions : bool, optional
-            Do not use the saved options, by default False
-        noStartupDialog : bool, optional
-            Do not display the startup dialog, by default False
+        envstartup : bool, optional
+            Execute the Abaqus/CAE startup file, by default True
+        savedOptions : bool, optional
+            Use the saved options, by default True
+        savedGuiPrefs : bool, optional
+            Use the saved GUI preferences, by default True
+        startupDialog : bool, optional
+            Display the startup dialog, by default True
+        custom : str, optional
+            The name of the file containing Abaqus GUI Toolkit commands to be executed, by default None
+        guiTester : str, optional
+            This option starts a separate user interface containing the Abaqus Python development environment along
+            with Abaqus/CAE.
         guiRecord : bool, optional
-            Record the GUI commands to a file, by default False
-        guiNoRecord : bool, optional
-            Do not record the GUI commands to a file, by default False
+            Record the GUI commands to a file, by default None
         """
         # Parse options
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
-                                      database=database, replay=replay, recover=recover, noenvstartup=noenvstartup,
-                                      noSavedOptions=noSavedOptions, noStartupDialog=noStartupDialog,
-                                      guiRecord=guiRecord, guiNoRecord=guiNoRecord)  # fmt: skip
+                                      database=database, replay=replay, recover=recover, noenvstartup=not envstartup,
+                                      noSavedOptions=not savedOptions, noSavedGuiPrefs=not savedGuiPrefs,
+                                      noStartupDialog=not startupDialog, custom=custom, guiTester=guiTester,
+                                      guiRecord=True if guiRecord is True else None,
+                                      guiNoRecord=True if guiRecord is False else None)  # fmt: skip
         args = ("--", *args) if args else ()
 
         # Execute command
@@ -99,6 +112,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     viewer = cae
 
+    @typechecked
     def python(
         self,
         script: str,
@@ -125,6 +139,7 @@ class AbqpyCLI(AbqpyCLIBase):
         # Execute command
         self.abaqus("python", script, options, *args)
 
+    @typechecked
     def optimization(
         self,
         task: str,
@@ -159,7 +174,7 @@ class AbqpyCLI(AbqpyCLIBase):
             The name of the directory used for scratch files.
         """
         # Execute command
-        self.abaqus("optimization", task, job, cpus=cpus, gpus=gpus, memory=memory,
+        self.abaqus("optimization", task=task, job=job, cpus=cpus, gpus=gpus, memory=memory,
                     interactive=interactive, globalmodel=globalmodel, scratch=scratch)  # fmt: skip
 
     def help(self, *args, **options):
