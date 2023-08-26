@@ -174,7 +174,7 @@ class AbqpyCLI(AbqpyCLIBase):
             The name of the directory used for scratch files.
         """
         # Execute command
-        self.abaqus("optimization", task, job, cpus=cpus, gpus=gpus, memory=memory,
+        self.abaqus("optimization", task=task, job=job, cpus=cpus, gpus=gpus, memory=memory,
                     interactive=interactive, globalmodel=globalmodel, scratch=scratch)  # fmt: skip
 
     def help(self, *args, **options):
