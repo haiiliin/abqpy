@@ -1,6 +1,7 @@
 import ast
 import os
 import sys
+import warnings
 
 from .cli import abaqus
 
@@ -27,7 +28,11 @@ def run(cae: bool = True) -> None:
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
 
     # If in debug mode or making docs, return
-    if debug or make_docs:
+    if debug:
+        warnings.warn("You are running the script in debug mode, the script will run in the current Python session "
+                      "and it will not be submitted to Abaqus.")  # fmt: skip
+        return
+    elif make_docs:
         return
 
     # If it is a jupyter notebook, convert it to python script
@@ -35,16 +40,18 @@ def run(cae: bool = True) -> None:
         import ipynbname
 
         filePath = ipynbname.path()
+        print("You are running a jupyter notebook, it will be converted to a pure python script.")
         os.system(f"jupyter nbconvert --to python {filePath}")
         filePath = os.path.relpath(filePath.with_suffix(".py"))
     except (FileNotFoundError, ImportError, Exception):
         # Get the main script file
         main = sys.modules["__main__"]
         if not hasattr(main, "__file__") or main.__file__ is None:
-            return
+            raise RuntimeError("Cannot find the main script file, please run the script in a file.")
         filePath = os.path.relpath(main.__file__)
 
     # Alternative to use abaqus command line options at run time
+    print("The script will be submitted to Abaqus next and the current Python session will be closed.")
     options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
     noGUI = options.pop("noGUI", True)
     if cae:
