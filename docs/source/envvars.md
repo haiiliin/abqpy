@@ -36,19 +36,18 @@ The possible options are:
 
    ```python
    {
-       'noGUI': bool,
+       'gui': bool,
        'database': 'database-file',
        'replay': 'replay-file',
        'recover': 'journal-file',
        'startup': 'startup-file',
-       'noenvstartup': bool,
-       'noSavedOptions': bool,
-       'noSavedGuiPrefs': bool,
-       'noStartupDialog': bool,
+       'envstartup': bool,
+       'savedOptions': bool,
+       'savedGuiPrefs': bool,
+       'startupDialog': bool,
        'custom': 'script-file',
        'guiTester': 'GUI-script',
        'guiRecord': bool,
-       'guiNoRecord': bool,
    }
    ```
 
