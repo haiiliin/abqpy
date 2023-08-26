@@ -43,7 +43,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     @property
     def misc(self) -> Self:
-        """Backward compatibility."""
+        """Miscellaneous commands for backward compatibility."""
         return self
 
     def cae(
