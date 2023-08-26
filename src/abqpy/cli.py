@@ -17,7 +17,8 @@ class AbqpyCLIBase:
         boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option
         will be ignored.
         """
-        return " ".join([f"{k}={v}" if isinstance(v, (str, int)) else k for k, v in options.items() if v])
+        return " ".join([f"{k}={v}" if isinstance(v, (str, int)) and not isinstance(v, bool) else
+                         k for k, v in options.items() if v])  # fmt: skip
 
     def run(self, cmd: str):
         """Run custom command."""
@@ -58,9 +59,9 @@ class AbqpyCLI(AbqpyCLIBase):
         recover: str | None = None,
         gui: bool = False,
         envstartup: bool = True,
-        savedOptions: bool = True,
-        savedGuiPrefs: bool = True,
-        startupDialog: bool = True,
+        SavedOptions: bool = True,
+        SavedGuiPrefs: bool = True,
+        StartupDialog: bool = True,
         custom: str | None = None,
         guiTester: str | None = None,
         guiRecord: bool | None = None,
@@ -83,11 +84,11 @@ class AbqpyCLI(AbqpyCLIBase):
             Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
         envstartup : bool, optional
             Execute the Abaqus/CAE startup file, by default True
-        savedOptions : bool, optional
+        SavedOptions : bool, optional
             Use the saved options, by default True
-        savedGuiPrefs : bool, optional
+        SavedGuiPrefs : bool, optional
             Use the saved GUI preferences, by default True
-        startupDialog : bool, optional
+        StartupDialog : bool, optional
             Display the startup dialog, by default True
         custom : str, optional
             The name of the file containing Abaqus GUI Toolkit commands to be executed, by default None
@@ -100,8 +101,8 @@ class AbqpyCLI(AbqpyCLIBase):
         # Parse options
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
                                       database=database, replay=replay, recover=recover, noenvstartup=not envstartup,
-                                      noSavedOptions=not savedOptions, noSavedGuiPrefs=not savedGuiPrefs,
-                                      noStartupDialog=not startupDialog, custom=custom, guiTester=guiTester,
+                                      noSavedOptions=not SavedOptions, noSavedGuiPrefs=not SavedGuiPrefs,
+                                      noStartupDialog=not StartupDialog, custom=custom, guiTester=guiTester,
                                       guiRecord=True if guiRecord is True else None,
                                       guiNoRecord=True if guiRecord is False else None)  # fmt: skip
         args = ("--", *args) if args else ()
