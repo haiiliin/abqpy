@@ -53,9 +53,9 @@ def run(cae: bool = True) -> None:
     # Alternative to use abaqus command line options at run time
     print("The script will be submitted to Abaqus next and the current Python session will be closed.")
     options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
-    noGUI = options.pop("noGUI", True)
+    gui = options.pop("gui", not options.pop("noGUI", True))
     if cae:
-        options["gui"] = not noGUI
+        options["gui"] = gui
         abaqus.cae(filePath, *sys.argv[1:], **options)
     else:
         abaqus.python(filePath, *sys.argv[1:], **options)
