@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import os
 
+from typeguard import typechecked
 from typing_extensions import Self
 
 
+@typechecked
 class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
@@ -38,6 +40,7 @@ class AbqpyCLIBase:
         self.run(f"{abaqus} {args} {options}")
 
 
+@typechecked
 class AbqpyCLI(AbqpyCLIBase):
     """The abqpy command line interface."""
 
@@ -99,6 +102,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     viewer = cae
 
+    @typechecked
     def python(
         self,
         script: str,
@@ -125,6 +129,7 @@ class AbqpyCLI(AbqpyCLIBase):
         # Execute command
         self.abaqus("python", script, options, *args)
 
+    @typechecked
     def optimization(
         self,
         task: str,
