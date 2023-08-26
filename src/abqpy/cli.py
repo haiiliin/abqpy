@@ -8,12 +8,12 @@ from typing_extensions import Self
 class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
-    def _parse_options(self, **options: str | bool | None) -> str:
+    def _parse_options(self, **options: str | int | bool | None) -> str:
         """Parse options to be passed to Abaqus/CAE command line interface.
 
-        If the value is a string, the option will
-        be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or
-        ignored if False; if the value is None, the option will be ignored.
+        If the value is a string or an integer, the option will be passed as ``option=value``; if the value is a
+        boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option
+        will be ignored.
         """
         return " ".join([f"{k}={v}" if isinstance(v, (str, int)) else k for k, v in options.items() if v])
 
