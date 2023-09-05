@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Command Line Interface — abqpy 2018.5.6.dev7+gd0a9a5425 documentation</title>
+<title>Command Line Interface — abqpy 2018.5.7.dev7+gd5c2e87f2 documentation</title>
 <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
@@ -291,144 +291,7 @@ GROUPS
     GROUP is one of the following:
 
      misc
-       Less frequently used Abaqus/CAE commands.
-
-COMMANDS
-    COMMAND is one of the following:
-
-     abaqus
-       Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are handled by the :meth:`._parse_options` method.
-
-     cae
-       Run Abaqus/CAE command.
-
-     python
-       Run Abaqus/Python command.
-
-     run
-       Run custom command.
-
-     viewer
-       Run Abaqus/CAE command.
-</pre></div>
-</div>
-<section id="abaqus-cae-execution-mode">
-<h3>Abaqus/CAE Execution Mode<a class="headerlink" href="#abaqus-cae-execution-mode" title="Permalink to this heading"></a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy cae --help
-INFO: Showing help with the command 'abqpy cae -- --help'.
-
-NAME
-    abqpy cae - Run Abaqus/CAE command.
-
-SYNOPSIS
-    abqpy cae SCRIPT &lt;flags&gt; [ARGS]...
-
-DESCRIPTION
-    Run Abaqus/CAE command.
-
-POSITIONAL ARGUMENTS
-    SCRIPT
-        Type: 'str'
-        The name of the python script to run
-    ARGS
-        Extra arguments to be passed after the Abaqus/CAE command line options
-
-FLAGS
-    -d, --database=DATABASE
-        Type: Optional['str | None']
-        Default: None
-        The name of the database file to open, by default None
-    --replay=REPLAY
-        Type: Optional['str | None']
-        Default: None
-        The name of the replay file to open, by default None
-    --recover=RECOVER
-        Type: Optional['str | None']
-        Default: None
-        The name of the journal file to open, by default None
-    --gui=GUI
-        Type: 'bool'
-        Default: False
-        Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
-    --noenvstartup=NOENVSTARTUP
-        Type: 'bool'
-        Default: False
-        Do not execute the Abaqus/CAE startup file, by default False
-    --noSavedOptions=NOSAVEDOPTIONS
-        Type: 'bool'
-        Default: False
-        Do not use the saved options, by default False
-    --noStartupDialog=NOSTARTUPDIALOG
-        Type: 'bool'
-        Default: False
-        Do not display the startup dialog, by default False
-    --guiRecord=GUIRECORD
-        Type: 'bool'
-        Default: False
-        Record the GUI commands to a file, by default False
-    --guiNoRecord=GUINORECORD
-        Type: 'bool'
-        Default: False
-        Do not record the GUI commands to a file, by default False
-    Additional flags are accepted.
-        Other unrecognized keyword arguments
-
-NOTES
-    You can also use flags syntax for POSITIONAL ARGUMENTS
-</pre></div>
-</div>
-</section>
-<section id="abaqus-python-execution-mode">
-<h3>Abaqus Python Execution Mode<a class="headerlink" href="#abaqus-python-execution-mode" title="Permalink to this heading"></a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy python --help
-INFO: Showing help with the command 'abqpy python -- --help'.
-
-NAME
-    abqpy python - Run Abaqus/Python command.
-
-SYNOPSIS
-    abqpy python SCRIPT &lt;flags&gt; [ARGS]...
-
-DESCRIPTION
-    Run Abaqus/Python command.
-
-POSITIONAL ARGUMENTS
-    SCRIPT
-        Type: 'str'
-        The name of the python script to run
-    ARGS
-        Extra arguments to be passed after the Abaqus/CAE command line options
-
-FLAGS
-    -s, --sim=SIM
-        Type: Optional['str | None']
-        Default: None
-        The name of the simulation file to open, by default None
-    -l, --log=LOG
-        Type: Optional['str | None']
-        Default: None
-        The name of the log file to open, by default None
-    Additional flags are accepted.
-        Other unrecognized keyword arguments
-
-NOTES
-    You can also use flags syntax for POSITIONAL ARGUMENTS
-</pre></div>
-</div>
-</section>
-<section id="less-frequently-used-commands">
-<h3>Less Frequently Used Commands<a class="headerlink" href="#less-frequently-used-commands" title="Permalink to this heading"></a></h3>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy misc --help
-INFO: Showing help with the command 'abqpy misc -- --help'.
-
-NAME
-    abqpy misc - Less frequently used Abaqus/CAE commands.
-
-SYNOPSIS
-    abqpy misc COMMAND
-
-DESCRIPTION
-    Less frequently used Abaqus/CAE commands.
+       The abqpy command line interface.
 
 COMMANDS
     COMMAND is one of the following:
@@ -441,6 +304,9 @@ COMMANDS
      append
 
      ascfil
+
+     cae
+       Run Abaqus/CAE command.
 
      cosimulation
 
@@ -495,6 +361,9 @@ COMMANDS
      optimization
        Run Abaqus optimization command.
 
+     python
+       Run Abaqus/Python command.
+
      restartjoin
 
      resume
@@ -527,6 +396,247 @@ COMMANDS
      tozaero
 
      upgrade
+
+     viewer
+       Run Abaqus/CAE command.
+
+     whereami
+</pre></div>
+</div>
+<section id="abaqus-cae-execution-mode">
+<h3>Abaqus/CAE Execution Mode<a class="headerlink" href="#abaqus-cae-execution-mode" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy cae --help
+INFO: Showing help with the command 'abqpy cae -- --help'.
+
+NAME
+    abqpy cae - Run Abaqus/CAE command.
+
+SYNOPSIS
+    abqpy cae SCRIPT &lt;flags&gt; [ARGS]...
+
+DESCRIPTION
+    Run Abaqus/CAE command.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: 'str'
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -d, --database=DATABASE
+        Type: Optional['str | None']
+        Default: None
+        The name of the database file to open, by default None
+    --replay=REPLAY
+        Type: Optional['str | None']
+        Default: None
+        The name of the replay file to open, by default None
+    --recover=RECOVER
+        Type: Optional['str | None']
+        Default: None
+        The name of the journal file to open, by default None
+    --gui=GUI
+        Type: 'bool'
+        Default: False
+        Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+    -e, --envstartup=ENVSTARTUP
+        Type: 'bool'
+        Default: True
+        Execute the Abaqus/CAE startup file, by default True
+    --savedOptions=SAVEDOPTIONS
+        Type: 'bool'
+        Default: True
+        Use the saved options, by default True
+    --savedGuiPrefs=SAVEDGUIPREFS
+        Type: 'bool'
+        Default: True
+        Use the saved GUI preferences, by default True
+    --startupDialog=STARTUPDIALOG
+        Type: 'bool'
+        Default: True
+        Display the startup dialog, by default True
+    -c, --custom=CUSTOM
+        Type: Optional['str | None']
+        Default: None
+        The name of the file containing Abaqus GUI Toolkit commands to be executed, by default None
+    --guiTester=GUITESTER
+        Type: Optional['str | None']
+        Default: None
+        This option starts a separate user interface containing the Abaqus Python development environment along with Abaqus/CAE.
+    --guiRecord=GUIRECORD
+        Type: Optional['bool | None']
+        Default: None
+        Record the GUI commands to a file, by default None
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+</pre></div>
+</div>
+</section>
+<section id="abaqus-python-execution-mode">
+<h3>Abaqus Python Execution Mode<a class="headerlink" href="#abaqus-python-execution-mode" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy python --help
+INFO: Showing help with the command 'abqpy python -- --help'.
+
+NAME
+    abqpy python - Run Abaqus/Python command.
+
+SYNOPSIS
+    abqpy python SCRIPT &lt;flags&gt; [ARGS]...
+
+DESCRIPTION
+    Run Abaqus/Python command.
+
+POSITIONAL ARGUMENTS
+    SCRIPT
+        Type: 'str'
+        The name of the python script to run
+    ARGS
+        Extra arguments to be passed after the Abaqus/CAE command line options
+
+FLAGS
+    -s, --sim=SIM
+        Type: Optional['str | None']
+        Default: None
+        The name of the simulation file to open, by default None
+    -l, --log=LOG
+        Type: Optional['str | None']
+        Default: None
+        The name of the log file to open, by default None
+
+NOTES
+    You can also use flags syntax for POSITIONAL ARGUMENTS
+</pre></div>
+</div>
+</section>
+<section id="less-frequently-used-commands">
+<h3>Less Frequently Used Commands<a class="headerlink" href="#less-frequently-used-commands" title="Permalink to this heading"></a></h3>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ abqpy misc --help
+INFO: Showing help with the command 'abqpy misc -- --help'.
+
+NAME
+    abqpy misc - The abqpy command line interface.
+
+SYNOPSIS
+    abqpy misc GROUP | COMMAND
+
+DESCRIPTION
+    The abqpy command line interface.
+
+GROUPS
+    GROUP is one of the following:
+
+     misc
+       The abqpy command line interface.
+
+COMMANDS
+    COMMAND is one of the following:
+
+     abaqus
+       Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are handled by the :meth:`._parse_options` method.
+
+     adams
+
+     append
+
+     ascfil
+
+     cae
+       Run Abaqus/CAE command.
+
+     cosimulation
+
+     cse
+
+     decrypt
+
+     doc
+
+     emloads
+
+     encrypt
+
+     fetch
+
+     findkeyword
+
+     fmu
+
+     fromansys
+
+     fromdyna
+
+     fromnastran
+
+     frompamcrash
+
+     fromradioss
+
+     fromsimpack
+
+     help
+
+     information
+
+     licensing
+
+     make
+
+     moldflow
+
+     mtxasm
+
+     networkDBConnector
+
+     odb2sim
+
+     odbcombine
+
+     odbreport
+
+     optimization
+       Run Abaqus optimization command.
+
+     python
+       Run Abaqus/Python command.
+
+     restartjoin
+
+     resume
+
+     run
+       Run custom command.
+
+     script
+
+     sim_version
+
+     substructurecombine
+
+     substructurerecover
+
+     suspend
+
+     sysVerify
+
+     terminate
+
+     toOutput2
+
+     toexcite
+
+     tonastran
+
+     tosimpack
+
+     tozaero
+
+     upgrade
+
+     viewer
+       Run Abaqus/CAE command.
 
      whereami
 </pre></div>
