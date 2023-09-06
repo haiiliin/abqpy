@@ -13,7 +13,6 @@ Classes
 .. autoapisummary::
 
    abqpy.cli.AbqpyCLIBase
-   abqpy.cli.AbqpyMiscCLI
    abqpy.cli.AbqpyCLI
 
 
@@ -34,13 +33,13 @@ Attributes
 
    .. autoclasstoc::
 
-   .. py:method:: _parse_options(**options: str | bool | None) -> str
+   .. py:method:: _parse_options(**options: str | int | bool | None) -> str
 
       Parse options to be passed to Abaqus/CAE command line interface.
 
-      If the value is a string, the option will
-      be passed as ``option=value``; if the value is a boolean, the option will be passed as ``option`` if True, or
-      ignored if False; if the value is None, the option will be ignored.
+      If the value is a string or an integer, the option will be passed as ``option=value``; if the value is a
+      boolean, the option will be passed as ``option`` if True, or ignored if False; if the value is None, the option
+      will be ignored.
 
 
    .. py:method:: run(cmd: str)
@@ -58,16 +57,72 @@ Attributes
 
 
 
-.. py:class:: AbqpyMiscCLI
+.. py:class:: AbqpyCLI
 
    Bases: :py:obj:`AbqpyCLIBase`
 
-   Less frequently used Abaqus/CAE commands.
+   The abqpy command line interface.
 
 
    .. autoclasstoc::
 
-   .. py:method:: optimization(task: str, job: str, *, cpus: int | None = None, gpus: int | None = None, memory: int | None = None, interactive: bool = False, globalmodel: str | None = None, scratch: str | None = None, **kwargs)
+   .. py:property:: misc
+      :type: typing_extensions.Self
+
+      Miscellaneous commands for backward compatibility.
+
+   .. py:attribute:: viewer
+
+      
+
+   .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, gui: bool = False, envstartup: bool = True, savedOptions: bool = True, savedGuiPrefs: bool = True, startupDialog: bool = True, custom: str | None = None, guiTester: str | None = None, guiRecord: bool | None = None)
+
+      Run Abaqus/CAE command.
+
+      :param script: The name of the python script to run
+      :type script: :class:`str`
+      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
+      :type args: :class:`str`
+      :param database: The name of the database file to open, by default None
+      :type database: :class:`str`, *optional*
+      :param replay: The name of the replay file to open, by default None
+      :type replay: :class:`str`, *optional*
+      :param recover: The name of the journal file to open, by default None
+      :type recover: :class:`str`, *optional*
+      :param gui: Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
+      :type gui: :class:`bool`, *optional*
+      :param envstartup: Execute the Abaqus/CAE startup file, by default True
+      :type envstartup: :class:`bool`, *optional*
+      :param savedOptions: Use the saved options, by default True
+      :type savedOptions: :class:`bool`, *optional*
+      :param savedGuiPrefs: Use the saved GUI preferences, by default True
+      :type savedGuiPrefs: :class:`bool`, *optional*
+      :param startupDialog: Display the startup dialog, by default True
+      :type startupDialog: :class:`bool`, *optional*
+      :param custom: The name of the file containing Abaqus GUI Toolkit commands to be executed, by default None
+      :type custom: :class:`str`, *optional*
+      :param guiTester: This option starts a separate user interface containing the Abaqus Python development environment along
+                        with Abaqus/CAE.
+      :type guiTester: :class:`str`, *optional*
+      :param guiRecord: Record the GUI commands to a file, by default None
+      :type guiRecord: :class:`bool`, *optional*
+
+
+   .. py:method:: python(script: str, *args, sim: str | None = None, log: str | None = None)
+
+      Run Abaqus/Python command.
+
+      :param script: The name of the python script to run
+      :type script: :class:`str`
+      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
+      :type args: :class:`str`
+      :param sim: The name of the simulation file to open, by default None
+      :type sim: :class:`str`, *optional*
+      :param log: The name of the log file to open, by default None
+      :type log: :class:`str`, *optional*
+
+
+   .. py:method:: optimization(task: str, job: str, *, cpus: int | None = None, gpus: int | None = None, memory: int | None = None, interactive: bool = False, globalmodel: str | None = None, scratch: str | None = None)
 
       Run Abaqus optimization command.
 
@@ -87,7 +142,6 @@ Attributes
       :type globalmodel: :class:`str`, *optional*
       :param scratch: The name of the directory used for scratch files.
       :type scratch: :class:`str`, *optional*
-      :param kwargs: Other unrecognized keyword arguments
 
 
    .. py:method:: help(*args, **options)
@@ -220,64 +274,6 @@ Attributes
 
 
    .. py:method:: sysVerify(*args, **options)
-
-
-
-.. py:class:: AbqpyCLI
-
-   Bases: :py:obj:`AbqpyCLIBase`
-
-   The abqpy command line interface.
-
-
-   .. autoclasstoc::
-
-   .. py:attribute:: viewer
-
-      
-
-   .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, gui: bool = False, noenvstartup: bool = False, noSavedOptions: bool = False, noStartupDialog: bool = False, guiRecord: bool = False, guiNoRecord: bool = False, **kwargs)
-
-      Run Abaqus/CAE command.
-
-      :param script: The name of the python script to run
-      :type script: :class:`str`
-      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
-      :type args: :class:`str`
-      :param database: The name of the database file to open, by default None
-      :type database: :class:`str`, *optional*
-      :param replay: The name of the replay file to open, by default None
-      :type replay: :class:`str`, *optional*
-      :param recover: The name of the journal file to open, by default None
-      :type recover: :class:`str`, *optional*
-      :param gui: Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
-      :type gui: :class:`bool`, *optional*
-      :param noenvstartup: Do not execute the Abaqus/CAE startup file, by default False
-      :type noenvstartup: :class:`bool`, *optional*
-      :param noSavedOptions: Do not use the saved options, by default False
-      :type noSavedOptions: :class:`bool`, *optional*
-      :param noStartupDialog: Do not display the startup dialog, by default False
-      :type noStartupDialog: :class:`bool`, *optional*
-      :param guiRecord: Record the GUI commands to a file, by default False
-      :type guiRecord: :class:`bool`, *optional*
-      :param guiNoRecord: Do not record the GUI commands to a file, by default False
-      :type guiNoRecord: :class:`bool`, *optional*
-      :param kwargs: Other unrecognized keyword arguments
-
-
-   .. py:method:: python(script: str, *args, sim: str | None = None, log: str | None = None, **kwargs)
-
-      Run Abaqus/Python command.
-
-      :param script: The name of the python script to run
-      :type script: :class:`str`
-      :param args: Extra arguments to be passed after the Abaqus/CAE command line options
-      :type args: :class:`str`
-      :param sim: The name of the simulation file to open, by default None
-      :type sim: :class:`str`, *optional*
-      :param log: The name of the log file to open, by default None
-      :type log: :class:`str`, *optional*
-      :param kwargs: Other unrecognized keyword arguments
 
 
 
