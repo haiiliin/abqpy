@@ -1,21 +1,25 @@
 from __future__ import annotations
 
-import sys
-from math import *
+import auto_all
 
-from abqpy import run
+from abqpy import run  # noqa
 
-from .builtin import *
-from .Canvas.Highlight import *
-from .Mdb.Mdb import Mdb
-from .Mdb.MdbCommands import *
-from .Odb.Odb import Odb
-from .Session.Session import Session
-from .UtilityAndView import abaqusConstants
-from .UtilityAndView.abaqusConstants import OFF, Boolean
-from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
-from .UtilityAndView.SymbolicConstant import SymbolicConstant
-from .UtilityAndView.User import *
+run(cae=True)
+auto_all.start_all()
+
+from math import *  # noqa
+
+from .builtin import *  # noqa
+from .Canvas.Highlight import *  # noqa
+from .Mdb.Mdb import Mdb  # noqa
+from .Mdb.MdbCommands import *  # noqa
+from .Odb.Odb import Odb  # noqa
+from .Session.Session import Session  # noqa
+from .UtilityAndView import abaqusConstants  # noqa
+from .UtilityAndView.abaqusConstants import OFF, Boolean  # noqa
+from .UtilityAndView.BackwardCompatibility import BackwardCompatibility  # noqa
+from .UtilityAndView.SymbolicConstant import SymbolicConstant  # noqa
+from .UtilityAndView.User import *  # noqa
 
 session = Session()
 mdb = Mdb()
@@ -25,20 +29,4 @@ backwardCompatibility = BackwardCompatibility()
 YES = abaqusConstants.YES
 NO = abaqusConstants.NO
 
-run(cae=True)
-
-__main__ = sys.modules["__main__"]
-__all__ = [
-    "backwardCompatibility",
-    "BackwardCompatibility",
-    "Boolean",
-    "Mdb",
-    "mdb",
-    "Odb",
-    "session",
-    "Session",
-    "SymbolicConstant",
-    "YES",
-    "NO",
-    "OFF",
-]
+auto_all.end_all()
