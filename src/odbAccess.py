@@ -1,13 +1,16 @@
 from __future__ import annotations
 
-from math import *
+import auto_all
 
 from abqpy import run
 
 run(cae=False)
+auto_all.start_all()
 
-from abaqus.Odb.Odb import Odb
-from abaqus.Odb.OdbCommands import (
+from math import *  # noqa
+
+from abaqus.Odb.Odb import Odb  # noqa
+from abaqus.Odb.OdbCommands import (  # noqa
     AnalyticSurfaceProfile,
     isUpgradeRequiredForOdb,
     maxEnvelope,
@@ -15,19 +18,9 @@ from abaqus.Odb.OdbCommands import (
     openOdb,
     upgradeOdb,
 )
-from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility
-from abaqusConstants import *
+from abaqus.UtilityAndView.BackwardCompatibility import BackwardCompatibility  # noqa
+from abaqusConstants import *  # noqa
 
 backwardCompatibility = BackwardCompatibility()
 
-__all__ = [
-    "backwardCompatibility",
-    "BackwardCompatibility",
-    "isUpgradeRequiredForOdb",
-    "maxEnvelope",
-    "minEnvelope",
-    "Odb",
-    "openOdb",
-    "upgradeOdb",
-    "AnalyticSurfaceProfile",
-]
+auto_all.end_all()
