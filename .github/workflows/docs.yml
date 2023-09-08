@@ -21,10 +21,6 @@ on:
       - "pyproject.toml"
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 env:
   REPO_NAME: ${{ github.event.repository.name }}
   VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
@@ -85,6 +81,7 @@ jobs:
       LANGUAGE: ${{ matrix.language }}
 
     steps:
+      - uses: ahmadnassri/action-workflow-queue@v1
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -93,7 +90,6 @@ jobs:
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-      - uses: ahmadnassri/action-workflow-queue@v1
       - name: Upload the documentation
         uses: peaceiris/actions-gh-pages@v3
         with:
