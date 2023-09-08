@@ -2,9 +2,17 @@ name: tests
 
 on:
   pull_request:
+    branches:
+      - 20**
+    paths:
+      - "src/**"
+      - ".github/workflows/tests.yml"
   push:
     branches:
       - 20**
+    paths:
+      - "src/**"
+      - ".github/workflows/tests.yml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
