@@ -8,7 +8,7 @@ on:
     paths:
       - "src/**"
       - "docs/source/**"
-      - "docs/examples/**"
+      - "examples/**"
       - ".github/workflows/docs.yml"
   pull_request:
     branches:
@@ -17,7 +17,7 @@ on:
     paths:
       - "src/**"
       - "docs/source/**"
-      - "docs/examples/**"
+      - "examples/**"
       - ".github/workflows/docs.yml"
   workflow_dispatch:
 
