@@ -17,19 +17,6 @@ labelMappings:
   "- [x] 2018": backport-to-2018
   "- [x] 2017": backport-to-2017
   "- [x] 2016": backport-to-2016
-  "- [x] automation": automation
-  "- [x] bug": bug
-  "- [x] docs": docs
-  "- [x] docs preview": docs-preview
-  "- [x] enhancement": enhancement
-  "- [x] new feature": new feature
-  "- [x] refactor": refactor
-  "- [x] reformat with black": reformat-with-black
-  "- [x] release": release
-  "- [x] test": test
-  "- [x] typing": typing
-  "- [x] typo": typo
-  "- [x] workflow": workflow
   "[automation]": automation
   "[breaking change]": breaking change
   "[bug]": bug
@@ -43,6 +30,7 @@ labelMappings:
   "[feature]": feature
   "[fix]": fix
   "[new feature]": new feature
+  "[pre-commit.ci]": pre-commit
   "[refactor]": refactor
   "[reformat with black]": reformat-with-black
   "[release]": release
