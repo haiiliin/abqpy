@@ -64,7 +64,6 @@ jobs:
         env:
           SPHINXOPTS: -D language=${{ matrix.language }} -j auto
       - name: Upload artifacts
-        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
@@ -72,7 +71,6 @@ jobs:
           retention-days: 1
 
   upload:
-    if: github.event_name != 'pull_request'
     needs: sphinx
     runs-on: ubuntu-latest
     strategy:
@@ -95,6 +93,7 @@ jobs:
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
       - uses: ahmadnassri/action-workflow-queue@v1
       - name: Upload the documentation
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
