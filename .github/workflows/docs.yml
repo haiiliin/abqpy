@@ -21,10 +21,6 @@ on:
       - "pyproject.toml"
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 env:
   REPO_NAME: ${{ github.event.repository.name }}
   VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
