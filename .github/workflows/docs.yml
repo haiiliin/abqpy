@@ -8,17 +8,17 @@ on:
     paths:
       - "src/**"
       - "docs/source/**"
+      - "docs/examples/**"
       - ".github/workflows/docs.yml"
-      - "pyproject.toml"
   pull_request:
     branches:
-      - 20**
+      - "2023"
     types: [opened, reopened, synchronize]
     paths:
       - "src/**"
       - "docs/source/**"
+      - "docs/examples/**"
       - ".github/workflows/docs.yml"
-      - "pyproject.toml"
   workflow_dispatch:
 
 concurrency:
@@ -32,8 +32,6 @@ env:
 jobs:
   sphinx:
     if: >
-      github.event_name != 'pull_request' ||
-      github.base_ref == '2023' ||
       contains(github.event.pull_request.labels.*.name, 'conflicts') ||
       contains(github.event.pull_request.labels.*.name, 'docs-test')
     runs-on: ubuntu-latest
