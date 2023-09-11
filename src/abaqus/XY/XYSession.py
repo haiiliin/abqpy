@@ -10,6 +10,7 @@ from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import (
     FILLED_CIRCLE,
+    NONE,
     OFF,
     ON,
     REAL,
