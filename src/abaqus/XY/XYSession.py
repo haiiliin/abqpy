@@ -183,14 +183,9 @@ class XYSession(XYSessionBase):
             C.VOLUME_FLUX,
             C.VOLUME_FLUX_AREA,
             C.VOLUME_FRACTION,
-<<<<<<< HEAD
-        ],
-        label: str = "",
-    ) -> QuantityTypeType:
-=======
         ] = NONE,
+        label: str = "",
     ) -> QuantityType:
->>>>>>> 64aa7531 ([docs] Suppress docs warnigs (#5019))
         """This method creates a QuantityType object.
 
         .. note::
@@ -284,11 +279,7 @@ class XYSession(XYSessionBase):
         QuantityType
             A QuantityType object.
         """
-<<<<<<< HEAD
-        quantityType = QuantityTypeType(type, label)
-=======
-        quantityType = QuantityType(label, type)
->>>>>>> 64aa7531 ([docs] Suppress docs warnigs (#5019))
+        quantityType = QuantityType(type, label)
         return quantityType
 
     @staticmethod
