@@ -35,7 +35,7 @@ jobs:
     strategy:
       matrix:
         language: ["en", "zh_CN"]
-        builder: ["html", "latexpdf"]
+        builder: ["html"]
         theme: ["sphinx_rtd_theme"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
@@ -53,10 +53,6 @@ jobs:
         run: |
           pip install .[docs]
           pip show abqpy
-      - name: Setup texlive
-        if: matrix.builder == 'latexpdf'
-        run: |
-          sudo apt-get install -y texlive-latex-extra texlive-publishers texlive-xetex latexmk
       - name: Build the documentation
         run: |
           sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}/${{ matrix.language }}
@@ -75,10 +71,9 @@ jobs:
     needs: sphinx
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 1
       matrix:
         language: ["en", "zh_CN"]
-        builder: ["html", "latexpdf"]
+        builder: ["html"]
         theme: ["sphinx_rtd_theme"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
@@ -94,23 +89,7 @@ jobs:
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-
-      - name: Rename the LaTeX PDF file
-        if: matrix.builder == 'latexpdf'
-        run: |
-          mv docs/build/${{ matrix.builder }}/${{ matrix.language }}/abqpy.pdf docs/build/${{ matrix.builder }}/${{ matrix.language }}/abqpy-docs-${{ matrix.language }}-${{ env.VERSION }}.pdf
-      - name: Upload the LaTeX PDF documentation
-        if: matrix.builder == 'latexpdf'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          destination_dir: ${{ matrix.language }}/${{ env.VERSION }}
-          keep_files: true
-          exclude_assets: "_sphinx_design_static,static"
-
-      - name: Upload the HTML documentation
-        if: matrix.builder == 'html'
+      - name: Upload the documentation
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
