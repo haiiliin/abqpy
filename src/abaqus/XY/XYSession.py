@@ -10,6 +10,7 @@ from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import (
     FILLED_CIRCLE,
+    NONE,
     OFF,
     ON,
     REAL,
@@ -19,7 +20,7 @@ from ..UtilityAndView.abaqusConstants import (
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from .QuantityType import QuantityType as QuantityTypeType
+from .QuantityType import QuantityType
 from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData as XYDataType
@@ -183,9 +184,9 @@ class XYSession(XYSessionBase):
             C.VOLUME_FLUX,
             C.VOLUME_FLUX_AREA,
             C.VOLUME_FRACTION,
-        ],
+        ] = NONE,
         label: str = "",
-    ) -> QuantityTypeType:
+    ) -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note::
@@ -279,7 +280,7 @@ class XYSession(XYSessionBase):
         QuantityType
             A QuantityType object.
         """
-        quantityType = QuantityTypeType(type, label)
+        quantityType = QuantityType(type, label)
         return quantityType
 
     @staticmethod
@@ -401,8 +402,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityTypeType = QuantityTypeType(),
-        axis2QuantityType: QuantityTypeType = QuantityTypeType(),
+        axis1QuantityType=...,
+        axis2QuantityType=...,
     ) -> XYDataType:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -493,8 +494,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityTypeType = QuantityTypeType(),
-        axis2QuantityType: QuantityTypeType = QuantityTypeType(),
+        axis1QuantityType=...,
+        axis2QuantityType=...,
         xField: int = 1,
         yField: int = 2,
         skipFrequency: int = 0,
