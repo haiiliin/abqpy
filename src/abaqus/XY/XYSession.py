@@ -404,8 +404,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType=QuantityType(),
-        axis2QuantityType=QuantityType(),
+        axis1QuantityType=...,
+        axis2QuantityType=...,
     ) -> XYDataType:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -496,8 +496,8 @@ class XYSession(XYSessionBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType=QuantityType(),
-        axis2QuantityType=QuantityType(),
+        axis1QuantityType=...,
+        axis2QuantityType=...,
         xField: int = 1,
         yField: int = 2,
         skipFrequency: int = 0,
