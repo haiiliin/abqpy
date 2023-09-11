@@ -37,6 +37,7 @@ sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
 
 # For multiple languages
+language = os.environ.get("LANGUAGE", os.environ.get("READTHEDOCS_LANGUAGE", "en"))
 locale_dirs = [f"locale/{major}"]  # path is example but recommended.
 gettext_compact = False  # optional.
 
@@ -371,7 +372,7 @@ html_context = dict(display_lower_left=True)
 REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
 
 # GET CURRENT_LANGUAGE
-current_language = os.environ.get("LANGUAGE", "en")
+current_language = language
 
 # tell the theme which language to we're currently building
 html_context["current_language"] = current_language
@@ -393,7 +394,7 @@ html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
 
 # POPULATE LINKS TO OTHER VERSIONS
 branches = [str(v) for v in range(2023, 2015, -1)]
-branches += ["latest", "sphinx-book-theme", "furo"]
+branches += ["sphinx-book-theme", "furo"]
 html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
                             for ver in [branch for branch in branches]]  # fmt: skip
 
