@@ -280,7 +280,8 @@ elif html_theme == "sphinx_immaterial":
         "globaltoc_collapse": True,
         "features": [
             "navigation.expand",
-            # "navigation.tabs",
+            "navigation.tabs",
+            "navigation.tabs.sticky",
             # "toc.integrate",
             "navigation.sections",
             # "navigation.instant",
