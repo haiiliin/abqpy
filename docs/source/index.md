@@ -49,27 +49,6 @@ localization
 ```
 
 ```{toctree}
-:caption: Project Links
-:maxdepth: 1
-:hidden:
-
-GitHub <https://github.com/haiiliin/abqpy>
-PyPI <https://pypi.org/project/abqpy>
-Read the Docs <https://readthedocs.org/projects/abqpy>
-Bug Report <https://github.com/haiiliin/abqpy/issues>
-```
-
-```{toctree}
-:caption: External Links
-:maxdepth: 1
-:hidden:
-
-Dassault Systèmes <https://www.3ds.com/>
-SIMULA User Assistance <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all>
-Abaqus FEA <https://www.3ds.com/products-services/simulia/products/abaqus/>
-```
-
-```{toctree}
 :caption: Policy & License
 :maxdepth: 1
 :hidden:
