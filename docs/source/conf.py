@@ -68,6 +68,7 @@ extensions = [
     "sphinx_comments",
     "sphinx_design",
     "sphinx_gallery.gen_gallery",
+    "sphinx_immaterial",
     "sphinx_togglebutton",
     "sphinx_toolbox.confval",
     "sphinx_toolbox.more_autodoc.overloads",
