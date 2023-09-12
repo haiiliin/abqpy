@@ -36,7 +36,7 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_rtd_theme"]
+        theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
@@ -74,7 +74,7 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_rtd_theme"]
+        theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
