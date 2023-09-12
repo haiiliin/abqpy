@@ -311,12 +311,12 @@ elif html_theme == "sphinx_immaterial":
         "social": [
             {
                 "icon": "fontawesome/brands/github",
-                "link": "https://github.com/haiiliin/abqpy/",
+                "link": "https://github.com/haiiliin/abqpy",
                 "name": "Source on github.com",
             },
             {
                 "icon": "fontawesome/brands/python",
-                "link": "https://pypi.org/project/abqpy/",
+                "link": "https://pypi.org/project/abqpy",
             },
         ],
         # END: social icons
