@@ -18,7 +18,7 @@ The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2,
 must write codes that are compatiable with Python 2 and Python 3.
 ```
 
-## Table of Contents
+# Contents
 
 ```{toctree}
 :caption: User Manual
