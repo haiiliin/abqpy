@@ -31,7 +31,7 @@ author = "WANG Hailin"
 
 release = abqpy.__version__
 major, minor, patch, *_ = release.split(".")
-version = major
+release = version = major
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -75,6 +75,7 @@ extensions = [
     "myst_parser",
     "version",
     "autoapi.extension",
+    "sphinx_immaterial",
 ]
 
 # changes configuration
@@ -200,7 +201,7 @@ exclude_patterns = ["locale/README.md", "_autoapi_templates"]
 # -- Options for HTML output -------------------------------------------------
 
 # Get the sphinx theme from the branch name
-default_theme = "sphinx_rtd_theme"
+default_theme = "sphinx_immaterial"
 html_themes = {
     "sphinx-rtd-theme": "sphinx_rtd_theme",
     "sphinx-book-theme": "sphinx_book_theme",
@@ -234,11 +235,92 @@ if html_theme == "sphinx_book_theme":
     }
 elif html_theme == "sphinx_rtd_theme":
     html_theme_options = {}
+
+    html_context = dict(display_lower_left=True)
+    REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
+    current_language = language
+    html_context["current_language"] = current_language
+    current_version = os.environ.get("VERSION", branch)
+    html_context["current_version"] = html_context["version"] = current_version
+    html_context["language_alias"] = {
+        "en": "English",
+        "zh_CN": "简体中文",
+    }
+    html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
+                                 for lang in ("en", "zh_CN")]  # fmt: skip
+    branches = [str(v) for v in range(2023, 2015, -1)]
+    branches += ["sphinx-book-theme", "furo"]
+    html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
+                                for ver in [branch for branch in branches]]  # fmt: skip
+    html_context["downloads"] = [
+        (
+            fmt,
+            f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
+        )
+        for fmt in ("pdf", "epub")
+    ]
+
     html_sidebars = {
         "*": ["versions.html"],
     }
 elif html_theme == "furo":
     html_theme_options = {}
+elif html_theme == "sphinx_immaterial":
+    READTHEDOCS = "READTHEDOCS" in os.environ
+    versions = [str(v) for v in range(2023, 2015, -1)]
+    html_theme_options = {
+        "icon": {
+            "repo": "fontawesome/brands/github",
+            "edit": "material/file-edit-outline",
+        },
+        "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
+        "repo_url": "https://github.com/haiiliin/abqpy/",
+        "repo_name": "abqpy",
+        "edit_uri": "blob/main/docs/source",
+        "globaltoc_collapse": True,
+        "features": [
+            "navigation.expand",
+            # "navigation.tabs",
+            # "toc.integrate",
+            "navigation.sections",
+            # "navigation.instant",
+            # "header.autohide",
+            "navigation.top",
+            # "navigation.tracking",
+            # "search.highlight",
+            "search.share",
+            "toc.follow",
+            "toc.sticky",
+            "content.tabs.link",
+            "announce.dismiss",
+        ],
+        "palette": {"primary": "green"},
+        # BEGIN: version_dropdown
+        "version_dropdown": True,
+        "version_info": [
+            {
+                "version": f"/{language}/{ver}/" if READTHEDOCS else f"/abqpy/{language}/{ver}/",
+                "title": ver,
+                "aliases": [],
+            }
+            for ver in versions
+        ],
+        # END: version_dropdown
+        "toc_title_is_page_title": True,
+        # BEGIN: social icons
+        "social": [
+            {
+                "icon": "fontawesome/brands/github",
+                "link": "https://github.com/haiiliin/abqpy/",
+                "name": "Source on github.com",
+            },
+            {
+                "icon": "fontawesome/brands/python",
+                "link": "https://pypi.org/project/abqpy/",
+            },
+        ],
+        # END: social icons
+    }
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
@@ -361,48 +443,3 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
         return baseurl
 
     return baseurl + f"#L{lineno}-L{lineno + len(source) - 1}"
-
-
-############################
-# SETUP THE RTD LOWER-LEFT #
-############################
-html_context = dict(display_lower_left=True)
-
-# GET REPO_NAME
-REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
-
-# GET CURRENT_LANGUAGE
-current_language = language
-
-# tell the theme which language to we're currently building
-html_context["current_language"] = current_language
-
-# GET CURRENT_VERSION
-current_version = os.environ.get("VERSION", branch)
-
-# tell the theme which version we're currently on ('current_version' affects
-# the lower-left rtd menu and 'version' affects the logo-area version)
-html_context["current_version"] = html_context["version"] = current_version
-
-# POPULATE LINKS TO OTHER LANGUAGES
-html_context["language_alias"] = {
-    "en": "English",
-    "zh_CN": "简体中文",
-}
-html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
-                             for lang in ("en", "zh_CN")]  # fmt: skip
-
-# POPULATE LINKS TO OTHER VERSIONS
-branches = [str(v) for v in range(2023, 2015, -1)]
-branches += ["sphinx-book-theme", "furo"]
-html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
-                            for ver in [branch for branch in branches]]  # fmt: skip
-
-# POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
-html_context["downloads"] = [
-    (
-        fmt,
-        f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
-    )
-    for fmt in ("pdf", "epub")
-]
