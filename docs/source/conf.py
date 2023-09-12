@@ -200,7 +200,7 @@ exclude_patterns = ["locale/README.md", "_autoapi_templates"]
 # -- Options for HTML output -------------------------------------------------
 
 # Get the sphinx theme from the branch name
-default_theme = "sphinx_rtd_theme"
+default_theme = "sphinx_material"
 html_themes = {
     "sphinx-rtd-theme": "sphinx_rtd_theme",
     "sphinx-book-theme": "sphinx_book_theme",
@@ -234,11 +234,77 @@ if html_theme == "sphinx_book_theme":
     }
 elif html_theme == "sphinx_rtd_theme":
     html_theme_options = {}
+
+    html_context = dict(display_lower_left=True)
+    REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
+    current_language = language
+    html_context["current_language"] = current_language
+    current_version = os.environ.get("VERSION", branch)
+    html_context["current_version"] = html_context["version"] = current_version
+    html_context["language_alias"] = {
+        "en": "English",
+        "zh_CN": "简体中文",
+    }
+    html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
+                                 for lang in ("en", "zh_CN")]  # fmt: skip
+    branches = [str(v) for v in range(2023, 2015, -1)]
+    branches += ["sphinx-book-theme", "furo"]
+    html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
+                                for ver in [branch for branch in branches]]  # fmt: skip
+    html_context["downloads"] = [
+        (
+            fmt,
+            f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
+        )
+        for fmt in ("pdf", "epub")
+    ]
+
     html_sidebars = {
         "*": ["versions.html"],
     }
 elif html_theme == "furo":
     html_theme_options = {}
+elif html_theme == "sphinx_material":
+    READTHEDOCS = "READTHEDOCS" in os.environ
+    html_theme_options = {
+        # Set the name of the project to appear in the navigation.
+        "nav_title": "abqpy",
+        # Set you GA account ID to enable tracking
+        # 'google_analytics_account': 'UA-XXXXX',
+        # Specify a base_url used to generate sitemap.xml. If not
+        # specified, then no sitemap will be built.
+        "base_url": f"https://abqpy.readthedocs.io/{language}/{version}"
+        if READTHEDOCS
+        else f"https://haiiliin.github.io/abqpy/{language}/{version}",
+        # Set the color and the accent color
+        "color_primary": "blue",
+        "color_accent": "light-blue",
+        # Set the repo location to get a badge with stats
+        "repo_url": "https://github.com/haiiliin/abqpy/",
+        "repo_name": "abqpy",
+        # Visible levels of the global TOC; -1 means unlimited
+        "globaltoc_depth": 3,
+        # If False, expand all TOC entries
+        "globaltoc_collapse": False,
+        # If True, show hidden TOC entries
+        "globaltoc_includehidden": False,
+        # version dropdown
+        "version_dropdown": True,
+        "version_info": {
+            "English": f"/en/{version}/" if READTHEDOCS else f"/abqpy/en/{version}/",
+            "简体中文": f"/zh_CN/{version}/" if READTHEDOCS else f"/abqpy/zh_CN/{version}/",
+            "2023": f"/{language}/2023/" if READTHEDOCS else f"/abqpy/{language}/2023/",
+            "2022": f"/{language}/2022/" if READTHEDOCS else f"/abqpy/{language}/2022/",
+            "2021": f"/{language}/2021/" if READTHEDOCS else f"/abqpy/{language}/2021/",
+            "2020": f"/{language}/2020/" if READTHEDOCS else f"/abqpy/{language}/2020/",
+            "2019": f"/{language}/2019/" if READTHEDOCS else f"/abqpy/{language}/2019/",
+            "2018": f"/{language}/2018/" if READTHEDOCS else f"/abqpy/{language}/2018/",
+            "2017": f"/{language}/2017/" if READTHEDOCS else f"/abqpy/{language}/2017/",
+            "2016": f"/{language}/2016/" if READTHEDOCS else f"/abqpy/{language}/2016/",
+        },
+    }
+    html_show_sourcelink = True
+    html_sidebars = {"**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]}
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
@@ -361,48 +427,3 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
         return baseurl
 
     return baseurl + f"#L{lineno}-L{lineno + len(source) - 1}"
-
-
-############################
-# SETUP THE RTD LOWER-LEFT #
-############################
-html_context = dict(display_lower_left=True)
-
-# GET REPO_NAME
-REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
-
-# GET CURRENT_LANGUAGE
-current_language = language
-
-# tell the theme which language to we're currently building
-html_context["current_language"] = current_language
-
-# GET CURRENT_VERSION
-current_version = os.environ.get("VERSION", branch)
-
-# tell the theme which version we're currently on ('current_version' affects
-# the lower-left rtd menu and 'version' affects the logo-area version)
-html_context["current_version"] = html_context["version"] = current_version
-
-# POPULATE LINKS TO OTHER LANGUAGES
-html_context["language_alias"] = {
-    "en": "English",
-    "zh_CN": "简体中文",
-}
-html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
-                             for lang in ("en", "zh_CN")]  # fmt: skip
-
-# POPULATE LINKS TO OTHER VERSIONS
-branches = [str(v) for v in range(2023, 2015, -1)]
-branches += ["sphinx-book-theme", "furo"]
-html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
-                            for ver in [branch for branch in branches]]  # fmt: skip
-
-# POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
-html_context["downloads"] = [
-    (
-        fmt,
-        f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
-    )
-    for fmt in ("pdf", "epub")
-]
