@@ -161,14 +161,11 @@ class MdbBase:
         """This method saves an Mdb object to disk at the location specified by **pathName**
         (*pathName* is a member of the Mdb object).
 
-        Parameters
-        ----------
+        Raises
+        ------
         MdbError
             cannot save file;
             If the command fails to save the Mdb object to disk for reasons not mentioned above
-
-        Raises
-        ------
         MdbError
             cannot save file: pathname member is empty;
             If **pathName** is empty
@@ -229,8 +226,8 @@ class MdbBase:
     def closeAuxMdb(self):
         """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.
 
-        Parameters
-        ----------
+        Raises
+        ------
         MdbError
             The auxiliary Mdb was not opened;
             If the auxiliary Mdb was not opened earlier
