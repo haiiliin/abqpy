@@ -34,9 +34,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ["en", "zh_CN"]
+        language: ["en"]
         builder: ["html"]
-        theme: ["sphinx_rtd_theme"]
+        theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
@@ -55,15 +55,14 @@ jobs:
           pip show abqpy
       - name: Build the documentation
         run: |
-          sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          cd docs && make ${{ matrix.builder }}
         env:
-          SPHINXOPTS: -D language=${{ matrix.language }} -j auto -W
+          SPHINXOPTS: -j auto
       - name: Upload artifacts
-        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v3
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
-          path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          path: docs/build/${{ matrix.builder }}
           retention-days: 1
 
   upload:
@@ -73,9 +72,9 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        language: ["en", "zh_CN"]
+        language: ["en"]
         builder: ["html"]
-        theme: ["sphinx_rtd_theme"]
+        theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
