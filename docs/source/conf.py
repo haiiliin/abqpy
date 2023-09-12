@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import typing
+from pathlib import Path
 
 import abqpy
 
@@ -200,7 +201,7 @@ exclude_patterns = ["locale/README.md", "_autoapi_templates"]
 # -- Options for HTML output -------------------------------------------------
 
 # Get the sphinx theme from the branch name
-default_theme = "sphinx_material"
+default_theme = "sphinx_immaterial"
 html_themes = {
     "sphinx-rtd-theme": "sphinx_rtd_theme",
     "sphinx-book-theme": "sphinx_book_theme",
@@ -266,42 +267,61 @@ elif html_theme == "furo":
     html_theme_options = {}
 elif html_theme == "sphinx_material":
     READTHEDOCS = "READTHEDOCS" in os.environ
+    root = Path(__file__).parent.resolve()
+    versions = [str(v) for v in range(2023, 2015, -1)] + ["sphinx-book-theme", "furo"]
     html_theme_options = {
-        # Set the name of the project to appear in the navigation.
-        "nav_title": "abqpy",
-        # Set you GA account ID to enable tracking
-        # 'google_analytics_account': 'UA-XXXXX',
-        # Specify a base_url used to generate sitemap.xml. If not
-        # specified, then no sitemap will be built.
-        "base_url": f"https://abqpy.readthedocs.io/{language}/{version}"
-        if READTHEDOCS
-        else f"https://haiiliin.github.io/abqpy/{language}/{version}",
-        # Set the color and the accent color
-        "color_primary": "blue",
-        "color_accent": "light-blue",
-        # Set the repo location to get a badge with stats
+        "icon": {
+            "repo": "fontawesome/brands/github",
+            "edit": "material/file-edit-outline",
+        },
+        "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        # Visible levels of the global TOC; -1 means unlimited
-        "globaltoc_depth": 3,
-        # If False, expand all TOC entries
+        "edit_uri": "docs",
         "globaltoc_collapse": False,
-        # If True, show hidden TOC entries
-        "globaltoc_includehidden": False,
-        # version dropdown
+        "features": [
+            "navigation.expand",
+            # "navigation.tabs",
+            # "toc.integrate",
+            "navigation.sections",
+            # "navigation.instant",
+            # "header.autohide",
+            "navigation.top",
+            # "navigation.tracking",
+            # "search.highlight",
+            "search.share",
+            "toc.follow",
+            "toc.sticky",
+            "content.tabs.link",
+            "announce.dismiss",
+        ],
+        "palette": {"primary": "green"},
+        # BEGIN: version_dropdown
         "version_dropdown": True,
-        "version_info": {
-            "English": f"/en/{version}/" if READTHEDOCS else f"/abqpy/en/{version}/",
-            "简体中文": f"/zh_CN/{version}/" if READTHEDOCS else f"/abqpy/zh_CN/{version}/",
-            "2023": f"/{language}/2023/" if READTHEDOCS else f"/abqpy/{language}/2023/",
-            "2022": f"/{language}/2022/" if READTHEDOCS else f"/abqpy/{language}/2022/",
-            "2021": f"/{language}/2021/" if READTHEDOCS else f"/abqpy/{language}/2021/",
-            "2020": f"/{language}/2020/" if READTHEDOCS else f"/abqpy/{language}/2020/",
-            "2019": f"/{language}/2019/" if READTHEDOCS else f"/abqpy/{language}/2019/",
-            "2018": f"/{language}/2018/" if READTHEDOCS else f"/abqpy/{language}/2018/",
-            "2017": f"/{language}/2017/" if READTHEDOCS else f"/abqpy/{language}/2017/",
-            "2016": f"/{language}/2016/" if READTHEDOCS else f"/abqpy/{language}/2016/",
-        },
+        "version_info": [
+            {
+                "version": f"/{language}/{ver}/" if READTHEDOCS else f"/abqpy/{language}/{ver}/",
+                "title": ver,
+                "aliases": [],
+            }
+            for ver in versions
+        ],
+        # END: version_dropdown
+        "toc_title_is_page_title": True,
+        # BEGIN: social icons
+        "social": [
+            {
+                "icon": "fontawesome/brands/github",
+                "link": "https://github.com/haiiliin/abqpy",
+                "name": "Source on github.com",
+            },
+            {
+                "icon": "fontawesome/brands/python",
+                "link": "https://pypi.org/project/abqpy/",
+            },
+        ],
+        "sphinx_immaterial_external_resource_cache_dir": str(root / "_static"),
+        # END: social icons
     }
     html_show_sourcelink = True
     html_sidebars = {"**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]}
