@@ -22,7 +22,6 @@ import os
 import re
 import sys
 import typing
-from pathlib import Path
 
 import abqpy
 
@@ -271,7 +270,7 @@ elif html_theme == "sphinx_rtd_theme":
     }
 elif html_theme == "furo":
     html_theme_options = {}
-elif html_theme == "sphinx_material":
+elif html_theme == "sphinx_immaterial":
     READTHEDOCS = "READTHEDOCS" in os.environ
     versions = [str(v) for v in range(2023, 2015, -1)]
     html_theme_options = {
@@ -327,8 +326,6 @@ elif html_theme == "sphinx_material":
         ],
         # END: social icons
     }
-    html_show_sourcelink = True
-    html_sidebars = {"**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]}
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
