@@ -267,7 +267,6 @@ elif html_theme == "furo":
     html_theme_options = {}
 elif html_theme == "sphinx_material":
     READTHEDOCS = "READTHEDOCS" in os.environ
-    root = Path(__file__).parent.resolve()
     versions = [str(v) for v in range(2023, 2015, -1)] + ["sphinx-book-theme", "furo"]
     html_theme_options = {
         "icon": {
@@ -320,7 +319,6 @@ elif html_theme == "sphinx_material":
                 "link": "https://pypi.org/project/abqpy/",
             },
         ],
-        "sphinx_immaterial_external_resource_cache_dir": str(root / "_static"),
         # END: social icons
     }
     html_show_sourcelink = True
