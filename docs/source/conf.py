@@ -268,7 +268,7 @@ elif html_theme == "furo":
     html_theme_options = {}
 elif html_theme == "sphinx_material":
     READTHEDOCS = "READTHEDOCS" in os.environ
-    versions = [str(v) for v in range(2023, 2015, -1)] + ["sphinx-book-theme", "furo"]
+    versions = [str(v) for v in range(2023, 2015, -1)]
     html_theme_options = {
         "icon": {
             "repo": "fontawesome/brands/github",
@@ -277,7 +277,7 @@ elif html_theme == "sphinx_material":
         "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        "edit_uri": "docs",
+        "edit_uri": "blob/main/docs",
         "globaltoc_collapse": False,
         "features": [
             "navigation.expand",
