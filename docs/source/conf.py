@@ -191,6 +191,11 @@ numfig = True
 # True to convert the type definitions in the docstrings as references. Defaults to False.
 napoleon_preprocess_types = True
 
+# sphinx-immaterial configuration
+object_description_options = [
+    ("py:.*", dict(include_in_toc=False)),
+]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
