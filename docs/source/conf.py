@@ -68,7 +68,6 @@ extensions = [
     "sphinx_comments",
     "sphinx_design",
     "sphinx_gallery.gen_gallery",
-    "sphinx_immaterial",
     "sphinx_togglebutton",
     "sphinx_toolbox.confval",
     "sphinx_toolbox.more_autodoc.overloads",
@@ -77,6 +76,7 @@ extensions = [
     "myst_parser",
     "version",
     "autoapi.extension",
+    "sphinx_immaterial",
 ]
 
 # changes configuration
