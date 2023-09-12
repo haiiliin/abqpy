@@ -1,40 +1,1813 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en/html" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Input File Parser &mdash; abqpy 2017.5.7 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/sphinx-codeautolink.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster.custom.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster.bundle.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/micromodal.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/autoclasstoc.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/sphinx_rtd_theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Input File Parser - abqpy 2017 documentation</title>
+      
+    
+    
+      
+        
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.a60204c58f5e4ff66.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-shadow.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-punk.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-noir.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-light.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-borderless.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/micromodal.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
   
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#create-input-files" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="abqpy 2017 documentation" class="md-header__button md-logo" aria-label="abqpy 2017 documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            abqpy 2017 documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Input File Parser
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/haiiliin/abqpy/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abqpy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="abqpy 2017 documentation" class="md-nav__button md-logo" aria-label="abqpy 2017 documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    abqpy 2017 documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/haiiliin/abqpy/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abqpy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">User Manual</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Manual" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">User Manual</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started.html" class="md-nav__link">
+        <span class="md-ellipsis">Getting Started</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../envvars.html" class="md-nav__link">
+        <span class="md-ellipsis">Environment Variables</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli.html" class="md-nav__link">
+        <span class="md-ellipsis">Command Line Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">Tutorials &amp; Examples</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials &amp; Examples" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Tutorials &amp; Examples</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials.html" class="md-nav__link">
+        <span class="md-ellipsis">Tutorials</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">References</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="References" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">References</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Scripting User’s Guide</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../index.html"><span class="md-ellipsis">Abaqus Class References</span></a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Abaqus Class References" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Abaqus Class References</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mdb/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Model Database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odb.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Output Database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../session/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Session</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_4" type="checkbox" id="__nav_3_2_4" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html"><span class="md-ellipsis">Kernel</span></a>
+          
+            <label for="__nav_3_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Kernel" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Kernel</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cae_display_preferences.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus CAE Display Preferences</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Input File Parser</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Input File Parser</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Input File Parser</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-input-files" class="md-nav__link">
+    <span class="md-ellipsis">Create input files</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create input files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.InputFile.InputFile (Python class) — Bases: object" class="md-ellipsis">Input<wbr>File</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InputFile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.__init__.file" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.__init__.file (Python parameter) — A String specifying the path to the input file." class="md-ellipsis">file</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.__init__.directory" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.__init__.directory (Python parameter) — A String specifying the path to the directory containing the input file." class="md-ellipsis">directory</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-return-type" class="md-nav__link">
+    <span class="md-ellipsis">Return type</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.directory" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.directory (Python attribute) — A String specifying the directory where the input file is located." class="md-ellipsis">directory</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.file" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.file (Python attribute) — A String specifying the source file name of the Abaqus input file." class="md-ellipsis">file</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.includes" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.includes (Python attribute) — A sequence of Strings specifying any additional input files included in the specified input file." class="md-ellipsis">includes</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes (Python attribute) — A sequence of Strings for input files included in the specified input file that could not be located." class="md-ellipsis">missing<wbr>Includes</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse (Python method) — This method parses the input file associated with the InputFile object." class="md-ellipsis">parse</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.organize" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.organize (Python parameter) — A Boolean specifying whether keywords should be organized into suboptions. The default is False." class="md-ellipsis">organize</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.verbose" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.verbose (Python parameter) — A Boolean specifying whether verbose output is to be printed. If verbose is True, information about fatal errors is printed. If no fatal errors occur, there is no output. The default is False." class="md-ellipsis">verbose</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.bulk" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.bulk (Python parameter) — A Boolean specifying whether the input file includes bulk data that should be parsed. The default is True." class="md-ellipsis">bulk</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray (Python parameter) — A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword data value. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True. The default is False." class="md-ellipsis">use<wbr>Py<wbr>Array</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-return-type" class="md-nav__link">
+    <span class="md-ellipsis">Return type</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-raises" class="md-nav__link">
+    <span class="md-ellipsis">Raises</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-classes" class="md-nav__link">
+    <span class="md-ellipsis">Other Classes</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray (Python class) — Bases: object" class="md-ellipsis">Abaqus<wbr>NDarray</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.Keyword.Keyword (Python class) — Bases: object" class="md-ellipsis">Keyword</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.comments" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.comments (Python attribute) — A sequence of Strings specifying the comments." class="md-ellipsis">comments</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.data" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.data (Python attribute) — A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if the data is suitable and if the InputFile.parse() method was called with the option usePyArray=True. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True." class="md-ellipsis">data</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.name" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.name (Python attribute) — A String specifying the name of the keyword." class="md-ellipsis">name</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.parameter" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.parameter (Python attribute) — A Dictionary of Strings specifying the keyword parameters." class="md-ellipsis">parameter</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.suboptions (Python attribute) — A KeywordSequence specifying the suboptions of the keyword." class="md-ellipsis">suboptions</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kernel.html" class="md-nav__link">
+        <span class="md-ellipsis">Custom Kernel</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="messaging.html" class="md-nav__link">
+        <span class="md-ellipsis">Messaging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="text_representation.html" class="md-nav__link">
+        <span class="md-ellipsis">Text Representation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utility.html" class="md-nav__link">
+        <span class="md-ellipsis">Utility and View</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGES.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus API Changes</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../autoapi/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abqpy API Reference</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../localization.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation Localization</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">Project Links</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Project Links" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Project Links</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/haiiliin/abqpy" class="md-nav__link">
+        <span class="md-ellipsis">Git<wbr>Hub</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://pypi.org/project/abqpy" class="md-nav__link">
+        <span class="md-ellipsis">Py<wbr>PI</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://readthedocs.org/projects/abqpy" class="md-nav__link">
+        <span class="md-ellipsis">Read the Docs</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/haiiliin/abqpy/issues" class="md-nav__link">
+        <span class="md-ellipsis">Bug Report</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          <span class="md-ellipsis">External Links</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="External Links" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">External Links</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.3ds.com/" class="md-nav__link">
+        <span class="md-ellipsis">Dassault Systèmes</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all" class="md-nav__link">
+        <span class="md-ellipsis">SIMULA User Assistance</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.3ds.com/products-services/simulia/products/abaqus/" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus FEA</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          <span class="md-ellipsis">Policy &amp; License</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Policy &amp; License" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Policy &amp; License</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../policy.html" class="md-nav__link">
+        <span class="md-ellipsis">Comment Policy</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Input File Parser</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-input-files" class="md-nav__link">
+    <span class="md-ellipsis">Create input files</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create input files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.InputFile.InputFile (Python class) — Bases: object" class="md-ellipsis">Input<wbr>File</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InputFile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.__init__.file" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.__init__.file (Python parameter) — A String specifying the path to the input file." class="md-ellipsis">file</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.__init__.directory" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.__init__.directory (Python parameter) — A String specifying the path to the directory containing the input file." class="md-ellipsis">directory</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile-return-type" class="md-nav__link">
+    <span class="md-ellipsis">Return type</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.directory" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.directory (Python attribute) — A String specifying the directory where the input file is located." class="md-ellipsis">directory</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.file" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.file (Python attribute) — A String specifying the source file name of the Abaqus input file." class="md-ellipsis">file</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.includes" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.includes (Python attribute) — A sequence of Strings specifying any additional input files included in the specified input file." class="md-ellipsis">includes</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes (Python attribute) — A sequence of Strings for input files included in the specified input file that could not be located." class="md-ellipsis">missing<wbr>Includes</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse" class="md-nav__link">
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse (Python method) — This method parses the input file associated with the InputFile object." class="md-ellipsis">parse</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="parse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.organize" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.organize (Python parameter) — A Boolean specifying whether keywords should be organized into suboptions. The default is False." class="md-ellipsis">organize</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.verbose" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.verbose (Python parameter) — A Boolean specifying whether verbose output is to be printed. If verbose is True, information about fatal errors is printed. If no fatal errors occur, there is no output. The default is False." class="md-ellipsis">verbose</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.bulk" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.bulk (Python parameter) — A Boolean specifying whether the input file includes bulk data that should be parsed. The default is True." class="md-ellipsis">bulk</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray" class="md-nav__link">
+    <span aria-label="Python parameter" class="objinfo-icon objinfo-icon__sub-data" title="Python parameter">p</span><span title="abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray (Python parameter) — A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword data value. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True. The default is False." class="md-ellipsis">use<wbr>Py<wbr>Array</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-returns" class="md-nav__link">
+    <span class="md-ellipsis">Returns</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-return-type" class="md-nav__link">
+    <span class="md-ellipsis">Return type</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.InputFile.InputFile.parse-raises" class="md-nav__link">
+    <span class="md-ellipsis">Raises</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-classes" class="md-nav__link">
+    <span class="md-ellipsis">Other Classes</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray (Python class) — Bases: object" class="md-ellipsis">Abaqus<wbr>NDarray</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.InputFileParser.Keyword.Keyword (Python class) — Bases: object" class="md-ellipsis">Keyword</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.comments" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.comments (Python attribute) — A sequence of Strings specifying the comments." class="md-ellipsis">comments</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.data" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.data (Python attribute) — A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if the data is suitable and if the InputFile.parse() method was called with the option usePyArray=True. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True." class="md-ellipsis">data</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.name" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.name (Python attribute) — A String specifying the name of the keyword." class="md-ellipsis">name</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.parameter" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.parameter (Python attribute) — A Dictionary of Strings specifying the keyword parameters." class="md-ellipsis">parameter</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" class="md-nav__link">
+    <span aria-label="Python attribute" class="objinfo-icon objinfo-icon__alias" title="Python attribute">A</span><span title="abaqus.InputFileParser.Keyword.Keyword.suboptions (Python attribute) — A KeywordSequence specifying the suboptions of the keyword." class="md-ellipsis">suboptions</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/haiiliin/abqpy/blob/main/docs/source/reference/kernel/input.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="input-file-parser">Input File Parser<a class="headerlink" href="#input-file-parser" title="Permalink to this heading">¶</a></h1>
+<p>The inpParser module provides functions that allow you to parse an Abaqus input file.</p>
+<h2 id="create-input-files">Create input files<a class="headerlink" href="#create-input-files" title="Permalink to this heading">¶</a></h2>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.InputFile.InputFile">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputFile</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.__init__.file" title="abaqus.InputFileParser.InputFile.InputFile.__init__.file (Python parameter) — A String specifying the path to the input file."><span class="n"><span class="pre">file</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.__init__.directory" title="abaqus.InputFileParser.InputFile.InputFile.__init__.directory (Python parameter) — A String specifying the path to the directory containing the input file."><span class="n"><span class="pre">directory</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L6-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The InputFile object is used to store the definitions in an Abaqus input file. InputFile objects can be
+created using the methods described in this section.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">inpParser</span>
+</code></pre></div>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/2017</a>.</p>
+</div>
+<p>This method creates an InputFile object by reading an Abaqus input file.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">inpParser</span><span class="o">.</span><span class="n">InputFile</span>
+</code></pre></div>
+</div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd" id="abaqus.InputFileParser.InputFile.InputFile-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="abaqus.InputFileParser.InputFile.InputFile.__init__.file"><span class="n sig-name">file</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.__init__.file" title="Permalink to this definition">¶</a></dt><dd><p>A String specifying the path to the input file.</p>
+</dd>
+<dt id="abaqus.InputFileParser.InputFile.InputFile.__init__.directory"><span class="n sig-name">directory</span><span class="o">=</span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.__init__.directory" title="Permalink to this definition">¶</a></dt><dd><p>A String specifying the path to the directory containing the input file.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even" id="abaqus.InputFileParser.InputFile.InputFile-returns">Returns<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-even"><p>An InputFile object.</p>
+</dd>
+<dt class="field-odd" id="abaqus.InputFileParser.InputFile.InputFile-return-type">Return type<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile-return-type" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a></p>
+</dd>
+</dl>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="abaqus.InputFileParser.InputFile.InputFile.file (Python attribute) — A String specifying the source file name of the Abaqus input file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
+<td><p>A String specifying the source file name of the Abaqus input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="abaqus.InputFileParser.InputFile.InputFile.directory (Python attribute) — A String specifying the directory where the input file is located."><code class="xref py py-obj docutils literal notranslate"><span class="pre">directory</span></code></a></p></td>
+<td><p>A String specifying the directory where the input file is located.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="abaqus.InputFileParser.InputFile.InputFile.includes (Python attribute) — A sequence of Strings specifying any additional input files included in the specified input file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">includes</span></code></a></p></td>
+<td><p>A sequence of Strings specifying any additional input files included in the specified input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes (Python attribute) — A sequence of Strings for input files included in the specified input file that could not be located."><code class="xref py py-obj docutils literal notranslate"><span class="pre">missingIncludes</span></code></a></p></td>
+<td><p>A sequence of Strings for input files included in the specified input file that could not be located.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(file[, directory])</p></td>
+<td><p>This method creates an InputFile object by reading an Abaqus input file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse (Python method) — This method parses the input file associated with the InputFile object."><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
+<td><p>This method parses the input file associated with the InputFile object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.InputFile.InputFile.directory">
+<span class="sig-name descname"><span class="pre">directory</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`str`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="Permalink to this definition">¶</a></dt>
+<dd><p>A String specifying the directory where the input file is located.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.InputFile.InputFile.file">
+<span class="sig-name descname"><span class="pre">file</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`str`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L17-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="Permalink to this definition">¶</a></dt>
+<dd><p>A String specifying the source file name of the Abaqus input file.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="abaqus.InputFileParser.InputFile.InputFile.includes">
+<span class="sig-name descname"><span class="pre">includes</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`tuple`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">()</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L23-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sequence of Strings specifying any additional input files included in the specified
+input file.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="abaqus.InputFileParser.InputFile.InputFile.missingIncludes">
+<span class="sig-name descname"><span class="pre">missingIncludes</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`tuple`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">()</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L27-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sequence of Strings for input files included in the specified input file that could
+not be located.</p>
+</dd></dl>
+
+<dl class="py method objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.InputFile.InputFile.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse.organize" title="abaqus.InputFileParser.InputFile.InputFile.parse.organize (Python parameter) — A Boolean specifying whether keywords should be organized into suboptions. The default is False."><span class="n"><span class="pre">organize</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse.verbose" title="abaqus.InputFileParser.InputFile.InputFile.parse.verbose (Python parameter) — A Boolean specifying whether verbose output is to be printed. If verbose is True, information about fatal errors is printed. If no fatal errors occur, there is no output. The default is False."><span class="n"><span class="pre">verbose</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse.bulk" title="abaqus.InputFileParser.InputFile.InputFile.parse.bulk (Python parameter) — A Boolean specifying whether the input file includes bulk data that should be parsed. The default is True."><span class="n"><span class="pre">bulk</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray" title="abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray (Python parameter) — A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword data value. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True. The default is False."><span class="n"><span class="pre">usePyArray</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L54-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method parses the input file associated with the InputFile object.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc">InputFile.parse on help.3ds.com/2017</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd" id="abaqus.InputFileParser.InputFile.InputFile.parse-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><dl class="simple api-field highlight">
+<dt id="abaqus.InputFileParser.InputFile.InputFile.parse.organize"><span class="n sig-name">organize</span><span class="o">=</span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse.organize" title="Permalink to this definition">¶</a></dt><dd><p>A Boolean specifying whether keywords should be organized into suboptions. The default
+is False.</p>
+</dd>
+<dt id="abaqus.InputFileParser.InputFile.InputFile.parse.verbose"><span class="n sig-name">verbose</span><span class="o">=</span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse.verbose" title="Permalink to this definition">¶</a></dt><dd><p>A Boolean specifying whether verbose output is to be printed. If <strong>verbose</strong> is True,
+information about fatal errors is printed. If no fatal errors occur, there is no output.
+The default is False.</p>
+</dd>
+<dt id="abaqus.InputFileParser.InputFile.InputFile.parse.bulk"><span class="n sig-name">bulk</span><span class="o">=</span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse.bulk" title="Permalink to this definition">¶</a></dt><dd><p>A Boolean specifying whether the input file includes bulk data that should be parsed.
+The default is True.</p>
+</dd>
+<dt id="abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray"><span class="n sig-name">usePyArray</span><span class="o">=</span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">False</span></code><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse.usePyArray" title="Permalink to this definition">¶</a></dt><dd><p>A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword
+data value. In cases where large amounts of numerical data (i.e., large node arrays) are
+expected, it is recommended that you use the option usePyArray=True. The default is
+False.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even" id="abaqus.InputFileParser.InputFile.InputFile.parse-returns">Returns<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-even"><p>A KeywordSequence object.</p>
+</dd>
+<dt class="field-odd" id="abaqus.InputFileParser.InputFile.InputFile.parse-return-type">Return type<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse-return-type" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordSequence</span></code></p>
+</dd>
+<dt class="field-even" id="abaqus.InputFileParser.InputFile.InputFile.parse-raises">Raises<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse-raises" title="Permalink to this headline">¶</a></dt>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If you parse an input file more than once, a ValueError is raised for each subsequent
+    parsing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<h2 id="other-classes">Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this heading">¶</a></h2>
+<div class="toggle docutils container">
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbaqusNDarray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/AbaqusNDarray.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AbaqusNDarray object is a sequence object derived from numpy.ndarray and is used to store numeric
+keyword data from an Abaqus input file. This object is similar to the numpy.ndarray object, but the numeric
+elements are returned as standard Python objects, not numpy numeric types. The numeric elements can be:</p>
+<ul class="simple">
+<li><p>All ints.</p></li>
+<li><p>All floats.</p></li>
+<li><p>First column int, all other columns floats.</p></li>
+</ul>
+<p>In the last of these cases, the member <strong>colZeroIsInt</strong> will be True; in the other two
+cases, it will be False.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all">AbaqusNDarray on help.3ds.com/2017</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+</div>
+</dd></dl>
+
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.Keyword.Keyword">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Keyword</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L6-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Keyword object is used to store a keyword definition from an Abaqus input file. Keyword objects are
+returned via the InputFile.parse() method.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">inpParser</span>
+</code></pre></div>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all">Keyword on help.3ds.com/2017</a>.</p>
+</div>
+<p class="rubric">Member Details:</p>
+<div class="toggle docutils container">
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="abaqus.InputFileParser.Keyword.Keyword.comments">
+<span class="sig-name descname"><span class="pre">comments</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`tuple`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">()</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L6-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sequence of Strings specifying the comments.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.Keyword.Keyword.data">
+<span class="sig-name descname"><span class="pre">data</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`tuple`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">()</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L23-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type
+of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if
+the data is suitable and if the InputFile.parse() method was called with the option
+usePyArray=True. In cases where large amounts of numerical data (i.e., large node
+arrays) are expected, it is recommended that you use the option usePyArray=True.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.Keyword.Keyword.name">
+<span class="sig-name descname"><span class="pre">name</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`str`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L17-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A String specifying the name of the keyword.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="abaqus.InputFileParser.Keyword.Keyword.parameter">
+<span class="sig-name descname"><span class="pre">parameter</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:data:`~typing.Optional`\[:py:class:`dict`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="kc">None</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.parameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Dictionary of Strings specifying the keyword parameters.</p>
+</dd></dl>
+
+<dl class="py attribute objdesc">
+<dt class="sig sig-object highlight py" id="abaqus.InputFileParser.Keyword.Keyword.suboptions">
+<span class="sig-name descname"><span class="pre">suboptions</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`str`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>A KeywordSequence specifying the suboptions of the keyword.</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="cae_display_preferences.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Abaqus CAE Display Preferences" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Abaqus CAE Display Preferences
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="kernel.html" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Kernel" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Custom Kernel
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2022, WANG Hailin.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    6.2.1.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/haiiliin/abqpy" target="_blank" rel="noopener" title="Source on github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/abqpy" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "2023", "version": "/abqpy/en/2023/"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022/"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021/"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020/"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019/"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018/"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017/"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016/"}], "versionPath": null}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/js/hoverxref.js"></script>
@@ -80,453 +1853,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="../../_static/design-tabs.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Custom Kernel" href="kernel.html" />
-    <link rel="prev" title="Abaqus CAE Display Preferences" href="cae_display_preferences.html" /> 
-</head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../../index.html" class="icon icon-home">
-            abqpy
-          </a>
-              <div class="version">
-                2017
-              </div>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">User Manual</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../envvars.html">Environment Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Tutorials &amp; Examples</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">References</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../user/index.html">Abaqus Scripting User's Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Abaqus Class References</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../mdb/index.html">Abaqus Model Database</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../odb.html">Abaqus Output Database</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../session/index.html">Abaqus Session</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Kernel</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="cae_display_preferences.html">Abaqus CAE Display Preferences</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Input File Parser</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#create-input-files">Create input files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#other-classes">Other Classes</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="kernel.html">Custom Kernel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="messaging.html">Messaging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="text_representation.html">Text Representation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="utility.html">Utility and View</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../CHANGES.html">Abaqus API Changes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">Abqpy API Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../localization.html">Documentation Localization</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://readthedocs.org/projects/abqpy">Read the Docs</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/haiiliin/abqpy/issues">Bug Report</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">External Links</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/">Dassault Systèmes</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/DSDocHome.htm?contextscope=all">SIMULA User Assistance</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.3ds.com/products-services/simulia/products/abaqus/">Abaqus FEA</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Policy &amp; License</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../policy.html">Comment Policy</a></li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">abqpy</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Abaqus Class References</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Kernel</a></li>
-      <li class="breadcrumb-item active">Input File Parser</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/reference/kernel/input.md.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="input-file-parser">
-<h1>Input File Parser<a class="headerlink" href="#input-file-parser" title="Permalink to this heading"></a></h1>
-<p>The inpParser module provides functions that allow you to parse an Abaqus input file.</p>
-<section id="create-input-files">
-<h2>Create input files<a class="headerlink" href="#create-input-files" title="Permalink to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L6-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The InputFile object is used to store the definitions in an Abaqus input file. InputFile objects can be
-created using the methods described in this section.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This object can be accessed by:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">inpParser</span>
-</pre></div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/2017</a>.</p>
-</div>
-<p>This method creates an InputFile object by reading an Abaqus input file.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This function can be accessed by:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inpParser</span><span class="o">.</span><span class="n">InputFile</span>
-</pre></div>
-</div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>file</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- A String specifying the path to the input file.</p></li>
-<li><p><strong>directory</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) -- A String specifying the path to the directory containing the input file.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An InputFile object.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a></p>
-</dd>
-</dl>
-<div class="autoclasstoc docutils container">
-<p class="rubric">Public Data Attributes:</p>
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="abaqus.InputFileParser.InputFile.InputFile.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
-<td><p>A String specifying the source file name of the Abaqus input file.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="abaqus.InputFileParser.InputFile.InputFile.directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directory</span></code></a></p></td>
-<td><p>A String specifying the directory where the input file is located.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="abaqus.InputFileParser.InputFile.InputFile.includes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includes</span></code></a></p></td>
-<td><p>A sequence of Strings specifying any additional input files included in the specified input file.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">missingIncludes</span></code></a></p></td>
-<td><p>A sequence of Strings for input files included in the specified input file that could not be located.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="autoclasstoc docutils container">
-<p class="rubric">Public Methods:</p>
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(file[, directory])</p></td>
-<td><p>This method creates an InputFile object by reading an Abaqus input file.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
-<td><p>This method parses the input file associated with the InputFile object.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr class="docutils" />
-<p class="rubric">Member Details:</p>
-<div class="toggle docutils container">
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.directory">
-<span class="sig-name descname"><span class="pre">directory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="Permalink to this definition"></a></dt>
-<dd><p>A String specifying the directory where the input file is located.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.file">
-<span class="sig-name descname"><span class="pre">file</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L17-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="Permalink to this definition"></a></dt>
-<dd><p>A String specifying the source file name of the Abaqus input file.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.includes">
-<span class="sig-name descname"><span class="pre">includes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L23-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="Permalink to this definition"></a></dt>
-<dd><p>A sequence of Strings specifying any additional input files included in the specified
-input file.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.missingIncludes">
-<span class="sig-name descname"><span class="pre">missingIncludes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L27-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="Permalink to this definition"></a></dt>
-<dd><p>A sequence of Strings for input files included in the specified input file that could
-not be located.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.parse">
-<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">organize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bulk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usePyArray</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/InputFile.py#L54-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="Permalink to this definition"></a></dt>
-<dd><p>This method parses the input file associated with the InputFile object.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc">InputFile.parse on help.3ds.com/2017</a>.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>organize</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying whether keywords should be organized into suboptions. The default
-is False.</p></li>
-<li><p><strong>verbose</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying whether verbose output is to be printed. If <strong>verbose</strong> is True,
-information about fatal errors is printed. If no fatal errors occur, there is no output.
-The default is False.</p></li>
-<li><p><strong>bulk</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) -- A Boolean specifying whether the input file includes bulk data that should be parsed.
-The default is True.</p></li>
-<li><p><strong>usePyArray</strong> (<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.abaqusConstants.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) -- A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword
-data value. In cases where large amounts of numerical data (i.e., large node arrays) are
-expected, it is recommended that you use the option usePyArray=True. The default is
-False.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A KeywordSequence object.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordSequence</span></code></p>
-</dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> -- If you parse an input file more than once, a ValueError is raised for each subsequent
-    parsing.</p>
-</dd>
-</dl>
-</dd></dl>
-
-</div>
-</dd></dl>
-
-</section>
-<section id="other-classes">
-<h2>Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this heading"></a></h2>
-<div class="toggle docutils container">
-<dl class="py class">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbaqusNDarray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/AbaqusNDarray.py#L4-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The AbaqusNDarray object is a sequence object derived from numpy.ndarray and is used to store numeric
-keyword data from an Abaqus input file. This object is similar to the numpy.ndarray object, but the numeric
-elements are returned as standard Python objects, not numpy numeric types. The numeric elements can be:</p>
-<ul class="simple">
-<li><p>All ints.</p></li>
-<li><p>All floats.</p></li>
-<li><p>First column int, all other columns floats.</p></li>
-</ul>
-<p>In the last of these cases, the member <strong>colZeroIsInt</strong> will be True; in the other two
-cases, it will be False.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all">AbaqusNDarray on help.3ds.com/2017</a>.</p>
-</div>
-<p class="rubric">Member Details:</p>
-<div class="toggle docutils container">
-</div>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Keyword</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L6-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>The Keyword object is used to store a keyword definition from an Abaqus input file. Keyword objects are
-returned via the InputFile.parse() method.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This object can be accessed by:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">inpParser</span>
-</pre></div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all">Keyword on help.3ds.com/2017</a>.</p>
-</div>
-<p class="rubric">Member Details:</p>
-<div class="toggle docutils container">
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.comments">
-<span class="sig-name descname"><span class="pre">comments</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L6-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="Permalink to this definition"></a></dt>
-<dd><p>A sequence of Strings specifying the comments.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.data">
-<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L23-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.data" title="Permalink to this definition"></a></dt>
-<dd><p>A sequence of sequences or an AbaqusNDarray object specifying the keyword data. The type
-of the leaf objects depends on the keyword. The AbaqusNDarray object is returned only if
-the data is suitable and if the InputFile.parse() method was called with the option
-usePyArray=True. In cases where large amounts of numerical data (i.e., large node
-arrays) are expected, it is recommended that you use the option usePyArray=True.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L17-L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.name" title="Permalink to this definition"></a></dt>
-<dd><p>A String specifying the name of the keyword.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.parameter">
-<span class="sig-name descname"><span class="pre">parameter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a><span class="pre">[</span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a><span class="pre">]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.parameter" title="Permalink to this definition"></a></dt>
-<dd><p>A Dictionary of Strings specifying the keyword parameters.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.InputFileParser.Keyword.Keyword.suboptions">
-<span class="sig-name descname"><span class="pre">suboptions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2017/src/abaqus/InputFileParser/Keyword.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" title="Permalink to this definition"></a></dt>
-<dd><p>A KeywordSequence specifying the suboptions of the keyword.</p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
-</div>
-</section>
-</section>
-
-
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="cae_display_preferences.html" class="btn btn-neutral float-left" title="Abaqus CAE Display Preferences" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="kernel.html" class="btn btn-neutral float-right" title="Custom Kernel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2022, WANG Hailin.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-   
-<div
-  class="rst-versions"
-  data-toggle="rst-versions"
-  role="note"
-  aria-label="versions"
->
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    <span class="fa fa-book"> Read the Docs</span>
-    v: 2017
-    <span class="fa fa-caret-down"></span>
-  </span>
-  <div class="rst-other-versions">
+        <script id="MathJax-script" src="../../_static/mathjax/tex-mml-chtml.js"></script>
     
-    <dl>
-      <dt>Languages</dt>
-       
-      <strong>
-        
-        <dd><a href="/abqpy/en/2017/">English</a></dd>
-        
-      </strong>
-        
-        <dd><a href="/abqpy/zh_CN/2017/">简体中文</a></dd>
-         
-    </dl>
-     
-    <dl>
-      <dt>Versions</dt>
-       
-        <dd><a href="/abqpy/en/2023/">2023</a></dd>
-          
-        <dd><a href="/abqpy/en/2022/">2022</a></dd>
-          
-        <dd><a href="/abqpy/en/2021/">2021</a></dd>
-          
-        <dd><a href="/abqpy/en/2020/">2020</a></dd>
-          
-        <dd><a href="/abqpy/en/2019/">2019</a></dd>
-          
-        <dd><a href="/abqpy/en/2018/">2018</a></dd>
-          
-      <strong>
-        
-        <dd><a href="/abqpy/en/2017/">2017</a></dd>
-        
-      </strong>
-        
-        <dd><a href="/abqpy/en/2016/">2016</a></dd>
-          
-        <dd><a href="/abqpy/en/latest/">latest</a></dd>
-          
-        <dd><a href="/abqpy/en/sphinx-book-theme/">sphinx-book-theme</a></dd>
-          
-        <dd><a href="/abqpy/en/furo/">furo</a></dd>
-         
-    </dl>
-     
-    <dl>
-      <dt>Downloads</dt>
-      
-      <dd><a href="/abqpy/en/2017/abqpy-docs-en-2017.pdf">pdf</a></dd>
-      
-      <dd><a href="/abqpy/en/2017/abqpy-docs-en-2017.epub">epub</a></dd>
-      
-    </dl>
-     
-    <hr />
-    <a
-      href="https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/"
-      >Continuous Documentation</a
-    >
-    hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
-  </div>
-</div>
-<script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
-
-</body>
+  </body>
 </html>
