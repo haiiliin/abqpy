@@ -55,14 +55,14 @@ jobs:
           pip show abqpy
       - name: Build the documentation
         run: |
-          sphinx-build -M ${{ matrix.builder }} ${{ env.SPHINXOPTS }} docs/source docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          cd docs && make ${{ matrix.builder }}
         env:
-          SPHINXOPTS: -D language=${{ matrix.language }} -j auto
+          SPHINXOPTS: -j auto
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
-          path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          path: docs/build/${{ matrix.builder }}
           retention-days: 1
 
   upload:
