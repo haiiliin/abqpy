@@ -31,7 +31,7 @@ author = "WANG Hailin"
 
 release = abqpy.__version__
 major, minor, patch, *_ = release.split(".")
-version = major
+release = version = major
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -190,11 +190,6 @@ numfig = True
 # True to convert the type definitions in the docstrings as references. Defaults to False.
 napoleon_preprocess_types = True
 
-# sphinx-immaterial configuration
-object_description_options = [
-    ("py:.*", dict(include_in_toc=False)),
-]
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
@@ -281,8 +276,8 @@ elif html_theme == "sphinx_immaterial":
         "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        "edit_uri": "blob/main/docs",
-        "globaltoc_collapse": False,
+        "edit_uri": "blob/main/docs/source",
+        "globaltoc_collapse": True,
         "features": [
             "navigation.expand",
             # "navigation.tabs",
@@ -316,7 +311,7 @@ elif html_theme == "sphinx_immaterial":
         "social": [
             {
                 "icon": "fontawesome/brands/github",
-                "link": "https://github.com/haiiliin/abqpy",
+                "link": "https://github.com/haiiliin/abqpy/",
                 "name": "Source on github.com",
             },
             {
