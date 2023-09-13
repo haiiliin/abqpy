@@ -300,7 +300,7 @@ elif html_theme == "sphinx_immaterial":
                 "media": "(prefers-color-scheme: light)",
                 "scheme": "default",
                 "toggle": {
-                    "icon": "material/toggle-switch-off-outline",
+                    "icon": "material/brightness-7",
                     "name": "Switch to dark mode",
                 },
                 "primary": "green",
@@ -309,7 +309,7 @@ elif html_theme == "sphinx_immaterial":
                 "media": "(prefers-color-scheme: dark)",
                 "scheme": "slate",
                 "toggle": {
-                    "icon": "material/toggle-switch",
+                    "icon": "material/brightness-4",
                     "name": "Switch to light mode",
                 },
                 "primary": "green",
