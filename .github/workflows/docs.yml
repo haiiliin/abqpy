@@ -84,6 +84,7 @@ jobs:
       - uses: ahmadnassri/action-workflow-queue@v1
         with:
           timeout: 1200000
+          delay: 60000
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
