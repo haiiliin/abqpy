@@ -336,7 +336,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="localization.html">
-<span class="md-ellipsis">Documentation Localization</span>
+<span class="md-ellipsis">文档本地化</span>
 </a>
 </li>
 </ul>
@@ -423,16 +423,14 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset" role="main">
-<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/blob/2018/docs/source/getting_started.md" title="编辑此页">
+<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2018/docs/source/getting_started.md" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="getting-started">入门指南<a class="headerlink" href="#getting-started" title="此标题的永久链接">¶</a></h1>
 <h2 id="introduction">简介<a class="headerlink" href="#introduction" title="此标题的永久链接">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 是一个 Python 包，提供了一些类型提示，用于快速编写你的 Abaqus/Python 脚本，即便不打开 Abaqus/CAE。它还提供了一些简单的 API 用于调用 Abaqus 命令执行你的 Python 脚本，以便使用 Python 脚本快速构建 Abaqus 模型，并提交作业给 Abaqus 进行计算，并从计算结果中提取数据。</p>
 <h2 id="installation">安装<a class="headerlink" href="#installation" title="此标题的永久链接">¶</a></h2>
-<p>Make sure <a href="https://www.python.org/downloads/"> <img align="center" src="https://img.shields.io/badge/Python-3.7%2B-brightgreen"/> </a> and
-<a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img align="center" src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen"/> </a>
-are installed on your computer before installing <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>.</p>
+<p>在安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 之前，请确保 <a href="https://www.python.org/downloads/"> <img align="center" src="https://img.shields.io/badge/Python-3.7%2B-brightgreen"/> </a> 和 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img align="center" src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen"/> </a> 已安装到您的计算机上。</p>
 <p>你可以使用以下命令安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>。</p>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"/><label class="tab-label" for="tab-set--0-input--1">pip</label><div class="tab-content docutils">
@@ -491,7 +489,7 @@ pip<span class="w"> </span>install<span class="w"> </span>ipynbname<span class="
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">noGUI</span><span class="o">=</span>script.py
 </code></pre></div>
 </div>
-<p>The secret is hided in the <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/run/index.html#abqpy.run.run" title="abqpy.run.run (Python 函数) — Runs Abaqus command in system's CLI."><code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code></a> function:</p>
+<p>秘密隐藏在 <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/run/index.html#abqpy.run.run" title="abqpy.run.run (Python 函数) — Runs Abaqus command in system's CLI."><code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code></a> 函数中：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">cae</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
     <span class="n">abaqus</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"ABAQUS_BAT_PATH"</span><span class="p">,</span> <span class="s2">"abaqus"</span><span class="p">)</span>
 
@@ -515,44 +513,36 @@ pip<span class="w"> </span>install<span class="w"> </span>ipynbname<span class="
 <h2 id="write-your-abaqus-python-script">编写你的 Abaqus/Python 脚本<a class="headerlink" href="#write-your-abaqus-python-script" title="此标题的永久链接">¶</a></h2>
 <p>安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 包后，您可以开始编写自己的 Abaqus/Python 脚本来构建模型。 您可以参考 <a class="reference external" href="https://github.com/hailiin/abqpy/tree/main/examples">abqpy/examples at main・hailiin/abqpy</a> 获取一些脚本示例。 或者你可以去 <a class="reference internal" href="tutorials.html"><span class="doc">教程</span></a> 看一个简单的教程。 有关 Abaqus/Python 脚本的更多文档，请查看 <a class="reference internal" href="reference/index.html"><span class="doc">Abaqus Class References</span></a> 以获取更详细的 API 参考。</p>
 <h2 id="setup-your-abaqus-environment">配置 Abaqus 环境<a class="headerlink" href="#setup-your-abaqus-environment" title="此标题的永久链接">¶</a></h2>
-<p>Make sure the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command is available in the command line (i.e., you can run <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> in the command line), otherwise,
-add a new system variable named <code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code>, and set the value to the file path of the Abaqus command, for example,
-<code class="docutils literal notranslate"><span class="pre">C:/SIMULIA/Commands/abaqus.bat</span></code>.</p>
+<p>请确保命令行中的 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令是可用的（即您可以在命令行运行 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>），否则你需要添加一个名为 <code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code> 的系统环境变量， 并将其设置为 Abaqus 批处理文件的文件路径，例如 <code class="docutils literal notranslate"><span class="pre">C:/SIMULIA/Commands/abaqus.bat</span></code>。</p>
 <h2 id="run-your-abaqus-python-script">运行你的 Abaqus/Python 脚本<a class="headerlink" href="#run-your-abaqus-python-script" title="此标题的永久链接">¶</a></h2>
-<p>Now you can run your Abaqus/Python script with the following methods:</p>
+<p>现在您可以使用以下方法运行您的 Abaqus/Python 脚本：</p>
 <ul>
-<li><p>Open Abaqus/CAE and click <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Script</span></code> in the menu bar, then select your script file, which is the most common way to
-run a Python script in Abaqus/CAE.</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command in the command line:</p>
+<li><p>打开 Abaqus/CAE 并点击菜单栏中的 <code class="docutils literal notranslate"><span class="pre">运行脚本</span></code>，然后选择您的脚本文件， 它是在 Abaqus/CAE 中运行 Python 脚本的最常见方式。</p></li>
+<li><p>在命令行中使用 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">script</span><span class="o">=</span>script.py
 </code></pre></div>
 </div>
 <p>See <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all">here</a>
 for more information about the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command.</p>
 </li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command in the command line:</p>
+<li><p>在命令行中使用 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code><span class="o">[</span>python<span class="w"> </span>-m<span class="o">]</span><span class="w"> </span>abqpy<span class="w"> </span>cae<span class="w"> </span>script.py
 </code></pre></div>
 </div>
-<p>The advantage using <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command instead of using <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command directly is that you are able to customize the
-default python launch command. See <a class="reference internal" href="cli.html"><span class="doc">命令行接口</span></a> for more information about the <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command.</p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 命令而不是直接使用 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令的好处是，您可以自定义默认的 Python 启动命令。有关 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 命令的更多信息，请参见 <a class="reference internal" href="cli.html"><span class="doc">命令行接口</span></a>。</p>
 </li>
-<li><p>Use the Python 3 interpreter to run the script directly:</p>
+<li><p>使用 Python 3 解释器直接运行脚本：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>python<span class="w"> </span>script.py
 </code></pre></div>
 </div>
-<p>This is the most convenient way to run the script, it is equivalent to the <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command with some default
-predefined arguments.</p>
+<p>这是运行脚本的最方便的方式，它等效于 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 命令，并带有一些默认的预定义参数。</p>
 </li>
-<li><p>Use the <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus (Python 数据)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.abaqus</span></code></a> object (an <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.AbqpyCLI" title="abqpy.cli.AbqpyCLI (Python 类) — Bases: AbqpyCLIBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.AbqpyCLI</span></code></a> object) to run the script:</p>
+<li><p>使用 <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus (Python 数据)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.abaqus</span></code></a> 变量 (<a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.AbqpyCLI" title="abqpy.cli.AbqpyCLI (Python 类) — Bases: AbqpyCLIBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.AbqpyCLI</span></code></a> 对象) 运行脚本：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#module-abqpy.cli" title="abqpy.cli"><span class="nn">abqpy.cli</span></a> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus"><span class="n">abaqus</span></a>
 <a class="sphinx-codeautolink-a" href="autoapi/abqpy/cli/index.html#abqpy.cli.AbqpyCLI.cae" title="abqpy.cli.AbqpyCLI.cae"><span class="n">abaqus</span><span class="o">.</span><span class="n">cae</span></a><span class="p">(</span><span class="n">script</span><span class="o">=</span><span class="s2">"script.py"</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p>The <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus (Python 数据)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.abaqus</span></code></a> object is the object used for the <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command, you can call the methods in this
-object directly to run the script. This method is convenient when you want to call the Abaqus/Python script in another
-Python script since typing annotations are provided for the methods, so you can check the docstring of the methods for
-more information.</p>
+<p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 命令使用 <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/cli/index.html#abqpy.cli.abaqus" title="abqpy.cli.abaqus (Python 数据)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abqpy.cli.abaqus</span></code></a> 变量调用命令行，你可以直接调用此变量中的方法来运行脚本。 当您想要在另一个 Python 脚本中调用 Abaqus/Python 脚本时，这个方法是十分方便的，因为代码编辑器会为这些方法提供类型提示。 您可以检查变量方法的文档字符串以获取更多信息。</p>
 </li>
 </ul>
 <div class="warning admonition">
