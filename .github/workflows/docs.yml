@@ -52,6 +52,7 @@ jobs:
       - name: Installing the library
         run: |
           pip install .[docs]
+          pip install git+https://github.com/haiiliin/sphinx-immaterial.git
           pip show abqpy
       - name: Build the documentation
         run: |
