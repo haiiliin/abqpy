@@ -16,29 +16,42 @@ are installed on your computer before installing `abqpy`.
 
 You can install `abqpy` with the following commands.
 
-```{eval-rst}
-.. md-tab-set::
+````{tab} pip
+```{code-block} shell
+pip install -U abqpy==2023.*
+```
+````
 
-    .. md-tab-item:: Install from PyPI
+````{tab} pip (wrapper)
+```{code-block} shell
+pip install -U abqpy2023
+```
+````
 
-        .. parsed-literal::
+````{tab} Source
+```{code-block} shell
+pip install git+https://github.com/haiiliin/abqpy@2023
+```
+````
 
-            :version-major:`pip install abqpy|abqpy|`
-            :version-major:`pip install abqpy|abqpy|[jupyter]`  # with jupyter notebook support
+````{tab} Jupyter
+```{code-block} shell
+pip install -U abqpy[jupyter]==2023.*
+pip install -U abqpy2023[jupyter]
+pip install ipynbname nbconvert
+```
+````
 
-            :version-major:`pip install abqpy==|abqpy|.*`
-            :version-major:`pip install abqpy[jupyter]==|abqpy|.*`  # with jupyter notebook support
+````{tab} Jupyter
+```{code-block} shell
+pip install abqpy[jupyter]==2023.*
+pip install abqpy2023[jupyter]
+pip install ipynbname nbconvert
+```
+````
 
-    .. md-tab-item:: Install from source
-
-        .. parsed-literal::
-
-            :version-major:`pip install git+https://github.com/haiiliin/abqpy@|abqpy|`
-            pip install ipynbname nbconvert  # with jupyter notebook support
-
-.. note::
-
-    You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+```{note}
+You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
 
 ## Two Python interpreters
