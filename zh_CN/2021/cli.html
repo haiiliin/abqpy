@@ -325,7 +325,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="localization.html">
-<span class="md-ellipsis">Documentation Localization</span>
+<span class="md-ellipsis">文档本地化</span>
 </a>
 </li>
 </ul>
@@ -401,15 +401,13 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset" role="main">
-<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/blob/2021/docs/source/cli.md" title="编辑此页">
+<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2021/docs/source/cli.md" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="command-line-interface">命令行接口<a class="headerlink" href="#command-line-interface" title="此标题的永久链接">¶</a></h1>
 <div class="warning admonition">
 <p class="admonition-title">警告</p>
-<p>The command line interface is based on the <a class="reference external" href="https://github.com/google/python-fire"><code class="docutils literal notranslate"><span class="pre">fire</span></code></a>
-package since version <code class="docutils literal notranslate"><span class="pre">20**.5.0</span></code>, and it is not compatible with the command line interface of
-previous versions.</p>
+<p>自版本 <code class="docutils literal notranslate"><span class="pre">20**.5.0</span></code> 以来，命令行接口基于 <a class="reference external" href="https://github.com/google/python-fire"><code class="docutils literal notranslate"><span class="pre">fire</span></code></a> 库，与之前版本的命令行接口不兼容。</p>
 </div>
 <p>在 Python 环境中使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 默认将运行以下两个命令之一：</p>
 <ol class="arabic">
@@ -433,11 +431,7 @@ previous versions.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abqpy<span class="w"> </span>COMMAND<span class="w"> </span>SCRIPT<span class="w"> </span>&lt;flags&gt;<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
 </code></pre></div>
 </div>
-<p>where <code class="docutils literal notranslate"><span class="pre">COMMAND</span></code> is one of <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>, <code class="docutils literal notranslate"><span class="pre">cae</span></code>, <code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">run</span></code> or any other Abaqus commands,
-<code class="docutils literal notranslate"><span class="pre">SCRIPT</span></code> is the file name of your python script, <code class="docutils literal notranslate"><span class="pre">flags</span></code> are the options that could be
-passed to the command, and <code class="docutils literal notranslate"><span class="pre">ARGS</span></code> are the extra arguments to be passed after the command
-line options. For details, see the <a class="reference internal" href="#references">References</a> section or run
-<code class="docutils literal notranslate"><span class="pre">abqpy</span> <span class="pre">COMMAND</span> <span class="pre">--help</span></code> for help.</p>
+<p><code class="docutils literal notranslate"><span class="pre">COMMAND</span></code> 是 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>、<code class="docutils literal notranslate"><span class="pre">cae</span></code>、<code class="docutils literal notranslate"><span class="pre">python</span></code>、<code class="docutils literal notranslate"><span class="pre">run</span></code> 或任何其他 Abaqus 命令之一，<code class="docutils literal notranslate"><span class="pre">SCRIPT</span></code> 是你的 Python 脚本的文件名称，<code class="docutils literal notranslate"><span class="pre">flags</span></code> 是可以传递给命令的选项，<code class="docutils literal notranslate"><span class="pre">ARGS</span></code> 是命令行选项之后传递的额外参数。 欲了解详情，请参阅 <a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#reference" title="NumPy 1.25"><span class="xref myst">References</span></a> 部分或运行 <code class="docutils literal notranslate"><span class="pre">abqpy</span> <span class="pre">COMMAND</span> <span class="pre">--help</span></code> 获取帮助。</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
 <p>对于下面的命令，可以用以下语法指定布尔类型的选项（以 <code class="docutils literal notranslate"><span class="pre">gui</span></code> 选项为例）：</p>
@@ -486,9 +480,7 @@ abqpy<span class="w"> </span>cae<span class="w"> </span>script.py<span class="w"
 <p>它提供了一种将默认 abaqus 执行过程更改为 GUI 模式的方法。</p>
 <div class="warning admonition">
 <p class="admonition-title">警告</p>
-<p>Noted that if a token other than another flag immediately follows a flag that’s supposed to be a boolean,
-the flag will take on the value of the token rather than the boolean value.
-Thus <code class="docutils literal notranslate"><span class="pre">--gui=True</span></code> instead of <code class="docutils literal notranslate"><span class="pre">--gui</span></code> is used here to prevent this problem.</p>
+<p>请注意，如果有另外的选项紧跟在布尔值标志之后，则该布尔值标志将采用该标志后面的值。 因此这里使用 <code class="docutils literal notranslate"><span class="pre">--gui=True</span></code> 而不是 <code class="docutils literal notranslate"><span class="pre">--gui</span></code> 来避免这个问题。</p>
 </div>
 <h2 id="references"><span id="id1"></span>参考<a class="headerlink" href="#references" title="此标题的永久链接">¶</a></h2>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span><code>$ abqpy
