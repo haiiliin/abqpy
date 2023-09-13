@@ -316,7 +316,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="localization.html">
-<span class="md-ellipsis">Documentation Localization</span>
+<span class="md-ellipsis">文档本地化</span>
 </a>
 </li>
 </ul>
@@ -383,14 +383,12 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset" role="main">
-<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/blob/2017/docs/source/envvars.md" title="编辑此页">
+<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2017/docs/source/envvars.md" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="environment-variables">环境变量<a class="headerlink" href="#environment-variables" title="此标题的永久链接">¶</a></h1>
 <h2 id="abaqus-bat-path"><code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code><a class="headerlink" href="#abaqus-bat-path" title="此标题的永久链接">¶</a></h2>
-<p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
-the default Abaqus command line executable. This variable is used by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> to run the Abaqus command line
-procedure inside the Python interpreter environment where it is installed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令行批处理文件的文件路径 (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>)。 仅在 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 不是默认的 Abaqus 命令行可执行文件时设置此环境变量。 此变量被用于在安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 的 Python 解释器环境中运行 Abaqus 命令行程序。</p>
 <h2 id="abaqus-command-options"><code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code><a class="headerlink" href="#abaqus-command-options" title="此标题的永久链接">¶</a></h2>
 <p>在 Python 环境中使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 默认将运行以下两个命令之一：</p>
 <ol class="arabic">
@@ -445,8 +443,7 @@ procedure inside the Python interpreter environment where it is installed.</p>
 <span class="o">...</span>
 </code></pre></div>
 </div>
-<p>In this specific case, the procedure will use the graphical user interface (GUI mode)
-and load a <em>database</em> file, i.e., it will run the following command line.</p>
+<p>在这种情况下，程序将使用图形用户界面（GUI ）模式并加载数据库文件，即，它将运行以下命令。</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">script</span><span class="o">=</span>script.py<span class="w"> </span><span class="nv">database</span><span class="o">=</span>file.odb<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
 </code></pre></div>
 </div>
