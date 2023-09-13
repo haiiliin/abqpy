@@ -12,6 +12,7 @@
 <link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
 <link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
 <link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
+<link href="_static/tabs.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -416,29 +417,33 @@ Python script, even without opening the Abaqus/CAE.</p>
 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img align="center" src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen"/> </a>
 are installed on your computer before installing <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>.</p>
 <p>You can install <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> with the following commands.</p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
-<label class="sd-tab-label" for="sd-tab-item-0">
-Install from PyPI</label><div class="sd-tab-content docutils">
-<pre class="literal-block">pip install abqpy==2022.*  # recommended
-pip install abqpy==2022.5.8
-pip install abqpy
-
-# with jupyter notebook support
-pip install abqpy[jupyter]==2022.*  # recommended
-pip install abqpy[jupyter]==2022.5.8
-pip install abqpy[jupyter]</pre>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"/><label class="tab-label" for="tab-set--0-input--1">pip</label><div class="tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span><span class="nv">abqpy</span><span class="o">==</span><span class="m">2022</span>.*
+</code></pre></div>
 </div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
-<label class="sd-tab-label" for="sd-tab-item-1">
-Install from source</label><div class="sd-tab-content docutils">
-<pre class="literal-block">pip install git+https://github.com/haiiliin/abqpy@2022
-pip install ipynbname nbconvert  # with jupyter notebook support</pre>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"/><label class="tab-label" for="tab-set--0-input--2">pip (wrapper)</label><div class="tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>abqpy2022
+</code></pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--0-input--3" name="tab-set--0" type="radio"/><label class="tab-label" for="tab-set--0-input--3">Source</label><div class="tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/haiiliin/abqpy@2022
+</code></pre></div>
+</div>
+</div>
+<input class="tab-input" id="tab-set--0-input--4" name="tab-set--0" type="radio"/><label class="tab-label" for="tab-set--0-input--4">Jupyter</label><div class="tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>abqpy<span class="o">[</span>jupyter<span class="o">]==</span><span class="m">2022</span>.*
+pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>abqpy2022<span class="o">[</span>jupyter<span class="o">]</span>
+pip<span class="w"> </span>install<span class="w"> </span>ipynbname<span class="w"> </span>nbconvert
+</code></pre></div>
+</div>
 </div>
 </div>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
-<p>You are recommended to install the corresponding version of Abaqus and <cite>abqpy</cite> to avoid any compatibility issues.</p>
+<p>You are recommended to install the corresponding version of Abaqus and <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> to avoid any compatibility issues.</p>
 </div>
 <h2 id="two-python-interpreters">Two Python interpreters<a class="headerlink" href="#two-python-interpreters" title="Permalink to this heading">¶</a></h2>
 <p>Before we go any further, it is necessary for us to understand two Python interpreters.</p>
@@ -533,7 +538,7 @@ run a Python script in Abaqus/CAE.</p></li>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">script</span><span class="o">=</span>script.py
 </code></pre></div>
 </div>
-<p>See <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all">here</a>
+<p>See <a class="reference external" href="https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all">here</a>
 for more information about the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command.</p>
 </li>
 <li><p>Use the <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> command in the command line:</p>
@@ -651,6 +656,7 @@ submitted to Abaqus.</p>
 <script src="_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
 <script src="_static/clipboard.min.js"></script>
 <script src="_static/copybutton.js"></script>
+<script src="_static/tabs.js"></script>
 <script src="_static/js/hoverxref.js"></script>
 <script src="_static/js/tooltipster.bundle.min.js"></script>
 <script src="_static/js/micromodal.min.js"></script>
