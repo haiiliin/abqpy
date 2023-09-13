@@ -16,32 +16,34 @@ are installed on your computer before installing `abqpy`.
 
 You can install `abqpy` with the following commands.
 
-```{eval-rst}
-.. tab-set::
+````{tab} pip
+```{code-block} shell
+pip install -U abqpy==2021.*
+```
+````
 
-    .. tab-item:: Install from PyPI
+````{tab} pip (wrapper)
+```{code-block} shell
+pip install -U abqpy2021
+```
+````
 
-        .. parsed-literal::
+````{tab} Source
+```{code-block} shell
+pip install git+https://github.com/haiiliin/abqpy@2021
+```
+````
 
-            :version-major:`pip install abqpy==|abqpy|.*`  # recommended
-            :version:`pip install abqpy==|abqpy|`
-            pip install abqpy
+````{tab} Jupyter
+```{code-block} shell
+pip install -U abqpy[jupyter]==2021.*
+pip install -U abqpy2021[jupyter]
+pip install ipynbname nbconvert
+```
+````
 
-            # with jupyter notebook support
-            :version-major:`pip install abqpy[jupyter]==|abqpy|.*`  # recommended
-            :version:`pip install abqpy[jupyter]==|abqpy|`
-            pip install abqpy[jupyter]
-
-    .. tab-item:: Install from source
-
-        .. parsed-literal::
-
-            :version-major:`pip install git+https://github.com/haiiliin/abqpy@|abqpy|`
-            pip install ipynbname nbconvert  # with jupyter notebook support
-
-.. note::
-
-    You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+```{note}
+You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
 
 ## Two Python interpreters
@@ -160,7 +162,7 @@ Now you can run your Abaqus/Python script with the following methods:
   ```sh
   abaqus cae script=script.py
   ```
-  See [here](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all)
+  See [here](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all)
   for more information about the `abaqus` command.
 - Use the `abqpy` command in the command line:
   ```sh
