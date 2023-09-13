@@ -157,6 +157,7 @@ hoverxref_role_types = {
     "confval": "tooltip",  # for custom object
     "term": "tooltip",  # for glossaries
     "numref": "tooltip",
+    "param": "tooltip",
 }
 hoverxref_intersphinx = [
     "numpy",
@@ -294,7 +295,26 @@ elif html_theme == "sphinx_immaterial":
             "content.tabs.link",
             "announce.dismiss",
         ],
-        "palette": {"primary": "green"},
+        "palette": [
+            {
+                "media": "(prefers-color-scheme: light)",
+                "scheme": "default",
+                "toggle": {
+                    "icon": "material/brightness-7",
+                    "name": "Switch to dark mode",
+                },
+                "primary": "green",
+            },
+            {
+                "media": "(prefers-color-scheme: dark)",
+                "scheme": "slate",
+                "toggle": {
+                    "icon": "material/brightness-4",
+                    "name": "Switch to light mode",
+                },
+                "primary": "green",
+            },
+        ],
         # BEGIN: version_dropdown
         "version_dropdown": True,
         "version_info": [
