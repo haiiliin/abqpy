@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ["en"]
+        language: ["en", "zh_CN"]
         builder: ["html"]
         theme: ["sphinx_immaterial"]
     env:
@@ -74,7 +74,7 @@ jobs:
       max-parallel: 1
       matrix:
         language: ["en"]
-        builder: ["html"]
+        builder: ["html", "zh_CN"]
         theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
