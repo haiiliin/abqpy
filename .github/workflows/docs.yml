@@ -80,12 +80,9 @@ jobs:
       LANGUAGE: ${{ matrix.language }}
 
     steps:
-<<<<<<< HEAD
-=======
       - uses: ahmadnassri/action-workflow-queue@v1
         with:
           timeout: 1200000
->>>>>>> dab6b679 ([workflow][skip ci] Increase docs workflow queue timeout (#5084))
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
