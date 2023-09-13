@@ -80,6 +80,9 @@ jobs:
       LANGUAGE: ${{ matrix.language }}
 
     steps:
+      - uses: ahmadnassri/action-workflow-queue@v1
+        with:
+          timeout: 1200000
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
