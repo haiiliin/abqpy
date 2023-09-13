@@ -296,25 +296,25 @@ elif html_theme == "sphinx_immaterial":
             "announce.dismiss",
         ],
         "palette": [
-        {
-            "media": "(prefers-color-scheme: light)",
-            "scheme": "default",
-            "toggle": {
-                "icon": "material/toggle-switch-off-outline",
-                "name": "Switch to dark mode",
+            {
+                "media": "(prefers-color-scheme: light)",
+                "scheme": "default",
+                "toggle": {
+                    "icon": "material/toggle-switch-off-outline",
+                    "name": "Switch to dark mode",
+                },
+                "primary": "green",
             },
-            "primary": "green",
-        },
-        {
-            "media": "(prefers-color-scheme: dark)",
-            "scheme": "slate",
-            "toggle": {
-                "icon": "material/toggle-switch",
-                "name": "Switch to light mode",
+            {
+                "media": "(prefers-color-scheme: dark)",
+                "scheme": "slate",
+                "toggle": {
+                    "icon": "material/toggle-switch",
+                    "name": "Switch to light mode",
+                },
+                "primary": "green",
             },
-            "primary": "green",
-        },
-    ],
+        ],
         # BEGIN: version_dropdown
         "version_dropdown": True,
         "version_info": [
