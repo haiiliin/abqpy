@@ -17,22 +17,19 @@ are installed on your computer before installing `abqpy`.
 You can install `abqpy` with the following commands.
 
 ```{eval-rst}
-.. tab-set::
+.. md-tab-set::
 
-    .. tab-item:: Install from PyPI
+    .. md-tab-item: Install from PyPI
 
         .. parsed-literal::
 
-            :version-major:`pip install abqpy==|abqpy|.*`  # recommended
-            :version:`pip install abqpy==|abqpy|`
-            pip install abqpy
+            :version-major:`pip install abqpy|abqpy|`
+            :version-major:`pip install abqpy|abqpy|[jupyter]`  # with jupyter notebook support
 
-            # with jupyter notebook support
-            :version-major:`pip install abqpy[jupyter]==|abqpy|.*`  # recommended
-            :version:`pip install abqpy[jupyter]==|abqpy|`
-            pip install abqpy[jupyter]
+            :version-major:`pip install abqpy==|abqpy|.*`
+            :version-major:`pip install abqpy[jupyter]==|abqpy|.*`  # with jupyter notebook support
 
-    .. tab-item:: Install from source
+    .. md-tab-item:: Install from source
 
         .. parsed-literal::
 
