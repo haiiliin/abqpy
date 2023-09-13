@@ -42,14 +42,6 @@ pip install ipynbname nbconvert
 ```
 ````
 
-````{tab} Jupyter
-```{code-block} shell
-pip install abqpy[jupyter]==2023.*
-pip install abqpy2023[jupyter]
-pip install ipynbname nbconvert
-```
-````
-
 ```{note}
 You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
