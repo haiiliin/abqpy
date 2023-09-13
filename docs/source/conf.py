@@ -278,7 +278,7 @@ elif html_theme == "sphinx_immaterial":
         "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        "edit_uri": f"blob/{version}/docs/source",
+        "edit_uri": f"edit/{version}/docs/source",
         "globaltoc_collapse": True,
         "features": [
             "navigation.expand",
