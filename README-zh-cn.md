@@ -26,11 +26,7 @@ Abaqus/Python 脚本的类型提示
 已经安装成功，然后打开 `cmd` 或者 `terminal`，输入：
 
 ```
-<<<<<<< HEAD
-pip install abqpy==2017.*  # 将主版本号替换为你的 Abaqus 版本号
-=======
-pip install -U abqpy==2023.*  # 将主版本号替换为你的 Abaqus 版本号
->>>>>>> a13a0ddc ([docs] Update installation methods (#5068))
+pip install -U abqpy==2017.*  # 将主版本号替换为你的 Abaqus 版本号
 ```
 
 然后，在你喜欢的开发环境中使用 Python 3.7+ 运行你的 Abaqus/Python 脚本，看看奇迹如何发生。
