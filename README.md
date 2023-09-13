@@ -29,7 +29,7 @@ are installed on your computer,
 open `cmd` or `terminal`, type:
 
 ```
-pip install abqpy==2022.*  # change the major version to match your Abaqus version
+pip install -U abqpy==2022.*  # change the major version to match your Abaqus version
 ```
 
 Then, open your Abaqus/Python script in your favorite IDE with Python language support,
