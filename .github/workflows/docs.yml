@@ -73,8 +73,8 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        language: ["en"]
-        builder: ["html", "zh_CN"]
+        language: ["en", "zh_CN"]
+        builder: ["html"]
         theme: ["sphinx_immaterial"]
     env:
       SPHINX_THEME: ${{ matrix.theme }}
