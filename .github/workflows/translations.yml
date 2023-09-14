@@ -12,7 +12,8 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        version: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
+        version:
+          ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -46,7 +47,8 @@ jobs:
       fail-fast: true
       max-parallel: 1
       matrix:
-        version: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
+        version:
+          ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifacts
