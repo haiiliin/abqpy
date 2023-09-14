@@ -81,13 +81,11 @@ jobs:
       LANGUAGE: ${{ matrix.language }}
 
     steps:
-      - uses: ahmadnassri/action-workflow-queue@v1
-        with:
-          timeout: 1200000
-          delay: 60000
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Set up mutex
+        uses: ben-z/gh-action-mutex@v1.0-alpha-7
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
