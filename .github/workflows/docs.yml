@@ -49,6 +49,8 @@ jobs:
         with:
           fetch-depth: 0
           submodules: recursive
+      - name: Set up mutex
+        uses: ben-z/gh-action-mutex@v1.0-alpha-7
       - name: Installing the library
         run: |
           pip install .[docs]
