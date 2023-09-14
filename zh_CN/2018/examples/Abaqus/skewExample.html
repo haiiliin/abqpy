@@ -13,7 +13,7 @@
     
     
       
-        <title>Parametric Study - abqpy 2018 文档</title>
+        <title>参数研究 - abqpy 2018 文档</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Parametric Study
+              参数研究
             
           </span>
         </div>
@@ -566,7 +566,7 @@
       
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html"><span class="md-ellipsis">Examples from Abaqus Documentation</span></a>
+          <a href="index.html"><span class="md-ellipsis">来自 Abaqus 文档的示例</span></a>
           
             <label for="__nav_2_2_1_1_1">
               <span class="md-nav__icon md-icon"></span>
@@ -574,10 +574,10 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Examples from Abaqus Documentation" data-md-level="5">
+      <nav class="md-nav" aria-label="来自 Abaqus 文档的示例" data-md-level="5">
         <label class="md-nav__title" for="__nav_2_2_1_1_1">
           <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Examples from Abaqus Documentation</span>
+          <span class="md-ellipsis">来自 Abaqus 文档的示例</span>
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -619,7 +619,7 @@
   
     <li class="md-nav__item">
       <a href="cantilever.html" class="md-nav__link">
-        <span class="md-ellipsis">Cantilever Beam</span>
+        <span class="md-ellipsis">悬臂梁</span>
       </a>
     </li>
   
@@ -641,7 +641,7 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">Parametric Study</span>
+        <span class="md-ellipsis">参数研究</span>
       </a>
       
     </li>
@@ -798,7 +798,7 @@
   
     <li class="md-nav__item">
       <a href="../../autoapi/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Abqpy API Reference</span>
+        <span class="md-ellipsis">Abqpy API 参考文档</span>
       </a>
     </li>
   
@@ -912,33 +912,30 @@
 
 <div class="sphx-glr-download-link-note note admonition">
 <p class="admonition-title">备注</p>
-<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#sphx-glr-download-examples-abaqus-skewexample-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#sphx-glr-download-examples-abaqus-skewexample-py"><span class="std std-ref">转到最后</span></a> 下载完整的示例代码</p>
 </div>
-<h1 id="parametric-study"><span id="sphx-glr-examples-abaqus-skewexample-py"></span>Parametric Study<a class="headerlink" href="#parametric-study" title="此标题的永久链接">¶</a></h1>
-<p><cite>skewExample.py</cite> from <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-intexaaclskewparametric.htm?contextscope=all&amp;id=c78341a7f00b493caa61a4c530165d52">Using a script to perform a parametric study</a>.</p>
-<p>This script performs a parameter study of element type versus
-skew angle. For more details, see Problem 2.3.4 in the
-Abaqus Benchmarks manual.</p>
-<p>Run the following command before running this script:</p>
+<h1 id="parametric-study"><span id="sphx-glr-examples-abaqus-skewexample-py"></span>参数研究<a class="headerlink" href="#parametric-study" title="此标题的永久链接">¶</a></h1>
+<p><cite>skewExpleple.py</cite> 来自 <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-intexaaclskewparametric.htm?contextscope=all&amp;id=c78341a7f00b493caa61a4c530165d52">Using a script to perform a parametric study</a>。</p>
+<p>该脚本执行单元类型与倾斜角度的参数研究。 有关更多详细信息，请参阅 《Abaqus Benchmarks manual》中的问题 2.3.4。</p>
+<p>在运行此脚本之前运行以下命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewer_tutorial
 </code></pre></div>
 </div>
-<p>The following shows the contents of the script skewExample.py. The parametric study does the following:</p>
+<p>以下是 trakewExpleple.py 的源代码。参数研究完成以下工作：</p>
 <ul>
-<li><p>Opens the model database and creates variables that refer to the part, the assembly, and the part instance stored in <cite>Model-1</cite>.</p></li>
-<li><p>Creates variables that refer to the four faces and the nine vertices in the instance of the planar shell part.</p></li>
-<li><p>Skews the plate by modifying the angular dimension in the sketch of the base feature.</p></li>
-<li><p>Defines the logical corners of the four faces, and generates a structured mesh.</p></li>
-<li><p>Runs the analysis for a range of angles using two element types for each angle.</p></li>
-<li><p>Calculates the maximum moment and displacement at the center of the shell.</p></li>
-<li><p>Displays <strong>X - Y</strong> plots in separate viewports of the following:</p>
+<li><p>打开模型数据库并创建引用存储在 <cite>Model-1</cite> 中的部件、装配体和部件实例的变量。</p></li>
+<li><p>创建引用平面壳体零件实例中的四个面和九个顶点的变量。</p></li>
+<li><p>通过修改基础特征草图中的角度尺寸来倾斜板。</p></li>
+<li><p>定义四个面的逻辑角，并生成结构化网格。</p></li>
+<li><p>对每个角度使用两种元素类型来运行一系列角度的分析。</p></li>
+<li><p>计算壳体中心处的最大力矩和位移。</p></li>
+<li><p>在以下各项的单独视口中显示 <strong>X - Y</strong> 绘图：</p>
 <ul class="simple">
-<li><p>Displacement versus skew angle</p></li>
-<li><p>Maximum bending moment versus skew angle</p></li>
-<li><p>Minimum bending moment versus skew angle</p></li>
+<li><p>位移与倾斜角</p></li>
+<li><p>最大弯矩与倾斜角度</p></li>
+<li><p>最小弯矩与倾斜角</p></li>
 </ul>
-<p>The theoretical results are also plotted.</p>
+<p>还绘制了理论结果。</p>
 </li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">visualization</span>
@@ -1278,16 +1275,16 @@ Abaqus Benchmarks manual.</p>
 <span class="n">createXYPlot</span><span class="p">((</span><span class="mi">310</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="s2">&quot;Skew 3&quot;</span><span class="p">,</span> <span class="s2">&quot;Min Moment - 4x4 Mesh&quot;</span><span class="p">,</span> <span class="n">minMomentData</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 0.000 seconds)</p>
+<p class="sphx-glr-timing">** 脚本的总运行时间：** (0 分钟 0.000 秒)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-abaqus-skewexample-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../../_downloads/4501d97a4f5d1caf1309fe93ba970047/skewExample.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">skewExample.py</span></code></a></p>
+<p><a class="reference download internal" download="" href="../../_downloads/4501d97a4f5d1caf1309fe93ba970047/skewExample.py"><code class="xref download docutils literal notranslate"><span class="pre">下载</span> <span class="pre">Python</span> <span class="pre">源代码:</span> <span class="pre">skewExample.py</span></code></a></p>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
-<p><a class="reference download internal" download="" href="../../_downloads/dfc39acf7701520ce960bf931ea938b9/skewExample.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">skewExample.ipynb</span></code></a></p>
+<p><a class="reference download internal" download="" href="../../_downloads/dfc39acf7701520ce960bf931ea938b9/skewExample.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">下载</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">skewExample.ipynb</span></code></a></p>
 </div>
 </div>
-<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+<p class="sphx-glr-signature">由 <a class="reference external" href="https://sphinx-gallery.github.io">Sphinx-Gallery</a> 生成</p>
 
 
 
@@ -1316,7 +1313,7 @@ Abaqus Benchmarks manual.</p>
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="cantilever.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: Cantilever Beam" rel="prev">
+        <a href="cantilever.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 悬臂梁" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1325,7 +1322,7 @@ Abaqus Benchmarks manual.</p>
               <span class="md-footer__direction">
                 上一页
               </span>
-              Cantilever Beam
+              悬臂梁
             </div>
           </div>
         </a>
