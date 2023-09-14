@@ -1,14 +1,6 @@
 name: Translations
 
 on:
-  push:
-    branches:
-      - "20**"
-    paths:
-      - "src/**"
-      - "docs/source/**"
-      - "docs/update-locale.sh"
-      - ".github/workflows/translations.yml"
   workflow_dispatch:
 
 concurrency:
@@ -16,11 +8,17 @@ concurrency:
 
 jobs:
   update:
+    strategy:
+      fail-fast: true
+      matrix:
+        version:
+          ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
         with:
+          ref: ${{ matrix.version }}
           fetch-depth: 0
           submodules: recursive
       - name: Setup Python
@@ -36,17 +34,37 @@ jobs:
       - name: Update translations
         run: sh docs/update-locale.sh
         env:
-          version: ${{ github.ref_name }}
+          version: ${{ matrix.version }}
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: abqpy-locale-${{ matrix.version }}
+          path: docs/source/locale/${{ matrix.version }}
+
+  push:
+    needs: update
+    strategy:
+      fail-fast: true
+      max-parallel: 1
+      matrix:
+        version:
+          ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: abqpy-locale-${{ matrix.version }}
+          path: locale
       - name: Pushes to another repository
-        id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
         with:
-          source-directory: docs/source/locale/${{ github.ref_name }}
+          source-directory: locale
           destination-github-username: "haiiliin"
           destination-repository-name: "abqpy-locale"
-          target-directory: ${{ github.ref_name }}
+          target-directory: ${{ matrix.version }}
           user-name: github-actions[bot]
           user-email: github-actions[bot]@users.noreply.github.com
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
