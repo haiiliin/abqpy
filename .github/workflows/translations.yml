@@ -43,6 +43,7 @@ jobs:
           path: docs/source/locale/${{ matrix.version }}
 
   push:
+    needs: update
     strategy:
       fail-fast: true
       max-parallel: 1
