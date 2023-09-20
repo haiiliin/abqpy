@@ -185,6 +185,7 @@ autodoc_default_options = {
 }
 maximum_signature_line_length = 90
 add_module_names = False
+autoclass_content = "class"
 
 # Figure numbering
 numfig = True
@@ -384,8 +385,6 @@ latex_logo = None
 # (Japanese documents use jreport rather). latex_appendices is available only for this theme.
 # It defaults to 'manual'.
 latex_theme = "manual"
-
-autoclass_content = "both"
 
 latex_toplevel_sectioning = "part"
 latex_engine = "xelatex"
