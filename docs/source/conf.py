@@ -23,6 +23,8 @@ import re
 import sys
 import typing
 
+from sphinx.builders.html import StandaloneHTMLBuilder
+
 import abqpy
 
 project = "abqpy"
@@ -200,6 +202,9 @@ templates_path = ["_templates"]
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["locale/README.md", "_autoapi_templates"]
+
+# preferred image types for HTML output
+StandaloneHTMLBuilder.supported_image_types = ["image/svg+xml", "image/gif", "image/png", "image/jpeg"]
 
 # -- Options for HTML output -------------------------------------------------
 
