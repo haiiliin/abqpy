@@ -310,7 +310,6 @@ elif html_theme == "sphinx_immaterial":
                     "icon": "material/brightness-7",
                     "name": "Switch to dark mode",
                 },
-                "primary": "green",
             },
             {
                 "media": "(prefers-color-scheme: dark)",
@@ -319,7 +318,6 @@ elif html_theme == "sphinx_immaterial":
                     "icon": "material/brightness-4",
                     "name": "Switch to light mode",
                 },
-                "primary": "green",
             },
         ],
         # BEGIN: version_dropdown
