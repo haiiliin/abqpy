@@ -102,7 +102,7 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 abaqus cae noGUI=script.py
 ```
 
-The secret is hided in the {py:func}`~abqpy.run.run` function.   
+The secret is hided in the {py:func}`~abqpy.run.run` function.  
 In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
 script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
 **abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.run.run`
