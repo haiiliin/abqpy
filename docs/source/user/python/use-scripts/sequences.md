@@ -13,13 +13,16 @@ For example, consider the case where the user is creating an elastic material an
 
 The equivalent Abaqus Scripting Interface command is
 
-```python2
-mdb.models['Model-1'].materials['steel'].Elastic(
-    temperatureDependency=True, table=(
-    (200.0E9, 0.3, 0.0),
-    (210.0E9, 0.3, 100.0),
-    (220.0E9, 0.3, 250.0),
-    (225.0E9, 0.3, 500.0)))
+```python
+mdb.models["Model-1"].materials["steel"].Elastic(
+    temperatureDependency=True,
+    table=(
+        (200.0e9, 0.3, 0.0),
+        (210.0e9, 0.3, 100.0),
+        (220.0e9, 0.3, 250.0),
+        (225.0e9, 0.3, 500.0),
+    ),
+)
 ```
 
 The `table` argument is described in the {doc}`/reference/index` as a sequence of sequences of Floats.
@@ -32,21 +35,20 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   For example, the following creates a three-dimensional part by extruding a 70 x 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects.
 
-  ```python2
-  mdb.Model('Body')
-  mySketch = mdb.models['Body'].ConstrainedSketch(
-      name='__profile__', sheetSize=200.0)
-  mySketch.rectangle(point1=(0.0, 0.0),
-      point2=(70.0, 70.0))
-  switch = mdb.models['Body'].Part(name='Switch',
-      dimensionality=THREE_D, type=DEFORMABLE_BODY)
+  ```python
+  mdb.Model("Body")
+  mySketch = mdb.models["Body"].ConstrainedSketch(name="__profile__", sheetSize=200.0)
+  mySketch.rectangle(point1=(0.0, 0.0), point2=(70.0, 70.0))
+  switch = mdb.models["Body"].Part(
+      name="Switch", dimensionality=THREE_D, type=DEFORMABLE_BODY
+  )
   switch.BaseSolidExtrude(sketch=mySketch, depth=20.0)
   ```
 
   The following statement displays the members of the resulting three-dimensional part:
 
-  ```python2
-  >>> print mdb.models['Body'].parts['Switch'].__members__
+  ```pycon
+  >>> print(mdb.models["Body"].parts["Switch"].__members__)
   ['allInternalSets', 'allInternalSurfaces', 'allSets',
   'allSurfaces', 'cell', 'cells', 'datum', 'datums', 'edge',
   'edges', 'elemEdge', 'elemEdges', 'elemFace',  'elemFaces',
@@ -64,20 +66,17 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
 
   The following statements display some information about the edges sequence:
 
-  ```python2
-  >>> print 'Single edge type = ', type(switch.edges[0])
+  ```pycon
+  >>> print ('Single edge type = ', type(switch.edges[0]))
   Single edge type = <type 'Edge'>
 
-  >>> print 'Edge sequence type = ', type(switch.edges)
+  >>> print ('Edge sequence type = ', type(switch.edges))
   Edge sequence type = <type 'EdgeArray'>
 
-  >>> print 'Members of edge sequence = ',
-          switch.edges.__members__
+  >>> print ('Members of edge sequence = ', switch.edges.__members__)
   Members of edge sequence =  ['pointsOn']
 
-  >>> print 'Number of edges in sequence = ',
-          len(switch.edges)
-
+  >>> print ('Number of edges in sequence = ', len(switch.edges))
   Number of edges in sequence =  12
   ```
 
