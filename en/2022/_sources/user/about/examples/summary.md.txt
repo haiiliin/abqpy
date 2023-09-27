@@ -12,14 +12,14 @@ The examples illustrate how a script can operate on a model in a model database 
 
 - A command that creates something (an "object" in object-oriented programming terms) is called a constructor and starts with an uppercase character. For example, the following statement uses the Model constructor to create a model object.
 
-  ```python2
-  myModel = mdb.Model(name='Model A')
+  ```python
+  myModel = mdb.Model(name="Model A")
   ```
 
   The model object created is
 
-  ```python2
-  mdb.models['Model A']
+  ```python
+  mdb.models["Model A"]
   ```
 
 - You can use a variable to refer to an object. Variables make your scripts easier to read and understand. myModel refers to a model object in the previous example.
