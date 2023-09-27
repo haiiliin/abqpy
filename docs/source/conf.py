@@ -23,6 +23,8 @@ import re
 import sys
 import typing
 
+from sphinx.builders.html import StandaloneHTMLBuilder
+
 import abqpy
 
 project = "abqpy"
@@ -201,6 +203,9 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["locale/README.md", "_autoapi_templates"]
 
+# preferred image types for HTML output
+StandaloneHTMLBuilder.supported_image_types = ["image/svg+xml", "image/gif", "image/png", "image/jpeg"]
+
 # -- Options for HTML output -------------------------------------------------
 
 # Get the sphinx theme from the branch name
@@ -305,7 +310,6 @@ elif html_theme == "sphinx_immaterial":
                     "icon": "material/brightness-7",
                     "name": "Switch to dark mode",
                 },
-                "primary": "green",
             },
             {
                 "media": "(prefers-color-scheme: dark)",
@@ -314,7 +318,6 @@ elif html_theme == "sphinx_immaterial":
                     "icon": "material/brightness-4",
                     "name": "Switch to light mode",
                 },
-                "primary": "green",
             },
         ],
         # BEGIN: version_dropdown
