@@ -97,10 +97,10 @@ An object in the object model can be one of the following:
 
   Most of the commands in the Abaqus Scripting Interface begin with either the Session, the Mdb, or the Odb object. For example,
 
-  ```python2
-  session.viewports['Viewport-1'].bringToFront()
-  mdb.models['wheel'].rootAssembly.regenerate()
-  stress = odb.steps['Step-1'].frames[3].fieldOutputs['S']
+  ```python
+  session.viewports["Viewport-1"].bringToFront()
+  mdb.models["wheel"].rootAssembly.regenerate()
+  stress = odb.steps["Step-1"].frames[3].fieldOutputs["S"]
   ```
 
 ## Using tab completion to explore the object model
@@ -109,7 +109,7 @@ You can use tab completion from the command line interface to speed up your typi
 
 Tab completion also searches the file system when it detects an incomplete string. For example,
 
-```python2
+```
 from part import THR[Tab]
 from part import THREE_D
 openMdb('hinge_t[Tab]
@@ -117,28 +117,31 @@ openMdb('hinge_tutorial.mdb')
 from odbAccess import *
 myOdb=openOdb('vi[Tab]
 myOdb=openOdb('viewer_tutorial.odb')
+```
+
 In most cases when you type in a constructor or a method and include the opening parenthesis, tab completion prompts you to provide a value for a keyword argument. For example,
 
+```
 mdb.models['Model-1'].Part([Tab]
 mdb.models['Model-1'].Part(name=
-When you press the Tab key, the command line cycles through the arguments to the method.
 ```
+
+When you press the Tab key, the command line cycles through the arguments to the method.
 
 You can use tab completion when you are accessing an output database. For example,
 
-```python2
+```
 p=myOdb.parts[[Tab]
 p=myOdb.parts['Part-1']
 ```
 
 You can also use tab completion when you are accessing an output database from the Abaqus Python prompt. For example,
 
-```python2
-abaqus python
->>>from odbAccess import *
->>>myOdb=openOdb('viewer_tutorial.odb')
->>>p=myOdb.parts[[Tab]
->>>p=myOdb.parts['Part-1']
+```
+>>> from odbAccess import *
+>>> myOdb=openOdb('viewer_tutorial.odb')
+>>> p=myOdb.parts[[Tab]
+>>> p=myOdb.parts['Part-1']
 ```
 
 ## The Model object model
@@ -172,11 +175,11 @@ The Job object is separate from the Model object. The object model for the Job o
 - Ownership implies that if an object is copied, everything owned by that object is also copied. Similarly, if an object is deleted, everything owned by the object is deleted. This concept is similar to parent-child relationships in Abaqus/CAE. If you delete a Part, all the children of the part—such as geometry, datums, and regions—are also deleted.
 - The relationships between objects are described in the `Path` and `Access` descriptions in the command reference. For example, the following statement uses the path to a Cell object:
 
-```python2
-  cell4 = mdb.models['block'].parts['crankcase'].cells[4]
+  ```python
+  cell4 = mdb.models["block"].parts["crankcase"].cells[4]
+  ```
 
-The statement mirrors the structure of the object model. The Cell object is owned by a Part object, the Part object is owned by a Model object, and the Model object is owned by the Mdb object.
-```
+  The statement mirrors the structure of the object model. The Cell object is owned by a Part object, the Part object is owned by a Model object, and the Model object is owned by the Mdb object.
 
 - The associations between the objects are captured by the object model. Objects can refer to other objects; for example, the section objects refer to a material, and the interaction objects refer to a region, to steps, and possibly to amplitudes. An object that refers to another object usually has a data member that indicates the name of the object to which it is referring. For example, `material` is a member of the section objects, and createStepName is a member of the interaction objects.
 
@@ -207,14 +210,14 @@ To access the objects referred to by the Model object, such as Part and Section 
 
 However, in some cases, your script may need to import a module; for example, to access a module constant, type, or function. In addition, it is useful for you to know which module Abaqus/CAE imported to augment the object model with a particular object. You have already seen the syntax to import a module:
 
-```python2
+```python
 import part
 import section
 ```
 
 In general, you should use the following approach to importing Abaqus modules:
 
-```python2
+```python
 import modulename
 ```
 

@@ -13,7 +13,7 @@ n some cases you will want to update the contents of the viewport as the model c
 
 You use the following command to change the contents of a specified viewport:
 
-```python2
+```python
 session.viewports[name].setValues(displayedObject=object)
 ```
 
