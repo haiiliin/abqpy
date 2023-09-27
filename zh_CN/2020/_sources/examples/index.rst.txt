@@ -1,15 +1,12 @@
 :orphan:
 
-========
 Examples
 ========
 
 Below are some examples of the Abaqus/Python scripts.
 
-How to add a new example
-------------------------
-
-To add a new example, add the script to the examples directory and add docstring to the top of the script. The docstring should contain the following information:
+To add a new example, add the script to the examples directory and add docstring to the top of the script.
+The docstring should contain the following information:
 
 * A title for the example
 * A description of the example
@@ -28,9 +25,10 @@ See the examples in the examples directory for examples of docstrings.
     </div>
 
 Examples from Abaqus Documentation
-==================================
+----------------------------------
 
-Below are some examples from Abaqus documentation. 
+Below are some examples from Abaqus documentation.
+
 
 
 .. raw:: html
@@ -110,8 +108,17 @@ Below are some examples from Abaqus documentation.
 
     </div>
 
+
+.. toctree::
+   :hidden:
+
+   /examples/Abaqus/viewerOpenOdbAndContour
+   /examples/Abaqus/viewerPrintContours
+   /examples/Abaqus/cantilever
+   /examples/Abaqus/skewExample
+
 Compression Model
-=================
+-----------------
 
 Below are examples of the compression model. 
 
@@ -160,8 +167,15 @@ Below are examples of the compression model.
 
     </div>
 
+
+.. toctree::
+   :hidden:
+
+   /examples/Compression/compression-output
+   /examples/Compression/compression
+
 Parameter Identification
-========================
+------------------------
 
 Below is a parameter identification for the compression model.
 
@@ -213,12 +227,9 @@ Below is a parameter identification for the compression model.
 
 .. toctree::
    :hidden:
-   :includehidden:
 
-
-   /examples/Abaqus/index.rst
-   /examples/Compression/index.rst
-   /examples/Parameter-Identification/index.rst
+   /examples/Parameter-Identification/optimize
+   /examples/Parameter-Identification/compression
 
 
 .. only:: html
