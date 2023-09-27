@@ -1,6 +1,6 @@
 """
 Parameter Identification
-========================
+------------------------
 
 This is a simple example of parameter identification. The compression model is a simple model with a cube of 1x1x1 m.
 The lower surface is fixed and the upper surface is loaded with a pressure of 100 Pa. The goal is to find the Young's
@@ -32,6 +32,8 @@ The output of this script is:
     5  1000000.0  0.099901
 
     Best modulus=1000.0 with fitness=0.0012505635619163569
+
+The model script of this example can be found :doc:`here <compression>`.
 """
 import os
 
