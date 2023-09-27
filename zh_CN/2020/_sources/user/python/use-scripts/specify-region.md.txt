@@ -16,8 +16,8 @@ Rather than using the integer `id`, you should use the `findAt` method to identi
 
 Alternatively, if you are working with an existing model that contains named regions, you can specify a region by referring to its name. For example, in the example described in Investigating the skew sensitivity of shell elements, you create a model using Abaqus/CAE. While you define the model, you must create a set that includes the vertex at the center of a planar part and you must name the set `CENTER`. You subsequently run a script that parameterizes the model and performs a series of analyses. The script uses the named region to retrieve the displacement and the bending moment at the center of the plate. The following statement refers to the set that you created and named using Abaqus/CAE:
 
-```python2
-centerNSet = odb.rootAssembly.nodeSets['CENTER']
+```python
+centerNSet = odb.rootAssembly.nodeSets["CENTER"]
 ```
 
 The following script illustrates how you can create a region. Regions are created from each of the following:
@@ -28,7 +28,7 @@ The following script illustrates how you can create a region. Regions are create
 
 Use the following command to retrieve the script:
 
-```python2
+```python
 # abaqus fetch job=createRegions
 """
 createRegions.py
@@ -46,103 +46,98 @@ import step
 import load
 import interaction
 
-myModel = mdb.models['Model-1']
+myModel = mdb.models["Model-1"]
 
 # Create a new Viewport for this example.
 
-myViewport=session.Viewport(name='Region syntax',
-            origin=(20, 20), width=200, height=100)
+myViewport = session.Viewport(
+    name="Region syntax", origin=(20, 20), width=200, height=100
+)
 
 # Create a Sketch and draw two rectangles.
 
-mySketch = myModel.ConstrainedSketch(name='Sketch A',
-    sheetSize=200.0)
+mySketch = myModel.ConstrainedSketch(name="Sketch A", sheetSize=200.0)
 
-mySketch.rectangle(point1=(-40.0, 30.0),
-    point2=(-10.0, 0.0))
+mySketch.rectangle(point1=(-40.0, 30.0), point2=(-10.0, 0.0))
 
-mySketch.rectangle(point1=(10.0, 30.0),
-    point2=(40.0, 0.0))
+mySketch.rectangle(point1=(10.0, 30.0), point2=(40.0, 0.0))
 
 # Create a 3D part and extrude the rectangles.
 
-door = myModel.Part(name='Door',
-    dimensionality=THREE_D, type=DEFORMABLE_BODY)
+door = myModel.Part(name="Door", dimensionality=THREE_D, type=DEFORMABLE_BODY)
 
 door.BaseSolidExtrude(sketch=mySketch, depth=20.0)
 
 # Instance the part.
 
 myAssembly = myModel.rootAssembly
-doorInstance = myAssembly.Instance(name='Door-1',
-    part=door)
+doorInstance = myAssembly.Instance(name="Door-1", part=door)
 
 # Select two vertices.
 
-pillarVertices = doorInstance.vertices.findAt(
-    ((-40,30,0),), ((40,0,0),) )
+pillarVertices = doorInstance.vertices.findAt(((-40, 30, 0),), ((40, 0, 0),))
 
 # Create a static step.
 
-myModel.StaticStep(name='impact',
-    previous='Initial', initialInc=1, timePeriod=1)
+myModel.StaticStep(name="impact", previous="Initial", initialInc=1, timePeriod=1)
 
 # Create a concentrated force on the selected
 # vertices.
 
 myPillarLoad = myModel.ConcentratedForce(
-    name='pillarForce', createStepName='impact',
-    region=(pillarVertices,), cf1=12.50E4)
+    name="pillarForce", createStepName="impact", region=(pillarVertices,), cf1=12.50e4
+)
 
 # Select two faces
 
-topFace = doorInstance.faces.findAt(((-25,30,10),))
-bottomFace = doorInstance.faces.findAt(((-25,0,10),))
+topFace = doorInstance.faces.findAt(((-25, 30, 10),))
+bottomFace = doorInstance.faces.findAt(((-25, 0, 10),))
 
 # Create a pressure load on the selected faces.
 # You can use the "+" notation if the entities are of
 # the same type and are from the same part instance.
 
 myFenderLoad = myModel.Pressure(
-    name='pillarPressure', createStepName='impact',
-    region=((topFace+bottomFace, SIDE1),),
-    magnitude=10E4)
+    name="pillarPressure",
+    createStepName="impact",
+    region=((topFace + bottomFace, SIDE1),),
+    magnitude=10e4,
+)
 
 # Select two edges from one instance.
 
-myEdge1 = doorInstance.edges.findAt(((10,15,20),))
-myEdge2 = doorInstance.edges.findAt(((10,15,0),))
+myEdge1 = doorInstance.edges.findAt(((10, 15, 20),))
+myEdge2 = doorInstance.edges.findAt(((10, 15, 0),))
 
 # Create a boundary condition on one face,
 # two edges, and two vertices.
 
-myDisplacementBc= myModel.DisplacementBC(
-    name='xBC', createStepName='impact',
-    region=(pillarVertices, myEdge1+myEdge2,
-    topFace), u1=5.0)
+myDisplacementBc = myModel.DisplacementBC(
+    name="xBC",
+    createStepName="impact",
+    region=(pillarVertices, myEdge1 + myEdge2, topFace),
+    u1=5.0,
+)
 
 # Select two faces using an arbitrary point
 # on the face.
 
-faceRegion = doorInstance.faces.findAt(
-    ((-30,15,20), ), ((30,15,20),))
+faceRegion = doorInstance.faces.findAt(((-30, 15, 20),), ((30, 15, 20),))
 
 # Create a surface containing the two faces.
 # Indicate which side of the surface to include.
 
-mySurface = myModel.rootAssembly.Surface(
-    name='exterior', side1Faces=faceRegion)
+mySurface = myModel.rootAssembly.Surface(name="exterior", side1Faces=faceRegion)
 
 # Create an elastic foundation using the surface.
 
 myFoundation = myModel.ElasticFoundation(
-    name='elasticFloor', createStepName='Initial',
-    surface=mySurface, stiffness=1500)
+    name="elasticFloor", createStepName="Initial", surface=mySurface, stiffness=1500
+)
 
 # Display the assembly along with the new boundary
 # conditions and loads.
 
 myViewport.setValues(displayedObject=myAssembly)
-myViewport.assemblyDisplay.setValues(step='impact',
-    loads=ON, bcs=ON, fields=ON)
+myViewport.assemblyDisplay.setValues(step="impact", loads=ON, bcs=ON, fields=ON)
 ```

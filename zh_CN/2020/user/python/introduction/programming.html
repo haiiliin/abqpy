@@ -1,1199 +1,619 @@
 
+<!DOCTYPE html>
 
-<!doctype html>
-<html lang="zh" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      <link rel="icon" href="">
-    
-    
-      
-        <title>Programming techniques - abqpy 2020 文档</title>
-      
-    
-    
-      
-        
-        
-      
-      
-
-    
-    
-    
-      
-        
-        
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
-  
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#creating-functions" class="md-skip">
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="" rel="icon"/>
+<title>Programming techniques - abqpy 2020 文档</title>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster-sideTip-punk.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster-sideTip-noir.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</link></head>
+<body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#creating-functions">
           跳转至
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      <div data-md-component="outdated" hidden>
-        
-      </div>
-    
-    
-      
-
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-component="outdated" hidden="">
+</div>
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../index.html" title="abqpy 2020 文档" class="md-header__button md-logo" aria-label="abqpy 2020 文档" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="abqpy 2020 文档" class="md-header__button md-logo" data-md-component="logo" href="../../../index.html" title="abqpy 2020 文档">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             abqpy 2020 文档
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Programming techniques
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
-    
-    
-      <div class="md-header__option">
-        <div class="md-select">
-          
-          <button class="md-header__button md-icon" aria-label="选择当前语言">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
-          </button>
-          <div class="md-select__inner">
-            <ul class="md-select__list">
-              
-                <li class="md-select__item">
-                  <a href="/abqpy/en/2020" hreflang="en" class="md-select__link">
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__option">
+<div class="md-select">
+<button aria-label="选择当前语言" class="md-header__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"></path></svg>
+</button>
+<div class="md-select__inner">
+<ul class="md-select__list">
+<li class="md-select__item">
+<a class="md-select__link" href="/abqpy/en/2020" hreflang="en">
                     English
                   </a>
-                </li>
-                
-                <li class="md-select__item">
-                  <a href="/abqpy/zh_CN/2020" hreflang="zh_CN" class="md-select__link">
+</li>
+<li class="md-select__item">
+<a class="md-select__link" href="/abqpy/zh_CN/2020" hreflang="zh_CN">
                     简体中文
                   </a>
-                </li>
-                
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="查找">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+</li>
+</ul>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<a aria-label="分享" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="分享">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             正在初始化搜索引擎
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/haiiliin/abqpy/" title="前往仓库" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/haiiliin/abqpy/" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
     abqpy
   </div>
 </a>
-      </div>
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../getting_started.html" class="md-tabs__link">
-      <span class="md-ellipsis">用户手册</span>
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../tutorials.html" class="md-tabs__link">
-      <span class="md-ellipsis">教程 &amp; 案例</span>
-    </a>
-  </li>
-
-      
-        
-  
-  
-    
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../index.html" class="md-tabs__link md-tabs__link--active">
-      <span class="md-ellipsis">参考</span>
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../policy.html" class="md-tabs__link">
-      <span class="md-ellipsis">策略与许可</span>
-    </a>
-  </li>
-
-      
-    </ul>
-  </div>
+</div>
 </nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="abqpy 2020 文档" class="md-nav__button md-logo" aria-label="abqpy 2020 文档" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-    </a>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../getting_started.html">
+<span class="md-ellipsis">用户手册</span>
+</a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../tutorials.html">
+<span class="md-ellipsis">教程 &amp; 案例</span>
+</a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../index.html">
+<span class="md-ellipsis">参考</span>
+</a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../policy.html">
+<span class="md-ellipsis">策略与许可</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="abqpy 2020 文档" class="md-nav__button md-logo" data-md-component="logo" href="../../../index.html" title="abqpy 2020 文档">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
     abqpy 2020 文档
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/haiiliin/abqpy/" title="前往仓库" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/haiiliin/abqpy/" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
     abqpy
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1">
-          <span class="md-ellipsis">用户手册</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="用户手册" data-md-level="1">
-        <label class="md-nav__title" for="__nav_1">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">用户手册</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../getting_started.html" class="md-nav__link">
-        <span class="md-ellipsis">入门指南</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../envvars.html" class="md-nav__link">
-        <span class="md-ellipsis">环境变量</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cli.html" class="md-nav__link">
-        <span class="md-ellipsis">命令行接口</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2">
-          <span class="md-ellipsis">教程 &amp; 案例</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="教程 &amp; 案例" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">教程 &amp; 案例</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../tutorials.html" class="md-nav__link">
-        <span class="md-ellipsis">教程</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/index.html" class="md-nav__link">
-        <span class="md-ellipsis">示例</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          <span class="md-ellipsis">参考</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="参考" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">参考</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-    
-  
-  
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
-      
-      
-      
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../index.html"><span class="md-ellipsis">Abaqus Scripting User’s Guide</span></a>
-          
-            <label for="__nav_3_1">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Abaqus Scripting User’s Guide" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_1">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Abaqus Scripting User’s Guide</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../about/index.html" class="md-nav__link">
-        <span class="md-ellipsis">About the Abaqus Scripting Interface</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" type="checkbox" id="__nav_3_1_2" checked>
-      
-      
-      
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../index.html"><span class="md-ellipsis">Using the Abaqus Scripting Interface</span></a>
-          
-            <label for="__nav_3_1_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Using the Abaqus Scripting Interface" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_1_2">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Using the Abaqus Scripting Interface</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2_1" type="checkbox" id="__nav_3_1_2_1" checked>
-      
-      
-      
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html"><span class="md-ellipsis">Introduction to Python</span></a>
-          
-            <label for="__nav_3_1_2_1">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="Introduction to Python" data-md-level="4">
-        <label class="md-nav__title" for="__nav_3_1_2_1">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">Introduction to Python</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python-abaqus.html" class="md-nav__link">
-        <span class="md-ellipsis">Python and Abaqus</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python-resources.html" class="md-nav__link">
-        <span class="md-ellipsis">Python resources</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python-interpreter.html" class="md-nav__link">
-        <span class="md-ellipsis">Using the Python interpreter</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="oop-basics.html" class="md-nav__link">
-        <span class="md-ellipsis">Object-<wbr>oriented basics</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="python-basics.html" class="md-nav__link">
-        <span class="md-ellipsis">The basics of Python</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-ellipsis">Programming techniques</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="#" class="md-nav__link md-nav__link--active">
-        <span class="md-ellipsis">Programming techniques</span>
-      </a>
-      
-        
-
-  
-
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1">
+<span class="md-ellipsis">用户手册</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="用户手册" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">用户手册</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../getting_started.html">
+<span class="md-ellipsis">入门指南</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../envvars.html">
+<span class="md-ellipsis">环境变量</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../cli.html">
+<span class="md-ellipsis">命令行接口</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+<span class="md-ellipsis">教程 &amp; 案例</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="教程 &amp; 案例" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">教程 &amp; 案例</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../tutorials.html">
+<span class="md-ellipsis">教程</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../examples/index.html">
+<span class="md-ellipsis">示例</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+<span class="md-ellipsis">参考</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="参考" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">参考</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../index.html"><span class="md-ellipsis">Abaqus Scripting User’s Guide</span></a>
+<label for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Abaqus Scripting User’s Guide" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">Abaqus Scripting User’s Guide</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../about/index.html">
+<span class="md-ellipsis">About the Abaqus Scripting Interface</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2" id="__nav_3_1_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../index.html"><span class="md-ellipsis">Using the Abaqus Scripting Interface</span></a>
+<label for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Using the Abaqus Scripting Interface" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">Using the Abaqus Scripting Interface</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_2_1" id="__nav_3_1_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="index.html"><span class="md-ellipsis">Introduction to Python</span></a>
+<label for="__nav_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Introduction to Python" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_3_1_2_1">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">Introduction to Python</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="python-abaqus.html">
+<span class="md-ellipsis">Python and Abaqus</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="python-resources.html">
+<span class="md-ellipsis">Python resources</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="python-interpreter.html">
+<span class="md-ellipsis">Using the Python interpreter</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="oop-basics.html">
+<span class="md-ellipsis">Object-<wbr/>oriented basics</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="python-basics.html">
+<span class="md-ellipsis">The basics of Python</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">Programming techniques</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="#">
+<span class="md-ellipsis">Programming techniques</span>
+</a>
 <nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">Programming techniques</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-functions" class="md-nav__link">
-    <span title="creating-functions (引用标签)" class="md-ellipsis">Creating functions</span>
-  </a>
-  
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">Programming techniques</span>
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-functions">
+<span class="md-ellipsis" title="creating-functions (引用标签)">Creating functions</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-dictionaries" class="md-nav__link">
-    <span title="using-dictionaries (引用标签)" class="md-ellipsis">Using dictionaries</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-dictionaries">
+<span class="md-ellipsis" title="using-dictionaries (引用标签)">Using dictionaries</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-and-writing-from-files" class="md-nav__link">
-    <span class="md-ellipsis">Reading and writing from files</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reading-and-writing-from-files">
+<span class="md-ellipsis">Reading and writing from files</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    <span title="error-handling (引用标签)" class="md-ellipsis">Error handling</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#error-handling">
+<span class="md-ellipsis" title="error-handling (引用标签)">Error handling</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#functions-and-modules" class="md-nav__link">
-    <span title="functions-and-modules (引用标签)" class="md-ellipsis">Functions and modules</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions-and-modules">
+<span class="md-ellipsis" title="functions-and-modules (引用标签)">Functions and modules</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-your-own-modules" class="md-nav__link">
-    <span class="md-ellipsis">Writing your own modules</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#writing-your-own-modules">
+<span class="md-ellipsis">Writing your own modules</span>
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="further-reading.html" class="md-nav__link">
-        <span class="md-ellipsis">Further reading</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../python-abaqus/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Using Python and the Abaqus Scripting Interface</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../use-scripts/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Using the Abaqus Scripting Interface with Abaqus/CAE</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../environment/index.html" class="md-nav__link">
-        <span class="md-ellipsis">The Abaqus Python Development Environment</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Putting it all Together:<wbr> Abaqus Scripting Interface Examples</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../output/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Accessing an Output Database</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../reference/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Abaqus Class References</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../CHANGES.html" class="md-nav__link">
-        <span class="md-ellipsis">Abaqus API Changes</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../autoapi/index.html" class="md-nav__link">
-        <span class="md-ellipsis">Abqpy API 参考文档</span>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../localization.html" class="md-nav__link">
-        <span class="md-ellipsis">文档本地化</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          <span class="md-ellipsis">策略与许可</span>
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="策略与许可" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          <span class="md-ellipsis">策略与许可</span>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../policy.html" class="md-nav__link">
-        <span class="md-ellipsis">评论策略</span>
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-  
-
-    
-  </ul>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="further-reading.html">
+<span class="md-ellipsis">Further reading</span>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../python-abaqus/index.html">
+<span class="md-ellipsis">Using Python and the Abaqus Scripting Interface</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../use-scripts/index.html">
+<span class="md-ellipsis">Using the Abaqus Scripting Interface with Abaqus/CAE</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../environment/index.html">
+<span class="md-ellipsis">The Abaqus Python Development Environment</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../examples/index.html">
+<span class="md-ellipsis">Putting it all Together:<wbr/> Abaqus Scripting Interface Examples</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../output/index.html">
+<span class="md-ellipsis">Accessing an Output Database</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../reference/index.html">
+<span class="md-ellipsis">Abaqus Class References</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CHANGES.html">
+<span class="md-ellipsis">Abaqus API Changes</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../autoapi/index.html">
+<span class="md-ellipsis">Abqpy API 参考文档</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../localization.html">
+<span class="md-ellipsis">文档本地化</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+<span class="md-ellipsis">策略与许可</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="策略与许可" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">策略与许可</span>
+</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../policy.html">
+<span class="md-ellipsis">评论策略</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      <span class="md-ellipsis">Programming techniques</span>
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-functions" class="md-nav__link">
-    <span title="creating-functions (引用标签)" class="md-ellipsis">Creating functions</span>
-  </a>
-  
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+<span class="md-ellipsis">Programming techniques</span>
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-functions">
+<span class="md-ellipsis" title="creating-functions (引用标签)">Creating functions</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-dictionaries" class="md-nav__link">
-    <span title="using-dictionaries (引用标签)" class="md-ellipsis">Using dictionaries</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-dictionaries">
+<span class="md-ellipsis" title="using-dictionaries (引用标签)">Using dictionaries</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-and-writing-from-files" class="md-nav__link">
-    <span class="md-ellipsis">Reading and writing from files</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reading-and-writing-from-files">
+<span class="md-ellipsis">Reading and writing from files</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#error-handling" class="md-nav__link">
-    <span title="error-handling (引用标签)" class="md-ellipsis">Error handling</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#error-handling">
+<span class="md-ellipsis" title="error-handling (引用标签)">Error handling</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#functions-and-modules" class="md-nav__link">
-    <span title="functions-and-modules (引用标签)" class="md-ellipsis">Functions and modules</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#functions-and-modules">
+<span class="md-ellipsis" title="functions-and-modules (引用标签)">Functions and modules</span>
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-your-own-modules" class="md-nav__link">
-    <span class="md-ellipsis">Writing your own modules</span>
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="#writing-your-own-modules">
+<span class="md-ellipsis">Writing your own modules</span>
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset" role="main">
-                  
-
-
-  <a href="https://github.com/haiiliin/abqpy/edit/2020/docs/source/user/python/introduction/programming.md" title="编辑此页" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
-  </a>
-
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset" role="main">
+<a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2020/docs/source/user/python/introduction/programming.md" title="编辑此页">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
+</a>
 <h1 id="programming-techniques">Programming techniques<a class="headerlink" href="#programming-techniques" title="此标题的永久链接">¶</a></h1>
 <p>The following sections introduce you to some of the techniques you will need to program with Python.</p>
 <h2 id="creating-functions"><span id="id1"></span>Creating functions<a class="headerlink" href="#creating-functions" title="此标题的永久链接">¶</a></h2>
 <p>You can define your own functions in Python. A function is like a subroutine in Fortran. You can pass arguments into a function, it performs the operation, and it can return one or more values. For example, the following function returns the distance of a point from the origin. The def statement starts a function definition.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
-    <span class="k">return</span>  <span class="n">a</span> <span class="o">**</span> <span class="mf">0.5</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">**</span><span class="mf">0.5</span>
 </code></pre></div>
 </div>
 <p>You supply the arguments to a function in parentheses; for example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
-<span class="mf">10.2420701033</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
+<span class="go">10.2420701033</span>
 </code></pre></div>
 </div>
 <p>You can assign the return value to a variable:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">d</span>
-<span class="mf">10.2420701033</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">d</span>
+<span class="go">10.2420701033</span>
 </code></pre></div>
 </div>
 <p>One of the methods provided by Abaqus uses as many as 50 arguments. Some of the arguments are required by the method; others are optional, and Abaqus provides an initial or default value. Fortunately, you can call a function or a method without providing every optional argument if you use Python’s keyword arguments. A keyword specifies the argument that you are providing. Keyword arguments also make your scripts more readable. For example, the following defines a function called calculateCylinderVolume:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="n">height</span><span class="p">):</span>
-<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
-<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="n">height</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
 </code></pre></div>
 </div>
 <p>You can call the function with the following line:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">27.5</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">27.5</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Here the arguments are called positional arguments because you are relying on their position in the function call to determine the variable to which they are assigned in the function—radius followed by height.</p>
 <p>The following is the same statement using keyword arguments:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Keyword arguments make your code more readable. In addition, if you use keyword arguments, you can enter the arguments in any order.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>You can define default values for an argument in a function definition. For example, the following sets the default value of radius to 0.5 and the default value of height to 1.0:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">height</span>
-<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">height</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
 </code></pre></div>
 </div>
 <p>You can now call the function without providing all the arguments. The function assigns the default value to any missing arguments.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>It is good programming practice to use a documentation string that indicates the purpose of a function and the arguments expected. A documentation string appears at the top of a function and is delimited by triple quotes “””. You can use the __doc__ method to obtain the documentation string from a function while running the Python interpreter. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="o">...</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">...     Calculates the volume of a cylinder.</span>
-<span class="s2">...</span>
-<span class="s2">...     Takes two optional arguments, radius (default=0.5)</span>
-<span class="s2">...     and height (default=1.0).</span>
-<span class="s2">...     &quot;&quot;&quot;</span>
-<span class="o">...</span>     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
-<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="gp">... </span><span class="w">    </span><span class="sd">"""</span>
+<span class="gp">... </span><span class="sd">    Calculates the volume of a cylinder.</span>
+<span class="gp">...</span>
+<span class="gp">... </span><span class="sd">    Takes two optional arguments, radius (default=0.5)</span>
+<span class="gp">... </span><span class="sd">    and height (default=1.0).</span>
+<span class="gp">... </span><span class="sd">    """</span>
+<span class="gp">... </span>    <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span>
 
-<span class="n">Calculates</span> <span class="n">the</span> <span class="n">volume</span> <span class="n">of</span> <span class="n">a</span> <span class="n">cylinder</span><span class="o">.</span>
+<span class="go">Calculates the volume of a cylinder.</span>
 
-<span class="n">Takes</span> <span class="n">two</span> <span class="n">optional</span> <span class="n">arguments</span><span class="p">,</span> <span class="n">radius</span> <span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="ow">and</span> <span class="n">height</span> <span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span><span class="o">.</span>
+<span class="go">Takes two optional arguments, radius (default=0.5)</span>
+<span class="go">and height (default=1.0).</span>
 </code></pre></div>
 </div>
 <p>You can retrieve the documentation string for the methods in the Abaqus Scripting Interface. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="vm">__doc__</span>
-<span class="s1">&#39;Mdb.Model(name &lt;, description, stefanBoltzmann, absoluteZero&gt;) -&gt;</span>
-    <span class="n">This</span> <span class="n">method</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Model</span> <span class="nb">object</span><span class="o">.</span><span class="s1">&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="go">'Mdb.Model(name &lt;, description, stefanBoltzmann, absoluteZero&gt;) -&gt;</span>
+<span class="go">    This method creates a Model object.'</span>
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="o">.</span><span class="vm">__doc__</span>
-<span class="s1">&#39;Session.Viewport(name &lt;, origin, width, height, border, titleBar,</span>
-    <span class="n">titleStyle</span><span class="p">,</span> <span class="n">customTitleString</span><span class="o">&gt;</span><span class="p">)</span>
-    <span class="o">-&gt;</span> <span class="n">This</span> <span class="n">method</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Viewport</span> <span class="nb">object</span> <span class="k">with</span> <span class="n">the</span> <span class="n">specified</span>
-    <span class="n">origin</span> <span class="ow">and</span> <span class="n">dimensions</span><span class="o">.</span><span class="s1">&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="go">'Session.Viewport(name &lt;, origin, width, height, border, titleBar,</span>
+<span class="go">    titleStyle, customTitleString&gt;)</span>
+<span class="go">    -&gt; This method creates a Viewport object with the specified</span>
+<span class="go">    origin and dimensions.'</span>
 </code></pre></div>
 </div>
 <p>The documentation string shows the name of each argument name and whether the argument is required or optional. The string also shows a brief description of the method.</p>
 <p>You can use the sys module to retrieve command line arguments and pass them to a function. For example, the following script takes two arguments—the X- and Y-coordinates of a point—and calculates the distance from the point to the origin. The script uses the following modules:</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">sys</span></code> module to retrieve the command line arguments.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">math</span></code> module to calculate the square root.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span>
-<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span>
+
+
+<span class="c1"># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
 <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Prints distance from origin to (x, y).</span>
 
 <span class="sd">    Takes two command line arguments, x and y.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="c1"># Square the arguments and add them.</span>
 
@@ -1201,13 +621,14 @@
 
     <span class="c1"># Return the square root.</span>
 
-    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sqrt" title="math.sqrt"><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span></a><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
 
 <span class="c1"># Retrieve the command line arguments and</span>
 <span class="c1"># convert the strings to floating-point numbers.</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">x</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#float" title="float"><span class="nb">float</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/sys.html#sys.argv" title="sys.argv"><span class="n">sys</span><span class="o">.</span><span class="n">argv</span></a><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#float" title="float"><span class="nb">float</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/sys.html#sys.argv" title="sys.argv"><span class="n">sys</span><span class="o">.</span><span class="n">argv</span></a><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
 <span class="c1"># Call the distance function.</span>
 
@@ -1215,7 +636,7 @@
 
 <span class="c1"># Print the result.</span>
 
-<span class="k">print</span> <span class="s1">&#39;Distance to origin = &#39;</span><span class="p">,</span> <span class="n">d</span>
+<a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Distance to origin = "</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>To use this script, do the following:</p>
@@ -1230,186 +651,187 @@
 </div>
 <h2 id="using-dictionaries"><span id="id2"></span>Using dictionaries<a class="headerlink" href="#using-dictionaries" title="此标题的永久链接">¶</a></h2>
 <p>Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="mi">2</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">2</span>
 </code></pre></div>
 </div>
 <p>In contrast, you access an object in a dictionary through its key, which can be a string, an integer, or any type of immutable Python object. There is no implicit order to the keys in a dictionary. In most cases you will assign a string to the dictionary key. The key then becomes a more intuitive way to access the elements in a dictionary. You use square brackets and the dictionary key to access a particular object. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1">#Create an empty dictionary</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;material&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Steel&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Red&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">667</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1">#Create an empty dictionary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'size'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'material'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Steel'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Red'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">667</span>
 </code></pre></div>
 </div>
 <p>You can add dictionary keys at any time.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">376.0</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.34</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'weight'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">376.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'cost'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.34</span>
 </code></pre></div>
 </div>
 <p>You use the key to access an item in a dictionary.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">costOverWeight</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">costOverWeight</span>
-<span class="mf">0.0275</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">description</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;material&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">description</span>
-<span class="s1">&#39;RedSteel&#39;</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">costOverWeight</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'cost'</span><span class="p">]</span> <span class="o">/</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'weight'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">costOverWeight</span>
+<span class="go">0.0275</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">description</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span> <span class="o">+</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'material'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">description</span>
+<span class="go">'RedSteel'</span>
 </code></pre></div>
 </div>
 <p>Dictionaries are not sequences, and you cannot apply sequence methods such as slicing and concatenating to dictionaries. Dictionaries have their own methods. The following statement lists the methods of the dictionary myPart.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">__methods__</span>
-<span class="p">[</span><span class="s1">&#39;clear&#39;</span><span class="p">,</span> <span class="s1">&#39;copy&#39;</span><span class="p">,</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="s1">&#39;has_key&#39;</span><span class="p">,</span> <span class="s1">&#39;items&#39;</span><span class="p">,</span> <span class="s1">&#39;keys&#39;</span><span class="p">,</span>
-<span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">__methods__</span>
+<span class="go">['clear', 'copy', 'get', 'has_key', 'items', 'keys',</span>
+<span class="go">'update', 'values']</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">keys()</span></code> method returns a list of the dictionary keys.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="go">['size', 'weight', 'number', 'material', 'cost', 'color']</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">values()</span></code> method returns a list of the values of each entry in the dictionary.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
-<span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">376.0</span><span class="p">,</span> <span class="mi">667</span><span class="p">,</span> <span class="s1">&#39;Steel&#39;</span><span class="p">,</span> <span class="mf">10.34</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="go">[3.0, 376.0, 667, 'Steel', 10.34, 'Red']</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">items()</span></code> method returns a list of tuples. Each tuple contains the key and its value.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-<span class="p">[(</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="mi">667</span><span class="p">),</span>   <span class="p">(</span><span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="s1">&#39;Steel&#39;</span><span class="p">),</span>
-<span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">),</span>   <span class="p">(</span><span class="s1">&#39;weight&#39;</span><span class="p">,</span> <span class="mf">376.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="mf">10.34</span><span class="p">),]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="go">[('size', 3.0), ('number', 667),   ('material', 'Steel'),</span>
+<span class="go">('color', 'Red'),   ('weight', 376.0), ('cost', 10.34),]</span>
 </code></pre></div>
 </div>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">has_key()</span></code> method to see if a key exists. A return value of 1 indicates the key exists in the dictionary. A return value of 0 indicates the key does not exist.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">)</span>
-<span class="mi">1</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)</span>
+<span class="go">1</span>
 </code></pre></div>
 </div>
 <p>Python’s del statement allows you to delete a variable.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">myPart</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">myPart</span>
 </code></pre></div>
 </div>
 <p>You can also use del to delete an item from a dictionary.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">)</span>
-<span class="mi">0</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)</span>
+<span class="go">0</span>
 </code></pre></div>
 </div>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">values()</span></code>, or <code class="docutils literal notranslate"><span class="pre">items()</span></code> methods to loop through a dictionary. In the following example, <code class="docutils literal notranslate"><span class="pre">items()</span></code> returns two values; the first is assigned to property, and the second is assigned to setting.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span>
-<span class="o">...</span>
-<span class="n">size</span> <span class="mf">3.0</span>
-<span class="n">weight</span> <span class="mf">376.0</span>
-<span class="n">number</span> <span class="mi">667</span>
-<span class="n">material</span> <span class="n">Steel</span>
-<span class="n">cost</span> <span class="mf">10.34</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="nb">print</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span>
+<span class="gp">...</span>
+<span class="go">size 3.0</span>
+<span class="go">weight 376.0</span>
+<span class="go">number 667</span>
+<span class="go">material Steel</span>
+<span class="go">cost 10.34</span>
 </code></pre></div>
 </div>
 <h2 id="reading-and-writing-from-files">Reading and writing from files<a class="headerlink" href="#reading-and-writing-from-files" title="此标题的永久链接">¶</a></h2>
 <p>Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myInputFile</span>  <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;crash_test/fender.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;peak_deflection.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w+&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myInputFile</span>  <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'crash_test/fender.txt'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'peak_deflection.txt'</span><span class="p">,</span><span class="s1">'w+'</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>The first line opens an existing file in the crash_test directory called fender.txt. The file is opened in read-only mode; myInputFile is a variable that refers to a file object. The second line creates and opens a new file object in the local directory called peak_deflection.txt. This file is opened in read and write mode.</p>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">__methods__</span></code> technique that we saw earlier to see the methods of a file object.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;peak_deflection.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span><span class="o">.</span><span class="n">__methods__</span>
-<span class="p">[</span><span class="s1">&#39;close&#39;</span><span class="p">,</span> <span class="s1">&#39;fileno&#39;</span><span class="p">,</span> <span class="s1">&#39;flush&#39;</span><span class="p">,</span> <span class="s1">&#39;isatty&#39;</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span>
-<span class="s1">&#39;readinto&#39;</span><span class="p">,</span> <span class="s1">&#39;readline&#39;</span><span class="p">,</span> <span class="s1">&#39;readlines&#39;</span><span class="p">,</span> <span class="s1">&#39;seek&#39;</span><span class="p">,</span> <span class="s1">&#39;tell&#39;</span><span class="p">,</span>
-<span class="s1">&#39;truncate&#39;</span><span class="p">,</span> <span class="s1">&#39;write&#39;</span><span class="p">,</span> <span class="s1">&#39;writelines&#39;</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'peak_deflection.txt'</span><span class="p">,</span><span class="s1">'w'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span><span class="o">.</span><span class="n">__methods__</span>
+<span class="go">['close', 'fileno', 'flush', 'isatty', 'read',</span>
+<span class="go">'readinto', 'readline', 'readlines', 'seek', 'tell',</span>
+<span class="go">'truncate', 'write', 'writelines']</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">readline()</span></code> method reads a single line from a file into a string, including the new line character that terminates the string. The <code class="docutils literal notranslate"><span class="pre">readlines()</span></code> method reads all the lines in a file into a list. The <code class="docutils literal notranslate"><span class="pre">write()</span></code> function writes a string to a file. Look at the standard Python documentation on the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>) for a description of functions that operate on files. File objects are described in the Built-in Types section of the Python Library Reference.</p>
 <p>The following example reads each line of a text file and changes the line to uppercase characters:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Read-only is the default access mode</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="go"># Read-only is the default access mode</span>
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">inputFile</span>  <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">inputFile</span>  <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
 
-<span class="c1"># You must declare write access</span>
+<span class="go"># You must declare write access</span>
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;upper.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">lines</span> <span class="o">=</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">newLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="o">...</span>     <span class="n">outputFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">newLine</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'upper.txt'</span><span class="p">,</span><span class="s1">'w'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">newLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="gp">... </span>    <span class="n">outputFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">newLine</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">inputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 </div>
 <p>The first line opens the input file; you do not need the <code class="docutils literal notranslate"><span class="pre">'r'</span></code> because read-only is the default access mode. The next line opens a new file to which you will write. You read the lines in the input file into a list. Finally, you enter a loop that converts each line to uppercase characters and writes the result to the output file. The final two lines close the files.</p>
 <h2 id="error-handling"><span id="id3"></span>Error handling<a class="headerlink" href="#error-handling" title="此标题的永久链接">¶</a></h2>
 <p>When a script encounters unusual circumstances, Python allows you to modify the flow of control through the script and to take the necessary action. The action of signaling a problem during execution is called raising or throwing an exception. Recognizing the problem is called catching an exception. Taking appropriate action is called exception handling.</p>
 <p>Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>If the file does not exist, the statement fails, and Python displays the following error message:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
 <span class="go">Traceback (innermost last):</span>
-<span class="go">File &quot;&lt;stdin&gt;&quot;, line 1, in ?</span>
-<span class="go">IOError: (2, &#39;No such file or directory&#39;)</span>
+<span class="go">File "&lt;stdin&gt;", line 1, in ?</span>
+<span class="go">IOError: (2, 'No such file or directory')</span>
 </code></pre></div>
 </div>
 <p>If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception’s value to the variable error.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span><span class="n">error</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">&#39;Exception trapped: &#39;</span><span class="p">,</span> <span class="n">error</span>
+<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Exception trapped: '</span><span class="p">,</span> <span class="n">error</span>
 <span class="gp">...</span>
-<span class="go">Exception trapped:  (2, &#39;No such file or directory&#39;)</span>
+<span class="go">Exception trapped:  (2, 'No such file or directory')</span>
 </code></pre></div>
 </div>
 <p>You can raise your own exceptions by providing the error type and the error message to the raise statement. The following example script raises an exception and displays a message if the function myFunction encounters a problem.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myFunction</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myFunction</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s1">&#39;y argument cannot be zero&#39;</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">"y argument cannot be zero"</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">myFunction</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">velocity</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">myFunction</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">velocity</span><span class="p">))</span>
 <span class="k">except</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="n">error</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">error</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Exception handling is discussed in more detail in Error handling in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>.</p>
 <h2 id="functions-and-modules"><span id="id4"></span>Functions and modules<a class="headerlink" href="#functions-and-modules" title="此标题的永久链接">¶</a></h2>
 <p>When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">myName</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myName</span> <span class="o">=</span> <span class="s1">'Einstein'</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#len" title="len"><span class="nb">len</span></a><span class="p">(</span><span class="n">myName</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Python returns the number 8, indicating the length of the string <code class="docutils literal notranslate"><span class="pre">myName</span></code>. The <code class="docutils literal notranslate"><span class="pre">len()</span></code> function is a built-in function and is always available when you are using Python. To see a list of the built-in functions provided by Python, type <code class="docutils literal notranslate"><span class="pre">dir(__builtins__)</span></code> at the Python prompt.</p>
 <p><code class="docutils literal notranslate"><span class="pre">dir(__builtins__)</span></code> is typed as dir(underscore underscorebuiltinsunderscore underscore). You have seen this underscore underscore notation already in Sequences.</p>
 <p>In addition, you can look at the standard Python documentation on the official Python website (<a class="reference external" href="http:www.python.org">http:www.python.org</a>) for a list of built-in functions. Built-in functions are described in the Built-in Functions section of the Python Library Reference.</p>
 <p>Many functions, however, are not built-in; for example, most of the math functions, such as <code class="docutils literal notranslate"><span class="pre">sin()</span></code> and <code class="docutils literal notranslate"><span class="pre">cos()</span></code>, are not available when you start Python. Functions that are not built-in are defined in modules. Modules are a way of grouping functionality and are similar to a Fortran library of subroutines. For example, the following code could be the opening lines of a Python script. The code imports the Python module <code class="docutils literal notranslate"><span class="pre">sys</span></code> and uses the <code class="docutils literal notranslate"><span class="pre">argv</span></code> member of <code class="docutils literal notranslate"><span class="pre">sys</span></code> to print the command line arguments:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
-<span class="k">for</span> <span class="n">argument</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">argument</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/sys.html#module-sys" title="sys"><span class="nn">sys</span></a>
+
+<span class="k">for</span> <span class="n">argument</span> <span class="ow">in</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/sys.html#sys.argv" title="sys.argv"><span class="n">sys</span><span class="o">.</span><span class="n">argv</span></a><span class="p">:</span>
+    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="n">argument</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>You must first import the module to make its functions, names, and functionality available to the Python interpreter. Try the following:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mf">4.0</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="mf">0.707106781187</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a><span class="o">/</span><span class="mf">4.0</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sin" title="math.sin"><span class="n">sin</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="go">0.707106781187</span>
 </code></pre></div>
 </div>
 <p>The first line imports all of the names from the math module. The second line uses <code class="docutils literal notranslate"><span class="pre">pi</span></code>, a float number defined in the math module. The third line refers to a <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function. Python can use the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function because you imported it from the math module.</p>
 <p>To import only the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function, you could have typed</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sin" title="math.sin"><span class="n">sin</span></a>
 </code></pre></div>
 </div>
 <p>You need to import a module only once during a session. Once a module is imported, its functions, methods, and attributes are always available to you. You cannot unload a module after you import it.</p>
 <p>To see a list of all the functions that come with the math module, look at the Miscellaneous Services section of the Python Library Reference. You can download public-domain modules, and you can create your own modules.</p>
 <p>Python provides a second approach to importing modules. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">math</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="p">(</span><span class="mf">7.0</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="mf">0.707330278085</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="p">(</span><span class="mf">7.0</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sin" title="math.sin"><span class="n">math</span><span class="o">.</span><span class="n">sin</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="go">0.707330278085</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">import</span></code> approach shown above imports the module as a unit, and you must qualify the name of an object from the module. To access a function from the <code class="docutils literal notranslate"><span class="pre">math</span></code> module in our example, you must prepend the function with <code class="docutils literal notranslate"><span class="pre">math.</span></code>; the <code class="docutils literal notranslate"><span class="pre">math.</span></code> statement is said to qualify the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function.</p>
@@ -1417,16 +839,18 @@
 <h2 id="writing-your-own-modules">Writing your own modules<a class="headerlink" href="#writing-your-own-modules" title="此标题的永久链接">¶</a></h2>
 <p>You can create your own module containing a set of Python functions. You can import this module and make use of its functions. The name of the module to import is the same as the name of the file containing the functions without the <code class="docutils literal notranslate"><span class="pre">.py</span></code> file suffix.</p>
 <p>For example, you can create a module called myUtilities by copying a modified version of the function that calculates the distance from a point to the origin into a file called myUtilities.py.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot; myUtilities - a module of mathematical functions&quot;&quot;&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="sd">""" myUtilities - a module of mathematical functions"""</span>
 
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a>
+
+
+<span class="c1"># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
 <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Prints distance from origin to (x, y).</span>
 
 <span class="sd">    Takes two arguments, x and y.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="c1"># Square the arguments and add them.</span>
 
@@ -1434,163 +858,120 @@
 
     <span class="c1"># Return the square root.</span>
 
-    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sqrt" title="math.sqrt"><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span></a><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>You must import the module to make use of the functions and constants that it contains.</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">myUtilities</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">myUtilities</span>
 
 <span class="n">distance</span> <span class="o">=</span> <span class="n">myUtilities</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">__doc__</span></code> method to obtain the documentation string from a module. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="n">myUtilities</span><span class="o">.</span><span class="vm">__doc__</span>
-<span class="s1">&#39; myUtilities - a module of mathematical functions&#39;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">myUtilities</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="s2">" myUtilities - a module of mathematical functions"</span>
 </code></pre></div>
 </div>
 <p>A tool for finding bugs in your modules is provided with Abaqus. The tool is called pychecker. When you import a module, pychecker prints warnings for any problems it finds with the Python source code. For example,</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pychecker</span> <span class="kn">import</span> <span class="n">checker</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">myUtilities</span>
-<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span> <span class="n">Imported</span> <span class="n">module</span> <span class="p">(</span><span class="n">sys</span><span class="p">)</span> <span class="ow">not</span> <span class="n">used</span>
-<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span> <span class="n">Local</span> <span class="n">variable</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">not</span> <span class="n">used</span>
-<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">18</span><span class="p">:</span> <span class="n">No</span> <span class="k">global</span> <span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="n">found</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pychecker</span> <span class="kn">import</span> <span class="n">checker</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">myUtilities</span>
+<span class="go">d:\users\smith\myUtilities.py:3: Imported module (sys) not used</span>
+<span class="go">d:\users\smith\myUtilities.py:14: Local variable (a) not used</span>
+<span class="go">d:\users\smith\myUtilities.py:18: No global (b) found</span>
 </code></pre></div>
 </div>
 <p>For more information about <code class="docutils literal notranslate"><span class="pre">pychecker</span></code>, see the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>)</p>
 <p>If you import a module during an interactive session using the command line interface and then make changes to the module, Python will not recognize your changes until you reload the module; for example:</p>
-<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">myModule</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">myModule</span>
+
 <span class="n">maxStress</span> <span class="o">=</span> <span class="n">myModule</span><span class="o">.</span><span class="n">calculateStress</span><span class="p">(</span><span class="n">odb</span><span class="p">)</span>
 
 <span class="c1"># Edit myModule.py and modify the calculateStress method.</span>
 
-<span class="nb">reload</span><span class="p">(</span><span class="n">myModule</span><span class="p">)</span>
+<span class="n">reload</span><span class="p">(</span><span class="n">myModule</span><span class="p">)</span>
 <span class="n">maxStress</span> <span class="o">=</span> <span class="n">myModule</span><span class="o">.</span><span class="n">calculateStress</span><span class="p">(</span><span class="n">odb</span><span class="p">)</span>
 </code></pre></div>
 </div>
-
-
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
-        </div>
-        
-          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
             回到页面顶部
           </a>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="页脚" >
-      
-        
-        <a href="python-basics.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: The basics of Python" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+</main>
+<footer class="md-footer">
+<nav aria-label="页脚" class="md-footer__inner md-grid">
+<a aria-label="上一页: The basics of Python" class="md-footer__link md-footer__link--prev" href="python-basics.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 上一页
               </span>
               The basics of Python
             </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="further-reading.html" class="md-footer__link md-footer__link--next" aria-label="下一页: Further reading" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="下一页: Further reading" class="md-footer__link md-footer__link--next" href="further-reading.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
                 下一页
               </span>
               Further reading
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
-  
-  
-  <div class="md-footer-meta md-typeset">
-    
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-footer-copyright__highlight">
-        &#169; Copyright 2022, WANG Hailin.
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-footer-copyright__highlight">
+        © Copyright 2022, WANG Hailin.
         
     </div>
   
     Created using
-    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
     6.2.1.
      and
-    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
-  
+    <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
-      
-        <div class="md-social">
-  
-    
-    
-    <a href="https://github.com/haiiliin/abqpy" target="_blank" rel="noopener" title="Source on github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
-  
-    
-    
-      
-      
-    
-    <a href="https://pypi.org/project/abqpy" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
-    </a>
-  
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="Source on github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="pypi.org">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"></path></svg>
+</a>
 </div>
-      
-    </div>
-    
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
-    
-      
-        <script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/tabs.js"></script>
-        <script src="../../../_static/js/hoverxref.js"></script>
-        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
-        <script src="../../../_static/js/micromodal.min.js"></script>
-        <script>let toggleHintShow = 'Click to show';</script>
-        <script>let toggleHintHide = 'Click to hide';</script>
-        <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../../_static/togglebutton.js"></script>
-        <script kind="utterances">
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
+<script src="../../../_static/clipboard.min.js"></script>
+<script src="../../../_static/copybutton.js"></script>
+<script src="../../../_static/tabs.js"></script>
+<script src="../../../_static/js/hoverxref.js"></script>
+<script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+<script src="../../../_static/js/micromodal.min.js"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../../_static/togglebutton.js"></script>
+<script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
     if (document.readyState != 'loading') {
@@ -1624,10 +1005,9 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-        <script src="../../../_static/translations.js"></script>
-        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../../_static/design-tabs.js"></script>
-        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
-    
-  </body>
+<script src="../../../_static/translations.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../../_static/design-tabs.js"></script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+</body>
 </html>
