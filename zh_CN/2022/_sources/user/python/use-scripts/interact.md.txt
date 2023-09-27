@@ -17,8 +17,9 @@ These arguments allow you to associate the callback function with both a particu
 
 The interface definition of the callback function is
 
-```python2
-def functionName(jobName, messageType, data, userData)
+```python
+def functionName(jobName, messageType, data, userData):
+    ...
 ```
 
 The arguments to the callback function are:
@@ -96,7 +97,7 @@ To execute the script, do the following:
 - To start printing the messages, type `printMessages(ON)` from the Abaqus/CAE command line interface.
 - To stop printing the messages, type `printMessages(OFF)` from the Abaqus/CAE command line interface.
 
-```python2
+```python
 """
 simpleMonitor.py
 
@@ -108,38 +109,38 @@ from abaqus import *
 from abaqusConstants import *
 from jobMessage import ANY_JOB, ANY_MESSAGE_TYPE
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def simpleCB(jobName, messageType, data, userData):
     """
     This callback prints out all the
     members of the data objects
     """
 
-    format = '%-18s  %-18s  %s'
+    format = "%-18s  %-18s  %s"
 
-    print 'Message type: %s'%(messageType)
-    print
-    print 'data members:'
-    print format%('member', 'type', 'value')
+    print("Message type: %s" % (messageType))
+    print()
+    print("data members:")
+    print(format % ("member", "type", "value"))
 
-    members =  dir(data)
+    members = dir(data)
     for member in members:
         memberValue = getattr(data, member)
         memberType = type(memberValue).__name__
-        print format%(member, memberType, memberValue)
+        print(format % (member, memberType, memberValue))
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def printMessages(start=ON):
     """
     Switch message printing ON or OFF
     """
 
     if start:
-        monitorManager.addMessageCallback(ANY_JOB,
-            ANY_MESSAGE_TYPE, simpleCB, None)
+        monitorManager.addMessageCallback(ANY_JOB, ANY_MESSAGE_TYPE, simpleCB, None)
     else:
-        monitorManager.removeMessageCallback(ANY_JOB,
-            ANY_MESSAGE_TYPE, simpleCB, None)
+        monitorManager.removeMessageCallback(ANY_JOB, ANY_MESSAGE_TYPE, simpleCB, None)
 ```
 
 ## Waiting for a job to complete
@@ -148,9 +149,9 @@ You can use the Job object's `waitForCompletion` method to synchronize your scri
 
 In the following example, the script submits myJob1 and waits for it to complete before submitting myJob2.
 
-```python2
-myJob1 = mdb.Job(name='Job-1')
-myJob2 = mdb.Job(name='Job-2')
+```python
+myJob1 = mdb.Job(name="Job-1")
+myJob2 = mdb.Job(name="Job-2")
 myJob1.submit()
 myJob1.waitForCompletion()
 myJob2.submit()
@@ -159,9 +160,9 @@ myJob2.waitForCompletion()
 
 If you submit more than one job and then issue a `waitForCompletion` statement, Abaqus waits until the job associated with the `waitForCompletion` statement is complete before checking the status of the second job. If the second job has already completed, the `waitForCompletion` method returns immediately. In the following example the script will not check the status of `myJob2` until `myJob1` has completed.
 
-```python2
-myJob1 = mdb.Job(name='Job-1')
-myJob2 = mdb.Job(name='Job-2')
+```python
+myJob1 = mdb.Job(name="Job-1")
+myJob2 = mdb.Job(name="Job-2")
 myJob1.submit()
 myJob2.submit()
 myJob1.waitForCompletion()
@@ -174,8 +175,8 @@ The following section describes how you can use a callback function as an altern
 
 he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.
 
-```python2
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```python
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Define the callback function
 
 from abaqus import *
@@ -183,27 +184,29 @@ from abaqusConstants import *
 
 import visualization
 
-def onMessage(jobName, messageType, data, viewport):
-if ((messageType==ABORTED) or (messageType==ERROR)):
-    print 'Solver problem; stop execution of callback function'
-elif (messageType==JOB_COMPLETED):
-    odb = visualization.openOdb(path=jobName + '.odb')
-    viewport.setValues(displayedObject=odb)
-    viewport.odbDisplay.display.setValues(plotState=CONTOURS_ON_DEF)
 
-    viewport.odbDisplay.commonOptions.setValues(renderStyle=FILLED)
+def onMessage(jobName, messageType, data, viewport):
+    if (messageType == ABORTED) or (messageType == ERROR):
+        print("Solver problem; stop execution of callback function")
+    elif messageType == JOB_COMPLETED:
+        odb = visualization.openOdb(path=jobName + ".odb")
+        viewport.setValues(displayedObject=odb)
+        viewport.odbDisplay.display.setValues(plotState=CONTOURS_ON_DEF)
+
+        viewport.odbDisplay.commonOptions.setValues(renderStyle=FILLED)
 ```
 
 The following statements show how the example script can be modified to use the callback function. After the first statement is executed, the callback function responds to all messages from the job named `Deform`. The final two statements create the job and submit it for analysis; the example script has now finished executing. When the job is complete, the callback function opens the resulting output database and displays a contour plot.
 
-```python2
-...
-myJobName = 'Deform'
-monitorManager.addMessageCallback(jobName=myJobName,
-    messageType=ANY_MESSAGE_TYPE, callback=onMessage,
-    userData=myViewport)
-myJob = mdb.Job(name=myJobName, model='Beam',
-    description=jobDescription)
+```python
+myJobName = "Deform"
+monitorManager.addMessageCallback(
+    jobName=myJobName,
+    messageType=ANY_MESSAGE_TYPE,
+    callback=onMessage,
+    userData=myViewport,
+)
+myJob = mdb.Job(name=myJobName, model="Beam", description=jobDescription)
 myJob.submit()
 # End of example script.
 ```

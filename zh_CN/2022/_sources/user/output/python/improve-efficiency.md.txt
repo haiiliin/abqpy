@@ -6,20 +6,26 @@ To improve the efficiency of scripts that access an output database, you should 
 
 The following example examines the von Mises stress in each element during a particular frame of field output. If the stress is greater than a certain maximum value, the script prints the strain components for the element.
 
-```python2
-stressField = frame.fieldOutputs['MISES']
-strainField = frame.fieldOutputs['LE']
+```python
+stressField = frame.fieldOutputs["MISES"]
+strainField = frame.fieldOutputs["LE"]
 count = 0
 for v in stressField.values:
     if v.mises > stressCap:
         if v.integrationPoint:
-            print 'Element label = ', v.elementLabel, \
-                'Integration Point = ', v.integrationPoint
+            print(
+                "Element label = ",
+                v.elementLabel,
+                "Integration Point = ",
+                v.integrationPoint,
+            )
         else:
-            print 'Element label = ', v.elementLabel
+            print("Element label = ", v.elementLabel)
         for component in strainField.values[count].data:
-            print '%-10.5f' % component,
-        print
+            print(
+                "%-10.5f" % component,
+            )
+        print()
     count = count + 1
 ```
 
@@ -27,20 +33,26 @@ In this example every time the script accesses a strain component from **strainF
 
 A slight change in the script greatly improves its performance, as shown in the following example:
 
-```python2
-stressField = frame.fieldOutputs['MISES']
-strainFieldValues = frame.fieldOutputs['LE'].values
+```python
+stressField = frame.fieldOutputs["MISES"]
+strainFieldValues = frame.fieldOutputs["LE"].values
 count = 0
 for v in stressField.values:
     if v.mises > stressCap:
         if v.integrationPoint:
-            print 'Element label = ', v.elementLabel, \
-                'Integration Point = ', v.integrationPoint
+            print(
+                "Element label = ",
+                v.elementLabel,
+                "Integration Point = ",
+                v.integrationPoint,
+            )
         else:
-            print 'Element label = ', v.elementLabel
+            print("Element label = ", v.elementLabel)
         for component in strainFieldValues[count].data:
-            print '%-10.5f' % component,
-        print
+            print(
+                "%-10.5f" % component,
+            )
+        print()
     count = count + 1
 ```
 
@@ -48,16 +60,16 @@ The second script replaces the statement strainField = frame.fieldOutputs\['LE'\
 
 Similarly, if you expect to retrieve more than one frame from an output database, you should create a temporary variable that holds the entire frame repository. You can then provide the logic to retrieve the desired frames from the repository and avoid recreating the repository each time. For example, executing the following statements could be very slow:
 
-```python2
-for i in range(len(odb.steps[name].frames)-1):
+```python
+for i in range(len(odb.steps[name].frames) - 1):
     frame[i] = odb.steps[name].frames[i]
 ```
 
 Creating a temporary variable to hold the frame repository provides the same functionality and speeds up the process:
 
-```python2
+```python
 frameRepository = odb.steps[name].frames
-for i in range(len(frameRepository)-1):
+for i in range(len(frameRepository) - 1):
     frame[i] = frameRepository[i]
 ```
 

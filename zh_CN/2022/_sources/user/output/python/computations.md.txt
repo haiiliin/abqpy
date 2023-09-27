@@ -96,19 +96,15 @@ You use envelope calculations to retrieve the extreme value for an output variab
 
 The following operators consider a list of fields and perform the envelope calculation:
 
-```python2
+```python
 (env, lcIndex) = maxEnvelope([field1, field2, ...])
 (env, lcIndex) = minEnvelope([field1, field2, ...])
 
-(env, lcIndex) = maxEnvelope([field1, field2, ...],
-                            invariant)
-(env, lcIndex) = minEnvelope([field1, field2, ...],
-                            invariant)
+(env, lcIndex) = maxEnvelope([field1, field2, ...], invariant)
+(env, lcIndex) = minEnvelope([field1, field2, ...], invariant)
 
-(env, lcIndex) = maxEnvelope([field1, field2, ...],
-                            componentLabel)
-(env, lcIndex) = minEnvelope([field1, field2, ...],
-                            componentLabel)
+(env, lcIndex) = maxEnvelope([field1, field2, ...], componentLabel)
+(env, lcIndex) = minEnvelope([field1, field2, ...], componentLabel)
 ```
 
 The envelope commands return two FieldOutput objects.
