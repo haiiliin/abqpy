@@ -6,15 +6,15 @@ The following sections introduce you to the basics of the Python language.
 
 The expression
 
-```python2
->>> myName = 'Einstein'
+```pycon
+>>> myName = "Einstein"
 ```
 
 creates a variable called `myName` that refers to a String object.
 
 To see the value of a variable or expression, simply type the variable name or the expression at the Python prompt, and press **Enter**. For example,
 
-```python2
+```pycon
 >>> myName = 'Einstein'
 >>> myName
 'Einstein'
@@ -27,7 +27,7 @@ To see the value of a variable or expression, simply type the variable name or t
 
 Python creates a variable when you assign a value to it. Python provides several forms of the assignment statement; for example,
 
-```python2
+```pycon
 >>> myName = 'Einstein'
 >>> myName, yourName = 'Einstein', 'Newton'
 >>> myName = yourName = 'Einstein'
@@ -45,8 +45,8 @@ When you assign a variable in a Python program, the variable refers to a Python 
 
 The first example script in {doc}`/user/about/examples/create-part` created a model using the following statement:
 
-```python2
-myModel = mdb.Model(name='Model A')
+```python
+myModel = mdb.Model(name="Model A")
 ```
 
 The constructor `mdb.Model(name='Model A')` creates an instance of a model, and this instance is a Python object. The object created is `mdb.models['Model A']`, and the variable myModel refers to this object.
@@ -63,21 +63,21 @@ Python includes the following built-in data types:
 
 To create variables called i and j that refer to integer objects, type the following at the Python prompt:
 
-```python2
+```pycon
 >>> i = 20
 >>> j = 64
 ```
 
 An integer is based on a C long and can be compared to a Fortran integer\*4 or \*8. For extremely large integer values, you should declare a long integer. The size of a long integer is essentially unlimited. The L at the end of the number indicates that it is a long integer.
 
-```python2
+```pycon
 >>> nodes = 2000000L
 >>> bigNumber = 120L**21
 ```
 
 Use int(_n_) to convert a variable to an integer; use long(_n_) to convert a variable to a long integer.
 
-```python2
+```pycon
 >>> load  = 279.86
 >>> iLoad = int(load)
 >>> iLoad
@@ -97,7 +97,7 @@ All Abaqus Scripting Interface object types begin with an uppercase character; f
 
 Floats represent floating-point numbers or real numbers. You can use exponential notation for floats.
 
-```python2
+```pycon
 >>> pi   = 22.0/7.0
 >>> r    = 2.345e-6
 >>> area = pi * r * r
@@ -111,7 +111,7 @@ A float is based on a C double and can be compared to a Fortran real\*8. Use flo
 
 Complex numbers use the j notation to indicate the imaginary part of the number. Python provides methods to manipulate complex numbers. The conjugate method calculates the conjugate of a complex number.
 
-```python2
+```pycon
 >>> a = 2 + 4j
 >>> a.conjugate()
 (2-4j)
@@ -119,7 +119,7 @@ Complex numbers use the j notation to indicate the imaginary part of the number.
 
 A complex number has two members, the real member and the imaginary member.
 
-```python2
+```pycon
 >>> a = 2 + 4j
 >>> a.real
 2.0
@@ -129,7 +129,7 @@ A complex number has two members, the real member and the imaginary member.
 
 Python provides complex math functions to operate on complex variables. You need to import the cmath module to use the complex square root function.
 
-```python2
+```pycon
 >>> import cmath
 >>> y = 3 + 4j
 >>> print cmath.sqrt(y)
@@ -146,7 +146,7 @@ Sequences include strings, lists, tuples, and arrays. Sequences are described in
 
 You use the `type()` function to return the type of the object to which a variable refers.
 
-```python2
+```pycon
 >>> a = 2.375
 >>> type(a)
 <type 'float'>
@@ -173,14 +173,14 @@ Sequences are important and powerful data types in Python. A sequence is an obje
 
 Lists are mutable heterogeneous sequences (anything that can be modified is called mutable). A list can be a sequence of strings, integers, floats, or any combination of these. In fact, a list can contain any type of object; for example,
 
-```python2
+```pycon
 >>> myIntegerList = [7,6,5,4]
 >>> myFloatList  = [7.1,6.5,5.3,4.8]
 ```
 
 You can refer to individual items from a sequence using the index of the item. Indices start at zero. Negative indices count backward from the end of a sequence.
 
-```python2
+```pycon
 >>> myList = [1,2,3]
 >>> myList[0]
 1
@@ -196,13 +196,13 @@ You can refer to individual items from a sequence using the index of the item. I
 
 Lists are heterogeneous, which means they can contain objects of different type.
 
-```python2
+```pycon
 >>> myList=[1,2.5,'steel']
 ```
 
 A list can contain other lists.
 
-```python2
+```pycon
 >>> myList=[[0,1,2],[3,4,5],[6,7,8]]
 >>> myList[0]
 [0, 1, 2]
@@ -212,14 +212,14 @@ A list can contain other lists.
 
 `myList[1][2]` refers to the third item in the second list. Remember, indices start at zero.
 
-```python2
+```pycon
 >>> myList[1][2]
 5
 ```
 
 Python has built-in methods that allow you to operate on the items in a sequence.
 
-```python2
+```pycon
 >>> myList
 [1, 9, 3]
 >>> myList.append(33)
@@ -236,7 +236,7 @@ The following are some additional built-in methods that operate on lists:
 
   Return the number of times a value appears in the list.
 
-  ```python2
+  ```pycon
   >>> myList = [0,1,2,1,2,3,2,3,4,3,4,5]
   >>> myList.count(2)
   3
@@ -246,7 +246,7 @@ The following are some additional built-in methods that operate on lists:
 
   Return the index indicating the first time an item appears in the list.
 
-  ```python2
+  ```pycon
   >>> myList.index(5)
   11
   >>> myList.index(4)
@@ -257,7 +257,7 @@ The following are some additional built-in methods that operate on lists:
 
   Insert a new element into a list at a specified location.
 
-  ```python2
+  ```pycon
   >>> myList.insert(2,22)
   >>> myList
   [0, 1, 22, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5]
@@ -267,7 +267,7 @@ The following are some additional built-in methods that operate on lists:
 
   Reverse the elements in a list.
 
-  ```python2
+  ```pycon
   >>> myList.reverse()
   >>> myList
   [5, 4, 3, 4, 3, 2, 3, 2, 1, 2, 22, 1, 0]
@@ -277,7 +277,7 @@ The following are some additional built-in methods that operate on lists:
 
   Sort the elements in a list.
 
-  ```python2
+  ```pycon
   >>> myList.sort()
   >>> myList
   [0, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 5, 22]
@@ -287,26 +287,26 @@ The following are some additional built-in methods that operate on lists:
 
 Tuples are very similar to lists; however, they are immutable heterogeneous sequences, which means that you cannot change them after you create them. You can think of a tuple as a list that cannot be modified. Tuples have no methods; you cannot append items to a tuple, and you cannot modify or delete the items in a tuple. The following statement creates an empty tuple:
 
-```python2
+```pycon
 myTuple = ()
 ```
 
 The following statement creates a tuple with one element:
 
-```python2
+```pycon
 myTuple = (5.675,)
 ```
 
 You can use the `tuple()` function to convert a list or a string to a tuple.
 
-```python2
+```pycon
 >>> myList = [1, 2, "stress", 4.67]
 >>> myTuple = tuple(myList)
 >>> print myTuple
 (1, 2, 'stress', 4.67)
 >>> myString = 'Failure mode'
 >>> myTuple = tuple(myString)
->>> print myTuple
+>>> print (myTuple)
 ('F', 'a', 'i', 'l', 'u', 'r', 'e', ' ', 'm', 'o', 'd', 'e')
 ```
 
@@ -326,7 +326,7 @@ AttributeError: __setitem__
 
 Strings are immutable sequences of characters. Strings are defined by single or double quotation marks. You can use the + operator to concatenate two strings and create a third string; for example,
 
-```python2
+```pycon
 >>> odbString = "Symbol plot from "
 >>> odb = 'load1.odb'
 >>> annotationString = odbString + odb
@@ -340,7 +340,7 @@ You can also use the + operator to concatenate tuples and lists.
 
 Python provides a set of functions that operate on strings.
 
-```python2
+```pycon
 >>> annotationString
 'Symbol plot from load1.odb'
 >>> annotationString.upper()
@@ -351,7 +351,7 @@ Python provides a set of functions that operate on strings.
 
 As with all sequences, you use negative indices to index backward from the end of a string.
 
-```python2
+```pycon
 >>> axis_label = 'maxstrain'
 >>> axis_label[-1]
 'n'
@@ -359,7 +359,7 @@ As with all sequences, you use negative indices to index backward from the end o
 
 Use the built-in str function to convert an object to a string.
 
-```python2
+```pycon
 >>> myList = [8, 9, 10]
 >>> str(myList)
 '[8, 9, 10]'
@@ -371,7 +371,7 @@ Look at the standard Python documentation on the official Python website (<https
 
 Arrays are mutable homogeneous sequences. The numpy module allows you to create and operate on multidimensional arrays. Python determines the type of elements in the array; you do not have to declare the type when you create the array. For more information about the numpy module, see <https://numpy.org>.
 
-```python2
+```pycon
 >>> from numpy import array
 >>> myIntegerArray = array([[1,2],[2,3],[3,4]])
 >>> myIntegerArray
@@ -399,7 +399,7 @@ Python provides a set of tools that allow you to operate on a sequence.
 
 Sequences can be divided into smaller sequences. This operation is called slicing. The expression sequence\[m:n\] returns a copy of sequence from m to n−1. The default value for m is zero; the default value for n is the length of the sequence.
 
-```python2
+```pycon
 >>> myList = [0,1,2,3,4]
 >>> myList[1:4]
 [1, 2, 3]
@@ -412,7 +412,7 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 
 ### Repeat a sequence
 
-```python2
+```pycon
 >>> x=(1,2)
 >>> x*2
 (1, 2, 1, 2)
@@ -423,7 +423,7 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 
 ### Determine the length of a sequence
 
-```python2
+```pycon
 >>> myString ='linear load'
 >>> len(myString)
 11
@@ -434,7 +434,7 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 
 ### Concatenate sequences
 
-```python2
+```pycon
 >>> a = [0,1]
 >>> b = [9,8]
 >>> a + b
@@ -449,7 +449,7 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 
 The `range()` function generates a list containing a sequence of integers. You can use the `range()` function to control iterative loops. The arguments to range are start (the starting value), end (the ending value plus one), and step (the step between each value). The start and step arguments are optional; the default start argument is 0, and the default step argument is 1. The arguments must be integers.
 
-```python2
+```pycon
 >>> range(2,8)
 [2, 3, 4, 5, 6, 7]
 >>> range(4)
@@ -462,7 +462,7 @@ The `range()` function generates a list containing a sequence of integers. You c
 
 Convert a sequence to a list or a tuple.
 
-```python2
+```pycon
 >>> myString='noise'
 >>> myList = list(myString) #Convert a string to a list.
 >>> myList[0] = 'p'
@@ -479,7 +479,7 @@ Convert a sequence to a list or a tuple.
 
 Python defines a special object called the None object or Python None that represents an empty value. The None object is returned by functions and methods that do not have a return value. The None object has no value and prints as None. For example
 
-```python2
+```pycon
 >>> a = [1, 3, 7, 5]
 >>> print a.sort()
 None
@@ -493,22 +493,30 @@ None
 
 You can continue a statement on the following line if you break the statement between a set of (), {}, or \[\] delimiters. For example, look at the tuple that was used in {doc}`/user/about/examples/create-part` to assign the coordinates of the vertices to a variable:
 
-```python2
-xyCoordsOuter = ((-10, 30), (10, 30), (40, -30),
-    (30, -30), (20, -10), (-20, -10),
-    (-30, -30), (-40, -30), (-10, 30))
+```python
+xyCoordsOuter = (
+    (-10, 30),
+    (10, 30),
+    (40, -30),
+    (30, -30),
+    (20, -10),
+    (-20, -10),
+    (-30, -30),
+    (-40, -30),
+    (-10, 30),
+)
 ```
 
 If a statement breaks at any other place, you must include a \\ character at the end of the line to indicate that it is continued on the next line. For example,
 
-```python2
+```pycon
 distance = mdb.models['Model-1'].parts['housing'].getDistance(entity1=node1, entity2=node2)
 ```
 
 When you are running Python from a local Linux or Windows window, the prompt changes to the . . . characters to indicate that you are on a continuation line.
 Comments in a Python script begin with the # character and continue to the end of the line.
 
-```python2
+```pycon
 >>> # Define material constants
 >>> modulus = 1e6 # Define Young's modulus
 ```
@@ -517,7 +525,7 @@ Comments in a Python script begin with the # character and continue to the end o
 
 Python provides a print function that displays the value of a variable. For example,
 
-```python2
+```pycon
 >>> freq = 22.0/7.0
 >>> x = 7.234
 >>> print 'Vibration frequency = ', freq
@@ -528,21 +536,21 @@ Vibration frequency =  3.14285714286 Displacement = 7.234
 
 The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.
 
-```python2
+```pycon
 >>> print 'Vibration frequency = %s Displacement = %s' % (freq, x)
 Vibration frequency = 3.14285714286 Displacement = 7.234
 ```
 
 The `%f` operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.
 
-```python2
+```pycon
 >>> print 'Vibration frequency = %6.2f Displacement = %6.2f' % (freq, x)
 Vibration frequency =   3.14 Displacement =   7.23
 ```
 
 The `%E` operator specifies scientific notation and indicates the number of decimal places.
 
-```python2
+```pycon
 >>> print 'Vibration frequency = %.6E Displacement = %.2E' % (freq, x)
 Vibration frequency = 3.142857E+00 Displacement = 7.23E+00
 ```
@@ -556,7 +564,7 @@ The `\\t` escape sequence inserts a tab character.
 
 For example,
 
-```python2
+```pycon
 >>> print 'Vibration frequency = %+.6E\nDisplacement = %+.2E' % (freq, x)
 Vibration frequency = +3.142857E+00
 Displacement = +7.23E+00
@@ -566,7 +574,7 @@ Displacement = +7.23E+00
 
 Python does not use a special character, such as }, to signify the end of a control block such as an if statement. Instead, Python uses indentation to indicate the end of a control block. You define the indentation that governs a block. When your script returns to the original indentation, the block ends. For example,
 
-```python2
+```pycon
 max = 5
 i = 0
 while i <= max:
@@ -581,7 +589,7 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 
 ### if, elif, and else
 
-```python2
+```pycon
 >>> load = 10
 >>> if load > 6.75:
 ...     print 'Reached critical load'
@@ -593,7 +601,7 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 
 ### while
 
-```python2
+```pycon
 >>> load   = 10
 >>> length = 3
 >>> while load < 1E4:
@@ -611,7 +619,7 @@ Use `break` to break out of a loop.
 
 Use `continue` to skip the rest of the loop and to go to the next iteration.
 
-```python2
+```pycon
 >>> load   = 10
 >>> length = -3
 >>> while load < 1E6:  #Continue jumps up here
@@ -625,7 +633,7 @@ Use `continue` to skip the rest of the loop and to go to the next iteration.
 
 Use a sequence to control the start and the end of for loops. The `range()` function is an easy way to create a sequence.
 
-```python2
+```pycon
 >>> for i in range(5):
 ...     print i
 ...
