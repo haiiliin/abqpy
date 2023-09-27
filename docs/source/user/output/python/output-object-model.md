@@ -82,70 +82,91 @@ The model data object model.
 
 The objects stored as model data in an output database are similar to the objects stored in an Abaqus/CAE model database. However, the output database does not require a model name because an analysis job always refers to a single model and the resulting output database can contain only one model. For example, the following Abaqus Scripting Interface statements refer to an Instance object in the model database:
 
-```python2
-mdb = openMdb(pathName='/users/smith/mdb/hybridVehicle')
-myModel = mdb.models['Transmission']
-myPart = myModel.rootAssembly.instances['housing']
+```python
+mdb = openMdb(pathName="/users/smith/mdb/hybridVehicle")
+myModel = mdb.models["Transmission"]
+myPart = myModel.rootAssembly.instances["housing"]
 ```
 
 Similar statements refer to an Instance object in the output database.
 
-```python2
-odb = openOdb(path='/users/smith/odb/transmission.odb')
-myPart = odb.rootAssembly.instances['housing']
+```python
+odb = openOdb(path="/users/smith/odb/transmission.odb")
+myPart = odb.rootAssembly.instances["housing"]
 ```
 
 You can use the `prettyPrint` method to display a text representation of an output database and to view the structure of the model data in the object model. For example, the following shows the output from `prettyPrint` applied to the output database created by the Abaqus/CAE cantilever beam tutorial:
 
-```python2
+```python
 from odbAccess import *
 from textRepr import *
-odb=openOdb('Deform.odb')
-prettyPrint(odb,2)
-({'analysisTitle': 'Cantilever beam tutorial',
-'closed': False,
-'description': 'DDB object',
-'diagnosticData': ({'analysisErrors': 'OdbSequenceAnalysisError object',
-                    'analysisWarnings': 'OdbSequenceAnalysisWarning object',
-                    'jobStatus': JOB_STATUS_COMPLETED_SUCCESSFULLY,
-                    'jobTime': 'OdbJobTime object',
-                    'numberOfAnalysisErrors': 0,
-                    'numberOfAnalysisWarnings': 0,
-                    'numberOfSteps': 1,
-                    'numericalProblemSummary': 'OdbNumericalProblemSummary object',
-                    'steps': 'OdbSequenceDiagnosticStep object'}),
-'isReadOnly': False,
-'jobData': ({'analysisCode': ABAQUS_STANDARD,
-            'creationTime': 'date time year',
-            'machineName': '',
-            'modificationTime': 'date time year',
-            'name': 'Deform.odb',
-            'precision': SINGLE_PRECISION,
-            'productAddOns': 'tuple object',
-            'version': 'Abaqus/Standard release'}),
-'name': 'Deform.odb',
-'parts': {'BEAM': 'Part object'},
-'path': 'C:/Deform.odb',
-'rootAssembly': ({'connectorOrientations': 'ConnectorOrientationArray object',
-                    'datumCsyses': 'Repository object',
-                    'elementSet': 'Repository object',
-                    'elementSets': 'Repository object',
-                    'elements': 'OdbMeshElementArray object',
-                    'instance': 'Repository object',
-                    'instances': 'Repository object',
-                    'name': 'ASSEMBLY',
-                    'nodeSet': 'Repository object',
-                    'nodeSets': 'Repository object',
-                    'nodes': 'OdbMeshNodeArray object',
-                    'sectionAssignments': 'Sequence object',
-                    'surface': 'Repository object',
-                    'surfaces': 'Repository object'}),
-'sectionCategories': {'solid < STEEL >': 'SectionCategory object'},
-'sectorDefinition': None,
-'steps': {'Beamload': 'OdbStep object'},
-'userData': ({'annotations': 'Repository object',
-                'xyData': 'Repository object',
-                'xyDataObjects': 'Repository object'})})
+
+odb = openOdb("Deform.odb")
+prettyPrint(odb, 2)
+(
+    {
+        "analysisTitle": "Cantilever beam tutorial",
+        "closed": False,
+        "description": "DDB object",
+        "diagnosticData": (
+            {
+                "analysisErrors": "OdbSequenceAnalysisError object",
+                "analysisWarnings": "OdbSequenceAnalysisWarning object",
+                "jobStatus": JOB_STATUS_COMPLETED_SUCCESSFULLY,
+                "jobTime": "OdbJobTime object",
+                "numberOfAnalysisErrors": 0,
+                "numberOfAnalysisWarnings": 0,
+                "numberOfSteps": 1,
+                "numericalProblemSummary": "OdbNumericalProblemSummary object",
+                "steps": "OdbSequenceDiagnosticStep object",
+            }
+        ),
+        "isReadOnly": False,
+        "jobData": (
+            {
+                "analysisCode": ABAQUS_STANDARD,
+                "creationTime": "date time year",
+                "machineName": "",
+                "modificationTime": "date time year",
+                "name": "Deform.odb",
+                "precision": SINGLE_PRECISION,
+                "productAddOns": "tuple object",
+                "version": "Abaqus/Standard release",
+            }
+        ),
+        "name": "Deform.odb",
+        "parts": {"BEAM": "Part object"},
+        "path": "C:/Deform.odb",
+        "rootAssembly": (
+            {
+                "connectorOrientations": "ConnectorOrientationArray object",
+                "datumCsyses": "Repository object",
+                "elementSet": "Repository object",
+                "elementSets": "Repository object",
+                "elements": "OdbMeshElementArray object",
+                "instance": "Repository object",
+                "instances": "Repository object",
+                "name": "ASSEMBLY",
+                "nodeSet": "Repository object",
+                "nodeSets": "Repository object",
+                "nodes": "OdbMeshNodeArray object",
+                "sectionAssignments": "Sequence object",
+                "surface": "Repository object",
+                "surfaces": "Repository object",
+            }
+        ),
+        "sectionCategories": {"solid < STEEL >": "SectionCategory object"},
+        "sectorDefinition": None,
+        "steps": {"Beamload": "OdbStep object"},
+        "userData": (
+            {
+                "annotations": "Repository object",
+                "xyData": "Repository object",
+                "xyDataObjects": "Repository object",
+            }
+        ),
+    }
+)
 ```
 
 For more information, see {func}`~abaqus.TextRepresentation.TextRepr.prettyprint`.

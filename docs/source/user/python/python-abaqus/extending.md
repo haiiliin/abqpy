@@ -10,21 +10,22 @@ If you extend the kernel functionality by writing your own classes and functions
 
 For example,
 
-```python2
+```python
 import customKernel
+
 mdb = Mdb()
-mdb.customData.myString = 'The width is '
+mdb.customData.myString = "The width is "
 mdb.customData.myNumber = 58
-mdb.saveAs('custom-test.cae')
+mdb.saveAs("custom-test.cae")
 mdb.close()
 ```
 
 If you start a new session and open the model database, `custom-test.cae`, you can refer to the variables that you saved. For example,
 
-```python2
+```pycon
 >>> import customKernel
-mdb = openMdb('custom-test.cae')
->>> print mdb.customData.myString, mdb.customData.myNumber
+>>> mdb = openMdb("custom-test.cae")
+>>> print(mdb.customData.myString, mdb.customData.myNumber)
 The width is 58
 ```
 
@@ -40,8 +41,8 @@ In addition to providing a persistence mechanism, the `customKernel` module cont
 
 Querying custom kernel data values from the GUI. From a GUI script you can access some attribute of your custom kernel object, just as you would from the kernel. For example,
 
-```python2
-print mdb.customData.myObject.name
+```python
+print(mdb.customData.myObject.name)
 ```
 
 Notification to the GUI when custom kernel data change. For example, you can have a manager dialog box that lists the objects in a repository. When the contents of the repository change, you can be notified and take the appropriate action to update the list of objects in the manager dialog box.
@@ -52,10 +53,9 @@ To make use of these features, you must derive your custom kernel objects from t
 
 You can use the CommandRegister class to derive a general class that can be queried from the GUI. In addition, the class can notify the GUI when its contents change. For example,
 
-```python2
+```python
 class Block(CommandRegister):
-
-    def __init__(self, name, ...):
+    def __init__(self, name):
         CommandRegister.__init__(self)
         ...
 ```
@@ -91,7 +91,7 @@ class Block(CommandRegister):
 
 mdb.customData.Repository('blocks', Block)
 block = mdb.customData.Block(name='Block-1')
-print mdb.customData.blocks['Block-1'].name Block-1
+print (mdb.customData.blocks['Block-1'].name) # Block-1
 ```
 
 ## Repository methods
@@ -106,32 +106,30 @@ Repositories have several useful methods for querying their contents, as shown i
 
 The following script illustrates some of these methods:
 
-```python2
-from customKernel
-import CommandRegister
-class Block(CommandRegister):
+```python
+from customKernel import CommandRegister
 
+
+class Block(CommandRegister):
     def __init__(self, name):
         CommandRegister.__init__(self)
 
-mdb.customData.Repository('blocks', Block)
-mdb.customData.Block(name='Block-1')
-mdb.customData.Block(name='Block-2')
-print 'The original repository keys are: ',
-    mdb.customData.blocks.keys()
-print mdb.customData.blocks.has_key('Block-2')
-print mdb.customData.blocks.has_key('Block-3')
-mdb.customData.blocks.changeKey('Block-1', 'Block-11')
-print 'The modified repository keys are: ',
-    mdb.customData.blocks.keys()
-print 'The name member is ',
-    mdb.customData.blocks['Block-11'].name
-print 'The repository size is', len(mdb.customData.blocks)
+
+mdb.customData.Repository("blocks", Block)
+mdb.customData.Block(name="Block-1")
+mdb.customData.Block(name="Block-2")
+print("The original repository keys are: ", mdb.customData.blocks.keys())
+print(mdb.customData.blocks.has_key("Block-2"))
+print(mdb.customData.blocks.has_key("Block-3"))
+mdb.customData.blocks.changeKey("Block-1", "Block-11")
+print("The modified repository keys are: ", mdb.customData.blocks.keys())
+print("The name member is ", mdb.customData.blocks["Block-11"].name)
+print("The repository size is", len(mdb.customData.blocks))
 ```
 
 The resulting output is
 
-```python2
+```
 The original repository keys are ['Block-1', 'Block-2']
 1
 0
@@ -146,23 +144,25 @@ You can use the `RepositorySupport` class to derive a class that can contain one
 
 Using the `RepositorySupport` class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as `name`; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from `RepositorySupport` and use its `Repository` method to create child repositories as shown below. The method is described in [repositories].
 
-```python2
+```python
 from abaqus import *
 from customKernel import CommandRegister, RepositorySupport
-class Block(CommandRegister):
 
+
+class Block(CommandRegister):
     def __init__(self, name):
-    CommandRegister.__init__(self)
+        CommandRegister.__init__(self)
+
 
 class Model(RepositorySupport):
-
     def __init__(self, name):
         RepositorySupport.__init__(self)
-        self.Repository('blocks', Block)
+        self.Repository("blocks", Block)
 
-mdb.customData.Repository('models', Model)
-mdb.customData.Model('Model-1')
-mdb.customData.models['Model-1'].Block('Block-1')
+
+mdb.customData.Repository("models", Model)
+mdb.customData.Model("Model-1")
+mdb.customData.models["Model-1"].Block("Block-1")
 ```
 
 The path to the object being created can be found by calling repr(self) in the constructor of your object.
@@ -171,38 +171,42 @@ The path to the object being created can be found by calling repr(self) in the c
 
 You use the `RegisteredDictionary` class to create a dictionary that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the dictionary change. The key of a registered dictionary must be either a String or an Int. The values associated with a key must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The `RegisteredDictionary` class has the same methods as a Python dictionary. In addition, the `RegisteredDictionary` class has a changeKey method that you use to rename a key in the dictionary. For example,
 
-```python2
+```python
 from customKernel import RegisteredDictionary
+
 mdb.customData.myDictionary = RegisteredDictionary()
-mdb.customData.myDictionary['Key-1'] = 1
-mdb.customData.myDictionary.changeKey('Key-1', 'Key-2')
+mdb.customData.myDictionary["Key-1"] = 1
+mdb.customData.myDictionary.changeKey("Key-1", "Key-2")
 ```
 
 ## Registered lists
 
 You use the `RegisteredList` class to create a list that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the list change. The values in the list must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The values must all be of the same type; for example, all integers or all strings. The `RegisteredList` has the same methods as a Python list. For example, appending `Item-1` to the list in the following statements causes the infrastructure to notify the GUI that the contents of the list have changed:
 
-```python2
+```python
 from customKernel import RegisteredList
+
 mdb.customData.myList = RegisteredList()
-mdb.customData.myList.append('Item-1')
+mdb.customData.myList.append("Item-1")
 ```
 
 ## Registered tuples
 
 You use the `RegisteredTuple` class to create a tuple that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of any of the members of the tuple change. The members in the tuple must derive from the `CommandRegister` class, and the values in the tuple must all be of the same type; for example, all integers or all strings. For example,
 
-```python2
+```python
 from abaqus import *
 from customKernel import CommandRegister, RegisteredTuple
-class Block(CommandRegister):
 
+
+class Block(CommandRegister):
     def __init__(self, name):
         CommandRegister.__init__(self)
 
-mdb.customData.Repository('blocks', Block)
-block1 = mdb.customData.Block(name='Block-1')
-block2 = mdb.customData.Block(name='Block-2')
+
+mdb.customData.Repository("blocks", Block)
+block1 = mdb.customData.Block(name="Block-1")
+block2 = mdb.customData.Block(name="Block-2")
 tuple = (block1, block2)
 mdb.customData.myTuple = RegisteredTuple(tuple)
 ```
@@ -219,8 +223,9 @@ f you have custom kernel scripts that store data in a model database, you may wa
 
 You use the appData object to store custom application-related data in the model database. The appData object is an instance of an AbaqusAppData class. You can add any attributes to the appData object that are necessary to track information about your custom application. The following example illustrates how you can store the version number of your application on the appData object:
 
-```python2
+```python
 import customKernel
+
 myAppData = customKernel.AbaqusAppData()
 myAppData.majorVersion = 1
 myAppData.minorVersion = 2
@@ -229,8 +234,8 @@ myAppData.updateVersion = 3
 
 You use the setAppData method to install an appData object as session.customData.appData and to associate it with your application name. For example:
 
-```python2
-myAppName = 'My App'
+```python
+myAppName = "My App"
 customKernel.setAppData(myAppName, myAppData)
 ```
 
@@ -256,20 +261,23 @@ Kernel initialization scripts specified by the **startup** command line option a
 
 The following example shows how you can use the `verifyMdb`, `intializeMdb`, and `processInitialMdb` methods. You should execute the example using the startup command line option when you start Abaqus/CAE. For more information, see Abaqus/CAE execution.
 
-```python2
+```python
 from abaqus import mdb, session
 import customKernel
-myAppName = 'My App'
+
+myAppName = "My App"
 myAppData = customKernel.AbaqusAppData()
 myAppData.majorVersion = 1
 myAppData.minorVersion = 1
 myAppData.updateVersion = 1
 customKernel.setAppData(myAppName, myAppData)
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def verifyMdb(mdbAppData):
     # If there is no appData, initialize the MDB.
     #
-    if mdbAppData==None:
+    if mdbAppData == None:
         initializeMdb()
         return
     # If my application is not in appData, initialize the MDB.
@@ -280,24 +288,25 @@ def verifyMdb(mdbAppData):
 
     # Perform any checks on the appData or customData here
 
+
 # Set the verifyMdb method for the application.
 # setVerifyMdb may be called only once per application name.
 #
 customKernel.setVerifyMdb(myAppName, verifyMdb)
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def initializeMdb():
     # Initialize the MDB here
 
+    # Set the initializeMdb method for this application.
+    # setInitializeMdb may be called only once per application name.
+    #
+    customKernel.setInitializeMdb(myAppName, initializeMdb)
 
-# Set the initializeMdb method for this application.
-# setInitializeMdb may be called only once per application name.
-#
-customKernel.setInitializeMdb(myAppName, initializeMdb)
-
-# This file is executed after Abaqus/CAE has started, so we need to
-# process the initial MDB (either a new, empty MDB created by Abaqus/CAE,
-# or a database opened via the -database command line argument).
-#
-customKernel.processInitialMdb(myAppName)
+    # This file is executed after Abaqus/CAE has started, so we need to
+    # process the initial MDB (either a new, empty MDB created by Abaqus/CAE,
+    # or a database opened via the -database command line argument).
+    #
+    customKernel.processInitialMdb(myAppName)
 ```
