@@ -108,6 +108,7 @@ An object in the object model can be one of the following:
 You can use tab completion from the command line interface to speed up your typing and to explore the object model. For example, you can type `mdb.models['Model-1'].parts[` in the command line interface. When you press the **\[Tab\]** key, the command line cycles through the parts in the model. When you press **\[Shift\]\[Tab\]**, the command line cycles backwards through the parts in the model.
 
 Tab completion also searches the file system when it detects an incomplete string. For example,
+
 ```
 from part import THR[Tab]
 from part import THREE_D
@@ -119,18 +120,23 @@ myOdb=openOdb('viewer_tutorial.odb')
 ```
 
 In most cases when you type in a constructor or a method and include the opening parenthesis, tab completion prompts you to provide a value for a keyword argument. For example,
+
 ```
 mdb.models['Model-1'].Part([Tab]
 mdb.models['Model-1'].Part(name=
 ```
+
 When you press the Tab key, the command line cycles through the arguments to the method.
 
 You can use tab completion when you are accessing an output database. For example,
+
 ```
 p=myOdb.parts[[Tab]
 p=myOdb.parts['Part-1']
 ```
+
 You can also use tab completion when you are accessing an output database from the Abaqus Python prompt. For example,
+
 ```
 >>> from odbAccess import *
 >>> myOdb=openOdb('viewer_tutorial.odb')
@@ -172,6 +178,7 @@ The Job object is separate from the Model object. The object model for the Job o
   ```python
   cell4 = mdb.models["block"].parts["crankcase"].cells[4]
   ```
+
   The statement mirrors the structure of the object model. The Cell object is owned by a Part object, the Part object is owned by a Model object, and the Model object is owned by the Mdb object.
 
 - The associations between the objects are captured by the object model. Objects can refer to other objects; for example, the section objects refer to a material, and the interaction objects refer to a region, to steps, and possibly to amplitudes. An object that refers to another object usually has a data member that indicates the name of the object to which it is referring. For example, `material` is a member of the section objects, and createStepName is a member of the interaction objects.
