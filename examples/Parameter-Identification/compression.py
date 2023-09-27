@@ -3,6 +3,8 @@ Parameter Identification: Model Script
 --------------------------------------
 
 Script to build the compression model for the parameter identification
+
+The optimize script of this example can be found :doc:`here <optimize>`.
 """
 
 # run with: python compression.py 1000,0.2

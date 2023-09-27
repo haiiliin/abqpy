@@ -32,6 +32,8 @@ The output of this script is:
     5  1000000.0  0.099901
 
     Best modulus=1000.0 with fitness=0.0012505635619163569
+
+The model script of this example can be found :doc:`here <compression>`.
 """
 import os
 

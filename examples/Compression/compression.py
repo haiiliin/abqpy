@@ -9,6 +9,8 @@ A simple example to establish a compression model.
     :align: center
 
     A simple compression model.
+
+The output script of this example can be found :doc:`here <compression-output>`.
 """
 
 from abaqus import *
