@@ -175,6 +175,7 @@ sphinx_gallery_conf = {
     "gallery_dirs": "examples",
     "filename_pattern": "/.+\.py",
     "plot_gallery": False,
+    "nested_sections": False,
 }
 
 # Show short type hints for user-defined classes and defaults for parameters
