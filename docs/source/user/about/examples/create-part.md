@@ -55,7 +55,7 @@ If Abaqus/CAE is already running, you can run the script by selecting from the m
 
 The example follows:
 
-```python2
+```python
 """
 modelAExample.py
 
@@ -64,36 +64,43 @@ A simple example: Creating a part.
 
 from abaqus import *
 from abaqusConstants import *
+
 backwardCompatibility.setValues(includeDeprecated=True, reportDeprecated=False)
 
 import sketch
 import part
 
-myModel = mdb.Model(name='Model A')
+myModel = mdb.Model(name="Model A")
 
-mySketch = myModel.ConstrainedSketch(name='Sketch A', sheetSize=200.0)
+mySketch = myModel.ConstrainedSketch(name="Sketch A", sheetSize=200.0)
 
-xyCoordsInner = ((-5 , 20), (5, 20), (15, 0), (-15, 0), (-5, 20))
+xyCoordsInner = ((-5, 20), (5, 20), (15, 0), (-15, 0), (-5, 20))
 
-xyCoordsOuter = ((-10, 30), (10, 30), (40, -30),
-    (30, -30), (20, -10), (-20, -10),
-    (-30, -30), (-40, -30), (-10, 30))
+xyCoordsOuter = (
+    (-10, 30),
+    (10, 30),
+    (40, -30),
+    (30, -30),
+    (20, -10),
+    (-20, -10),
+    (-30, -30),
+    (-40, -30),
+    (-10, 30),
+)
 
-for i in range(len(xyCoordsInner)-1):
-    mySketch.Line(point1=xyCoordsInner[i],
-        point2=xyCoordsInner[i+1])
+for i in range(len(xyCoordsInner) - 1):
+    mySketch.Line(point1=xyCoordsInner[i], point2=xyCoordsInner[i + 1])
 
-for i in range(len(xyCoordsOuter)-1):
-    mySketch.Line(point1=xyCoordsOuter[i],
-        point2=xyCoordsOuter[i+1])
+for i in range(len(xyCoordsOuter) - 1):
+    mySketch.Line(point1=xyCoordsOuter[i], point2=xyCoordsOuter[i + 1])
 
-myPart = myModel.Part(name='Part A', dimensionality=THREE_D,
-    type=DEFORMABLE_BODY)
+myPart = myModel.Part(name="Part A", dimensionality=THREE_D, type=DEFORMABLE_BODY)
 
 myPart.BaseSolidExtrude(sketch=mySketch, depth=20.0)
 
-myViewport = session.Viewport(name='Viewport for Model A',
-    origin=(10, 10), width=150, height=100)
+myViewport = session.Viewport(
+    name="Viewport for Model A", origin=(10, 10), width=150, height=100
+)
 
 myViewport.setValues(displayedObject=myPart)
 
@@ -104,13 +111,13 @@ myViewport.partDisplay.setValues(renderStyle=SHADED)
 
 This section explains each portion of the example script.
 
-```python2
+```python
 from abaqus import *
 ```
 
 This statement makes the basic Abaqus objects accessible to the script. It also provides access to a default model database using the variable named mdb. The statement, `from abaqusConstants import *`, makes the Symbolic Constants defined by the Abaqus Scripting Interface available to the script.
 
-```python2
+```python
 import sketch
 import part
 ```
@@ -132,8 +139,8 @@ The next statement in the script is shown in {numref}`cmd-righttoleft-nls`. You 
 Creating a new model.
 ```
 
-```python2
-mySketch = myModel.ConstrainedSketch(name='Sketch A', sheetSize=200.0)
+```python
+mySketch = myModel.ConstrainedSketch(name="Sketch A", sheetSize=200.0)
 ```
 
 This statement creates a new sketch object named Sketch A in myModel. The variable mySketch is assigned to the new sketch. The sketch will be placed on a sheet 200 units square. Note the following:
@@ -141,21 +148,27 @@ This statement creates a new sketch object named Sketch A in myModel. The variab
 - A command that creates something (an "object" in object-oriented programming terms) is called a constructor and starts with an uppercase character. You have seen the Model and Sketch commands that create Model objects and Sketch objects, respectively.
 - The command uses the variable myModel that we created in the previous statement. Using variables with meaningful names in a script makes the script easier to read and understand.
 
-```python2
-xyCoordsInner = ((-5 , 20), (5, 20), (15, 0),
-    (-15, 0), (-5, 20))
+```python
+xyCoordsInner = ((-5, 20), (5, 20), (15, 0), (-15, 0), (-5, 20))
 
-xyCoordsOuter = ((-10, 30), (10, 30), (40, -30),
-    (30, -30), (20, -10), (-20, -10),
-    (-30, -30), (-40, -30), (-10, 30))
+xyCoordsOuter = (
+    (-10, 30),
+    (10, 30),
+    (40, -30),
+    (30, -30),
+    (20, -10),
+    (-20, -10),
+    (-30, -30),
+    (-40, -30),
+    (-10, 30),
+)
 ```
 
 These two statements define the X- and Y-coordinates of the vertices that form the inner and outer profile of the letter A. The variable xyCoordsInner refers to the vertices of the inner profile, and the variable xyCoordsOuter refers to the vertices of the outer profile.
 
-```python2
-for i in range(len(xyCoordsInner)-1):
-    mySketch.Line(point1=xyCoordsInner[i],
-        point2=xyCoordsInner[i+1])
+```python
+for i in range(len(xyCoordsInner) - 1):
+    mySketch.Line(point1=xyCoordsInner[i], point2=xyCoordsInner[i + 1])
 ```
 
 This loop creates the inner profile of the letter A in mySketch. Four lines are created using the X- and Y-coordinates of the vertices in xyCoordsInner to define the beginning point and the end point of each line. Note the following:
@@ -166,33 +179,33 @@ This loop creates the inner profile of the letter A in mySketch. Four lines are 
 
 Similarly, a second loop creates the outer profile of the A character.
 
-```python2
-myPart = myModel.Part(name='Part A',
-    dimensionality=THREE_D, type=DEFORMABLE_BODY)
+```python
+myPart = myModel.Part(name="Part A", dimensionality=THREE_D, type=DEFORMABLE_BODY)
 ```
 
 This statement creates a three-dimensional, deformable part named Part A in myModel. The new part is assigned to the variable myPart.
 
-```python2
+```python
 myPart.BaseSolidExtrude(sketch=mySketch, depth=20.0)
 ```
 
 This statement creates a base solid extrude feature in myPart by extruding mySketch through a depth of 20.0.
 
-```python2
-myViewport = session.Viewport(name='Viewport for Model A',
-    origin=(20,20), width=150, height=100)
+```python
+myViewport = session.Viewport(
+    name="Viewport for Model A", origin=(20, 20), width=150, height=100
+)
 ```
 
 This statement creates a new viewport named Viewport for Model A in session. The new viewport is assigned to the variable myViewport. The origin of the viewport is at (20, 20), and it has a width of 150 and a height of 100.
 
-```python2
+```python
 myViewport.setValues(displayedObject=myPart)
 ```
 
 This statement tells Abaqus to display the new part, myPart, in the new viewport, myViewport.
 
-```python2
+```python
 myViewport.partDisplayOptions.setValues(renderStyle=SHADED)
 ```
 
