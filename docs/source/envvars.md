@@ -36,18 +36,18 @@ The possible options are:
 
    ```python
    {
-       'gui': bool,
-       'database': 'database-file',
-       'replay': 'replay-file',
-       'recover': 'journal-file',
-       'startup': 'startup-file',
-       'envstartup': bool,
-       'savedOptions': bool,
-       'savedGuiPrefs': bool,
-       'startupDialog': bool,
-       'custom': 'script-file',
-       'guiTester': 'GUI-script',
-       'guiRecord': bool,
+       "gui": bool,
+       "database": "database-file",
+       "replay": "replay-file",
+       "recover": "journal-file",
+       "startup": "startup-file",
+       "envstartup": bool,
+       "savedOptions": bool,
+       "savedGuiPrefs": bool,
+       "startupDialog": bool,
+       "custom": "script-file",
+       "guiTester": "GUI-script",
+       "guiRecord": bool,
    }
    ```
 
@@ -55,8 +55,8 @@ The possible options are:
 
    ```python
    {
-       'sim': 'sim_file_name',
-       'log': 'log_file_name',
+       "sim": "sim_file_name",
+       "log": "log_file_name",
    }
    ```
 
@@ -69,9 +69,11 @@ abaqus cae command procedure, at run time.
 
 ```python
 import os
-os.environ['ABAQUS_COMMAND_OPTIONS'] = str({'noGUI': False, 'database':'file.odb'})
+
+os.environ["ABAQUS_COMMAND_OPTIONS"] = str({"noGUI": False, "database": "file.odb"})
 
 from abaqus import *
+
 ...
 ```
 
