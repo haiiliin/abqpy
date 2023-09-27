@@ -8,22 +8,22 @@ The following sections introduce you to some of the techniques you will need to 
 
 You can define your own functions in Python. A function is like a subroutine in Fortran. You can pass arguments into a function, it performs the operation, and it can return one or more values. For example, the following function returns the distance of a point from the origin. The def statement starts a function definition.
 
-```python2
+```python
 def distance(x, y):
     a = x**2 + y**2
-    return  a ** 0.5
+    return a**0.5
 ```
 
 You supply the arguments to a function in parentheses; for example,
 
-```python2
+```pycon
 >>> distance(4.7, 9.1)
 10.2420701033
 ```
 
 You can assign the return value to a variable:
 
-```python2
+```pycon
 >>> d = distance(4.7, 9.1)
 >>> print d
 10.2420701033
@@ -31,7 +31,7 @@ You can assign the return value to a variable:
 
 One of the methods provided by Abaqus uses as many as 50 arguments. Some of the arguments are required by the method; others are optional, and Abaqus provides an initial or default value. Fortunately, you can call a function or a method without providing every optional argument if you use Python's keyword arguments. A keyword specifies the argument that you are providing. Keyword arguments also make your scripts more readable. For example, the following defines a function called calculateCylinderVolume:
 
-```python2
+```pycon
 >>> from math import *
 >>> def calculateCylinderVolume(radius,height):
 ...     volume = pi * radius**2 * height
@@ -40,7 +40,7 @@ One of the methods provided by Abaqus uses as many as 50 arguments. Some of the 
 
 You can call the function with the following line:
 
-```python2
+```pycon
 >>> volume = calculateCylinderVolume(3.2,27.5)
 ```
 
@@ -48,19 +48,19 @@ Here the arguments are called positional arguments because you are relying on th
 
 The following is the same statement using keyword arguments:
 
-```python2
+```pycon
 >>> volume = calculateCylinderVolume(radius=3.2, height=27.5)
 ```
 
 Keyword arguments make your code more readable. In addition, if you use keyword arguments, you can enter the arguments in any order.
 
-```python2
+```pycon
 >>> volume = calculateCylinderVolume(height=27.5, radius=3.2)
 ```
 
 You can define default values for an argument in a function definition. For example, the following sets the default value of radius to 0.5 and the default value of height to 1.0:
 
-```python2
+```pycon
 >>> from math import *
 >>> def calculateCylinderVolume(radius=0.5,height=1.0):
 ...     volume = pi * radius * radius * height
@@ -69,14 +69,14 @@ You can define default values for an argument in a function definition. For exam
 
 You can now call the function without providing all the arguments. The function assigns the default value to any missing arguments.
 
-```python2
+```pycon
 >>> volume = calculateCylinderVolume(height=27.5)
 ```
 
 It is good programming practice to use a documentation string that indicates the purpose of a function and the arguments expected. A documentation string appears at the top of a function and is delimited by triple quotes """. You can use the \_\_doc\_\_ method to obtain the documentation string from a function while running the Python interpreter. For example,
 
-```python2
->>>def calculateCylinderVolume(radius=0.5,height=1.0):
+```pycon
+>>> def calculateCylinderVolume(radius=0.5,height=1.0):
 ...     """
 ...     Calculates the volume of a cylinder.
 ...
@@ -97,7 +97,7 @@ and height (default=1.0).
 
 You can retrieve the documentation string for the methods in the Abaqus Scripting Interface. For example,
 
-```python2
+```pycon
 >>> mdb.Model.__doc__
 'Mdb.Model(name <, description, stefanBoltzmann, absoluteZero>) ->
     This method creates a Model object.'
@@ -117,9 +117,11 @@ The `sys` module to retrieve the command line arguments.
 
 The `math` module to calculate the square root.
 
-```python2
+```python
 import sys, math
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def distance(x, y):
     """
     Prints distance from origin to (x, y).
@@ -135,6 +137,7 @@ def distance(x, y):
 
     return math.sqrt(a)
 
+
 # Retrieve the command line arguments and
 # convert the strings to floating-point numbers.
 
@@ -147,7 +150,7 @@ d = distance(x, y)
 
 # Print the result.
 
-print 'Distance to origin = ', d
+print("Distance to origin = ", d)
 ```
 
 To use this script, do the following:
@@ -172,7 +175,7 @@ Distance to origin =  50.0
 
 Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,
 
-```python2
+```pycon
 >>> myList = [6,2,9]
 >>> myList[1]
 2
@@ -180,7 +183,7 @@ Dictionaries are a powerful tool in Python. A dictionary maps a variable to a se
 
 In contrast, you access an object in a dictionary through its key, which can be a string, an integer, or any type of immutable Python object. There is no implicit order to the keys in a dictionary. In most cases you will assign a string to the dictionary key. The key then becomes a more intuitive way to access the elements in a dictionary. You use square brackets and the dictionary key to access a particular object. For example,
 
-```python2
+```pycon
 >>> myPart = {}  #Create an empty dictionary
 >>> myPart['size'] = 3.0
 >>> myPart['material'] = 'Steel'
@@ -190,14 +193,14 @@ In contrast, you access an object in a dictionary through its key, which can be 
 
 You can add dictionary keys at any time.
 
-```python2
+```pycon
 >>> myPart['weight'] = 376.0
 >>> myPart['cost'] = 10.34
 ```
 
 You use the key to access an item in a dictionary.
 
-```python2
+```pycon
 >>> costOverWeight = myPart['cost'] / myPart['weight']
 >>> costOverWeight
 0.0275
@@ -208,7 +211,7 @@ You use the key to access an item in a dictionary.
 
 Dictionaries are not sequences, and you cannot apply sequence methods such as slicing and concatenating to dictionaries. Dictionaries have their own methods. The following statement lists the methods of the dictionary myPart.
 
-```python2
+```pycon
 >>> myPart.__methods__
 ['clear', 'copy', 'get', 'has_key', 'items', 'keys',
 'update', 'values']
@@ -216,21 +219,21 @@ Dictionaries are not sequences, and you cannot apply sequence methods such as sl
 
 The `keys()` method returns a list of the dictionary keys.
 
-```python2
+```pycon
 >>> myPart.keys()
 ['size', 'weight', 'number', 'material', 'cost', 'color']
 ```
 
 The `values()` method returns a list of the values of each entry in the dictionary.
 
-```python2
+```pycon
 >>> myPart.values()
 [3.0, 376.0, 667, 'Steel', 10.34, 'Red']
 ```
 
 The `items()` method returns a list of tuples. Each tuple contains the key and its value.
 
-```python2
+```pycon
 >>> myPart.items()
 [('size', 3.0), ('number', 667),   ('material', 'Steel'),
 ('color', 'Red'),   ('weight', 376.0), ('cost', 10.34),]
@@ -238,20 +241,20 @@ The `items()` method returns a list of tuples. Each tuple contains the key and i
 
 You use the `has_key()` method to see if a key exists. A return value of 1 indicates the key exists in the dictionary. A return value of 0 indicates the key does not exist.
 
-```python2
+```pycon
 >>> myPart.has_key('color')
 1
 ```
 
 Python's del statement allows you to delete a variable.
 
-```python2
+```pycon
 >>> del myPart
 ```
 
 You can also use del to delete an item from a dictionary.
 
-```python2
+```pycon
 >>> del myPart['color']
 >>> myPart.has_key('color')
 0
@@ -259,7 +262,7 @@ You can also use del to delete an item from a dictionary.
 
 You can use the `keys()`, `values()`, or `items()` methods to loop through a dictionary. In the following example, `items()` returns two values; the first is assigned to property, and the second is assigned to setting.
 
-```python2
+```pycon
 >>> for property, setting in myPart.items():
 ...     print property, setting
 ...
@@ -274,7 +277,7 @@ cost 10.34
 
 Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.
 
-```python2
+```pycon
 >>> myInputFile  = open('crash_test/fender.txt','r')
 >>> myOutputFile = open('peak_deflection.txt','w+')
 ```
@@ -283,7 +286,7 @@ The first line opens an existing file in the crash_test directory called fender.
 
 Use the `__methods__` technique that we saw earlier to see the methods of a file object.
 
-```python2
+```pycon
 >>> myOutputFile = open('peak_deflection.txt','w')
 >>> myOutputFile.__methods__
 ['close', 'fileno', 'flush', 'isatty', 'read',
@@ -295,7 +298,7 @@ The `readline()` method reads a single line from a file into a string, including
 
 The following example reads each line of a text file and changes the line to uppercase characters:
 
-```python2
+```pycon
 # Read-only is the default access mode
 
 >>> inputFile  = open('foam.txt')
@@ -322,13 +325,13 @@ When a script encounters unusual circumstances, Python allows you to modify the 
 
 Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:
 
-```python2
+```pycon
 >>> outputFile = open('foam.txt')
 ```
 
 If the file does not exist, the statement fails, and Python displays the following error message:
 
-```
+```pycon
 >>> outputFile = open('foam.txt')
 Traceback (innermost last):
 File "<stdin>", line 1, in ?
@@ -337,7 +340,7 @@ IOError: (2, 'No such file or directory')
 
 If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception's value to the variable error.
 
-```
+```pycon
 >>> try:
 ...     outputFile = open('foam.txt')
 ... except IOError,error:
@@ -348,18 +351,18 @@ Exception trapped:  (2, 'No such file or directory')
 
 You can raise your own exceptions by providing the error type and the error message to the raise statement. The following example script raises an exception and displays a message if the function myFunction encounters a problem.
 
-```python2
-def myFunction(x,y):
-
+```python
+def myFunction(x, y):
     if y == 0:
-        raise ValueError, 'y argument cannot be zero'
+        raise ValueError, "y argument cannot be zero"
     else:
-        return x/y
+        return x / y
+
 
 try:
-    print myFunction(temperature, velocity)
+    print(myFunction(temperature, velocity))
 except ValueError, error:
-    print error
+    print(error)
 ```
 
 Exception handling is discussed in more detail in Error handling in the {doc}`/reference/index`.
@@ -370,7 +373,7 @@ Exception handling is discussed in more detail in Error handling in the {doc}`/r
 
 When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:
 
-```python2
+```pycon
 >>> myName = 'Einstein'
 >>> len(myName)
 ```
@@ -383,15 +386,16 @@ In addition, you can look at the standard Python documentation on the official P
 
 Many functions, however, are not built-in; for example, most of the math functions, such as `sin()` and `cos()`, are not available when you start Python. Functions that are not built-in are defined in modules. Modules are a way of grouping functionality and are similar to a Fortran library of subroutines. For example, the following code could be the opening lines of a Python script. The code imports the Python module `sys` and uses the `argv` member of `sys` to print the command line arguments:
 
-```python2
+```python
 import sys
+
 for argument in sys.argv:
-    print argument
+    print(argument)
 ```
 
 You must first import the module to make its functions, names, and functionality available to the Python interpreter. Try the following:
 
-```python2
+```pycon
 >>> from math import *
 >>> x = pi/4.0
 >>> sin(x)
@@ -402,7 +406,7 @@ The first line imports all of the names from the math module. The second line us
 
 To import only the `sin()` function, you could have typed
 
-```python2
+```pycon
 >>> from math import sin
 ```
 
@@ -412,7 +416,7 @@ To see a list of all the functions that come with the math module, look at the M
 
 Python provides a second approach to importing modules. For example,
 
-```python2
+```pycon
 >>> import math
 >>> x = 22.0/(7.0 * 4.0)
 >>> math.sin(x)
@@ -429,11 +433,13 @@ You can create your own module containing a set of Python functions. You can imp
 
 For example, you can create a module called myUtilities by copying a modified version of the function that calculates the distance from a point to the origin into a file called myUtilities.py.
 
-```python2
+```python
 """ myUtilities - a module of mathematical functions"""
 
 import math
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def distance(x, y):
     """
     Prints distance from origin to (x, y).
@@ -452,7 +458,7 @@ def distance(x, y):
 
 You must import the module to make use of the functions and constants that it contains.
 
-```python2
+```python
 import myUtilities
 
 distance = myUtilities.distance(30, 50)
@@ -460,14 +466,14 @@ distance = myUtilities.distance(30, 50)
 
 You can use the `__doc__` method to obtain the documentation string from a module. For example,
 
-```python2
+```python
 myUtilities.__doc__
-' myUtilities - a module of mathematical functions'
+" myUtilities - a module of mathematical functions"
 ```
 
 A tool for finding bugs in your modules is provided with Abaqus. The tool is called pychecker. When you import a module, pychecker prints warnings for any problems it finds with the Python source code. For example,
 
-```python2
+```pycon
 >>> from pychecker import checker
 >>> import myUtilities
 d:\users\smith\myUtilities.py:3: Imported module (sys) not used
@@ -479,8 +485,9 @@ For more information about `pychecker`, see the official Python website (<https:
 
 If you import a module during an interactive session using the command line interface and then make changes to the module, Python will not recognize your changes until you reload the module; for example:
 
-```python2
+```python
 import myModule
+
 maxStress = myModule.calculateStress(odb)
 
 # Edit myModule.py and modify the calculateStress method.
