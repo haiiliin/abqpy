@@ -1,8 +1,10 @@
 """
 Compression Output Script
-=========================
+-------------------------
 
 A script to get the output of the compression model.
+
+The model script of this example can be found :doc:`here <compression>`.
 """
 
 import numpy as np
