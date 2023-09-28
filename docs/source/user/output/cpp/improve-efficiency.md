@@ -8,9 +8,9 @@ A program can spend a large proportion of its computation time executing stateme
 
 The following example uses the number of nodes in a part instance to determine the range of a loop counter:
 
-```cpp
+```c++
 const odb_SequenceNode& nodeSequence = myInstance.nodes();
-for (int i=0; i < nodeSequence.size() ; i++){
+for (int i = 0; i < nodeSequence.size(); i++) {
   const odb_Node& myNode = nodeSequence[i];
   nodeLabel = myNode.label();
 }
@@ -18,10 +18,10 @@ for (int i=0; i < nodeSequence.size() ; i++){
 
 You can make the program more efficient if you create an object to hold the value of the number of nodes.
 
-```cpp
+```c++
 const odb_SequenceNode& nodeSequence = myInstance.nodes();
 int numNodes = nodeSequence.size();
-for (int i=0; i < numNodes; i++){
+for (int i = 0; i < numNodes; i++) {
   const odb_Node& myNode = nodeSequence[i];
   nodeLabel = myNode.label();
 }
@@ -35,30 +35,25 @@ To improve the efficiency of scripts that access an output database, you should 
 
 The following example examines the von Mises stress in each element during a particular frame of field output. If the stress is greater than a certain maximum value, the program prints the strain components for the element.
 
-```cpp
+```c++
 odb_FieldOutputRepository& fieldRep = frame1.fieldOutputs();
 odb_FieldOutput& stressField = fieldRep.get("S");
 odb_FieldOutput& strainField = fieldRep.get("LE");
-const odb_SequenceFieldValue& seqStressVal =
-    stressField.values();
+const odb_SequenceFieldValue& seqStressVal = stressField.values();
 int numFV = seqStressVal.size();
 int strainComp = 0;
-for (int loc=0; loc < numFV; loc++) {
-    const odb_FieldValue stressVal = seqStressVal[loc];
-    if (stressVal.mises() > stressCap) {
-        cout << "Element label = " << stressVal.elementLabel()
-            << endl;
-        cout << "Integration Point = "
-            << stressVal.integrationPoint() << endl;
-        const odb_SequenceFieldValue& seqStrainVal =
-                strainField.values();
-        const odb_FieldValue strainVal = seqStrainVal[loc];
-        const float* const data = strainVal.data(strainComp);
-        cout << " LE : ";
-        for (int comp=0; comp < strainComp; comp++)
-            cout << data[comp];
-        cout << endl;
-    }
+for (int loc = 0; loc < numFV; loc++) {
+  const odb_FieldValue stressVal = seqStressVal[loc];
+  if (stressVal.mises() > stressCap) {
+    cout << "Element label = " << stressVal.elementLabel() << endl;
+    cout << "Integration Point = " << stressVal.integrationPoint() << endl;
+    const odb_SequenceFieldValue& seqStrainVal = strainField.values();
+    const odb_FieldValue strainVal = seqStrainVal[loc];
+    const float* const data = strainVal.data(strainComp);
+    cout << " LE : ";
+    for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
+    cout << endl;
+  }
 }
 ```
 
@@ -66,49 +61,41 @@ In this example every time the script calls the strainField.values method, Abaqu
 
 A slight change in the program greatly improves its performance, as shown in the following example:
 
-```cpp
-odb_FieldOutputRepository& fieldRep =
-    frame1.fieldOutputs();
+```c++
+odb_FieldOutputRepository& fieldRep = frame1.fieldOutputs();
 odb_FieldOutput& stressField = fieldRep.get("S");
 odb_FieldOutput& strainField = fieldRep.get("LE");
-const odb_SequenceFieldValue& seqStressVal =
-    stressField.values();
-const odb_SequenceFieldValue& seqStrainVal =
-    strainField.values();
+const odb_SequenceFieldValue& seqStressVal = stressField.values();
+const odb_SequenceFieldValue& seqStrainVal = strainField.values();
 int numFV = seqStressVal.size();
 int strainComp = 0;
-for (int loc=0; loc < numFV; loc++) {
-    const odb_FieldValue stressVal = seqStressVal[loc];
-    if (stressVal.mises() > stressCap) {
-        cout << "Element label = " << stressVal.elementLabel()
-            << endl;
-        cout << "Integration Point = "
-            << stressVal.integrationPoint() << endl;
-        const odb_FieldValue strainVal = seqStrainVal[loc];
-        const float* data = strainVal.data(strainComp);
-        cout << " LE : ";
-        for (int comp = 0; comp < strainComp; comp++)
-            cout << data[comp];
-        cout << endl;
-    }
+for (int loc = 0; loc < numFV; loc++) {
+  const odb_FieldValue stressVal = seqStressVal[loc];
+  if (stressVal.mises() > stressCap) {
+    cout << "Element label = " << stressVal.elementLabel() << endl;
+    cout << "Integration Point = " << stressVal.integrationPoint() << endl;
+    const odb_FieldValue strainVal = seqStrainVal[loc];
+    const float* data = strainVal.data(strainComp);
+    cout << " LE : ";
+    for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
+    cout << endl;
+  }
 }
 ```
 
 Similarly, if you expect to retrieve more than one frame from an output database, you should create a temporary variable that holds the entire frame repository. You can then provide the logic to retrieve the desired frames from the repository and avoid recreating the repository each time. For example, executing the following statements could be very slow:
 
-```cpp
+```c++
 int numFrames = step1.frames().size();
-for (int n=0; n < numFrames; n++)
-    odb_Frame& frame = step1.frames()[n];
+for (int n = 0; n < numFrames; n++) odb_Frame& frame = step1.frames()[n];
 ```
 
 Creating a temporary variable to hold the frame repository provides the same functionality and speeds up the process:
 
-```cpp
+```c++
 odb_SequenceFrame& frameRepository = step1.frames();
 int numFrames = frameRepository.size();
-for (int n=0; n < numFrames; n++)
-    odb_Frame& frame = frameRepository[n];
+for (int n = 0; n < numFrames; n++) odb_Frame& frame = frameRepository[n];
 ```
 
 Such a potential loss of performance will not be a problem when accessing a load case frame. Accessing a load case frame does not result in the creation of a frame repository and, thus, does not suffer from a corresponding loss of performance.
@@ -117,9 +104,8 @@ Such a potential loss of performance will not be a problem when accessing a load
 
 Many functions return a reference to an object rather than an object. Returning a reference is much more efficient because it avoids unnecessary memory operations. To maintain the efficiency of references, you should use the reference itself. You should not assign the reference to a new object, since assigning the reference to a new object creates a copy of the object that is denoted by the reference and invokes potentially expensive copy constructors. For example,
 
-```cpp
-odb_Instance instance = odb.rootAssembly().instances()
-                            ["PART-1-1"];
+```c++
+odb_Instance instance = odb.rootAssembly().instances()["PART-1-1"];
 const odb_SequenceNode nodeSequence = myInstance.nodes();
 ```
 
@@ -127,7 +113,7 @@ In the above case a copy of the nodeSequence object has to be created in memory.
 
 Many of the methods in the Abaqus Scripting Interface that provide access to an output database return a reference to an object rather than the object itself. It is much more efficient to modify the previous example to specify the returned type to be a reference:
 
-```cpp
+```c++
 odb_Instance& instance = odb.rootAssembly().instances()["PART-1-1"];
 const odb_SequenceNode& nodeSequence = myInstance.nodes();
 ```

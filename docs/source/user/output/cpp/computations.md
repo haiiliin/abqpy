@@ -35,16 +35,13 @@ The FieldOutput operations are significantly more efficient than the FieldValue 
 - Create a new FieldOutput object in the output database.
 - Use the `addData` method to add the new computed field objects to the new FieldOutput object.
 
-```cpp
+```c++
 // Get fields from odb.
 odb_StepRepository& stepCon = odb.steps();
-odb_SequenceFrame& frameCon1 =
-    stepCon["Step-1"].frames();
-odb_FieldOutputRepository& fieldCon1 =
-    frameCon1.get(1).fieldOutputs();
+odb_SequenceFrame& frameCon1 = stepCon["Step-1"].frames();
+odb_FieldOutputRepository& fieldCon1 = frameCon1.get(1).fieldOutputs();
 odb_SequenceFrame& frameCon2 = stepCon["Step-2"].frames();
-odb_FieldOutputRepository& fieldCon2 =
-    frameCon2.get(1).fieldOutputs();
+odb_FieldOutputRepository& fieldCon2 = frameCon2.get(1).fieldOutputs();
 odb_FieldOutput& field1 = fieldCon1["U"];
 odb_FieldOutput& field2 = fieldCon2["U"];
 
@@ -54,12 +51,11 @@ odb_FieldOutput deltaDisp = field2 - field1;
 
 // Save new field.
 
-odb_Step& newStep = odb.Step("user", "user defined results",
-        odb_Enum::TIME,1.0);
+odb_Step& newStep =
+    odb.Step("user", "user defined results", odb_Enum::TIME, 1.0);
 odb_Frame newFrame = newStep.Frame(0, 0.0);
-odb_FieldOutput& newField = newFrame.FieldOutput("U",
-                "delta displacements",
-                odb_Enum::VECTOR);
+odb_FieldOutput& newField =
+    newFrame.FieldOutput("U", "delta displacements", odb_Enum::VECTOR);
 newField.addData(deltaDisp);
 ```
 
@@ -124,25 +120,19 @@ You use envelope calculations to retrieve the extreme value for an output variab
 
 The following operators consider a list of fields and perform the envelope calculation:
 
-```cpp
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields);
+```c++
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields);
 
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields,
-    odb_Enum::odb_InvariantEnum invariant);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields,
-    odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = maxEnvelope(
+    odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = minEnvelope(
+    odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
 
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields,
-    const odb_String& componentLabel);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields,
-    const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields,
+                                           const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields,
+                                           const odb_String& componentLabel);
 ```
 
 The envelope commands return two FieldOutput objects.

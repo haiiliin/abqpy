@@ -27,7 +27,7 @@ You can also run the example with only the **-help** parameter for a summary of 
 
 Use the following commands to retrieve the example program and the viewer tutorial output database:
 
-```cpp
+```c++
 // abaqus fetch job=odbMaxMises.C
 // abaqus fetch job=viewer_tutorial
 
@@ -45,7 +45,7 @@ Requirements:
             search will be performed over the entire model.
 3. -help  : Print usage
 ****************************************************************/
-#if (defined(HP) && (! defined(HKS_HPUXI)))
+#if (defined(HP) && (!defined(HKS_HPUXI)))
 #include <iostream.h>
 #else
 #include <iostream>
@@ -59,184 +59,152 @@ using namespace std;
 utility functions
 ***************
 */
-bool fileExists(const odb_String  &string);
-void rightTrim(odb_String  &string,const char* char_set);
+bool fileExists(const odb_String& string);
+void rightTrim(odb_String& string, const char* char_set);
 void printExecutionSummary();
 /***************************************************************/
 
+int ABQmain(int argc, char** argv) {
+  odb_String odbPath;
+  bool ifOdbName = false;
+  odb_String elsetName;
+  bool ifElset = false;
+  odb_Set myElset;
+  odb_String region = "over the entire model";
+  char msg[256];
+  char* abaCmd = argv[0];
 
-int ABQmain(int argc, char **argv)
-{
-odb_String odbPath;
-bool ifOdbName = false;
-odb_String elsetName;
-bool ifElset = false;
-odb_Set myElset;
-odb_String region = "over the entire model";
-char msg[256];
-char *abaCmd = argv[0];
-
-for (int arg = 0; arg<argc; arg++)
-    {
-    if (strncmp(argv[arg],"-o**",2) == 0)
-    {
-    arg++;
-    odbPath = argv[arg];
-    rightTrim(odbPath,".odb");
-    if (!fileExists(odbPath))
-        {
+  for (int arg = 0; arg < argc; arg++) {
+    if (strncmp(argv[arg], "-o**", 2) == 0) {
+      arg++;
+      odbPath = argv[arg];
+      rightTrim(odbPath, ".odb");
+      if (!fileExists(odbPath)) {
         cerr << "**ERROR** output database  " << odbPath.CStr()
-        << " does not exist\n" << endl;
+             << " does not exist\n"
+             << endl;
         exit(1);
-        }
-    ifOdbName = true;
+      }
+      ifOdbName = true;
+    } else if (strncmp(argv[arg], "-e**", 2) == 0) {
+      arg++;
+      elsetName = argv[arg];
+      ifElset = true;
+    } else if (strncmp(argv[arg], "-h**", 2) == 0) {
+      printExecutionSummary();
+      exit(0);
     }
-    else if (strncmp(argv[arg],"-e**",2)== 0)
-    {
-    arg++;
-    elsetName = argv[arg];
-    ifElset = true;
-    }
-    else if (strncmp(argv[arg],"-h**",2)== 0)
-    {
-    printExecutionSummary();
-    exit(0);
-    }
-    }
-if (!ifOdbName)
-    {
+  }
+  if (!ifOdbName) {
     cerr << "**ERROR** output database name is not provided\n";
     printExecutionSummary();
     exit(1);
+  }
+  // Open the output database
+  odb_Odb& myOdb = openOdb(odbPath);
+  odb_Assembly& myAssembly = myOdb.rootAssembly();
+  if (ifElset) {
+    if (myAssembly.elementSets().isMember(elsetName)) {
+      myElset = myAssembly.elementSets()[elsetName];
+      region = " in the element set : " + elsetName;
+    } else {
+      cerr << "An assembly level elset " << elsetName.CStr()
+           << " does not exist in the output database :" << myOdb.name().CStr()
+           << endl;
+      myOdb.close();
+      exit(0);
     }
-// Open the output database
-odb_Odb& myOdb = openOdb(odbPath);
-odb_Assembly& myAssembly = myOdb.rootAssembly();
-if (ifElset)
-    {
-    if (myAssembly.elementSets().isMember(elsetName))
-    {
-    myElset = myAssembly.elementSets()[elsetName];
-    region = " in the element set : " + elsetName;
-    }
-    else
-        {
-        cerr<<"An assembly level elset " << elsetName.CStr()
-            << " does not exist in the output database :"
-            << myOdb.name().CStr() << endl;
-    myOdb.close();
-    exit(0);
-    }
-    }
-// Initialize maximum values.
-float maxMises = -0.1;
-int numFV = 0;
-int maxElem = 0;
-odb_String maxStep = "__None__";
-int maxFrame = -1;
-static const odb_String Stress = "S";
-bool isStressPresent = false;
-int numBD = 0,numElems = 0, numIP = 0, numComp = 0, position = 0;
-// Iterate over all available steps
-odb_StepRepository& sRep1 = myOdb.steps();
-odb_StepRepositoryIT sIter1 (sRep1);
-for (sIter1.first(); !sIter1.isDone(); sIter1.next())
-    {
+  }
+  // Initialize maximum values.
+  float maxMises = -0.1;
+  int numFV = 0;
+  int maxElem = 0;
+  odb_String maxStep = "__None__";
+  int maxFrame = -1;
+  static const odb_String Stress = "S";
+  bool isStressPresent = false;
+  int numBD = 0, numElems = 0, numIP = 0, numComp = 0, position = 0;
+  // Iterate over all available steps
+  odb_StepRepository& sRep1 = myOdb.steps();
+  odb_StepRepositoryIT sIter1(sRep1);
+  for (sIter1.first(); !sIter1.isDone(); sIter1.next()) {
     odb_Step& step = sRep1[sIter1.currentKey()];
-    cout<<"Processing Step: "<<step.name().CStr()<<endl;
+    cout << "Processing Step: " << step.name().CStr() << endl;
     odb_SequenceFrame& frameSequence = step.frames();
     int numFrames = frameSequence.size();
-    for (int f = 0; f<numFrames; f++)
-    {
-    odb_Frame& frame = frameSequence[f];
-    odb_FieldOutputRepository& fieldRep = frame.fieldOutputs();
-    if (fieldRep.isMember(Stress))
-    {
+    for (int f = 0; f < numFrames; f++) {
+      odb_Frame& frame = frameSequence[f];
+      odb_FieldOutputRepository& fieldRep = frame.fieldOutputs();
+      if (fieldRep.isMember(Stress)) {
         isStressPresent = true;
         odb_FieldOutput field = fieldRep.get(Stress);
-        if (ifElset)
-        field = field.getSubset(myElset);
-        const odb_SequenceFieldBulkData& seqVal =
-                field.bulkDataBlocks();
+        if (ifElset) field = field.getSubset(myElset);
+        const odb_SequenceFieldBulkData& seqVal = field.bulkDataBlocks();
         int numBlocks = seqVal.size();
-        for ( int iblock=0; iblock<numBlocks; iblock++)
-        {
-        const odb_FieldBulkData& bulkData = seqVal[iblock];
-        numBD = bulkData.length();
-        numElems = bulkData.numberOfElements();
-        numIP = numBD/numElems;
-        numComp = bulkData.width();
-        float* mises = bulkData.mises();
-        int* elementLabels = bulkData.elementLabels();
-        int* integrationPoints = bulkData.integrationPoints();
-        for (int elem=0; elem<numElems; elem++)
-        {
-            for (int ip=0; ip<numIP; ip++)
-            {
-            position = elem*numIP+ip;
-            float misesData = mises[position];
-            if (misesData > maxMises)
-            {
+        for (int iblock = 0; iblock < numBlocks; iblock++) {
+          const odb_FieldBulkData& bulkData = seqVal[iblock];
+          numBD = bulkData.length();
+          numElems = bulkData.numberOfElements();
+          numIP = numBD / numElems;
+          numComp = bulkData.width();
+          float* mises = bulkData.mises();
+          int* elementLabels = bulkData.elementLabels();
+          int* integrationPoints = bulkData.integrationPoints();
+          for (int elem = 0; elem < numElems; elem++) {
+            for (int ip = 0; ip < numIP; ip++) {
+              position = elem * numIP + ip;
+              float misesData = mises[position];
+              if (misesData > maxMises) {
                 maxMises = misesData;
                 maxElem = elementLabels[elem];
                 maxStep = step.name();
                 maxFrame = frame.incrementNumber();
+              }
             }
-            }
+          }
         }
-        }
-
+      }
     }
-    }
-    }
-if (isStressPresent)
-    {
-    cout << "Maximum von Mises stress " << region.CStr()
-    << " is " << maxMises << "  in element "
-        << maxElem << endl;
-    cout << "Location: frame # " << maxFrame << " step:  "
-        << maxStep.CStr() << endl;
-    }
-else
-    {
+  }
+  if (isStressPresent) {
+    cout << "Maximum von Mises stress " << region.CStr() << " is " << maxMises
+         << "  in element " << maxElem << endl;
+    cout << "Location: frame # " << maxFrame << " step:  " << maxStep.CStr()
+         << endl;
+  } else {
     cout << " Stress output is not available in  the "
-    << "output database : " << myOdb.name().CStr() << endl;
-    }
-// close the output database before exiting the program
-myOdb.close();
-return(0);
+         << "output database : " << myOdb.name().CStr() << endl;
+  }
+  // close the output database before exiting the program
+  myOdb.close();
+  return (0);
 }
 
-bool fileExists(const odb_String  &string)
-{
-bool exists = false;
-struct  stat  buf;
-if (stat(string.CStr(),&buf)==0)
-    exists = true;
-return exists;
+bool fileExists(const odb_String& string) {
+  bool exists = false;
+  struct stat buf;
+  if (stat(string.CStr(), &buf) == 0) exists = true;
+  return exists;
 }
 
-void rightTrim(odb_String  &string,const char* char_set)
-{
-int length = string.Length();
-if (string.Find(char_set)==length)
-    string.append(odb_String(char_set));
+void rightTrim(odb_String& string, const char* char_set) {
+  int length = string.Length();
+  if (string.Find(char_set) == length) string.append(odb_String(char_set));
 }
 
-void printExecutionSummary()
-{
-cout << " Code to determine the location and value of the\n"
-<< " maximum von-mises stress in an output database.\n"
-<< " Usage: abaqus odbMaxMises -odb odbName \n"
-<< " -elset(optional), -elsetName\n"
-<< " Requirements:\n"
-<< " 1. -odb   : Name of the output database.\n"
-<< " 2. -elset : Name of the assembly level element set.\n"
-<< "             Search will be done only for element \n"
-<< "             belonging to this set.\n"
-<< "             If this parameter is not provided, search \n"
-<< "             will be performed over the entire model.\n"
-<< " 3. -help  : Print usage\n";
+void printExecutionSummary() {
+  cout << " Code to determine the location and value of the\n"
+       << " maximum von-mises stress in an output database.\n"
+       << " Usage: abaqus odbMaxMises -odb odbName \n"
+       << " -elset(optional), -elsetName\n"
+       << " Requirements:\n"
+       << " 1. -odb   : Name of the output database.\n"
+       << " 2. -elset : Name of the assembly level element set.\n"
+       << "             Search will be done only for element \n"
+       << "             belonging to this set.\n"
+       << "             If this parameter is not provided, search \n"
+       << "             will be performed over the entire model.\n"
+       << " 3. -help  : Print usage\n";
 }
 ```
 
@@ -253,7 +221,7 @@ The following example illustrates how you can use the Abaqus C++ API commands to
 
 Use the following command to retrieve the example program:
 
-```cpp
+```c++
 // abaqus fetch job=odbWrite
 
 ////////////////////////////////////////////////////
@@ -275,381 +243,300 @@ Use the following command to retrieve the example program:
 // End local includes
 //
 
-int ABQmain(int argc, char **argv)
-{
-    // Create an ODB (which also creates the rootAssembly).
-    int n;
-    odb_String name("simpleModel");
-    odb_String analysisTitle("ODB created with C++ ODB API");
-    odb_String description("example illustrating C++ ODB API");
-    odb_String path("odbWriteC.odb");
-    odb_Odb& odb = Odb(name,
-                    analysisTitle,
-                    description,
-                    path);
+int ABQmain(int argc, char** argv) {
+  // Create an ODB (which also creates the rootAssembly).
+  int n;
+  odb_String name("simpleModel");
+  odb_String analysisTitle("ODB created with C++ ODB API");
+  odb_String description("example illustrating C++ ODB API");
+  odb_String path("odbWriteC.odb");
+  odb_Odb& odb = Odb(name, analysisTitle, description, path);
 
-    // Model data:
-    // Set up the section categories.
-    odb_String sectionCategoryName("S5");
-    odb_String sectionCategoryDescription("Five-Layered Shell");
-    odb_SectionCategory& sCat =
-        odb.SectionCategory(sectionCategoryName,
-                            sectionCategoryDescription);
-    int sectionPointNumber = 1;
-    odb_String sectionPointDescription("Bottom");
-    odb_SectionPoint spBot =
-        sCat.SectionPoint(sectionPointNumber,
-                        sectionPointDescription);
-    sectionPointNumber = 3;
-    sectionPointDescription = "Middle";
-    odb_SectionPoint spMid =
-        sCat.SectionPoint(sectionPointNumber,
-                        sectionPointDescription);
-    sectionPointNumber = 5;
-    sectionPointDescription = "Top";
-    odb_SectionPoint spTop =
-        sCat.SectionPoint(sectionPointNumber,
-                        sectionPointDescription);
+  // Model data:
+  // Set up the section categories.
+  odb_String sectionCategoryName("S5");
+  odb_String sectionCategoryDescription("Five-Layered Shell");
+  odb_SectionCategory& sCat =
+      odb.SectionCategory(sectionCategoryName, sectionCategoryDescription);
+  int sectionPointNumber = 1;
+  odb_String sectionPointDescription("Bottom");
+  odb_SectionPoint spBot =
+      sCat.SectionPoint(sectionPointNumber, sectionPointDescription);
+  sectionPointNumber = 3;
+  sectionPointDescription = "Middle";
+  odb_SectionPoint spMid =
+      sCat.SectionPoint(sectionPointNumber, sectionPointDescription);
+  sectionPointNumber = 5;
+  sectionPointDescription = "Top";
+  odb_SectionPoint spTop =
+      sCat.SectionPoint(sectionPointNumber, sectionPointDescription);
 
-    // Create few materials
-    odb_MaterialApi materialApi;
-    odb.extendApi(odb_Enum::odb_MATERIAL,materialApi);
-    odb_String materialName("Elastic Material");
-    odb_Material& material_1 =
-        materialApi.Material(materialName);
-    odb_SequenceSequenceDouble myTable;
-    odb_SequenceDouble myData;
-    myData.append(12000.00);//youngs modulus
-    myData.append(0.3);//poissons ratio
-    myTable.append(myData);
-    odb_String type("ISOTROPIC");
-    bool noCompression = false;
-    bool noTension = false;
-    bool temperatureDependency = false;
-    int dependencies = 0;
-    odb_String moduli("LONG_TERM");
-    material_1.Elastic(myTable,
-                    type,
-                    noCompression,
-                    noTension,
-                    temperatureDependency,
-                    dependencies,
-                    moduli);
+  // Create few materials
+  odb_MaterialApi materialApi;
+  odb.extendApi(odb_Enum::odb_MATERIAL, materialApi);
+  odb_String materialName("Elastic Material");
+  odb_Material& material_1 = materialApi.Material(materialName);
+  odb_SequenceSequenceDouble myTable;
+  odb_SequenceDouble myData;
+  myData.append(12000.00);  // youngs modulus
+  myData.append(0.3);       // poissons ratio
+  myTable.append(myData);
+  odb_String type("ISOTROPIC");
+  bool noCompression = false;
+  bool noTension = false;
+  bool temperatureDependency = false;
+  int dependencies = 0;
+  odb_String moduli("LONG_TERM");
+  material_1.Elastic(myTable, type, noCompression, noTension,
+                     temperatureDependency, dependencies, moduli);
 
-    //create few sections
-    odb_SectionApi sectionApi;
-    odb.extendApi(odb_Enum::odb_SECTION,
-                sectionApi);
-    odb_String sectionName("Homogeneous Shell Section");
-    double thickness = 2.0;
-    odb_HomogeneousShellSection& section_1 =
-        sectionApi.HomogeneousShellSection(sectionName,thickness,materialName);
+  // create few sections
+  odb_SectionApi sectionApi;
+  odb.extendApi(odb_Enum::odb_SECTION, sectionApi);
+  odb_String sectionName("Homogeneous Shell Section");
+  double thickness = 2.0;
+  odb_HomogeneousShellSection& section_1 =
+      sectionApi.HomogeneousShellSection(sectionName, thickness, materialName);
 
-    // Create a 2-element shell model,
-    //4 integration points, 5 section points.
+  // Create a 2-element shell model,
+  // 4 integration points, 5 section points.
 
-    odb_Part& part1 = odb.Part("part-1",
-                            odb_Enum::THREE_D,
-                odb_Enum::DEFORMABLE_BODY);
+  odb_Part& part1 =
+      odb.Part("part-1", odb_Enum::THREE_D, odb_Enum::DEFORMABLE_BODY);
 
-    odb_SequenceInt nodeLabels;
-    for(n=1; n<7; n++)
-    nodeLabels.append(n);
+  odb_SequenceInt nodeLabels;
+  for (n = 1; n < 7; n++) nodeLabels.append(n);
 
-    double c[6][3] = { {1,  0,  0.0},
-                {2,  0,  0.0},
-            {2,  1,  0.1},
-            {1,  1,  0.1},
-            {2, -1, -0.1},
-            {1, -1, -0.1} };
-    odb_SequenceSequenceFloat nodeCoor;
-    for(n=0; n<nodeLabels.size(); n++) {
+  double c[6][3] = {{1, 0, 0.0}, {2, 0, 0.0},   {2, 1, 0.1},
+                    {1, 1, 0.1}, {2, -1, -0.1}, {1, -1, -0.1}};
+  odb_SequenceSequenceFloat nodeCoor;
+  for (n = 0; n < nodeLabels.size(); n++) {
     odb_SequenceFloat loc;
-    for(int i=0; i<3; i++)
-        loc.append(c[n][i]);
+    for (int i = 0; i < 3; i++) loc.append(c[n][i]);
     nodeCoor.append(loc);
-    }
-    odb_String nodeSetName("nset-1");
-    part1.addNodes(nodeLabels,
-                nodeCoor,
-                nodeSetName);
+  }
+  odb_String nodeSetName("nset-1");
+  part1.addNodes(nodeLabels, nodeCoor, nodeSetName);
 
-    odb_SequenceInt elLabels;
-    elLabels.append(1);
-    elLabels.append(2);
-    odb_SequenceSequenceInt connect;
-    const int numNodePerEl = 4;
-    int conn[2][numNodePerEl] = { {1, 2, 3, 4},
-                            {6, 5, 2, 1} };
-    for(int e=0; e<elLabels.size(); e++) {
+  odb_SequenceInt elLabels;
+  elLabels.append(1);
+  elLabels.append(2);
+  odb_SequenceSequenceInt connect;
+  const int numNodePerEl = 4;
+  int conn[2][numNodePerEl] = {{1, 2, 3, 4}, {6, 5, 2, 1}};
+  for (int e = 0; e < elLabels.size(); e++) {
     odb_SequenceInt l;
-    for(int i=0; i<numNodePerEl; i++)
-        l.append(conn[e][i]);
+    for (int i = 0; i < numNodePerEl; i++) l.append(conn[e][i]);
     connect.append(l);
-    }
-    odb_String elType("S4");
-    odb_String elsetName("eset-1");
-    part1.addElements(elLabels,
-                    connect,
-                    elType,
-                    elsetName,
-                    sCat);
+  }
+  odb_String elType("S4");
+  odb_String elsetName("eset-1");
+  part1.addElements(elLabels, connect, elType, elsetName, sCat);
 
-    // Instance the part.
-    odb_String partInstanceName("part-1-1");
-    odb_Instance& instance1 =
-        odb.rootAssembly().Instance(partInstanceName, part1);
-    // create instance level sets for section assignment
-    elsetName = "Material 1";
-    odb_Set& elset_1 = instance1.ElementSet(elsetName,
-                                            elLabels);
-    // section assignment on instance
-    instance1.assignSection(elset_1,section_1);
-    // Field data:
-    // Create a step and a frame.
-    odb_String stepName("step-1");
-    odb_String stepDescription("first analysis step");
-    odb_Step& step1 = odb.Step(stepName,
-                            stepDescription,
-                            odb_Enum::TIME,
-                1.0);
-    int incrementNumber = 1;
-    float analysisTime = 0.1;
-    odb_String frameDescription("results frame for time");
-    frameDescription.append(analysisTime);
-    odb_Frame frame1 = step1.Frame(incrementNumber,
-                                analysisTime,
-                                frameDescription);
+  // Instance the part.
+  odb_String partInstanceName("part-1-1");
+  odb_Instance& instance1 =
+      odb.rootAssembly().Instance(partInstanceName, part1);
+  // create instance level sets for section assignment
+  elsetName = "Material 1";
+  odb_Set& elset_1 = instance1.ElementSet(elsetName, elLabels);
+  // section assignment on instance
+  instance1.assignSection(elset_1, section_1);
+  // Field data:
+  // Create a step and a frame.
+  odb_String stepName("step-1");
+  odb_String stepDescription("first analysis step");
+  odb_Step& step1 = odb.Step(stepName, stepDescription, odb_Enum::TIME, 1.0);
+  int incrementNumber = 1;
+  float analysisTime = 0.1;
+  odb_String frameDescription("results frame for time");
+  frameDescription.append(analysisTime);
+  odb_Frame frame1 =
+      step1.Frame(incrementNumber, analysisTime, frameDescription);
 
-    // Write nodal displacements.
-    odb_String fieldName("U");
-    odb_String fieldDescription("Displacements");
-    odb_FieldOutput& uField =
-        frame1.FieldOutput(fieldName,
-                        fieldDescription,
-            odb_Enum::VECTOR);
+  // Write nodal displacements.
+  odb_String fieldName("U");
+  odb_String fieldDescription("Displacements");
+  odb_FieldOutput& uField =
+      frame1.FieldOutput(fieldName, fieldDescription, odb_Enum::VECTOR);
 
-    odb_SequenceSequenceFloat dispData;
-    odb_SequenceFloat dispData1[6];
-    // create some displacement values
-    for(n=0; n<6; n++) {
-    for(int m=1; m<4; m++)
-        dispData1[n].append(n*3+m);
+  odb_SequenceSequenceFloat dispData;
+  odb_SequenceFloat dispData1[6];
+  // create some displacement values
+  for (n = 0; n < 6; n++) {
+    for (int m = 1; m < 4; m++) dispData1[n].append(n * 3 + m);
     dispData.append(dispData1[n]);
-    }
-    uField.addData(odb_Enum::NODAL,
-                instance1,
-                nodeLabels,
-                dispData);
+  }
+  uField.addData(odb_Enum::NODAL, instance1, nodeLabels, dispData);
 
-    // Make this the default deformed field for visualization.
+  // Make this the default deformed field for visualization.
 
-    step1.setDefaultDeformedField(uField);
+  step1.setDefaultDeformedField(uField);
 
-    // Write stress tensors (output only available at
-    // top/bottom section points)
-    // The element defined above (S4) has 4 integration points.
-    // Hence, there are 4 stress tensors per element.
-    // Each Field constructor refers to only one layer of
-    // section points.
+  // Write stress tensors (output only available at
+  // top/bottom section points)
+  // The element defined above (S4) has 4 integration points.
+  // Hence, there are 4 stress tensors per element.
+  // Each Field constructor refers to only one layer of
+  // section points.
 
-    odb_SequenceSequenceFloat topData;
-    odb_SequenceFloat topData1;
-    for(n=1; n<5; n++)
-    topData1.append(n);
+  odb_SequenceSequenceFloat topData;
+  odb_SequenceFloat topData1;
+  for (n = 1; n < 5; n++) topData1.append(n);
 
-    for(n=0; n<8; n++)
-    topData.append(topData1);
+  for (n = 0; n < 8; n++) topData.append(topData1);
 
-    odb_SequenceSequenceFloat bottomData;
-    odb_SequenceFloat bottomData1;
-    for(n=1; n<5; n++)
-    bottomData1.append(n);
+  odb_SequenceSequenceFloat bottomData;
+  odb_SequenceFloat bottomData1;
+  for (n = 1; n < 5; n++) bottomData1.append(n);
 
-    for(n=0; n<8; n++)
-    bottomData.append(bottomData1);
+  for (n = 0; n < 8; n++) bottomData.append(bottomData1);
 
-    odb_SequenceSequenceFloat transform;
+  odb_SequenceSequenceFloat transform;
 
-    //transform = ((1.,0.,0.), (0.,1.,0.), (0.,0.,1.))
+  // transform = ((1.,0.,0.), (0.,1.,0.), (0.,0.,1.))
 
-    for(n=1; n<4; n++){
+  for (n = 1; n < 4; n++) {
     odb_SequenceFloat transform1;
-    for(int m=1; m<4; m++) {
-        if(m==n)transform1.append(1);
-        else transform1.append(0);
+    for (int m = 1; m < 4; m++) {
+      if (m == n)
+        transform1.append(1);
+      else
+        transform1.append(0);
     }
     transform.append(transform1);
-    }
+  }
 
-    odb_SequenceString componentLabels;
-    componentLabels.append("S11");
-    componentLabels.append("S22");
-    componentLabels.append("S33");
-    componentLabels.append("S12");
+  odb_SequenceString componentLabels;
+  componentLabels.append("S11");
+  componentLabels.append("S22");
+  componentLabels.append("S33");
+  componentLabels.append("S12");
 
-    odb_SequenceInvariant validInvariants;
-    validInvariants.append(odb_Enum::MISES);
-    fieldName = "S";
-    fieldDescription = "Stress";
-    odb_FieldOutput& sField =
-        frame1.FieldOutput(fieldName,
-                        fieldDescription,
-                        odb_Enum::TENSOR_3D_PLANAR,
-                        componentLabels,
-                        validInvariants);
+  odb_SequenceInvariant validInvariants;
+  validInvariants.append(odb_Enum::MISES);
+  fieldName = "S";
+  fieldDescription = "Stress";
+  odb_FieldOutput& sField = frame1.FieldOutput(
+      fieldName, fieldDescription, odb_Enum::TENSOR_3D_PLANAR, componentLabels,
+      validInvariants);
 
-    sField.addData(odb_Enum::INTEGRATION_POINT,
-                instance1,
-        elLabels,
-                topData,
-                spTop,
-                transform);
+  sField.addData(odb_Enum::INTEGRATION_POINT, instance1, elLabels, topData,
+                 spTop, transform);
 
-    sField.addData(odb_Enum::INTEGRATION_POINT,
-                instance1,
-        elLabels,
-                bottomData,
-                spBot,
-                transform);
+  sField.addData(odb_Enum::INTEGRATION_POINT, instance1, elLabels, bottomData,
+                 spBot, transform);
 
-    // For this step, make this the default
-    // field for visualization.
+  // For this step, make this the default
+  // field for visualization.
 
-    step1.setDefaultField(sField);
+  step1.setDefaultField(sField);
 
-    // History data:
-    // Create a HistoryRegion for a specific point.
-    odb_HistoryPoint hPoint1(instance1.getNodeFromLabel(1));
-    odb_String historyRegionName("historyNode0");
-    odb_String historyRegionDescription(
-        "Displacement and reaction force");
-    odb_HistoryRegion& hRegionStep1 =
-        step1.HistoryRegion(historyRegionName,
-                            historyRegionDescription,
-                            hPoint1);
+  // History data:
+  // Create a HistoryRegion for a specific point.
+  odb_HistoryPoint hPoint1(instance1.getNodeFromLabel(1));
+  odb_String historyRegionName("historyNode0");
+  odb_String historyRegionDescription("Displacement and reaction force");
+  odb_HistoryRegion& hRegionStep1 =
+      step1.HistoryRegion(historyRegionName, historyRegionDescription, hPoint1);
 
-    // Create variables for this history output in step1.
+  // Create variables for this history output in step1.
 
-    odb_String historyOutputName("U1");
-    odb_String historyOutputDescription("Displacement");
-    odb_HistoryOutput& hOutputStep1U1 =
-        hRegionStep1.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
-    historyOutputName = "RF1";
-    historyOutputDescription = "Reaction Force";
-    odb_HistoryOutput& hOutputStep1Rf1 =
-        hRegionStep1.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
-    // Add history data for step1.
+  odb_String historyOutputName("U1");
+  odb_String historyOutputDescription("Displacement");
+  odb_HistoryOutput& hOutputStep1U1 = hRegionStep1.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
+  historyOutputName = "RF1";
+  historyOutputDescription = "Reaction Force";
+  odb_HistoryOutput& hOutputStep1Rf1 = hRegionStep1.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
+  // Add history data for step1.
 
-    hOutputStep1U1.addData(0.0, 0.0);
-    hOutputStep1Rf1.addData(0.0,0.0);
-    hOutputStep1U1.addData(0.1, 0.1);
-    hOutputStep1Rf1.addData(0.1,0.1);
-    hOutputStep1U1.addData(0.3, 0.3);
-    hOutputStep1Rf1.addData(0.3,0.3);
-    hOutputStep1U1.addData(1.0, 0.5);
-    hOutputStep1Rf1.addData(1.0,0.5);
+  hOutputStep1U1.addData(0.0, 0.0);
+  hOutputStep1Rf1.addData(0.0, 0.0);
+  hOutputStep1U1.addData(0.1, 0.1);
+  hOutputStep1Rf1.addData(0.1, 0.1);
+  hOutputStep1U1.addData(0.3, 0.3);
+  hOutputStep1Rf1.addData(0.3, 0.3);
+  hOutputStep1U1.addData(1.0, 0.5);
+  hOutputStep1Rf1.addData(1.0, 0.5);
 
-    // Create another step for history data.
-    stepName = "step-2";
-    stepDescription = "second analysis step";
-    odb_Step& step2 = odb.Step(stepName,
-                            stepDescription,
-                            odb_Enum::TIME,
-                1.0);
+  // Create another step for history data.
+  stepName = "step-2";
+  stepDescription = "second analysis step";
+  odb_Step& step2 = odb.Step(stepName, stepDescription, odb_Enum::TIME, 1.0);
 
+  // Create new history region
 
-    // Create new history region
+  odb_HistoryPoint hPoint2(instance1.getNodeFromLabel(1));
 
-    odb_HistoryPoint hPoint2(instance1.getNodeFromLabel(1));
+  odb_HistoryRegion& hRegionStep2 =
+      step2.HistoryRegion(historyRegionName, historyRegionDescription, hPoint2);
 
-    odb_HistoryRegion& hRegionStep2 =
-        step2.HistoryRegion(historyRegionName,
-                            historyRegionDescription,
-                            hPoint2);
+  // Create new history output
+  historyOutputName = "U1";
+  historyOutputDescription = "Displacement";
+  odb_HistoryOutput& hOutputStep2U1 = hRegionStep2.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
 
-    //Create new history output
-    historyOutputName = "U1";
-    historyOutputDescription = "Displacement";
-    odb_HistoryOutput& hOutputStep2U1 =
-        hRegionStep2.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
+  historyOutputName = "RF1";
+  historyOutputDescription = "Reaction Force";
+  odb_HistoryOutput& hOutputStep2Rf1 = hRegionStep2.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
 
-    historyOutputName = "RF1";
-    historyOutputDescription = "Reaction Force";
-    odb_HistoryOutput& hOutputStep2Rf1 =
-        hRegionStep2.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
+  // Add history data for the second step.
 
+  hOutputStep2U1.addData(1.2, 0.8);
+  hOutputStep2Rf1.addData(1.2, 0.9);
+  hOutputStep2U1.addData(1.9, 0.9);
+  hOutputStep2Rf1.addData(1.9, 1.1);
+  hOutputStep2U1.addData(3.0, 1.3);
+  hOutputStep2Rf1.addData(3.0, 1.3);
+  hOutputStep2U1.addData(4.0, 1.5);
+  hOutputStep2Rf1.addData(4.0, 1.5);
 
-    // Add history data for the second step.
+  // Square the history data U, and store as new history output
+  historyOutputName = "squareU1";
+  historyOutputDescription = "Square of displacements";
+  odb_HistoryOutput& hOutputStep1sumU1 = hRegionStep1.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
+  historyOutputName = "squareU2";
+  odb_HistoryOutput& hOutputStep2sumU1 = hRegionStep2.HistoryOutput(
+      historyOutputName, historyOutputDescription, odb_Enum::SCALAR);
 
-    hOutputStep2U1.addData(1.2, 0.8);
-    hOutputStep2Rf1.addData(1.2,0.9);
-    hOutputStep2U1.addData(1.9, 0.9);
-    hOutputStep2Rf1.addData(1.9,1.1);
-    hOutputStep2U1.addData(3.0, 1.3);
-    hOutputStep2Rf1.addData(3.0,1.3);
-    hOutputStep2U1.addData(4.0, 1.5);
-    hOutputStep2Rf1.addData(4.0,1.5);
+  // Get XY Data from the two steps.
 
-    // Square the history data U, and store as new history output
-    historyOutputName = "squareU1";
-    historyOutputDescription = "Square of displacements";
-    odb_HistoryOutput&  hOutputStep1sumU1 =
-        hRegionStep1.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
-    historyOutputName = "squareU2";
-    odb_HistoryOutput&  hOutputStep2sumU1 =
-        hRegionStep2.HistoryOutput(historyOutputName,
-                                historyOutputDescription,
-                                odb_Enum::SCALAR);
+  odb_HistoryOutputRepository& historyOutputs1 = hRegionStep1.historyOutputs();
+  historyOutputName = "U1";
+  odb_HistoryOutput& u1FromStep1 = historyOutputs1[historyOutputName];
 
-    // Get XY Data from the two steps.
+  odb_HistoryOutputRepository& historyOutputs2 = hRegionStep2.historyOutputs();
+  odb_HistoryOutput& u1FromStep2 = historyOutputs2[historyOutputName];
 
-    odb_HistoryOutputRepository& historyOutputs1 =
-        hRegionStep1.historyOutputs();
-    historyOutputName = "U1";
-    odb_HistoryOutput& u1FromStep1 =
-        historyOutputs1[historyOutputName];
+  odb_SequenceSequenceFloat hdata1 = u1FromStep1.data();
+  odb_SequenceSequenceFloat hdata2 = u1FromStep2.data();
 
-    odb_HistoryOutputRepository& historyOutputs2 =
-    hRegionStep2.historyOutputs();
-    odb_HistoryOutput& u1FromStep2 =
-        historyOutputs2[historyOutputName];
+  // Add the squared displacement to the two steps.
 
-    odb_SequenceSequenceFloat hdata1 = u1FromStep1.data();
-    odb_SequenceSequenceFloat hdata2 = u1FromStep2.data();
-
-    // Add the squared displacement to the two steps.
-
-    for(n=0; n<hdata1.size(); n++){
-    odb_SequenceFloat hdata11=hdata1.get(n);
+  for (n = 0; n < hdata1.size(); n++) {
+    odb_SequenceFloat hdata11 = hdata1.get(n);
     hOutputStep1sumU1.addData(hdata11.get(0),
-        pow((double)hdata11.get(1),(int)2));
-    }
+                              pow((double)hdata11.get(1), (int)2));
+  }
 
-    for(n=0; n<hdata2.size(); n++){
-    odb_SequenceFloat hdata22=hdata2.get(n);
+  for (n = 0; n < hdata2.size(); n++) {
+    odb_SequenceFloat hdata22 = hdata2.get(n);
     hOutputStep2sumU1.addData(hdata22.get(0),
-        pow((double)hdata22.get(1),(int)2));
-    }
+                              pow((double)hdata22.get(1), (int)2));
+  }
 
+  // Save the results in the output database.
+  // Use the Visualization module of Abaqus/CAE to
+  // view the contents of the output database.
 
-    // Save the results in the output database.
-    // Use the Visualization module of Abaqus/CAE to
-    // view the contents of the output database.
-
-    odb.save();
-    odb.close();
-    return 0;
+  odb.save();
+  odb.close();
+  return 0;
 }
 ```
 
@@ -794,7 +681,7 @@ abaqus fetch job=stressRange
 
 The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example program.
 
-```cpp
+```c++
 ////////////////////////////////////////////////////
 // Code to compute a stress range from
 // all the load cases in a step.
@@ -803,7 +690,7 @@ The fetch command also retrieves an input file that you can use to generate an o
 // description "Stress Range"
 
 // System includes
-#if (defined(HP) && (! defined(HKS_HPUXI)))
+#if (defined(HP) && (!defined(HKS_HPUXI)))
 #include <iostream.h>
 #else
 #include <iostream>
@@ -814,54 +701,50 @@ using namespace std;
 #include <odb_API.h>
 // End Local Includes
 
-odb_FieldOutput computeStressRange( odb_Step& step );
+odb_FieldOutput computeStressRange(odb_Step& step);
 
-int ABQmain(int argc, char **argv)
-{
-    if( argc < 3 ) {
-        cerr << "Usage: abaqus stressRange.x odb_name"
-            <<         "step_name"
-            <<         endl;
-        return 1;
-    }
+int ABQmain(int argc, char** argv) {
+  if (argc < 3) {
+    cerr << "Usage: abaqus stressRange.x odb_name"
+         << "step_name" << endl;
+    return 1;
+  }
 
-    odb_String odbName(argv[1]);
-    odb_String stepName(argv[2]);
-    cout << "Computing for odb \"" << odbName.CStr() << "\"";
-    cout << " and step \"" << stepName.CStr() << "\"." << endl;
+  odb_String odbName(argv[1]);
+  odb_String stepName(argv[2]);
+  cout << "Computing for odb \"" << odbName.CStr() << "\"";
+  cout << " and step \"" << stepName.CStr() << "\"." << endl;
 
-    // compute stress range and save to odb
-    odb_Odb& odb = openOdb(odbName);
-    odb_Step& step = odb.steps()[stepName];
-    odb_FieldOutput range = computeStressRange(step);
+  // compute stress range and save to odb
+  odb_Odb& odb = openOdb(odbName);
+  odb_Step& step = odb.steps()[stepName];
+  odb_FieldOutput range = computeStressRange(step);
 
-    // Save the results in the output database.
-    odb_Frame rangeFrame = step.Frame(0, 0, "Stress Range");
-    rangeFrame.FieldOutput(range, "S11 Range");
-    odb.save();
-    odb.close();
+  // Save the results in the output database.
+  odb_Frame rangeFrame = step.Frame(0, 0, "Stress Range");
+  rangeFrame.FieldOutput(range, "S11 Range");
+  odb.save();
+  odb.close();
 
-    return 0;
+  return 0;
 }
 
-odb_FieldOutput
-computeStressRange(odb_Step& step)
-{
-    // collect stress fields for all load cases
-    odb_SequenceFieldOutput sFields;
-    odb_LoadCaseRepositoryIT iter(step.loadCases());
-    for( iter.first(); !iter.isDone(); iter.next() ) {
-        odb_Frame frame = step.getFrame( iter.currentValue() );
-        odb_FieldOutput& stressField = frame.fieldOutputs()["S"];
-        sFields.append(stressField.getScalarField("S11"));
-    };
+odb_FieldOutput computeStressRange(odb_Step& step) {
+  // collect stress fields for all load cases
+  odb_SequenceFieldOutput sFields;
+  odb_LoadCaseRepositoryIT iter(step.loadCases());
+  for (iter.first(); !iter.isDone(); iter.next()) {
+    odb_Frame frame = step.getFrame(iter.currentValue());
+    odb_FieldOutput& stressField = frame.fieldOutputs()["S"];
+    sFields.append(stressField.getScalarField("S11"));
+  };
 
-    // compute maximum and minimum envelopes
-    odb_SequenceFieldOutput maxFields = maxEnvelope(sFields);
-    odb_SequenceFieldOutput minFields = minEnvelope(sFields);
+  // compute maximum and minimum envelopes
+  odb_SequenceFieldOutput maxFields = maxEnvelope(sFields);
+  odb_SequenceFieldOutput minFields = minEnvelope(sFields);
 
-    // compute and return range
-    return (maxFields.get(0) - minFields.get(0));
+  // compute and return range
+  return (maxFields.get(0) - minFields.get(0));
 }
 ```
 

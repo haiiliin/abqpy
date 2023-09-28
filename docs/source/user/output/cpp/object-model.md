@@ -15,15 +15,14 @@ The output database object model.
 
 The object model translates directly to the structure of an Abaqus C++ API command. For example, the following command refers to a Frame object in the sequence of frames contained in an OdbStep object:
 
-```cpp
+```c++
 odb.steps()["10 hz"].frames(3);
 ```
 
 Similarly, the following command refers to the sequence of field data contained in a FieldOutput object.
 
-```cpp
-odb.steps()["10 hz"].frames.get(3).
-    fieldOutputs()["U"].values(47);
+```c++
+odb.steps()["10 hz"].frames.get(3).fieldOutputs()["U"].values(47);
 ```
 
 You use commands to access objects by stepping through the hierarchy of objects in the object model. The `Access`, `Path`, and `Prototype` descriptions in {doc}`/reference/odb` describe the interface definition of the command. The interface definition of the command reflects the hierarchy of objects in the object model.

@@ -24,43 +24,41 @@ The following examples demonstrate the utility interface for each of the utility
 
 - **Strings**
 
-  ```cpp
+  ```c++
   odb_String type = stressField.baseElementTypes()[0];
-  odb_String elementType =
-    odb_String("Element type is ") + type;
+  odb_String elementType = odb_String("Element type is ") + type;
   cout << elementType.CStr() << endl;
   ```
 
 - **Sequences**
 
-  ```cpp
+  ```c++
   odb_Set& mySurface = rootAssy.surfaces()["TARGET"];
   const odb_String instanceName = "PART-1-1";
-  const odb_SequenceElementFace allFaces =
-      mySurface.faces(instanceName);
+  const odb_SequenceElementFace allFaces = mySurface.faces(instanceName);
   odb_SequenceSequenceElementFace newFaces;
   int allFaces_size = allFaces.size();
-  for (int i=0; i<allFaces_size; i++) {
-      const odb_SequenceElementFace fList = allFaces[i];
-      odb_SequenceElementFace newList;
-      int fList_size = fList.size();
-      for (int j=0; j<fList_size; j++) {
-          const odb_Enum::odb_ElementFaceEnum face = fList[j];
-          newList.append(face);
-      }
-      newFaces.append(newList);
+  for (int i = 0; i < allFaces_size; i++) {
+    const odb_SequenceElementFace fList = allFaces[i];
+    odb_SequenceElementFace newList;
+    int fList_size = fList.size();
+    for (int j = 0; j < fList_size; j++) {
+      const odb_Enum::odb_ElementFaceEnum face = fList[j];
+      newList.append(face);
+    }
+    newFaces.append(newList);
   }
   ```
 
 - **Repositories**
 
-  ```cpp
+  ```c++
   odb_StepRepository stepCon = odb.steps();
-  odb_StepRepositoryIT iter (stepCon);
+  odb_StepRepositoryIT iter(stepCon);
   for (iter.first(); !iter.isDone(); iter.next()) {
-      cout << "step name : " << iter.currentKey().CStr() << endl;
-      const odb_Step& step = iter.currentValue();
-      cout << "step description : " << step.description().CStr();
-      cout << endl;
+    cout << "step name : " << iter.currentKey().CStr() << endl;
+    const odb_Step& step = iter.currentValue();
+    cout << "step description : " << step.description().CStr();
+    cout << endl;
   }
   ```
