@@ -25,7 +25,7 @@ You can assign the return value to a variable:
 
 ```pycon
 >>> d = distance(4.7, 9.1)
->>> print d
+>>> print (d)
 10.2420701033
 ```
 
@@ -87,7 +87,7 @@ It is good programming practice to use a documentation string that indicates the
 ...     volume = pi * radius**2 * height
 ...     return volume
 ...
->>> print calculateCylinderVolume.__doc__
+>>> print (calculateCylinderVolume.__doc__)
 
 Calculates the volume of a cylinder.
 
@@ -264,7 +264,7 @@ You can use the `keys()`, `values()`, or `items()` methods to loop through a dic
 
 ```pycon
 >>> for property, setting in myPart.items():
-...     print property, setting
+...     print (property, setting)
 ...
 size 3.0
 weight 376.0
@@ -344,7 +344,7 @@ If you use exception handling, you can catch the error, display a helpful messag
 >>> try:
 ...     outputFile = open('foam.txt')
 ... except IOError,error:
-...     print 'Exception trapped: ', error
+...     print ('Exception trapped: ', error)
 ...
 Exception trapped:  (2, 'No such file or directory')
 ```
