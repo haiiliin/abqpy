@@ -108,6 +108,17 @@ Attributes
       :type guiRecord: :class:`bool`, *optional*
 
 
+   .. py:method:: pde(*scripts: str, script: str | None = None, **options)
+
+      Run Abaqus/PDE command.
+
+      :param scripts: Scripts to be included in the Abaqus/PDE session
+      :type scripts: :class:`str`
+      :param script: Script to be opened at startup in Abaqus/PDE, by default None
+      :type script: :class:`str`, *optional*
+      :param options: Abaqus/CAE command line arguments
+
+
    .. py:method:: python(script: str, *args, sim: str | None = None, log: str | None = None)
 
       Run Abaqus/Python command.
