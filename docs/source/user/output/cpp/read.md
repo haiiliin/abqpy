@@ -64,7 +64,7 @@ The following list describes the objects in model data and the commands you use 
 
   The output database contains only one part instance, and the resulting output is
 
-  ```c++
+  ```
   PART - 1 - 1
   ```
 
@@ -127,7 +127,7 @@ The following list describes the objects in model data and the commands you use 
 
   The resulting output is
 
-  ```c++
+  ```
   Node set keys : ALL NODES
   ```
 
@@ -150,7 +150,7 @@ The following list describes the objects in model data and the commands you use 
 
   The resulting output is
 
-  ```c++
+  ```
   Node set keys : BOT N481 TOP N1... Element set keys : CENT FOAM...
   ```
 
@@ -383,7 +383,7 @@ The following list describes the objects in results data and the commands you us
 
   The resulting output is
 
-  ```c++
+  ```
   Step - 1 Step - 2 Step - 3
   ```
 
@@ -430,7 +430,7 @@ for (fieldIter.first(); !fieldIter.isDone(); fieldIter.next()) {
 
 The resulting print output lists all the field output variables in a particular frame, along with their type and position.
 
-```c++
+```
 S : Stress components Type : 7 Number of fieldValues : 135 Number of locations : 1 U
     : Spatial displacement Type : 3 Number of fieldValues : 161 Number of locations : 1
 ```
@@ -453,7 +453,7 @@ for (int i = 0; i < numValues; i++) {
 
 The resulting output is
 
-```c++
+```
 Node = 1 U[x] = 0.0000, U[y] = -76.4580 Node = 3 U[x] = -0.0000, U[y] = -64.6314 Node = 5 U[x] = 0.0000,
          U[y] = -52.0814 Node = 7 U[x] = -0.0000, U[y] = -39.6389 Node = 9 U[x] = -0.0000,
          U[y] = -28.7779 Node = 11 U[x] = -0.0000, U[y] = -20.3237...
@@ -549,7 +549,7 @@ cout << endl;
 
 The resulting output is
 
-```c++
+```
 Node : 1000 U = 0.0000 - 76.4555
 ```
 
@@ -580,8 +580,10 @@ for (int l = 0; l < valSize; l++) {
 }
 ```
 
-```c++
-The resulting output is Element label = 1 Integration Point =
+The resulting output is
+
+```
+Element label = 1 Integration Point =
     1 S : 0.01230 - 0.05658 0.00892 - 0.00015 Element label = 1 Integration Point =
         2 S : 0.01313 - 0.05659 0.00892 - 0.00106 Element label = 1 Integration Point =
             3 S : 0.00619 - 0.05642 0.00892 - 0.00023 Element label = 1 Integration Point =
@@ -733,6 +735,6 @@ cout << " Magnitude = " << val.magnitude();
 
 The resulting output is
 
-```c++
+```
 Node : 1000 U = 0.0000, -76.4554 Magnitude = 76.4554
 ```
