@@ -31,7 +31,7 @@ The description of each object in the {doc}`/reference/index` begins with a sect
 The following is the access description for the Part object:
 
 ```c++
-odb.parts()[name]
+odb.parts()[name];
 ```
 
 The access description specifies where instances of the object are located in the data model. The Part object can accordingly be accessed as:
@@ -44,7 +44,7 @@ odb_Part part = partCon["PART-1-1"];
 The Access description for the FieldOutput object is
 
 ```c++
-odb.steps()[name].frames(i).fieldOutputs()[name]
+odb.steps()[name].frames(i).fieldOutputs()[name];
 ```
 
 The following statements show how you use the object described by this `Access` description:
@@ -70,13 +70,14 @@ odb_SequenceInvariant myInvariants = field.validInvariants();
 A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Part constructor:
 
 ```c++
-odb.Part
+odb.Part;
 ```
 
 Some constructors include more than one path. For example, you can create a nodeSet that is associated with either a Part object or the RootAssembly object, and each path is listed.
 
 ```c++
-odb.parts()[name].NodeSet odb.rootAssembly().NodeSet
+odb.parts()[name].NodeSet;
+odb.rootAssembly().NodeSet;
 ```
 
 The path is not listed if the method is not a constructor.
@@ -86,7 +87,7 @@ If you are using the Abaqus C++ API to read data from an output database, the ob
 For example, the Path description for the FieldOutput constructor is
 
 ```c++
-odb.steps()[name].frames(i).FieldOutput
+odb.steps()[name].frames(i).FieldOutput;
 ```
 
 The following statement creates a FieldOutput object:
