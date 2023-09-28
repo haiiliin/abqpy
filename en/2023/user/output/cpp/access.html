@@ -1181,11 +1181,11 @@
 <p>It is important to ensure that the compiler used to compile and link the existing application is consistent with the compilers used to generate the Abaqus release. The “System Requirements” document lists the name and version of the compiler used for the Abaqus release on each supported platform. You can access this document through the <strong>System Information</strong> section of the <strong>Support</strong> page at <a class="reference external" href="https:www.3ds.com/simulia">https:www.3ds.com/simulia</a>. You can also find information on compiling and linking with the C++ interface to an output database in the Dassault Systèmes Knowledge Base at <a class="reference external" href="https://support.3ds.com/knowledge-base/">https://support.3ds.com/knowledge-base/</a>.</p>
 <h2 id="initializing-the-c-interface">Initializing the C++ interface<a class="headerlink" href="#initializing-the-c-interface" title="Permalink to this heading">¶</a></h2>
 <p>Before any calls are made to the C++ interface, the following call must be made to initialize the interface:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_initializeAPI</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_initializeAPI</span><span class="p">();</span>
 </code></pre></div>
 </div>
 <p>This call is generated automatically when the <strong>abaqus make</strong> utility is run but must be included in any application that is not compiled and linked using the <strong>abaqus make</strong> utility. After all calls to the C++ interface have been completed, the interface may be deactivated by including a call to</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_finalizeAPI</span><span class="p">();</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_finalizeAPI</span><span class="p">();</span>
 </code></pre></div>
 </div>
 <p>If the finalization call is not made explicitly, the finalize routine will be called automatically when the application exits.</p>
