@@ -85,7 +85,7 @@ Use int(_n_) to convert a variable to an integer; use long(_n_) to convert a var
 >>> a = 2
 >>> b = 64
 >>> bigNumber = long(a)**b
->>> print 'bigNumber = ', bigNumber
+>>> print ('bigNumber = ', bigNumber)
 bigNumber = 18446744073709551616
 ```
 
@@ -101,7 +101,7 @@ Floats represent floating-point numbers or real numbers. You can use exponential
 >>> pi   = 22.0/7.0
 >>> r    = 2.345e-6
 >>> area = pi * r * r
->>> print 'Area = ', area
+>>> print ('Area = ', area)
 Area =  1.728265e-11
 ```
 
@@ -132,7 +132,7 @@ Python provides complex math functions to operate on complex variables. You need
 ```pycon
 >>> import cmath
 >>> y = 3 + 4j
->>> print cmath.sqrt(y)
+>>> print (cmath.sqrt(y))
 (2+1j)
 ```
 
@@ -302,7 +302,7 @@ You can use the `tuple()` function to convert a list or a string to a tuple.
 ```pycon
 >>> myList = [1, 2, "stress", 4.67]
 >>> myTuple = tuple(myList)
->>> print myTuple
+>>> print (myTuple)
 (1, 2, 'stress', 4.67)
 >>> myString = 'Failure mode'
 >>> myTuple = tuple(myString)
@@ -330,7 +330,7 @@ Strings are immutable sequences of characters. Strings are defined by single or 
 >>> odbString = "Symbol plot from "
 >>> odb = 'load1.odb'
 >>> annotationString = odbString + odb
->>> print annotationString
+>>> print (annotationString)
 Symbol plot from load1.odb
 ```
 
@@ -469,7 +469,7 @@ Convert a sequence to a list or a tuple.
 >>> myList
 ['p', 'o', 'i', 's', 'e']
 >>> myTuple = tuple(myString) #Convert a string to a tuple.
->>> print myTuple
+>>> print (myTuple)
 ('n', 'o', 'i', 's', 'e')
 ```
 
@@ -481,11 +481,11 @@ Python defines a special object called the None object or Python None that repre
 
 ```pycon
 >>> a = [1, 3, 7, 5]
->>> print a.sort()
+>>> print (a.sort())
 None
 >>> import sys
 >>> x = sys.path.append('.')
->>> print x
+>>> print (x)
 None
 ```
 
@@ -528,30 +528,30 @@ Python provides a print function that displays the value of a variable. For exam
 ```pycon
 >>> freq = 22.0/7.0
 >>> x = 7.234
->>> print 'Vibration frequency = ', freq
+>>> print ('Vibration frequency = ', freq)
 Vibration frequency =  3.14285714286
->>> print 'Vibration frequency = ', freq, 'Displacement = ', x
+>>> print ('Vibration frequency = ', freq, 'Displacement = ', x)
 Vibration frequency =  3.14285714286 Displacement = 7.234
 ```
 
 The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.
 
 ```pycon
->>> print 'Vibration frequency = %s Displacement = %s' % (freq, x)
+>>> print ('Vibration frequency = %s Displacement = %s' % (freq, x))
 Vibration frequency = 3.14285714286 Displacement = 7.234
 ```
 
 The `%f` operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.
 
 ```pycon
->>> print 'Vibration frequency = %6.2f Displacement = %6.2f' % (freq, x)
+>>> print ('Vibration frequency = %6.2f Displacement = %6.2f' % (freq, x))
 Vibration frequency =   3.14 Displacement =   7.23
 ```
 
 The `%E` operator specifies scientific notation and indicates the number of decimal places.
 
 ```pycon
->>> print 'Vibration frequency = %.6E Displacement = %.2E' % (freq, x)
+>>> print ('Vibration frequency = %.6E Displacement = %.2E' % (freq, x))
 Vibration frequency = 3.142857E+00 Displacement = 7.23E+00
 ```
 
@@ -565,7 +565,7 @@ The `\\t` escape sequence inserts a tab character.
 For example,
 
 ```pycon
->>> print 'Vibration frequency = %+.6E\nDisplacement = %+.2E' % (freq, x)
+>>> print ('Vibration frequency = %+.6E\nDisplacement = %+.2E' % (freq, x))
 Vibration frequency = +3.142857E+00
 Displacement = +7.23E+00
 ```
@@ -580,7 +580,7 @@ i = 0
 while i <= max:
     square = i**2
     cube = i**3
-    print i, square, cube
+    print (i, square, cube)
     i = i + 1
 print 'Loop completed'
 ```
@@ -592,11 +592,11 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 ```pycon
 >>> load = 10
 >>> if load > 6.75:
-...     print 'Reached critical load'
+...     print ('Reached critical load')
 ... elif load < 2.75:
-...     print 'Minimal load'
+...     print ('Minimal load')
 ... else:
-...     print 'Typical load'
+...     print ('Typical load')
 ```
 
 ### while
@@ -606,15 +606,17 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 >>> length = 3
 >>> while load < 1E4:
 ...     load = load * length
-...     print load
-Use `break` to break out of a loop.
+...     print (load)
+```
 
+Use `break` to break out of a loop.
+```pycon
 >>> while 1:
 ...     x = raw_input(Enter a number or 0 to quit:')
 ...     if x == '0':
 ...         break
 ...     else:
-...         print x
+...         print (x)
 ```
 
 Use `continue` to skip the rest of the loop and to go to the next iteration.
@@ -626,7 +628,7 @@ Use `continue` to skip the rest of the loop and to go to the next iteration.
 ...     load = load * length
 ...     if load < 0:
 ...         continue   #Do not print if negative
-...     print load
+...     print (load)
 ```
 
 ### for
@@ -635,7 +637,7 @@ Use a sequence to control the start and the end of for loops. The `range()` func
 
 ```pycon
 >>> for i in range(5):
-...     print i
+...     print (i)
 ...
 0
 1
