@@ -18,9 +18,10 @@ The following list describes the order in which commands are documented in the {
   - MeshStats
 
 - Within each object description, the commands are listed in the following order:
-  \- Constructors (in alphabetical order)
-  \- Methods (in alphabetical order)
-  \- Members
+
+  - Constructors (in alphabetical order)
+  - Methods (in alphabetical order)
+  - Members
 
 - Some methods are not associated with an object and appear at the end of a chapter; for example, the {py:meth}`~abaqus.Material.evaluateMaterial` method appears at the end of {doc}`/reference/mdb/model/material`.
 
