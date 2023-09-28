@@ -27,12 +27,8 @@ def run(cae: bool = True) -> None:
     # Check if it is imported by sphinx to generate docs
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
 
-    # If in debug mode or making docs, return
-    if debug:
-        warnings.warn("You are running the script in debug mode, the script will run in the current Python session "
-                      "and it will not be submitted to Abaqus.")  # fmt: skip
-        return
-    elif make_docs:
+    # If making docs, return
+    if make_docs:
         return
 
     # If it is a jupyter notebook, convert it to python script
@@ -53,9 +49,11 @@ def run(cae: bool = True) -> None:
     # Alternative to use abaqus command line options at run time
     print("The script will be submitted to Abaqus next and the current Python session will be closed.")
     options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
-    if cae:
-        gui = options.pop("gui", None)
-        noGUI = options.pop("noGUI", None)
+    gui, noGUI = options.pop("gui", None), options.pop("noGUI", None)
+    if debug:
+        warnings.warn("You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it.")
+        abaqus.pde(script=filePath, **options)
+    elif cae:
         options["gui"] = gui if gui is not None else not noGUI if noGUI is not None else False
         abaqus.cae(filePath, *sys.argv[1:], **options)
     else:
