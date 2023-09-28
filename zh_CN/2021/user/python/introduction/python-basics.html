@@ -803,13 +803,13 @@
 </div>
 <p>Use int(<em>n</em>) to convert a variable to an integer; use long(<em>n</em>) to convert a variable to a long integer.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">load</span>  <span class="o">=</span> <span class="mf">279.86</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">iLoad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">load</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">iLoad</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#int" title="int"><span class="nb">int</span></a><span class="p">(</span><span class="n">load</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iLoad</span>
 <span class="go">279</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">64</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bigNumber</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'bigNumber = '</span><span class="p">,</span> <span class="n">bigNumber</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'bigNumber = '</span><span class="p">,</span> <span class="n">bigNumber</span><span class="p">)</span>
 <span class="go">bigNumber = 18446744073709551616</span>
 </code></pre></div>
 </div>
@@ -822,7 +822,7 @@
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">pi</span>   <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="mf">7.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">r</span>    <span class="o">=</span> <span class="mf">2.345e-6</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span> <span class="o">*</span> <span class="n">r</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Area = '</span><span class="p">,</span> <span class="n">area</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Area = '</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
 <span class="go">Area =  1.728265e-11</span>
 </code></pre></div>
 </div>
@@ -843,9 +843,9 @@
 </code></pre></div>
 </div>
 <p>Python provides complex math functions to operate on complex variables. You need to import the cmath module to use the complex square root function.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">cmath</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/cmath.html#module-cmath" title="cmath"><span class="nn">cmath</span></a>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="n">j</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/cmath.html#cmath.sqrt" title="cmath.sqrt"><span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span></a><span class="p">(</span><span class="n">y</span><span class="p">))</span>
 <span class="go">(2+1j)</span>
 </code></pre></div>
 </div>
@@ -976,12 +976,12 @@
 </div>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">tuple()</span></code> function to convert a list or a string to a tuple.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"stress"</span><span class="p">,</span> <span class="mf">4.67</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">myTuple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="tuple"><span class="nb">tuple</span></a><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">myTuple</span><span class="p">)</span>
 <span class="go">(1, 2, 'stress', 4.67)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myString</span> <span class="o">=</span> <span class="s1">'Failure mode'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="p">(</span><span class="n">myTuple</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="tuple"><span class="nb">tuple</span></a><span class="p">(</span><span class="n">myString</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">myTuple</span><span class="p">)</span>
 <span class="go">('F', 'a', 'i', 'l', 'u', 'r', 'e', ' ', 'm', 'o', 'd', 'e')</span>
 </code></pre></div>
 </div>
@@ -1000,7 +1000,7 @@
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">odbString</span> <span class="o">=</span> <span class="s2">"Symbol plot from "</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">odb</span> <span class="o">=</span> <span class="s1">'load1.odb'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">annotationString</span> <span class="o">=</span> <span class="n">odbString</span> <span class="o">+</span> <span class="n">odb</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">annotationString</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">annotationString</span><span class="p">)</span>
 <span class="go">Symbol plot from load1.odb</span>
 </code></pre></div>
 </div>
@@ -1105,23 +1105,23 @@
 <h3 id="convert-a-sequence-type">Convert a sequence type<a class="headerlink" href="#convert-a-sequence-type" title="此标题的永久链接">¶</a></h3>
 <p>Convert a sequence to a list or a tuple.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myString</span><span class="o">=</span><span class="s1">'noise'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a list.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#list" title="list"><span class="nb">list</span></a><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a list.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'p'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span>
 <span class="go">['p', 'o', 'i', 's', 'e']</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a tuple.</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">myTuple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="tuple"><span class="nb">tuple</span></a><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a tuple.</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">myTuple</span><span class="p">)</span>
 <span class="go">('n', 'o', 'i', 's', 'e')</span>
 </code></pre></div>
 </div>
 <h2 id="python-none"><span id="id4"></span>Python None<a class="headerlink" href="#python-none" title="此标题的永久链接">¶</a></h2>
 <p>Python defines a special object called the None object or Python None that represents an empty value. The None object is returned by functions and methods that do not have a return value. The None object has no value and prints as None. For example</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">())</span>
 <span class="go">None</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/sys.html#module-sys" title="sys"><span class="nn">sys</span></a>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">x</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="go">None</span>
 </code></pre></div>
 </div>
@@ -1154,24 +1154,24 @@ Comments in a Python script begin with the # character and continue to the end o
 <p>Python provides a print function that displays the value of a variable. For example,</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">freq</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="mf">7.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mf">7.234</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = '</span><span class="p">,</span> <span class="n">freq</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = '</span><span class="p">,</span> <span class="n">freq</span><span class="p">)</span>
 <span class="go">Vibration frequency =  3.14285714286</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = '</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="s1">'Displacement = '</span><span class="p">,</span> <span class="n">x</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = '</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="s1">'Displacement = '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="go">Vibration frequency =  3.14285714286 Displacement = 7.234</span>
 </code></pre></div>
 </div>
 <p>The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = </span><span class="si">%s</span><span class="s1"> Displacement = </span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = </span><span class="si">%s</span><span class="s1"> Displacement = </span><span class="si">%s</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">Vibration frequency = 3.14285714286 Displacement = 7.234</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">%f</span></code> operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = </span><span class="si">%6.2f</span><span class="s1"> Displacement = </span><span class="si">%6.2f</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = </span><span class="si">%6.2f</span><span class="s1"> Displacement = </span><span class="si">%6.2f</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">Vibration frequency =   3.14 Displacement =   7.23</span>
 </code></pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">%E</span></code> operator specifies scientific notation and indicates the number of decimal places.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = </span><span class="si">%.6E</span><span class="s1"> Displacement = </span><span class="si">%.2E</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = </span><span class="si">%.6E</span><span class="s1"> Displacement = </span><span class="si">%.2E</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">Vibration frequency = 3.142857E+00 Displacement = 7.23E+00</span>
 </code></pre></div>
 </div>
@@ -1180,7 +1180,7 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 <p>The <code class="docutils literal notranslate"><span class="pre">\\n</span></code> escape sequence inserts a new line.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">\\t</span></code> escape sequence inserts a tab character.</p>
 <p>For example,</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Vibration frequency = </span><span class="si">%+.6E</span><span class="se">\n</span><span class="s1">Displacement = </span><span class="si">%+.2E</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Vibration frequency = </span><span class="si">%+.6E</span><span class="se">\n</span><span class="s1">Displacement = </span><span class="si">%+.2E</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">Vibration frequency = +3.142857E+00</span>
 <span class="go">Displacement = +7.23E+00</span>
 </code></pre></div>
@@ -1192,7 +1192,7 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 <span class="go">while i &lt;= max:</span>
 <span class="go">    square = i**2</span>
 <span class="go">    cube = i**3</span>
-<span class="go">    print i, square, cube</span>
+<span class="go">    print (i, square, cube)</span>
 <span class="go">    i = i + 1</span>
 <span class="go">print 'Loop completed'</span>
 </code></pre></div>
@@ -1201,11 +1201,11 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 <h3 id="if-elif-and-else">if, elif, and else<a class="headerlink" href="#if-elif-and-else" title="此标题的永久链接">¶</a></h3>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">load</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">load</span> <span class="o">&gt;</span> <span class="mf">6.75</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Reached critical load'</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Reached critical load'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">elif</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mf">2.75</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Minimal load'</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Minimal load'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Typical load'</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Typical load'</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <h3 id="while">while<a class="headerlink" href="#while" title="此标题的永久链接">¶</a></h3>
@@ -1213,15 +1213,16 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">length</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mf">1E4</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">load</span> <span class="o">=</span> <span class="n">load</span> <span class="o">*</span> <span class="n">length</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="n">load</span>
-<span class="go">Use `break` to break out of a loop.</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">load</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">break</span></code> to break out of a loop.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">(</span><span class="n">Enter</span> <span class="n">a</span> <span class="n">number</span> <span class="ow">or</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">quit</span><span class="p">:</span><span class="s1">')</span>
 <span class="gp">... </span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">'0'</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="k">break</span>
 <span class="gp">... </span>    <span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span> <span class="n">x</span>
+<span class="gp">... </span>        <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Use <code class="docutils literal notranslate"><span class="pre">continue</span></code> to skip the rest of the loop and to go to the next iteration.</p>
@@ -1231,13 +1232,13 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 <span class="gp">... </span>    <span class="n">load</span> <span class="o">=</span> <span class="n">load</span> <span class="o">*</span> <span class="n">length</span>
 <span class="gp">... </span>    <span class="k">if</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="k">continue</span>   <span class="c1">#Do not print if negative</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="n">load</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">load</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <h3 id="for">for<a class="headerlink" href="#for" title="此标题的永久链接">¶</a></h3>
 <p>Use a sequence to control the start and the end of for loops. The <code class="docutils literal notranslate"><span class="pre">range()</span></code> function is an easy way to create a sequence.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="n">i</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#range" title="range"><span class="nb">range</span></a><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">0</span>
 <span class="go">1</span>
