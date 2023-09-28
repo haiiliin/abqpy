@@ -65,7 +65,7 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
   >>> from caePrefsAccess import printValuesList
   >>> guiPrefsFileName = getGuiPrefsFileName()
   >>> dispNames = getDisplayNamesInGuiPreferences(guiPrefsFileName)
-  >>> print dispNames
+  >>> print (dispNames)
   ['preludesim']
   >>> displayName = dispNames[0]
   >>> guiPrefs = openGuiPreferences(displayName)
