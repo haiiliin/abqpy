@@ -1139,13 +1139,50 @@
 <p>The following interface classes are provided:</p>
 <ul>
 <li><p><strong>Strings</strong></p>
-<p>The odb_String object provides a convenient means of storing and passing strings. The odb_String object also provides a simple interface to append and modify the data stored in the string.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">odb_String</span></code> object provides a convenient means of storing and passing strings. The <code class="docutils literal notranslate"><span class="pre">odb_String</span></code> object also provides a simple interface to append and modify the data stored in the string.</p>
 </li>
 <li><p><strong>Sequences</strong></p>
-<p>An odb_Sequence class is a container used to hold an ordered list of objects of a specific type. Data can be appended and retrieved from the sequence.The following odb_Sequence objects are provided to store integer, float, and enumeration &lt;data:odb_SequenceIntodb_SequenceFloatodb_SequenceStringodb_SequenceInvariantodb_SequenceElementFaceSequences&gt; of sequences are also available in the following forms:odb_SequenceSequenceFloatodb_SequenceSequenceSequenceFloatodb_SequenceSequenceIntodb_SequenceSequenceElementFaceThe following Abaqus objects are also stored as sequences:odb_SequenceNodeodb_SequenceElementodb_SequenceFieldValueodb_SequenceFrameodb_SequenceSectionPointodb_SequenceLoadCaseThe following Abaqus object can be collected in a sequence for utility operations:odb_SequenceFieldOutput</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">odb_Sequence</span></code> class is a container used to hold an ordered list of objects of a specific type. Data can be appended and retrieved from the sequence. The following <code class="docutils literal notranslate"><span class="pre">odb_Sequence</span></code> objects are provided to store integer, float, and enumeration data:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceInt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceFloat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceString</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceInvariant</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceElementFace</span></code></p></li>
+</ul>
+<p>Sequences of sequences are also available in the following forms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceSequenceFloat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceSequenceSequenceFloat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceSequenceInt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceSequenceElementFace</span></code></p></li>
+</ul>
+<p>The following Abaqus objects are also stored as sequences:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceNode</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceElement</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceFieldValue</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceFrame</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceSectionPoint</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceLoadCase</span></code></p></li>
+</ul>
+<p>The following Abaqus object can be collected in a sequence for utility operations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SequenceFieldOutput</span></code></p></li>
+</ul>
 </li>
 <li><p><strong>Repositories</strong></p>
-<p>Repositories are provided to store objects retrieved by name. Both the repositories and the content of the repositories are created by the API; the user can only retrieve objects from repositories. Iterators are provided to navigate the repositories.The following Abaqus repositories are provided:odb_PartRepositoryodb_FieldOutputRepositoryodb_SectionCategoryRepositoryodb_HistoryRegionRepositoryodb_SetRepositoryodb_HistoryOutputRepositoryodb_StepRepositoryodb_InstanceRepository</p>
+<p>Repositories are provided to store objects retrieved by name. Both the repositories and the content of the repositories are created by the API; the user can only retrieve objects from repositories. Iterators are provided to navigate the repositories. The following Abaqus repositories are provided:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_PartRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_FieldOutputRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SectionCategoryRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_HistoryRegionRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_SetRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_HistoryOutputRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_StepRepository</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">odb_InstanceRepository</span></code></p></li>
+</ul>
 </li>
 </ul>
 <p>More detail on these interface utility objects can be found in <a class="reference internal" href="../../../reference/odb.html"><span class="doc">Abaqus Output Database</span></a>.</p>
@@ -1153,25 +1190,23 @@
 <p>The following examples demonstrate the utility interface for each of the utility interface classes discussed:</p>
 <ul>
 <li><p><strong>Strings</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_String</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stressField</span><span class="p">.</span><span class="n">baseElementTypes</span><span class="p">()[</span><span class="mi">0</span><span class="p">];</span>
-<span class="n">odb_String</span><span class="w"> </span><span class="n">elementType</span><span class="w"> </span><span class="o">=</span>
-<span class="w">  </span><span class="n">odb_String</span><span class="p">(</span><span class="s">&quot;Element type is &quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_String</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stressField</span><span class="p">.</span><span class="n">baseElementTypes</span><span class="p">()[</span><span class="mi">0</span><span class="p">];</span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">elementType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb_String</span><span class="p">(</span><span class="s">&quot;Element type is &quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">type</span><span class="p">;</span>
 <span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elementType</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 </code></pre></div>
 </div>
 </li>
 <li><p><strong>Sequences</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">mySurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rootAssy</span><span class="p">.</span><span class="n">surfaces</span><span class="p">()[</span><span class="s">&quot;TARGET&quot;</span><span class="p">];</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">mySurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rootAssy</span><span class="p">.</span><span class="n">surfaces</span><span class="p">()[</span><span class="s">&quot;TARGET&quot;</span><span class="p">];</span>
 <span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="w"> </span><span class="n">instanceName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;PART-1-1&quot;</span><span class="p">;</span>
-<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElementFace</span><span class="w"> </span><span class="n">allFaces</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">mySurface</span><span class="p">.</span><span class="n">faces</span><span class="p">(</span><span class="n">instanceName</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElementFace</span><span class="w"> </span><span class="n">allFaces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mySurface</span><span class="p">.</span><span class="n">faces</span><span class="p">(</span><span class="n">instanceName</span><span class="p">);</span>
 <span class="n">odb_SequenceSequenceElementFace</span><span class="w"> </span><span class="n">newFaces</span><span class="p">;</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">allFaces_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFaces</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="n">allFaces_size</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">allFaces_size</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElementFace</span><span class="w"> </span><span class="n">fList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFaces</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
 <span class="w">    </span><span class="n">odb_SequenceElementFace</span><span class="w"> </span><span class="n">newList</span><span class="p">;</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">fList_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fList</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">&lt;</span><span class="n">fList_size</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">fList_size</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_ElementFaceEnum</span><span class="w"> </span><span class="n">face</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fList</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
 <span class="w">        </span><span class="n">newList</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">face</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
@@ -1181,8 +1216,8 @@
 </div>
 </li>
 <li><p><strong>Repositories</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_StepRepository</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span>
-<span class="n">odb_StepRepositoryIT</span><span class="w"> </span><span class="nf">iter</span><span class="w"> </span><span class="p">(</span><span class="n">stepCon</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_StepRepository</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span>
+<span class="n">odb_StepRepositoryIT</span><span class="w"> </span><span class="nf">iter</span><span class="p">(</span><span class="n">stepCon</span><span class="p">);</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">iter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">iter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;step name : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iter</span><span class="p">.</span><span class="n">currentValue</span><span class="p">();</span>
