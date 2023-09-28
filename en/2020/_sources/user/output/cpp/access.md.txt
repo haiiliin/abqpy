@@ -8,13 +8,13 @@ It is important to ensure that the compiler used to compile and link the existin
 
 Before any calls are made to the C++ interface, the following call must be made to initialize the interface:
 
-```cpp
+```c++
 odb_initializeAPI();
 ```
 
 This call is generated automatically when the **abaqus make** utility is run but must be included in any application that is not compiled and linked using the **abaqus make** utility. After all calls to the C++ interface have been completed, the interface may be deactivated by including a call to
 
-```cpp
+```c++
 odb_finalizeAPI();
 ```
 
@@ -30,7 +30,7 @@ The libraries necessary to link applications that access the C++ interface are l
 
 - **Windows**
 
-  _abaqus_dircodelib_
+  _abaqus_dir\code\lib_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 
@@ -46,7 +46,7 @@ The runtime libraries required to execute a program that accesses the C++ interf
 
 - **Windows**
 
-  _abaqus_dircodebin_
+  _abaqus_dir\code\bin_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 
@@ -54,7 +54,7 @@ The correct path to the Abaqus runtime libraries must be specified prior to star
 
 ## Header file location
 
-he header files required to compile a program that accesses the C++ interface are located in the following directories:
+The header files required to compile a program that accesses the C++ interface are located in the following directories:
 
 - **Linux**
 
@@ -62,7 +62,7 @@ he header files required to compile a program that accesses the C++ interface ar
 
 - **Windows**
 
-  _abaqus_dircodeinclude_
+  _abaqus_dir\code\include_
 
 where **abaqus_dir** is the name of the directory in which Abaqus is installed. To determine the location of **abaqus_dir** at your site, type `abaqus whereami` at an operating system prompt.
 

@@ -4,7 +4,7 @@ This section discusses computations with Abaqus results in the Abaqus Scripting 
 
 ## Rules for the mathematical operations
 
-Mathematical operations are supported for FieldOutput, FieldValue, and HistoryOutput objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results.
+Mathematical operations are supported for `FieldOutput`, `FieldValue`, and `HistoryOutput` objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results.
 
 The following rules apply:
 
@@ -12,7 +12,7 @@ The following rules apply:
 
 - The invariants are computed from the component values. For example, taking the absolute value of a tensor can result in negative values of the pressure invariant.
 
-- Operations between FieldOutput, FieldValue, and HistoryOutput objects are not supported.
+- Operations between `FieldOutput`, `FieldValue`, and `HistoryOutput` objects are not supported.
 
 - Multiplication and division are not supported between two vector objects nor between two tensor objects.
 
@@ -22,29 +22,26 @@ The following rules apply:
   - A three-dimensional surface tensor cannot be added to a three-dimensional planar tensor.
   - INTEGRATION_POINT data cannot be added to ELEMENT_NODAL data.
 
-- If the fields in the expression were obtained using the getSubset method, the same getSubset operations must have been applied in the same order to obtain each field.
+- If the fields in the expression were obtained using the `getSubset` method, the same `getSubset` operations must have been applied in the same order to obtain each field.
 
 - Arguments to the trigonometric functions must be in radians.
 
 - Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor.
 
-- Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.
+- Operations between `FieldValue` objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the `FieldValue` computed will not be associated with a location. If the local coordinate systems of the `FieldValue` objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.
 
-The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, {ref}`computations-with-fieldoutput-objects`):
+The `FieldOutput` operations are significantly more efficient than the `FieldValue` operators. You can save the computed `FieldOutput` objects with the following procedure (see the example, {ref}`computations-with-fieldoutput-objects`):
 
-- Create a new FieldOutput object in the output database.
-- Use the `addData` method to add the new computed field objects to the new FieldOutput object.
+- Create a new `FieldOutput` object in the output database.
+- Use the `addData` method to add the new computed field objects to the new `FieldOutput` object.
 
-```cpp
+```c++
 // Get fields from odb.
 odb_StepRepository& stepCon = odb.steps();
-odb_SequenceFrame& frameCon1 =
-    stepCon["Step-1"].frames();
-odb_FieldOutputRepository& fieldCon1 =
-    frameCon1.get(1).fieldOutputs();
+odb_SequenceFrame& frameCon1 = stepCon["Step-1"].frames();
+odb_FieldOutputRepository& fieldCon1 = frameCon1.get(1).fieldOutputs();
 odb_SequenceFrame& frameCon2 = stepCon["Step-2"].frames();
-odb_FieldOutputRepository& fieldCon2 =
-    frameCon2.get(1).fieldOutputs();
+odb_FieldOutputRepository& fieldCon2 = frameCon2.get(1).fieldOutputs();
 odb_FieldOutput& field1 = fieldCon1["U"];
 odb_FieldOutput& field2 = fieldCon2["U"];
 
@@ -54,12 +51,9 @@ odb_FieldOutput deltaDisp = field2 - field1;
 
 // Save new field.
 
-odb_Step& newStep = odb.Step("user", "user defined results",
-        odb_Enum::TIME,1.0);
+odb_Step& newStep = odb.Step("user", "user defined results", odb_Enum::TIME, 1.0);
 odb_Frame newFrame = newStep.Frame(0, 0.0);
-odb_FieldOutput& newField = newFrame.FieldOutput("U",
-                "delta displacements",
-                odb_Enum::VECTOR);
+odb_FieldOutput& newField = newFrame.FieldOutput("U", "delta displacements", odb_Enum::VECTOR);
 newField.addData(deltaDisp);
 ```
 
@@ -69,15 +63,15 @@ Table 1 describes the abbreviations that are used in mathematical operations.
 
 **Table 1. Abbreviations.**
 
-| Abbreviation | Allowable values                                                                            |
-| ------------ | ------------------------------------------------------------------------------------------- |
-| all          | FieldOutput objects, FieldValue objects, HistoryVariable objects, or floating point numbers |
-| float        | floating point numbers                                                                      |
-| FO           | FieldOutput objects                                                                         |
-| FV           | FieldValue objects                                                                          |
-| HO           | HistoryOutput objects                                                                       |
+| Abbreviation | Allowable values                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------- |
+| all          | `FieldOutput` objects, `FieldValue` objects, `HistoryVariable` objects, or floating point numbers |
+| float        | floating point numbers                                                                            |
+| FO           | `FieldOutput` objects                                                                             |
+| FV           | `FieldValue` objects                                                                              |
+| HO           | `HistoryOutput` objects                                                                           |
 
-Table 2 shows the valid operations on FieldOutput objects.
+Table 2 shows the valid operations on `FieldOutput` objects.
 
 **Table 2. Valid operations.**
 
@@ -124,28 +118,18 @@ You use envelope calculations to retrieve the extreme value for an output variab
 
 The following operators consider a list of fields and perform the envelope calculation:
 
-```cpp
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields);
+```c++
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields);
 
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields,
-    odb_Enum::odb_InvariantEnum invariant);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields,
-    odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
 
-odb_SequenceFieldOutput flds =
-    maxEnvelope(odb_SequenceFieldOutput& fields,
-    const odb_String& componentLabel);
-odb_SequenceFieldOutput flds =
-    minEnvelope(odb_SequenceFieldOutput& fields,
-    const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields, const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields, const odb_String& componentLabel);
 ```
 
-The envelope commands return two FieldOutput objects.
+The envelope commands return two `FieldOutput` objects.
 
 - The first object contains the requested extreme values.
 - The second object contains the indices of the fields for which the extreme values were found. The indices derive from the order in which you supplied the fields to the command.
@@ -154,11 +138,11 @@ The optional **invariant** argument is a Symbolic Constant specifying the invari
 
 The following rules apply to envelope calculations:
 
-- Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the MAGNITUDE invariant and for tensors you can supply the MISES invariant.
+- Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the `MAGNITUDE` invariant and for tensors you can supply the `MISES` invariant.
 
 - The fields being compared must be similar. For example,
 
-  - VECTOR and TENSOR_3D_FULL fields cannot appear in the same list.
+  - `VECTOR` and `TENSOR_3D_FULL` fields cannot appear in the same list.
   - The output region of all the fields must be the same. All the fields must apply to the whole model, or all the fields must apply to the same set.
 
 ## Transformation of results
