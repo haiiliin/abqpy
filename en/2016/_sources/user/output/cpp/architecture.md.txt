@@ -14,7 +14,7 @@ A constructor is a method that creates an object. The Abaqus C++ API uses the fo
 
   Constructors for nonpersistent objects are the standard C++ constructors. For example,
 
-  ```cpp
+  ```c++
   odb_String partName("New_Part");
   ```
 
@@ -22,24 +22,23 @@ A constructor is a method that creates an object. The Abaqus C++ API uses the fo
 
   You create a persistent object by calling a method on an existing Abaqus C++ API object. In Abaqus the convention is that the constructor method name corresponds to the name of the object created and that the first letter of the constructor name is capitalized. The object can be accessed using the return value of the constructor call or using a lowercase version of the method name. For example, a Frame object can be created using the following:
 
-  ```cpp
-  odb_Frame s1_writeFrame2 = step1.Frame(2, 1.3,
-                 "frame 2 of step1 at time 1.3");
+  ```c++
+  odb_Frame s1_writeFrame2 = step1.Frame(2, 1.3, "frame 2 of step1 at time 1.3");
   ```
 
   The Frame object can be retrieved with the following:
 
-  ```cpp
-  odb_Frame& s1_readFrame2 = step1.frames(1);
+  ```c++
+  odb_Frame &s1_readFrame2 = step1.frames(1);
   ```
 
 - **Constructors for objects created in large quantities**
 
   For efficiency the constructors for objects that you create in large quantities, such as elements, nodes, and field values, do not follow the capitalized constructor name rule used for persistent objects. Nodes, elements, and field values are created using the `addNodes`, `addElements`, and `addData` methods, respectively. For example, you use the addNodes method to create and retrieve nodes:
 
-  ```cpp
+  ```c++
   part1.addNodes(nodeLabels, coordinates, nodeSetName);
-  const odb_SequenceNode& nodeSeq = part1.nodes();
+  const odb_SequenceNode &nodeSeq = part1.nodes();
 
   odb_Node node1 = part1.nodes(1);
   ```

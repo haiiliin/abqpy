@@ -504,15 +504,15 @@
 <p>The value of a Boolean argument can appear to be ambiguous; for example,</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">newModel</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">ModelFromInputFile</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'beamTutorial'</span><span class="p">,</span> <span class="n">inputFileName</span><span class="o">=</span><span class="s1">'Deform'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">newModel</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">noPartsInputFile</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span><span class="p">)</span>
 <span class="go">OFF</span>
 </code></pre></div>
 </div>
 <p>Because of this ambiguity, you should test a Boolean for a positive or negative value, as opposed to comparing it to a specific value like 0, OFF, or False. For example, the following statements show how you should test the value of a Boolean member:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="p">(</span><span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Input file will be written without parts and assemblies. '</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">newModel</span><span class="o">.</span><span class="n">noPartsInputFile</span><span class="p">:</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Input file will be written without parts and assemblies. '</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Input file will be written with parts and assemblies.'</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Input file will be written with parts and assemblies.'</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <h2 id="repositories"><span id="id1"></span>Repositories<a class="headerlink" href="#repositories" title="Permalink to this heading">¶</a></h2>
@@ -546,7 +546,7 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Front view'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
 <span class="go">        ...</span>
-<span class="go">        print key</span>
+<span class="go">        print (key)</span>
 <span class="go">Front view</span>
 <span class="go">Top view</span>
 <span class="go">Side view</span>
