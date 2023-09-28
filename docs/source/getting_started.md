@@ -176,7 +176,7 @@ Now you can run your Abaqus/Python script with the following methods:
 
 ```{warning}
 `abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
-If you run the script under the debug mode, the script will be submitted to Abaqus PDE where you can debug it.
+If you run the script under the debug mode, the script will be opened in Abaqus PDE where you can debug it.
 ```
 
 - Create an Abaqus Model
