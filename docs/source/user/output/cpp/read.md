@@ -223,6 +223,7 @@ The following list describes the objects in model data and the commands you use 
   for (matIT.first(); !matIT.isDone(); matIT.next()) {
       cout << "Material Name : " << matIT.currentKey().CStr() << endl;
       const odb_Material& myMaterial = matIT.currentValue();
+  }
   ```
 
   To print isotropic elastic material properties in a material object:
@@ -406,7 +407,9 @@ Field output data are stored in the fieldOutputs repository under the OdbFrame o
 odb_FieldOutputRepository& fieldOutputRep = lastFrame.fieldOutputs();
 odb_FieldOutputRepositoryIT fieldIter(fieldOutputRep);
 for (fieldIter.first(); !fieldIter.isDone(); fieldIter.next()) cout << fieldIter.currentKey().CStr() << endl;
+```
 
+```
 S U LE CSHEAR1 ASURF / BSURF CSLIP1 ASURF / BSURF CPRESS ASURF / BSURF COPEN ASURF / BSURF UR3
 ```
 
