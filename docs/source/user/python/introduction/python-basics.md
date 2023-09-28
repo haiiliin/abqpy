@@ -610,6 +610,7 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 ```
 
 Use `break` to break out of a loop.
+
 ```pycon
 >>> while 1:
 ...     x = raw_input(Enter a number or 0 to quit:')
