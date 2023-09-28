@@ -112,7 +112,22 @@ class AbqpyCLI(AbqpyCLIBase):
 
     viewer = cae
 
-    @typechecked
+    def pde(self, *scripts: str, script: str | None = None, **options):
+        """Run Abaqus/PDE command.
+
+        Parameters
+        ----------
+        scripts : str
+            Scripts to be included in the Abaqus/PDE session
+        script : str, optional
+            Script to be opened at startup in Abaqus/PDE, by default None
+        options
+            Abaqus/CAE command line arguments
+        """
+        cae_opts = self._parse_options(**options)
+        args = (*scripts,) + ((f"script={script}",) if script else ()) + ("-pde",) + ((cae_opts,) if cae_opts else ())
+        self.abaqus("pde", *args)
+
     def python(
         self,
         script: str,
