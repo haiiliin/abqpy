@@ -125,7 +125,7 @@ class AbqpyCLI(AbqpyCLIBase):
             Abaqus/CAE command line arguments
         """
         cae_opts = self._parse_options(**options)
-        args = (*scripts,) + ((f"script={script}",) if script else ()) + ("-pde",) + ((cae_opts, ) if cae_opts else ())
+        args = (*scripts,) + ((f"script={script}",) if script else ()) + ("-pde",) + ((cae_opts,) if cae_opts else ())
         self.abaqus("pde", *args)
 
     def python(
