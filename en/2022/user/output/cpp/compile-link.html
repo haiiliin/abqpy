@@ -1082,12 +1082,11 @@
 
 <h1 id="compiling-and-linking-your-c-source-code">Compiling and linking your C++ source code<a class="headerlink" href="#compiling-and-linking-your-c-source-code" title="Permalink to this heading">¶</a></h1>
 <p>Sample postprocessing programs to perform commonly exercised tasks are presented in separate sections in this chapter. These and other C++ postprocessing programs must be compiled and linked using the make parameter when running the Abaqus execution procedure (see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-makeproc.htm?contextscope=all">Making user-defined executables and subroutines</a>). To link properly, the programs cannot contain a C++ main routine. Instead, the programs must begin with a C++ function called ABQmain.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">ABQmain</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="c1">//Insert user code here</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">ABQmain</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Insert user code here</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 </div>
