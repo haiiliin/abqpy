@@ -19,6 +19,7 @@ The following interface classes are provided:
   - `odb_SequenceElementFace`
 
   Sequences of sequences are also available in the following forms:
+
   - `odb_SequenceSequenceFloat`
   - `odb_SequenceSequenceSequenceFloat`
   - `odb_SequenceSequenceInt`

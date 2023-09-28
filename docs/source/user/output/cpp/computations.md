@@ -63,13 +63,13 @@ Table 1 describes the abbreviations that are used in mathematical operations.
 
 **Table 1. Abbreviations.**
 
-| Abbreviation | Allowable values                                                                            |
-| ------------ | ------------------------------------------------------------------------------------------- |
+| Abbreviation | Allowable values                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------- |
 | all          | `FieldOutput` objects, `FieldValue` objects, `HistoryVariable` objects, or floating point numbers |
-| float        | floating point numbers                                                                      |
-| FO           | `FieldOutput` objects                                                                         |
-| FV           | `FieldValue` objects                                                                          |
-| HO           | `HistoryOutput` objects                                                                       |
+| float        | floating point numbers                                                                            |
+| FO           | `FieldOutput` objects                                                                             |
+| FV           | `FieldValue` objects                                                                              |
+| HO           | `HistoryOutput` objects                                                                           |
 
 Table 2 shows the valid operations on `FieldOutput` objects.
 
