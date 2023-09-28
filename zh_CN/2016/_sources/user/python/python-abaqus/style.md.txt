@@ -31,7 +31,7 @@ Some methods are not associated with an object and appear at the end of a chapte
 
 The description of each object in the {doc}`/reference/index` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:
 
-```python2
+```python
 from abaqusConstants import *
 ```
 
@@ -39,8 +39,9 @@ These should be the first statement in all your Abaqus Scripting Interface scrip
 
 The following is the access description for the Material object:
 
-```python2
+```python
 import material
+
 mdb.models[name].materials[name]
 ```
 
@@ -48,17 +49,17 @@ The first line of the access description indicates the module that Abaqus/CAE im
 
 The access description also specifies where instances of the object are located in the data model. In the previous example the second line indicates how your script can access Material objects from a particular model. You must qualify a material object, command, or member with the variable mdb, as described in Functions and modules. For example,
 
-```python2
+```python
 mdb.models[crash].Material[steel]
-mdb.models[crash].materials[steel].Elastic(
-    table=((30000000.0, 0.3), ))
+mdb.models[crash].materials[steel].Elastic(table=((30000000.0, 0.3),))
 elasticityType = mdb.models[crash].materials[steel].elastic.type
 ```
 
 Similarly, if you are reading from an output database, the following is the access description for the HistoryRegion object:
 
-```python2
+```python
 import odbAccess
+
 session.odbs[name].steps[name].historyRegions[name]
 ```
 
@@ -66,18 +67,17 @@ The first line indicates that Abaqus/CAE imported the odbAccess module to make t
 
 The Access description for the FieldOutput object is
 
-```python2
+```python
 session.odbs[name].steps[name].frames[i].fieldOutputs[name]
 ```
 
 The following statements show how you use the object described by this Access description:
 
-```python2
-sideLoadStep = session.odbs['Forming loads'].steps['Side load']
+```python
+sideLoadStep = session.odbs["Forming loads"].steps["Side load"]
 lastFrame = sideLoadStep.frames[-1]
-stressData = lastFrame.fieldOutputs['S']
-integrationPointData = stressData.getSubset(
-    position=INTEGRATION_POINT)
+stressData = lastFrame.fieldOutputs["S"]
+integrationPointData = stressData.getSubset(position=INTEGRATION_POINT)
 invariantsData = stressData.validInvariants
 ```
 
@@ -88,13 +88,13 @@ invariantsData = stressData.validInvariants
 
 A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/reference/index` includes a path to the command. For example, the following describes the path to the Viewport constructor:
 
-```python2
+```python
 session.Viewport
 ```
 
 Some constructors include more than one path. For example, you can create a datum that is associated with either a Part object or the RootAssembly object, and each path is listed.
 
-```python2
+```python
 mdb.models[name].parts[name].DatumAxisByCylFace
 mdb.models[name].rootAssembly.DatumAxisByCylFace
 ```
@@ -105,27 +105,32 @@ If you are using the Abaqus Scripting Interface to read data from an output data
 
 For example, the Path description for the FieldOutput constructor is
 
-```python2
+```python
 session.odbs[name].steps[name].frames[i].FieldOutput
 ```
 
 The following statement creates a FieldOutput object:
 
-```python2
-myFieldOutput = session.odbs[name].steps['Side load'].frames[-1].FieldOutput(name='S', description='stress', type=TENSOR_3D_FULL)
+```python
+myFieldOutput = (
+    session.odbs[name]
+    .steps["Side load"]
+    .frames[-1]
+    .FieldOutput(name="S", description="stress", type=TENSOR_3D_FULL)
+)
 ```
 
 ## Arguments
 
 The ellipsis `(...)` in the command description indicates that the command takes one or more arguments. For example, the Viewport constructor takes arguments.
 
-```python2
+```python
 Viewport(...)
 ```
 
 In contrast, the `makeCurrent` method takes no arguments.
 
-```python2
+```python
 makeCurrent()
 ```
 
@@ -137,7 +142,7 @@ Some objects have no constructors; Abaqus creates the objects for you. For such 
 
 You can use the `setValues` method to modify the value of a member; for example, to modify the value of the triad member of the defaultViewportAnnotationsOptions object. When you call session.
 
-```python2
+```python
 defaultViewportAnnotationOptions.setValues(triad=OFF)
 ```
 
@@ -145,30 +150,26 @@ the value of the triad member is set to off. The other member values remain unch
 
 Keyword and positional arguments are described in Creating functions. We recommend that you use keyword arguments since they can be supplied in any order and they make your scripts easier to read and debug; for example,
 
-```python2
-newViewport = session.Viewport(name='myViewport',
-    origin=(10, 10), width=100, height=50)
+```python
+newViewport = session.Viewport(name="myViewport", origin=(10, 10), width=100, height=50)
 ```
 
 If you choose not to use keywords, the arguments must be provided in the order in which they are documented.
 
-```python2
-newViewport = session.Viewport('myViewport',
-    (10, 10), 100, 50)
+```python
+newViewport = session.Viewport("myViewport", (10, 10), 100, 50)
 ```
 
 You can use a combination of keyword and positional arguments. Keyword arguments can be supplied after positional arguments; however, positional arguments cannot be entered after keyword arguments. For example, you can use the following statement:
 
-```python2
-newViewport = session.Viewport('myViewport',
-    (10, 10), width=100, height=50)
+```python
+newViewport = session.Viewport("myViewport", (10, 10), width=100, height=50)
 ```
 
 However, you cannot use the following statement:
 
-```python2
-newViewport = session.Viewport(name='myViewport',
-    (10, 10), 100, 50)
+```python
+newViewport = session.Viewport(name="myViewport", (10, 10), 100, 50)
 ```
 
 You will find it easier to use keyword arguments so that you do not have to concern yourself with the positional requirements.
@@ -177,14 +178,13 @@ You will find it easier to use keyword arguments so that you do not have to conc
 
 All commands return a value. Many commands return the None object described in {ref}`python-none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object.
 
-```python2
-newViewport = session.Viewport(name='myViewport',
-    origin=(10, 10), width=100, height=50)
+```python
+newViewport = session.Viewport(name="myViewport", origin=(10, 10), width=100, height=50)
 ```
 
 You can use the object returned by a command in subsequent statements. For example, the `titlebar` member of a Viewport object is a Boolean specifying whether the viewport title bar is displayed and can have a value of either ON or OFF. The following statement tests the titlebar member of the new viewport created by the previous statement:
 
-```python2
+```python
 if newViewport.titleBar:
-    print 'The title bar will be displayed.'
+    print("The title bar will be displayed.")
 ```
