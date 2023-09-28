@@ -1083,17 +1083,14 @@
 <h1 id="exception-handling-in-an-output-database">Exception handling in an output database<a class="headerlink" href="#exception-handling-in-an-output-database" title="此标题的永久链接">¶</a></h1>
 <p>Support for C++ exception handling is provided in the API to the output database.</p>
 <p>For example, in your C++ program you may wish to customize the error message when an output database was not opened successfully as follows:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_String</span><span class="w"> </span><span class="n">invalidOdbName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;invalid.odb&quot;</span><span class="p">;</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_String</span><span class="w"> </span><span class="n">invalidOdbName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;invalid.odb&quot;</span><span class="p">;</span>
 <span class="k">try</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="n">invalidOdbName</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="k">catch</span><span class="p">(</span><span class="n">odb_BaseException</span><span class="o">&amp;</span><span class="w"> </span><span class="n">exc</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">odb_BaseException</span><span class="o">&amp;</span><span class="w"> </span><span class="n">exc</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;odbBaseException caught</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Abaqus error message: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">exc</span><span class="p">.</span><span class="n">UserReport</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span>
-<span class="w">    </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Abaqus error message: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">exc</span><span class="p">.</span><span class="n">UserReport</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Customized error message here</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">catch</span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Unknown Exception.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
