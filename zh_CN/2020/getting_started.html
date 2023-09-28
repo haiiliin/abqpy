@@ -537,7 +537,8 @@ will exit the interpreter, because the script will already run in Abaqus Python 
 </ul>
 <div class="warning admonition">
 <p class="admonition-title">警告</p>
-<p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 不支持调试，因为 Abaqus 没有为 Abaqus/CAE 之外的 Python 脚本提供一个调试器。 如果您在调试模式下运行脚本，脚本将不会提交给 Abaqus。 但它将在安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 的外部 Python 解释器中运行 。 由于 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 没有实现全部的 Abaqus/Python 接口，脚本可能无法（而且很可能）正常运行。 然而，对于一些简单的脚本，脚本可能可以正常工作，你可以使用调试器来粗略检查 Abaqus 中的变量。 但脚本仍然不会提交给 Abaqus。</p>
+<p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
+If you run the script under the debug mode, the script will be opened in Abaqus PDE where you can debug it.</p>
 </div>
 <ul>
 <li><p>创建一个 Abaqus 模型</p>
