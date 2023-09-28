@@ -24,11 +24,12 @@ def run(cae: bool = True) -> None:
     gettrace = getattr(sys, "gettrace", None)
     debug = debug or (gettrace is not None and gettrace())
 
-    # Check if it is imported by sphinx to generate docs
+    # Check if it is imported by sphinx to generate docs or skipped by pytest
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
+    skip = os.environ.get("ABQPY_SKIP_ABAQUS", "false").lower() == "true"
 
     # If making docs, return
-    if make_docs:
+    if make_docs or skip:
         return
 
     # If it is a jupyter notebook, convert it to python script
