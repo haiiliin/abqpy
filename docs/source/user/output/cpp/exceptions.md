@@ -7,13 +7,13 @@ For example, in your C++ program you may wish to customize the error message whe
 ```c++
 odb_String invalidOdbName = "invalid.odb";
 try {
-  odb_Odb& odb = openOdb(invalidOdbName);
+    odb_Odb& odb = openOdb(invalidOdbName);
 } catch (odb_BaseException& exc) {
-  cerr << "odbBaseException caught\n";
-  cerr << "Abaqus error message: " << exc.UserReport().CStr() << endl;
-  cerr << "Customized error message here\n";
+    cerr << "odbBaseException caught\n";
+    cerr << "Abaqus error message: " << exc.UserReport().CStr() << endl;
+    cerr << "Customized error message here\n";
 } catch (...) {
-  cerr << "Unknown Exception.\n";
+    cerr << "Unknown Exception.\n";
 }
 ```
 

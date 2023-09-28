@@ -6,8 +6,8 @@ Sample postprocessing programs to perform commonly exercised tasks are presented
 #include <odb_API.h>
 
 int ABQmain(int argc, char **argv) {
-  // Insert user code here
-  return 0
+    // Insert user code here
+    return 0
 }
 ```
 

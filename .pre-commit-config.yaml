@@ -18,7 +18,7 @@ repos:
         additional_dependencies:
           - clang-format==14.0.6
         args:
-          - --style=Google
+          - --style=file:.clang-format
 
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: "v3.0.3"

@@ -33,8 +33,7 @@ To define the geometry of your model, you first create the parts that are used b
   If the part was created by Abaqus/CAE, the description of the native Abaqus/CAE geometry is stored in the model database, but it is not stored in the output database. A part is stored in an output database as a collection of nodes, elements, surfaces, and sets. You use the Part constructor to add a part to the Odb object. You can specify the type of the part; however, only DEFORMABLE_BODY is currently supported. For example,\`
 
   ```c++
-  odb_Part& part1 =
-      odb.Part("part-1", odb_Enum::THREE_D, odb_Enum::DEFORMABLE_BODY);
+  odb_Part& part1 = odb.Part("part-1", odb_Enum::THREE_D, odb_Enum::DEFORMABLE_BODY);
   ```
 
   For a full description of the Part constructor, see {py:class}`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.
@@ -49,13 +48,12 @@ To define the geometry of your model, you first create the parts that are used b
   nodeLabels.append(5);
   nodeLabels.append(7);
   nodeLabels.append(11);
-  double c[6][3] = {{2.0, 1.0, 0.0}, {1.0, 1.0, 0.0}, {1.0, 0.0, 0.0},
-                    {2.0, 0.0, 0.0}, {1.0, 0.0, 1.0}, {2.0, 0.0, 1.0}};
+  double c[6][3] = {{2.0, 1.0, 0.0}, {1.0, 1.0, 0.0}, {1.0, 0.0, 0.0}, {2.0, 0.0, 0.0}, {1.0, 0.0, 1.0}, {2.0, 0.0, 1.0}};
   odb_SequenceSequenceFloat nodeCoor;
   for (int n = 0; n < nodeLabels.size(); n++) {
-    odb_SequenceFloat loc;
-    for (int i = 0; i < 3; i++) loc.append(c[n][i]);
-    nodeCoor.append(loc);
+      odb_SequenceFloat loc;
+      for (int i = 0; i < 3; i++) loc.append(c[n][i]);
+      nodeCoor.append(loc);
   }
   part1.addNodes(nodeLabels, nodeCoor, "nodes_1");
   ```
@@ -70,9 +68,9 @@ To define the geometry of your model, you first create the parts that are used b
   const int numNodePerEl = 4;
   int conn[2][numNodePerEl] = {{1, 2, 3, 5}, {5, 3, 7, 11}};
   for (int e = 0; e < elLabels.size(); e++) {
-    odb_SequenceInt l;
-    for (int i = 0; i < numNodePerEl; i++) l.append(conn[e][i]);
-    connect.append(l);
+      odb_SequenceInt l;
+      for (int i = 0; i < numNodePerEl; i++) l.append(conn[e][i]);
+      connect.append(l);
   }
   part1.addElements(elLabels, connect, "S4R", "s4_els", shellCat);
   ```
@@ -171,8 +169,7 @@ To define the geometry of your model, you first create the parts that are used b
   ```c++
   odb_String sectionName("Homogeneous Solid Section");
   float thickness = 2.0;
-  odb_HomogeneousSolidSection& mySection =
-      sectionApi.HomogeneousSolidSection(sectionName, materialName, thickness);
+  odb_HomogeneousSolidSection& mySection = sectionApi.HomogeneousSolidSection(sectionName, materialName, thickness);
   ```
 
   To create a circular beam profile object in the output database:
@@ -210,8 +207,7 @@ To write results data to the output database, you first create the Step objects 
   ```c++
   odb_Step& step1 = odb.Step("s1", "Perturbation Step", odb_Enum::TIME);
   odb_Step& step2 = odb.Step("sT", "Time domain analysis", odb_Enum::TIME, 1.0);
-  odb_Step& step3 =
-      odb.Step("sF", "Frequency analysis", odb_Enum::FREQUENCY, 123.4);
+  odb_Step& step3 = odb.Step("sF", "Frequency analysis", odb_Enum::FREQUENCY, 123.4);
   ```
 
   The `Step` constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see {py:class}`~abaqus.Step.Step.Step`.
@@ -239,8 +235,7 @@ vectorCompLabels.append("3");
 odb_SequenceInvariant vectorInvar;
 vectorInvar.append(odb_Enum::MAGNITUDE);
 odb_FieldOutput& vectorField =
-    frameOne.FieldOutput("U", "displacement vector", odb_Enum::VECTOR,
-                         vectorCompLabels, vectorInvar);
+    frameOne.FieldOutput("U", "displacement vector", odb_Enum::VECTOR, vectorCompLabels, vectorInvar);
 
 odb_SequenceInt labels2;
 labels2.append(3);
@@ -314,8 +309,7 @@ tensorInvar.append(odb_Enum::MID_PRINCIPAL);
 tensorInvar.append(odb_Enum::MIN_PRINCIPAL);
 
 odb_FieldOutput& tensorField =
-    frameOne.FieldOutput("S", "stress tensor", odb_Enum::TENSOR_3D_FULL,
-                         tensorCompLabels, tensorInvar);
+    frameOne.FieldOutput("S", "stress tensor", odb_Enum::TENSOR_3D_FULL, tensorCompLabels, tensorInvar);
 
 odb_SequenceInt tensorLabels;
 tensorLabels.append(9);
@@ -339,8 +333,7 @@ t2.append(33.0);
 tensorDat.append(t1);
 tensorDat.append(t2);
 
-tensorField.addData(odb_Enum::CENTROID, instanceA, tensorLabels, tensorDat,
-                    topShell);
+tensorField.addData(odb_Enum::CENTROID, instanceA, tensorLabels, tensorDat, topShell);
 ```
 
 For a full description of the `addData` command, see {py:meth}`~abaqus.Odb.FieldOutput.FieldOutput.addData`.
@@ -381,8 +374,7 @@ For a full description of the HistoryPoint command, see {py:class}`~abaqus.Odb.H
 You then use the HistoryRegion constructor to create a HistoryRegion object:
 
 ```c++
-odb_HistoryRegion& hr1 =
-    step1.HistoryRegion("ElHist", "output at element", hPoint1);
+odb_HistoryRegion& hr1 = step1.HistoryRegion("ElHist", "output at element", hPoint1);
 ```
 
 For a full description of the HistoryRegion command, see {py:class}`~abaqus.Odb.HistoryRegion.HistoryRegion`.
@@ -390,8 +382,7 @@ For a full description of the HistoryRegion command, see {py:class}`~abaqus.Odb.
 You use the HistoryOutput constructor to add variables to the HistoryRegion object.
 
 ```c++
-odb_HistoryRegion& hr1 =
-    step1.HistoryRegion("ElHist", "output at element", hPoint1);
+odb_HistoryRegion& hr1 = step1.HistoryRegion("ElHist", "output at element", hPoint1);
 ```
 
 Each HistoryOutput object contains a sequence of (**frameValue**, **value**) sequences. The HistoryOutput object has a method (addData) for adding data. Each data item is a sequence of (**frameValue**, **value**). In a time domain analysis (**domain** = TIME) the sequence is (**stepTime**, **value**). In a frequency domain analysis (**domain** = FREQUENCY) the sequence is (**frequency**, **value**). In a modal domain analysis (**domain** = MODAL) the sequence is (**mode**, **value**).

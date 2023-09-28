@@ -96,8 +96,7 @@ odb_StepContainer stepCon = odb.steps();
 odb_Step step = stepCon["Side load"];
 odb_SequenceFrame frameSeq = step.frames();
 odb_Frame frame = frameSeq.Get(frameSeq.Size() - 1);
-odb_FieldOutput& myFieldOutput =
-    frame.FieldOutput("S", "stress", odb_Enum::TENSOR_3D_FULL);
+odb_FieldOutput& myFieldOutput = frame.FieldOutput("S", "stress", odb_Enum::TENSOR_3D_FULL);
 ```
 
 ## Prototype
@@ -105,8 +104,7 @@ odb_FieldOutput& myFieldOutput =
 {doc}`/reference/odb` contains a prototype section for each C++ command. The prototype provides the type returned by the command, the name of the command, and a list of all its arguments along with the type of each argument. Required arguments appear first in the list followed by default arguments along with their default value. For example, the Frame constructor is given as
 
 ```c++
-odb_Frame Frame(int incrementNumber, float frameValue,
-                const odb_String& description = "");
+odb_Frame Frame(int incrementNumber, float frameValue, const odb_String& description = "");
 ```
 
 indicating that the **incrementNumber** and **frameValue** arguments are required, that the optional **description** argument has a default value of the empty string, and that the method returns a reference to the Frame object created.
@@ -122,8 +120,7 @@ odb_Odb newOdb& = Odb("new", "", "", fileName);
 You can use the object returned by a command in subsequent statements. The following statement uses the output database created by the previous statement:
 
 ```c++
-odb_Part& part =
-    newOdb.Part("PART-1-1", odb_Enum::THREE_D, odb_Enum::DEFORMABLE_BODY);
+odb_Part& part = newOdb.Part("PART-1-1", odb_Enum::THREE_D, odb_Enum::DEFORMABLE_BODY);
 ```
 
 If an exception is raised while a statement is executing, the command does not return a value.

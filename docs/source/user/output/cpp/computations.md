@@ -51,11 +51,9 @@ odb_FieldOutput deltaDisp = field2 - field1;
 
 // Save new field.
 
-odb_Step& newStep =
-    odb.Step("user", "user defined results", odb_Enum::TIME, 1.0);
+odb_Step& newStep = odb.Step("user", "user defined results", odb_Enum::TIME, 1.0);
 odb_Frame newFrame = newStep.Frame(0, 0.0);
-odb_FieldOutput& newField =
-    newFrame.FieldOutput("U", "delta displacements", odb_Enum::VECTOR);
+odb_FieldOutput& newField = newFrame.FieldOutput("U", "delta displacements", odb_Enum::VECTOR);
 newField.addData(deltaDisp);
 ```
 
@@ -124,15 +122,11 @@ The following operators consider a list of fields and perform the envelope calcu
 odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields);
 odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields);
 
-odb_SequenceFieldOutput flds = maxEnvelope(
-    odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
-odb_SequenceFieldOutput flds = minEnvelope(
-    odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields, odb_Enum::odb_InvariantEnum invariant);
 
-odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields,
-                                           const odb_String& componentLabel);
-odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields,
-                                           const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = maxEnvelope(odb_SequenceFieldOutput & fields, const odb_String& componentLabel);
+odb_SequenceFieldOutput flds = minEnvelope(odb_SequenceFieldOutput & fields, const odb_String& componentLabel);
 ```
 
 The envelope commands return two FieldOutput objects.

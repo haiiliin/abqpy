@@ -11,8 +11,8 @@ The following example uses the number of nodes in a part instance to determine t
 ```c++
 const odb_SequenceNode& nodeSequence = myInstance.nodes();
 for (int i = 0; i < nodeSequence.size(); i++) {
-  const odb_Node& myNode = nodeSequence[i];
-  nodeLabel = myNode.label();
+    const odb_Node& myNode = nodeSequence[i];
+    nodeLabel = myNode.label();
 }
 ```
 
@@ -22,8 +22,8 @@ You can make the program more efficient if you create an object to hold the valu
 const odb_SequenceNode& nodeSequence = myInstance.nodes();
 int numNodes = nodeSequence.size();
 for (int i = 0; i < numNodes; i++) {
-  const odb_Node& myNode = nodeSequence[i];
-  nodeLabel = myNode.label();
+    const odb_Node& myNode = nodeSequence[i];
+    nodeLabel = myNode.label();
 }
 ```
 
@@ -43,17 +43,17 @@ const odb_SequenceFieldValue& seqStressVal = stressField.values();
 int numFV = seqStressVal.size();
 int strainComp = 0;
 for (int loc = 0; loc < numFV; loc++) {
-  const odb_FieldValue stressVal = seqStressVal[loc];
-  if (stressVal.mises() > stressCap) {
-    cout << "Element label = " << stressVal.elementLabel() << endl;
-    cout << "Integration Point = " << stressVal.integrationPoint() << endl;
-    const odb_SequenceFieldValue& seqStrainVal = strainField.values();
-    const odb_FieldValue strainVal = seqStrainVal[loc];
-    const float* const data = strainVal.data(strainComp);
-    cout << " LE : ";
-    for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
-    cout << endl;
-  }
+    const odb_FieldValue stressVal = seqStressVal[loc];
+    if (stressVal.mises() > stressCap) {
+        cout << "Element label = " << stressVal.elementLabel() << endl;
+        cout << "Integration Point = " << stressVal.integrationPoint() << endl;
+        const odb_SequenceFieldValue& seqStrainVal = strainField.values();
+        const odb_FieldValue strainVal = seqStrainVal[loc];
+        const float* const data = strainVal.data(strainComp);
+        cout << " LE : ";
+        for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
+        cout << endl;
+    }
 }
 ```
 
@@ -70,16 +70,16 @@ const odb_SequenceFieldValue& seqStrainVal = strainField.values();
 int numFV = seqStressVal.size();
 int strainComp = 0;
 for (int loc = 0; loc < numFV; loc++) {
-  const odb_FieldValue stressVal = seqStressVal[loc];
-  if (stressVal.mises() > stressCap) {
-    cout << "Element label = " << stressVal.elementLabel() << endl;
-    cout << "Integration Point = " << stressVal.integrationPoint() << endl;
-    const odb_FieldValue strainVal = seqStrainVal[loc];
-    const float* data = strainVal.data(strainComp);
-    cout << " LE : ";
-    for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
-    cout << endl;
-  }
+    const odb_FieldValue stressVal = seqStressVal[loc];
+    if (stressVal.mises() > stressCap) {
+        cout << "Element label = " << stressVal.elementLabel() << endl;
+        cout << "Integration Point = " << stressVal.integrationPoint() << endl;
+        const odb_FieldValue strainVal = seqStrainVal[loc];
+        const float* data = strainVal.data(strainComp);
+        cout << " LE : ";
+        for (int comp = 0; comp < strainComp; comp++) cout << data[comp];
+        cout << endl;
+    }
 }
 ```
 
