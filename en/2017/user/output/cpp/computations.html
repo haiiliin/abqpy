@@ -1179,12 +1179,12 @@
 <h1 id="computations-with-abaqus-results">Computations with Abaqus results<a class="headerlink" href="#computations-with-abaqus-results" title="Permalink to this heading">¶</a></h1>
 <p>This section discusses computations with Abaqus results in the Abaqus Scripting Interface.</p>
 <h2 id="rules-for-the-mathematical-operations">Rules for the mathematical operations<a class="headerlink" href="#rules-for-the-mathematical-operations" title="Permalink to this heading">¶</a></h2>
-<p>Mathematical operations are supported for FieldOutput, FieldValue, and HistoryOutput objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results.</p>
+<p>Mathematical operations are supported for <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code>, <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code>, and <code class="docutils literal notranslate"><span class="pre">HistoryOutput</span></code> objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results.</p>
 <p>The following rules apply:</p>
 <ul class="simple">
 <li><p>The operations are performed on the components of a tensor or vector.</p></li>
 <li><p>The invariants are computed from the component values. For example, taking the absolute value of a tensor can result in negative values of the pressure invariant.</p></li>
-<li><p>Operations between FieldOutput, FieldValue, and HistoryOutput objects are not supported.</p></li>
+<li><p>Operations between <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code>, <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code>, and <code class="docutils literal notranslate"><span class="pre">HistoryOutput</span></code> objects are not supported.</p></li>
 <li><p>Multiplication and division are not supported between two vector objects nor between two tensor objects.</p></li>
 <li><p>The types in an expression must be compatible. For example,</p>
 <ul>
@@ -1193,25 +1193,22 @@
 <li><p>INTEGRATION_POINT data cannot be added to ELEMENT_NODAL data.</p></li>
 </ul>
 </li>
-<li><p>If the fields in the expression were obtained using the getSubset method, the same getSubset operations must have been applied in the same order to obtain each field.</p></li>
+<li><p>If the fields in the expression were obtained using the <code class="docutils literal notranslate"><span class="pre">getSubset</span></code> method, the same <code class="docutils literal notranslate"><span class="pre">getSubset</span></code> operations must have been applied in the same order to obtain each field.</p></li>
 <li><p>Arguments to the trigonometric functions must be in radians.</p></li>
 <li><p>Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor.</p></li>
-<li><p>Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.</p></li>
+<li><p>Operations between <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> computed will not be associated with a location. If the local coordinate systems of the <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.</p></li>
 </ul>
-<p>The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, <a class="hxr-hoverxref hxr-tooltip reference internal" href="../python/examples.html#computations-with-fieldoutput-objects"><span class="std std-ref">Computations with FieldOutput objects</span></a>):</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> operations are significantly more efficient than the <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> operators. You can save the computed <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> objects with the following procedure (see the example, <a class="hxr-hoverxref hxr-tooltip reference internal" href="../python/examples.html#computations-with-fieldoutput-objects"><span class="std std-ref">Computations with FieldOutput objects</span></a>):</p>
 <ul class="simple">
-<li><p>Create a new FieldOutput object in the output database.</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">addData</span></code> method to add the new computed field objects to the new FieldOutput object.</p></li>
+<li><p>Create a new <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> object in the output database.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">addData</span></code> method to add the new computed field objects to the new <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> object.</p></li>
 </ul>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// Get fields from odb.</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// Get fields from odb.</span>
 <span class="n">odb_StepRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span>
-<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameCon1</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Step-1&quot;</span><span class="p">].</span><span class="n">frames</span><span class="p">();</span>
-<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon1</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">frameCon1</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameCon1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Step-1&quot;</span><span class="p">].</span><span class="n">frames</span><span class="p">();</span>
+<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameCon1</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span>
 <span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameCon2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Step-2&quot;</span><span class="p">].</span><span class="n">frames</span><span class="p">();</span>
-<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon2</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">frameCon2</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameCon2</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span>
 <span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">field1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldCon1</span><span class="p">[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
 <span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">field2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldCon2</span><span class="p">[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
 
@@ -1221,12 +1218,9 @@
 
 <span class="c1">// Save new field.</span>
 
-<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;user defined results&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;user defined results&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
 <span class="n">odb_Frame</span><span class="w"> </span><span class="n">newFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newStep</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
-<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newFrame</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="s">&quot;delta displacements&quot;</span><span class="p">,</span>
-<span class="w">                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">VECTOR</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newFrame</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;delta displacements&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">VECTOR</span><span class="p">);</span>
 <span class="n">newField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">deltaDisp</span><span class="p">);</span>
 </code></pre></div>
 </div>
@@ -1241,23 +1235,23 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>all</p></td>
-<td><p>FieldOutput objects, FieldValue objects, HistoryVariable objects, or floating point numbers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> objects, <code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> objects, <code class="docutils literal notranslate"><span class="pre">HistoryVariable</span></code> objects, or floating point numbers</p></td>
 </tr>
 <tr class="row-odd"><td><p>float</p></td>
 <td><p>floating point numbers</p></td>
 </tr>
 <tr class="row-even"><td><p>FO</p></td>
-<td><p>FieldOutput objects</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> objects</p></td>
 </tr>
 <tr class="row-odd"><td><p>FV</p></td>
-<td><p>FieldValue objects</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FieldValue</span></code> objects</p></td>
 </tr>
 <tr class="row-even"><td><p>HO</p></td>
-<td><p>HistoryOutput objects</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">HistoryOutput</span></code> objects</p></td>
 </tr>
 </tbody>
 </table>
-<p>Table 2 shows the valid operations on FieldOutput objects.</p>
+<p>Table 2 shows the valid operations on <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> objects.</p>
 <p><strong>Table 2. Valid operations.</strong></p>
 <table class="docutils data align-default">
 <thead>
@@ -1408,27 +1402,17 @@
 <h2 id="envelope-calculations">Envelope calculations<a class="headerlink" href="#envelope-calculations" title="Permalink to this heading">¶</a></h2>
 <p>You use envelope calculations to retrieve the extreme value for an output variable over a number of fields. Envelope calculations are especially useful for retrieving the extreme values over a number of load cases.</p>
 <p>The following operators consider a list of fields and perform the envelope calculation:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span>
-<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span>
 
-<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span>
-<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span>
-<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span>
-<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span>
 
-<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span>
-<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span>
 </code></pre></div>
 </div>
-<p>The envelope commands return two FieldOutput objects.</p>
+<p>The envelope commands return two <code class="docutils literal notranslate"><span class="pre">FieldOutput</span></code> objects.</p>
 <ul class="simple">
 <li><p>The first object contains the requested extreme values.</p></li>
 <li><p>The second object contains the indices of the fields for which the extreme values were found. The indices derive from the order in which you supplied the fields to the command.</p></li>
@@ -1436,10 +1420,10 @@
 <p>The optional <strong>invariant</strong> argument is a Symbolic Constant specifying the invariant to be used when comparing vectors or tensors. The optional <strong>componentLabel</strong> argument is a odb_String specifying the component of the vector or tensor to be used for selecting the extreme value.</p>
 <p>The following rules apply to envelope calculations:</p>
 <ul class="simple">
-<li><p>Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the MAGNITUDE invariant and for tensors you can supply the MISES invariant.</p></li>
+<li><p>Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the <code class="docutils literal notranslate"><span class="pre">MAGNITUDE</span></code> invariant and for tensors you can supply the <code class="docutils literal notranslate"><span class="pre">MISES</span></code> invariant.</p></li>
 <li><p>The fields being compared must be similar. For example,</p>
 <ul>
-<li><p>VECTOR and TENSOR_3D_FULL fields cannot appear in the same list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">VECTOR</span></code> and <code class="docutils literal notranslate"><span class="pre">TENSOR_3D_FULL</span></code> fields cannot appear in the same list.</p></li>
 <li><p>The output region of all the fields must be the same. All the fields must apply to the whole model, or all the fields must apply to the same set.</p></li>
 </ul>
 </li>

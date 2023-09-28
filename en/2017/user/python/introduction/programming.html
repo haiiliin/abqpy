@@ -533,7 +533,7 @@
 </div>
 <p>You can assign the return value to a variable:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">d</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="go">10.2420701033</span>
 </code></pre></div>
 </div>
@@ -580,7 +580,7 @@
 <span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="p">(</span><span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
 
 <span class="go">Calculates the volume of a cylinder.</span>
 
@@ -717,7 +717,7 @@
 </div>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">values()</span></code>, or <code class="docutils literal notranslate"><span class="pre">items()</span></code> methods to loop through a dictionary. In the following example, <code class="docutils literal notranslate"><span class="pre">items()</span></code> returns two values; the first is assigned to property, and the second is assigned to setting.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#property" title="property"><span class="nb">property</span></a><span class="p">,</span> <span class="n">setting</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">size 3.0</span>
 <span class="go">weight 376.0</span>
@@ -777,7 +777,7 @@
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span><span class="n">error</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">'Exception trapped: '</span><span class="p">,</span> <span class="n">error</span>
+<span class="gp">... </span>    <span class="nb">print</span> <span class="p">(</span><span class="s1">'Exception trapped: '</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">Exception trapped:  (2, 'No such file or directory')</span>
 </code></pre></div>
