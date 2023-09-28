@@ -8,13 +8,13 @@ It is important to ensure that the compiler used to compile and link the existin
 
 Before any calls are made to the C++ interface, the following call must be made to initialize the interface:
 
-```cpp
+```c++
 odb_initializeAPI();
 ```
 
 This call is generated automatically when the **abaqus make** utility is run but must be included in any application that is not compiled and linked using the **abaqus make** utility. After all calls to the C++ interface have been completed, the interface may be deactivated by including a call to
 
-```cpp
+```c++
 odb_finalizeAPI();
 ```
 
