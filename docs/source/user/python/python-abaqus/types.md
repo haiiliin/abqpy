@@ -35,17 +35,17 @@ The value of a Boolean argument can appear to be ambiguous; for example,
 ```pycon
 >>> newModel = mdb.ModelFromInputFile(name='beamTutorial', inputFileName='Deform')
 >>> newModel.setValues(noPartsInputFile=False)
->>> print newModel.noPartsInputFile
+>>> print (newModel.noPartsInputFile)
 OFF
 ```
 
 Because of this ambiguity, you should test a Boolean for a positive or negative value, as opposed to comparing it to a specific value like 0, OFF, or False. For example, the following statements show how you should test the value of a Boolean member:
 
 ```pycon
->>> if (newModel.noPartsInputFile):
-...     print 'Input file will be written without parts and assemblies. '
+>>> if newModel.noPartsInputFile:
+...     print ('Input file will be written without parts and assemblies. ')
 ... else:
-...     print 'Input file will be written with parts and assemblies.'
+...     print ('Input file will be written with parts and assemblies.')
 ```
 
 (repositories)=
@@ -95,7 +95,7 @@ As with dictionaries, you can use the keys() method to access the repository key
 >>> session.Viewport(name='Front view')
 >>> for key in session.viewports.keys():
         ...
-        print key
+        print (key)
 Front view
 Top view
 Side view
