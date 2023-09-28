@@ -67,7 +67,7 @@ The following list describes the objects in model data and the commands you use 
 
   The output database contains only one part instance, and the resulting output is
 
-  ```python
+  ```
   PART - 1 - 1
   ```
 
@@ -249,7 +249,7 @@ The following list describes the objects in results data and the commands you us
 
   The resulting output is
 
-  ```python
+  ```
   Step - 1
   Step - 2
   Step - 3
