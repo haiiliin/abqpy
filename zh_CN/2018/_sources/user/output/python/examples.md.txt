@@ -29,7 +29,7 @@ You can also run the example with only the **-help** parameter for a summary of 
 
 Use the following commands to retrieve the example script and the viewer tutorial output database:
 
-```python2
+```python
 # abaqus fetch job=odbMaxMises.py
 # abaqus fetch job=viewer_tutorial
 """
@@ -47,20 +47,25 @@ Requirements:
 3. -help  : Print usage
 """
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from odbAccess import *
-from sys import argv,exit
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+from sys import argv, exit
 
-def rightTrim(input,suffix):
-    if (input.find(suffix) == -1):
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+def rightTrim(input, suffix):
+    if input.find(suffix) == -1:
         input = input + suffix
     return input
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-def getMaxMises(odbName,elsetName):
-    """ Print max mises location and value given odbName
-        and elset(optional)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+def getMaxMises(odbName, elsetName):
+    """Print max mises location and value given odbName
+    and elset(optional)
     """
     elset = elemset = None
     region = "over the entire model"
@@ -74,11 +79,12 @@ def getMaxMises(odbName,elsetName):
     if elsetName:
         try:
             elemset = assembly.elementSets[elsetName]
-            region = " in the element set : " + elsetName;
+            region = " in the element set : " + elsetName
         except KeyError:
-            print 'An assembly level elset named %s does'
-                'not exist in the output database %s' \
-                % (elsetName, odbName)
+            print(
+                "An assembly level elset named %s does"
+                "not exist in the output database %s" % (elsetName, odbName)
+            )
             odb.close()
             exit(0)
 
@@ -87,62 +93,65 @@ def getMaxMises(odbName,elsetName):
     maxElem = 0
     maxStep = "_None_"
     maxFrame = -1
-    Stress = 'S'
+    Stress = "S"
     isStressPresent = 0
     for step in odb.steps.values():
-        print 'Processing Step:', step.name
+        print("Processing Step:", step.name)
         for frame in step.frames:
             allFields = frame.fieldOutputs
-            if (allFields.has_key(Stress)):
+            if allFields.has_key(Stress):
                 isStressPresent = 1
                 stressSet = allFields[Stress]
                 if elemset:
-                    stressSet = stressSet.getSubset(
-                        region=elemset)
+                    stressSet = stressSet.getSubset(region=elemset)
                 for stressValue in stressSet.values:
-                    if (stressValue.mises > maxMises):
+                    if stressValue.mises > maxMises:
                         maxMises = stressValue.mises
                         maxElem = stressValue.elementLabel
                         maxStep = step.name
                         maxFrame = frame.incrementNumber
-    if(isStressPresent):
-        print 'Maximum von Mises stress %s is %f in element %d'%(
-            region, maxMises, maxElem)
-        print 'Location: frame # %d  step:  %s '%(maxFrame,maxStep)
+    if isStressPresent:
+        print(
+            "Maximum von Mises stress %s is %f in element %d"
+            % (region, maxMises, maxElem)
+        )
+        print("Location: frame # %d  step:  %s " % (maxFrame, maxStep))
     else:
-        print 'Stress output is not available in' \
-            'the output database : %s\n' %(odb.name)
+        print(
+            "Stress output is not available in"
+            "the output database : %s\n" % (odb.name)
+        )
 
     """ Close the output database before exiting the program """
     odb.close()
 
-#==================================================================
+
+# ==================================================================
 # S T A R T
 #
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     odbName = None
     elsetName = None
     argList = argv
     argc = len(argList)
-    i=0
-    while (i < argc):
-        if (argList[i][:2] == "-o"):
+    i = 0
+    while i < argc:
+        if argList[i][:2] == "-o":
             i += 1
             name = argList[i]
-            odbName = rightTrim(name,".odb")
-        elif (argList[i][:2] == "-e"):
+            odbName = rightTrim(name, ".odb")
+        elif argList[i][:2] == "-e":
             i += 1
             elsetName = argList[i]
-        elif (argList[i][:2] == "-h"):
-            print __doc__
+        elif argList[i][:2] == "-h":
+            print(__doc__)
             exit(0)
         i += 1
     if not (odbName):
-        print ' **ERROR** output database name is not provided'
-        print __doc__
+        print(" **ERROR** output database name is not provided")
+        print(__doc__)
         exit(1)
-    getMaxMises(odbName,elsetName)
+    getMaxMises(odbName, elsetName)
 ```
 
 (creating-an-output-database)=
@@ -160,8 +169,8 @@ The following example illustrates how you can use the Abaqus Scripting Interface
 
 Use the following command to retrieve the example script:
 
-```python2
-abaqus fetch job=odbWrite
+```python
+# abaqus fetch job=odbWrite
 """odbWrite.py
 Script to create an output database and add model,
 field, and history data. The script also reads
@@ -174,101 +183,107 @@ from odbMaterial import *
 from odbSection import *
 from abaqusConstants import *
 
-def createODB():
 
+def createODB():
     # Create an ODB (which also creates the rootAssembly)
-    odb = Odb(name='simpleModel',
-        analysisTitle='ODB created with Python ODB API',
-        description='example illustrating Python ODB API ',
-        path='odbWritePython.odb')
+    odb = Odb(
+        name="simpleModel",
+        analysisTitle="ODB created with Python ODB API",
+        description="example illustrating Python ODB API ",
+        path="odbWritePython.odb",
+    )
 
     # create few materials
     materialName = "Elastic Material"
     material_1 = odb.Material(name=materialName)
-    material_1.Elastic(type=ISOTROPIC,
-        temperatureDependency=OFF, dependencies=0,
-        noCompression=OFF, noTension=OFF,
-        moduli=LONG_TERM, table=((12000,0.3),))
+    material_1.Elastic(
+        type=ISOTROPIC,
+        temperatureDependency=OFF,
+        dependencies=0,
+        noCompression=OFF,
+        noTension=OFF,
+        moduli=LONG_TERM,
+        table=((12000, 0.3),),
+    )
 
     # create few sections
-    sectionName = 'Homogeneous Shell Section'
-    section_1 = odb.HomogeneousShellSection(name=sectionName,
-        material=materialName, thickness=2.0)
+    sectionName = "Homogeneous Shell Section"
+    section_1 = odb.HomogeneousShellSection(
+        name=sectionName, material=materialName, thickness=2.0
+    )
     #  Model data:
 
     # Set up the section categories.
-    sCat = odb.SectionCategory(name='S5',
-        description='Five-Layered Shell')
-    spBot = sCat.SectionPoint(number=1,
-        description='Bottom')
-    spMid = sCat.SectionPoint(number=3,
-        description='Middle')
-    spTop = sCat.SectionPoint(number=5,
-        description='Top')
+    sCat = odb.SectionCategory(name="S5", description="Five-Layered Shell")
+    spBot = sCat.SectionPoint(number=1, description="Bottom")
+    spMid = sCat.SectionPoint(number=3, description="Middle")
+    spTop = sCat.SectionPoint(number=5, description="Top")
 
     #  Create a 2-element shell model,
     #  4 integration points, 5 section points.
 
-    part1 = odb.Part(name='part-1', embeddedSpace=THREE_D,
-        type=DEFORMABLE_BODY)
+    part1 = odb.Part(name="part-1", embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
     nodeData = (
-        (1, 1,0,0),
-        (2, 2,0,0),
-        (3, 2,1,0.1),
-        (4, 1,1,0.1),
-        (5, 2,-1,-0.1),
-        (6, 1,-1,-0.1),
-        )
-    part1.addNodes(nodeData=nodeData,
-        nodeSetName='nset-1')
+        (1, 1, 0, 0),
+        (2, 2, 0, 0),
+        (3, 2, 1, 0.1),
+        (4, 1, 1, 0.1),
+        (5, 2, -1, -0.1),
+        (6, 1, -1, -0.1),
+    )
+    part1.addNodes(nodeData=nodeData, nodeSetName="nset-1")
 
     elementData = (
-        (1, 1,2,3,4),
-        (2, 6,5,2,1),
-        )
-    part1.addElements(elementData=elementData, type='S4',
-        elementSetName='eset-1', sectionCategory=sCat)
+        (1, 1, 2, 3, 4),
+        (2, 6, 5, 2, 1),
+    )
+    part1.addElements(
+        elementData=elementData,
+        type="S4",
+        elementSetName="eset-1",
+        sectionCategory=sCat,
+    )
 
     #  Instance the part.
-    instance1 = odb.rootAssembly.Instance(name='part-1-1',
-        object=part1)
+    instance1 = odb.rootAssembly.Instance(name="part-1-1", object=part1)
     # create instance level sets for section assignment
-    elLabels = (1,2)
-    elset_1 = odb.rootAssembly.instances['part-1-1'].ElementSetFromElementLabels(name=materialName, elementLabels=elLabels)
+    elLabels = (1, 2)
+    elset_1 = odb.rootAssembly.instances["part-1-1"].ElementSetFromElementLabels(
+        name=materialName, elementLabels=elLabels
+    )
     instance1.assignSection(region=elset_1, section=section_1)
 
     #  Field data:
 
     #  Create a step and a frame.
 
-    step1 = odb.Step(name='step-1',
-        description='first analysis step',
-        domain=TIME, timePeriod=1.0)
-    analysisTime=0.1
-    frame1 = step1.Frame(incrementNumber=1,
+    step1 = odb.Step(
+        name="step-1", description="first analysis step", domain=TIME, timePeriod=1.0
+    )
+    analysisTime = 0.1
+    frame1 = step1.Frame(
+        incrementNumber=1,
         frameValue=analysisTime,
-        description=\
-            'results frame for time '+str(analysisTime))
-
+        description="results frame for time " + str(analysisTime),
+    )
 
     #  Write nodal displacements.
 
-    uField = frame1.FieldOutput(name='U',
-        description='Displacements', type=VECTOR)
+    uField = frame1.FieldOutput(name="U", description="Displacements", type=VECTOR)
 
     nodeLabelData = (1, 2, 3, 4, 5, 6)
     dispData = (
-        (1,2,3),
-        (4,5,6),
-        (7,8,9),
-        (10,11,12),
+        (1, 2, 3),
+        (4, 5, 6),
+        (7, 8, 9),
+        (10, 11, 12),
         (13, 14, 15),
-        (16,17,18)
-        )
+        (16, 17, 18),
+    )
 
-    uField.addData(position=NODAL, instance=instance1,
-        labels=nodeLabelData,
-        data=dispData)
+    uField.addData(
+        position=NODAL, instance=instance1, labels=nodeLabelData, data=dispData
+    )
 
     #  Make this the default deformed field for visualization.
 
@@ -284,44 +299,51 @@ def createODB():
 
     elementLabelData = (1, 2)
     topData = (
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        )
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+    )
     bottomData = (
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        (1.,2.,3.,4.),
-        )
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+        (1.0, 2.0, 3.0, 4.0),
+    )
 
-    transform = (
-        (1.,0.,0.),
-        (0.,1.,0.),
-        (0.,0.,1.)
-        )
+    transform = ((1.0, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 1.0))
 
-    sField = frame1.FieldOutput(name='S',
-        description='Stress', type=TENSOR_3D_PLANAR,
-        componentLabels=('S11', 'S22', 'S33','S12'),
-        validInvariants=(MISES,))
-    sField.addData(position=INTEGRATION_POINT,
-    sectionPoint=spTop, instance=instance1,
-    labels=elementLabelData, data=topData,
-    localCoordSystem=transform)
-    sField.addData(position=INTEGRATION_POINT,
-        sectionPoint=spBot, instance=instance1,
-        labels=elementLabelData, data=bottomData,
-        localCoordSystem=transform)
+    sField = frame1.FieldOutput(
+        name="S",
+        description="Stress",
+        type=TENSOR_3D_PLANAR,
+        componentLabels=("S11", "S22", "S33", "S12"),
+        validInvariants=(MISES,),
+    )
+    sField.addData(
+        position=INTEGRATION_POINT,
+        sectionPoint=spTop,
+        instance=instance1,
+        labels=elementLabelData,
+        data=topData,
+        localCoordSystem=transform,
+    )
+    sField.addData(
+        position=INTEGRATION_POINT,
+        sectionPoint=spBot,
+        instance=instance1,
+        labels=elementLabelData,
+        data=bottomData,
+        localCoordSystem=transform,
+    )
 
     #  For this step, make this the default field
     #  for visualization.
@@ -332,16 +354,20 @@ def createODB():
 
     #  Create a HistoryRegion for a specific point.
 
-    hRegionStep1 = step1.HistoryRegion(name='historyNode0',
-        description='Displacement and reaction force',
-        point=instance1.nodes[0])
+    hRegionStep1 = step1.HistoryRegion(
+        name="historyNode0",
+        description="Displacement and reaction force",
+        point=instance1.nodes[0],
+    )
 
     #  Create variables for this history output in step1.
 
-    hOutputStep1U1 = hRegionStep1.HistoryOutput(name='U1',
-        description='Displacement', type=SCALAR)
-    hOutputStep1Rf1 = hRegionStep1.HistoryOutput(name='RF1',
-        description='Reaction Force', type=SCALAR)
+    hOutputStep1U1 = hRegionStep1.HistoryOutput(
+        name="U1", description="Displacement", type=SCALAR
+    )
+    hOutputStep1Rf1 = hRegionStep1.HistoryOutput(
+        name="RF1", description="Reaction Force", type=SCALAR
+    )
 
     #  Add history data for step1.
 
@@ -349,58 +375,48 @@ def createODB():
     u1Data = (0.0, 0.1, 0.3, 0.5)
     rf1Data = (0.0, 0.1, 0.3, 0.5)
 
-    hOutputStep1U1.addData(frameValue=timeData1,
-        value=u1Data)
-    hOutputStep1Rf1.addData(frameValue=timeData1,
-        value=rf1Data)
+    hOutputStep1U1.addData(frameValue=timeData1, value=u1Data)
+    hOutputStep1Rf1.addData(frameValue=timeData1, value=rf1Data)
 
     #  Create another step for history data.
-    step2 = odb.Step(name='step-2',  description='',
-        domain=TIME, timePeriod=1.0)
+    step2 = odb.Step(name="step-2", description="", domain=TIME, timePeriod=1.0)
     hRegionStep2 = step2.HistoryRegion(
-        name='historyNode0',
-        description='Displacement and reaction force',
-        point=instance1.nodes[0])
+        name="historyNode0",
+        description="Displacement and reaction force",
+        point=instance1.nodes[0],
+    )
     hOutputStep2U1 = hRegionStep2.HistoryOutput(
-        name='U1',
-        description='Displacement',
-        type=SCALAR)
+        name="U1", description="Displacement", type=SCALAR
+    )
     hOutputStep2Rf1 = hRegionStep2.HistoryOutput(
-        name='RF1',
-        description='Reaction Force',
-        type=SCALAR)
+        name="RF1", description="Reaction Force", type=SCALAR
+    )
 
     #  Add history data for the second step.
     timeData2 = (1.2, 1.9, 3.0, 4.0)
     u1Data = (0.8, 0.9, 1.3, 1.5)
     rf1Data = (0.9, 1.1, 1.3, 1.5)
 
-    hOutputStep2U1.addData(frameValue=timeData2,
-        value=u1Data)
-    hOutputStep2Rf1.addData(frameValue=timeData2,
-        value=rf1Data)
+    hOutputStep2U1.addData(frameValue=timeData2, value=u1Data)
+    hOutputStep2Rf1.addData(frameValue=timeData2, value=rf1Data)
 
     # Get XY Data from the two steps.
-    u1FromStep1 = hRegionStep1.getSubset(variableName='U1')
-    u1FromStep2 = hRegionStep2.getSubset(variableName='U1')
+    u1FromStep1 = hRegionStep1.getSubset(variableName="U1")
+    u1FromStep2 = hRegionStep2.getSubset(variableName="U1")
 
     # Square the history data.
-    u1SquaredFromStep1 = \
-        power(u1FromStep1.historyOutputs['U1'], 2.0)
-    u1SquaredFromStep2 = \
-        power(u1FromStep2.historyOutputs['U1'], 2.0)
+    u1SquaredFromStep1 = power(u1FromStep1.historyOutputs["U1"], 2.0)
+    u1SquaredFromStep2 = power(u1FromStep2.historyOutputs["U1"], 2.0)
 
     # Add the squared displacement to the two steps.
     hOutputStep1sumU1 = hRegionStep1.HistoryOutput(
-        name='squareU1',
-        description='Square of displacements',
-        type=SCALAR)
+        name="squareU1", description="Square of displacements", type=SCALAR
+    )
     hOutputStep1sumU1.addData(data=u1SquaredFromStep1.data)
 
     hOutputStep2sumU1 = hRegionStep2.HistoryOutput(
-        name='squareU1',
-        description='Square of displacements',
-        type=SCALAR)
+        name="squareU1", description="Square of displacements", type=SCALAR
+    )
     hOutputStep2sumU1.addData(data=u1SquaredFromStep2.data)
 
     # Save the results in the output database.
@@ -409,6 +425,7 @@ def createODB():
 
     odb.save()
     odb.close()
+
 
 if __name__ == "__main__":
     createODB()
@@ -427,7 +444,7 @@ The command line arguments provide the following:
 
 Use the following command to retrieve the example script:
 
-```python2
+```python
 # abaqus fetch job=odbPert
 
 # Abaqus Scripting Interface version of FPERT, a Fortran
@@ -441,12 +458,12 @@ from types import IntType
 
 # Get input from the user
 
-odbName = raw_input('Enter odb name (w/o .odb): ')
-modes = eval(raw_input('Enter mode shape(s): '))
+odbName = raw_input("Enter odb name (w/o .odb): ")
+modes = eval(raw_input("Enter mode shape(s): "))
 if type(modes) is IntType:
     modes = (modes,)
 
-odb = openOdb(odbName + '.odb')
+odb = openOdb(odbName + ".odb")
 
 # Get the undeformed coordinates from the first
 # step and frame
@@ -454,31 +471,29 @@ odb = openOdb(odbName + '.odb')
 step = odb.steps.values()[0]
 
 try:
-coords = step.frames[0].fieldOutputs['COORD']
+    coords = step.frames[0].fieldOutputs["COORD"]
 except:
-err = "The analysis must include a field output request \
-    for variable COORD."
-print err
-sys.exit(1)
+    err = "The analysis must include a field output request \
+        for variable COORD."
+    print(err)
+    sys.exit(1)
 
 # Perturb the nodal coordinates
 
 factors = []
 for mode in modes:
     try:
-    frame = step.frames[mode]
+        frame = step.frames[mode]
     except IndexError:
-    print 'Input error: mode %s does not exist' % mode
-    sys.exit(1)
-    factors.append(float(raw_input(
-        'Enter imperfection factor for mode %s: '% mode)))
-    coords = coords + factors[-1] * frame.fieldOutputs['U']
+        print("Input error: mode %s does not exist" % mode)
+        sys.exit(1)
+    factors.append(float(raw_input("Enter imperfection factor for mode %s: " % mode)))
+    coords = coords + factors[-1] * frame.fieldOutputs["U"]
 
 # Write new nodal coordinates to a file
 
-outFile = open(odbName + '_perturbed.inp', 'w')
-header = \
-"""
+outFile = open(odbName + "_perturbed.inp", "w")
+header = """
 *******************************************************
 ** Node data for perturbed mesh.
 ** Input mesh from: %s
@@ -487,11 +502,10 @@ header = \
 *******************************************************
 """
 outFile.write(header % (odbName, modes, factors))
-format = '%6i, %14.7e, %14.7e, %14.7e\n'
+format = "%6i, %14.7e, %14.7e, %14.7e\n"
 for value in coords.values:
-    outFile.write(
-        format % ((value.nodeLabel,) + tuple(value.data)))
-outFile.write('** End of perturbed mesh node input file.')
+    outFile.write(format % ((value.nodeLabel,) + tuple(value.data)))
+outFile.write("** End of perturbed mesh node input file.")
 outFile.close()
 ```
 
@@ -510,13 +524,13 @@ Retrieves two specified fields from the output database.
 - Uses the `addData` method to add the computed field to the new FieldOutput object.
 - Use the following command to retrieve the example script:
 
-```python2
+```shell
 abaqus fetch job=fieldOperation
 ```
 
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
-```python2
+```python
 # FieldOutput operators example problem
 #
 # Script that does computations with fields and
@@ -524,12 +538,13 @@ The fetch command also retrieves an input file that you can use to generate the 
 #
 
 from odbAccess import *
-odb = openOdb(path='fieldOperation.odb')
+
+odb = openOdb(path="fieldOperation.odb")
 
 # Get fields from output database.
 
-field1 = odb.steps['LC1'].frames[1].fieldOutputs['U']
-field2 = odb.steps['LC2'].frames[1].fieldOutputs['U']
+field1 = odb.steps["LC1"].frames[1].fieldOutputs["U"]
+field2 = odb.steps["LC2"].frames[1].fieldOutputs["U"]
 
 # Compute difference between fields.
 
@@ -537,11 +552,13 @@ deltaDisp = field2 - field1
 
 # Save new field.
 
-newStep = odb.Step(name='user',
-    description='user defined results', domain= TIME, timePeriod=0)
+newStep = odb.Step(
+    name="user", description="user defined results", domain=TIME, timePeriod=0
+)
 newFrame = newStep.Frame(incrementNumber=0, frameValue=0.0)
-newField = newFrame.FieldOutput(name='U',
-    description='delta displacements', type=VECTOR)
+newField = newFrame.FieldOutput(
+    name="U", description="delta displacements", type=VECTOR
+)
 newField.addData(field=deltaDisp)
 
 odb.save()
@@ -563,7 +580,7 @@ abaqus fetch job=sumRegionFieldValue
 
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
-```python2
+```python
 #
 # fieldValue operators example problem:
 #
@@ -576,9 +593,9 @@ from odbAccess import *
 # get field
 #
 
-odb = openOdb(path='sumRegionFieldValue.odb')
-endSet = odb.rootAssembly.elementSets['END1']
-field = odb.steps.values()[-1].frames[-1].fieldOutputs['S']
+odb = openOdb(path="sumRegionFieldValue.odb")
+endSet = odb.rootAssembly.elementSets["END1"]
+field = odb.steps.values()[-1].frames[-1].fieldOutputs["S"]
 subField = field.getSubset(region=endSet)
 
 #
@@ -587,18 +604,17 @@ subField = field.getSubset(region=endSet)
 
 sum = 0
 for val in subField.values:
-sum = sum + val
+    sum = sum + val
 ave = sum / len(subField.values)
 
 #
 # print results
 #
 
-print 'Component    Sum            Average'
+print("Component    Sum            Average")
 labels = field.componentLabels
-for i in range( len(labels) ):
-    print '%s          %5.3e      %5.3e'% \
-            (labels[i], sum.data[i], ave.data[i])
+for i in range(len(labels)):
+    print("%s          %5.3e      %5.3e" % (labels[i], sum.data[i], ave.data[i]))
 ```
 
 ## Computations with HistoryOutput objects
@@ -620,7 +636,7 @@ abaqus fetch job=compDispMagHist
 
 The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.
 
-```python2
+```python
 # HistoryOutput operators example problem.
 #
 # Compute magnitude of node displacement history from
@@ -634,11 +650,10 @@ from odbAccess import *
 # get historyRegion for the node in nodeSet TIP
 #
 
-odb = openOdb(path='compDispMagHist.odb')
-endSet = odb.rootAssembly.instances['BEAM-1-1'].nodeSets['TIP']
+odb = openOdb(path="compDispMagHist.odb")
+endSet = odb.rootAssembly.instances["BEAM-1-1"].nodeSets["TIP"]
 histPoint = HistoryPoint(node=endSet.nodes[0])
-tipHistories = odb.steps['Step-2'].getHistoryRegion(
-    point=histPoint)
+tipHistories = odb.steps["Step-2"].getHistoryRegion(point=histPoint)
 
 #
 # Compute and scale magnitude.
@@ -646,19 +661,19 @@ tipHistories = odb.steps['Step-2'].getHistoryRegion(
 
 maxAllowableDisp = 5.0
 sum = 0
-componentLabels = ('U1', 'U2', 'U3')
+componentLabels = ("U1", "U2", "U3")
 for name in componentLabels:
-   sum = sum + power(tipHistories.historyOutputs[name], 2.0)
+    sum = sum + power(tipHistories.historyOutputs[name], 2.0)
 sum = sqrt(sum) / maxAllowableDisp
 
 #
 # Print magnitude.
 #
 
-print 'History:', sum.name
-print 'Time       Magnitude'
+print("History:", sum.name)
+print("Time       Magnitude")
 for dataPair in sum.data:
-    print "%5.4f  %5.2f"%(dataPair[0], dataPair[1])
+    print("%5.4f  %5.2f" % (dataPair[0], dataPair[1]))
 ```
 
 ## Creating a new load combination from different load cases
@@ -685,22 +700,21 @@ abaqus fetch job=createLoadComb
 
 The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.
 
-```python2
+```python
 import types
 from odbAccess import *
 
 # retrieve request from user
-odbName = raw_input('Enter odb name')
-stepName = raw_input('Enter step name')
+odbName = raw_input("Enter odb name")
+stepName = raw_input("Enter step name")
 
-loadCaseNames = eval(raw_input(
-    'Enter new load case as:
-    ['loadCase1Name', ..., 'loadCaseNName']'))
+loadCaseNames = eval(
+    raw_input("Enter new load case as: ['loadCase1Name', ..., 'loadCaseNName']")
+)
 if type(loadCaseNames) == types.TupleType:
     loadCaseNames = list(loadCaseNames)
-lcName = raw_input('Enter new load case name')
-scaling = eval(raw_input(
-    'Enter new load case as:(scaleFactor1, .., scaleFactorN)'))
+lcName = raw_input("Enter new load case name")
+scaling = eval(raw_input("Enter new load case as:(scaleFactor1, .., scaleFactorN)"))
 
 odb = openOdb(odbName)
 step = odb.steps[stepName]
@@ -712,14 +726,14 @@ newDisp = 0
 for loadCaseName in loadCaseNames:
     frame = step.getFrame(loadCase=step.loadCases[loadCaseName])
     scaleFac = scaling[loadCaseNames.index(frame.loadCase.name)]
-    newStress = newStress + scaleFac*frame.fieldOutputs['S']
-    newDisp = newDisp + scaleFac*frame.fieldOutputs['U']
+    newStress = newStress + scaleFac * frame.fieldOutputs["S"]
+    newDisp = newDisp + scaleFac * frame.fieldOutputs["U"]
 
 # save new load case to odb
 lcNew = step.LoadCase(name=lcName)
 newFrame = step.Frame(loadCase=lcNew)
-newFrame.FieldOutput(field=newStress, name='S')
-newFrame.FieldOutput(name='U', field=newDisp)
+newFrame.FieldOutput(field=newStress, name="S")
+newFrame.FieldOutput(name="U", field=newDisp)
 
 odb.save()
 odb.close()
@@ -743,21 +757,21 @@ abaqus fetch job=stressRange
 
 The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.
 
-```python2
+```python
 from odbAccess import *
 
 # retrieve request from user
-odbName = raw_input('Enter odb name')
-stepName = raw_input('Enter step name')
+odbName = raw_input("Enter odb name")
+stepName = raw_input("Enter step name")
 
 # retrieve steps from the odb
-odb=openOdb(odbName)
+odb = openOdb(odbName)
 step = odb.steps[stepName]
 sFields = []
 
 for loadCase in step.loadCases.values():
-    stressField = step.getFrame(loadCase=loadCase).fieldOutputs['S']
-    sFields.append(stressField.getScalarField(componentLabel='S11'))
+    stressField = step.getFrame(loadCase=loadCase).fieldOutputs["S"]
+    sFields.append(stressField.getScalarField(componentLabel="S11"))
 
 # compute stress range
 maxStress, maxLoc = maxEnvelope(sFields)
@@ -766,9 +780,8 @@ minStress, minLoc = minEnvelope(sFields)
 stressRange = maxStress - minStress
 
 # save to same step
-newFrame = step.Frame(incrementNumber=0, frameValue=0.0,
-    description='Stress Range')
-newFrame.FieldOutput(field=stressRange, name='S11 Range')
+newFrame = step.Frame(incrementNumber=0, frameValue=0.0, description="Stress Range")
+newFrame.FieldOutput(field=stressRange, name="S11 Range")
 
 odb.save()
 odb.close()
@@ -788,16 +801,16 @@ This example illustrates how field results can be transformed to a different coo
 
 Use the following commands to retrieve the example script and an input file to create a sample output database:
 
-```python2
+```python
 # abaqus fetch job=transformExa
 # abaqus fetch job=esf4sxdg
 from odbAccess import *
 
 # Retrieve request from user.
 
-odbName = raw_input('Enter odb name')
-stepName = raw_input('Enter step name')
-frameNo = int( raw_input('Enter frame number') )
+odbName = raw_input("Enter odb name")
+stepName = raw_input("Enter step name")
+frameNo = int(raw_input("Enter frame number"))
 
 
 odb = openOdb(odbName)
@@ -806,18 +819,21 @@ odb = openOdb(odbName)
 
 step = odb.steps[stepName]
 frame = step.frames[frameNo]
-displacement = frame.fieldOutputs['U']
+displacement = frame.fieldOutputs["U"]
 
 # Create cylindrical coordinate system and compute
 # associated results
 
-coordSys = odb.rootAssembly.DatumCsysByThreePoints(name='cylC',
-    coordSysType=CYLINDRICAL, origin=(0,0,0),
-    point1=(1.0, 0.0, 0), point2=(0.0, 0.0, 1.0) )
+coordSys = odb.rootAssembly.DatumCsysByThreePoints(
+    name="cylC",
+    coordSysType=CYLINDRICAL,
+    origin=(0, 0, 0),
+    point1=(1.0, 0.0, 0),
+    point2=(0.0, 0.0, 1.0),
+)
 
-cylindricalDisp = displacement.getTransformedField(
-    datumCsys=coordSys)
-radialDisp = cylindricalDisp.getScalarField(componentLabel='U1')
+cylindricalDisp = displacement.getTransformedField(datumCsys=coordSys)
+radialDisp = cylindricalDisp.getScalarField(componentLabel="U1")
 
 # Compute average radius.
 
@@ -833,10 +849,13 @@ distortion = radialDisp - aveDisp
 # Save computed results to the database.
 
 frame.FieldOutput(field=radialDisp)
-fieldDescription = 'Distortion ( \
-    average radial displacement = ' + str(aveDisp) + ')'
-frame.FieldOutput(name='Distortion',
-    description=fieldDescription, field=distortion)
+fieldDescription = (
+    "Distortion ( \
+    average radial displacement = "
+    + str(aveDisp)
+    + ")"
+)
+frame.FieldOutput(name="Distortion", description=fieldDescription, field=distortion)
 
 odb.save()
 odb.close()
@@ -1043,7 +1062,7 @@ You should specify the name of the output database during program execution. The
 
 Before executing the script, run an analysis that creates an output database file containing the appropriate output. This analysis includes, for example, output for the elements and the integration point coordinates of the elements. Execute the script using the following command:
 
-```python2
+```shell
 abaqus python felbow.py <filename.odb>
 ```
 

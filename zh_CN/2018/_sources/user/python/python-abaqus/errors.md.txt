@@ -75,17 +75,17 @@ You use the exception type in your error handling routines.
 
 The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the {doc}`/reference/index` to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:
 
-```python2
+```python
 try:
-     session.Viewport(name='tiny',width=1, height=1)
- except RangeError, message:
-     print 'Viewport too small:', message
- print 'Script continues running and prints this line'
+    session.Viewport(name="tiny", width=1, height=1)
+except RangeError, message:
+    print("Viewport too small:", message)
+print("Script continues running and prints this line")
 ```
 
 The resulting output is
 
-```python2
+```
 Viewport too small: width must be a Float >= 30
 Script continues running and prints this line
 ```

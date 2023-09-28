@@ -16,11 +16,12 @@ The `getInput` function displays a dialog box in the center of the main window, 
 
 The following examples illustrate the use of the `getInput` function. The first example shows a script that uses the `getInput` function to obtain a number from the user. The script then prints the square root of that number.
 
-```python2
+```python
 from abaqus import getInput
 from math import sqrt
-number = float(getInput('Enter a number:'))
-print sqrt(number)
+
+number = float(getInput("Enter a number:"))
+print(sqrt(number))
 ```
 
 The `float` function on the third line converts the string returned by `getInput` into a floating point number. The following figure shows the dialog box that appears when this script is executed:
@@ -34,23 +35,25 @@ The `float` function on the third line converts the string returned by `getInput
 
 The next example shows how to modify a macro recorded by the **Macro Manager** in Abaqus/CAE to use the getInput function. The following text shows a macro named `createViewport` that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file `abaqusMacros.py` in your local or home directory.
 
-```python2
+```python
 from abaqus import *
+
+
 def createViewport():
-    session.Viewport(name='Viewport: 2',
-        origin=(15.0,15.0), width=145.0,
-        height=90.0)
-    session.viewports['Viewport: 2'].makeCurrent()
+    session.Viewport(name="Viewport: 2", origin=(15.0, 15.0), width=145.0, height=90.0)
+    session.viewports["Viewport: 2"].makeCurrent()
 ```
 
 The following shows how you can modify the macro to accept input from the user. Default values for the viewport width and height have been added to the input request.
 
-```python2
+```python
 from abaqus import *
+
+
 def createViewport():
-    name = getInput('Enter viewport name:')
-    prompt = 'Enter viewport width, height (mm):'
-    w, h = eval(getInput(prompt, '100,50'))
+    name = getInput("Enter viewport name:")
+    prompt = "Enter viewport width, height (mm):"
+    w, h = eval(getInput(prompt, "100,50"))
     vp = session.Viewport(name=name, width=w, height=h)
     vp.restore()
     vp.makeCurrent()
@@ -71,13 +74,16 @@ The `getInputs` function displays a dialog box in the center of the main window,
 
 The following examples illustrate the use of the `getInputs` function to obtain a sequence of numbers from the user:
 
-```python2
+```python
 from abaqus import getInputs
-fields = (('Width:','10'), ('Length:', '20'), ('Height:', '30'))
-length, width, height =
-    getInputs(fields=fields, label='Specify block dimensions:',
-        dialogTitle='Create Block', )
-print length, width, height
+
+fields = (("Width:", "10"), ("Length:", "20"), ("Height:", "30"))
+length, width, height = getInputs(
+    fields=fields,
+    label="Specify block dimensions:",
+    dialogTitle="Create Block",
+)
+print(length, width, height)
 ```
 
 The following figure shows the dialog box that these statements create:
@@ -91,21 +97,20 @@ The following figure shows the dialog box that these statements create:
 
 The `fields` argument to the `getInputs` method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,
 
-```python2
-fields = (('Width',''), ('Length', ''), ('Height', ''))
-length, width, height =
-    getInputs(fields=fields, label='Specify block dimensions:')
+```python
+fields = (("Width", ""), ("Length", ""), ("Height", ""))
+length, width, height = getInputs(fields=fields, label="Specify block dimensions:")
 ```
 
 The `label` argument to the `getInputs` method is an optional label that appears across the top of the dialog box. The dialogTitle argument is an optional string that appears in the title bar of the dialog box.
 
 If the user clicks **\[Cancel\]**, the `getInputs` method returns a sequence of `None` objects. You can check the first value in the sequence to determine if the user clicked **\[Cancel\]**; for example:
 
-```python2
-fields = (('Density',''), ('Youngs modulus', ''))
-density, modulus = getInputs(fields, 'Material properties')
+```python
+fields = (("Density", ""), ("Youngs modulus", ""))
+density, modulus = getInputs(fields, "Material properties")
 if density == None:
-    print 'User pressed Cancel'
+    print("User pressed Cancel")
 ```
 
 ## Requesting a warning reply from the user
@@ -114,14 +119,14 @@ The `getWarningReply` function displays a warning dialog box in the center of th
 
 The following example illustrates the use of the `getWarningReply` function:
 
-```python2
+```python
 from abaqus import getWarningReply, YES, NO
 
-reply = getWarningReply(message='Okay to continue?', buttons=(YES,NO))
+reply = getWarningReply(message="Okay to continue?", buttons=(YES, NO))
 if reply == YES:
-    print 'YES clicked'
+    print("YES clicked")
 elif reply == NO:
-    print 'NO clicked'
+    print("NO clicked")
 ```
 
 The following figure shows the dialog box that appears when this script is executed:
