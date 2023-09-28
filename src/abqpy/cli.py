@@ -114,7 +114,7 @@ class AbqpyCLI(AbqpyCLIBase):
 
     def pde(self, *scripts: str, script: str | None = None, **options):
         """Run Abaqus/PDE command.
-        
+
         Parameters
         ----------
         scripts : str
@@ -125,7 +125,7 @@ class AbqpyCLI(AbqpyCLIBase):
             Abaqus/CAE command line arguments
         """
         options = self._parse_options(**options)
-        args = (*scripts, ) + ((f"script={script}", ) if script else ()) + ((f"-pde {options}", ) if options else ())
+        args = (*scripts,) + ((f"script={script}",) if script else ()) + ((f"-pde {options}",) if options else ())
         self.abaqus("pde", *args)
 
     def python(

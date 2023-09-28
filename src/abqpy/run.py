@@ -51,7 +51,9 @@ def run(cae: bool = True) -> None:
     options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
     gui, noGUI = options.pop("gui", None), options.pop("noGUI", None)
     if debug:
-        warnings.warn("You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it.")
+        warnings.warn(
+            "You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it."
+        )
         abaqus.pde(script=filePath, **options)
     elif cae:
         options["gui"] = gui if gui is not None else not noGUI if noGUI is not None else False
