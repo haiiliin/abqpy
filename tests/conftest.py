@@ -17,6 +17,6 @@ def pytest_configure(config: pytest.Config) -> None:
     Args:
         config (pytest.Config): The pytest config object.
     """
-    os.environ["ABQPY_DEBUG"] = "true"
+    os.environ["ABQPY_SKIP_ABAQUS"] = "true"
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     sys.path.insert(0, os.path.abspath("../src"))
