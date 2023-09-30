@@ -23,7 +23,6 @@ import re
 import sys
 import typing
 
-from packaging.version import Version
 from sphinx.builders.html import StandaloneHTMLBuilder
 
 import abqpy
@@ -32,10 +31,9 @@ project = "abqpy"
 copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
-v = Version(abqpy.__version__)
-major, minor, patch = v.release
-release = version = str(major)
-ref = "latest" if v.is_devrelease else major
+release = abqpy.__version__
+major, minor, patch, *_ = release.split(".")
+release = version = major
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -85,7 +83,7 @@ extensions = [
 
 # changes configuration
 changes_write_to = "CHANGES.md"
-changes_versions = [str(v) for v in range(major, 2015, -1)]
+changes_versions = [str(v) for v in range(int(major), 2015, -1)]
 
 # sphinx-comments
 comments_config = {
@@ -287,7 +285,7 @@ elif html_theme == "sphinx_immaterial":
         "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        "edit_uri": f"edit/{major}/docs/source",
+        "edit_uri": f"edit/{version}/docs/source",
         "globaltoc_collapse": True,
         "features": [
             "navigation.expand",
@@ -331,11 +329,11 @@ elif html_theme == "sphinx_immaterial":
                 "title": ver,
                 "aliases": [],
             }
-            for ver in ["latest"] + versions
+            for ver in versions
         ],
         # END: version_dropdown
         "alternate": [
-            {"name": alias, "link": f"/{lang}/{ref}" if READTHEDOCS else f"/abqpy/{lang}/{ref}", "lang": lang}
+            {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
             for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
         ],
         "toc_title_is_page_title": True,
