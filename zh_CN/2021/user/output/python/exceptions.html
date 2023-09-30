@@ -452,11 +452,11 @@
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">invalidOdbName</span> <span class="o">=</span> <span class="s2">"invalid.odb"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">myOdb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">invalidOdbName</span><span class="p">)</span>
-<span class="gp">... </span><span class="k">except</span> <span class="n">OdbError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Abaqus error message: </span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"customized error message here"</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="n">OdbError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Abaqus error message: </span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#str" title="str"><span class="nb">str</span></a><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"customized error message here"</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Unknown Exception. "</span><span class="p">)</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Unknown Exception. "</span><span class="p">)</span>
 <span class="gp">...</span>
 </code></pre></div>
 </div>
