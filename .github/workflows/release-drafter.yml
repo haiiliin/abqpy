@@ -16,7 +16,8 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         id: release_drafter
         with:
-          config-name: release-drafter-2017.yml
+          config-name: release-drafter.yml
+          commitish: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
