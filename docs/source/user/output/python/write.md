@@ -112,7 +112,7 @@ To define the geometry of your model, you first create the parts that are used b
   nodeLabels = (5, 11)
   instanceName = "part-1-1"
   nodeSet = assembly.NodeSetFromNodeLabels(
-      name="nodesetRA", ((instanceName, nodeLabels),)
+      name="nodesetRA", nodeLabels=((instanceName, nodeLabels),)
   )
   ```
 
