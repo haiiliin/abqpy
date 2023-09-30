@@ -94,8 +94,7 @@ As with dictionaries, you can use the keys() method to access the repository key
 >>> session.Viewport(name='Top view')
 >>> session.Viewport(name='Front view')
 >>> for key in session.viewports.keys():
-        ...
-        print (key)
+...     print (key)
 Front view
 Top view
 Side view
