@@ -19,6 +19,8 @@ on:
       - "docs/source/**"
       - "examples/**"
       - ".github/workflows/docs.yml"
+  release:
+    types: [published]
   workflow_dispatch:
 
 concurrency:
@@ -67,7 +69,7 @@ jobs:
           retention-days: 1
 
   upload:
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'push' && github.ref_name == '2023' || github.event_name == 'release'
     needs: sphinx
     runs-on: ubuntu-latest
     strategy:
@@ -93,10 +95,13 @@ jobs:
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
+      - name: Get the output directory
+        run: |
+          echo OUTPUT_DIR=${{ github.event_name == 'push' && 'latest' || env.VERSION }} >> $GITHUB_ENV
       - name: Upload the documentation
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          destination_dir: ${{ matrix.language }}/${{ env.VERSION }}
+          destination_dir: ${{ matrix.language }}/$OUTPUT_DIR
           keep_files: true
