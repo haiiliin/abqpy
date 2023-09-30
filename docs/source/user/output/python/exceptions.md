@@ -8,7 +8,7 @@ The exceptions thrown are of type OdbError; for example, the following script ca
 >>> invalidOdbName = "invalid.odb"
 >>> try:
 ...     myOdb = openOdb(invalidOdbName)
-... except OdbError, e:
+... except OdbError as e:
 ...     print("Abaqus error message: %s" % str(e))
 ...     print("customized error message here")
 ... except:

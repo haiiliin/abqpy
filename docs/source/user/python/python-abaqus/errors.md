@@ -78,7 +78,7 @@ The Python exception handling techniques described in Error handling apply to th
 ```python
 try:
     session.Viewport(name="tiny", width=1, height=1)
-except RangeError, message:
+except RangeError as message:
     print("Viewport too small:", message)
 print("Script continues running and prints this line")
 ```
