@@ -354,7 +354,7 @@ You can raise your own exceptions by providing the error type and the error mess
 ```python
 def myFunction(x, y):
     if y == 0:
-        raise ValueError ("y argument cannot be zero")
+        raise ValueError("y argument cannot be zero")
     else:
         return x / y
 
