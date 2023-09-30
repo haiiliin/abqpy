@@ -133,7 +133,7 @@ myViewport = session.Viewport(
 try:
     myOdb = visualization.openOdb(path="viewer_tutorial.odb")
 
-except AbaqusException, value:
+except AbaqusException as value:
     print("Error:", value)
 
 myViewport.setValues(displayedObject=myOdb)
