@@ -169,7 +169,7 @@ newViewport = session.Viewport("myViewport", (10, 10), width=100, height=50)
 However, you cannot use the following statement:
 
 ```python
-newViewport = session.Viewport(name="myViewport", (10, 10), 100, 50)
+newViewport = session.Viewport(name="myViewport", origin=(10, 10), width=100, height=50)
 ```
 
 You will find it easier to use keyword arguments so that you do not have to concern yourself with the positional requirements.

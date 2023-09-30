@@ -622,7 +622,7 @@
 </code></pre></div>
 </div>
 <p>However, you cannot use the following statement:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"myViewport"</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">newViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"myViewport"</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>You will find it easier to use keyword arguments so that you do not have to concern yourself with the positional requirements.</p>

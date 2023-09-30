@@ -549,7 +549,7 @@
 
 <span class="c1"># Create a viewport for this example.</span>
 
-<span class="n">myViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span>
+<span class="n">myViewport</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/session/canvas.html#abaqus.Canvas.CanvasSession.CanvasSession.Viewport" title="abaqus.Canvas.CanvasSession.CanvasSession.Viewport"><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span></a><span class="p">(</span>
     <span class="n">name</span><span class="o">=</span><span class="s2">"Print contour plot after each step"</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span>
 <span class="p">)</span>
 
@@ -557,20 +557,20 @@
 <span class="c1"># Then set the plot state to CONTOURS_ON_DEF</span>
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="n">myOdb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">"viewer_tutorial.odb"</span><span class="p">)</span>
+    <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="n">myOdb</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbCommands.openOdb" title="abaqus.Odb.OdbCommands.openOdb"><span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span></a><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">"viewer_tutorial.odb"</span><span class="p">)</span>
 
-<span class="k">except</span> <span class="n">AbaqusException</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">AbaqusException</span> <span class="k">as</span> <span class="n">value</span><span class="p">:</span>
+    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 
-<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="n">myOdb</span></a><span class="p">)</span>
 
 
 <span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="p">(</span><span class="n">CONTOURS_ON_DEF</span><span class="p">,))</span>
 
 <span class="c1"># Determine the number of steps in the output database.</span>
 
-<span class="n">mySteps</span> <span class="o">=</span> <span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span>
-<span class="n">numSteps</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mySteps</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.steps" title="abaqus.Odb.OdbBase.OdbBase.steps"><span class="n">mySteps</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.steps" title="abaqus.Odb.OdbBase.OdbBase.steps"><span class="n">myOdb</span><span class="o">.</span><span class="n">steps</span></a>
+<span class="n">numSteps</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#len" title="len"><span class="nb">len</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.steps" title="abaqus.Odb.OdbBase.OdbBase.steps"><span class="n">mySteps</span></a><span class="p">)</span>
 
 <span class="c1"># Set the maximum and minimum limits of the contour legend.</span>
 
@@ -580,8 +580,8 @@
 
 <span class="c1"># Establish print preferences.</span>
 
-<span class="n">session</span><span class="o">.</span><span class="n">printOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">vpBackground</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
-<span class="n">session</span><span class="o">.</span><span class="n">psOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">LANDSCAPE</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="../../reference/session/print.html#abaqus.Print.PrintOptions.PrintOptions.setValues" title="abaqus.Print.PrintOptions.PrintOptions.setValues"><span class="n">session</span><span class="o">.</span><span class="n">printOptions</span><span class="o">.</span><span class="n">setValues</span></a><span class="p">(</span><span class="n">vpBackground</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="../../reference/session/print.html#abaqus.Print.PsOptions.PsOptions.setValues" title="abaqus.Print.PsOptions.PsOptions.setValues"><span class="n">session</span><span class="o">.</span><span class="n">psOptions</span><span class="o">.</span><span class="n">setValues</span></a><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="n">LANDSCAPE</span><span class="p">)</span>
 <span class="n">myViewport</span><span class="o">.</span><span class="n">viewportAnnotationOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">triad</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
 <span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">basicOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span>
     <span class="n">coordSystemDisplay</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span>
@@ -593,10 +593,10 @@
 <span class="c1">#     3) The increment number of the last frame in the step.</span>
 <span class="c1">#</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numSteps</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/stdtypes.html#range" title="range"><span class="nb">range</span></a><span class="p">(</span><span class="n">numSteps</span><span class="p">):</span>
     <span class="n">stepKey</span> <span class="o">=</span> <span class="n">mySteps</span><span class="o">.</span><span class="n">keys</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">step</span> <span class="o">=</span> <span class="n">mySteps</span><span class="p">[</span><span class="n">stepKey</span><span class="p">]</span>
-    <span class="n">numFrames</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">)</span>
+    <span class="n">step</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.steps" title="abaqus.Odb.OdbBase.OdbBase.steps"><span class="n">mySteps</span></a><span class="p">[</span><span class="n">stepKey</span><span class="p">]</span>
+    <span class="n">numFrames</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#len" title="len"><span class="nb">len</span></a><span class="p">(</span><span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">)</span>
 
     <span class="c1">#   Go to the last frame.</span>
     <span class="c1">#   Display a contour plot.</span>
@@ -612,7 +612,7 @@
 
     <span class="c1"># Print the viewport to a file.</span>
 
-    <span class="n">session</span><span class="o">.</span><span class="n">printToFile</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">PNG</span><span class="p">,</span> <span class="p">(</span><span class="n">myViewport</span><span class="p">,))</span>
+    <a class="sphinx-codeautolink-a" href="../../reference/session/index.html#abaqus.Session.SessionBase.SessionBase.printToFile" title="abaqus.Session.SessionBase.SessionBase.printToFile"><span class="n">session</span><span class="o">.</span><span class="n">printToFile</span></a><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">PNG</span><span class="p">,</span> <span class="p">(</span><span class="n">myViewport</span><span class="p">,))</span>
 </code></pre></div>
 </div>
 </article>
