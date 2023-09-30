@@ -55,8 +55,7 @@ Members of an Abaqus object are read-only; consequently, you cannot change their
 
 ```pycon
 >>> import section
->>> shellSection = mdb.models['Model-1'].HomogeneousShellSection(
-        name='Steel Shell', thickness=1.0, material='Steel')
+>>> shellSection = mdb.models['Model-1'].HomogeneousShellSection(name='Steel Shell', thickness=1.0, material='Steel')
 >>> print ('Original shell section thickness = ', shellSection.thickness)
 Original shell section thickness =  1.0
 >>> shellSection.setValues(thickness=2.0)
@@ -89,8 +88,7 @@ Members of the section are: ['category', 'dimension',
 Methods of the section are:  ['setValues']
 >>> # Print the value of each member in a nice format
 >>> for member in mySection.__members__:
-    ...
-    print ('mySection.%s = %s' % (member, getattr(mySection, member)))
+...     print ('mySection.%s = %s' % (member, getattr(mySection, member)))
 mySection.category = SOLID
 mySection.dimension = THREE_DIM
 mySection.layout = HOMOGENEOUS

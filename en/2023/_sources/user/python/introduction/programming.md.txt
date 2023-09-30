@@ -343,7 +343,7 @@ If you use exception handling, you can catch the error, display a helpful messag
 ```pycon
 >>> try:
 ...     outputFile = open('foam.txt')
-... except IOError,error:
+... except IOError as error:
 ...     print ('Exception trapped: ', error)
 ...
 Exception trapped:  (2, 'No such file or directory')
@@ -354,14 +354,14 @@ You can raise your own exceptions by providing the error type and the error mess
 ```python
 def myFunction(x, y):
     if y == 0:
-        raise ValueError, "y argument cannot be zero"
+        raise ValueError("y argument cannot be zero")
     else:
         return x / y
 
 
 try:
     print(myFunction(temperature, velocity))
-except ValueError, error:
+except ValueError as error:
     print(error)
 ```
 
