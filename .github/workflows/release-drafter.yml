@@ -16,7 +16,12 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         id: release_drafter
         with:
+<<<<<<< HEAD
           config-name: release-drafter-2017.yml
+=======
+          config-name: release-drafter.yml
+          commitish: ${{ github.ref_name }}
+>>>>>>> 0a0a08c2 ([workflow] Update release-drafter workflow and fix docs code blocks (#5251))
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
