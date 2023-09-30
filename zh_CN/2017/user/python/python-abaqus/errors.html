@@ -549,9 +549,9 @@ The layout of a typical exception description in the online documentation.</span
 <p>The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
     <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"tiny"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">except</span> <span class="n">RangeError</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Viewport too small:"</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Script continues running and prints this line"</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">RangeError</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
+    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Viewport too small:"</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Script continues running and prints this line"</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>The resulting output is</p>

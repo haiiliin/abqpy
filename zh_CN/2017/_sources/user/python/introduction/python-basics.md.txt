@@ -70,7 +70,7 @@ To create variables called i and j that refer to integer objects, type the follo
 
 An integer is based on a C long and can be compared to a Fortran integer\*4 or \*8. For extremely large integer values, you should declare a long integer. The size of a long integer is essentially unlimited. The L at the end of the number indicates that it is a long integer.
 
-```pycon
+```
 >>> nodes = 2000000L
 >>> bigNumber = 120L**21
 ```
@@ -613,7 +613,7 @@ Use `break` to break out of a loop.
 
 ```pycon
 >>> while 1:
-...     x = raw_input(Enter a number or 0 to quit:')
+...     x = raw_input('Enter a number or 0 to quit:')
 ...     if x == '0':
 ...         break
 ...     else:
