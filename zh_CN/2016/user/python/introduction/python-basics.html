@@ -797,7 +797,7 @@
 </code></pre></div>
 </div>
 <p>An integer is based on a C long and can be compared to a Fortran integer*4 or *8. For extremely large integer values, you should declare a long integer. The size of a long integer is essentially unlimited. The L at the end of the number indicates that it is a long integer.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">nodes</span> <span class="o">=</span> <span class="mi">2000000</span><span class="n">L</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">nodes</span> <span class="o">=</span> <span class="mi">2000000</span><span class="n">L</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bigNumber</span> <span class="o">=</span> <span class="mi">120</span><span class="n">L</span><span class="o">**</span><span class="mi">21</span>
 </code></pre></div>
 </div>
@@ -1218,11 +1218,11 @@ The <code class="docutils literal notranslate"><span class="pre">+</span></code>
 </div>
 <p>Use <code class="docutils literal notranslate"><span class="pre">break</span></code> to break out of a loop.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">(</span><span class="n">Enter</span> <span class="n">a</span> <span class="n">number</span> <span class="ow">or</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">quit</span><span class="p">:</span><span class="s1">')</span>
+<span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">(</span><span class="s1">'Enter a number or 0 to quit:'</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">'0'</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="k">break</span>
 <span class="gp">... </span>    <span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>        <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Use <code class="docutils literal notranslate"><span class="pre">continue</span></code> to skip the rest of the loop and to go to the next iteration.</p>
