@@ -44,6 +44,10 @@ jobs:
       LANGUAGE: ${{ matrix.language }}
 
     steps:
+      - name: Get the output directory
+        run: |
+          echo OUTPUT_DIR=${{ github.event_name == 'push' && 'latest' || env.VERSION }} >> $GITHUB_ENV
+      - run: echo $OUTPUT_DIR
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
