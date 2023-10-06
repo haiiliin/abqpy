@@ -32,4 +32,5 @@ mdb/index
 odb
 session/index
 kernel/index
+plugin
 ```
