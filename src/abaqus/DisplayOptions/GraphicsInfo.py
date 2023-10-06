@@ -3,13 +3,15 @@ from abqpy.decorators import abaqus_class_doc
 
 @abaqus_class_doc
 class GraphicsInfo:
-    """The GraphicsInfo object stores information about the graphics adapter installed in your system. The
-    GraphicsInfo object has no constructor or methods; Abaqus creates the **GraphicsInfo** member when a session
-    is started. If you execute Abaqus/CAE on a remote system and display the main window locally, the *glx
-    server* is your local machine and the *glx client* is the remote machine. This definition of client and
-    server follows the X11 naming convention. If you execute and display Abaqus/CAE on the same machine, you
-    will typically see identical values for both the name of the server and the name of the client. The members
-    are all read-only.
+    """The GraphicsInfo object stores information about the graphics adapter installed in your
+    system. The GraphicsInfo object has no constructor or methods; Abaqus creates the
+    **GraphicsInfo** member when a session is started.
+    If you execute Abaqus/CAE on a remote system and display the main window locally, the
+    *glx server* is your local machine and the *glx client* is the remote machine. This
+    definition of client and server follows the X11 naming convention. If you execute and
+    display Abaqus/CAE on the same machine, you will typically see identical values for both
+    the name of the server and the name of the client.
+    The members are all read-only.
 
     .. note::
         This object can be accessed by::

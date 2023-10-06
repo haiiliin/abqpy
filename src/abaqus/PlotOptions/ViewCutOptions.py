@@ -23,12 +23,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ViewCutOptions(_CopyOptionsBase):
-    """The ViewCutOptions object stores values and attributes associated with a view cut plot. The
-    ViewCutOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.viewCutOptions* member
-    when you import the Visualization module. Abaqus creates an **viewCutOptions** member when it creates the
-    OdbDisplay object, using the values from *defaultOdbDisplay.viewCutOptions*. Abaqus creates the
-    **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**.
-
+    """The ViewCutOptions object stores values and attributes associated with a view cut plot.
+    The ViewCutOptions object has no constructor command. Abaqus creates a
+    *defaultOdbDisplay.viewCutOptions* member when you import the Visualization module.
+    Abaqus creates an **viewCutOptions** member when it creates the OdbDisplay object, using
+    the values from *defaultOdbDisplay.viewCutOptions*. Abaqus creates the **odbDisplay**
+    member when a viewport is created, using the values from **defaultOdbDisplay**.
     ViewCutOptions objects are accessed in one of two ways:
     - The default view cut options. These settings are used as defaults when other
     **viewCutOptions** members are created. These settings can be set to customize user

@@ -37,7 +37,10 @@ from abaqusConstants import *
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def getResults():
-    """Retrieve the displacement and calculate the minimum and maximum bending moment at the center of plate."""
+    """
+    Retrieve the displacement and calculate the minimum
+    and maximum bending moment at the center of plate.
+    """
 
     from visualization import ELEMENT_NODAL
 
@@ -80,7 +83,10 @@ def getResults():
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def createXYPlot(vpOrigin, vpName, plotName, data):
-    """Display curves of theoretical and computed results in a new viewport."""
+    """
+    Display curves of theoretical and computed results in
+    a new viewport.
+    """
 
     from visualization import USER_DEFINED
 
@@ -100,7 +106,9 @@ def createXYPlot(vpOrigin, vpName, plotName, data):
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def createModel():
-    """Create the skew example model, including material, step, load, bc, and job."""
+    """
+    Create the skew example model, including material, step, load, bc, and job.
+    """
 
     import mesh
     import part

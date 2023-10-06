@@ -10,9 +10,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FreeBodyReportOptions:
-    """The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method when you write
-    free body computational results to an ASCII file. The FreeBodyReportOptions object has no constructor.
-    Abaqus creates the **freeBodyReportOptions** member when you import the Visualization module.
+    """The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
+    when you write free body computational results to an ASCII file. The
+    FreeBodyReportOptions object has no constructor. Abaqus creates the
+    **freeBodyReportOptions** member when you import the Visualization module.
 
     .. note::
         This object can be accessed by::

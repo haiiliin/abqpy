@@ -21,9 +21,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PageSetupOptions(_OptionsBase):
-    """The PageSetupOptions object stores the settings that Abaqus uses when printing using a Windows printer.
-    The PageSetupOptions object has no constructor. Abaqus creates the **pageSetupOptions** member when a
-    session is started.
+    """The PageSetupOptions object stores the settings that Abaqus uses when printing using a
+    Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
+    **pageSetupOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

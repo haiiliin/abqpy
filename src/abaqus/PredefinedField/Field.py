@@ -21,8 +21,9 @@ from .PredefinedField import PredefinedField
 
 @abaqus_class_doc
 class Field(PredefinedField):
-    """The Field object stores the data for field predefined fields. The Field object is derived from the
-    PredefinedField object. **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
+    """The Field object stores the data for field predefined fields.
+    The Field object is derived from the PredefinedField object.
+    **distributionType=FROM_FILE** or FROM_FILE_AND_USER_DEFINED.
 
     .. note::
         This object can be accessed by::

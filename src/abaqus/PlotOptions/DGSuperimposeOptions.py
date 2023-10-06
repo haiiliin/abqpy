@@ -21,10 +21,11 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class DGSuperimposeOptions:
-    """The DGSuperimposeOptions object stores values and attributes associated with the undeformed shape when
-    the display contains both the deformed shape and the undeformed shape. The DGSuperimposeOptions object has
-    no constructor command. Abaqus creates an *odbDisplayOptions.superimposeOptions* member when a display group
-    instance is created, using values from *odbDisplay.superimposeOptions*.
+    """The DGSuperimposeOptions object stores values and attributes associated with the
+    undeformed shape when the display contains both the deformed shape and the undeformed
+    shape. The DGSuperimposeOptions object has no constructor command. Abaqus creates an
+    *odbDisplayOptions.superimposeOptions* member when a display group instance is created,
+    using values from *odbDisplay.superimposeOptions*.
 
     .. note::
         This object can be accessed by::

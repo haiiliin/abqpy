@@ -1,4 +1,5 @@
-"""Deleted conflicted deleted files from a git repository from the cherry-pick output. For example:
+"""
+Deleted conflicted deleted files from a git repository from the cherry-pick output. For example:
 
 On branch mergify/bp/V2017/pr-993
 Your branch is up to date with 'origin/V2017'.
@@ -10,8 +11,8 @@ You are currently cherry-picking commit 16e1200.
 
 Unmerged paths:
   (use "git add/rm <file>..." as appropriate to mark resolution)
-        deleted by us:   src/abaqus/PredefinedField/Field.py
-        deleted by us:   src/abaqus/PredefinedField/FieldState.py
+	deleted by us:   src/abaqus/PredefinedField/Field.py
+	deleted by us:   src/abaqus/PredefinedField/FieldState.py
 """
 
 import os

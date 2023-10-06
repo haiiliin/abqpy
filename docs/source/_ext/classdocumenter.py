@@ -3,7 +3,7 @@ from sphinx.ext.autodoc import ALL, ClassDocumenter
 
 
 class AbqpyClassDocumenter(ClassDocumenter):
-    """Toggles the class members section."""
+    """Toggles the class members section"""
 
     def document_members(self, all_members: bool = False) -> None:
         # find out all the members that are documented

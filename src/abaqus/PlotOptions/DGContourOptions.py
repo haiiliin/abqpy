@@ -17,9 +17,10 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class DGContourOptions:
-    """The DGContourOptions object stores values and attributes associated with a contour plot. The
-    DGContourOptions object has no constructor command. Abaqus creates an *odbDisplayOptions.contourOptions*
-    member when a display group instance is created, using values from *odbDisplay.contourOptions*.
+    """The DGContourOptions object stores values and attributes associated with a contour plot.
+    The DGContourOptions object has no constructor command. Abaqus creates an
+    *odbDisplayOptions.contourOptions* member when a display group instance is created,
+    using values from *odbDisplay.contourOptions*.
 
     .. note::
         This object can be accessed by::

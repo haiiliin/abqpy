@@ -15,10 +15,10 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class DGDisplayBodyOptions:
-    """The DGDisplayBodyOptions object stores values and attributes applied to display bodies. The
-    DGDisplayBodyOptions object has no constructor command. Abaqus creates an
-    *odbDisplayOptions.displayBodyOptions* member when a display group instance is created, using values from
-    *odbDisplay.displayBodyOptions*.
+    """The DGDisplayBodyOptions object stores values and attributes applied to display bodies.
+    The DGDisplayBodyOptions object has no constructor command. Abaqus creates an
+    *odbDisplayOptions.displayBodyOptions* member when a display group instance is created,
+    using values from *odbDisplay.displayBodyOptions*.
 
     .. note::
         This object can be accessed by::

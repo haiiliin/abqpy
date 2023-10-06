@@ -1,6 +1,5 @@
-"""conftest.py: sharing fixtures across multiple files.
-
-https://docs.pytest.org/en/7.1.x/reference/fixtures.html#conftest-py-sharing-fixtures-across-multiple-files.
+"""
+conftest.py: sharing fixtures across multiple files. https://docs.pytest.org/en/7.1.x/reference/fixtures.html#conftest-py-sharing-fixtures-across-multiple-files.
 """
 import os
 import sys

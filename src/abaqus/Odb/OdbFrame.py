@@ -92,9 +92,9 @@ class OdbFrame:
     @overload
     @abaqus_method_doc
     def __init__(self, mode: int, frequency: float, description: str = ""):
-        """This constructor creates an OdbFrame object in the frequency domain and appends it to the frame
-        sequence. The arguments to the constructor are valid only when **domain** = FREQUENCY or **domain** =
-        MODAL.
+        """This constructor creates an OdbFrame object in the frequency domain and appends it to
+        the frame sequence. The arguments to the constructor are valid only when
+        **domain** = FREQUENCY or **domain** = MODAL.
 
         .. note::
             This function can be accessed by::

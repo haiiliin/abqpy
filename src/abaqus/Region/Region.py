@@ -157,9 +157,10 @@ class Region:
         end2Elements: Union[Element, Sequence[Element], None] = None,
         circumElements: Union[Element, Sequence[Element], None] = None,
     ):
-        """This command creates a surface-like region. For example myRegion =
-        regionToolset.Region(side1Faces=f[12:14]) The arguments are the same as the arguments to the Surface
-        method, except for the **name** argument.
+        """This command creates a surface-like region. For example
+        myRegion = regionToolset.Region(side1Faces=f[12:14])
+        The arguments are the same as the arguments to the Surface method, except for the **name**
+        argument.
 
         .. note::
             This function can be accessed by::

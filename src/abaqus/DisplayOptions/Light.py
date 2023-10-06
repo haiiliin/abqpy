@@ -8,9 +8,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class Light:
-    """The Light object stores settings that control how objects are lit when the **renderStyle** is set to
-    SHADED. The Light object has no constructor; Abaqus creates them as part of the **defaultLightOptions** and
-    the **lightOptions** objects when a session is started.
+    """The Light object stores settings that control how objects are lit when the **renderStyle**
+    is set to SHADED.
+    The Light object has no constructor; Abaqus creates them as part of the
+    **defaultLightOptions** and the **lightOptions** objects when a session is started.
 
     .. note::
         This object can be accessed by::

@@ -47,8 +47,8 @@ class MeshFaceArray(List[MeshFace]):
 
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshFaceArray:
-        """This method returns the objects in the MeshFaceArray identified using the specified **mask**. When
-        large number of objects are involved, this method is highly efficient.
+        """This method returns the objects in the MeshFaceArray identified using the specified
+        **mask**. When large number of objects are involved, this method is highly efficient.
 
         Parameters
         ----------
