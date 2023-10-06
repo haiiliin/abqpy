@@ -70,6 +70,7 @@ from abaqus.PlugInRegistration.AFXTransition import *  # noqa
 from abaqus.PlugInRegistration.AFXTreeTable import *  # noqa
 from abaqus.PlugInRegistration.AFXTupleKeyword import *  # noqa
 from abaqus.PlugInRegistration.AFXVerticalAligner import *  # noqa
+from abaqus.PlugInRegistration.Auxiliary import *
 from abaqus.PlugInRegistration.FXApp import *  # noqa
 from abaqus.PlugInRegistration.FXArrowButton import *  # noqa
 from abaqus.PlugInRegistration.FXBMPIcon import *  # noqa
@@ -148,5 +149,6 @@ from abaqus.PlugInRegistration.GUIPlugInCommands import *
 from abaqus.PlugInRegistration.KernelPlugInCommands import *
 from abaqus.PlugInRegistration.MessageDialogs import *
 from abaqus.PlugInRegistration.MessageMaps import *
+from abaqusConstants import *
 
 auto_all.end_all()
