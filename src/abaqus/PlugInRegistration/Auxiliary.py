@@ -24,7 +24,7 @@ def addExitCallback(callback: Callable):
     """
 
 
-def afxCreateIcon(fileName: str) -> FXBMPIcon | FXGIFIcon | FXPNGIcon | FXXPMIcon:
+def afxCreateIcon(fileName: str) -> FXBMPIcon | FXGIFIcon | FXPNGIcon | FXXPMIcon:  # type: ignore
     """Returns an icon created by reading the specified file, which can be in one of these formats: BMP, GIF,
     PNG, XPM. The file format is assumed from the file extension (which is not case sensitive). Returns 0 if the
     file cannot be opened.
@@ -37,7 +37,7 @@ def afxCreateIcon(fileName: str) -> FXBMPIcon | FXGIFIcon | FXPNGIcon | FXXPMIco
     ...
 
 
-def afxCreateBMPIcon(fileName: str) -> FXBMPIcon:
+def afxCreateBMPIcon(fileName: str) -> FXBMPIcon:  # type: ignore
     """Returns an icon created by reading the specified file in BMP format. Returns 0 if the file cannot be
     opened.
 
@@ -49,7 +49,7 @@ def afxCreateBMPIcon(fileName: str) -> FXBMPIcon:
     ...
 
 
-def afxCreateGIFIcon(fileName: str) -> FXGIFIcon:
+def afxCreateGIFIcon(fileName: str) -> FXGIFIcon:  # type: ignore
     """Returns an icon created by reading the specified file in GIF format. Returns 0 if the file cannot be
     opened.
 
@@ -61,7 +61,7 @@ def afxCreateGIFIcon(fileName: str) -> FXGIFIcon:
     ...
 
 
-def afxCreatePNGIcon(fileName: str) -> FXPNGIcon:
+def afxCreatePNGIcon(fileName: str) -> FXPNGIcon:  # type: ignore
     """Returns an icon created by reading the specified file in PNG format. Returns 0 if the file cannot be
     opened.
 
@@ -73,7 +73,7 @@ def afxCreatePNGIcon(fileName: str) -> FXPNGIcon:
     ...
 
 
-def afxCreateXPMIcon(fileName: str) -> FXXPMIcon:
+def afxCreateXPMIcon(fileName: str) -> FXXPMIcon:  # type: ignore
     """Returns an icon created by reading the specified file in XPM format. Returns 0 if the file cannot be
     opened.
 
@@ -108,7 +108,7 @@ def displayURL(url: str):
     """
 
 
-def getAFXApp() -> AFXApp:
+def getAFXApp() -> AFXApp:  # type: ignore
     """Returns the application object."""
     ...
 
@@ -126,7 +126,7 @@ FONT_BASE: int = hash("FONT_BASE")
 FONT_SMALL: int = hash("FONT_SMALL")
 
 
-def getAFXFont(opts: int = FONT_PROPORTIONAL) -> FXFont:
+def getAFXFont(opts: int = FONT_PROPORTIONAL) -> FXFont:  # type: ignore
     """Returns the specified font.
 
     Parameters
@@ -137,7 +137,7 @@ def getAFXFont(opts: int = FONT_PROPORTIONAL) -> FXFont:
     ...
 
 
-def afxGetColorHexSpecFromID(colorId: int) -> str:
+def afxGetColorHexSpecFromID(colorId: int) -> str:  # type: ignore
     """Returns the equivalent hex string for the specified color index.
 
     Parameters
@@ -148,7 +148,7 @@ def afxGetColorHexSpecFromID(colorId: int) -> str:
     ...
 
 
-def afxGetColorHexSpecFromName(colorName: str) -> str:
+def afxGetColorHexSpecFromName(colorName: str) -> str:  # type: ignore
     """Returns the equivalent hex string for the specified color name.
 
     Parameters
@@ -159,7 +159,7 @@ def afxGetColorHexSpecFromName(colorName: str) -> str:
     ...
 
 
-def getCurrentContext() -> dict:
+def getCurrentContext() -> dict:  # type: ignore
     """Returns the current GUI context dictionary, which contains the following keys: _mdbName_, _viewportName_,
     _objectPath_, _objectType_, _modelName_, and _moduleName_.
 
@@ -168,7 +168,7 @@ def getCurrentContext() -> dict:
     ...
 
 
-def getCurrentModuleGui() -> AFXModuleGui:
+def getCurrentModuleGui() -> AFXModuleGui:  # type: ignore
     """Returns the current moduleGui object.
 
     You can call that object's getModuleName method to check its name.
@@ -176,7 +176,7 @@ def getCurrentModuleGui() -> AFXModuleGui:
     ...
 
 
-def getCursorPosition() -> tuple[bool, float, float, int]:
+def getCursorPosition() -> tuple[bool, float, float, int]:  # type: ignore
     """Returns a tuple of status,x,y,buttonState.
 
     The status (TRUE or FALSE) indicates the success of the call. The x and y values represent the position
@@ -186,7 +186,7 @@ def getCursorPosition() -> tuple[bool, float, float, int]:
     ...
 
 
-def getDisplayedObjectType() -> str:
+def getDisplayedObjectType() -> str:  # type: ignore
     """Returns the type of the object displayed in the current viewport.
 
     Possible return values are: PART, ASSEMBLY, ODB, XY_PLOT, SKETCH, or None.
@@ -206,7 +206,7 @@ def getSeparator(parent, count: int):
     """
 
 
-def getWidgetFromText(parent, text: str) -> FXObject:
+def getWidgetFromText(parent, text: str) -> FXObject:  # type: ignore
     """Returns a widget whose label or tip text matches the specified text and is also a child of the specified
     widget.
 

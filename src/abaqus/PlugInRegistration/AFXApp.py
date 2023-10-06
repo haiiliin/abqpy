@@ -49,15 +49,15 @@ class AFXApp(FXApp):
         Reimplemented from FXApp.
         """
 
-    def getAFXMainWindow(self) -> AFXMainWindow:
+    def getAFXMainWindow(self) -> AFXMainWindow:  # type: ignore
         """Returns a pointer to the AFXMainWindow."""
         ...
 
-    def getBasePrerelease(self) -> bool:
+    def getBasePrerelease(self) -> bool:  # type: ignore
         """Returns True if the base product is a prerelease."""
         ...
 
-    def getBaseProductName(self) -> str:
+    def getBaseProductName(self) -> str:  # type: ignore
         """Returns the base product name."""
         ...
 
@@ -74,19 +74,19 @@ class AFXApp(FXApp):
             Update number.
         """
 
-    def getKernelInitializationCommand(self) -> str:
+    def getKernelInitializationCommand(self) -> str:  # type: ignore
         """Returns the command string that will be issued upon application startup."""
         ...
 
-    def getPrerelease(self) -> bool:
+    def getPrerelease(self) -> bool:  # type: ignore
         """Returns True if this is a prerelease."""
         ...
 
-    def getProductName(self) -> str:
+    def getProductName(self) -> str:  # type: ignore
         """Returns the product name."""
         ...
 
-    def getVersionNumbers(self) -> tuple[int, int, int]:
+    def getVersionNumbers(self) -> tuple[int, int, int]:  # type: ignore
         """Returns the major, minor, and update numbers."""
         ...
 
@@ -100,22 +100,22 @@ class AFXApp(FXApp):
         argv : str
         """
 
-    def isLocked(self) -> bool:
+    def isLocked(self) -> bool:  # type: ignore
         """Returns True if the GUI is locked or False if otherwise.
 
         Reimplemented from FXApp.
         """
         ...
 
-    def isProductCAE(self) -> bool:
+    def isProductCAE(self) -> bool:  # type: ignore
         """Returns True if the base product is Abaqus/CAE."""
         ...
 
-    def isProductViewer(self) -> bool:
+    def isProductViewer(self) -> bool:  # type: ignore
         """Returns True if the base product is Abaqus/Viewer."""
         ...
 
-    def isLearningEdition(self) -> bool:
+    def isLearningEdition(self) -> bool:  # type: ignore
         """Returns True if the base product is a learning edition."""
         ...
 
