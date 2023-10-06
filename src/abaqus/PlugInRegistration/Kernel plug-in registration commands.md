@@ -1,5 +1,3 @@
-| 
-
 Kernel plug-in commands register kernel plug-ins in either the **Plug-ins** menu or in a toolbox.
 
 **Access**
