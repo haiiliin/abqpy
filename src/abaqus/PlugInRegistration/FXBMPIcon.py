@@ -35,5 +35,4 @@ class FXBMPIcon(FXIcon):
         w : int
 
         h : int
-
         """

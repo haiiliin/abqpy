@@ -2,595 +2,620 @@ Font class
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxfont.png)
 
-### FXFont(a, fontdesc)  
+### FXFont(a, fontdesc)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct font from font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| fontdesc | FXFontDesc |   |   |
+| a | FXApp | | |
+| fontdesc | FXFontDesc | | |
 
-### FXFont(a, face, sz, wt=FONTWEIGHT\_NORMAL, sl=FONTSLANT\_REGULAR, enc=FONTENCODING\_DEFAULT, setw=FONTSETWIDTH\_DONTCARE, h=0)  
+### FXFont(a, face, sz, wt=FONTWEIGHT_NORMAL, sl=FONTSLANT_REGULAR, enc=FONTENCODING_DEFAULT, setw=FONTSETWIDTH_DONTCARE, h=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct a font with given face name, size in points(pixels), weight, slant, character set encoding, setwidth, and hints.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| face | String |   |   |
-| sz | Int |   |   |
-| wt | Int | FONTWEIGHT_NORMAL |   |
-| sl | Int | FONTSLANT_REGULAR |   |
-| enc | Int | FONTENCODING_DEFAULT |   |
-| setw | Int | FONTSETWIDTH_DONTCARE |   |
-| h | Int | 0 |   |
+| a | FXApp | | |
+| face | String | | |
+| sz | Int | | |
+| wt | Int | FONTWEIGHT_NORMAL | |
+| sl | Int | FONTSLANT_REGULAR | |
+| enc | Int | FONTENCODING_DEFAULT | |
+| setw | Int | FONTSETWIDTH_DONTCARE | |
+| h | Int | 0 | |
 
-### FXFont(a, nm)  
+### FXFont(a, nm)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct a font with given X11 font string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| nm | String |   |   |
+| a | FXApp | | |
+| nm | String | | |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create the font.
 
 Reimplemented from FXId.
 
-### destroy()  
+### destroy()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Destroy the font.
 
 Reimplemented from FXId.
 
-### detach()  
+### detach()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Detach the font.
 
 Reimplemented from FXId.
 
-### getEncoding()  
+### getEncoding()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get character set encoding.
 
-### getFontAscent()  
+### getFontAscent()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Ascent from baseline.
 
-### getFontDesc(fontdesc)  
+### getFontDesc(fontdesc)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fontdesc | FXFontDesc |   |   |
+| fontdesc | FXFontDesc | | |
 
-### getFontDescent()  
+### getFontDescent()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Descent from baseline.
 
-### getFontHeight()  
+### getFontHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Height of highest character in font.
 
-### getFontLeading()  
+### getFontLeading()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get font leading \[that is lead-ing as in Pb!\].
 
-### getFontSpacing()  
+### getFontSpacing()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get font line spacing.
 
-### getFontWidth()  
+### getFontWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Width of widest character in font.
 
-### getHints()  
+### getHints()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get hints.
 
-### getMaxChar()  
+### getMaxChar()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get last character glyph in font.
 
-### getMinChar()  
+### getMinChar()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get first character glyph in font.
 
-### getName()  
+### getName()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get face name.
 
-### getSetWidth()  
+### getSetWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get setwidth.
 
-### getSize()  
+### getSize()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get size in deci-points.
 
-### getSlant()  
+### getSlant()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get slant.
 
-### getTextHeight(text, n)  
+### getTextHeight(text, n)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Calculate height of given text in this font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | The string whose height is being evaluated. |
-| n | Int |   | The number of characters in 'text,' starting from the left end, for which the height will be returned. |
+| text | String | | The string whose height is being evaluated. |
+| n | Int | | The number of characters in 'text,' starting from the left end, for which the height will be returned. |
 
-### getTextWidth(text, n)  
+### getTextWidth(text, n)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Calculate width of given text in this font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | The string whose width is being evaluated. |
-| n | Int |   | The number of characters in 'text,' starting from the left end, for which the width will be returned. |
+| text | String | | The string whose width is being evaluated. |
+| n | Int | | The number of characters in 'text,' starting from the left end, for which the width will be returned. |
 
-### getWeight()  
+### getWeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get font weight.
 
-### hasChar(ch)  
+### hasChar(ch)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 See if font has glyph for ch.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | Int |   |   |
+| ch | Int | | |
 
-### isFontMono()  
+### isFontMono()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Find out if the font is monotype or proportional.
 
-### leftBearing(ch)  
+### leftBearing(ch)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Left bearing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | String |   |   |
+| ch | String | | |
 
-### rightBearing(ch)  
+### rightBearing(ch)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Right bearing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | String |   |   |
+| ch | String | | |
 
-### setFontDesc(fontdesc)  
+### setFontDesc(fontdesc)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fontdesc | FXFontDesc |   |   |
+| fontdesc | FXFontDesc | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Font style hints which influence the matcher**
 
-| **FONTPITCH_DEFAULT** | 
+| **FONTPITCH_DEFAULT** |
 
 Default pitch.
 
- |
-| **FONTPITCH_FIXED** | 
+|
+| **FONTPITCH_FIXED** |
 
 Fixed pitch, mono-spaced.
 
- |
-| **FONTPITCH_VARIABLE** | 
+|
+| **FONTPITCH_VARIABLE** |
 
 Variable pitch, proportional spacing.
 
- |
-| **FONTHINT_DONTCARE** | 
+|
+| **FONTHINT_DONTCARE** |
 
 Don't care which font.
 
- |
-| **FONTHINT_DECORATIVE** | 
+|
+| **FONTHINT_DECORATIVE** |
 
 Fancy fonts.
 
- |
-| **FONTHINT_MODERN** | 
+|
+| **FONTHINT_MODERN** |
 
 Monospace typewriter font.
 
- |
-| **FONTHINT_ROMAN** | 
+|
+| **FONTHINT_ROMAN** |
 
 Variable width times-like font, serif.
 
- |
-| **FONTHINT_SCRIPT** | 
+|
+| **FONTHINT_SCRIPT** |
 
 Script or cursive.
 
- |
-| **FONTHINT_SWISS** | 
+|
+| **FONTHINT_SWISS** |
 
 Helvetica/swiss type font, sans-serif.
 
- |
-| **FONTHINT_SYSTEM** | 
+|
+| **FONTHINT_SYSTEM** |
 
 System font.
 
- |
-| **FONTHINT_X11** | 
+|
+| **FONTHINT_X11** |
 
 X11 Font string.
 
- |
-| **FONTHINT_SCALABLE** | 
+|
+| **FONTHINT_SCALABLE** |
 
 Scalable fonts.
 
- |
-| **FONTHINT_POLYMORPHIC** | 
+|
+| **FONTHINT_POLYMORPHIC** |
 
 Polymorphic fonts.
 
- |
-
+|
 
 **Font slant**
 
-| **FONTSLANT_DONTCARE** | 
+| **FONTSLANT_DONTCARE** |
 
 Don't care about slant.
 
- |
-| **FONTSLANT_REGULAR** | 
+|
+| **FONTSLANT_REGULAR** |
 
 Regular straight up.
 
- |
-| **FONTSLANT_ITALIC** | 
+|
+| **FONTSLANT_ITALIC** |
 
 Italics.
 
- |
-| **FONTSLANT_OBLIQUE** | 
+|
+| **FONTSLANT_OBLIQUE** |
 
 Oblique slant.
 
- |
-| **FONTSLANT\_REVERSE\_ITALIC** | 
+|
+| **FONTSLANT_REVERSE_ITALIC** |
 
 Reversed italic.
 
- |
-| **FONTSLANT\_REVERSE\_OBLIQUE** | 
+|
+| **FONTSLANT_REVERSE_OBLIQUE** |
 
 Reversed oblique.
 
- |
-
+|
 
 **Font character set encoding**
 
-| **FONTENCODING_DEFAULT** | 
+| **FONTENCODING_DEFAULT** |
 
 Don't care character encoding.
 
- |
-| **FONTENCODING\_ISO\_8859_5** | 
+|
+| **FONTENCODING_ISO_8859_5** |
 
 Cyrillic (almost obsolete).
 
- |
-| **FONTENCODING\_KOI8\_R** | 
+|
+| **FONTENCODING_KOI8_R** |
 
 Russian.
 
- |
-| **FONTENCODING\_KOI8\_U** | 
+|
+| **FONTENCODING_KOI8_U** |
 
 Ukrainian.
 
- |
-| **FONTENCODING_LATIN1** | 
+|
+| **FONTENCODING_LATIN1** |
 
 Latin 1 (West European).
 
- |
-| **FONTENCODING_LATIN2** | 
+|
+| **FONTENCODING_LATIN2** |
 
 Latin 2 (East European).
 
- |
-| **FONTENCODING_LATIN3** | 
+|
+| **FONTENCODING_LATIN3** |
 
 Latin 3 (South European).
 
- |
-| **FONTENCODING_LATIN4** | 
+|
+| **FONTENCODING_LATIN4** |
 
 Latin 4 (North European).
 
- |
-| **FONTENCODING_LATIN5** | 
+|
+| **FONTENCODING_LATIN5** |
 
 Latin 5 (Turkish).
 
- |
-| **FONTENCODING_LATIN6** | 
+|
+| **FONTENCODING_LATIN6** |
 
 Latin 6 (Nordic).
 
- |
-| **FONTENCODING_LATIN7** | 
+|
+| **FONTENCODING_LATIN7** |
 
 Latin 7 (Baltic Rim).
 
- |
-| **FONTENCODING_LATIN8** | 
+|
+| **FONTENCODING_LATIN8** |
 
 Latin 8 (Celtic).
 
- |
-| **FONTENCODING_LATIN9** | 
+|
+| **FONTENCODING_LATIN9** |
 
 Latin 9 AKA Latin 0.
 
- |
-| **FONTENCODING_LATIN10** | 
+|
+| **FONTENCODING_LATIN10** |
 
 Latin 10.
 
- |
-| **FONTENCODING_USASCII** | 
+|
+| **FONTENCODING_USASCII** |
 
 Latin 1.
 
- |
-| **FONTENCODING_WESTEUROPE** | 
+|
+| **FONTENCODING_WESTEUROPE** |
 
 Latin 1 (West European).
 
- |
-| **FONTENCODING_EASTEUROPE** | 
+|
+| **FONTENCODING_EASTEUROPE** |
 
 Latin 2 (East European).
 
- |
-| **FONTENCODING_SOUTHEUROPE** | 
+|
+| **FONTENCODING_SOUTHEUROPE** |
 
 Latin 3 (South European).
 
- |
-| **FONTENCODING_NORTHEUROPE** | 
+|
+| **FONTENCODING_NORTHEUROPE** |
 
 Latin 4 (North European).
 
- |
-| **FONTENCODING_CYRILLIC** | 
+|
+| **FONTENCODING_CYRILLIC** |
 
 Cyrillic.
 
- |
-| **FONTENCODING_RUSSIAN** | 
+|
+| **FONTENCODING_RUSSIAN** |
 
 Cyrillic.
 
- |
-| **FONTENCODING_ARABIC** | 
+|
+| **FONTENCODING_ARABIC** |
 
 Arabic.
 
- |
-| **FONTENCODING_GREEK** | 
+|
+| **FONTENCODING_GREEK** |
 
 Greek.
 
- |
-| **FONTENCODING_HEBREW** | 
+|
+| **FONTENCODING_HEBREW** |
 
 Hebrew.
 
- |
-| **FONTENCODING_TURKISH** | 
+|
+| **FONTENCODING_TURKISH** |
 
 Latin 5 (Turkish).
 
- |
-| **FONTENCODING_NORDIC** | 
+|
+| **FONTENCODING_NORDIC** |
 
 Latin 6 (Nordic).
 
- |
-| **FONTENCODING_THAI** | 
+|
+| **FONTENCODING_THAI** |
 
 Thai.
 
- |
-| **FONTENCODING_BALTIC** | 
+|
+| **FONTENCODING_BALTIC** |
 
 Latin 7 (Baltic Rim).
 
- |
-| **FONTENCODING_CELTIC** | 
+|
+| **FONTENCODING_CELTIC** |
 
 Latin 8 (Celtic).
 
- |
-
+|
 
 **Font weight**
 
-| **FONTWEIGHT_DONTCARE** | 
+| **FONTWEIGHT_DONTCARE** |
 
 Don't care about weight.
 
- |
-| **FONTWEIGHT_THIN** | 
+|
+| **FONTWEIGHT_THIN** |
 
 Thin.
 
- |
-| **FONTWEIGHT_EXTRALIGHT** | 
+|
+| **FONTWEIGHT_EXTRALIGHT** |
 
 Extra light.
 
- |
-| **FONTWEIGHT_LIGHT** | 
+|
+| **FONTWEIGHT_LIGHT** |
 
 Light.
 
- |
-| **FONTWEIGHT_NORMAL** | 
+|
+| **FONTWEIGHT_NORMAL** |
 
 Normal or regular weight.
 
- |
-| **FONTWEIGHT_REGULAR** | 
+|
+| **FONTWEIGHT_REGULAR** |
 
 Normal or regular weight.
 
- |
-| **FONTWEIGHT_MEDIUM** | 
+|
+| **FONTWEIGHT_MEDIUM** |
 
 Medium bold face.
 
- |
-| **FONTWEIGHT_DEMIBOLD** | 
+|
+| **FONTWEIGHT_DEMIBOLD** |
 
 Demi bold face.
 
- |
-| **FONTWEIGHT_BOLD** | 
+|
+| **FONTWEIGHT_BOLD** |
 
 Bold face.
 
- |
-| **FONTWEIGHT_EXTRABOLD** | 
+|
+| **FONTWEIGHT_EXTRABOLD** |
 
 Extra.
 
- |
-| **FONTWEIGHT_HEAVY** | 
+|
+| **FONTWEIGHT_HEAVY** |
 
 Heavy.
 
- |
-| **FONTWEIGHT_BLACK** | 
+|
+| **FONTWEIGHT_BLACK** |
 
 Black.
 
- |
-
+|
 
 **Font relative setwidth**
 
-| **FONTSETWIDTH_DONTCARE** | 
+| **FONTSETWIDTH_DONTCARE** |
 
 Don't care about set width.
 
- |
-| **FONTSETWIDTH_ULTRACONDENSED** | 
+|
+| **FONTSETWIDTH_ULTRACONDENSED** |
 
 Ultra condensed printing.
 
- |
-| **FONTSETWIDTH_EXTRACONDENSED** | 
+|
+| **FONTSETWIDTH_EXTRACONDENSED** |
 
 Extra condensed.
 
- |
-| **FONTSETWIDTH_CONDENSED** | 
+|
+| **FONTSETWIDTH_CONDENSED** |
 
 Condensed.
 
- |
-| **FONTSETWIDTH_NARROW** | 
+|
+| **FONTSETWIDTH_NARROW** |
 
 Narrow.
 
- |
-| **FONTSETWIDTH_COMPRESSED** | 
+|
+| **FONTSETWIDTH_COMPRESSED** |
 
 Compressed.
 
- |
-| **FONTSETWIDTH_SEMICONDENSED** | 
+|
+| **FONTSETWIDTH_SEMICONDENSED** |
 
 Semi-condensed.
 
- |
-| **FONTSETWIDTH_MEDIUM** | 
+|
+| **FONTSETWIDTH_MEDIUM** |
 
 Medium printing.
 
- |
-| **FONTSETWIDTH_NORMAL** | 
+|
+| **FONTSETWIDTH_NORMAL** |
 
 Normal printing.
 
- |
-| **FONTSETWIDTH_REGULAR** | 
+|
+| **FONTSETWIDTH_REGULAR** |
 
 Regular printing.
 
- |
-| **FONTSETWIDTH_SEMIEXPANDED** | 
+|
+| **FONTSETWIDTH_SEMIEXPANDED** |
 
 Semi expanded.
 
- |
-| **FONTSETWIDTH_EXPANDED** | 
+|
+| **FONTSETWIDTH_EXPANDED** |
 
 Expanded.
 
- |
-| **FONTSETWIDTH_WIDE** | 
+|
+| **FONTSETWIDTH_WIDE** |
 
 Wide.
 
- |
-| **FONTSETWIDTH_EXTRAEXPANDED** | 
+|
+| **FONTSETWIDTH_EXTRAEXPANDED** |
 
 Extra expanded.
 
- |
-| **FONTSETWIDTH_ULTRAEXPANDED** | 
+|
+| **FONTSETWIDTH_ULTRAEXPANDED** |
 
 Ultra expanded.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -612,7 +637,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

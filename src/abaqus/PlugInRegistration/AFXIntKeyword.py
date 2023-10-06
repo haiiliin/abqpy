@@ -6,7 +6,7 @@ from .constants import INT_DEFAULT
 
 
 class AFXIntKeyword(AFXKeyword):
-    """Abaqus"""
+    """Abaqus."""
 
     def __init__(
         self,
@@ -33,16 +33,25 @@ class AFXIntKeyword(AFXKeyword):
         """
 
     def getTypeName(self):
-        """Returns the name of the keyword type. Implements AFXKeyword. Reimplemented in AFXSymConstKeyword."""
+        """Returns the name of the keyword type.
+
+        Implements AFXKeyword. Reimplemented in AFXSymConstKeyword.
+        """
 
     def getValue(self):
         """Returns the keyword's current value."""
 
     def getValueAsString(self):
-        """Returns the text string that represents the keyword's current value. Implements AFXKeyword. Reimplemented in AFXSymConstKeyword."""
+        """Returns the text string that represents the keyword's current value.
+
+        Implements AFXKeyword. Reimplemented in AFXSymConstKeyword.
+        """
 
     def isValueChanged(self):
-        """Returns True if the keyword value differs from its previous value. Implements AFXKeyword."""
+        """Returns True if the keyword value differs from its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def setDefaultValue(self, defaultValue: int):
         """Sets the keyword's default value.
@@ -72,7 +81,25 @@ class AFXIntKeyword(AFXKeyword):
         """
 
     def setValueToPrevious(self):
-        """Sets the keyword value to its previous value. Implements AFXKeyword."""
+        """Sets the keyword value to its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def syncPreviousValue(self):
-        """Sets the keyword's previous value to its current value. Implements AFXKeyword. By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information. [Privacy Policy](https://www.3ds.com/privacy-policy). Total Results: Results per page This page cannot be found. The page might not exist or is temporarily unavailable. Try again or try searching for the topic. Use this form to provide feedback on this help topic. To get product support or to provide product feedback, go to [Frequently Asked Questions](https://3ds.one/PO). For support for online purchased solutions, go to [Online Purchase Support](https://3ds.one/Q8). * Required Subject: Feedback on User Assistance * I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes."""
+        """Sets the keyword's previous value to its current value.
+
+        Implements AFXKeyword. By clicking on Send, you accept that Dassault Systèmes will process your
+        personal data and may contact you for further information. [Privacy Policy](
+        https://www.3ds.com/privacy-policy).
+        Total Results: Results per page This page cannot be found. The page might not exist or is
+        temporarily unavailable. Try again or try searching for the topic. Use this form to provide feedback
+        on this help topic. To get product support or to provide product feedback, go to [Frequently Asked
+        Questions](
+        https://3ds.one/PO).
+        For support for online purchased solutions, go to [Online Purchase Support](https://3ds.one/Q8). *
+        Required Subject: Feedback on User Assistance * I acknowledge I have read and I hereby accept the
+        [privacy policy](
+        https://www.3ds.com/privacy-policy)
+        under which my personal data will be used by Dassault Systèmes.
+        """

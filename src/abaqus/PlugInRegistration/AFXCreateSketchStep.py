@@ -26,13 +26,25 @@ class AFXCreateSketchStep(AFXStep):
         """
 
     def onCancel(self):
-        """Called when the step is cancelled. Reimplemented from AFXStep."""
+        """Called when the step is cancelled.
+
+        Reimplemented from AFXStep.
+        """
 
     def onExecute(self):
-        """Called to execute the steps returned by getFirstStep and getNextStep. Reimplemented from AFXStep."""
+        """Called to execute the steps returned by getFirstStep and getNextStep.
+
+        Reimplemented from AFXStep.
+        """
 
     def onResume(self):
-        """Called when the step is resumed. Reimplemented from AFXStep."""
+        """Called when the step is resumed.
+
+        Reimplemented from AFXStep.
+        """
 
     def onSuspend(self):
-        """Called when the step is suspended. Reimplemented from AFXStep."""
+        """Called when the step is suspended.
+
+        Reimplemented from AFXStep.
+        """

@@ -8,7 +8,11 @@ from .FXObject import FXObject
 
 
 class AFXMenuCommand(FXMenuCommand):
-    """This class provides the interface for creating an FXMenuCommand and performing various management activities on it. It will use utility methods so the menu command is correctly managed for modules and toolsets."""
+    """This class provides the interface for creating an FXMenuCommand and performing various management
+    activities on it.
+
+    It will use utility methods so the menu command is correctly managed for modules and toolsets.
+    """
 
     def __init__(
         self,
@@ -38,4 +42,7 @@ class AFXMenuCommand(FXMenuCommand):
         """
 
     def getOwner(self):
-        """Returns the owner of the menu command. Reimplemented from FXWindow."""
+        """Returns the owner of the menu command.
+
+        Reimplemented from FXWindow.
+        """

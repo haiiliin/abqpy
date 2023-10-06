@@ -4,4 +4,4 @@ from .FXObject import FXObject
 
 
 class FXTreeItem(FXObject):
-    """Tree list Item"""
+    """Tree list Item."""

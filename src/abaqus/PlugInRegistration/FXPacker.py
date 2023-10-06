@@ -6,7 +6,16 @@ from .FXComposite import FXComposite
 
 
 class FXPacker(FXComposite):
-    """Packer is a layout manager which automatically places child windows inside its area against the left, right, top, or bottom side. Each time a child is placed, the remaining space is decreased by the amount of space taken by the child window. The side against which a child is placed is determined by the LAYOUT\_SIDE\_TOP, LAYOUT\_SIDE\_BOTTOM, LAYOUT\_SIDE\_LEFT, and LAYOUT\_SIDE\_RIGHT hints given by the child window. Other layout hints from the child are observed as far as sensible. So for example, a child placed against the right edge can still have LAYOUT\_FILL\_Y or LAYOUT\_TOP, and so on. The last child may have both LAYOUT\_FILL\_X and LAYOUT\_FILL_Y, in which case it will be placed to take all remaining space."""
+    """Packer is a layout manager which automatically places child windows inside its area against the left,
+    right, top, or bottom side.
+
+    Each time a child is placed, the remaining space is decreased by the amount of space taken by the child
+    window. The side against which a child is placed is determined by the LAYOUT\_SIDE\_TOP,
+    LAYOUT\_SIDE\_BOTTOM, LAYOUT\_SIDE\_LEFT, and LAYOUT\_SIDE\_RIGHT hints given by the child window. Other
+    layout hints from the child are observed as far as sensible. So for example, a child placed against the
+    right edge can still have LAYOUT\_FILL\_Y or LAYOUT\_TOP, and so on. The last child may have both
+    LAYOUT\_FILL\_X and LAYOUT\_FILL_Y, in which case it will be placed to take all remaining space.
+    """
 
     def __init__(
         self,
@@ -50,7 +59,6 @@ class FXPacker(FXComposite):
         hs : int
 
         vs : int
-
         """
 
     def getBaseColor(self):
@@ -63,10 +71,22 @@ class FXPacker(FXComposite):
         """Get border width."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXComposite. Reimplemented in FXComboBox, FXDockSite, FXGroupBox, FXHorizontalFrame, FXListBox, FXMatrix, FXSpinner, FXStatusbar, FXSwitcher, FXTabBar, FXTabBook, FXToolbar, FXTreeListBox, FXVerticalFrame, AFXToolbarGroup, AFXPrimFloatSpinner, AFXSlider, and AFXVerticalAligner."""
+        """Return default height.
+
+        Reimplemented from FXComposite. Reimplemented in FXComboBox, FXDockSite, FXGroupBox,
+        FXHorizontalFrame, FXListBox, FXMatrix, FXSpinner, FXStatusbar, FXSwitcher, FXTabBar, FXTabBook,
+        FXToolbar, FXTreeListBox, FXVerticalFrame, AFXToolbarGroup, AFXPrimFloatSpinner, AFXSlider, and
+        AFXVerticalAligner.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXComposite. Reimplemented in FXComboBox, FXDockSite, FXGroupBox, FXHorizontalFrame, FXListBox, FXMatrix, FXSpinner, FXStatusbar, FXSwitcher, FXTabBar, FXTabBook, FXToolbar, FXTreeListBox, FXVerticalFrame, AFXToolbarGroup, AFXOptionTreeItem, AFXPrimFloatSpinner, AFXSlider, AFXTextField, and AFXVerticalAligner."""
+        """Return default width.
+
+        Reimplemented from FXComposite. Reimplemented in FXComboBox, FXDockSite, FXGroupBox,
+        FXHorizontalFrame, FXListBox, FXMatrix, FXSpinner, FXStatusbar, FXSwitcher, FXTabBar, FXTabBook,
+        FXToolbar, FXTreeListBox, FXVerticalFrame, AFXToolbarGroup, AFXOptionTreeItem, AFXPrimFloatSpinner,
+        AFXSlider, AFXTextField, and AFXVerticalAligner.
+        """
 
     def getFrameStyle(self):
         """Get current frame style."""
@@ -104,7 +124,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setBorderColor(self, clr: FXColor):
@@ -113,7 +132,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setFrameStyle(self, style: int):
@@ -122,7 +140,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         style : int
-
         """
 
     def setHiliteColor(self, clr: FXColor):
@@ -131,7 +148,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setHSpacing(self, hs: int):
@@ -140,7 +156,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         hs : int
-
         """
 
     def setPackingHints(self, ph: int):
@@ -149,7 +164,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         ph : int
-
         """
 
     def setPadBottom(self, pb: int):
@@ -158,7 +172,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         pb : int
-
         """
 
     def setPadLeft(self, pl: int):
@@ -167,7 +180,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         pl : int
-
         """
 
     def setPadRight(self, pr: int):
@@ -176,7 +188,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         pr : int
-
         """
 
     def setPadTop(self, pt: int):
@@ -185,7 +196,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         pt : int
-
         """
 
     def setShadowColor(self, clr: FXColor):
@@ -194,7 +204,6 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setVSpacing(self, vs: int):
@@ -203,5 +212,4 @@ class FXPacker(FXComposite):
         Parameters
         ----------
         vs : int
-
         """

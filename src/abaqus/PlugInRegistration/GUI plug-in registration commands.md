@@ -1,11 +1,10 @@
-| 
+|
 
 GUI plug-in commands register GUI plug-ins either in the **Plug-ins** menu or in a toolbox.
 
 ![](../IconsReference/butix_top_wline.png)
 
-registerGuiMenuButton(...)
---------------------------
+## registerGuiMenuButton(...)
 
 Registers a GUI plug-in in the **Plug-ins** menu.
 
@@ -67,8 +66,7 @@ None.
 
 ![](../IconsReference/butix_top_wline.png)
 
-registerGuiToolButton(...)
---------------------------
+## registerGuiToolButton(...)
 
 Registers a GUI plug-in in a toolbox.
 
@@ -132,6 +130,4 @@ None
 
 None.
 
-
-
- |
+|

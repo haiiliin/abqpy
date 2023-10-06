@@ -9,7 +9,7 @@ from .FXWindow import FXWindow
 
 
 class AFXDataDialog(AFXDialog):
-    """AFXDataDialog"""
+    """AFXDataDialog."""
 
     def __init__(
         self,
@@ -50,7 +50,8 @@ class AFXDataDialog(AFXDialog):
     def addTransition(
         self, keyword: AFXBoolKeyword, op: Operator, value: bool, tgt: FXObject, sel: int, ptr: str = "None"
     ):
-        """Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
+        """Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value"
+        evaluates to True, an sel message will be sent to the tgt object.
 
         Parameters
         ----------
@@ -69,13 +70,20 @@ class AFXDataDialog(AFXDialog):
         """
 
     def bailout(self):
-        """Performs checks to determine whether it is OK to cancel the dialog box. The implementaton of this class always returns True, and the derived class should reimplement this method to perform specific checks. Reimplemented from AFXDialog."""
+        """Performs checks to determine whether it is OK to cancel the dialog box.
+
+        The implementaton of this class always returns True, and the derived class should reimplement this
+        method to perform specific checks. Reimplemented from AFXDialog.
+        """
 
     def getMode(self):
         """Returns the dialog box's host mode."""
 
     def onKeywordError(self, kwd: FXObject):
-        """Handles the error that occurs when the given keyword or target contains invalid contents. This method will select the contents of the widget that is set for the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given keyword or target contains invalid contents. This method
+        will select the contents of the widget that is set for the keyword or target (with
+        setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the
+        widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -84,7 +92,10 @@ class AFXDataDialog(AFXDialog):
         """
 
     def onTableError(self, tableKwd: FXObject, row: int, col: int):
-        """Handles the error that occurs when the given table keyword or target contains an invalid element. This method will select the contents of the widget that is set for the element of the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given table keyword or target contains an invalid element.
+        This method will select the contents of the widget that is set for the element of the keyword or target
+        (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of
+        the widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -97,7 +108,10 @@ class AFXDataDialog(AFXDialog):
         """
 
     def onTupleError(self, tupleKwd: FXObject, index: int):
-        """Handles the error that occurs when the given tuple keyword or target contains an invalid element. This method will select the contents of the widget that is set for the element of the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given tuple keyword or target contains an invalid element.
+        This method will select the contents of the widget that is set for the element of the keyword or target
+        (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of
+        the widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -108,4 +122,8 @@ class AFXDataDialog(AFXDialog):
         """
 
     def processUpdates(self):
-        """Performs state processing during the GUI update cycles. This class provides an empty implementation of this method, and the derived class should redefine the method if it needs to process state updating."""
+        """Performs state processing during the GUI update cycles.
+
+        This class provides an empty implementation of this method, and the derived class should redefine
+        the method if it needs to process state updating.
+        """

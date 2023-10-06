@@ -11,7 +11,7 @@ from .FXTreeItem import FXTreeItem
 
 
 class FXTreeList(FXScrollArea):
-    """Tree list Widget"""
+    """Tree list Widget."""
 
     def __init__(
         self,
@@ -46,7 +46,6 @@ class FXTreeList(FXScrollArea):
         w : int
 
         h : int
-
         """
 
     def addItemAfter(self, other: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -59,7 +58,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemBefore(self, other: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -72,7 +70,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemFirst(self, p: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -85,7 +82,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemLast(self, p: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -98,11 +94,13 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def canFocus(self):
-        """Tree list can receive focus. Reimplemented from FXWindow."""
+        """Tree list can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def clearItems(self, notify: bool = False):
         """Remove all items from list.
@@ -110,7 +108,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         notify : bool
-
         """
 
     def closeItem(self, item: FXTreeItem, notify: bool = False):
@@ -121,7 +118,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def collapseTree(self, tree: FXTreeItem, notify: bool = False):
@@ -132,11 +128,13 @@ class FXTreeList(FXScrollArea):
         tree : FXTreeItem
 
         notify : bool
-
         """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXComposite. Reimplemented in FXDirList."""
+        """Create server-side resources.
+
+        Reimplemented from FXComposite. Reimplemented in FXDirList.
+        """
 
     def deselectItem(self, item: FXTreeItem, notify: bool = False):
         """Deselect item.
@@ -146,14 +144,19 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def destroy(self):
-        """Destroy server-side resources. Reimplemented from FXComposite. Reimplemented in FXDirList."""
+        """Destroy server-side resources.
+
+        Reimplemented from FXComposite. Reimplemented in FXDirList.
+        """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXComposite. Reimplemented in FXDirList."""
+        """Detach server-side resources.
+
+        Reimplemented from FXComposite. Reimplemented in FXDirList.
+        """
 
     def disableItem(self, item: FXTreeItem):
         """Disable item.
@@ -161,7 +164,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def enableItem(self, item: FXTreeItem):
@@ -170,7 +172,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def expandTree(self, tree: FXTreeItem, notify: bool = False):
@@ -181,7 +182,6 @@ class FXTreeList(FXScrollArea):
         tree : FXTreeItem
 
         notify : bool
-
         """
 
     def extendSelection(self, item: FXTreeItem, notify: bool = False):
@@ -192,28 +192,33 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def findItem(self, text: str, start: FXTreeItem | None = None):
-        """Search items for item by name, starting from start item; the flags argument controls the search direction, and case sensitivity.
+        """Search items for item by name, starting from start item; the flags argument controls the search
+        direction, and case sensitivity.
 
         Parameters
         ----------
         text : str
 
         start : FXTreeItem | None
-
         """
 
     def getAnchorItem(self):
         """Return anchor item, if any."""
 
     def getContentHeight(self):
-        """Return content height. Reimplemented from FXScrollArea."""
+        """Return content height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getContentWidth(self):
-        """Compute and return content width. Reimplemented from FXScrollArea."""
+        """Compute and return content width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getCurrentItem(self):
         """Return current item, if any."""
@@ -222,10 +227,16 @@ class FXTreeList(FXScrollArea):
         """Return item under cursor, if any."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXScrollArea."""
+        """Return default height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXScrollArea."""
+        """Return default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getFirstItem(self):
         """REturn first root item."""
@@ -247,7 +258,6 @@ class FXTreeList(FXScrollArea):
         x : int
 
         y : int
-
         """
 
     def getItemCheck(self, item: FXTreeItem):
@@ -256,7 +266,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemClosedIcon(self, item: FXTreeItem):
@@ -265,7 +274,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemData(self, item: FXTreeItem):
@@ -274,7 +282,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemHeight(self, item: FXTreeItem):
@@ -283,7 +290,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemOpenIcon(self, item: FXTreeItem):
@@ -292,7 +298,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemText(self, item: FXTreeItem):
@@ -301,7 +306,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemWidth(self, item: FXTreeItem):
@@ -310,7 +314,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getLastItem(self):
@@ -356,7 +359,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemEnabled(self, item: FXTreeItem):
@@ -365,7 +367,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemExpanded(self, item: FXTreeItem):
@@ -374,7 +375,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemLeaf(self, item: FXTreeItem):
@@ -383,7 +383,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemOpened(self, item: FXTreeItem):
@@ -392,7 +391,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemSelected(self, item: FXTreeItem):
@@ -401,7 +399,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemVisible(self, item: FXTreeItem):
@@ -410,11 +407,13 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def killFocus(self):
-        """Remove the focus from this window. Reimplemented from FXWindow."""
+        """Remove the focus from this window.
+
+        Reimplemented from FXWindow.
+        """
 
     def killSelection(self, notify: bool = False):
         """Deselect all items.
@@ -422,7 +421,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         notify : bool
-
         """
 
     def makeItemVisible(self, item: FXTreeItem):
@@ -431,7 +429,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def moveItemAfter(self, other: FXTreeItem, item: FXTreeItem):
@@ -442,7 +439,6 @@ class FXTreeList(FXScrollArea):
         other : FXTreeItem
 
         item : FXTreeItem
-
         """
 
     def moveItemBefore(self, other: FXTreeItem, item: FXTreeItem):
@@ -453,7 +449,6 @@ class FXTreeList(FXScrollArea):
         other : FXTreeItem
 
         item : FXTreeItem
-
         """
 
     def openItem(self, item: FXTreeItem, notify: bool = False):
@@ -464,11 +459,13 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def recalc(self):
-        """Recalculate layout. Reimplemented from FXWindow."""
+        """Recalculate layout.
+
+        Reimplemented from FXWindow.
+        """
 
     def removeItem(self, item: FXTreeItem, notify: bool = False):
         """Remove item.
@@ -478,7 +475,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def removeItems(self, fm: FXTreeItem, to: FXTreeItem, notify: bool = False):
@@ -491,7 +487,6 @@ class FXTreeList(FXScrollArea):
         to : FXTreeItem
 
         notify : bool
-
         """
 
     def reparentItem(self, item: FXTreeItem, p: FXTreeItem):
@@ -502,7 +497,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         p : FXTreeItem
-
         """
 
     def selectItem(self, item: FXTreeItem, notify: bool = False):
@@ -513,7 +507,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def setAnchorItem(self, item: FXTreeItem):
@@ -522,7 +515,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def setCurrentItem(self, item: FXTreeItem, notify: bool = False):
@@ -533,11 +525,13 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def setFocus(self):
-        """Move the focus to this window. Reimplemented from FXWindow."""
+        """Move the focus to this window.
+
+        Reimplemented from FXWindow.
+        """
 
     def setFont(self, fnt: FXFont):
         """Change text font.
@@ -545,7 +539,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setHelpText(self, text: str):
@@ -554,7 +547,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         text : str
-
         """
 
     def setIndent(self, in_: int):
@@ -563,11 +555,11 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         in_ : int
-
         """
 
     def setItemCheck(self, item: FXTreeItem, check: int, notify: bool = False):
-        """Sets the item checked state. Valid states are True, False and MAYBE. Returns True if the check value has changed, False otherwise.
+        """Sets the item checked state. Valid states are True, False and MAYBE. Returns True if the check value
+        has changed, False otherwise.
 
         Parameters
         ----------
@@ -576,7 +568,6 @@ class FXTreeList(FXScrollArea):
         check : int
 
         notify : bool
-
         """
 
     def setItemClosedIcon(self, item: FXTreeItem, icon: FXIcon):
@@ -587,7 +578,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         icon : FXIcon
-
         """
 
     def setItemData(self, item: FXTreeItem, ptr: str):
@@ -598,7 +588,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         ptr : str
-
         """
 
     def setItemOpenIcon(self, item: FXTreeItem, icon: FXIcon):
@@ -609,7 +598,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         icon : FXIcon
-
         """
 
     def setItemText(self, item: FXTreeItem, text: str):
@@ -620,7 +608,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         text : str
-
         """
 
     def setLineColor(self, clr: FXColor):
@@ -629,7 +616,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setListStyle(self, style: int):
@@ -638,7 +624,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         style : int
-
         """
 
     def setNumVisible(self, nvis: int):
@@ -647,7 +632,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         nvis : int
-
         """
 
     def setSelBackColor(self, clr: FXColor):
@@ -656,7 +640,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setSelTextColor(self, clr: FXColor):
@@ -665,7 +648,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setTextColor(self, clr: FXColor):
@@ -674,7 +656,6 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def toggleItem(self, item: FXTreeItem, notify: bool = False):
@@ -685,7 +666,6 @@ class FXTreeList(FXScrollArea):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def updateItem(self, item: FXTreeItem):
@@ -694,5 +674,4 @@ class FXTreeList(FXScrollArea):
         Parameters
         ----------
         item : FXTreeItem
-
         """

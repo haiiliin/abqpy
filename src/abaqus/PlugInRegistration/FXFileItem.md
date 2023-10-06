@@ -4,69 +4,76 @@ File item
 
 ### FXFileItem
 
-###   
+###
 
-### FXFileItem()  
+### FXFileItem()
+
 ![](../IconsReference/butix_top_wline.png)
 
 File time.
 
 ### FXFileItem
 
-###   
+###
 
-### FXFileItem(text, bi=None, mi=None, ptr=None)  
+### FXFileItem(text, bi=None, mi=None, ptr=None)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| bi | FXIcon | None |   |
-| mi | FXIcon | None |   |
-| ptr | String | None |   |
+| text | String | | |
+| bi | FXIcon | None | |
+| mi | FXIcon | None | |
+| ptr | String | None | |
 
 ### getDate
 
-###   
+###
 
-### getDate()  
+### getDate()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return the date for this item.
 
 ### getSize
 
-###   
+###
 
-### getSize()  
+### getSize()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return the file size for this item.
 
 ### isBlockdev
 
-###   
+###
 
-### isBlockdev()  
+### isBlockdev()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a block device item.
 
 ### isChardev
 
-###   
+###
 
-### isChardev()  
+### isChardev()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a character device item.
 
 ### isDirectory
 
-###   
+###
 
-### isDirectory()  
+### isDirectory()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a directory item.
@@ -75,71 +82,74 @@ Reimplemented in AFXFileItem.
 
 ### isExecutable
 
-###   
+###
 
-### isExecutable()  
+### isExecutable()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is an executable item.
 
 ### isFifo
 
-###   
+###
 
-### isFifo()  
+### isFifo()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is an FIFO item.
 
 ### isFile
 
-###   
+###
 
-### isFile()  
+### isFile()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a file item.
 
 ### isSocket
 
-###   
+###
 
-### isSocket()  
+### isSocket()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a socket.
 
 ### isSymlink
 
-###   
+###
 
-### isSymlink()  
+### isSymlink()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return True if this is a symbolic link item.
 
-### Global flags  
-![](../IconsReference/butix_top_wline.png)
+### Global flags
 
+![](../IconsReference/butix_top_wline.png)
 
 **File List options**
 
-| **FILELIST_SHOWHIDDEN** | 
+| **FILELIST_SHOWHIDDEN** |
 
 Show hidden files or directories.
 
- |
-| **FILELIST_SHOWDIRS** | 
+|
+| **FILELIST_SHOWDIRS** |
 
 Show only directories.
 
- |
-| **FILELIST\_NO\_OWN_ASSOC** | 
+|
+| **FILELIST_NO_OWN_ASSOC** |
 
 Do not create associations for files.
 
- |
+|
 
-
-
- |
+|

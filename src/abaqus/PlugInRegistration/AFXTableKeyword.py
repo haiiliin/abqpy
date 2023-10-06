@@ -35,4 +35,7 @@ class AFXTableKeyword(AFXComTableKeyword):
         """
 
     def getTypeName(self):
-        """Returns the name of the table keyword type. Reimplemented from AFXComTableKeyword."""
+        """Returns the name of the table keyword type.
+
+        Reimplemented from AFXComTableKeyword.
+        """

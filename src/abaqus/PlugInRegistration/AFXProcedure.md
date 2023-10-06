@@ -2,23 +2,26 @@ This class provides the basis for writing procedures.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxprocedure.png)
 
-### AFXProcedure(owner, type=NORMAL)  
+### AFXProcedure(owner, type=NORMAL)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the procedure. |
-| type | typeEnum | NORMAL |   |
+| owner | AFXGuiObjectManager | | Owner (a module or a toolset) of the procedure. |
+| type | typeEnum | NORMAL | |
 
-### activate()  
+### activate()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Activates the mode.
 
 Reimplemented from AFXGuiMode.
 
-### cancel(tgt=None, msg=0)  
+### cancel(tgt=None, msg=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Tries to cancel the procedure depending on checkCancel results.
@@ -27,137 +30,158 @@ Tries to cancel the procedure depending on checkCancel results.
 | tgt | FXObject | None | Completion message target. |
 | msg | Int | 0 | Completion message ID. |
 
-### checkBackup()  
+### checkBackup()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns 1 if ok to backup else returns 0.
 
-### checkCancel()  
+### checkCancel()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-Returns BAILOUT\_NOTOK, BAILOUT\_OK, BAILOUT\_WIP (writes to the message area), or BAILOUT\_SAVE (use the 3 button save dialog box).
+Returns BAILOUT_NOTOK, BAILOUT_OK, BAILOUT_WIP (writes to the message area), or BAILOUT_SAVE (use the 3 button save dialog box).
 
-### commit()  
+### commit()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Commits the procedure when the current dialog box calls either done or value changed.
 
 Implements AFXGuiMode.
 
-### continueMode()  
+### continueMode()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Used to get the next step in the mode.
 
 Implements AFXGuiMode.
 
-### deactivate()  
+### deactivate()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 deactivates the mode.
 
 Reimplemented from AFXGuiMode.
 
-### getCurrentStep()  
+### getCurrentStep()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the current step.
 
-### getFirstStep()  
+### getFirstStep()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the first step to be executed in the procedure.
 
-### getLoopStep()  
+### getLoopStep()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the step to which the procedure should loop back after processing its commands; if zero is returned (the default behavior) the procedure will not loop.
 
-### getNextStep(previousStep)  
+### getNextStep(previousStep)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the next step to be executed; if zero is returned the procedure will process its commands.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| previousStep | AFXStep |   | Previous step. |
+| previousStep | AFXStep | | Previous step. |
 
-### getNumSteps()  
+### getNumSteps()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the number of steps in the step stack.
 
-### handleException(exc)  
+### handleException(exc)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 This method is called if an error occurs while issuing commands. It can be reimplemented in derived classes to perform special error handling.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| exc | nex_Exception |   | Exception. |
+| exc | nex_Exception | | Exception. |
 
-### onBackup()  
+### onBackup()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when a procedure backs up a step.
 
-### onCancel()  
+### onCancel()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when a procedure cancels.
 
-### onCmdBackup(sender, sel, ptr)  
+### onCmdBackup(sender, sel, ptr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Message handler for handling backup button activation.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject | | Sender. |
+| sel | Int | | Selector. |
+| ptr | String | | Data. |
 
-### onCmdHandle2BtnBailout(sender, sel, ptr)  
+### onCmdHandle2BtnBailout(sender, sel, ptr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Message handler for handling the user 2 button bailout choice.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject | | Sender. |
+| sel | Int | | Selector. |
+| ptr | String | | Data. |
 
-### onCmdHandleBailout(sender, sel, ptr)  
+### onCmdHandleBailout(sender, sel, ptr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Message handler for handling the user 3 button bailout choice.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject | | Sender. |
+| sel | Int | | Selector. |
+| ptr | String | | Data. |
 
-### onResume()  
+### onResume()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when a procedure resumes.
 
-### onSuspend()  
+### onSuspend()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when a procedure suspends.
 
-### onValueChanged()  
+### onValueChanged()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when a procedure's step changes in value.
 
-### setCurrentDb(db)  
+### setCurrentDb(db)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the current dialog box of the mode. Procedures will have this set by AFXDialogStep.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| db | AFXDialog |   | Dialog box. |
+| db | AFXDialog | | Dialog box. |
 
-### setSelectionOptions(pickDepth=CLOSEST, pickScope=ALL, dragShape=RECTANGLE, dragScope=INSIDE_CROSSING, isoLines=True)  
+### setSelectionOptions(pickDepth=CLOSEST, pickScope=ALL, dragShape=RECTANGLE, dragScope=INSIDE_CROSSING, isoLines=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the selection options to be used for picking.
@@ -169,121 +193,117 @@ Sets the selection options to be used for picking.
 | dragScope | dragScopeEnum | INSIDE_CROSSING | Drag-window scope. |
 | isoLines | Bool | True | If True, show isolines on surfaces. |
 
-### verifyCurrentKeywordValues()  
+### verifyCurrentKeywordValues()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Checks whether keywords of active commands for the current dialog box contain valid data and, if not, posts a dialog box with an error message.
 
 Reimplemented from AFXGuiMode.
 
-### Class flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Class flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Message ID's.**
 
-| **ID\_HANDLE\_2BTN_BAILOUT** | 
+| **ID_HANDLE_2BTN_BAILOUT** |
 
 ID for handling bailout.
 
- |
-| **ID_BACKUP** | 
+|
+| **ID_BACKUP** |
 
 ID for the backup button.
 
- |
-
+|
 
 **Flags for the drag scope.**
 
-| **INSIDE** | 
+| **INSIDE** |
 
 Pick entities inside the drag shape only.
 
- |
-| **INSIDE_CROSSING** | 
+|
+| **INSIDE_CROSSING** |
 
 Pick entities inside and crossing the drag shape.
 
- |
-| **CROSSING** | 
+|
+| **CROSSING** |
 
 Pick entities crossing the drag shape only.
 
- |
-| **OUTSIDE_CROSSING** | 
+|
+| **OUTSIDE_CROSSING** |
 
 Pick entities outside and crossing the drag shape.
 
- |
-| **OUTSIDE** | 
+|
+| **OUTSIDE** |
 
 Pick entities outside the drag shape only.
 
- |
-
+|
 
 **Flags for the drag shape.**
 
-| **RECTANGLE** | 
+| **RECTANGLE** |
 
 Use rectangular drag shape.
 
- |
-| **CIRCLE** | 
+|
+| **CIRCLE** |
 
 Use circular drag shape.
 
- |
-| **POLYGON** | 
+|
+| **POLYGON** |
 
 Use polygonal drag shape.
 
- |
-
+|
 
 **Flags for the pick depth.**
 
-| **CLOSEST** | 
+| **CLOSEST** |
 
 Only pick the entity closest to the screen.
 
- |
-| **INFINITE** | 
+|
+| **INFINITE** |
 
 Pick entities at any depth.
 
- |
-
+|
 
 **Flags for the pick scope.**
 
-| **INTERIOR** | 
+| **INTERIOR** |
 
 Pick only interior entities.
 
- |
-| **EXTERIOR** | 
+|
+| **EXTERIOR** |
 
 Pick only exterior entities.
 
- |
-| **ALL** | 
+|
+| **ALL** |
 
 Pick all entities.
 
- |
-
+|
 
 **Flags for the activate action.**
 
-| **NORMAL** | 
+| **NORMAL** |
 
 Cancel the currently running procedure (default).
 
- |
-| **SUBPROCEDURE** | 
+|
+| **SUBPROCEDURE** |
 
 Suspend the currently running procedure.
 
- |
+|

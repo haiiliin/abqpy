@@ -20,11 +20,13 @@ class FXObject:
         Parameters
         ----------
         metaclass : FXMetaClass
-
         """
 
     def onDefault(self):
-        """Called for unhandled messages. Reimplemented in FXDelegator, FXGLViewer, FXMDIChild, and FXMDIClient."""
+        """Called for unhandled messages.
+
+        Reimplemented in FXDelegator, FXGLViewer, FXMDIChild, and FXMDIClient.
+        """
 
     def handle(self, sender: Self, sel: FXSelector, ptr: Any):
         """Handles messages sent to this class.

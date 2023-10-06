@@ -1,11 +1,12 @@
 from __future__ import annotations
+
 from .FXApp import FXApp
 from .FXFontDesc import FXFontDesc
 from .FXId import FXId
 
 
 class FXFont(FXId):
-    """Font class"""
+    """Font class."""
 
     def __init__(self, a: FXApp, nm: str):
         """Construct a font with given X11 font string.
@@ -15,17 +16,25 @@ class FXFont(FXId):
         a : FXApp
 
         nm : str
-
         """
 
     def create(self):
-        """Create the font. Reimplemented from FXId."""
+        """Create the font.
+
+        Reimplemented from FXId.
+        """
 
     def destroy(self):
-        """Destroy the font. Reimplemented from FXId."""
+        """Destroy the font.
+
+        Reimplemented from FXId.
+        """
 
     def detach(self):
-        """Detach the font. Reimplemented from FXId."""
+        """Detach the font.
+
+        Reimplemented from FXId.
+        """
 
     def getEncoding(self):
         """Get character set encoding."""
@@ -39,7 +48,6 @@ class FXFont(FXId):
         Parameters
         ----------
         fontdesc : FXFontDesc
-
         """
 
     def getFontDescent(self):
@@ -109,7 +117,6 @@ class FXFont(FXId):
         Parameters
         ----------
         ch : int
-
         """
 
     def isFontMono(self):
@@ -121,7 +128,6 @@ class FXFont(FXId):
         Parameters
         ----------
         ch : str
-
         """
 
     def rightBearing(self, ch: str):
@@ -130,7 +136,6 @@ class FXFont(FXId):
         Parameters
         ----------
         ch : str
-
         """
 
     def setFontDesc(self, fontdesc: FXFontDesc):
@@ -139,5 +144,4 @@ class FXFont(FXId):
         Parameters
         ----------
         fontdesc : FXFontDesc
-
         """

@@ -7,7 +7,14 @@ from .FXObject import FXObject
 
 
 class FXRadioButton(FXLabel):
-    """A radio button is a tri-state button. Normally, it is either True or False; a third state MAYBE may be set to indicate that no selection has been made yet by the user, or that the state is ambiguous. When pressed, the radio button sets its state to True and sends a SEL_COMMAND to its target, and the message data set to the state of the radio button, of the type FXbool. If the radio button is contained inside a group box, the other radio buttons in the group box will be set to False and will send a message as well."""
+    """A radio button is a tri-state button.
+
+    Normally, it is either True or False; a third state MAYBE may be set to indicate that no selection has
+    been made yet by the user, or that the state is ambiguous. When pressed, the radio button sets its state
+    to True and sends a SEL_COMMAND to its target, and the message data set to the state of the radio
+    button, of the type FXbool. If the radio button is contained inside a group box, the other radio buttons
+    in the group box will be set to False and will send a message as well.
+    """
 
     def __init__(
         self,
@@ -54,20 +61,28 @@ class FXRadioButton(FXLabel):
         pt : int
 
         pb : int
-
         """
 
     def canFocus(self):
-        """Returns True because a radio button can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a radio button can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
         """Get radio button state (True, False or MAYBE)."""
 
     def getDefaultHeight(self):
-        """Get default height. Reimplemented from FXLabel."""
+        """Get default height.
+
+        Reimplemented from FXLabel.
+        """
 
     def getDefaultWidth(self):
-        """Get default width. Reimplemented from FXLabel."""
+        """Get default width.
+
+        Reimplemented from FXLabel.
+        """
 
     def setCheck(self, s: bool = True):
         """Set radio button state (True, False or MAYBE).
@@ -75,5 +90,4 @@ class FXRadioButton(FXLabel):
         Parameters
         ----------
         s : bool
-
         """

@@ -2,39 +2,44 @@ Base Frame
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxframe.png)
 
-### FXFrame(p, opts=FRAME\_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT_PAD)  
+### FXFrame(p, opts=FRAME_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct frame window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | FRAME_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite | | |
+| opts | Int | FRAME_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
+| pl | Int | DEFAULT_PAD | |
+| pr | Int | DEFAULT_PAD | |
+| pt | Int | DEFAULT_PAD | |
+| pb | Int | DEFAULT_PAD | |
 
-### getBaseColor()  
+### getBaseColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get base gui color.
 
-### getBorderColor()  
+### getBorderColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get border color.
 
-### getBorderWidth()  
+### getBorderWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get border width.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default height.
@@ -43,7 +48,8 @@ Reimplemented from FXWindow.
 
 Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell, FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption, FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline, FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default width.
@@ -52,164 +58,180 @@ Reimplemented from FXWindow.
 
 Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell, FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption, FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline, FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar.
 
-### getFrameStyle()  
+### getFrameStyle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get current frame style.
 
-### getHiliteColor()  
+### getHiliteColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get highlight color.
 
-### getPadBottom()  
+### getPadBottom()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get bottom interior padding.
 
-### getPadLeft()  
+### getPadLeft()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get left interior padding.
 
-### getPadRight()  
+### getPadRight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get right interior padding.
 
-### getPadTop()  
+### getPadTop()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get top interior padding.
 
-### getShadowColor()  
+### getShadowColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get shadow color.
 
-### setBaseColor(clr)  
+### setBaseColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change base gui color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setBorderColor(clr)  
+### setBorderColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setFrameStyle(style)  
+### setFrameStyle(style)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change frame style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int | | |
 
-### setHiliteColor(clr)  
+### setHiliteColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setPadBottom(pb)  
+### setPadBottom(pb)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change bottom padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   |   |
+| pb | Int | | |
 
-### setPadLeft(pl)  
+### setPadLeft(pl)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change left padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   |   |
+| pl | Int | | |
 
-### setPadRight(pr)  
+### setPadRight(pr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change right padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   |   |
+| pr | Int | | |
 
-### setPadTop(pt)  
+### setPadTop(pt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change top padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   |   |
+| pt | Int | | |
 
-### setShadowColor(clr)  
+### setShadowColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Justification modes used by certain subclasses**
 
-| **JUSTIFY_NORMAL** | 
+| **JUSTIFY_NORMAL** |
 
 Default justification is centered text.
 
- |
-| **JUSTIFY\_CENTER\_X** | 
+|
+| **JUSTIFY_CENTER_X** |
 
 Contents centered horizontally.
 
- |
-| **JUSTIFY_LEFT** | 
+|
+| **JUSTIFY_LEFT** |
 
 Contents left-justified.
 
- |
-| **JUSTIFY_RIGHT** | 
+|
+| **JUSTIFY_RIGHT** |
 
 Contents right-justified.
 
- |
-| **JUSTIFY\_HZ\_APART** | 
+|
+| **JUSTIFY_HZ_APART** |
 
-Combination of JUSTIFY\_LEFT & JUSTIFY\_RIGHT.
+Combination of JUSTIFY_LEFT & JUSTIFY_RIGHT.
 
- |
-| **JUSTIFY\_CENTER\_Y** | 
+|
+| **JUSTIFY_CENTER_Y** |
 
 Contents centered vertically.
 
- |
-| **JUSTIFY_TOP** | 
+|
+| **JUSTIFY_TOP** |
 
 Contents aligned with label top.
 
- |
-| **JUSTIFY_BOTTOM** | 
+|
+| **JUSTIFY_BOTTOM** |
 
 Contents aligned with label bottom.
 
- |
-| **JUSTIFY\_VT\_APART** | 
+|
+| **JUSTIFY_VT_APART** |
 
-Combination of JUSTIFY\_TOP & JUSTIFY\_BOTTOM.
+Combination of JUSTIFY_TOP & JUSTIFY_BOTTOM.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

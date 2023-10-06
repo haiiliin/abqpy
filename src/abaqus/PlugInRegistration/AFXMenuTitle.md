@@ -4,39 +4,42 @@ This class provides the interface for creating an FXMenuTitle and performing var
 
 ### AFXMenuTitle
 
-###   
+###
 
-### AFXMenuTitle(owner, label, ic=None, popup=None)  
+### AFXMenuTitle(owner, label, ic=None, popup=None)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor that takes an owner.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (module or toolset GUI). |
-| label | String |   | Label string. |
+| owner | AFXGuiObjectManager | | Owner (module or toolset GUI). |
+| label | String | | Label string. |
 | ic | FXIcon | None | Icon. |
 | popup | FXPopup | None | Pulldown menu. |
 
 ### AFXMenuTitle
 
-###   
+###
 
-### AFXMenuTitle(parent, label, ic=None, popup=None)  
+### AFXMenuTitle(parent, label, ic=None, popup=None)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor that takes a parent.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| parent | FXComposite |   | Parent widget. |
-| label | String |   | Label string. |
+| parent | FXComposite | | Parent widget. |
+| label | String | | Label string. |
 | ic | FXIcon | None | Icon. |
 | popup | FXPopup | None | Pulldown menu. |
 
 ### getOwner
 
-###   
+###
 
-### getOwner()  
+### getOwner()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the owner of the menu title.
@@ -45,9 +48,10 @@ Reimplemented from FXWindow.
 
 ### hide
 
-###   
+###
 
-### hide()  
+### hide()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Hides the widget.
@@ -56,15 +60,14 @@ Reimplemented from FXWindow.
 
 ### show
 
-###   
+###
 
-### show()  
+### show()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Shows the widget.
 
 Reimplemented from FXWindow.
 
-
-
- |
+|

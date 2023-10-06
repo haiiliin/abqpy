@@ -37,7 +37,10 @@ class AFXApp(FXApp):
         """
 
     def create(self):
-        """Creates windows for the application. Reimplemented from FXApp."""
+        """Creates windows for the application.
+
+        Reimplemented from FXApp.
+        """
 
     def getAFXMainWindow(self):
         """Returns a pointer to the AFXMainWindow."""
@@ -81,11 +84,13 @@ class AFXApp(FXApp):
         argc : int
 
         argv : str
-
         """
 
     def isLocked(self):
-        """Returns True if the GUI is locked or False if otherwise. Reimplemented from FXApp."""
+        """Returns True if the GUI is locked or False if otherwise.
+
+        Reimplemented from FXApp.
+        """
 
     def isProductCAE(self):
         """Returns True if the base product is Abaqus/CAE."""
@@ -100,7 +105,10 @@ class AFXApp(FXApp):
         """Locks the GUI (normally used during command and mode processing)."""
 
     def run(self):
-        """Runs the main application event loop until stop() is called,. Reimplemented from FXApp."""
+        """Runs the main application event loop until stop() is called,.
+
+        Reimplemented from FXApp.
+        """
 
     def runUntil(self, condition: int):
         """Run an event loop till some flag becomes non-zero. Reimplemented from FXApp.
@@ -108,7 +116,6 @@ class AFXApp(FXApp):
         Parameters
         ----------
         condition : int
-
         """
 
     def unlock(self):

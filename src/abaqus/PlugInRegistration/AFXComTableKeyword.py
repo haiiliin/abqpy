@@ -75,7 +75,8 @@ class AFXComTableKeyword(AFXKeyword):
         """Returns the default values for this table."""
 
     def getFormattedValue(self, row: int, column: int):
-        """Returns the formatted value of the table element, suitable for placing in a command. If the element has AFXTABLE_EVALUATE style, and its contents are invalid, an exception will be thrown.
+        """Returns the formatted value of the table element, suitable for placing in a command. If the element
+        has AFXTABLE_EVALUATE style, and its contents are invalid, an exception will be thrown.
 
         Parameters
         ----------
@@ -113,7 +114,10 @@ class AFXComTableKeyword(AFXKeyword):
         """
 
     def getTypeName(self):
-        """Returns the name of the table keyword type. Implements AFXKeyword. Reimplemented in AFXTableKeyword."""
+        """Returns the name of the table keyword type.
+
+        Implements AFXKeyword. Reimplemented in AFXTableKeyword.
+        """
 
     def getValue(self, row: int, column: int):
         """Returns the value of a table element.
@@ -133,7 +137,10 @@ class AFXComTableKeyword(AFXKeyword):
         """Returns the keyword's value as an integer; returns False upon failure."""
 
     def getValueAsString(self):
-        """Returns the formatted string that represents the current keyword value in a command. Implements AFXKeyword."""
+        """Returns the formatted string that represents the current keyword value in a command.
+
+        Implements AFXKeyword.
+        """
 
     def getValueForBlank(self, column: int):
         """Returns the element value substituted for blank for the column.
@@ -145,7 +152,10 @@ class AFXComTableKeyword(AFXKeyword):
         """
 
     def getValues(self):
-        """Returns a string containing values of the tuple elements. as entered by the user."""
+        """Returns a string containing values of the tuple elements.
+
+        as entered by the user.
+        """
 
     def getValuesForBlanks(self):
         """Returns a string with values substituted for blanks for all table columns."""
@@ -173,7 +183,10 @@ class AFXComTableKeyword(AFXKeyword):
         """
 
     def isValueChanged(self):
-        """Returns True if the keyword value differs from its previous value. Implements AFXKeyword."""
+        """Returns True if the keyword value differs from its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def removeColumns(self, index: int, numColumns: int):
         """Removes columns starting at the given index.
@@ -338,7 +351,13 @@ class AFXComTableKeyword(AFXKeyword):
         """
 
     def setValueToPrevious(self):
-        """Sets the keyword value to its previous value. Implements AFXKeyword."""
+        """Sets the keyword value to its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def syncPreviousValue(self):
-        """Sets the keyword's previous value to its current value. Implements AFXKeyword."""
+        """Sets the keyword's previous value to its current value.
+
+        Implements AFXKeyword.
+        """

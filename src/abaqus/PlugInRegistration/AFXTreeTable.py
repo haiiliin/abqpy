@@ -10,7 +10,8 @@ from .FXTreeItem import FXTreeItem
 
 
 class AFXTreeTable(FXScrollArea, AFXDataComponent):
-    """This class combines a tree widget with a table widget to allow associating a row of data with an item in a tree."""
+    """This class combines a tree widget with a table widget to allow associating a row of data with an item in
+    a tree."""
 
     def __init__(
         self,
@@ -64,7 +65,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemBefore(self, other: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -77,7 +77,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemFirst(self, p: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -90,7 +89,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addItemLast(self, p: FXTreeItem, item: FXTreeItem, notify: bool = False):
@@ -103,7 +101,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def addList(self, opts: int = AFXTREETABLE_LIST_NORMAL):
@@ -172,7 +169,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         notify : bool
-
         """
 
     def clearListItems(self, listId: int):
@@ -192,7 +188,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def collapseTree(self, item: FXTreeItem, notify: bool = False):
@@ -203,7 +198,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def deleteColumns(self, startColumn: int, numColumns: int = 1, notify: bool = False):
@@ -229,7 +223,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         column : int
             Column index of item.
         notify : bool
-
         """
 
     def deselectRow(self, item: FXTreeItem, notify: bool = False):
@@ -240,7 +233,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
             Tree item.
         notify : bool
-
         """
 
     def expandTree(self, item: FXTreeItem, notify: bool = False):
@@ -251,7 +243,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def getColumnWidth(self, column: int):
@@ -273,10 +264,16 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """Returns the default column width, in pixels, of the table."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXScrollArea."""
+        """Return default height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXScrollArea."""
+        """Return default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getFirstItem(self):
         """Returns the first root tree item."""
@@ -298,7 +295,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemClosedIcon(self, item: FXTreeItem):
@@ -307,11 +303,11 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemColor(self, item: FXTreeItem, column: int):
-        """Returns the color of a table item of type COLOR. The color is "As is", "Default", or a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C").
+        """Returns the color of a table item of type COLOR. The color is "As is", "Default", or a color hex
+        specification in the form of "RRGGBB" (e.g., "#0A1B2C").
 
         Parameters
         ----------
@@ -404,7 +400,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def getItemPrecision(self, item: FXTreeItem, column: int):
@@ -466,7 +461,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def getListItemIndex(self, listId: int, text: str):
-        """Returns the index of the item of the specified table list that has the specified text. Returns -1 if no such item exists.
+        """Returns the index of the item of the specified table list that has the specified text. Returns -1 if
+        no such item exists.
 
         Parameters
         ----------
@@ -604,7 +600,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemFloat(self, item: FXTreeItem, column: int):
@@ -646,7 +641,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemList(self, item: FXTreeItem, column: int):
@@ -666,7 +660,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def isItemSelected(self, item: FXTreeItem, column: int):
@@ -708,7 +701,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         item : FXTreeItem
-
         """
 
     def killSelection(self, notify: bool = False):
@@ -717,7 +709,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         Parameters
         ----------
         notify : bool
-
         """
 
     def makePositionVisible(self, item: FXTreeItem, column: int):
@@ -748,7 +739,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def removeItem(self, item: FXTreeItem, notify: bool = False):
@@ -759,7 +749,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         notify : bool
-
         """
 
     def removeItems(self, from_: FXTreeItem, to: FXTreeItem, notify: bool = False):
@@ -772,11 +761,11 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         to : FXTreeItem
 
         notify : bool
-
         """
 
     def removeListItem(self, listId: int, index: int):
-        """Removes the item at the specified index from the specified table list; returns the number of items remaining in list.
+        """Removes the item at the specified index from the specified table list; returns the number of items
+        remaining in list.
 
         Parameters
         ----------
@@ -796,7 +785,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         column : int
             Column index of item.
         notify : bool
-
         """
 
     def selectRow(self, item: FXTreeItem, notify: bool = False):
@@ -807,11 +795,11 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
             Tree item.
         notify : bool
-
         """
 
     def setColumnBoolIcons(self, column: int, trueIcon: FXIcon | None = None, falseIcon: FXIcon | None = None):
-        """Sets the True and False icons of all existing and future table items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the True and False icons of all existing and future table items in a column of type BOOL.
+        Specifying -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -824,7 +812,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnBoolValue(self, column: int, value: bool):
-        """Sets the value of all existing and future table items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future table items in a column of type BOOL. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -835,7 +824,10 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnColor(self, column: int, color: str):
-        """Sets the color of all existing and future table items in a column of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color of all existing and future table items in a column of type COLOR. The color can be "As
+        is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined
+        color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the
+        default for the table.
 
         Parameters
         ----------
@@ -846,7 +838,10 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnColorItemDefault(self, column: int, color: str):
-        """Sets the color of the color item in the flyout menu for all existing and future table items that display "As is" or "Default" in a column of type COLOR. The color is either a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C") or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color of the color item in the flyout menu for all existing and future table items that
+        display "As is" or "Default" in a column of type COLOR. The color is either a color hex specification in
+        the form of "RRGGBB" (e.g., "#0A1B2C") or a pre-defined color name (e.g., "Red"). Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -857,7 +852,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnColorOptions(self, column: int, opts: int):
-        """Sets the color flyout options for all existing and future table items in a column of type COLOR. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color flyout options for all existing and future table items in a column of type COLOR.
+        Specifying -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -868,7 +864,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnEditable(self, column: int, editable: bool):
-        """Sets the editability of all existing and future table items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the editability of all existing and future table items in a column. Specifying -1 for the column
+        will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -879,7 +876,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnFloatValue(self, column: int, value: float):
-        """Sets the value of all existing and future table items in a column of type FLOAT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future table items in a column of type FLOAT. Specifying -1 for
+        the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -901,7 +899,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnIcon(self, column: int, icon: FXIcon | None = None):
-        """Sets the icon of all existing and future table items in a column of type ICON. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the icon of all existing and future table items in a column of type ICON. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -912,7 +911,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnIntValue(self, column: int, value: int):
-        """Sets the value of all existing and future table items in a column of type INT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future table items in a column of type INT. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -923,7 +923,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnJustify(self, column: int, justify: int):
-        """Sets the justification of all existing and future table items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the justification of all existing and future table items in a column. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -934,7 +935,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnListId(self, column: int, listId: int):
-        """Sets the list ID of all existing and future table items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the list ID of all existing and future table items in a column of type LIST. Specifying -1 for
+        the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -945,7 +947,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnListIndex(self, column: int, index: int):
-        """Sets the list index (selection) of all existing and future table items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the list index (selection) of all existing and future table items in a column of type LIST.
+        Specifying -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -956,7 +959,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnNumDigits(self, column: int, numDigits: int):
-        """Sets the number of digits to the left of the decimal point for all existing and future table items in a column of type REAL.
+        """Sets the number of digits to the left of the decimal point for all existing and future table items in
+        a column of type REAL.
 
         Parameters
         ----------
@@ -978,7 +982,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnText(self, column: int, text: str):
-        """Sets the text of all existing and future table items in a column of type TEXT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the text of all existing and future table items in a column of type TEXT. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -989,7 +994,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnType(self, column: int, type: int):
-        """Sets the type of a column. Specifying -1 for the table column will change all columns in the table and set the default for the table.
+        """Sets the type of a column. Specifying -1 for the table column will change all columns in the table
+        and set the default for the table.
 
         Parameters
         ----------
@@ -1000,7 +1006,10 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnWidth(self, column: int, width: int):
-        """Sets the width, in pixels, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table. Specify -1 for the width will resize each specified column to best fit the width of the title(s) currently shown in its leading and trailing items.
+        """Sets the width, in pixels, of the specified column. Specifying -1 for the column will change all non-
+        leading and non-trailing columns in the table and set the default for the table. Specify -1 for the
+        width will resize each specified column to best fit the width of the title(s) currently shown in its
+        leading and trailing items.
 
         Parameters
         ----------
@@ -1011,7 +1020,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setColumnWidthInChars(self, column: int, numChars: int):
-        """Sets the width, in number of characters, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table.
+        """Sets the width, in number of characters, of the specified column. Specifying -1 for the column will
+        change all non-leading and non-trailing columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -1031,7 +1041,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         column : int
             Column index of item.
         notify : bool
-
         """
 
     def setDefaultBoolIcons(self, trueIcon: FXIcon | None = None, falseIcon: FXIcon | None = None):
@@ -1055,7 +1064,9 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setDefaultColor(self, color: str):
-        """Sets the default color for all items of type COLOR in the table. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
+        """Sets the default color for all items of type COLOR in the table. The color can be "As is", "Default",
+        a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g.,
+        "Red").
 
         Parameters
         ----------
@@ -1175,7 +1186,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setItemCheck(self, item: FXTreeItem, check: int, notify: bool = False):
-        """Sets the item checked state. Valid states are True, False and MAYBE. Returns True if the check value has changed, False otherwise.
+        """Sets the item checked state. Valid states are True, False and MAYBE. Returns True if the check value
+        has changed, False otherwise.
 
         Parameters
         ----------
@@ -1184,7 +1196,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         check : int
 
         notify : bool
-
         """
 
     def setItemClosedIcon(self, item: FXTreeItem, icon: FXIcon):
@@ -1195,11 +1206,11 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         icon : FXIcon
-
         """
 
     def setItemColor(self, item: FXTreeItem, column: int, color: str):
-        """Sets the color of a table item of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
+        """Sets the color of a table item of type COLOR. The color can be "As is", "Default", a color hex
+        specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
 
         Parameters
         ----------
@@ -1336,7 +1347,6 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         item : FXTreeItem
 
         icon : FXIcon
-
         """
 
     def setItemPrecision(self, item: FXTreeItem, column: int, precision: int):
@@ -1379,7 +1389,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setItemValue(self, item: FXTreeItem, column: int, valueText: str):
-        """Sets the value of a table item of any type that can interpret a text string for its value. Returns True if the value of the specified item is set successfully.
+        """Sets the value of a table item of any type that can interpret a text string for its value. Returns
+        True if the value of the specified item is set successfully.
 
         Parameters
         ----------
@@ -1392,7 +1403,8 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def setLeadingRowLabels(self, str: str):
-        """Set the labels of the leading row. Note: this API must be used to set the header row labels, otherwise labels will be overwritten by auto-numbering.
+        """Set the labels of the leading row. Note: this API must be used to set the header row labels,
+        otherwise labels will be overwritten by auto-numbering.
 
         Parameters
         ----------
@@ -1437,7 +1449,9 @@ class AFXTreeTable(FXScrollArea, AFXDataComponent):
         """
 
     def shadeReadOnlyItems(self, shadeItems: bool):
-        """Makes the table to use a different, typically shaded, background color for read-only items if True is passed to the method. The table would use the same regular background color for both editable and read-only items if False is passed to the method.
+        """Makes the table to use a different, typically shaded, background color for read-only items if True is
+        passed to the method. The table would use the same regular background color for both editable and read-
+        only items if False is passed to the method.
 
         Parameters
         ----------

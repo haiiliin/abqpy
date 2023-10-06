@@ -19,7 +19,9 @@ def addExitCallback(callback: Callable):
 
 
 def afxCreateIcon(fileName: str):
-    """Returns an icon created by reading the specified file, which can be in one of these formats: BMP, GIF, PNG, XPM. The file format is assumed from the file extension (which is not case sensitive). Returns 0 if the file cannot be opened.
+    """Returns an icon created by reading the specified file, which can be in one of these formats: BMP, GIF,
+    PNG, XPM. The file format is assumed from the file extension (which is not case sensitive). Returns 0 if the
+    file cannot be opened.
 
     Parameters
     ----------
@@ -29,7 +31,8 @@ def afxCreateIcon(fileName: str):
 
 
 def afxCreateBMPIcon(fileName: str):
-    """Returns an icon created by reading the specified file in BMP format. Returns 0 if the file cannot be opened.
+    """Returns an icon created by reading the specified file in BMP format. Returns 0 if the file cannot be
+    opened.
 
     Parameters
     ----------
@@ -39,7 +42,8 @@ def afxCreateBMPIcon(fileName: str):
 
 
 def afxCreateGIFIcon(fileName: str):
-    """Returns an icon created by reading the specified file in GIF format. Returns 0 if the file cannot be opened.
+    """Returns an icon created by reading the specified file in GIF format. Returns 0 if the file cannot be
+    opened.
 
     Parameters
     ----------
@@ -49,7 +53,8 @@ def afxCreateGIFIcon(fileName: str):
 
 
 def afxCreatePNGIcon(fileName: str):
-    """Returns an icon created by reading the specified file in PNG format. Returns 0 if the file cannot be opened.
+    """Returns an icon created by reading the specified file in PNG format. Returns 0 if the file cannot be
+    opened.
 
     Parameters
     ----------
@@ -59,7 +64,8 @@ def afxCreatePNGIcon(fileName: str):
 
 
 def afxCreateXPMIcon(fileName: str):
-    """Returns an icon created by reading the specified file in XPM format. Returns 0 if the file cannot be opened.
+    """Returns an icon created by reading the specified file in XPM format. Returns 0 if the file cannot be
+    opened.
 
     Parameters
     ----------
@@ -69,7 +75,8 @@ def afxCreateXPMIcon(fileName: str):
 
 
 def afxGetIcon(fileName: str, size: str):
-    """Enables you to use Abaqus/CAE icons in your customization. Set the _size_ argument to 1 for normal-sized icons or to 0 for small icons.
+    """Enables you to use Abaqus/CAE icons in your customization. Set the _size_ argument to 1 for normal-sized
+    icons or to 0 for small icons.
 
     Parameters
     ----------
@@ -137,19 +144,34 @@ def afxGetColorHexSpecFromName(colorName: str):
 
 
 def getCurrentContext():
-    """Returns the current GUI context dictionary, which contains the following keys: _mdbName_, _viewportName_, _objectPath_, _objectType_, _modelName_, and _moduleName_. You can be notified of context changes by using the [registerCurrentContext](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEGUIRefHtml/pt01ch01gob125.htm?contextscope=all#gui-auxiliary-registercurrentcontext) function."""
+    """Returns the current GUI context dictionary, which contains the following keys: _mdbName_, _viewportName_,
+    _objectPath_, _objectType_, _modelName_, and _moduleName_.
+
+    You can be notified of context changes by using the [registerCurrentContext](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEGUIRefHtml/pt01ch01gob125.htm?contextscope=all#gui-auxiliary-registercurrentcontext) function.
+    """
 
 
 def getCurrentModuleGui():
-    """Returns the current moduleGui object. You can call that object's getModuleName method to check its name."""
+    """Returns the current moduleGui object.
+
+    You can call that object's getModuleName method to check its name.
+    """
 
 
 def getCursorPosition():
-    """Returns a tuple of status,x,y,buttonState. The status (TRUE or FALSE) indicates the success of the call. The x and y values represent the position of the cursor in the window's coordinate system (origin is in the upper left, positive Y points downward). This method is defined in FXWindow, so it may be called on any object derived from FXWindow."""
+    """Returns a tuple of status,x,y,buttonState.
+
+    The status (TRUE or FALSE) indicates the success of the call. The x and y values represent the position
+    of the cursor in the window's coordinate system (origin is in the upper left, positive Y points
+    downward). This method is defined in FXWindow, so it may be called on any object derived from FXWindow.
+    """
 
 
 def getDisplayedObjectType():
-    """Returns the type of the object displayed in the current viewport. Possible return values are: PART, ASSEMBLY, ODB, XY_PLOT, SKETCH, or None."""
+    """Returns the type of the object displayed in the current viewport.
+
+    Possible return values are: PART, ASSEMBLY, ODB, XY_PLOT, SKETCH, or None.
+    """
 
 
 def getSeparator(parent, count: int):
@@ -165,7 +187,8 @@ def getSeparator(parent, count: int):
 
 
 def getWidgetFromText(parent, text: str):
-    """Returns a widget whose label or tip text matches the specified text and is also a child of the specified widget.
+    """Returns a widget whose label or tip text matches the specified text and is also a child of the specified
+    widget.
 
     Parameters
     ----------
@@ -197,7 +220,8 @@ def registerCurrentContext(callbackFunction: Callable):
 
 
 def removeExitCallback(callback: Callable):
-    """Unregisters a callback function to be called when the application is about to exit. The function must have been previously registered using addExitCallback.
+    """Unregisters a callback function to be called when the application is about to exit. The function must
+    have been previously registered using addExitCallback.
 
     Parameters
     ----------
@@ -207,7 +231,13 @@ def removeExitCallback(callback: Callable):
 
 
 def sendCommand(writeToJournal: bool, command: str, writeToReplay: bool = True):
-    """Sends a command string to the kernel. **Note:** The _writeToJournal_ argument should not usually be necessary. If the command is a built-in Abaqus Scripting Interface command, it will be written to the journal file automatically. If the command is not a built-in Abaqus Scripting Interface command but it changes the mdb using built-in Abaqus Scripting Interface commands, the changes to the mdb will be written to the journal file automatically. However, if the command is not a built-in Abaqus Scripting Interface command and it makes changes to the mdb that would not otherwise be written to the journal file, the command it should use the journalMethodCall function to write it to the journal file.
+    """Sends a command string to the kernel. **Note:** The _writeToJournal_ argument should not usually be
+    necessary. If the command is a built-in Abaqus Scripting Interface command, it will be written to the
+    journal file automatically. If the command is not a built-in Abaqus Scripting Interface command but it
+    changes the mdb using built-in Abaqus Scripting Interface commands, the changes to the mdb will be written
+    to the journal file automatically. However, if the command is not a built-in Abaqus Scripting Interface
+    command and it makes changes to the mdb that would not otherwise be written to the journal file, the command
+    it should use the journalMethodCall function to write it to the journal file.
 
     Parameters
     ----------
@@ -231,7 +261,10 @@ def setCurrentModel(modelName: str):
 
 
 def setSwitchModuleHook(callbackFunction: Callable):
-    """Sets a function that will be called whenever the user switches into a GUI module. When the user switches into a GUI module, the specified function will be called, passing it the name (shown in the Module combo box) of the new module. Note that the setSwitchModuleHook function does not take keyword arguments and, if necessary, it may be called multiple times.
+    """Sets a function that will be called whenever the user switches into a GUI module. When the user switches
+    into a GUI module, the specified function will be called, passing it the name (shown in the Module combo
+    box) of the new module. Note that the setSwitchModuleHook function does not take keyword arguments and, if
+    necessary, it may be called multiple times.
 
     Parameters
     ----------
@@ -241,7 +274,10 @@ def setSwitchModuleHook(callbackFunction: Callable):
 
 
 def shutdown():
-    """Exits Abaqus/CAE. This is equivalent to selecting File->Exit."""
+    """Exits Abaqus/CAE.
+
+    This is equivalent to selecting File->Exit.
+    """
 
 
 def switchModule(moduleName: str):
@@ -255,7 +291,8 @@ def switchModule(moduleName: str):
 
 
 def unregisterCurrentContext(callbackFunction: Callable):
-    """Unregisters a query on the current context. The specified callback function should be the same argument that was used to register the query.
+    """Unregisters a query on the current context. The specified callback function should be the same argument
+    that was used to register the query.
 
     Parameters
     ----------

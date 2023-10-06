@@ -28,10 +28,19 @@ class AFXOrderedPickStep(AFXPickStep):
         """
 
     def onCancel(self):
-        """Called when the step is cancelled. Reimplemented from AFXPickStep."""
+        """Called when the step is cancelled.
+
+        Reimplemented from AFXPickStep.
+        """
 
     def onExecute(self):
-        """Called to execute the steps returned by getFirstStep and getNextStep. Reimplemented from AFXPickStep."""
+        """Called to execute the steps returned by getFirstStep and getNextStep.
+
+        Reimplemented from AFXPickStep.
+        """
 
     def reset(self):
-        """Allows a step to reset any of its data (if needed) when looping. Reimplemented from AFXPickStep."""
+        """Allows a step to reset any of its data (if needed) when looping.
+
+        Reimplemented from AFXPickStep.
+        """

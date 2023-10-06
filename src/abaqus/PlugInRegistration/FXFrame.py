@@ -7,7 +7,7 @@ from .FXWindow import FXWindow
 
 
 class FXFrame(FXWindow):
-    """Base Frame"""
+    """Base Frame."""
 
     def __init__(
         self,
@@ -45,7 +45,6 @@ class FXFrame(FXWindow):
         pt : int
 
         pb : int
-
         """
 
     def getBaseColor(self):
@@ -58,10 +57,24 @@ class FXFrame(FXWindow):
         """Get border width."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXWindow. Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell, FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption, FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline, FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar."""
+        """Return default height.
+
+        Reimplemented from FXWindow. Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell,
+        FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton,
+        FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption,
+        FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline,
+        FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXWindow. Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell, FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption, FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline, FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar."""
+        """Return default width.
+
+        Reimplemented from FXWindow. Reimplemented in FXArrowButton, FXCheckButton, FXColorBar, FXColorWell,
+        FXColorWheel, FXDial, FXDockTitle, FXHeader, FXLabel, FXMDIDeleteButton, FXMDIRestoreButton,
+        FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXProgressBar, FXOption,
+        FXOptionMenu, FXRadioButton, FXHorizontalSeparator, FXVerticalSeparator, FXSlider, FXStatusline,
+        FXTextField, FXToggleButton, FXToolbarGrip, FXToolbarTab, and AFXProgressBar.
+        """
 
     def getFrameStyle(self):
         """Get current frame style."""
@@ -90,7 +103,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setBorderColor(self, clr: FXColor):
@@ -99,7 +111,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setFrameStyle(self, style: int):
@@ -108,7 +119,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         style : int
-
         """
 
     def setHiliteColor(self, clr: FXColor):
@@ -117,7 +127,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setPadBottom(self, pb: int):
@@ -126,7 +135,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         pb : int
-
         """
 
     def setPadLeft(self, pl: int):
@@ -135,7 +143,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         pl : int
-
         """
 
     def setPadRight(self, pr: int):
@@ -144,7 +151,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         pr : int
-
         """
 
     def setPadTop(self, pt: int):
@@ -153,7 +159,6 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         pt : int
-
         """
 
     def setShadowColor(self, clr: FXColor):
@@ -162,5 +167,4 @@ class FXFrame(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """

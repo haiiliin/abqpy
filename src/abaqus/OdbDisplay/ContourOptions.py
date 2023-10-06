@@ -26,12 +26,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ContourOptions(DGContourOptions):
-    """The ContourOptions object stores values and attributes associated with a contour plot.
-    The ContourOptions object has no constructor command. Abaqus creates a
-    *defaultOdbDisplay.contourOptions* member when you import the Visualization module.
-    Abaqus creates a **contourOptions** member when it creates the OdbDisplay object, using
-    the values from *defaultOdbDisplay.contourOptions*. Abaqus creates the **odbDisplay**
-    member when a viewport is created, using the values from **defaultOdbDisplay**.
+    """The ContourOptions object stores values and attributes associated with a contour plot. The ContourOptions
+    object has no constructor command. Abaqus creates a *defaultOdbDisplay.contourOptions* member when you
+    import the Visualization module. Abaqus creates a **contourOptions** member when it creates the OdbDisplay
+    object, using the values from *defaultOdbDisplay.contourOptions*. Abaqus creates the **odbDisplay** member
+    when a viewport is created, using the values from **defaultOdbDisplay**.
+
     ContourOptions objects are accessed in one of two ways:
     - The default contour options. These settings are used as defaults when other
     **contourOptions** members are created. These settings can be set to customize user

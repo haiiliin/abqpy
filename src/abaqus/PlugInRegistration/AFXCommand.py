@@ -59,7 +59,8 @@ class AFXCommand(FXObject):
         """Returns True if the command needs to register a query for kernel state."""
 
     def isRequired(self):
-        """Returns True if this command is going to be sent even if none of its keywords has been modified, otherwise returns False."""
+        """Returns True if this command is going to be sent even if none of its keywords has been modified,
+        otherwise returns False."""
 
     def setKeywordValuesToDefaults(self, ignoreUnspecified: bool = False):
         """Sets the values of all keywords to their defaults.
@@ -92,12 +93,12 @@ class AFXCommand(FXObject):
         """
 
     def setRequired(self, val: bool):
-        """Sets this command as required or optional; if True the command will always be sent, if False the command will be sent only if it has modified keywords or if it has no keywords.
+        """Sets this command as required or optional; if True the command will always be sent, if False the
+        command will be sent only if it has modified keywords or if it has no keywords.
 
         Parameters
         ----------
         val : bool
-
         """
 
     def syncKeywordPreviousValues(self):

@@ -1,192 +1,210 @@
-Button with an arrow; the arrow can point in any direction. When clicked, the arrow button sends a SEL\_COMMAND to its target. When ARROW\_REPEAT is passed, the arrow button sends a SEL_COMMAND repeatedly while the button is pressed.
+Button with an arrow; the arrow can point in any direction. When clicked, the arrow button sends a SEL_COMMAND to its target. When ARROW_REPEAT is passed, the arrow button sends a SEL_COMMAND repeatedly while the button is pressed.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxarrowbutton.png)
 
-### FXArrowButton(p, tgt=None, sel=0, opts=ARROW\_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT_PAD)  
+### FXArrowButton(p, tgt=None, sel=0, opts=ARROW_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct arrow button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | ARROW_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite | | |
+| tgt | FXObject | None | |
+| sel | Int | 0 | |
+| opts | Int | ARROW_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
+| pl | Int | DEFAULT_PAD | |
+| pr | Int | DEFAULT_PAD | |
+| pt | Int | DEFAULT_PAD | |
+| pb | Int | DEFAULT_PAD | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True because a button can receive focus.
 
 Reimplemented from FXWindow.
 
-### disable()  
+### disable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disable the button.
 
 Reimplemented from FXWindow.
 
-### enable()  
+### enable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enable the button.
 
 Reimplemented from FXWindow.
 
-### getArrowColor()  
+### getArrowColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the fill color for the arrow.
 
-### getArrowSize()  
+### getArrowSize()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the default arrow size.
 
-### getArrowStyle()  
+### getArrowStyle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the arrow style flags.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default height.
 
 Reimplemented from FXFrame.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default width.
 
 Reimplemented from FXFrame.
 
-### getJustify()  
+### getJustify()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current justification mode.
 
-### getState()  
+### getState()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the button state (where True means the button is down).
 
-### getTipText()  
+### getTipText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get tool tip message for this arrow button.
 
-### setArrowColor(clr)  
+### setArrowColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the fill color for the arrow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setArrowSize(size)  
+### setArrowSize(size)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the default arrow size.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| size | Int |   |   |
+| size | Int | | |
 
-### setArrowStyle(style)  
+### setArrowStyle(style)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the arrow style flags.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int | | |
 
-### setJustify(mode)  
+### setJustify(mode)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int | | |
 
-### setState(s)  
+### setState(s)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the button state (where True means the button is down).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Bool |   |   |
+| s | Bool | | |
 
-### setTipText(text)  
+### setTipText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set tool tip message for this arrow button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Arrow style options**
 
-| **ARROW_NONE** | 
+| **ARROW_NONE** |
 
 No arrow.
 
- |
-| **ARROW_UP** | 
+|
+| **ARROW_UP** |
 
 Arrow points up.
 
- |
-| **ARROW_DOWN** | 
+|
+| **ARROW_DOWN** |
 
 Arrow points down.
 
- |
-| **ARROW_LEFT** | 
+|
+| **ARROW_LEFT** |
 
 Arrow points left.
 
- |
-| **ARROW_RIGHT** | 
+|
+| **ARROW_RIGHT** |
 
 Arrow points right.
 
- |
-| **ARROW_REPEAT** | 
+|
+| **ARROW_REPEAT** |
 
 Button repeats if held down.
 
- |
-| **ARROW_AUTOGRAY** | 
+|
+| **ARROW_AUTOGRAY** |
 
 Automatically gray out when not updated.
 
- |
-| **ARROW_AUTOHIDE** | 
+|
+| **ARROW_AUTOHIDE** |
 
 Automatically hide button when not updated.
 
- |
-| **ARROW_TOOLBAR** | 
+|
+| **ARROW_TOOLBAR** |
 
 Button is toolbar-style.
 
- |
-| **ARROW_SPINNER** | 
+|
+| **ARROW_SPINNER** |
 
 Button is spinner-style.
 
- |
+|

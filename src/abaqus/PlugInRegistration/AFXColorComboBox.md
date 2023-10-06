@@ -2,14 +2,15 @@ This class contains a label that precedes a color well, which allows the user to
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxcolorbutton.png)
 
-### AFXColorButton(p, text, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT\_SPACING, pr=DEFAULT\_SPACING, pt=DEFAULT\_SPACING, pb=DEFAULT\_SPACING)  
+### AFXColorButton(p, text, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT_SPACING, pr=DEFAULT_SPACING, pt=DEFAULT_SPACING, pb=DEFAULT_SPACING)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| text | String |   | Label string. |
+| p | FXComposite | | Parent widget. |
+| text | String | | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -22,112 +23,125 @@ Constructor.
 | pt | Int | DEFAULT_SPACING | Top padding (margin). |
 | pb | Int | DEFAULT_SPACING | Bottom padding (margin). |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates the color button widget.
 
 Reimplemented from FXComposite.
 
-### disable()  
+### disable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disables the color button.
 
 Reimplemented from FXWindow.
 
-### enable()  
+### enable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enables the color button.
 
 Reimplemented from FXWindow.
 
-### getHelpText()  
+### getHelpText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the status line help text.
 
-### getLabelFont()  
+### getLabelFont()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the label font.
 
-### getLabelText()  
+### getLabelText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the label string.
 
-### getRGBA()  
+### getRGBA()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the color of the button.
 
-### getTipText()  
+### getTipText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the tool tip message.
 
-### setHelpText(text)  
+### setHelpText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### setLabelFont(fnt)  
+### setLabelFont(fnt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont | | |
 
-### setLabelText(txt)  
+### setLabelText(txt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   |   |
+| txt | String | | |
 
-### setRGBA(clr)  
+### setRGBA(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the color of the button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setTipText(text)  
+### setTipText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Message ID's.**
 
-| **ID_COLORWELL** | 
+| **ID_COLORWELL** |
 
 ID for color button.
 
- |
+|
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Flags for AFX color button options.**
 
-| **AFXCOLORBUTTON_VERTICAL** | 
+| **AFXCOLORBUTTON_VERTICAL** |
 
 Orient label above button.
 
- |
+|

@@ -22,7 +22,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

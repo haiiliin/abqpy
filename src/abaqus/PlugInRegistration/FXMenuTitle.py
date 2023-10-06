@@ -23,23 +23,37 @@ class FXMenuTitle(FXMenuCaption):
         pup : FXPopup | None
 
         opts : int
-
         """
 
     def canFocus(self):
-        """Yes it can receive the focus. Reimplemented from FXWindow."""
+        """Yes it can receive the focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXMenuCaption."""
+        """Create server-side resources.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXMenuCaption."""
+        """Detach server-side resources.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXMenuCaption."""
+        """Return default height.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXMenuCaption."""
+        """Return default width.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def getMenu(self):
         """Return popup menu."""
@@ -50,5 +64,4 @@ class FXMenuTitle(FXMenuCaption):
         Parameters
         ----------
         menu : FXPopup
-
         """

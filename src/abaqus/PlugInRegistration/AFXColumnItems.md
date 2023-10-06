@@ -10,67 +10,76 @@ This class connects the selected items in a single column of an AFXTable to a ke
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxcolumnitems.png)
 
-### AFXColumnItems(table, referenceColumn, opts=0)  
+### AFXColumnItems(table, referenceColumn, opts=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| table | AFXTable |   | Table to use. |
-| referenceColumn | Int |   | Index of the reference column. |
+| table | AFXTable | | Table to use. |
+| referenceColumn | Int | | Index of the reference column. |
 | opts | Int | 0 | Selection options (not used). |
 
-### AFXColumnItems(referenceColumn, tgt=None, sel=0, opts=0)  
+### AFXColumnItems(referenceColumn, tgt=None, sel=0, opts=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor for use with a keyword.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| referenceColumn | Int |   | Index of the reference column. |
+| referenceColumn | Int | | Index of the reference column. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Selection options (not used). |
 
-### getReferenceColumn()  
+### getReferenceColumn()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the index of the table reference column.
 
-### getSelector()  
+### getSelector()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the message ID.
 
-### getTarget()  
+### getTarget()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the message target.
 
-### setReferenceColumn(index)  
+### setReferenceColumn(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the table reference column, whose selected items will be sent to the target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Table column index. |
+| index | Int | | Table column index. |
 
-### setSelector(sel)  
+### setSelector(sel)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the message ID.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | New message ID. |
+| sel | Int | | New message ID. |
 
-### setTarget(tgt)  
+### setTarget(tgt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   | New message target. |
+| tgt | FXObject | | New message target. |
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
@@ -93,6 +102,6 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.

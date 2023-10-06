@@ -2,292 +2,337 @@ Multiline text widget
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxtext.png)
 
-### FXText(p, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0)  
+### FXText(p, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct multi-line text widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite | | |
+| tgt | FXObject | None | |
+| sel | Int | 0 | |
+| opts | Int | 0 | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
 
-### appendText(text, n, notify=False)  
+### appendText(text, n, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Append n characters of text at the end of the buffer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| n | Int |   |   |
-| notify | Bool | False |   |
+| text | String | | |
+| n | Int | | |
+| notify | Bool | False | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True because a text widget can receive focus.
 
 Reimplemented from FXWindow.
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create server-side resources.
 
 Reimplemented from FXComposite.
 
-### detach()  
+### detach()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Detach server-side resources.
 
 Reimplemented from FXComposite.
 
-### disable()  
+### disable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disable the text widget.
 
 Reimplemented from FXWindow.
 
-### enable()  
+### enable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enable the text widget.
 
 Reimplemented from FXWindow.
 
-### getBarColor()  
+### getBarColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return bar color.
 
-### getBarColumns()  
+### getBarColumns()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of columns used for line numbers.
 
-### getChar(pos)  
+### getChar(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get character at position in text buffer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### getContentHeight()  
+### getContentHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default height.
 
 Reimplemented from FXScrollArea.
 
-### getContentWidth()  
+### getContentWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default width.
 
 Reimplemented from FXScrollArea.
 
-### getCursorCol()  
+### getCursorCol()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return cursor row, i.e. indent position.
 
-### getCursorColor()  
+### getCursorColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return cursor color.
 
-### getCursorPos()  
+### getCursorPos()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return the cursor position.
 
-### getCursorRow()  
+### getCursorRow()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return cursor row.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default height.
 
 Reimplemented from FXScrollArea.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default width.
 
 Reimplemented from FXScrollArea.
 
-### getFont()  
+### getFont()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return text font.
 
-### getLength()  
+### getLength()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return length of buffer.
 
-### getMarginBottom()  
+### getMarginBottom()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return bottom margin.
 
-### getMarginLeft()  
+### getMarginLeft()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return left margin.
 
-### getMarginRight()  
+### getMarginRight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return right margin.
 
-### getMarginTop()  
+### getMarginTop()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return top margin.
 
-### getNumberColor()  
+### getNumberColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return line number color.
 
-### getPosAt(x, y)  
+### getPosAt(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return text position at given visible x,y coordinate.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### getSelBackColor()  
+### getSelBackColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selected background color.
 
-### getSelEndPos()  
+### getSelEndPos()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selendpos.
 
-### getSelStartPos()  
+### getSelStartPos()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selstartpos.
 
-### getSelTextColor()  
+### getSelTextColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selected text color.
 
-### getText()  
+### getText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return text in the widget.
 
-### getText(text, n)  
+### getText(text, n)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Retrieve text into buffer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| n | Int |   |   |
+| text | String | | |
+| n | Int | | |
 
-### getTextColor()  
+### getTextColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return text color.
 
-### getTopLine()  
+### getTopLine()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return position of top line.
 
-### getVisCols()  
+### getVisCols()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of visible columns.
 
-### getVisRows()  
+### getVisRows()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of visible rows.
 
-### insertText(pos, text, n, notify=False)  
+### insertText(pos, text, n, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Insert n characters of text at position pos into the buffer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| text | String |   |   |
-| n | Int |   |   |
-| notify | Bool | False |   |
+| pos | Int | | |
+| text | String | | |
+| n | Int | | |
+| notify | Bool | False | |
 
-### isEditable()  
+### isEditable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if text is editable.
 
-### isModified()  
+### isModified()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if text was modified.
 
-### isPosSelected(pos)  
+### isPosSelected(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if position pos is selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### killSelection(notify=False)  
+### killSelection(notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Unselect the text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False | |
 
-### lineEnd(pos)  
+### lineEnd(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return position of end of line containing position pos.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### lineStart(pos)  
+### lineStart(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return position of begin of line containing position pos.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### makePositionVisible(pos)  
+### makePositionVisible(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Scroll text to make the given position visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### moveContents(x, y)  
+### moveContents(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Scroll the contents.
@@ -295,28 +340,31 @@ Scroll the contents.
 Reimplemented from FXScrollArea.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### nextLine(pos, nl=1)  
+### nextLine(pos, nl=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return start of next line.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| nl | Int | 1 |   |
+| pos | Int | | |
+| nl | Int | 1 | |
 
-### nextRow(pos, nr=1)  
+### nextRow(pos, nr=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return start of next row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| nr | Int | 1 |   |
+| pos | Int | | |
+| nr | Int | 1 | |
 
-### position(x, y, w, h)  
+### position(x, y, w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Move and resize this window in the parent's coordinates.
@@ -324,59 +372,65 @@ Move and resize this window in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int | | |
+| y | Int | | |
+| w | Int | | |
+| h | Int | | |
 
-### prevLine(pos, nl=1)  
+### prevLine(pos, nl=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return start of previous line.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| nl | Int | 1 |   |
+| pos | Int | | |
+| nl | Int | 1 | |
 
-### prevRow(pos, nr=1)  
+### prevRow(pos, nr=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return start of previous row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| nr | Int | 1 |   |
+| pos | Int | | |
+| nr | Int | 1 | |
 
-### recalc()  
+### recalc()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Need to recalculate size.
 
 Reimplemented from FXWindow.
 
-### removeText(pos, n, notify=False)  
+### removeText(pos, n, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Remove n characters of text at position pos from the buffer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| n | Int |   |   |
-| notify | Bool | False |   |
+| pos | Int | | |
+| n | Int | | |
+| notify | Bool | False | |
 
-### replaceText(pos, m, text, n, notify=False)  
+### replaceText(pos, m, text, n, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Replace m characters at pos by n characters.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| m | Int |   |   |
-| text | String |   |   |
-| n | Int |   |   |
-| notify | Bool | False |   |
+| pos | Int | | |
+| m | Int | | |
+| text | String | | |
+| n | Int | | |
+| notify | Bool | False | |
 
-### resize(w, h)  
+### resize(w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Resize this window to the specified width and height.
@@ -384,282 +438,307 @@ Resize this window to the specified width and height.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int | | |
+| h | Int | | |
 
-### rowEnd(pos)  
+### rowEnd(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return row end.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### rowStart(pos)  
+### rowStart(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return row start.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### setBarColor(clr)  
+### setBarColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change bar color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setBarColumns(cols)  
+### setBarColumns(cols)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change number of columns used for line numbers.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cols | Int |   |   |
+| cols | Int | | |
 
-### setBottomLine(pos)  
+### setBottomLine(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Make line containing pos the bottom line.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### setCursorCol(col, notify=False)  
+### setCursorCol(col, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set cursor column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| col | Int |   |   |
-| notify | Bool | False |   |
+| col | Int | | |
+| notify | Bool | False | |
 
-### setCursorColor(clr)  
+### setCursorColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change cursor color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setCursorPos(pos, notify=False)  
+### setCursorPos(pos, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the cursor position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| notify | Bool | False |   |
+| pos | Int | | |
+| notify | Bool | False | |
 
-### setCursorRow(row, notify=False)  
+### setCursorRow(row, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set cursor row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   |   |
-| notify | Bool | False |   |
+| row | Int | | |
+| notify | Bool | False | |
 
-### setEditable(edit=True)  
+### setEditable(edit=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set editable flag.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| edit | Bool | True |   |
+| edit | Bool | True | |
 
-### setFont(fnt)  
+### setFont(fnt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change text font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont | | |
 
-### setMarginBottom(pb)  
+### setMarginBottom(pb)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change bottom margin.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   |   |
+| pb | Int | | |
 
-### setMarginLeft(pl)  
+### setMarginLeft(pl)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change left margin.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   |   |
+| pl | Int | | |
 
-### setMarginRight(pr)  
+### setMarginRight(pr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change right margin.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   |   |
+| pr | Int | | |
 
-### setMarginTop(pt)  
+### setMarginTop(pt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change top margin.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   |   |
+| pt | Int | | |
 
-### setModified(mod=True)  
+### setModified(mod=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set modified flag.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mod | Bool | True |   |
+| mod | Bool | True | |
 
-### setNumberColor(clr)  
+### setNumberColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change line number color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setSelBackColor(clr)  
+### setSelBackColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change selected background color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setSelection(pos, len, notify=False)  
+### setSelection(pos, len, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Select len characters starting at given position pos.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| len | Int |   |   |
-| notify | Bool | False |   |
+| pos | Int | | |
+| len | Int | | |
+| notify | Bool | False | |
 
-### setSelTextColor(clr)  
+### setSelTextColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change selected text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setText(text, notify=False)  
+### setText(text, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change the text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| notify | Bool | False |   |
+| text | String | | |
+| notify | Bool | False | |
 
-### setText(text, n, notify=False)  
+### setText(text, n, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change the text in the buffer to new text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| n | Int |   |   |
-| notify | Bool | False |   |
+| text | String | | |
+| n | Int | | |
+| notify | Bool | False | |
 
-### setTextColor(clr)  
+### setTextColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setTopLine(pos)  
+### setTopLine(pos)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Make line containing pos the top line.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int | | |
 
-### setVisCols(cols)  
+### setVisCols(cols)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change number of visible columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cols | Int |   |   |
+| cols | Int | | |
 
-### setVisRows(rows)  
+### setVisRows(rows)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change number of visible rows.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| rows | Int |   |   |
+| rows | Int | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Text widget options**
 
-| **TEXT_READONLY** | 
+| **TEXT_READONLY** |
 
 Text is NOT editable.
 
- |
-| **TEXT_WORDWRAP** | 
+|
+| **TEXT_WORDWRAP** |
 
 Wrap at word breaks.
 
- |
-| **TEXT_OVERSTRIKE** | 
+|
+| **TEXT_OVERSTRIKE** |
 
 Overstrike mode.
 
- |
-| **TEXT_FIXEDWRAP** | 
+|
+| **TEXT_FIXEDWRAP** |
 
 Fixed wrap columns.
 
- |
-| **TEXT\_NO\_TABS** | 
+|
+| **TEXT_NO_TABS** |
 
 Insert spaces for tabs.
 
- |
-| **TEXT_AUTOINDENT** | 
+|
+| **TEXT_AUTOINDENT** |
 
 Autoindent.
 
- |
-| **TEXT_SHOWACTIVE** | 
+|
+| **TEXT_SHOWACTIVE** |
 
 Show active line.
 
- |
-
+|
 
 **Selection modes**
 
-| **SELECT_CHARS** | 
+| **SELECT_CHARS** |
 
 Select characters.
 
- |
-| **SELECT_WORDS** | 
+|
+| **SELECT_WORDS** |
 
 Select words.
 
- |
-| **SELECT_LINES** | 
+|
+| **SELECT_LINES** |
 
 Select lines.
 
- |
+|

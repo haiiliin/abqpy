@@ -7,7 +7,13 @@ from .FXObject import FXObject
 
 
 class FXCheckButton(FXLabel):
-    """A check button is a tri-state button. Normally, it is either True or False, and toggles between True or False whenever it is pressed. A third state MAYBE may be set to indicate that no selection has been made yet by the user, or that the state is ambiguous. When pressed, the check button sends a SEL_COMMAND to its target, and the message data represents the state of the check button."""
+    """A check button is a tri-state button.
+
+    Normally, it is either True or False, and toggles between True or False whenever it is pressed. A third
+    state MAYBE may be set to indicate that no selection has been made yet by the user, or that the state is
+    ambiguous. When pressed, the check button sends a SEL_COMMAND to its target, and the message data
+    represents the state of the check button.
+    """
 
     def __init__(
         self,
@@ -54,20 +60,31 @@ class FXCheckButton(FXLabel):
         pt : int
 
         pb : int
-
         """
 
     def canFocus(self):
-        """Returns True because a check button can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a check button can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
-        """Get check button state (True, False or MAYBE). Reimplemented in AFXCheckButton."""
+        """Get check button state (True, False or MAYBE).
+
+        Reimplemented in AFXCheckButton.
+        """
 
     def getDefaultHeight(self):
-        """Get default height. Reimplemented from FXLabel."""
+        """Get default height.
+
+        Reimplemented from FXLabel.
+        """
 
     def getDefaultWidth(self):
-        """Get default width. Reimplemented from FXLabel."""
+        """Get default width.
+
+        Reimplemented from FXLabel.
+        """
 
     def setCheck(self, state: bool = True):
         """Set check button state (True, False or MAYBE).
@@ -75,5 +92,4 @@ class FXCheckButton(FXLabel):
         Parameters
         ----------
         state : bool
-
         """

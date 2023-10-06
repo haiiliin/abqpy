@@ -2,48 +2,55 @@ This class creates a container to be used for groups in the toolbar. It creates 
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxtoolbargroup.png)
 
-### AFXToolbarGroup(owner, name='', title='')  
+### AFXToolbarGroup(owner, name='', title='')
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the group. |
+| owner | AFXGuiObjectManager | | Creator of the group. |
 | name | String | '' | English toolset name. |
 | title | String | '' | Name appearing in the title bar when the group is floating. |
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default height.
 
 Reimplemented from FXToolbar.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default width.
 
 Reimplemented from FXToolbar.
 
-### getName()  
+### getName()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the English identifier for the group.
 
-### getOwner()  
+### getOwner()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the creator of the group.
 
 Reimplemented from FXWindow.
 
-### getTitle()  
+### getTitle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the name appearing in the title bar when the group is floating.
 
-### hide()  
+### hide()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Hide this window.
@@ -52,37 +59,42 @@ Reimplemented from FXWindow.
 
 Reimplemented in AFXToolbarGroupRender, and AFXToolbarGroupVisibility.
 
-### isActive()  
+### isActive()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if the window is active.
 
 Reimplemented from FXWindow.
 
-### layout()  
+### layout()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Calculates layout.
 
 Reimplemented from FXToolbar.
 
-### setName(name)  
+### setName(name)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the English identifier for the group.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   |   |
+| name | String | | |
 
-### setTitle(title)  
+### setTitle(title)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the name appearing in the title bar when the group is floating.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| title | String |   |   |
+| title | String | | |
 
-### show()  
+### show()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Show this window.

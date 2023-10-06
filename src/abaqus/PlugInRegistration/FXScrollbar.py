@@ -8,7 +8,18 @@ from .FXWindow import FXWindow
 
 
 class FXScrollbar(FXWindow):
-    """The scroll bar is used when a document has a larger content than may be made visible. The range is the total size of the document, the page is the part of the document which is visible. The size of the scrollbar thumb is adjusted to give feedback of the relative sizes of each. The scroll bar may be manipulated by the left mouse (normal scrolling), right mouse (vernier or fine-scrolling), or middle mouse (same as the left mouse only the scroll position can hop to the place where the click is made). Finally, if the mouse sports a wheel, the scroll bar can be manipulated by means of the mouse wheel as well. Holding down the Control-key during wheel motion will cause the scrolling to go faster than normal. While moving the scroll bar, a message of type SEL\_CHANGED will be sent to the target, and the message data will reflect the current position of type FXint. At the end of the interaction, the scroll bar will send a message of type SEL\_COMMAND to notify the target of the final position."""
+    """The scroll bar is used when a document has a larger content than may be made visible.
+
+    The range is the total size of the document, the page is the part of the document which is visible. The
+    size of the scrollbar thumb is adjusted to give feedback of the relative sizes of each. The scroll bar
+    may be manipulated by the left mouse (normal scrolling), right mouse (vernier or fine-scrolling), or
+    middle mouse (same as the left mouse only the scroll position can hop to the place where the click is
+    made). Finally, if the mouse sports a wheel, the scroll bar can be manipulated by means of the mouse
+    wheel as well. Holding down the Control-key during wheel motion will cause the scrolling to go faster
+    than normal. While moving the scroll bar, a message of type SEL\_CHANGED will be sent to the target, and
+    the message data will reflect the current position of type FXint. At the end of the interaction, the
+    scroll bar will send a message of type SEL\_COMMAND to notify the target of the final position.
+    """
 
     def __init__(
         self,
@@ -40,17 +51,22 @@ class FXScrollbar(FXWindow):
         w : int
 
         h : int
-
         """
 
     def getBorderColor(self):
         """Change border color."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXWindow."""
+        """Return default height.
+
+        Reimplemented from FXWindow.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXWindow."""
+        """Return default width.
+
+        Reimplemented from FXWindow.
+        """
 
     def getHiliteColor(self):
         """Return highlight color."""
@@ -62,7 +78,7 @@ class FXScrollbar(FXWindow):
         """Return page size."""
 
     def getPosition(self):
-        """return scroll position"""
+        """Return scroll position."""
 
     def getRange(self):
         """Return content size range."""
@@ -79,7 +95,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setHiliteColor(self, clr: FXColor):
@@ -88,7 +103,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setLine(self, l: int):
@@ -97,7 +111,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         l : int
-
         """
 
     def setPage(self, p: int):
@@ -106,7 +119,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         p : int
-
         """
 
     def setPosition(self, p: int, notifyTgt: bool = False):
@@ -117,7 +129,6 @@ class FXScrollbar(FXWindow):
         p : int
 
         notifyTgt : bool
-
         """
 
     def setRange(self, r: int):
@@ -126,7 +137,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         r : int
-
         """
 
     def setScrollbarStyle(self, style: int):
@@ -135,7 +145,6 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         style : int
-
         """
 
     def setShadowColor(self, clr: FXColor):
@@ -144,5 +153,4 @@ class FXScrollbar(FXWindow):
         Parameters
         ----------
         clr : FXColor
-
         """

@@ -158,8 +158,8 @@ class MdbBase:
 
     @abaqus_method_doc
     def save(self):
-        """This method saves an Mdb object to disk at the location specified by **pathName**
-        (*pathName* is a member of the Mdb object).
+        """This method saves an Mdb object to disk at the location specified by **pathName** (*pathName* is a
+        member of the Mdb object).
 
         Raises
         ------

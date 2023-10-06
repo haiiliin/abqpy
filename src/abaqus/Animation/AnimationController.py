@@ -11,9 +11,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AnimationController(_OptionsBase):
-    """The AnimationController object controls all object-based animation to be displayed in
-    the viewports. The AnimationController object has no constructor. Abaqus creates the
-    **animationController** member when it creates the Session object.
+    """The AnimationController object controls all object-based animation to be displayed in the viewports. The
+    AnimationController object has no constructor. Abaqus creates the **animationController** member when it
+    creates the Session object.
 
     .. note::
         This object can be accessed by::

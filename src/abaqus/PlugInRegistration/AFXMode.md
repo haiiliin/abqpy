@@ -10,90 +10,94 @@ This class is the base class for modes.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxmode.png)
 
-### AFXMode()  
+### AFXMode()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
-### getCommand(index)  
+### getCommand(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the command at the given index (returns 0 if the index is out-of-bounds).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Command index (0-based). |
+| index | Int | | Command index (0-based). |
 
-### getNumCommands()  
+### getNumCommands()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the number of commands associated with the mode.
 
-### isActive()  
+### isActive()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True if the mode is active.
 
-### Class flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Class flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Message ID's.**
 
-| **ID_ACTIVATE** | 
+| **ID_ACTIVATE** |
 
 Activates the mode.
 
- |
-| **ID_COMMIT** | 
+|
+| **ID_COMMIT** |
 
 Commits the mode.
 
- |
-| **ID_CANCEL** | 
+|
+| **ID_CANCEL** |
 
 Cancels the mode.
 
- |
-| **ID_DEACTIVATE** | 
+|
+| **ID_DEACTIVATE** |
 
 Deactivates the mode.
 
- |
-| **ID\_GET\_NEXT** | 
+|
+| **ID_GET_NEXT** |
 
 Gets the next step/dialog box.
 
- |
-| **ID_RESUME** | 
+|
+| **ID_RESUME** |
 
 Resumes the mode.
 
- |
-| **ID\_SET\_DEFAULTS** | 
+|
+| **ID_SET_DEFAULTS** |
 
 Sets defaults.
 
- |
-| **ID_SUSPEND** | 
+|
+| **ID_SUSPEND** |
 
 Suspends the mode.
 
- |
-| **ID\_CMD\_ACTIVATED** | 
+|
+| **ID_CMD_ACTIVATED** |
 
 Indicates that a command is activated.
 
- |
-| **ID\_CMD\_DEACTIVATED** | 
+|
+| **ID_CMD_DEACTIVATED** |
 
 Indicates that a command is deactivated.
 
- |
-| **ID\_CMD\_MODIFIED** | 
+|
+| **ID_CMD_MODIFIED** |
 
 Indicates that a command is modified.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -115,7 +119,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

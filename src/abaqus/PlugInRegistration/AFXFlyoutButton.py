@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 from .constants import AFXFLYOUT_NORMAL
 from .FXComposite import FXComposite
 from .FXLabel import FXLabel
@@ -6,7 +7,8 @@ from .FXPopup import FXPopup
 
 
 class AFXFlyoutButton(FXLabel):
-    """This class contains a button that acts like a regular FXButton when pressed and released quickly but displays a popup menu when pressed and held for a short time duration."""
+    """This class contains a button that acts like a regular FXButton when pressed and released quickly but
+    displays a popup menu when pressed and held for a short time duration."""
 
     def __init__(
         self,
@@ -54,19 +56,34 @@ class AFXFlyoutButton(FXLabel):
         """
 
     def canFocus(self):
-        """Returns True (because a flyout button can receive focus). Reimplemented from FXWindow."""
+        """Returns True (because a flyout button can receive focus).
+
+        Reimplemented from FXWindow.
+        """
 
     def create(self):
-        """Creates the flyout button. Reimplemented from FXLabel."""
+        """Creates the flyout button.
+
+        Reimplemented from FXLabel.
+        """
 
     def detach(self):
-        """Detaches server-side resources for the flyout button. Reimplemented from FXLabel."""
+        """Detaches server-side resources for the flyout button.
+
+        Reimplemented from FXLabel.
+        """
 
     def disable(self):
-        """Disables the flyout button. Reimplemented from FXLabel."""
+        """Disables the flyout button.
+
+        Reimplemented from FXLabel.
+        """
 
     def enable(self):
-        """Enables the flyout button. Reimplemented from FXLabel."""
+        """Enables the flyout button.
+
+        Reimplemented from FXLabel.
+        """
 
     def getButtonStyle(self):
         """Returns the flyout button style."""
@@ -90,7 +107,8 @@ class AFXFlyoutButton(FXLabel):
         """
 
     def setCurrentItem(self, index: int, setCheck: bool = False):
-        """Sets the current item and depresses the button if setCheck is True. The specified item index is 0-based, and only valid items are counted (items such as separators are not counted).
+        """Sets the current item and depresses the button if setCheck is True. The specified item index is
+        0-based, and only valid items are counted (items such as separators are not counted).
 
         Parameters
         ----------

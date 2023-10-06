@@ -7,7 +7,9 @@ from .FXWindow import FXWindow
 
 
 def showAFXDismissableWarningDialog(owner: FXWindow, message: str, tgt: FXObject | None = None, sel: int = 0):
-    """Posts a modal dismissable warning dialog box that has a "Show this dialog next time" check button, via which the user can request not to see a specific type of messages in the future. The dialog box has a getCheckButtonState method that can be called to get the state of the check button in the dialog box.
+    """Posts a modal dismissable warning dialog box that has a "Show this dialog next time" check button, via
+    which the user can request not to see a specific type of messages in the future. The dialog box has a
+    getCheckButtonState method that can be called to get the state of the check button in the dialog box.
 
     Parameters
     ----------

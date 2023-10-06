@@ -29,7 +29,10 @@ class AFXGuiObjectManager(FXObject):
         """
 
     def getKernelInitializationCommand(self):
-        """Returns the command that should initialize the corresponding module or toolset in the kernel. Called by the module manager the first time the GUI module is switched into."""
+        """Returns the command that should initialize the corresponding module or toolset in the kernel.
+
+        Called by the module manager the first time the GUI module is switched into.
+        """
 
     def hide(self, location: int):
         """Hides the GUI components in the menubar, toolbar, and toolbox.
@@ -50,7 +53,8 @@ class AFXGuiObjectManager(FXObject):
         """
 
     def registerAndShowModalDialog(self, dialog: AFXDialog):
-        """Registers the given dialog box and its widget key with the manager and posts the dialog box as a modal dialog box.
+        """Registers the given dialog box and its widget key with the manager and posts the dialog box as a
+        modal dialog box.
 
         Parameters
         ----------
@@ -68,7 +72,8 @@ class AFXGuiObjectManager(FXObject):
         displayedName: str = "''",
         typesToDisplay: int = 0,
     ):
-        """Registers a shortcut function; this function will be available in the GUI so that users can assign it shortcut keys.
+        """Registers a shortcut function; this function will be available in the GUI so that users can assign it
+        shortcut keys.
 
         Parameters
         ----------
@@ -89,7 +94,8 @@ class AFXGuiObjectManager(FXObject):
         """
 
     def sendCommandString(self, command: str, writeToReplay: bool = True, writeToJournal: bool = False):
-        """Sends the given command string (which can contain multiple commands, separated by command delimiters).
+        """Sends the given command string (which can contain multiple commands, separated by command
+        delimiters).
 
         Parameters
         ----------

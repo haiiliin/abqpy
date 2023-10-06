@@ -9,7 +9,7 @@ from .FXWindow import FXWindow
 
 
 class AFXFileSelectorDialog(AFXFileDialog):
-    """Abaqus"""
+    """Abaqus."""
 
     def __init__(
         self,
@@ -21,7 +21,9 @@ class AFXFileSelectorDialog(AFXFileDialog):
         patterns: str = "*",
         patternIndexTgt: AFXIntTarget | None = None,
     ):
-        """Constructor typically used to create a dialog box that is posted from another dialog box (e.g. from a "Select..." button); a target is used for the pathName. If the dialog box allows multiple selection, the pathName target contains comma-separated path names of all selected files.
+        """Constructor typically used to create a dialog box that is posted from another dialog box (e.g. from a
+        "Select..." button); a target is used for the pathName. If the dialog box allows multiple selection, the
+        pathName target contains comma-separated path names of all selected files.
 
         Parameters
         ----------

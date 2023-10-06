@@ -75,7 +75,8 @@ class AFXTupleKeyword(AFXKeyword):
         """
 
     def getFormattedValue(self, index: int):
-        """Returns the formatted value of the tuple element, suitable for placing in a command. If the element has AFXTUPLE_EVALUATE style and its contents are invalid, an exception will be thrown.
+        """Returns the formatted value of the tuple element, suitable for placing in a command. If the element
+        has AFXTUPLE_EVALUATE style and its contents are invalid, an exception will be thrown.
 
         Parameters
         ----------
@@ -93,7 +94,10 @@ class AFXTupleKeyword(AFXKeyword):
         """Returns the minimum length of this tuple."""
 
     def getTypeName(self):
-        """Returns the name of the tuple keyword type. Implements AFXKeyword."""
+        """Returns the name of the tuple keyword type.
+
+        Implements AFXKeyword.
+        """
 
     def getValue(self, index: int):
         """Returns the value of a tuple element.
@@ -111,7 +115,10 @@ class AFXTupleKeyword(AFXKeyword):
         """Returns the keyword's value as an integer; returns False upon failure."""
 
     def getValueAsString(self):
-        """Returns the formatted string that represents the current keyword value in a command. Implements AFXKeyword."""
+        """Returns the formatted string that represents the current keyword value in a command.
+
+        Implements AFXKeyword.
+        """
 
     def getValueForBlank(self, index: int):
         """Returns the value substituted for blank tuple element.
@@ -140,7 +147,10 @@ class AFXTupleKeyword(AFXKeyword):
         """
 
     def isValueChanged(self):
-        """Returns True if the keyword value differs from its previous value. Implements AFXKeyword."""
+        """Returns True if the keyword value differs from its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def removeElements(self, index: int, numCols: int):
         """Removes elements starting at the given index.
@@ -281,7 +291,13 @@ class AFXTupleKeyword(AFXKeyword):
         """
 
     def setValueToPrevious(self):
-        """Sets the keyword value to its previous value. Implements AFXKeyword."""
+        """Sets the keyword value to its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def syncPreviousValue(self):
-        """Sets the keyword's previous value to its current value. Implements AFXKeyword."""
+        """Sets the keyword's previous value to its current value.
+
+        Implements AFXKeyword.
+        """

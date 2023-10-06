@@ -777,10 +777,9 @@ class ViewportBase(_OptionsBase):
     @abaqus_method_doc
     def timeDisplay(self, numFrames: int = 0, numSeconds: int = 10, degreesPerFrame: float = 0):
         """This method refreshes the Viewport display **numFrames** times and then checks to see if
-        **numSeconds** seconds have elapsed. If not, it will continue refreshing the Viewport
-        until the time has elapsed. At completion, the actual number of refreshes (frames)
-        rendered and elapsed time will be reported along with the calculated frames-per-second
-        (fps).
+        **numSeconds** seconds have elapsed. If not, it will continue refreshing the Viewport until the time has
+        elapsed. At completion, the actual number of refreshes (frames) rendered and elapsed time will be
+        reported along with the calculated frames-per-second (fps).
 
         Parameters
         ----------

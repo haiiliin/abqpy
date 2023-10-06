@@ -2,13 +2,14 @@ This class is used to automatically vertically align its children "container" wi
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxverticalaligner.png)
 
-### AFXVerticalAligner(p, opts=0, x=0, y=0, w=0, h=0, pl=0, pr=0, pt=0, pb=0, hs=DEFAULT\_SPACING, vs=DEFAULT\_SPACING)  
+### AFXVerticalAligner(p, opts=0, x=0, y=0, w=0, h=0, pl=0, pr=0, pt=0, pb=0, hs=DEFAULT_SPACING, vs=DEFAULT_SPACING)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite | | Parent widget. |
 | opts | Int | 0 | Options and hints. |
 | x | Int | 0 | X coordinate of the origin. |
 | y | Int | 0 | Y coordinate of the origin. |
@@ -21,21 +22,24 @@ Constructor.
 | hs | Int | DEFAULT_SPACING | Horizontal spacing. |
 | vs | Int | DEFAULT_SPACING | Vertical spacing. |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates the aligner.
 
 Reimplemented from FXComposite.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default height.
 
 Reimplemented from FXVerticalFrame.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default width.
@@ -64,7 +68,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

@@ -2,35 +2,39 @@ This is the base class for toolset GUIs used in procedure steps (e.g. the Sketch
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxproceduretoolsetgui.png)
 
-### AFXProcedureToolsetGui()  
+### AFXProcedureToolsetGui()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Deserialization.
 
-### AFXProcedureToolsetGui(toolsetName)  
+### AFXProcedureToolsetGui(toolsetName)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| toolsetName | String |   | Toolset name passed in from derived toolsets. |
+| toolsetName | String | | Toolset name passed in from derived toolsets. |
 
-### swapInToolsetItems()  
+### swapInToolsetItems()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Swaps in the toolset's GUI items.
 
-### swapOutToolsetItems()  
+### swapOutToolsetItems()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Swaps out the toolset's GUI items.
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-
-| **ID_LAST** | 
+| **ID_LAST** |
 
 Do not use, do not delete; for use by derived classes.
 
- |
+|

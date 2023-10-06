@@ -35,5 +35,4 @@ class FXPNGIcon(FXIcon):
         w : int
 
         h : int
-
         """

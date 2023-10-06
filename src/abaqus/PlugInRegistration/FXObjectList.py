@@ -14,7 +14,6 @@ class FXObjectList:
         Parameters
         ----------
         orig : Self
-
         """
 
     def append(self, p: FXObject):
@@ -23,7 +22,6 @@ class FXObjectList:
         Parameters
         ----------
         p : FXObject
-
         """
 
     def clear(self):
@@ -37,7 +35,6 @@ class FXObjectList:
         p : FXObject
 
         pos : int
-
         """
 
     def findf(self, p: FXObject, pos: int = 0):
@@ -48,7 +45,6 @@ class FXObjectList:
         p : FXObject
 
         pos : int
-
         """
 
     def insert(self, pos: int, p: FXObject):
@@ -59,7 +55,6 @@ class FXObjectList:
         pos : int
 
         p : FXObject
-
         """
 
     def no(self):
@@ -71,8 +66,13 @@ class FXObjectList:
         Parameters
         ----------
         pos : int
-
         """
 
     def size(self):
-        """Return size of list. By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information. [Privacy Policy](https://www.3ds.com/privacy-policy). Total Results: Results per page"""
+        """Return size of list.
+
+        By clicking on Send, you accept that Dassault Systèmes will process your personal data and may
+        contact you for further information. [Privacy Policy](
+        https://www.3ds.com/privacy-policy).
+        Total Results: Results per page
+        """

@@ -26,20 +26,31 @@ class FXIcon(FXImage):
         w : int
 
         h : int
-
         """
 
     def create(self):
-        """Create the icon resource. Reimplemented from FXImage."""
+        """Create the icon resource.
+
+        Reimplemented from FXImage.
+        """
 
     def destroy(self):
-        """Destroy the icon resource. Reimplemented from FXImage."""
+        """Destroy the icon resource.
+
+        Reimplemented from FXImage.
+        """
 
     def detach(self):
-        """Detach the icon resource. Reimplemented from FXImage."""
+        """Detach the icon resource.
+
+        Reimplemented from FXImage.
+        """
 
     def render(self):
-        """Render the image from client-side pixel buffer. Reimplemented from FXImage."""
+        """Render the image from client-side pixel buffer.
+
+        Reimplemented from FXImage.
+        """
 
     def resize(self, w: int, h: int):
         """Resize pixmap to the specified width and height. Reimplemented from FXImage.
@@ -49,5 +60,4 @@ class FXIcon(FXImage):
         w : int
 
         h : int
-
         """

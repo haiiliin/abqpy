@@ -16,7 +16,10 @@ class AFXStringTarget(AFXTarget):
         """
 
     def getTypeName(self):
-        """Returns the name of the target type ("String"). Implements AFXTarget."""
+        """Returns the name of the target type ("String").
+
+        Implements AFXTarget.
+        """
 
     def getValue(self):
         """Returns the target's current value."""

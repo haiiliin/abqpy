@@ -184,9 +184,8 @@ class Drawing:
 
     @abaqus_method_doc
     def setColors(self, colorDimension: float, colorData: tuple):
-        """This method accepts the color data for each vertex. It defines in an array of colors
-        with a length equal to the length of the **colorData** sequence divided by
-        **colorDimension**.
+        """This method accepts the color data for each vertex. It defines in an array of colors with a length
+        equal to the length of the **colorData** sequence divided by **colorDimension**.
 
         Parameters
         ----------
@@ -280,11 +279,10 @@ class Drawing:
         numVertices: int,
         polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
     ):
-        """This method adds a rendering command to the drawing and can be called multiple times to
-        add additional rendering commands. When the drawing is referenced by a Viewport, the
-        drawing commands are used the render the Drawing.
-        The rendering command constructs the specified type of geometric primitive using
-        **numVertices** array elements starting at element index **startIndex**.
+        """This method adds a rendering command to the drawing and can be called multiple times to add
+        additional rendering commands. When the drawing is referenced by a Viewport, the drawing commands are
+        used the render the Drawing. The rendering command constructs the specified type of geometric primitive
+        using **numVertices** array elements starting at element index **startIndex**.
 
         Parameters
         ----------
@@ -336,11 +334,10 @@ class Drawing:
         indices: tuple,
         polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
     ):
-        """This method adds a rendering command to the drawing and can be called multiple times to
-        add additional rendering commands. When the drawing is referenced by a Viewport, the
-        drawing commands are used the render the Drawing.
-        The rendering command constructs the specified type of geometric primitive using
-        **numVertices** array elements starting at element index **startIndex**.
+        """This method adds a rendering command to the drawing and can be called multiple times to add
+        additional rendering commands. When the drawing is referenced by a Viewport, the drawing commands are
+        used the render the Drawing. The rendering command constructs the specified type of geometric primitive
+        using **numVertices** array elements starting at element index **startIndex**.
 
         Parameters
         ----------

@@ -9,7 +9,8 @@ from .FXPacker import FXPacker
 
 
 class AFXSpinner(FXPacker, AFXDataComponent):
-    """This class contains a label that precedes a spin box that allows the user to specify a value by clicking on its arrow buttons."""
+    """This class contains a label that precedes a spin box that allows the user to specify a value by clicking
+    on its arrow buttons."""
 
     def __init__(
         self,
@@ -63,13 +64,22 @@ class AFXSpinner(FXPacker, AFXDataComponent):
         """
 
     def create(self):
-        """Creates the spinner. Reimplemented from FXComposite."""
+        """Creates the spinner.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the spinner. Reimplemented from FXWindow."""
+        """Disables the spinner.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the spinner. Reimplemented from FXWindow."""
+        """Enables the spinner.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
         """Returns the state of the check button or the radio button."""
@@ -87,7 +97,8 @@ class AFXSpinner(FXPacker, AFXDataComponent):
         """Returns the label string."""
 
     def getRange(self):
-        """Returns a sequence of ints (low, high) representing the widget's allowable minimum and maximum values."""
+        """Returns a sequence of ints (low, high) representing the widget's allowable minimum and maximum
+        values."""
 
     def getTipText(self):
         """Returns the tool tip message."""

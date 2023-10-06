@@ -58,10 +58,16 @@ class AFXFlyoutItem(FXButton):
         """
 
     def canFocus(self):
-        """Returns True (because a flyout item can receive focus). Reimplemented from FXButton."""
+        """Returns True (because a flyout item can receive focus).
+
+        Reimplemented from FXButton.
+        """
 
     def hide(self):
-        """Hides the flyout item. Reimplemented from FXWindow."""
+        """Hides the flyout item.
+
+        Reimplemented from FXWindow.
+        """
 
     def setIcon(self, ic: FXIcon):
         """Sets the icon for the flyout item. Reimplemented from FXLabel.
@@ -69,5 +75,4 @@ class AFXFlyoutItem(FXButton):
         Parameters
         ----------
         ic : FXIcon
-
         """

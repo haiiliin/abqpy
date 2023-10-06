@@ -25,10 +25,14 @@ class AFXTarget(FXObject):
         """Returns the target of this target object."""
 
     def getType(self):
-        """Returns the target type; this method is deprecated in Abaqus 6.6, and its use should be replaced by getTypeName()."""
+        """Returns the target type; this method is deprecated in Abaqus 6.6, and its use should be replaced by
+        getTypeName()."""
 
     def getTypeName(self):
-        """Returns the name of the target type. Implemented in AFXFloatTarget, AFXIntTarget, and AFXStringTarget."""
+        """Returns the name of the target type.
+
+        Implemented in AFXFloatTarget, AFXIntTarget, and AFXStringTarget.
+        """
 
     def setSelector(self, msgId: int):
         """Sets the message ID of this target object.

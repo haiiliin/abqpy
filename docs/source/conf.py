@@ -400,7 +400,7 @@ latex_elements = {
 
 # linkcode source
 def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
-    """Resolve linkcode source
+    """Resolve linkcode source.
 
     Parameters
     ----------

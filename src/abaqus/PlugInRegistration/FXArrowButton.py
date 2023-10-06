@@ -8,7 +8,11 @@ from .FXObject import FXObject
 
 
 class FXArrowButton(FXFrame):
-    """Button with an arrow; the arrow can point in any direction. When clicked, the arrow button sends a SEL\_COMMAND to its target. When ARROW\_REPEAT is passed, the arrow button sends a SEL_COMMAND repeatedly while the button is pressed."""
+    """Button with an arrow; the arrow can point in any direction.
+
+    When clicked, the arrow button sends a SEL\_COMMAND to its target. When ARROW\_REPEAT is passed, the
+    arrow button sends a SEL_COMMAND repeatedly while the button is pressed.
+    """
 
     def __init__(
         self,
@@ -52,17 +56,25 @@ class FXArrowButton(FXFrame):
         pt : int
 
         pb : int
-
         """
 
     def canFocus(self):
-        """Returns True because a button can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a button can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def disable(self):
-        """Disable the button. Reimplemented from FXWindow."""
+        """Disable the button.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enable the button. Reimplemented from FXWindow."""
+        """Enable the button.
+
+        Reimplemented from FXWindow.
+        """
 
     def getArrowColor(self):
         """Get the fill color for the arrow."""
@@ -74,10 +86,16 @@ class FXArrowButton(FXFrame):
         """Get the arrow style flags."""
 
     def getDefaultHeight(self):
-        """Get default height. Reimplemented from FXFrame."""
+        """Get default height.
+
+        Reimplemented from FXFrame.
+        """
 
     def getDefaultWidth(self):
-        """Get default width. Reimplemented from FXFrame."""
+        """Get default width.
+
+        Reimplemented from FXFrame.
+        """
 
     def getJustify(self):
         """Get the current justification mode."""
@@ -94,7 +112,6 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setArrowSize(self, size: int):
@@ -103,7 +120,6 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         size : int
-
         """
 
     def setArrowStyle(self, style: int):
@@ -112,7 +128,6 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         style : int
-
         """
 
     def setJustify(self, mode: int):
@@ -121,7 +136,6 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         mode : int
-
         """
 
     def setState(self, s: bool):
@@ -130,7 +144,6 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         s : bool
-
         """
 
     def setTipText(self, text: str):
@@ -139,5 +152,4 @@ class FXArrowButton(FXFrame):
         Parameters
         ----------
         text : str
-
         """

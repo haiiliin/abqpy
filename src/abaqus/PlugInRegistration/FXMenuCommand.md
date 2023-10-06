@@ -2,104 +2,116 @@ The menu command widget is used to invoke a command in the application from a me
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxmenucommand.png)
 
-### FXMenuCommand(p, text, ic=None, tgt=None, sel=0, opts=0)  
+### FXMenuCommand(p, text, ic=None, tgt=None, sel=0, opts=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct a menu command.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | 0 |   |
+| p | FXComposite | | |
+| text | String | | |
+| ic | FXIcon | None | |
+| tgt | FXObject | None | |
+| sel | Int | 0 | |
+| opts | Int | 0 | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Yes it can receive the focus.
 
 Reimplemented from FXWindow.
 
-### check()  
+### check()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Place checkmark next to text.
 
-### checkRadio()  
+### checkRadio()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Place radio bullit next to text.
 
-### getAccelText()  
+### getAccelText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return accelarator text.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default height.
 
 Reimplemented from FXMenuCaption.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default width.
 
 Reimplemented from FXMenuCaption.
 
-### isChecked()  
+### isChecked()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if checked.
 
-### isRadioChecked()  
+### isRadioChecked()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if radio-checked.
 
-### setAccelText(text)  
+### setAccelText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set accelerator text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### uncheck()  
+### uncheck()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Uncheck the item.
 
-### uncheckRadio()  
+### uncheckRadio()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Uncheck radio bullit.
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **States the menu command can be in**
 
-| **MENUSTATE_NORMAL** | 
+| **MENUSTATE_NORMAL** |
 
 Normal, unchecked state.
 
- |
-| **MENUSTATE_CHECKED** | 
+|
+| **MENUSTATE_CHECKED** |
 
 Checked with a checkmark.
 
- |
-| **MENUSTATE_RCHECKED** | 
+|
+| **MENUSTATE_RCHECKED** |
 
 Checked with a bullet.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -123,7 +135,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

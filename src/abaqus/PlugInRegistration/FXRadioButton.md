@@ -2,73 +2,79 @@ A radio button is a tri-state button. Normally, it is either True or False; a th
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxradiobutton.png)
 
-### FXRadioButton(p, text, tgt=None, sel=0, opts=RADIOBUTTON\_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT_PAD)  
+### FXRadioButton(p, text, tgt=None, sel=0, opts=RADIOBUTTON_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct new radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | RADIOBUTTON_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite | | |
+| text | String | | |
+| tgt | FXObject | None | |
+| sel | Int | 0 | |
+| opts | Int | RADIOBUTTON_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
+| pl | Int | DEFAULT_PAD | |
+| pr | Int | DEFAULT_PAD | |
+| pt | Int | DEFAULT_PAD | |
+| pb | Int | DEFAULT_PAD | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True because a radio button can receive focus.
 
 Reimplemented from FXWindow.
 
-### getCheck()  
+### getCheck()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get radio button state (True, False or MAYBE).
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default height.
 
 Reimplemented from FXLabel.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get default width.
 
 Reimplemented from FXLabel.
 
-### setCheck(s=True)  
+### setCheck(s=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set radio button state (True, False or MAYBE).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Bool | True |   |
+| s | Bool | True | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **RadioButton flags**
 
-| **RADIOBUTTON_AUTOGRAY** | 
+| **RADIOBUTTON_AUTOGRAY** |
 
 Automatically gray out when not updated.
 
- |
-| **RADIOBUTTON_AUTOHIDE** | 
+|
+| **RADIOBUTTON_AUTOHIDE** |
 
 Automatically hide when not updated.
 
- |
+|

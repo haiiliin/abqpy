@@ -2,15 +2,16 @@ This class contains a label that precedes a spin box that allows the user to spe
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxspinner.png)
 
-### AFXSpinner(p, ncols, labelText, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT\_PAD)  
+### AFXSpinner(p, ncols, labelText, tgt=None, sel=0, opts=0, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| ncols | Int |   | Number of columns. |
-| labelText | String |   | Label string. |
+| p | FXComposite | | Parent widget. |
+| ncols | Int | | Number of columns. |
+| labelText | String | | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID |
 | opts | Int | 0 | Options and hints. |
@@ -23,102 +24,119 @@ Constructor.
 | pt | Int | DEFAULT_PAD | Top padding (margin). |
 | pb | Int | DEFAULT_PAD | Bottom padding (margin). |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates the spinner.
 
 Reimplemented from FXComposite.
 
-### disable()  
+### disable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disables the spinner.
 
 Reimplemented from FXWindow.
 
-### enable()  
+### enable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enables the spinner.
 
 Reimplemented from FXWindow.
 
-### getCheck()  
+### getCheck()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the state of the check button or the radio button.
 
-### getHelpText()  
+### getHelpText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the status line help text.
 
-### getIncrement()  
+### getIncrement()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the spinner increment.
 
-### getLabelFont()  
+### getLabelFont()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the label font.
 
-### getLabelText()  
+### getLabelText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the label string.
 
-### getRange()  
+### getRange()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns a sequence of ints (low, high) representing the widget's allowable minimum and maximum values.
 
-### getTipText()  
+### getTipText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the tool tip message.
 
-### getValue()  
+### getValue()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the spinner value.
 
-### isEditable()  
+### isEditable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True if the text in the text field may be edited.
 
-### isReadOnlyState()  
+### isReadOnlyState()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True if the spinner appears in the read-only state.
 
-### setCheck(state)  
+### setCheck(state)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the state of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool |   | State. |
+| state | Bool | | State. |
 
-### setCheckButtonSelector(sel)  
+### setCheckButtonSelector(sel)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the message ID of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | Selector. |
+| sel | Int | | Selector. |
 
-### setCheckButtonTarget(tgt)  
+### setCheckButtonTarget(tgt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the message target of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   | Target. |
+| tgt | FXObject | | Target. |
 
-### setEditable(edit=True)  
+### setEditable(edit=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the editable state for the input field.
@@ -126,48 +144,54 @@ Sets the editable state for the input field.
 | **Argument** | **Type** | **Default** | **Description** |
 | edit | Bool | True | If True, input field is editable. |
 
-### setHelpText(text)  
+### setHelpText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Help text. |
+| text | String | | Help text. |
 
-### setIncrement(incr)  
+### setIncrement(incr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the spinner increment.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| incr | Int |   | Increment. |
+| incr | Int | | Increment. |
 
-### setLabelFont(fnt)  
+### setLabelFont(fnt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   | Label font. |
+| fnt | FXFont | | Label font. |
 
-### setLabelText(txt)  
+### setLabelText(txt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Label text. |
+| txt | String | | Label text. |
 
-### setRange(low, high)  
+### setRange(low, high)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the spinner range.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| low | Int |   | Minimum value. |
-| high | Int |   | Maximum value. |
+| low | Int | | Minimum value. |
+| high | Int | | Maximum value. |
 
-### setReadOnlyState(readonly=True)  
+### setReadOnlyState(readonly=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the read-only state of the spinner.
@@ -175,61 +199,63 @@ Sets the read-only state of the spinner.
 | **Argument** | **Type** | **Default** | **Description** |
 | readonly | Bool | True | State. |
 
-### setTipText(text)  
+### setTipText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Tooltip text. |
+| text | String | | Tooltip text. |
 
-### setValue(val, notify=False)  
+### setValue(val, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the spinner's value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| val | Int |   | Value. |
+| val | Int | | Value. |
 | notify | Bool | False | Notification flag. |
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-
-| **ID_BUTTON** | 
+| **ID_BUTTON** |
 
 ID for the check or radio button.
 
- |
-| **ID_SPINNER** | 
+|
+| **ID_SPINNER** |
 
 ID for the spinner.
 
- |
+|
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Flags for AFX spinner options.**
 
-| **AFXSPINNER_CHECKBUTTON** | 
+| **AFXSPINNER_CHECKBUTTON** |
 
 Use a check button instead of a label.
 
- |
-| **AFXSPINNER_RADIOBUTTON** | 
+|
+| **AFXSPINNER_RADIOBUTTON** |
 
 Use a radio button instead of a label.
 
- |
-| **AFXSPINNER_VERTICAL** | 
+|
+| **AFXSPINNER_VERTICAL** |
 
 Orient label or button above spinner.
 
- |
-| **AFXSPINNER_READONLY** | 
+|
+| **AFXSPINNER_READONLY** |
 
 Configure spinner to the read-only state.
 
- |
+|

@@ -1,5 +1,4 @@
-"""
-Kernel plug-in commands register kernel plug-ins in either the **Plug-ins** menu or in a toolbox.
+"""Kernel plug-in commands register kernel plug-ins in either the **Plug-ins** menu or in a toolbox.
 
 These functions can be accessed by::
 

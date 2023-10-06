@@ -4,9 +4,10 @@ This class is designed for floating-point targets.
 
 ### AFXFloatTarget
 
-###   
+###
 
-### AFXFloatTarget(initialValue=0.0)  
+### AFXFloatTarget(initialValue=0.0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
@@ -16,9 +17,10 @@ Constructor.
 
 ### getTypeName
 
-###   
+###
 
-### getTypeName()  
+### getTypeName()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the name of the target type ("Float").
@@ -27,37 +29,38 @@ Implements AFXTarget.
 
 ### getValue
 
-###   
+###
 
-### getValue()  
+### getValue()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the target's current value.
 
 ### setValue
 
-###   
+###
 
-### setValue(newValue)  
+### setValue(newValue)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float | | New value. |
 
-
-
- |
+|
 This class is designed for floating-point targets.
 
 ![](../SIMACAERefImages/gui-afxfloattarget.png)
 
 ### AFXFloatTarget
 
-###   
+###
 
-### AFXFloatTarget(initialValue=0.0)  
+### AFXFloatTarget(initialValue=0.0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
@@ -67,9 +70,10 @@ Constructor.
 
 ### getTypeName
 
-###   
+###
 
-### getTypeName()  
+### getTypeName()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the name of the target type ("Float").
@@ -78,27 +82,29 @@ Implements AFXTarget.
 
 ### getValue
 
-###   
+###
 
-### getValue()  
+### getValue()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the target's current value.
 
 ### setValue
 
-###   
+###
 
-### setValue(newValue)  
+### setValue(newValue)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float | | New value. |
 AFXFloatTarget
 
-| 
+|
 
 This class is designed for floating-point targets.
 
@@ -106,9 +112,10 @@ This class is designed for floating-point targets.
 
 ### AFXFloatTarget
 
-###   
+###
 
-### AFXFloatTarget(initialValue=0.0)  
+### AFXFloatTarget(initialValue=0.0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
@@ -118,9 +125,10 @@ Constructor.
 
 ### getTypeName
 
-###   
+###
 
-### getTypeName()  
+### getTypeName()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the name of the target type ("Float").
@@ -129,28 +137,28 @@ Implements AFXTarget.
 
 ### getValue
 
-###   
+###
 
-### getValue()  
+### getValue()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the target's current value.
 
 ### setValue
 
-###   
+###
 
-### setValue(newValue)  
+### setValue(newValue)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float | | New value. |
 
-
-
- |/**/ /\* */
+|/\*_/ /\* _/
 
 Is this page useful?
 
@@ -158,11 +166,9 @@ Other
 
 Use this form to provide feedback on this help topic. To get product support or to provide product feedback, go to [Frequently Asked Questions](https://3ds.one/PO). For support for online purchased solutions, go to [Online Purchase Support](https://3ds.one/Q8).
 
- 
-
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
-[Privacy Policy](https://www.3ds.com/privacy-policy). 
+[Privacy Policy](https://www.3ds.com/privacy-policy).
 
 See Also
 
@@ -194,9 +200,9 @@ Guide
 
 1-7 of
 
-  Previous
+Previous
 
-Next   
+Next
 
 [Global flags](/2023/English/DSSIMULIA_Established/SIMACAEGUIRefHtml/pt01ch01gob17.htm?contextscope=all&id=e7faec1d3b0b4606acfb60c793f4fce1#d0e5748 "Global flags")
 

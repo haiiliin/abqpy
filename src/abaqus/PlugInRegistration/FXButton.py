@@ -8,7 +8,10 @@ from .FXObject import FXObject
 
 
 class FXButton(FXLabel):
-    """A button provides a push button, with optional icon and/or text label. When pressed, the button widget sends a SEL_COMMAND to its target."""
+    """A button provides a push button, with optional icon and/or text label.
+
+    When pressed, the button widget sends a SEL_COMMAND to its target.
+    """
 
     def __init__(
         self,
@@ -58,11 +61,13 @@ class FXButton(FXLabel):
         pt : int
 
         pb : int
-
         """
 
     def canFocus(self):
-        """Returns True because a button can receive focus. Reimplemented from FXWindow. Reimplemented in AFXFlyoutItem."""
+        """Returns True because a button can receive focus.
+
+        Reimplemented from FXWindow. Reimplemented in AFXFlyoutItem.
+        """
 
     def getButtonStyle(self):
         """Get the button style flags."""
@@ -76,7 +81,6 @@ class FXButton(FXLabel):
         Parameters
         ----------
         style : int
-
         """
 
     def setDefault(self, enable: bool = True):
@@ -85,7 +89,6 @@ class FXButton(FXLabel):
         Parameters
         ----------
         enable : bool
-
         """
 
     def setState(self, s: int):
@@ -94,5 +97,4 @@ class FXButton(FXLabel):
         Parameters
         ----------
         s : int
-
         """

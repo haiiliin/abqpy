@@ -4,28 +4,28 @@ This class creates a container to be used for groups in the toolbox. It will use
 
 ### AFXToolboxGroup
 
-###   
+###
 
-### AFXToolboxGroup(owner, parent=None)  
+### AFXToolboxGroup(owner, parent=None)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the toolbox group. |
+| owner | AFXGuiObjectManager | | Creator of the toolbox group. |
 | parent | FXComposite | None | Parent widget. |
 
 ### getOwner
 
-###   
+###
 
-### getOwner()  
+### getOwner()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the owner of the toolbox group.
 
 Reimplemented from FXWindow.
 
-
-
- |
+|

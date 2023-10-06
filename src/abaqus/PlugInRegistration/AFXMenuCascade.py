@@ -8,7 +8,11 @@ from .FXPopup import FXPopup
 
 
 class AFXMenuCascade(FXMenuCascade):
-    """This class provides the interface for creating an FXMenuCascade and performing various management activities on it. It will use utility methods so the menu cascade is correctly managed for modules and toolsets."""
+    """This class provides the interface for creating an FXMenuCascade and performing various management
+    activities on it.
+
+    It will use utility methods so the menu cascade is correctly managed for modules and toolsets.
+    """
 
     def __init__(
         self,
@@ -35,4 +39,7 @@ class AFXMenuCascade(FXMenuCascade):
         """
 
     def getOwner(self):
-        """Returns the owner of the menu cascade. Reimplemented from FXWindow."""
+        """Returns the owner of the menu cascade.
+
+        Reimplemented from FXWindow.
+        """

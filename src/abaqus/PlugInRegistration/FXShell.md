@@ -4,9 +4,10 @@ A child of the Root window.
 
 ### create
 
-###   
+###
 
-### create()  
+### create()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Create server-side resources.
@@ -17,15 +18,14 @@ Reimplemented in FXPrintDialog, FXToolbarShell, FXTooltip, FXTopWindow, AFXManag
 
 ### recalc
 
-###   
+###
 
-### recalc()  
+### recalc()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Mark this window's layout as dirty.
 
 Reimplemented from FXWindow.
 
-
-
- |
+|

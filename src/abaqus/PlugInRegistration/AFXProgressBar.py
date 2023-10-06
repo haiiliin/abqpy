@@ -7,7 +7,8 @@ from .FXProgressBar import FXProgressBar
 
 
 class AFXProgressBar(FXProgressBar):
-    """This class contains a progress bar, which can present work-in-progress in a number of different styles."""
+    """This class contains a progress bar, which can present work-in-progress in a number of different
+    styles."""
 
     def __init__(
         self,
@@ -52,31 +53,55 @@ class AFXProgressBar(FXProgressBar):
         """
 
     def create(self):
-        """Creates the progress bar. Reimplemented from FXProgressBar."""
+        """Creates the progress bar.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def getBarStyle(self):
-        """Returns the progress bar style. Reimplemented from FXProgressBar."""
+        """Returns the progress bar style.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def getDefaultHeight(self):
-        """Returns the default height. Reimplemented from FXProgressBar."""
+        """Returns the default height.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def getDefaultWidth(self):
-        """Returns the default width. Reimplemented from FXProgressBar."""
+        """Returns the default width.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def getNumCursorBoxes(self):
         """Returns the number of cursor boxes displayed."""
 
     def getProgress(self):
-        """Returns the current progress amount. Reimplemented from FXProgressBar."""
+        """Returns the current progress amount.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def getTotal(self):
-        """Returns the total progress amount. Reimplemented from FXProgressBar."""
+        """Returns the total progress amount.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def hide(self):
-        """Hides the progress bar. Reimplemented from FXWindow."""
+        """Hides the progress bar.
+
+        Reimplemented from FXWindow.
+        """
 
     def hideNumber(self):
-        """Hides the progress bar iteration or percentage text. Reimplemented from FXProgressBar."""
+        """Hides the progress bar iteration or percentage text.
+
+        Reimplemented from FXProgressBar.
+        """
 
     def setBarStyle(self, style: int):
         """Sets the progress bar style.
@@ -97,25 +122,29 @@ class AFXProgressBar(FXProgressBar):
         """
 
     def setProgress(self, value: int):
-        """Sets the current progress amount that is used by a progress bar in either iteration or percentage mode; the progress amount is ingored by a progress bar in scanner mode. Reimplemented from FXProgressBar.
+        """Sets the current progress amount that is used by a progress bar in either iteration or percentage
+        mode; the progress amount is ingored by a progress bar in scanner mode. Reimplemented from
+        FXProgressBar.
 
         Parameters
         ----------
         value : int
-
         """
 
     def setTotal(self, value: int):
-        """Sets the total progress amount that is used by a progress bar in either iteration or percentage mode; the progress amount is ingored by a progress bar in scanner mode. Reimplemented from FXProgressBar.
+        """Sets the total progress amount that is used by a progress bar in either iteration or percentage mode;
+        the progress amount is ingored by a progress bar in scanner mode. Reimplemented from FXProgressBar.
 
         Parameters
         ----------
         value : int
-
         """
 
     def show(self):
-        """Shows the progress bar. Reimplemented from FXWindow."""
+        """Shows the progress bar.
+
+        Reimplemented from FXWindow.
+        """
 
     def showNumber(self, style: int = AFXPROGRESSBAR_PERCENTAGE):
         """Shows the progress iteration or percentage text.

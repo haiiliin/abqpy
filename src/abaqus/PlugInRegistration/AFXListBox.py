@@ -12,7 +12,11 @@ from .FXPacker import FXPacker
 
 
 class AFXListBox(FXPacker, AFXDataComponent):
-    """This class implements a labeled list box. It allows the user to select entries from a drop-down list. Each item has associated data set as integers initially as items are added."""
+    """This class implements a labeled list box.
+
+    It allows the user to select entries from a drop-down list. Each item has associated data set as
+    integers initially as items are added.
+    """
 
     def __init__(
         self,
@@ -82,13 +86,22 @@ class AFXListBox(FXPacker, AFXDataComponent):
         """Removes all items from the list."""
 
     def create(self):
-        """Creates the list box. Reimplemented from FXComposite."""
+        """Creates the list box.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the list box. Reimplemented from FXWindow."""
+        """Disables the list box.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the list box. Reimplemented from FXWindow."""
+        """Enables the list box.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCurrentItem(self):
         """Returns the index of the current item."""
@@ -102,7 +115,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         index : int
-
         """
 
     def getItemIndexForData(self, data: Any):
@@ -111,7 +123,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         data : Any
-
         """
 
     def getLabelFont(self):
@@ -150,7 +161,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         index : int
-
         """
 
     def isReadOnlyState(self):
@@ -162,7 +172,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         index : int
-
         """
 
     def replaceItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):
@@ -188,7 +197,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         index : int
 
         notify : bool
-
         """
 
     def setHelpText(self, text: str):
@@ -197,7 +205,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         text : str
-
         """
 
     def setItemData(self, index: int, ptr: str):
@@ -208,7 +215,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         index : int
 
         ptr : str
-
         """
 
     def setLabelFont(self, fnt: FXFont):
@@ -217,7 +223,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setLabelText(self, txt: str):
@@ -226,7 +231,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         txt : str
-
         """
 
     def setNumVisible(self, nvis: int):
@@ -235,7 +239,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         nvis : int
-
         """
 
     def setReadOnlyState(self, readonly: bool = True):
@@ -244,7 +247,6 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         readonly : bool
-
         """
 
     def setTipText(self, text: str):
@@ -253,5 +255,4 @@ class AFXListBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         text : str
-
         """

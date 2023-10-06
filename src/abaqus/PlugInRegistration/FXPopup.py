@@ -6,7 +6,7 @@ from .FXWindow import FXWindow
 
 
 class FXPopup(FXShell):
-    """Popup window"""
+    """Popup window."""
 
     def __init__(self, owner: FXWindow, x: int = 0, y: int = 0, w: int = 0, h: int = 0):
         """Construct popup pane.
@@ -22,7 +22,6 @@ class FXPopup(FXShell):
         w : int
 
         h : int
-
         """
 
     def getBaseColor(self):
@@ -35,10 +34,16 @@ class FXPopup(FXShell):
         """Return border width."""
 
     def getDefaultHeight(self):
-        """Return the default height of this window. Reimplemented from FXComposite."""
+        """Return the default height of this window.
+
+        Reimplemented from FXComposite.
+        """
 
     def getDefaultWidth(self):
-        """Return the default width of this window. Reimplemented from FXComposite."""
+        """Return the default width of this window.
+
+        Reimplemented from FXComposite.
+        """
 
     def getFrameStyle(self):
         """Return frame style."""
@@ -75,7 +80,6 @@ class FXPopup(FXShell):
         w : int
 
         h : int
-
         """
 
     def setBaseColor(self, clr: FXColor):
@@ -84,7 +88,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setBorderColor(self, clr: FXColor):
@@ -93,7 +96,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setFrameStyle(self, style: int):
@@ -102,7 +104,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         style : int
-
         """
 
     def setHiliteColor(self, clr: FXColor):
@@ -111,7 +112,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setOrientation(self, orient: int):
@@ -120,7 +120,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         orient : int
-
         """
 
     def setShadowColor(self, clr: FXColor):
@@ -129,7 +128,6 @@ class FXPopup(FXShell):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setShrinkWrap(self, sw: bool):
@@ -138,5 +136,4 @@ class FXPopup(FXShell):
         Parameters
         ----------
         sw : bool
-
         """

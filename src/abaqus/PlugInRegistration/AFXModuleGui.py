@@ -18,7 +18,8 @@ class AFXModuleGui(AFXGuiObjectManager):
         """
 
     def activate(self):
-        """Activates the module during switch processing (allows for module specific activation requirements)."""
+        """Activates the module during switch processing (allows for module specific activation
+        requirements)."""
 
     def deactivate(self):
         """Deactivates the module when switching out (allows for module specific deactivation requirements)."""
@@ -27,7 +28,8 @@ class AFXModuleGui(AFXGuiObjectManager):
         """Returns the name of the module given on construction."""
 
     def getTypesToDisplay(self):
-        """Returns the type of the primary objects which may be displayed when this module is active (this currently assumes a single type)."""
+        """Returns the type of the primary objects which may be displayed when this module is active (this
+        currently assumes a single type)."""
 
     def hide(self, location: int):
         """Deactivates and hides the module's GUI components in the menubar, toolbar and toolbox.

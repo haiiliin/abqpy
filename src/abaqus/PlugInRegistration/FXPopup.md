@@ -4,53 +4,58 @@ Popup window
 
 ### FXPopup
 
-###   
+###
 
-### FXPopup(owner, opts=POPUP\_VERTICAL| FRAME\_RAISED| FRAME_THICK, x=0, y=0, w=0, h=0)  
+### FXPopup(owner, opts=POPUP_VERTICAL| FRAME_RAISED| FRAME_THICK, x=0, y=0, w=0, h=0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Construct popup pane.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   |   |
-| opts | Int | POPUP\_VERTICAL| FRAME\_RAISED| FRAME_THICK |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| owner | FXWindow | | |
+| opts | Int | POPUP_VERTICAL| FRAME_RAISED| FRAME_THICK | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
 
 ### getBaseColor
 
-###   
+###
 
-### getBaseColor()  
+### getBaseColor()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return base color.
 
 ### getBorderColor
 
-###   
+###
 
-### getBorderColor()  
+### getBorderColor()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return border color.
 
 ### getBorderWidth
 
-###   
+###
 
-### getBorderWidth()  
+### getBorderWidth()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return border width.
 
 ### getDefaultHeight
 
-###   
+###
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return the default height of this window.
@@ -59,9 +64,10 @@ Reimplemented from FXComposite.
 
 ### getDefaultWidth
 
-###   
+###
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return the default width of this window.
@@ -70,189 +76,202 @@ Reimplemented from FXComposite.
 
 ### getFrameStyle
 
-###   
+###
 
-### getFrameStyle()  
+### getFrameStyle()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return frame style.
 
 ### getGrabOwner
 
-###   
+###
 
-### getGrabOwner()  
+### getGrabOwner()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return current grab owner.
 
 ### getHiliteColor
 
-###   
+###
 
-### getHiliteColor()  
+### getHiliteColor()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return highlight color.
 
 ### getOrientation
 
-###   
+###
 
-### getOrientation()  
+### getOrientation()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return popup orientation.
 
 ### getShadowColor
 
-###   
+###
 
-### getShadowColor()  
+### getShadowColor()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return shadow color.
 
 ### getShrinkWrap
 
-###   
+###
 
-### getShrinkWrap()  
+### getShrinkWrap()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Return shrinkwrap mode.
 
 ### popdown
 
-###   
+###
 
-### popdown()  
+### popdown()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Pop down the menu.
 
 ### popup
 
-###   
+###
 
-### popup(grabto, x, y, w=0, h=0)  
+### popup(grabto, x, y, w=0, h=0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Popup the menu and grab to the given owner.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| grabto | FXWindow |   |   |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| grabto | FXWindow | | |
+| x | Int | | |
+| y | Int | | |
+| w | Int | 0 | |
+| h | Int | 0 | |
 
 ### setBaseColor
 
-###   
+###
 
-### setBaseColor(clr)  
+### setBaseColor(clr)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change base color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
 ### setBorderColor
 
-###   
+###
 
-### setBorderColor(clr)  
+### setBorderColor(clr)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
 ### setFrameStyle
 
-###   
+###
 
-### setFrameStyle(style)  
+### setFrameStyle(style)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change frame style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int | | |
 
 ### setHiliteColor
 
-###   
+###
 
-### setHiliteColor(clr)  
+### setHiliteColor(clr)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
 ### setOrientation
 
-###   
+###
 
-### setOrientation(orient)  
+### setOrientation(orient)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change popup orientation.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| orient | Int |   |   |
+| orient | Int | | |
 
 ### setShadowColor
 
-###   
+###
 
-### setShadowColor(clr)  
+### setShadowColor(clr)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
 ### setShrinkWrap
 
-###   
+###
 
-### setShrinkWrap(sw)  
+### setShrinkWrap(sw)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Change shrinkwrap mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sw | Bool |   |   |
+| sw | Bool | | |
 
-### Global flags  
+### Global flags
+
 ![](../IconsReference/butix_top_wline.png)
-
 
 **Popup internal orientation**
 
-| **POPUP_VERTICAL** | 
+| **POPUP_VERTICAL** |
 
 Vertical orientation.
 
- |
-| **POPUP_HORIZONTAL** | 
+|
+| **POPUP_HORIZONTAL** |
 
 Horizontal orientation.
 
- |
-| **POPUP_SHRINKWRAP** | 
+|
+| **POPUP_SHRINKWRAP** |
 
 Shrinkwrap to content.
 
- |
+|
 
-
-
- |
+|

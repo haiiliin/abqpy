@@ -9,7 +9,10 @@ from .FXPacker import FXPacker
 
 
 class AFXFloatSpinner(FXPacker, AFXDataComponent):
-    """Convenience class for creating a labeled spinner. The label field can be a label or check button (AFXFLOATSPINNER_CHECKBUTTON option)."""
+    """Convenience class for creating a labeled spinner.
+
+    The label field can be a label or check button (AFXFLOATSPINNER_CHECKBUTTON option).
+    """
 
     def __init__(
         self,
@@ -63,16 +66,28 @@ class AFXFloatSpinner(FXPacker, AFXDataComponent):
         """
 
     def canFocus(self):
-        """Returns True if the spinner can recieve focus. Reimplemented from FXWindow."""
+        """Returns True if the spinner can recieve focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def create(self):
-        """Creates the spinner. Reimplemented from FXComposite."""
+        """Creates the spinner.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the spinner. Reimplemented from FXWindow."""
+        """Disables the spinner.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the spinner. Reimplemented from FXWindow."""
+        """Enables the spinner.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
         """Returns the state of the check button or the radio button."""
@@ -90,7 +105,8 @@ class AFXFloatSpinner(FXPacker, AFXDataComponent):
         """Returns the label string."""
 
     def getRange(self):
-        """Returns a sequence of floats (low, high) representing the widget's allowable minimum and maximum values."""
+        """Returns a sequence of floats (low, high) representing the widget's allowable minimum and maximum
+        values."""
 
     def getTipText(self):
         """Returns the tool tip message."""
@@ -99,7 +115,8 @@ class AFXFloatSpinner(FXPacker, AFXDataComponent):
         """Returns the spinner value."""
 
     def isCheckStateChanged(self):
-        """Returns True if the state of the check button or the radio button has changed by the user since it was programmatically set last time."""
+        """Returns True if the state of the check button or the radio button has changed by the user since it
+        was programmatically set last time."""
 
     def isEditable(self):
         """Returns True if the input field of spinner may be edited."""

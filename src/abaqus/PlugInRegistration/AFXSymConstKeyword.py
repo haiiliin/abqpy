@@ -23,10 +23,16 @@ class AFXSymConstKeyword(AFXIntKeyword):
         """
 
     def getTypeName(self):
-        """Returns the name of the keyword type. Reimplemented from AFXIntKeyword."""
+        """Returns the name of the keyword type.
+
+        Reimplemented from AFXIntKeyword.
+        """
 
     def getValueAsString(self):
-        """Returns the text string that represents the keyword's current value. Reimplemented from AFXIntKeyword."""
+        """Returns the text string that represents the keyword's current value.
+
+        Reimplemented from AFXIntKeyword.
+        """
 
     def setDefaultValue(self, defaultValue: int):
         """Sets the keyword's default value.

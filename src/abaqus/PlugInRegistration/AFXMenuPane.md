@@ -4,27 +4,27 @@ This class provides the interface for creating an FXMenuPane and performing vari
 
 ### AFXMenuPane
 
-###   
+###
 
-### AFXMenuPane(owner)  
+### AFXMenuPane(owner)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Manager of the pane. |
+| owner | AFXGuiObjectManager | | Manager of the pane. |
 
 ### getOwner
 
-###   
+###
 
-### getOwner()  
+### getOwner()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the owner of the menu pane.
 
 Reimplemented from FXWindow.
 
-
-
- |
+|

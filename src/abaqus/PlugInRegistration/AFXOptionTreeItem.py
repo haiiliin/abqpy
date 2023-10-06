@@ -142,13 +142,22 @@ class AFXOptionTreeItem(FXPacker):
         """
 
     def create(self):
-        """Creates the tree item. Reimplemented from FXComposite."""
+        """Creates the tree item.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the tree item. Reimplemented from FXWindow."""
+        """Disables the tree item.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the tree item. Reimplemented from FXWindow."""
+        """Enables the tree item.
+
+        Reimplemented from FXWindow.
+        """
 
     def expand(self):
         """Expands (shows) the children."""
@@ -160,22 +169,40 @@ class AFXOptionTreeItem(FXPacker):
         """Returns the check state of the tree item."""
 
     def getDefaultWidth(self):
-        """Returns the default width of the tree item. Reimplemented from FXPacker."""
+        """Returns the default width of the tree item.
+
+        Reimplemented from FXPacker.
+        """
 
     def getFirst(self):
-        """Returns the first child tree. Reimplemented from FXWindow."""
+        """Returns the first child tree.
+
+        Reimplemented from FXWindow.
+        """
 
     def getLast(self):
-        """Returns the last child tree. Reimplemented from FXWindow."""
+        """Returns the last child tree.
+
+        Reimplemented from FXWindow.
+        """
 
     def getNext(self):
-        """Returns the next sibling tree. Reimplemented from FXWindow."""
+        """Returns the next sibling tree.
+
+        Reimplemented from FXWindow.
+        """
 
     def getParent(self):
-        """Returns the parent tree widget, or NULL if the tree item is the root. Reimplemented from FXWindow."""
+        """Returns the parent tree widget, or NULL if the tree item is the root.
+
+        Reimplemented from FXWindow.
+        """
 
     def getPrev(self):
-        """Returns the previous sibling tree. Reimplemented from FXWindow."""
+        """Returns the previous sibling tree.
+
+        Reimplemented from FXWindow.
+        """
 
     def getText(self):
         """Returns the label text shown in the tree item's check button."""
@@ -184,7 +211,10 @@ class AFXOptionTreeItem(FXPacker):
         """Checks whether the tree item has any visible children."""
 
     def hide(self):
-        """Hides the tree item. Reimplemented from FXWindow."""
+        """Hides the tree item.
+
+        Reimplemented from FXWindow.
+        """
 
     def indexOfChild(self, tree: Self):
         """Returns the index of an immediate child tree, or -1 if not found.
@@ -208,7 +238,10 @@ class AFXOptionTreeItem(FXPacker):
         """Checks whether the tree item shows its children."""
 
     def numChildren(self):
-        """Returns the number of child trees. Reimplemented from FXWindow."""
+        """Returns the number of child trees.
+
+        Reimplemented from FXWindow.
+        """
 
     def setArrowSize(self, size: int):
         """Sets the size of the arrow button for this object and all its children.
@@ -238,7 +271,10 @@ class AFXOptionTreeItem(FXPacker):
         """
 
     def show(self):
-        """Shows the tree item. Reimplemented from FXWindow."""
+        """Shows the tree item.
+
+        Reimplemented from FXWindow.
+        """
 
     def updateCheck(self, notify: bool):
         """Updates the check state of the tree item and its ancestors.

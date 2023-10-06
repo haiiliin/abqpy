@@ -5,7 +5,8 @@ from .FXMenuPane import FXMenuPane
 
 
 class AFXMenuPane(FXMenuPane):
-    """This class provides the interface for creating an FXMenuPane and performing various management activities on it."""
+    """This class provides the interface for creating an FXMenuPane and performing various management activities
+    on it."""
 
     def __init__(self, owner: AFXGuiObjectManager):
         """Constructor.
@@ -17,4 +18,7 @@ class AFXMenuPane(FXMenuPane):
         """
 
     def getOwner(self):
-        """Returns the owner of the menu pane. Reimplemented from FXWindow."""
+        """Returns the owner of the menu pane.
+
+        Reimplemented from FXWindow.
+        """

@@ -5,7 +5,7 @@ from .FXIconItem import FXIconItem
 
 
 class FXFileItem(FXIconItem):
-    """File item"""
+    """File item."""
 
     def __init__(self, text: str, bi: FXIcon | None = None, mi: FXIcon | None = None, ptr: str = "None"):
         """Constructor.
@@ -19,7 +19,6 @@ class FXFileItem(FXIconItem):
         mi : FXIcon | None
 
         ptr : str
-
         """
 
     def getDate(self):
@@ -35,7 +34,10 @@ class FXFileItem(FXIconItem):
         """Return True if this is a character device item."""
 
     def isDirectory(self):
-        """Return True if this is a directory item. Reimplemented in AFXFileItem."""
+        """Return True if this is a directory item.
+
+        Reimplemented in AFXFileItem.
+        """
 
     def isExecutable(self):
         """Return True if this is an executable item."""

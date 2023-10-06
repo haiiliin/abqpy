@@ -2,28 +2,31 @@ Image class
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fximage.png)
 
-### FXImage(a, pix=None, opts=0, w=1, h=1)  
+### FXImage(a, pix=None, opts=0, w=1, h=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create an image.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| pix |  Any | None |   |
-| opts | Int | 0 |   |
-| w | Int | 1 |   |
-| h | Int | 1 |   |
+| a | FXApp | | |
+| pix | Any | None | |
+| opts | Int | 0 | |
+| w | Int | 1 | |
+| h | Int | 1 | |
 
-### blend(color, sharpen=True)  
+### blend(color, sharpen=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Blends the icon with the specified color; should only be used on icons that support an alpha channel, for example, PNG.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   |   |
-| sharpen | Bool | True |   |
+| color | FXColor | | |
+| sharpen | Bool | True | |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create image resource.
@@ -32,7 +35,8 @@ Reimplemented from FXId.
 
 Reimplemented in FXIcon.
 
-### destroy()  
+### destroy()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Destroy image resource.
@@ -41,7 +45,8 @@ Reimplemented from FXId.
 
 Reimplemented in FXIcon.
 
-### detach()  
+### detach()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Detach image resource.
@@ -50,28 +55,32 @@ Reimplemented from FXId.
 
 Reimplemented in FXIcon.
 
-### getOptions()  
+### getOptions()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 To get to the option flags.
 
-### getPixel(x, y)  
+### getPixel(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get pixel at x,y.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### render()  
+### render()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Render the image from client-side pixel buffer.
 
 Reimplemented in FXIcon.
 
-### resize(w, h)  
+### resize(w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Resize pixmap to the specified width and height.
@@ -81,84 +90,86 @@ Reimplemented from FXDrawable.
 Reimplemented in FXIcon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int | | |
+| h | Int | | |
 
-### scale(w, h)  
+### scale(w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Rescale pixels image to the specified width and height.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int | | |
+| h | Int | | |
 
-### setPixel(x, y, color)  
+### setPixel(x, y, color)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change pixel at x,y.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| color | FXColor |   |   |
+| x | Int | | |
+| y | Int | | |
+| color | FXColor | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Image rendering hints**
 
-| **IMAGE_KEEP** | 
+| **IMAGE_KEEP** |
 
 Keep pixel data in client.
 
- |
-| **IMAGE_OWNED** | 
+|
+| **IMAGE_OWNED** |
 
 Pixel data is owned by image.
 
- |
-| **IMAGE_DITHER** | 
+|
+| **IMAGE_DITHER** |
 
 Dither image to look better.
 
- |
-| **IMAGE_NEAREST** | 
+|
+| **IMAGE_NEAREST** |
 
 Turn off dithering and map to nearest color.
 
- |
-| **IMAGE_ALPHA** | 
+|
+| **IMAGE_ALPHA** |
 
 Data has alpha channel.
 
- |
-| **IMAGE_OPAQUE** | 
+|
+| **IMAGE_OPAQUE** |
 
 Force opaque background.
 
- |
-| **IMAGE_ALPHACOLOR** | 
+|
+| **IMAGE_ALPHACOLOR** |
 
 Override transparancy color.
 
- |
-| **IMAGE_SHMI** | 
+|
+| **IMAGE_SHMI** |
 
 Using shared memory image.
 
- |
-| **IMAGE_SHMP** | 
+|
+| **IMAGE_SHMP** |
 
 Using shared memory pixmap.
 
- |
-| **IMAGE_ALPHAGUESS** | 
+|
+| **IMAGE_ALPHAGUESS** |
 
 Guess transparency color from corners.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -180,7 +191,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

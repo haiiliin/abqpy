@@ -135,7 +135,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def create(self):
-        """Creates server-side resources. Reimplemented from AFXBaseTable."""
+        """Creates server-side resources.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def deleteColumns(self, startColumn: int, numColumns: int = 1, notify: bool = False):
         """Deletes columns starting at the specified column.
@@ -184,13 +187,22 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def destroy(self):
-        """Destroys server-side resources. Reimplemented from FXComposite."""
+        """Destroys server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def detach(self):
-        """Detaches server-side resources. Reimplemented from AFXBaseTable."""
+        """Detaches server-side resources.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def disable(self):
-        """Disables the table and the table items in the table. Reimplemented from FXWindow."""
+        """Disables the table and the table items in the table.
+
+        Reimplemented from FXWindow.
+        """
 
     def disableItem(self, row: int, column: int):
         """Disables the specified item.
@@ -204,7 +216,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def enable(self):
-        """Enables the table and the table items in the table. Reimplemented from FXWindow."""
+        """Enables the table and the table items in the table.
+
+        Reimplemented from FXWindow.
+        """
 
     def enableItem(self, row: int, column: int):
         """Enables the specified item.
@@ -245,10 +260,16 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getCurrentColumn(self):
-        """Returns the column index of the current item. Reimplemented from AFXBaseTable."""
+        """Returns the column index of the current item.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getCurrentRow(self):
-        """Returns the row index of the current item. Reimplemented from AFXBaseTable."""
+        """Returns the row index of the current item.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getCurrentSortColumn(self):
         """Returns the current sort column or -1 if none."""
@@ -257,19 +278,31 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """Returns the default column width, in pixels, of the table."""
 
     def getDefaultHeight(self):
-        """Returns the default height of the table. Reimplemented from AFXBaseTable."""
+        """Returns the default height of the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getDefaultRowHeight(self):
         """Returns the default row height, in pixels, of the table."""
 
     def getDefaultWidth(self):
-        """Returns the default width of the table. Reimplemented from AFXBaseTable."""
+        """Returns the default width of the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getFont(self):
-        """Gets the font for all text items in the table. Reimplemented from AFXBaseTable."""
+        """Gets the font for all text items in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getGridColor(self):
-        """Gets the color of the gridlines in the table. Reimplemented from AFXBaseTable."""
+        """Gets the color of the gridlines in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getItemBackColor(self, row: int, column: int):
         """Gets the background color of an item.
@@ -294,7 +327,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getItemColor(self, row: int, column: int):
-        """Returns the color of an item of type COLOR. The color is "As is", "Default", or a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C").
+        """Returns the color of an item of type COLOR. The color is "As is", "Default", or a color hex
+        specification in the form of "RRGGBB" (e.g., "#0A1B2C").
 
         Parameters
         ----------
@@ -429,13 +463,19 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getLeadingColumns(self):
-        """Returns the number of leading columns in the table. Reimplemented from AFXBaseTable."""
+        """Returns the number of leading columns in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getLeadingFont(self):
         """Returns the font of the leading rows and columns."""
 
     def getLeadingRows(self):
-        """Returns the number of leading rows in the table. Reimplemented from AFXBaseTable."""
+        """Returns the number of leading rows in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getListItemIcon(self, listId: int, index: int):
         """Returns the icon of the item at the specified index of the specified table list.
@@ -460,7 +500,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getNumColumns(self):
-        """Returns the number of columns in the table (including leading columns). Reimplemented from AFXBaseTable."""
+        """Returns the number of columns in the table (including leading columns).
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getNumEmptyRowsAtBottom(self):
         """Returns the number of empty (non-trailing) rows at the bottom of the table."""
@@ -475,7 +518,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getNumRows(self):
-        """Returns the number of rows in the table (including leading rows). Reimplemented from AFXBaseTable."""
+        """Returns the number of rows in the table (including leading rows).
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getPreferredColumnWidth(self, column: int, excludeTitle: bool = True):
         """Returns the width required for a column.
@@ -516,10 +562,16 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def getSelBackColor(self):
-        """Gets the selection background color of the table. Reimplemented from AFXBaseTable."""
+        """Gets the selection background color of the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getSelTextColor(self):
-        """Gets the selection text color of the table. Reimplemented from AFXBaseTable."""
+        """Gets the selection text color of the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getStretchableColumn(self):
         """Returns the index of the stretchable column."""
@@ -528,10 +580,16 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """Returns the options related only to the table."""
 
     def getVisibleColumns(self):
-        """Gets the number of visible columns in the table. Reimplemented from AFXBaseTable."""
+        """Gets the number of visible columns in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def getVisibleRows(self):
-        """Gets the number of visible rows in the table. Reimplemented from AFXBaseTable."""
+        """Gets the number of visible rows in the table.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def insertColumns(self, startColumn: int, numColumns: int = 1, notify: bool = False):
         """Inserts columns at the specified location.
@@ -629,7 +687,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def isItemEmpty(self, row: int, column: int):
-        """Returns True if the specified item does not have a value. This method checks the actual contents of the specified item and does not account for the empty-item policy for the item.
+        """Returns True if the specified item does not have a value. This method checks the actual contents of
+        the specified item and does not account for the empty-item policy for the item.
 
         Parameters
         ----------
@@ -704,7 +763,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def killFocus(self):
-        """Removes the focus from this window. Reimplemented from AFXBaseTable."""
+        """Removes the focus from this window.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def killSelection(self, notify: bool = False):
         """Deselects all items of the table; returns True if this method deselects any items that were selected.
@@ -716,7 +778,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def layout(self):
-        """Lays out the table contents. Reimplemented from AFXBaseTable."""
+        """Lays out the table contents.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def makePositionVisible(self, row: int, column: int):
         """Scrolls to make the specified row, column fully visible.
@@ -750,10 +815,14 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def recalc(self):
-        """Propagates size changes. Reimplemented from AFXBaseTable."""
+        """Propagates size changes.
+
+        Reimplemented from AFXBaseTable.
+        """
 
     def removeListItem(self, listId: int, index: int):
-        """Removes the item at the specified index from the specified table list; returns the number of items remaining in list.
+        """Removes the item at the specified index from the specified table list; returns the number of items
+        remaining in list.
 
         Parameters
         ----------
@@ -784,7 +853,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnBoolIcons(self, column: int, trueIcon: FXIcon | None = None, falseIcon: FXIcon | None = None):
-        """Sets the True and False icons of all existing and future items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the True and False icons of all existing and future items in a column of type BOOL. Specifying
+        -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -797,7 +867,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnBoolValue(self, column: int, value: bool):
-        """Sets the value of all existing and future items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future items in a column of type BOOL. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -808,7 +879,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnColor(self, column: int, color: str):
-        """Sets the color of all existing and future items in a column of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color of all existing and future items in a column of type COLOR. The color can be "As is",
+        "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color
+        name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the
+        default for the table.
 
         Parameters
         ----------
@@ -819,7 +893,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnColorItemDefault(self, column: int, color: str):
-        """Sets the color of the color item in the flyout menu for all existing and future items that display "As is" or "Default" in a column of type COLOR. The color is either a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C") or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color of the color item in the flyout menu for all existing and future items that display
+        "As is" or "Default" in a column of type COLOR. The color is either a color hex specification in the
+        form of "RRGGBB" (e.g., "#0A1B2C") or a pre-defined color name (e.g., "Red"). Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -830,7 +907,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnColorOptions(self, column: int, opts: int):
-        """Sets the color flyout options for all existing and future items in a column of type COLOR. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the color flyout options for all existing and future items in a column of type COLOR. Specifying
+        -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -841,7 +919,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnEditable(self, column: int, editable: bool):
-        """Sets the editability of all existing and future items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the editability of all existing and future items in a column. Specifying -1 for the column will
+        change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -852,7 +931,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnFloatValue(self, column: int, value: float):
-        """Sets the value of all existing and future items in a column of type FLOAT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future items in a column of type FLOAT. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -863,7 +943,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnIcon(self, column: int, icon: FXIcon | None = None):
-        """Sets the icon of all existing and future items in a column of type ICON. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the icon of all existing and future items in a column of type ICON. Specifying -1 for the column
+        will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -874,7 +955,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnIntValue(self, column: int, value: int):
-        """Sets the value of all existing and future items in a column of type INT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the value of all existing and future items in a column of type INT. Specifying -1 for the column
+        will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -885,7 +967,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnJustify(self, column: int, justify: int):
-        """Sets the justification of all existing and future items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the justification of all existing and future items in a column. Specifying -1 for the column
+        will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -896,7 +979,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnListId(self, column: int, listId: int):
-        """Sets the list ID of all existing and future items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the list ID of all existing and future items in a column of type LIST. Specifying -1 for the
+        column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -907,7 +991,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnListIndex(self, column: int, index: int):
-        """Sets the list index (selection) of all existing and future items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the list index (selection) of all existing and future items in a column of type LIST. Specifying
+        -1 for the column will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -918,7 +1003,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnSortable(self, column: int, sortable: bool):
-        """Sets a column to be sortable or not. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets a column to be sortable or not. Specifying -1 for the column will change all columns in the
+        table and set the default for the table.
 
         Parameters
         ----------
@@ -929,7 +1015,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnSortOrder(self, column: int, order: int):
-        """Sets the sort order of the given column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the sort order of the given column. Specifying -1 for the column will change all columns in the
+        table and set the default for the table.
 
         Parameters
         ----------
@@ -940,7 +1027,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnText(self, column: int, text: str):
-        """Sets the text of all existing and future items in a column of type TEXT. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the text of all existing and future items in a column of type TEXT. Specifying -1 for the column
+        will change all columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -951,7 +1039,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnType(self, column: int, type: int):
-        """Sets the type of a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
+        """Sets the type of a column. Specifying -1 for the column will change all columns in the table and set
+        the default for the table.
 
         Parameters
         ----------
@@ -962,7 +1051,10 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnWidth(self, column: int, width: int):
-        """Sets the width, in pixels, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table. Specify -1 for the width will resize each specified column to best fit the width of the title(s) currently shown in its leading and trailing items.
+        """Sets the width, in pixels, of the specified column. Specifying -1 for the column will change all non-
+        leading and non-trailing columns in the table and set the default for the table. Specify -1 for the
+        width will resize each specified column to best fit the width of the title(s) currently shown in its
+        leading and trailing items.
 
         Parameters
         ----------
@@ -973,7 +1065,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setColumnWidthInChars(self, column: int, numChars: int):
-        """Sets the width, in number of characters, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table.
+        """Sets the width, in number of characters, of the specified column. Specifying -1 for the column will
+        change all non-leading and non-trailing columns in the table and set the default for the table.
 
         Parameters
         ----------
@@ -995,7 +1088,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setCurrentSortColumn(self, column: int):
-        """Sets the current sort column. The given column must be sortable; otherwise the current sort column will not change.
+        """Sets the current sort column. The given column must be sortable; otherwise the current sort column
+        will not change.
 
         Parameters
         ----------
@@ -1024,7 +1118,9 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setDefaultColor(self, color: str):
-        """Sets the default color for all items of type COLOR in the table. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
+        """Sets the default color for all items of type COLOR in the table. The color can be "As is", "Default",
+        a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g.,
+        "Red").
 
         Parameters
         ----------
@@ -1096,7 +1192,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setEmptyItemDefault(self, defaultVal: str):
-        """Sets the default value (in text form) used for empty items of the table if its empty-item policy includes DEFAULT_IF_EMPTY.
+        """Sets the default value (in text form) used for empty items of the table if its empty-item policy
+        includes DEFAULT_IF_EMPTY.
 
         Parameters
         ----------
@@ -1173,7 +1270,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setItemColor(self, row: int, column: int, color: str):
-        """Sets the color of an item of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
+        """Sets the color of an item of type COLOR. The color can be "As is", "Default", a color hex
+        specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
 
         Parameters
         ----------
@@ -1355,7 +1453,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setItemValue(self, row: int, column: int, valueText: str):
-        """Sets the value of an item of any type that can interpret a text string for its value. Returns True if the value of the specified item is set successfully.
+        """Sets the value of an item of any type that can interpret a text string for its value. Returns True if
+        the value of the specified item is set successfully.
 
         Parameters
         ----------
@@ -1368,7 +1467,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setLeadingColumnLabels(self, str: str, column: int = 0):
-        """Sets the labels of a leading column. Note: this API must be used to set the header column labels, otherwise labels will be overwritten by auto-numbering.
+        """Sets the labels of a leading column. Note: this API must be used to set the header column labels,
+        otherwise labels will be overwritten by auto-numbering.
 
         Parameters
         ----------
@@ -1397,7 +1497,8 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def setLeadingRowLabels(self, str: str, row: int = 0):
-        """Set the labels of a leading row. Note: this API must be used to set the header row labels, otherwise labels will be overwritten by auto-numbering.
+        """Set the labels of a leading row. Note: this API must be used to set the header row labels, otherwise
+        labels will be overwritten by auto-numbering.
 
         Parameters
         ----------
@@ -1504,7 +1605,9 @@ class AFXTable(AFXBaseTable, AFXDataComponent):
         """
 
     def shadeReadOnlyItems(self, shadeItems: bool):
-        """Makes the table to use a different, typically shaded, background color for read-only items if True is passed to the method. The table would use the same regular background color for both editable and read-only items if False is passed to the method.
+        """Makes the table to use a different, typically shaded, background color for read-only items if True is
+        passed to the method. The table would use the same regular background color for both editable and read-
+        only items if False is passed to the method.
 
         Parameters
         ----------

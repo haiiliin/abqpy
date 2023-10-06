@@ -8,7 +8,7 @@ from .FXDrawable import FXDrawable
 
 
 class FXImage(FXDrawable):
-    """Image class"""
+    """Image class."""
 
     def __init__(self, a: FXApp, pix: Any | None = None, opts: int = 0, w: int = 1, h: int = 1):
         """Create an image.
@@ -24,28 +24,36 @@ class FXImage(FXDrawable):
         w : int
 
         h : int
-
         """
 
     def blend(self, color: FXColor, sharpen: bool = True):
-        """Blends the icon with the specified color; should only be used on icons that support an alpha channel, for example, PNG.
+        """Blends the icon with the specified color; should only be used on icons that support an alpha channel,
+        for example, PNG.
 
         Parameters
         ----------
         color : FXColor
 
         sharpen : bool
-
         """
 
     def create(self):
-        """Create image resource. Reimplemented from FXId. Reimplemented in FXIcon."""
+        """Create image resource.
+
+        Reimplemented from FXId. Reimplemented in FXIcon.
+        """
 
     def destroy(self):
-        """Destroy image resource. Reimplemented from FXId. Reimplemented in FXIcon."""
+        """Destroy image resource.
+
+        Reimplemented from FXId. Reimplemented in FXIcon.
+        """
 
     def detach(self):
-        """Detach image resource. Reimplemented from FXId. Reimplemented in FXIcon."""
+        """Detach image resource.
+
+        Reimplemented from FXId. Reimplemented in FXIcon.
+        """
 
     def getOptions(self):
         """To get to the option flags."""
@@ -58,21 +66,23 @@ class FXImage(FXDrawable):
         x : int
 
         y : int
-
         """
 
     def render(self):
-        """Render the image from client-side pixel buffer. Reimplemented in FXIcon."""
+        """Render the image from client-side pixel buffer.
+
+        Reimplemented in FXIcon.
+        """
 
     def resize(self, w: int, h: int):
-        """Resize pixmap to the specified width and height. Reimplemented from FXDrawable. Reimplemented in FXIcon.
+        """Resize pixmap to the specified width and height. Reimplemented from FXDrawable. Reimplemented in
+        FXIcon.
 
         Parameters
         ----------
         w : int
 
         h : int
-
         """
 
     def scale(self, w: int, h: int):
@@ -83,7 +93,6 @@ class FXImage(FXDrawable):
         w : int
 
         h : int
-
         """
 
     def setPixel(self, x: int, y: int, color: FXColor):
@@ -96,5 +105,4 @@ class FXImage(FXDrawable):
         y : int
 
         color : FXColor
-
         """

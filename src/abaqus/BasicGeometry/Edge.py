@@ -200,15 +200,14 @@ class Edge:
 
     @abaqus_method_doc
     def getVertices(self) -> tuple[int]:
-        """This method returns a sequence of indices of the vertices that bound this edge. The
-        first index refers to the vertex where the normalized curve parameter = 0.0, and the
-        second index refers to the vertex where the normalized curve parameter = 1.0. If the
-        edge is a closed curve, only one vertex index is returned.
+        """This method returns a sequence of indices of the vertices that bound this edge. The first index
+        refers to the vertex where the normalized curve parameter = 0.0, and the second index refers to the
+        vertex where the normalized curve parameter = 1.0. If the edge is a closed curve, only one vertex index
+        is returned.
 
         Returns
         -------
         tuple[int]
             A tuple of integers.
-
         """
         return (0,)

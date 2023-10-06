@@ -2,14 +2,16 @@ The scroll area widget manages a content area and a viewport area through which 
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxscrollarea.png)
 
-### getContentWidth()  
+### getContentWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return content size.
 
 Reimplemented in FXIconList, FXImageView, FXList, FXMDIClient, FXScrollWindow, FXTable, FXText, FXTreeList, AFXBaseTable, and AFXOptionTreeList.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default height.
@@ -18,7 +20,8 @@ Reimplemented from FXComposite.
 
 Reimplemented in FXList, FXTable, FXText, FXTreeList, AFXBaseTable, AFXList, AFXOptionTreeList, AFXTable, and AFXTreeTable.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default width.
@@ -27,53 +30,62 @@ Reimplemented from FXComposite.
 
 Reimplemented in FXList, FXTable, FXText, FXTreeList, AFXBaseTable, AFXOptionTreeList, AFXTable, and AFXTreeTable.
 
-### getPosition(x, y)  
+### getPosition(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### getScrollStyle()  
+### getScrollStyle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return scroll style.
 
-### getViewportHeight()  
+### getViewportHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return viewport size.
 
 Reimplemented in FXIconList.
 
-### getXPosition()  
+### getXPosition()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return the current x-position.
 
-### getYPosition()  
+### getYPosition()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return the current y-position.
 
-### horizontalScrollbar()  
+### horizontalScrollbar()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return a pointer to the horizontal scrollbar.
 
-### isHorizontalScrollable()  
+### isHorizontalScrollable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if horizontally scrollable.
 
-### isVerticalScrollable()  
+### isVerticalScrollable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if vertically scrollable.
 
-### moveContents(x, y)  
+### moveContents(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Move contents to the specified position.
@@ -81,89 +93,92 @@ Move contents to the specified position.
 Reimplemented in FXIconList, FXMDIClient, FXScrollWindow, FXTable, FXText, AFXBaseTable, AFXOptionTreeList, and AFXTable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### setPosition(x, y)  
+### setPosition(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### setScrollStyle(style)  
+### setScrollStyle(style)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change scroll style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int | | |
 
-### verticalScrollbar()  
+### verticalScrollbar()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return a pointer to the vertical scrollbar.
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Scrollbar options**
 
-| **SCROLLERS_NORMAL** | 
+| **SCROLLERS_NORMAL** |
 
 Show the scrollbars when needed.
 
- |
-| **HSCROLLER_ALWAYS** | 
+|
+| **HSCROLLER_ALWAYS** |
 
 Always show horizontal scrollers.
 
- |
-| **HSCROLLER_NEVER** | 
+|
+| **HSCROLLER_NEVER** |
 
 Never show horizontal scrollers.
 
- |
-| **VSCROLLER_ALWAYS** | 
+|
+| **VSCROLLER_ALWAYS** |
 
 Always show vertical scrollers.
 
- |
-| **VSCROLLER_NEVER** | 
+|
+| **VSCROLLER_NEVER** |
 
 Never show vertical scrollers.
 
- |
-| **HSCROLLING_ON** | 
+|
+| **HSCROLLING_ON** |
 
 Horizontal scrolling turned on (default).
 
- |
-| **HSCROLLING_OFF** | 
+|
+| **HSCROLLING_OFF** |
 
 Horizontal scrolling turned off.
 
- |
-| **VSCROLLING_ON** | 
+|
+| **VSCROLLING_ON** |
 
 Vertical scrolling turned on (default).
 
- |
-| **VSCROLLING_OFF** | 
+|
+| **VSCROLLING_OFF** |
 
 Vertical scrolling turned off.
 
- |
-| **SCROLLERS_TRACK** | 
+|
+| **SCROLLERS_TRACK** |
 
 Scrollers track continuously for smooth scrolling.
 
- |
-| **SCROLLERS\_DONT\_TRACK** | 
+|
+| **SCROLLERS_DONT_TRACK** |
 
 Scrollers don't track continuously.
 
- |
+|

@@ -21,7 +21,6 @@ class AFXItemProvider(FXObject):
         Parameters
         ----------
         ch : str
-
         """
 
     def empty(self):
@@ -39,7 +38,6 @@ class AFXItemProvider(FXObject):
         Parameters
         ----------
         sz : int
-
         """
 
     def setItems(self, newItems: str):

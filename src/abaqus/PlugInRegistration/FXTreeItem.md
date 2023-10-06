@@ -2,62 +2,62 @@ Tree list Item
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxtreeitem.png)
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Tree list styles**
 
-| **TREELIST_EXTENDEDSELECT** | 
+| **TREELIST_EXTENDEDSELECT** |
 
 Extended selection mode allows for drag-selection of ranges of items.
 
- |
-| **TREELIST_SINGLESELECT** | 
+|
+| **TREELIST_SINGLESELECT** |
 
 Single selection mode allows up to one item to be selected.
 
- |
-| **TREELIST_BROWSESELECT** | 
+|
+| **TREELIST_BROWSESELECT** |
 
 Browse selection mode enforces one single item to be selected at all times.
 
- |
-| **TREELIST_MULTIPLESELECT** | 
+|
+| **TREELIST_MULTIPLESELECT** |
 
 Multiple selection mode is used for selection of individual items.
 
- |
-| **TREELIST_AUTOSELECT** | 
+|
+| **TREELIST_AUTOSELECT** |
 
 Automatically select under cursor.
 
- |
-| **TREELIST\_SHOWS\_LINES** | 
+|
+| **TREELIST_SHOWS_LINES** |
 
 Lines shown.
 
- |
-| **TREELIST\_SHOWS\_BOXES** | 
+|
+| **TREELIST_SHOWS_BOXES** |
 
 Boxes to expand shown.
 
- |
-| **TREELIST\_ROOT\_BOXES** | 
+|
+| **TREELIST_ROOT_BOXES** |
 
 Display root boxes also.
 
- |
-| **TREELIST\_CHECK\_BOXES** | 
+|
+| **TREELIST_CHECK_BOXES** |
 
 Display check boxes.
 
- |
-| **TREELIST\_PROPAGATE\_CHECKS** | 
+|
+| **TREELIST_PROPAGATE_CHECKS** |
 
 Propagate checked state to children and parents.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -79,7 +79,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

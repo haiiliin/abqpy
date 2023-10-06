@@ -4,87 +4,94 @@ This class is used to provide pick steps in GUI procedures.
 
 ### AFXPickStep
 
-###   
+###
 
-### AFXPickStep(owner, keyword, prompt, entitiesToPick, numberToPick=ONE, highlightLevel=1, sequenceStyle=ARRAY)  
+### AFXPickStep(owner, keyword, prompt, entitiesToPick, numberToPick=ONE, highlightLevel=1, sequenceStyle=ARRAY)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
-| prompt | String |   | Step's prompt displayed in prompt area. |
-| entitiesToPick | Int |   | Type of entities to pick. |
+| owner | AFXProcedure | | Procedure creating the step. |
+| keyword | AFXObjectKeyword | | Object kwd containing pick variable. Part of AFXGuiCommand. |
+| prompt | String | | Step's prompt displayed in prompt area. |
+| entitiesToPick | Int | | Type of entities to pick. |
 | numberToPick | pickAmountEnum | ONE | How many entities to pick. |
 | highlightLevel | Int | 1 | Highlight level. |
 | sequenceStyle | sequenceStyleEnum | ARRAY | Sequence style of picked variables in the command. |
 
 ### addElementSetSelection
 
-###   
+###
 
-### addElementSetSelection(name)  
+### addElementSetSelection(name)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Adds an element set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String | | Name of set. |
 
 ### addGeometrySetSelection
 
-###   
+###
 
-### addGeometrySetSelection(name)  
+### addGeometrySetSelection(name)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Adds a geometry set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String | | Name of set. |
 
 ### addNodeSetSelection
 
-###   
+###
 
-### addNodeSetSelection(name)  
+### addNodeSetSelection(name)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Adds a node set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String | | Name of set. |
 
 ### addPointKeyIn
 
-###   
+###
 
-### addPointKeyIn(keyword)  
+### addPointKeyIn(keyword)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Creates a textfield on the prompt line as an alternative method of specifying a point.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXTupleKeyword |   | Keyword |
+| keyword | AFXTupleKeyword | | Keyword |
 
 ### addSurfaceSelection
 
-###   
+###
 
-### addSurfaceSelection(name)  
+### addSurfaceSelection(name)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Adds a surface to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of surface. |
+| name | String | | Name of surface. |
 
 ### allowRepeatedSelections
 
-###   
+###
 
-### allowRepeatedSelections(value=True)  
+### allowRepeatedSelections(value=True)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Allows the picking of prior selections (from prior pick steps of the procedure).
@@ -94,9 +101,10 @@ Allows the picking of prior selections (from prior pick steps of the procedure).
 
 ### onCancel
 
-###   
+###
 
-### onCancel()  
+### onCancel()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Called when the step is cancelled.
@@ -107,9 +115,10 @@ Reimplemented in AFXOrderedPickStep.
 
 ### onExecute
 
-###   
+###
 
-### onExecute()  
+### onExecute()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Called to execute the steps returned by getFirstStep and getNextStep.
@@ -120,9 +129,10 @@ Reimplemented in AFXOrderedPickStep.
 
 ### onResume
 
-###   
+###
 
-### onResume()  
+### onResume()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Called when the step is resumed.
@@ -131,9 +141,10 @@ Reimplemented from AFXStep.
 
 ### onSuspend
 
-###   
+###
 
-### onSuspend()  
+### onSuspend()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Called when the step is suspended.
@@ -142,9 +153,10 @@ Reimplemented from AFXStep.
 
 ### reset
 
-###   
+###
 
-### reset()  
+### reset()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Allows a step to reset any of its data (if needed) when looping.
@@ -155,406 +167,410 @@ Reimplemented in AFXOrderedPickStep.
 
 ### setEdgeRefinements
 
-###   
+###
 
-### setEdgeRefinements(refinement)  
+### setEdgeRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking edges.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setElementEdgeRefinements
 
-###   
+###
 
-### setElementEdgeRefinements(refinement)  
+### setElementEdgeRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking element edges.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setElementFaceRefinements
 
-###   
+###
 
-### setElementFaceRefinements(refinement)  
+### setElementFaceRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking element faces.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setElementRefinements
 
-###   
+###
 
-### setElementRefinements(refinement)  
+### setElementRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setFaceRefinements
 
-###   
+###
 
-### setFaceRefinements(refinement)  
+### setFaceRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking faces.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setInstanceRefinements
 
-###   
+###
 
-### setInstanceRefinements(refinement)  
+### setInstanceRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking instances.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setNodeRefinements
 
-###   
+###
 
-### setNodeRefinements(refinement)  
+### setNodeRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking nodes.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setSketchRefinements
 
-###   
+###
 
-### setSketchRefinements(refinement)  
+### setSketchRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking sketches.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
 ### setXyRefinements
 
-###   
+###
 
-### setXyRefinements(refinement)  
+### setXyRefinements(refinement)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Sets the refinements to be used when picking xy objects.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int | | Refinement flag. |
 
-### Class flags  
+### Class flags
+
 ![](../IconsReference/butix_top_wline.png)
-
 
 **Flags for the number of entities to pick.**
 
-| **ONE** | 
+| **ONE** |
 
 Allow only one entity to be picked.
 
- |
-| **MANY** | 
+|
+| **MANY** |
 
 Allow one or more entities to be picked.
 
- |
-
+|
 
 **Flags for refining pickable entities.**
 
-| **STRAIGHT** | 
+| **STRAIGHT** |
 
 Allow only straight entities to be picked.
 
- |
-| **WIRE** | 
+|
+| **WIRE** |
 
 Allow only wire entities to be picked.
 
- |
-| **PLANAR** | 
+|
+| **PLANAR** |
 
 Allow only planar entities to be picked.
 
- |
-| **CONICAL** | 
+|
+| **CONICAL** |
 
 Allow only conical entities to be picked.
 
- |
-| **SHELL** | 
+|
+| **SHELL** |
 
 Allow only shell entities to be picked.
 
- |
-| **ORPHAN_MESH** | 
+|
+| **ORPHAN_MESH** |
 
 Allow only orphan mesh entities to be picked.
 
- |
-| **SOLID** | 
+|
+| **SOLID** |
 
 Allow only solid entities to be picked.
 
- |
-| **GEOMETRY** | 
+|
+| **GEOMETRY** |
 
 Allow only geometry entities to be picked.
 
- |
-| **POINT** | 
+|
+| **POINT** |
 
 Allow only point entities to be picked.
 
- |
-| **BACKGROUND** | 
+|
+| **BACKGROUND** |
 
 Allow only background entities to be picked while sketching.
 
- |
-| **FOREGROUND** | 
+|
+| **FOREGROUND** |
 
 Allow only sketch entities to be picked.
 
- |
-| **VERTICAL** | 
+|
+| **VERTICAL** |
 
 Allow only vertical geometric sketch entities to be picked.
 
- |
-| **HORIZONTAL** | 
+|
+| **HORIZONTAL** |
 
 Allow only horizontal geometric sketch entities to be picked.
 
- |
-| **CONSTRUCTION** | 
+|
+| **CONSTRUCTION** |
 
 Allow only construction sketch entities to be picked.
 
- |
-| **NO_CONSTRUCTION** | 
+|
+| **NO_CONSTRUCTION** |
 
 Allow only non-construction geometric sketch entities to be picked.
 
- |
-| **SPOT** | 
+|
+| **SPOT** |
 
 Allow only spot sketch entities to be picked.
 
- |
-| **CIRCULAR** | 
+|
+| **CIRCULAR** |
 
 Allow only circular sketch entities to be picked.
 
- |
-| **INTERIOR** | 
+|
+| **INTERIOR** |
 
 Allow only interior entities to be picked.
 
- |
-| **EXTERIOR** | 
+|
+| **EXTERIOR** |
 
 Allow only exterior entities to be picked.
 
- |
-
+|
 
 **Flags for pickable entities.**
 
-| **VERTICES** | 
+| **VERTICES** |
 
 Allow vertices to be picked.
 
- |
-| **EDGES** | 
+|
+| **EDGES** |
 
 Allow edges to be picked.
 
- |
-| **FACES** | 
+|
+| **FACES** |
 
 Allow faces to be picked.
 
- |
-| **CELLS** | 
+|
+| **CELLS** |
 
 Allow cells to be picked.
 
- |
-| **STRINGERS** | 
+|
+| **STRINGERS** |
 
 Allow stringers to be picked.
 
- |
-| **SKINS** | 
+|
+| **SKINS** |
 
 Allow skins to be picked.
 
- |
-| **ELEMENT_EDGES** | 
+|
+| **ELEMENT_EDGES** |
 
 Allow element edges to be picked.
 
- |
-| **ELEMENT_FACES** | 
+|
+| **ELEMENT_FACES** |
 
 Allow element faces to be picked.
 
- |
-| **NODES** | 
+|
+| **NODES** |
 
 Allow nodes to be picked.
 
- |
-| **ELEMENTS** | 
+|
+| **ELEMENTS** |
 
 Allow elements to be picked.
 
- |
-| **INSTANCES** | 
+|
+| **INSTANCES** |
 
 Allow part instances in the model database to be picked.
 
- |
-| **MAX_DIMENSION** | 
+|
+| **MAX_DIMENSION** |
 
 Allow picking only objects of the highest dimension (1D, 2D, 3D).
 
- |
-| **REFERENCE_POINTS** | 
+|
+| **REFERENCE_POINTS** |
 
 Allow reference points to be picked.
 
- |
-| **INTERESTING_POINTS** | 
+|
+| **INTERESTING_POINTS** |
 
 Allow interesting points to be picked.
 
- |
-| **DATUM_POINTS** | 
+|
+| **DATUM_POINTS** |
 
 Allow datum points to be picked.
 
- |
-| **DATUM_AXES** | 
+|
+| **DATUM_AXES** |
 
 Allow datum axes to be picked.
 
- |
-| **DATUM_PLANES** | 
+|
+| **DATUM_PLANES** |
 
 Allow datsum planes be picked.
 
- |
-| **DATUM_CSYS** | 
+|
+| **DATUM_CSYS** |
 
 Allow datum CSYS's to be picked.
 
- |
-| **REMOVABLE_EDGES** | 
+|
+| **REMOVABLE_EDGES** |
 
 Allow edges to be removed from face selections.
 
- |
-| **FEATURES** | 
+|
+| **FEATURES** |
 
 Allow features to be picked.
 
- |
-| **SKETCH_VERTICES** | 
+|
+| **SKETCH_VERTICES** |
 
 Allow sketch vertices to be picked.
 
- |
-| **SKETCH_GEOMETRIES** | 
+|
+| **SKETCH_GEOMETRIES** |
 
 Allow sketch geometries to be picked.
 
- |
-| **SKETCH_DIMENSIONS** | 
+|
+| **SKETCH_DIMENSIONS** |
 
 Allow sketch dimensions to be picked.
 
- |
-| **SKETCH_CONSTRAINTS** | 
+|
+| **SKETCH_CONSTRAINTS** |
 
 Allow sketch constraints to be picked.
 
- |
-| **SKETCH_COORDINATES** | 
+|
+| **SKETCH_COORDINATES** |
 
 Allow sketch coordinates to be picked must add keyin.
 
- |
-| **SKIN_ELEMENTS** | 
+|
+| **SKIN_ELEMENTS** |
 
 Allow elements on skins to be picked.
 
- |
-| **STRINGER_ELEMENTS** | 
+|
+| **STRINGER_ELEMENTS** |
 
 Allow elements on stringers to be picked.
 
- |
-| **POINTS** | 
+|
+| **POINTS** |
 
 Allow all types of points to be picked.
 
- |
-| **LINES** | 
+|
+| **LINES** |
 
 Allow all types of lines to be picked.
 
- |
-| **PLANES** | 
+|
+| **PLANES** |
 
 Allow all types of planes to be picked.
 
- |
-| **XY_POINT** | 
+|
+| **XY_POINT** |
 
 Allow picking of XY coordinates from an XY plot.
 
- |
-| **XY_COORDINATE** | 
+|
+| **XY_COORDINATE** |
 
 Allow picking of XY coordinates from an XY plot, with the option to type in XY values.
 
- |
-
+|
 
 **Flags for the command sequence style of the picked items.**
 
-| **TUPLE** | 
+| **TUPLE** |
 
 Specify pick as a comma separated tuple of single items.
 
- |
-| **ARRAY** | 
+|
+| **ARRAY** |
 
 Specify pick as a plus separated sequence items.
 
- |
+|
 
-
-
- |
+|

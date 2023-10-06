@@ -1,4 +1,9 @@
-"""Message maps are used by classes derived from FXObject (which includes most GUI classes) to route messages sent to the object to a message handling method. A typical use might be to route a message from a button in a dialog to one of the dialog's methods so that some action is taken when the button is pressed."""
+"""Message maps are used by classes derived from FXObject (which includes most GUI classes) to route messages
+sent to the object to a message handling method.
+
+A typical use might be to route a message from a button in a dialog to one of the dialog's methods so that
+some action is taken when the button is pressed.
+"""
 
 from __future__ import annotations
 

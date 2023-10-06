@@ -10,7 +10,7 @@ from .FXWindow import FXWindow
 
 
 class AFXDialog(FXDialogBox):
-    """AFXDialog"""
+    """AFXDialog."""
 
     def __init__(
         self,
@@ -55,10 +55,17 @@ class AFXDialog(FXDialogBox):
         """
 
     def bailout(self):
-        """Performs checks to determine whether it is OK to cancel the dialog box. The implementaton of this class always returns True, and the derived class should reimplement this method to perform specific checks. Reimplemented in AFXDataDialog."""
+        """Performs checks to determine whether it is OK to cancel the dialog box.
+
+        The implementaton of this class always returns True, and the derived class should reimplement this
+        method to perform specific checks. Reimplemented in AFXDataDialog.
+        """
 
     def create(self):
-        """Creates the dialog box. Reimplemented from FXTopWindow."""
+        """Creates the dialog box.
+
+        Reimplemented from FXTopWindow.
+        """
 
     def createButton(self, parent: FXComposite, text: str, icon: FXIcon, tgt: FXObject, sel: int, opts: int):
         """Creates an action area button.
@@ -80,7 +87,8 @@ class AFXDialog(FXDialogBox):
         """
 
     def getActionButton(self, sel: int):
-        """Returns the action button with the specified message ID; returns 0 if none of the action buttons has the message ID.
+        """Returns the action button with the specified message ID; returns 0 if none of the action buttons has
+        the message ID.
 
         Parameters
         ----------
@@ -89,13 +97,20 @@ class AFXDialog(FXDialogBox):
         """
 
     def getUnpostHints(self):
-        """Returns the action that the poster should perform on this dialog box when it is unposted. Possible return values are: DIALOG_UNPOST_DELETE - delete the C++ dialog box object together with the associated window. (default) DIALOG_UNPOST_DESTROY - keep the C++ dialog box object, but destroy the associated window to release resources. DIALOG_UNPOST_NOTHING - do nothing."""
+        """Returns the action that the poster should perform on this dialog box when it is unposted.
+
+        Possible return values are: DIALOG_UNPOST_DELETE - delete the C++ dialog box object together with the associated window. (default) DIALOG_UNPOST_DESTROY - keep the C++ dialog box object, but destroy the associated window to release resources. DIALOG_UNPOST_NOTHING - do nothing.
+        """
 
     def hide(self):
-        """Unpost the dialog box. Reimplemented from FXTopWindow. Reimplemented in AFXManagerMenuDB, and AFXMessageDialog."""
+        """Unpost the dialog box.
+
+        Reimplemented from FXTopWindow. Reimplemented in AFXManagerMenuDB, and AFXMessageDialog.
+        """
 
     def onKeywordError(self, kwd: FXObject):
-        """Handles the error that occurs when the given keyword or target contains invalid contents. This method will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given keyword or target contains invalid contents. This method
+        will select the contents of the widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -104,7 +119,8 @@ class AFXDialog(FXDialogBox):
         """
 
     def onTableError(self, tableKwd: FXObject, row: int, col: int):
-        """Handles the error that occurs when the given table keyword or target contains an invalid element. This method will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given table keyword or target contains an invalid element.
+        This method will select the contents of the widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -117,7 +133,8 @@ class AFXDialog(FXDialogBox):
         """
 
     def onTupleError(self, tupleKwd: FXObject, index: int):
-        """Handles the error that occurs when the given tuple keyword or target contains an invalid element. This method will select the contents of the widget that has the keyword or target as its message target.
+        """Handles the error that occurs when the given tuple keyword or target contains an invalid element.
+        This method will select the contents of the widget that has the keyword or target as its message target.
 
         Parameters
         ----------
@@ -175,14 +192,17 @@ class AFXDialog(FXDialogBox):
         Parameters
         ----------
         hints : int
-
         """
 
     def show(self):
-        """Posts the dialog box. Reimplemented from FXTopWindow. Reimplemented in AFXFileDialog, and AFXMessageDialog."""
+        """Posts the dialog box.
+
+        Reimplemented from FXTopWindow. Reimplemented in AFXFileDialog, and AFXMessageDialog.
+        """
 
     def showModal(self, occludedWindow: FXWindow | None = None):
-        """Posts the dialog box as a modal dialog box. The dialog box is centered against the given widget or its owner widget if 0 is given.
+        """Posts the dialog box as a modal dialog box. The dialog box is centered against the given widget or
+        its owner widget if 0 is given.
 
         Parameters
         ----------

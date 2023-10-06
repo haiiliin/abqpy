@@ -4,26 +4,28 @@ This class provides the interface for creating an FXMenuCommand and performing v
 
 ### AFXMenuCommand
 
-###   
+###
 
-### AFXMenuCommand(owner, p, label, ic=None, tgt=None, sel=0)  
+### AFXMenuCommand(owner, p, label, ic=None, tgt=None, sel=0)
+
 ![](../IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the menu command. |
-| p | FXComposite |   | Parent widget. |
-| label | String |   | Label for the menu button. |
+| owner | AFXGuiObjectManager | | Creator of the menu command. |
+| p | FXComposite | | Parent widget. |
+| label | String | | Label for the menu button. |
 | ic | FXIcon | None | Menu button icon. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 
 ### getOwner
 
-###   
+###
 
-### getOwner()  
+### getOwner()
+
 ![](../IconsReference/butix_top_wline.png)
 
 Returns the owner of the menu command.

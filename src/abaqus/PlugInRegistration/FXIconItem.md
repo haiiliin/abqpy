@@ -2,62 +2,62 @@ Icon item
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxiconitem.png)
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Icon list styles**
 
-| **ICONLIST_EXTENDEDSELECT** | 
+| **ICONLIST_EXTENDEDSELECT** |
 
 Extended selection mode.
 
- |
-| **ICONLIST_SINGLESELECT** | 
+|
+| **ICONLIST_SINGLESELECT** |
 
 At most one selected item.
 
- |
-| **ICONLIST_BROWSESELECT** | 
+|
+| **ICONLIST_BROWSESELECT** |
 
 Always exactly one selected item.
 
- |
-| **ICONLIST_MULTIPLESELECT** | 
+|
+| **ICONLIST_MULTIPLESELECT** |
 
 Multiple selection mode.
 
- |
-| **ICONLIST_AUTOSIZE** | 
+|
+| **ICONLIST_AUTOSIZE** |
 
 Automatically size item spacing.
 
- |
-| **ICONLIST_DETAILED** | 
+|
+| **ICONLIST_DETAILED** |
 
 List mode.
 
- |
-| **ICONLIST\_MINI\_ICONS** | 
+|
+| **ICONLIST_MINI_ICONS** |
 
 Mini Icon mode.
 
- |
-| **ICONLIST\_BIG\_ICONS** | 
+|
+| **ICONLIST_BIG_ICONS** |
 
 Big Icon mode.
 
- |
-| **ICONLIST_ROWS** | 
+|
+| **ICONLIST_ROWS** |
 
 Row-wise mode.
 
- |
-| **ICONLIST_COLUMNS** | 
+|
+| **ICONLIST_COLUMNS** |
 
 Column-wise mode.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -79,7 +79,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

@@ -6,50 +6,55 @@ When the message handler method is called, it gets passed three arguments: the s
 
 Refer to the Abaqus GUI Toolkit User's Guide for more details.
 
-### FXMAPFUNC(object, messageType, messageId, method)  
+### FXMAPFUNC(object, messageType, messageId, method)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates an entry in the object's message map that will route a message to a method.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| object | FXObject |   | An instance of the class in which the message map entry is to be made. Typically this is "self". |
-| messageType | Int |   | An integer flag specifying the message type (e.g. SEL_COMMAND). |
-| messageId | Int |   | An integer specifying the message ID. |
-| method | Function |   | The method to which the message is to be routed. This method must be specified by including the class name (e.g. MyDB.myMethod). |
+| object | FXObject | | An instance of the class in which the message map entry is to be made. Typically this is "self". |
+| messageType | Int | | An integer flag specifying the message type (e.g. SEL_COMMAND). |
+| messageId | Int | | An integer specifying the message ID. |
+| method | Function | | The method to which the message is to be routed. This method must be specified by including the class name (e.g. MyDB.myMethod). |
 
-### FXMAPFUNCS(object, messageType, startMessageId, endMessageId, method)  
+### FXMAPFUNCS(object, messageType, startMessageId, endMessageId, method)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates multiple entries in the object's message map that will route messages to a method.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| object | FXObject |   | An instance of the class in which the message map entry is to be made. Typically this is "self". |
-| messageType | Int |   | An integer flag specifying the message type (e.g. SEL_COMMAND). |
-| startMessageId | Int |   | An integer specifying the starting message ID. |
-| endMessageId | Int |   | An integer specifying the ending message ID. |
-| method | Function |   | The method to which the message is to be routed. This method must be specified by including the class name (e.g. MyDB.myMethod). |
+| object | FXObject | | An instance of the class in which the message map entry is to be made. Typically this is "self". |
+| messageType | Int | | An integer flag specifying the message type (e.g. SEL_COMMAND). |
+| startMessageId | Int | | An integer specifying the starting message ID. |
+| endMessageId | Int | | An integer specifying the ending message ID. |
+| method | Function | | The method to which the message is to be routed. This method must be specified by including the class name (e.g. MyDB.myMethod). |
 
-### MKUINT(messageId, messageType)  
+### MKUINT(messageId, messageType)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates a message selector by combining a message ID and a message type.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| messageId | Int |   | An integer specifying the message ID. |
-| messageType | Int |   | An integer flag specifying the message type (e.g. SEL_COMMAND). |
+| messageId | Int | | An integer specifying the message ID. |
+| messageType | Int | | An integer flag specifying the message type (e.g. SEL_COMMAND). |
 
-### SELID(selector)  
+### SELID(selector)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the message ID from a message selector.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| selector | Int |   | A message selector. |
+| selector | Int | | A message selector. |
 
-### SELTYPE(selector)  
+### SELTYPE(selector)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the message type from a message selector.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| selector | Int |   | A message selector. |
+| selector | Int | | A message selector. |

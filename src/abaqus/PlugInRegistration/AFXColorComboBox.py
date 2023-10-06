@@ -9,7 +9,12 @@ from .FXPacker import FXPacker
 
 
 class AFXColorComboBox(FXPacker):
-    """This class contains a label that precedes a color well, which allows the user to bring up a color dialog box by double clicking. When connected to an AFXStringKeyword, this widget will assign the value of the button's current color to the keyword in hex format (for example, "FF0000")."""
+    """This class contains a label that precedes a color well, which allows the user to bring up a color dialog
+    box by double clicking.
+
+    When connected to an AFXStringKeyword, this widget will assign the value of the button's current color
+    to the keyword in hex format (for example, "FF0000").
+    """
 
     def AFXColorButton(
         self,
@@ -60,13 +65,22 @@ class AFXColorComboBox(FXPacker):
         """
 
     def create(self):
-        """Creates the color button widget. Reimplemented from FXComposite."""
+        """Creates the color button widget.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the color button. Reimplemented from FXWindow."""
+        """Disables the color button.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the color button. Reimplemented from FXWindow."""
+        """Enables the color button.
+
+        Reimplemented from FXWindow.
+        """
 
     def getHelpText(self):
         """Returns the status line help text."""
@@ -89,7 +103,6 @@ class AFXColorComboBox(FXPacker):
         Parameters
         ----------
         text : str
-
         """
 
     def setLabelFont(self, fnt: FXFont):
@@ -98,7 +111,6 @@ class AFXColorComboBox(FXPacker):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setLabelText(self, txt: str):
@@ -107,7 +119,6 @@ class AFXColorComboBox(FXPacker):
         Parameters
         ----------
         txt : str
-
         """
 
     def setRGBA(self, clr: FXColor):
@@ -116,7 +127,6 @@ class AFXColorComboBox(FXPacker):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setTipText(self, text: str):
@@ -125,5 +135,4 @@ class AFXColorComboBox(FXPacker):
         Parameters
         ----------
         text : str
-
         """

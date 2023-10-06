@@ -10,54 +10,62 @@ This class is the base class for steps used in a GUI procedure.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxstep.png)
 
-### AFXStep(prompt, owner)  
+### AFXStep(prompt, owner)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| prompt | String |   | Prompt. |
-| owner | AFXProcedure |   | Owner. |
+| prompt | String | | Prompt. |
+| owner | AFXProcedure | | Owner. |
 
-### onCancel()  
+### onCancel()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is cancelled.
 
 Reimplemented in AFXCreateSketchStep, AFXDialogStep, AFXEditSketchStep, AFXOrderedPickStep, and AFXPickStep.
 
-### onDone()  
+### onDone()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step completes.
 
-### onExecute()  
+### onExecute()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called to execute the steps returned by getFirstStep and getNextStep.
 
 Reimplemented in AFXCreateSketchStep, AFXDialogStep, AFXEditSketchStep, AFXOrderedPickStep, and AFXPickStep.
 
-### onResume()  
+### onResume()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is resumed.
 
 Reimplemented in AFXCreateSketchStep, AFXDialogStep, AFXEditSketchStep, and AFXPickStep.
 
-### onSuspend()  
+### onSuspend()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is suspended.
 
 Reimplemented in AFXCreateSketchStep, AFXDialogStep, AFXEditSketchStep, and AFXPickStep.
 
-### onValueChanged()  
+### onValueChanged()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step's value changes.
 
-### reset()  
+### reset()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Allows a step to reset any of its data (if needed) when looping.
@@ -84,7 +92,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

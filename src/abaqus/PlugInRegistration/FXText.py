@@ -8,7 +8,7 @@ from .FXScrollArea import FXScrollArea
 
 
 class FXText(FXScrollArea):
-    """Multiline text widget"""
+    """Multiline text widget."""
 
     def __init__(
         self,
@@ -40,7 +40,6 @@ class FXText(FXScrollArea):
         w : int
 
         h : int
-
         """
 
     def appendText(self, text: str, n: int, notify: bool = False):
@@ -53,23 +52,37 @@ class FXText(FXScrollArea):
         n : int
 
         notify : bool
-
         """
 
     def canFocus(self):
-        """Returns True because a text widget can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a text widget can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXComposite."""
+        """Create server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXComposite."""
+        """Detach server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disable the text widget. Reimplemented from FXWindow."""
+        """Disable the text widget.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enable the text widget. Reimplemented from FXWindow."""
+        """Enable the text widget.
+
+        Reimplemented from FXWindow.
+        """
 
     def getBarColor(self):
         """Return bar color."""
@@ -83,14 +96,19 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def getContentHeight(self):
-        """Get default height. Reimplemented from FXScrollArea."""
+        """Get default height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getContentWidth(self):
-        """Get default width. Reimplemented from FXScrollArea."""
+        """Get default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getCursorCol(self):
         """Return cursor row, i.e. indent position."""
@@ -105,10 +123,16 @@ class FXText(FXScrollArea):
         """Return cursor row."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXScrollArea."""
+        """Return default height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXScrollArea."""
+        """Return default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getFont(self):
         """Return text font."""
@@ -139,7 +163,6 @@ class FXText(FXScrollArea):
         x : int
 
         y : int
-
         """
 
     def getSelBackColor(self):
@@ -162,7 +185,6 @@ class FXText(FXScrollArea):
         text : str
 
         n : int
-
         """
 
     def getTextColor(self):
@@ -189,7 +211,6 @@ class FXText(FXScrollArea):
         n : int
 
         notify : bool
-
         """
 
     def isEditable(self):
@@ -204,7 +225,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def killSelection(self, notify: bool = False):
@@ -213,7 +233,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         notify : bool
-
         """
 
     def lineEnd(self, pos: int):
@@ -222,7 +241,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def lineStart(self, pos: int):
@@ -231,7 +249,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def makePositionVisible(self, pos: int):
@@ -240,7 +257,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def moveContents(self, x: int, y: int):
@@ -251,7 +267,6 @@ class FXText(FXScrollArea):
         x : int
 
         y : int
-
         """
 
     def nextLine(self, pos: int, nl: int = 1):
@@ -262,7 +277,6 @@ class FXText(FXScrollArea):
         pos : int
 
         nl : int
-
         """
 
     def nextRow(self, pos: int, nr: int = 1):
@@ -273,7 +287,6 @@ class FXText(FXScrollArea):
         pos : int
 
         nr : int
-
         """
 
     def position(self, x: int, y: int, w: int, h: int):
@@ -288,7 +301,6 @@ class FXText(FXScrollArea):
         w : int
 
         h : int
-
         """
 
     def prevLine(self, pos: int, nl: int = 1):
@@ -299,7 +311,6 @@ class FXText(FXScrollArea):
         pos : int
 
         nl : int
-
         """
 
     def prevRow(self, pos: int, nr: int = 1):
@@ -310,11 +321,13 @@ class FXText(FXScrollArea):
         pos : int
 
         nr : int
-
         """
 
     def recalc(self):
-        """Need to recalculate size. Reimplemented from FXWindow."""
+        """Need to recalculate size.
+
+        Reimplemented from FXWindow.
+        """
 
     def removeText(self, pos: int, n: int, notify: bool = False):
         """Remove n characters of text at position pos from the buffer.
@@ -326,7 +339,6 @@ class FXText(FXScrollArea):
         n : int
 
         notify : bool
-
         """
 
     def replaceText(self, pos: int, m: int, text: str, n: int, notify: bool = False):
@@ -343,7 +355,6 @@ class FXText(FXScrollArea):
         n : int
 
         notify : bool
-
         """
 
     def resize(self, w: int, h: int):
@@ -354,7 +365,6 @@ class FXText(FXScrollArea):
         w : int
 
         h : int
-
         """
 
     def rowEnd(self, pos: int):
@@ -363,7 +373,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def rowStart(self, pos: int):
@@ -372,7 +381,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def setBarColor(self, clr: FXColor):
@@ -381,7 +389,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setBarColumns(self, cols: int):
@@ -390,7 +397,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         cols : int
-
         """
 
     def setBottomLine(self, pos: int):
@@ -399,7 +405,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def setCursorCol(self, col: int, notify: bool = False):
@@ -410,7 +415,6 @@ class FXText(FXScrollArea):
         col : int
 
         notify : bool
-
         """
 
     def setCursorColor(self, clr: FXColor):
@@ -419,7 +423,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setCursorPos(self, pos: int, notify: bool = False):
@@ -430,7 +433,6 @@ class FXText(FXScrollArea):
         pos : int
 
         notify : bool
-
         """
 
     def setCursorRow(self, row: int, notify: bool = False):
@@ -441,7 +443,6 @@ class FXText(FXScrollArea):
         row : int
 
         notify : bool
-
         """
 
     def setEditable(self, edit: bool = True):
@@ -450,7 +451,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         edit : bool
-
         """
 
     def setFont(self, fnt: FXFont):
@@ -459,7 +459,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setMarginBottom(self, pb: int):
@@ -468,7 +467,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pb : int
-
         """
 
     def setMarginLeft(self, pl: int):
@@ -477,7 +475,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pl : int
-
         """
 
     def setMarginRight(self, pr: int):
@@ -486,7 +483,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pr : int
-
         """
 
     def setMarginTop(self, pt: int):
@@ -495,7 +491,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pt : int
-
         """
 
     def setModified(self, mod: bool = True):
@@ -504,7 +499,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         mod : bool
-
         """
 
     def setNumberColor(self, clr: FXColor):
@@ -513,7 +507,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setSelBackColor(self, clr: FXColor):
@@ -522,7 +515,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setSelection(self, pos: int, len: int, notify: bool = False):
@@ -535,7 +527,6 @@ class FXText(FXScrollArea):
         len : int
 
         notify : bool
-
         """
 
     def setSelTextColor(self, clr: FXColor):
@@ -544,7 +535,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setText(self, text: str, n: int, notify: bool = False):
@@ -557,7 +547,6 @@ class FXText(FXScrollArea):
         n : int
 
         notify : bool
-
         """
 
     def setTextColor(self, clr: FXColor):
@@ -566,7 +555,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setTopLine(self, pos: int):
@@ -575,7 +563,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         pos : int
-
         """
 
     def setVisCols(self, cols: int):
@@ -584,7 +571,6 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         cols : int
-
         """
 
     def setVisRows(self, rows: int):
@@ -593,5 +579,4 @@ class FXText(FXScrollArea):
         Parameters
         ----------
         rows : int
-
         """

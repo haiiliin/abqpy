@@ -45,14 +45,12 @@ def getInput(prompt: str, default: str = ""):
 @abaqus_function_doc
 @overload
 def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
-    """This method is used to obtain multiple inputs from a user from a dialog box. The method
-    displays a modal dialog box with a column of text fields prefaced by the specified
-    labels. The user enters data in the text fields or accepts the optional default values
-    that are displayed in the text field. When the user clicks the OK button, the getInputs
-    method reads the data from the dialog box and closes the dialog box.
-    Note:You cannot use a script that contains getInputs if you are running the script from
-    the command line and passing the script name to the command line options **-start**,
-    **-script**, **-replay**, or **-noGUI**.
+    """This method is used to obtain multiple inputs from a user from a dialog box. The method displays a modal
+    dialog box with a column of text fields prefaced by the specified labels. The user enters data in the text
+    fields or accepts the optional default values that are displayed in the text field. When the user clicks the
+    OK button, the getInputs method reads the data from the dialog box and closes the dialog box. Note:You
+    cannot use a script that contains getInputs if you are running the script from the command line and passing
+    the script name to the command line options **-start**, **-script**, **-replay**, or **-noGUI**.
 
     .. note::
         This function can be accessed by::

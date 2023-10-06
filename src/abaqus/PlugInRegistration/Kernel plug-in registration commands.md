@@ -7,8 +7,7 @@ toolset=getAFXApp().getAFXMainWindow().getPluginToolset()
 
 ![](../IconsReference/butix_top_wline.png)
 
-registerKernelMenuButton(...)
------------------------------
+## registerKernelMenuButton(...)
 
 This method registers a kernel plug-in in the **Plug-ins** menu.
 
@@ -66,8 +65,7 @@ None.
 
 ![](../IconsReference/butix_top_wline.png)
 
-registerKernelToolButton(...)
------------------------------
+## registerKernelToolButton(...)
 
 Registers a kernel plug-in in a toolbox.
 
@@ -127,6 +125,4 @@ None
 
 None.
 
-
-
- |
+|

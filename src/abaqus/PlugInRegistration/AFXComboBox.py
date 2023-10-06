@@ -11,7 +11,11 @@ from .FXPacker import FXPacker
 
 
 class AFXComboBox(FXPacker, AFXDataComponent):
-    """This class implements a labeled combo box. It allows the user to select entries from a drop-down list. Each item has associated data set as integers as items are added."""
+    """This class implements a labeled combo box.
+
+    It allows the user to select entries from a drop-down list. Each item has associated data set as
+    integers as items are added.
+    """
 
     def __init__(
         self,
@@ -82,13 +86,22 @@ class AFXComboBox(FXPacker, AFXDataComponent):
         """Removes all items from the list."""
 
     def create(self):
-        """Creates the combo box. Reimplemented from FXComposite."""
+        """Creates the combo box.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the combo box. Reimplemented from FXWindow."""
+        """Disables the combo box.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the combo box. Reimplemented from FXWindow."""
+        """Enables the combo box.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
         """Returns the state of the check button or the radio button."""
@@ -114,7 +127,6 @@ class AFXComboBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         data : Any
-
         """
 
     def getItemIndexForFloat(self, val: float):
@@ -123,7 +135,6 @@ class AFXComboBox(FXPacker, AFXDataComponent):
         Parameters
         ----------
         val : float
-
         """
 
     def getItemProvider(self):
@@ -324,7 +335,8 @@ class AFXComboBox(FXPacker, AFXDataComponent):
         """
 
     def setMaxVisible(self, maxVis: int):
-        """Sets the maximum number of visible items. The combo box will show up to the given maximum number of items in its list. If the combo box has more items, its list will show a scroll bar.
+        """Sets the maximum number of visible items. The combo box will show up to the given maximum number of
+        items in its list. If the combo box has more items, its list will show a scroll bar.
 
         Parameters
         ----------
@@ -333,7 +345,8 @@ class AFXComboBox(FXPacker, AFXDataComponent):
         """
 
     def setNumColumns(self, cols: int):
-        """Sets the number of columns in the combo box; passing zero will cause the combo box to always have the number of columns equal to the maximum item length.
+        """Sets the number of columns in the combo box; passing zero will cause the combo box to always have the
+        number of columns equal to the maximum item length.
 
         Parameters
         ----------

@@ -15,11 +15,16 @@ class FXMenuSeparator(FXWindow):
         p : FXComposite
 
         opts : int
-
         """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXWindow."""
+        """Return default height.
+
+        Reimplemented from FXWindow.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXWindow."""
+        """Return default width.
+
+        Reimplemented from FXWindow.
+        """

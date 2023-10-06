@@ -5,7 +5,7 @@ from .FXFrame import FXFrame
 
 
 class FXVerticalSeparator(FXFrame):
-    """Vertical separator"""
+    """Vertical separator."""
 
     def __init__(
         self,
@@ -40,11 +40,16 @@ class FXVerticalSeparator(FXFrame):
         pt : int
 
         pb : int
-
         """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXFrame."""
+        """Return default height.
+
+        Reimplemented from FXFrame.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXFrame."""
+        """Return default width.
+
+        Reimplemented from FXFrame.
+        """

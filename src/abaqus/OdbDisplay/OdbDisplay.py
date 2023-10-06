@@ -277,9 +277,9 @@ class OdbDisplay:
     def moveCameraToCsys(self):
         """This method specifies a new position for the camera.
 
-        It is available only when
-        **movieMode** = ON (in the View object). The new camera position is the origin of the
-        coordinate system specified by the **cameraCsysName** member of the BasicOptions object.
+        It is available only when **movieMode** = ON (in the View object). The new camera position is the
+        origin of the coordinate system specified by the **cameraCsysName** member of the BasicOptions
+        object.
         """
         ...
 

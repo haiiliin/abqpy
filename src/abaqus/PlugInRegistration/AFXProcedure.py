@@ -19,11 +19,13 @@ class AFXProcedure(AFXGuiMode):
         owner : AFXGuiObjectManager
             Owner (a module or a toolset) of the procedure.
         type : typeEnum
-
         """
 
     def activate(self):
-        """Activates the mode. Reimplemented from AFXGuiMode."""
+        """Activates the mode.
+
+        Reimplemented from AFXGuiMode.
+        """
 
     def cancel(self, tgt: FXObject | None = None, msg: int = 0):
         """Tries to cancel the procedure depending on checkCancel results.
@@ -40,16 +42,26 @@ class AFXProcedure(AFXGuiMode):
         """Returns 1 if ok to backup else returns 0."""
 
     def checkCancel(self):
-        """Returns BAILOUT_NOTOK, BAILOUT_OK, BAILOUT_WIP (writes to the message area), or BAILOUT_SAVE (use the 3 button save dialog box)."""
+        """Returns BAILOUT_NOTOK, BAILOUT_OK, BAILOUT_WIP (writes to the message area), or BAILOUT_SAVE (use the
+        3 button save dialog box)."""
 
     def commit(self):
-        """Commits the procedure when the current dialog box calls either done or value changed. Implements AFXGuiMode."""
+        """Commits the procedure when the current dialog box calls either done or value changed.
+
+        Implements AFXGuiMode.
+        """
 
     def continueMode(self):
-        """Used to get the next step in the mode. Implements AFXGuiMode."""
+        """Used to get the next step in the mode.
+
+        Implements AFXGuiMode.
+        """
 
     def deactivate(self):
-        """deactivates the mode. Reimplemented from AFXGuiMode."""
+        """Deactivates the mode.
+
+        Reimplemented from AFXGuiMode.
+        """
 
     def getCurrentStep(self):
         """Returns the current step."""
@@ -58,7 +70,8 @@ class AFXProcedure(AFXGuiMode):
         """Returns the first step to be executed in the procedure."""
 
     def getLoopStep(self):
-        """Returns the step to which the procedure should loop back after processing its commands; if zero is returned (the default behavior) the procedure will not loop."""
+        """Returns the step to which the procedure should loop back after processing its commands; if zero is
+        returned (the default behavior) the procedure will not loop."""
 
     def getNextStep(self, previousStep: AFXStep):
         """Returns the next step to be executed; if zero is returned the procedure will process its commands.
@@ -73,7 +86,8 @@ class AFXProcedure(AFXGuiMode):
         """Returns the number of steps in the step stack."""
 
     def handleException(self, exc: nex_Exception):
-        """This method is called if an error occurs while issuing commands. It can be reimplemented in derived classes to perform special error handling.
+        """This method is called if an error occurs while issuing commands. It can be reimplemented in derived
+        classes to perform special error handling.
 
         Parameters
         ----------
@@ -169,4 +183,8 @@ class AFXProcedure(AFXGuiMode):
         """
 
     def verifyCurrentKeywordValues(self):
-        """Checks whether keywords of active commands for the current dialog box contain valid data and, if not, posts a dialog box with an error message. Reimplemented from AFXGuiMode."""
+        """Checks whether keywords of active commands for the current dialog box contain valid data and, if not,
+        posts a dialog box with an error message.
+
+        Reimplemented from AFXGuiMode.
+        """

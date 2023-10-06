@@ -1,9 +1,10 @@
 from __future__ import annotations
+
 from .FXObject import FXObject
 
 
 class AFXColumnItems(FXObject):
-    """Abaqus"""
+    """Abaqus."""
 
     def __init__(self, referenceColumn: int, tgt: FXObject | None = None, sel: int = 0, opts: int = 0):
         """Constructor for use with a keyword.

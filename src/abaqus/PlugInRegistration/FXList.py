@@ -9,7 +9,7 @@ from .FXScrollArea import FXScrollArea
 
 
 class FXList(FXScrollArea):
-    """List Widget"""
+    """List Widget."""
 
     def __init__(
         self,
@@ -44,7 +44,6 @@ class FXList(FXScrollArea):
         w : int
 
         h : int
-
         """
 
     def appendItem(self, item: FXListItem, notify: bool = False):
@@ -55,11 +54,13 @@ class FXList(FXScrollArea):
         item : FXListItem
 
         notify : bool
-
         """
 
     def canFocus(self):
-        """List widget can receive focus. Reimplemented from FXWindow."""
+        """List widget can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def clearItems(self, notify: bool = False):
         """Remove all items from list.
@@ -67,11 +68,13 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         notify : bool
-
         """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXComposite."""
+        """Create server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def deselectItem(self, index: int, notify: bool = False):
         """Deselect item.
@@ -81,37 +84,51 @@ class FXList(FXScrollArea):
         index : int
 
         notify : bool
-
         """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXComposite."""
+        """Detach server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def findItem(self, text: str, start: int = -1):
-        """Search items for item by name, starting from start item; the flags argument controls the search direction, and case sensitivity.
+        """Search items for item by name, starting from start item; the flags argument controls the search
+        direction, and case sensitivity.
 
         Parameters
         ----------
         text : str
 
         start : int
-
         """
 
     def getContentHeight(self):
-        """Return content height. Reimplemented from FXScrollArea."""
+        """Return content height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getContentWidth(self):
-        """Compute and return content width. Reimplemented from FXScrollArea."""
+        """Compute and return content width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getCurrentItem(self):
         """Return current item, if any."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXScrollArea. Reimplemented in AFXList."""
+        """Return default height.
+
+        Reimplemented from FXScrollArea. Reimplemented in AFXList.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXScrollArea."""
+        """Return default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getItemData(self, index: int):
         """Return item user-data pointer.
@@ -119,7 +136,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def getItemHeight(self, index: int):
@@ -128,7 +144,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def getItemIcon(self, index: int):
@@ -137,7 +152,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def getItemText(self, index: int):
@@ -146,7 +160,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def getItemWidth(self, index: int):
@@ -155,7 +168,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def getListStyle(self):
@@ -177,7 +189,6 @@ class FXList(FXScrollArea):
         item : FXListItem
 
         notify : bool
-
         """
 
     def isItemSelected(self, index: int):
@@ -186,7 +197,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def isItemVisible(self, index: int):
@@ -195,7 +205,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def killSelection(self, notify: bool = False):
@@ -204,7 +213,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         notify : bool
-
         """
 
     def makeItemVisible(self, index: int):
@@ -213,11 +221,13 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def recalc(self):
-        """Recalculate layout. Reimplemented from FXWindow."""
+        """Recalculate layout.
+
+        Reimplemented from FXWindow.
+        """
 
     def removeItem(self, index: int, notify: bool = False):
         """Remove item from list.
@@ -227,7 +237,6 @@ class FXList(FXScrollArea):
         index : int
 
         notify : bool
-
         """
 
     def replaceItem(self, index: int, item: FXListItem, notify: bool = False):
@@ -240,7 +249,6 @@ class FXList(FXScrollArea):
         item : FXListItem
 
         notify : bool
-
         """
 
     def retrieveItem(self, index: int):
@@ -249,7 +257,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         index : int
-
         """
 
     def selectItem(self, index: int, notify: bool = False):
@@ -260,7 +267,6 @@ class FXList(FXScrollArea):
         index : int
 
         notify : bool
-
         """
 
     def setCurrentItem(self, index: int, notify: bool = False):
@@ -271,7 +277,6 @@ class FXList(FXScrollArea):
         index : int
 
         notify : bool
-
         """
 
     def setItemData(self, index: int, ptr: str):
@@ -282,7 +287,6 @@ class FXList(FXScrollArea):
         index : int
 
         ptr : str
-
         """
 
     def setItemIcon(self, index: int, icon: FXIcon):
@@ -293,7 +297,6 @@ class FXList(FXScrollArea):
         index : int
 
         icon : FXIcon
-
         """
 
     def setItemText(self, index: int, text: str):
@@ -304,7 +307,6 @@ class FXList(FXScrollArea):
         index : int
 
         text : str
-
         """
 
     def setListStyle(self, style: int):
@@ -313,7 +315,6 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         style : int
-
         """
 
     def setNumVisible(self, nvis: int):
@@ -322,5 +323,4 @@ class FXList(FXScrollArea):
         Parameters
         ----------
         nvis : int
-
         """

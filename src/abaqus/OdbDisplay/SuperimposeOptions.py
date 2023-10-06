@@ -28,14 +28,13 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class SuperimposeOptions(DGSuperimposeOptions):
-    """The SuperimposeOptions object stores values and attributes associated with the
-    undeformed shape when the display contains both the deformed shape and the undeformed
-    shape. The SuperimposeOptions object has no constructor command. Abaqus creates a
-    *defaultOdbDisplay.superimposeOptions* member when you import the Visualization module.
-    Abaqus creates a **superimposeOptions** member when it creates the OdbDisplay object,
-    using the values from *defaultOdbDisplay.superimposeOptions*. Abaqus creates the
-    **odbDisplay** member when a viewport is created, using the values from
-    **defaultOdbDisplay**.
+    """The SuperimposeOptions object stores values and attributes associated with the undeformed shape when the
+    display contains both the deformed shape and the undeformed shape. The SuperimposeOptions object has no
+    constructor command. Abaqus creates a *defaultOdbDisplay.superimposeOptions* member when you import the
+    Visualization module. Abaqus creates a **superimposeOptions** member when it creates the OdbDisplay object,
+    using the values from *defaultOdbDisplay.superimposeOptions*. Abaqus creates the **odbDisplay** member when
+    a viewport is created, using the values from **defaultOdbDisplay**.
+
     SuperimposeOptions objects are accessed in one of two ways:
     - The default superimpose options. These settings are used as defaults when other
     **superimposeOptions** members are created. These settings can be set to customize user

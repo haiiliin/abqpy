@@ -2,55 +2,57 @@ A tab item is placed in a tab bar or tab book. When selected, the tab item sends
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxtabitem.png)
 
-### FXTabItem(p, text, ic=None, opts=TAB\_TOP\_NORMAL, x=0, y=0, w=0, h=0, pl=6, pr=6, pt=DEFAULT\_PAD, pb=DEFAULT\_PAD)  
+### FXTabItem(p, text, ic=None, opts=TAB_TOP_NORMAL, x=0, y=0, w=0, h=0, pl=6, pr=6, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct a tab item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXTabBar |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| opts | Int | TAB\_TOP\_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | 6 |   |
-| pr | Int | 6 |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXTabBar | | |
+| text | String | | |
+| ic | FXIcon | None | |
+| opts | Int | TAB_TOP_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
+| pl | Int | 6 | |
+| pr | Int | 6 | |
+| pt | Int | DEFAULT_PAD | |
+| pb | Int | DEFAULT_PAD | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True because a tab item can receive focus.
 
 Reimplemented from FXWindow.
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Tab Item orientations which affect border**
 
-| **TAB_TOP** | 
+| **TAB_TOP** |
 
 Top side tabs.
 
- |
-| **TAB_LEFT** | 
+|
+| **TAB_LEFT** |
 
 Left side tabs.
 
- |
-| **TAB_RIGHT** | 
+|
+| **TAB_RIGHT** |
 
 Right side tabs.
 
- |
-| **TAB_BOTTOM** | 
+|
+| **TAB_BOTTOM** |
 
 Bottom side tabs.
 
- |
+|

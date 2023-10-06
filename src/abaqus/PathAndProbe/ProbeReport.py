@@ -10,11 +10,10 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class ProbeReport:
-    """The ProbeReport object is used to store settings associated with tabular reports of
-    probe data. The ProbeReport object has no constructor. Abaqus creates the
-    **defaultProbeReport** and the **probeReport** members when you import the Visualization
-    module. When probing is initiated for the first time, the values in the **probeReport**
-    member are initialized using the values from the **defaultProbeReport** member.
+    """The ProbeReport object is used to store settings associated with tabular reports of probe data. The
+    ProbeReport object has no constructor. Abaqus creates the **defaultProbeReport** and the **probeReport**
+    members when you import the Visualization module. When probing is initiated for the first time, the values
+    in the **probeReport** member are initialized using the values from the **defaultProbeReport** member.
 
     .. note::
         This object can be accessed by::

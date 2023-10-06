@@ -45,26 +45,40 @@ class FXMDIChild(FXComposite):
         w : int
 
         h : int
-
         """
 
     def canFocus(self):
-        """MDI Child can receive focus. Reimplemented from FXWindow."""
+        """MDI Child can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def contentWindow(self):
         """Return content window."""
 
     def create(self):
-        """Create window. Reimplemented from FXComposite."""
+        """Create window.
+
+        Reimplemented from FXComposite.
+        """
 
     def detach(self):
-        """Detach window. Reimplemented from FXComposite."""
+        """Detach window.
+
+        Reimplemented from FXComposite.
+        """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXComposite."""
+        """Return default height.
+
+        Reimplemented from FXComposite.
+        """
 
     def getDefaultWidth(self):
-        """Compute default size. Reimplemented from FXComposite."""
+        """Compute default size.
+
+        Reimplemented from FXComposite.
+        """
 
     def getFont(self):
         """Get title font."""
@@ -105,7 +119,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         notify : bool
-
         """
 
     def minimize(self, notify: bool = False):
@@ -114,7 +127,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         notify : bool
-
         """
 
     def move(self, x: int, y: int):
@@ -125,7 +137,6 @@ class FXMDIChild(FXComposite):
         x : int
 
         y : int
-
         """
 
     def position(self, x: int, y: int, w: int, h: int):
@@ -140,7 +151,6 @@ class FXMDIChild(FXComposite):
         w : int
 
         h : int
-
         """
 
     def resize(self, w: int, h: int):
@@ -151,7 +161,6 @@ class FXMDIChild(FXComposite):
         w : int
 
         h : int
-
         """
 
     def restore(self, notify: bool = False):
@@ -160,7 +169,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         notify : bool
-
         """
 
     def setFont(self, fnt: FXFont):
@@ -169,7 +177,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setHiliteColor(self, clr: FXColor):
@@ -178,7 +185,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setIconX(self, x: int):
@@ -187,7 +193,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         x : int
-
         """
 
     def setNormalX(self, x: int):
@@ -196,7 +201,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         x : int
-
         """
 
     def setTitle(self, name: str):
@@ -205,7 +209,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         name : str
-
         """
 
     def setWindowIcon(self, icon: FXIcon):
@@ -214,7 +217,6 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         icon : FXIcon
-
         """
 
     def setWindowMenu(self, menu: FXPopup):
@@ -223,5 +225,4 @@ class FXMDIChild(FXComposite):
         Parameters
         ----------
         menu : FXPopup
-
         """

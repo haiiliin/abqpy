@@ -746,11 +746,11 @@ class PartFeature(BaseFeature):
         pitch: float | None = None,
         flipExtrudeDirection: Boolean = OFF,
     ) -> "Feature":
-        """This method creates an additional Feature object by extruding the given
-        ConstrainedSketch object by the given depth and cutting away material in the solid and
-        shell regions of the part. The ConstrainedSketch object must define a closed profile.
-        The CutExtrude method creates a blind cut (using **depth**), an up-to-face cut (using
-        **upToFace**), or a through-all cut (if **depth** and **upToFace** are not specified).
+        """This method creates an additional Feature object by extruding the given ConstrainedSketch object by
+        the given depth and cutting away material in the solid and shell regions of the part. The
+        ConstrainedSketch object must define a closed profile. The CutExtrude method creates a blind cut (using
+        **depth**), an up-to-face cut (using **upToFace**), or a through-all cut (if **depth** and **upToFace**
+        are not specified).
 
         .. note::
             This function can be accessed by::

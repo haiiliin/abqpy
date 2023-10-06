@@ -21,10 +21,9 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class DGCommonOptions:
-    """The DGCommonOptions object stores values and attributes that are common to all plot
-    states. The DGCommonOptions object has no constructor command. Abaqus creates an
-    *odbDisplayOptions.commonOptions* member when a display group instance is created, using
-    values from *odbDisplay.commonOptions*.
+    """The DGCommonOptions object stores values and attributes that are common to all plot states. The
+    DGCommonOptions object has no constructor command. Abaqus creates an *odbDisplayOptions.commonOptions*
+    member when a display group instance is created, using values from *odbDisplay.commonOptions*.
 
     .. note::
         This object can be accessed by::

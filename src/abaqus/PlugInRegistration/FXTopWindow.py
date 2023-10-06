@@ -5,25 +5,38 @@ from .FXShell import FXShell
 
 
 class FXTopWindow(FXShell):
-    """Abstract base class for all top-level windows"""
+    """Abstract base class for all top-level windows."""
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXShell. Reimplemented in FXPrintDialog, FXToolbarShell, AFXMainWindow, and AFXDialog."""
+        """Create server-side resources.
+
+        Reimplemented from FXShell. Reimplemented in FXPrintDialog, FXToolbarShell, AFXMainWindow, and
+        AFXDialog.
+        """
 
     def deiconify(self):
         """Deiconify window."""
 
     def detach(self):
-        """Detach the server-side resources for this window. Reimplemented from FXComposite."""
+        """Detach the server-side resources for this window.
+
+        Reimplemented from FXComposite.
+        """
 
     def getDecorations(self):
         """Return current title and border decorations."""
 
     def getDefaultHeight(self):
-        """Return the default height of this window. Reimplemented from FXComposite. Reimplemented in FXToolbarShell, and AFXMainWindow."""
+        """Return the default height of this window.
+
+        Reimplemented from FXComposite. Reimplemented in FXToolbarShell, and AFXMainWindow.
+        """
 
     def getDefaultWidth(self):
-        """Return the default width of this window. Reimplemented from FXComposite. Reimplemented in FXToolbarShell, and AFXMainWindow."""
+        """Return the default width of this window.
+
+        Reimplemented from FXComposite. Reimplemented in FXToolbarShell, and AFXMainWindow.
+        """
 
     def getHSpacing(self):
         """Return horizontal spacing between children."""
@@ -56,7 +69,10 @@ class FXTopWindow(FXShell):
         """Return vertical spacing between children."""
 
     def hide(self):
-        """Hide this window. Reimplemented from FXWindow. Reimplemented in AFXManagerMenuDB, AFXDialog, and AFXMessageDialog."""
+        """Hide this window.
+
+        Reimplemented from FXWindow. Reimplemented in AFXManagerMenuDB, AFXDialog, and AFXMessageDialog.
+        """
 
     def iconify(self):
         """Iconify window."""
@@ -65,7 +81,10 @@ class FXTopWindow(FXShell):
         """Return True if window has been iconified."""
 
     def killFocus(self):
-        """Remove the focus from this window. Reimplemented from FXShell."""
+        """Remove the focus from this window.
+
+        Reimplemented from FXShell.
+        """
 
     def move(self, x: int, y: int):
         """Move this window to the specified position in the parent's coordinates. Reimplemented from FXWindow.
@@ -75,7 +94,6 @@ class FXTopWindow(FXShell):
         x : int
 
         y : int
-
         """
 
     def place(self, placement: int):
@@ -84,7 +102,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         placement : int
-
         """
 
     def position(self, x: int, y: int, w: int, h: int):
@@ -99,7 +116,6 @@ class FXTopWindow(FXShell):
         w : int
 
         h : int
-
         """
 
     def resize(self, w: int, h: int):
@@ -110,7 +126,6 @@ class FXTopWindow(FXShell):
         w : int
 
         h : int
-
         """
 
     def setDecorations(self, decorations: int):
@@ -119,11 +134,13 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         decorations : int
-
         """
 
     def setFocus(self):
-        """Move the focus to this window. Reimplemented from FXShell."""
+        """Move the focus to this window.
+
+        Reimplemented from FXShell.
+        """
 
     def setHSpacing(self, hs: int):
         """Change horizontal spacing between children.
@@ -131,7 +148,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         hs : int
-
         """
 
     def setIcon(self, ic: FXIcon):
@@ -140,7 +156,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         ic : FXIcon
-
         """
 
     def setMiniIcon(self, ic: FXIcon):
@@ -149,7 +164,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         ic : FXIcon
-
         """
 
     def setPackingHints(self, ph: int):
@@ -158,7 +172,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         ph : int
-
         """
 
     def setPadBottom(self, pb: int):
@@ -167,7 +180,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         pb : int
-
         """
 
     def setPadLeft(self, pl: int):
@@ -176,7 +188,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         pl : int
-
         """
 
     def setPadRight(self, pr: int):
@@ -185,7 +196,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         pr : int
-
         """
 
     def setPadTop(self, pt: int):
@@ -194,7 +204,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         pt : int
-
         """
 
     def setTitle(self, name: str):
@@ -203,7 +212,6 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         name : str
-
         """
 
     def setVSpacing(self, vs: int):
@@ -212,8 +220,10 @@ class FXTopWindow(FXShell):
         Parameters
         ----------
         vs : int
-
         """
 
     def show(self):
-        """Show this window. Reimplemented from FXWindow. Reimplemented in AFXDialog, AFXFileDialog, and AFXMessageDialog."""
+        """Show this window.
+
+        Reimplemented from FXWindow. Reimplemented in AFXDialog, AFXFileDialog, and AFXMessageDialog.
+        """

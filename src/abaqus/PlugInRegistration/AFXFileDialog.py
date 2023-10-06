@@ -10,7 +10,7 @@ from .FXWindow import FXWindow
 
 
 class AFXFileDialog(AFXDialog):
-    """AFXFileDialog"""
+    """AFXFileDialog."""
 
     def __init__(
         self,
@@ -23,7 +23,10 @@ class AFXFileDialog(AFXDialog):
         patterns: str = "*",
         patternIndexTgt: AFXIntTarget | None = None,
     ):
-        """Constructor that creates a dialog box that always occludes the main window when overlapping with the main window. The constructor expects a string target for storing the selected file name. If the dialog box allows multiple selection, the string target contains comma-separated path names of all selected files.
+        """Constructor that creates a dialog box that always occludes the main window when overlapping with the
+        main window. The constructor expects a string target for storing the selected file name. If the dialog
+        box allows multiple selection, the string target contains comma-separated path names of all selected
+        files.
 
         Parameters
         ----------
@@ -75,7 +78,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         patno : int
-
         """
 
     def getPressedButtonId(self):
@@ -96,7 +98,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         n : int
-
         """
 
     def setDirectory(self, path: str):
@@ -105,7 +106,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         path : str
-
         """
 
     def setFileBoxStyle(self, style: int):
@@ -114,7 +114,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         style : int
-
         """
 
     def setFilename(self, path: str):
@@ -123,7 +122,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         path : str
-
         """
 
     def setItemSpace(self, s: int):
@@ -132,7 +130,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         s : int
-
         """
 
     def setPattern(self, ptrn: str):
@@ -141,7 +138,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         ptrn : str
-
         """
 
     def setPatternList(self, patterns: str):
@@ -150,7 +146,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         patterns : str
-
         """
 
     def setPatternListMaxVisible(self, maxVisible: int):
@@ -159,7 +154,6 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         maxVisible : int
-
         """
 
     def setPatternText(self, patno: int, text: str):
@@ -170,7 +164,6 @@ class AFXFileDialog(AFXDialog):
         patno : int
 
         text : str
-
         """
 
     def setReadOnly(self, state: bool):
@@ -179,16 +172,15 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         state : bool
-
         """
 
     def setReadOnlyPatterns(self, patterns: str):
-        """Sets the patterns that force the display of the read-only button; separate the entries by a newline character .
+        """Sets the patterns that force the display of the read-only button; separate the entries by a newline
+        character .
 
         Parameters
         ----------
         patterns : str
-
         """
 
     def setSelectMode(self, mode: int):
@@ -197,14 +189,17 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         mode : int
-
         """
 
     def show(self):
-        """Posts the dialog box. Reimplemented from AFXDialog."""
+        """Posts the dialog box.
+
+        Reimplemented from AFXDialog.
+        """
 
     def showModal(self, occludedWindow: FXWindow | None = None):
-        """Posts the dialog box as a modal dialog box. The dialog box is centered against the given widget or its owner widget if 0 is given.
+        """Posts the dialog box as a modal dialog box. The dialog box is centered against the given widget or
+        its owner widget if 0 is given.
 
         Parameters
         ----------
@@ -221,5 +216,4 @@ class AFXFileDialog(AFXDialog):
         Parameters
         ----------
         show : bool
-
         """

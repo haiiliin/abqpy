@@ -7,7 +7,12 @@ from .FXPacker import FXPacker
 
 
 class FXTabBar(FXPacker):
-    """The tab bar layout manager arranges tab items side by side, and raises the active tab item above the neighboring tab items. The tab bar can be have the tab items on the top or bottom for horizontal arrangement, or on the left or right for vertical arrangement."""
+    """The tab bar layout manager arranges tab items side by side, and raises the active tab item above the
+    neighboring tab items.
+
+    The tab bar can be have the tab items on the top or bottom for horizontal arrangement, or on the left or
+    right for vertical arrangement.
+    """
 
     def __init__(
         self,
@@ -51,33 +56,41 @@ class FXTabBar(FXPacker):
         pt : int
 
         pb : int
-
         """
 
     def create(self):
-        """Create all of the server-side resources for this window // CAE. Reimplemented from FXComposite."""
+        """Create all of the server-side resources for this window // CAE.
+
+        Reimplemented from FXComposite.
+        """
 
     def getCurrent(self):
         """Return the currently active tab item."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXPacker. Reimplemented in FXTabBook."""
+        """Return default height.
+
+        Reimplemented from FXPacker. Reimplemented in FXTabBook.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXPacker. Reimplemented in FXTabBook."""
+        """Return default width.
+
+        Reimplemented from FXPacker. Reimplemented in FXTabBook.
+        """
 
     def getTabStyle(self):
         """Return tab bar style."""
 
     def setCurrent(self, panel: int, notify: bool = False):
-        """Change currently active tab item; this raises the active tab item slightly above the neighboring tab items.
+        """Change currently active tab item; this raises the active tab item slightly above the neighboring tab
+        items.
 
         Parameters
         ----------
         panel : int
 
         notify : bool
-
         """
 
     def setTabStyle(self, style: int):
@@ -86,5 +99,4 @@ class FXTabBar(FXPacker):
         Parameters
         ----------
         style : int
-
         """

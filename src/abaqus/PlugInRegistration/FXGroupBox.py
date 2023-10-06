@@ -6,7 +6,13 @@ from .FXPacker import FXPacker
 
 
 class FXGroupBox(FXPacker):
-    """A group box widget provides a nice raised or sunken border around a group of widgets, providing a visual delineation. Typically, a title is placed over the border to provide some clarification. Radio buttons placed inside a group box automatically assume mutually exclusive behaviour, i.e. at most one radio button will be checked at any one time."""
+    """A group box widget provides a nice raised or sunken border around a group of widgets, providing a visual
+    delineation.
+
+    Typically, a title is placed over the border to provide some clarification. Radio buttons placed inside
+    a group box automatically assume mutually exclusive behaviour, i.e. at most one radio button will be
+    checked at any one time.
+    """
 
     def __init__(
         self,
@@ -53,26 +59,43 @@ class FXGroupBox(FXPacker):
         hs : int
 
         vs : int
-
         """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXComposite."""
+        """Create server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXComposite."""
+        """Detach server-side resources.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disable the window. Reimplemented from FXWindow."""
+        """Disable the window.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enable the window. Reimplemented from FXWindow."""
+        """Enable the window.
+
+        Reimplemented from FXWindow.
+        """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXPacker."""
+        """Return default height.
+
+        Reimplemented from FXPacker.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXPacker."""
+        """Return default width.
+
+        Reimplemented from FXPacker.
+        """
 
     def getText(self):
         """Return current groupbox title text."""
@@ -83,5 +106,4 @@ class FXGroupBox(FXPacker):
         Parameters
         ----------
         text : str
-
         """

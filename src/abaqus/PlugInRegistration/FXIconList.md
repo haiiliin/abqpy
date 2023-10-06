@@ -2,58 +2,64 @@ Icon List Widget
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxiconlist.png)
 
-### FXIconList(p, tgt=None, sel=0, opts=ICONLIST_NORMAL, x=0, y=0, w=0, h=0)  
+### FXIconList(p, tgt=None, sel=0, opts=ICONLIST_NORMAL, x=0, y=0, w=0, h=0)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct icon list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | ICONLIST_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite | | |
+| tgt | FXObject | None | |
+| sel | Int | 0 | |
+| opts | Int | ICONLIST_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
 
-### appendItem(text, big=None, mini=None, ptr=None, notify=False)  
+### appendItem(text, big=None, mini=None, ptr=None, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Append new item with given text and optional icons, and user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| big | FXIcon | None |   |
-| mini | FXIcon | None |   |
-| ptr | String | None |   |
-| notify | Bool | False |   |
+| text | String | | |
+| big | FXIcon | None | |
+| mini | FXIcon | None | |
+| ptr | String | None | |
+| notify | Bool | False | |
 
-### appendItem(item, notify=False)  
+### appendItem(item, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Append a \[possibly subclassed\] item to the end of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| item | FXIconItem |   |   |
-| notify | Bool | False |   |
+| item | FXIconItem | | |
+| notify | Bool | False | |
 
-### canFocus()  
+### canFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Icon list can receive focus.
 
 Reimplemented from FXWindow.
 
-### clearItems(notify=False)  
+### clearItems(notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Remove all items from list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False | |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create server-side resources.
@@ -62,16 +68,18 @@ Reimplemented from FXComposite.
 
 Reimplemented in FXFileList.
 
-### deselectItem(index, notify=False)  
+### deselectItem(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Deselect item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### detach()  
+### detach()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Detach server-side resources.
@@ -80,274 +88,313 @@ Reimplemented from FXComposite.
 
 Reimplemented in FXFileList.
 
-### disableItem(index)  
+### disableItem(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disable item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### enableItem(index)  
+### enableItem(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enable item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### extendSelection(index, notify=False)  
+### extendSelection(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Extend selection from anchor index to index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### findItem(text, start=-1, flags=SEARCH\_FORWARD| SEARCH\_WRAP)  
+### findItem(text, start=-1, flags=SEARCH_FORWARD| SEARCH_WRAP)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Search items for item by name, starting from start item; the flags argument controls the search direction, and case sensitivity.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| start | Int | -1 |   |
-| flags | Int | SEARCH\_FORWARD| SEARCH\_WRAP |   |
+| text | String | | |
+| start | Int | -1 | |
+| flags | Int | SEARCH_FORWARD| SEARCH_WRAP | |
 
-### getAnchorItem()  
+### getAnchorItem()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return anchor item index, or -1 if none.
 
-### getContentHeight()  
+### getContentHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return content height.
 
 Reimplemented from FXScrollArea.
 
-### getContentWidth()  
+### getContentWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Compute and return content width.
 
 Reimplemented from FXScrollArea.
 
-### getCurrentItem()  
+### getCurrentItem()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return current item index, or -1 if none.
 
-### getCursorItem()  
+### getCursorItem()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return index of item under cursor, or -1 if none.
 
-### getFont()  
+### getFont()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return text font.
 
-### getHelpText()  
+### getHelpText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the status line help text for this widget.
 
-### getItemAt(x, y)  
+### getItemAt(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return index of item at x,y, or -1 if none.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### getItemBigIcon(index)  
+### getItemBigIcon(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return big icon of item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### getItemData(index)  
+### getItemData(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return item user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### getItemHeight()  
+### getItemHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return item height.
 
-### getItemMiniIcon(index)  
+### getItemMiniIcon(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return mini icon of item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### getItemSpace()  
+### getItemSpace()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return maximum item space.
 
-### getItemText(index)  
+### getItemText(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return item text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### getItemWidth()  
+### getItemWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return item width.
 
-### getListStyle()  
+### getListStyle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current icon list style.
 
-### getNumCols()  
+### getNumCols()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of columns.
 
-### getNumItems()  
+### getNumItems()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of items.
 
-### getNumRows()  
+### getNumRows()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return number of rows.
 
-### getSelBackColor()  
+### getSelBackColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selected text background.
 
-### getSelTextColor()  
+### getSelTextColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return selected text color.
 
-### getSortFunc()  
+### getSortFunc()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return sort function.
 
-### getTextColor()  
+### getTextColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return normal text color.
 
-### getViewportHeight()  
+### getViewportHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return viewport size.
 
 Reimplemented from FXScrollArea.
 
-### hitItem(index, x, y, ww=1, hh=1)  
+### hitItem(index, x, y, ww=1, hh=1)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return item hit code: 0 outside, 1 icon, 2 text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| x | Int |   |   |
-| y | Int |   |   |
-| ww | Int | 1 |   |
-| hh | Int | 1 |   |
+| index | Int | | |
+| x | Int | | |
+| y | Int | | |
+| ww | Int | 1 | |
+| hh | Int | 1 | |
 
-### insertItem(index, text, big=None, mini=None, ptr=None, notify=False)  
+### insertItem(index, text, big=None, mini=None, ptr=None, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Insert item at index with given text, icons, and user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| text | String |   |   |
-| big | FXIcon | None |   |
-| mini | FXIcon | None |   |
-| ptr | String | None |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| text | String | | |
+| big | FXIcon | None | |
+| mini | FXIcon | None | |
+| ptr | String | None | |
+| notify | Bool | False | |
 
-### insertItem(index, item, notify=False)  
+### insertItem(index, item, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Insert a new \[possibly subclassed\] item at the give index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| item | FXIconItem |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| item | FXIconItem | | |
+| notify | Bool | False | |
 
-### isItemCurrent(index)  
+### isItemCurrent(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if item at index is current.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### isItemEnabled(index)  
+### isItemEnabled(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if item at index is enabled.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### isItemSelected(index)  
+### isItemSelected(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if item at index is selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### isItemVisible(index)  
+### isItemVisible(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return True if item at index is visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### killFocus()  
+### killFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Remove the focus from this window.
 
 Reimplemented from FXWindow.
 
-### killSelection(notify=False)  
+### killSelection(notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Deselect all items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False | |
 
-### makeItemVisible(index)  
+### makeItemVisible(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Scroll to make item at index visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### moveContents(x, y)  
+### moveContents(x, y)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Move contents to the specified position.
@@ -355,10 +402,11 @@ Move contents to the specified position.
 Reimplemented from FXScrollArea.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int | | |
+| y | Int | | |
 
-### position(x, y, w, h)  
+### position(x, y, w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Move and resize this window in the parent's coordinates.
@@ -366,72 +414,79 @@ Move and resize this window in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int | | |
+| y | Int | | |
+| w | Int | | |
+| h | Int | | |
 
-### prependItem(text, big=None, mini=None, ptr=None, notify=False)  
+### prependItem(text, big=None, mini=None, ptr=None, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Append new item with given text and optional icons, and user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| big | FXIcon | None |   |
-| mini | FXIcon | None |   |
-| ptr | String | None |   |
-| notify | Bool | False |   |
+| text | String | | |
+| big | FXIcon | None | |
+| mini | FXIcon | None | |
+| ptr | String | None | |
+| notify | Bool | False | |
 
-### prependItem(item, notify=False)  
+### prependItem(item, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Append a \[possibly subclassed\] item to the end of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| item | FXIconItem |   |   |
-| notify | Bool | False |   |
+| item | FXIconItem | | |
+| notify | Bool | False | |
 
-### recalc()  
+### recalc()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Recalculate layout.
 
 Reimplemented from FXWindow.
 
-### removeItem(index, notify=False)  
+### removeItem(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Remove item from list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### replaceItem(index, text, big=None, mini=None, ptr=None, notify=False)  
+### replaceItem(index, text, big=None, mini=None, ptr=None, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Replace items text, icons, and user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| text | String |   |   |
-| big | FXIcon | None |   |
-| mini | FXIcon | None |   |
-| ptr | String | None |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| text | String | | |
+| big | FXIcon | None | |
+| mini | FXIcon | None | |
+| ptr | String | None | |
+| notify | Bool | False | |
 
-### replaceItem(index, item, notify=False)  
+### replaceItem(index, item, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Replace the item with a \[possibly subclassed\] item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| item | FXIconItem |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| item | FXIconItem | | |
+| notify | Bool | False | |
 
-### resize(w, h)  
+### resize(w, h)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Resize this window to the specified width and height.
@@ -439,240 +494,261 @@ Resize this window to the specified width and height.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int | | |
+| h | Int | | |
 
-### retrieveItem(index)  
+### retrieveItem(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return the item at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### selectInRectangle(x, y, w, h, notify=False)  
+### selectInRectangle(x, y, w, h, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Select items in rectangle.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
-| notify | Bool | False |   |
+| x | Int | | |
+| y | Int | | |
+| w | Int | | |
+| h | Int | | |
+| notify | Bool | False | |
 
-### selectItem(index, notify=False)  
+### selectItem(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Select item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### setAnchorItem(index)  
+### setAnchorItem(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change anchor item index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### setCurrentItem(index, notify=False)  
+### setCurrentItem(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change current item index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### setFocus()  
+### setFocus()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Move the focus to this window.
 
 Reimplemented from FXWindow.
 
-### setFont(fnt)  
+### setFont(fnt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change text font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont | | |
 
-### setHelpText(text)  
+### setHelpText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the status line help text for this widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### setItemBigIcon(index, icon)  
+### setItemBigIcon(index, icon)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change item big icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| icon | FXIcon |   |   |
+| index | Int | | |
+| icon | FXIcon | | |
 
-### setItemData(index, ptr)  
+### setItemData(index, ptr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change item user-data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| ptr | String |   |   |
+| index | Int | | |
+| ptr | String | | |
 
-### setItemMiniIcon(index, icon)  
+### setItemMiniIcon(index, icon)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change item mini icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| icon | FXIcon |   |   |
+| index | Int | | |
+| icon | FXIcon | | |
 
-### setItemSpace(s)  
+### setItemSpace(s)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change maximum item space for each item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Int |   |   |
+| s | Int | | |
 
-### setItemText(index, text)  
+### setItemText(index, text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change item text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| text | String |   |   |
+| index | Int | | |
+| text | String | | |
 
-### setListStyle(style)  
+### setListStyle(style)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current icon list style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int | | |
 
-### setSelBackColor(clr)  
+### setSelBackColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change selected text background.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setSelTextColor(clr)  
+### setSelTextColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change selected text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setSortFunc(func)  
+### setSortFunc(func)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change sort function.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| func | FXIconListSortFunc |   |   |
+| func | FXIconListSortFunc | | |
 
-### setTextColor(clr)  
+### setTextColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change normal text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### sortItems()  
+### sortItems()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sort items.
 
-### toggleItem(index, notify=False)  
+### toggleItem(index, notify=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Toggle item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int | | |
+| notify | Bool | False | |
 
-### updateItem(index)  
+### updateItem(index)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Repaint item at index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Icon list styles**
 
-| **ICONLIST_EXTENDEDSELECT** | 
+| **ICONLIST_EXTENDEDSELECT** |
 
 Extended selection mode.
 
- |
-| **ICONLIST_SINGLESELECT** | 
+|
+| **ICONLIST_SINGLESELECT** |
 
 At most one selected item.
 
- |
-| **ICONLIST_BROWSESELECT** | 
+|
+| **ICONLIST_BROWSESELECT** |
 
 Always exactly one selected item.
 
- |
-| **ICONLIST_MULTIPLESELECT** | 
+|
+| **ICONLIST_MULTIPLESELECT** |
 
 Multiple selection mode.
 
- |
-| **ICONLIST_AUTOSIZE** | 
+|
+| **ICONLIST_AUTOSIZE** |
 
 Automatically size item spacing.
 
- |
-| **ICONLIST_DETAILED** | 
+|
+| **ICONLIST_DETAILED** |
 
 List mode.
 
- |
-| **ICONLIST\_MINI\_ICONS** | 
+|
+| **ICONLIST_MINI_ICONS** |
 
 Mini Icon mode.
 
- |
-| **ICONLIST\_BIG\_ICONS** | 
+|
+| **ICONLIST_BIG_ICONS** |
 
 Big Icon mode.
 
- |
-| **ICONLIST_ROWS** | 
+|
+| **ICONLIST_ROWS** |
 
 Row-wise mode.
 
- |
-| **ICONLIST_COLUMNS** | 
+|
+| **ICONLIST_COLUMNS** |
 
 Column-wise mode.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

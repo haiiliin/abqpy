@@ -35,5 +35,4 @@ class FXGIFIcon(FXIcon):
         w : int
 
         h : int
-
         """

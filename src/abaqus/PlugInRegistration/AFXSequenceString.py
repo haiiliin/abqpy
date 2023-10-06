@@ -2,7 +2,8 @@ from __future__ import annotations
 
 
 class AFXSequenceString:
-    """This class supports parsing and modification of strings containing sequences of elements separated with some separator character."""
+    """This class supports parsing and modification of strings containing sequences of elements separated with
+    some separator character."""
 
     def __init__(self):
         """Undefined copy constructor (this class has no copy semantics)."""
@@ -19,7 +20,10 @@ class AFXSequenceString:
         """
 
     def getContentString(self):
-        """Returns a string containing values of the sequence elements. Reimplemented in AFX2DArrayConstString."""
+        """Returns a string containing values of the sequence elements.
+
+        Reimplemented in AFX2DArrayConstString.
+        """
 
     def getElementSeparator(self):
         """Returns the element separator character."""

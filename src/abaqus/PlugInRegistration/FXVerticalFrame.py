@@ -6,7 +6,8 @@ from .FXPacker import FXPacker
 
 
 class FXVerticalFrame(FXPacker):
-    """Vertical frame layout manager widget is used to automatically place child-windows vertically from top-to-bottom, or bottom-to-top, depending on the child window's layout hints."""
+    """Vertical frame layout manager widget is used to automatically place child-windows vertically from top-to-
+    bottom, or bottom-to-top, depending on the child window's layout hints."""
 
     def __init__(
         self,
@@ -50,11 +51,16 @@ class FXVerticalFrame(FXPacker):
         hs : int
 
         vs : int
-
         """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXPacker. Reimplemented in AFXVerticalAligner."""
+        """Return default height.
+
+        Reimplemented from FXPacker. Reimplemented in AFXVerticalAligner.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXPacker. Reimplemented in AFXVerticalAligner."""
+        """Return default width.
+
+        Reimplemented from FXPacker. Reimplemented in AFXVerticalAligner.
+        """

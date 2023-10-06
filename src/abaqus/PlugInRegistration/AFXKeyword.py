@@ -5,7 +5,7 @@ from .FXDataTarget import FXDataTarget
 
 
 class AFXKeyword(FXDataTarget):
-    """Abaqus"""
+    """Abaqus."""
 
     def __init__(self, command: AFXCommand, name: str, isRequired: bool = False):
         """Constructor.
@@ -36,19 +36,34 @@ class AFXKeyword(FXDataTarget):
         """Returns the keyword's variable initilization commands (part of the generated command string)."""
 
     def getTypeName(self):
-        """Returns the keyword type name. Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword, AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXSymConstKeyword, AFXTogglableKeyword, AFXTupleKeyword, and AFXTableKeyword."""
+        """Returns the keyword type name.
+
+        Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword,
+        AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXSymConstKeyword, AFXTogglableKeyword,
+        AFXTupleKeyword, and AFXTableKeyword.
+        """
 
     def getValueAsString(self):
-        """Returns the text string that represents the current keyword value. Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword, AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXSymConstKeyword, AFXTogglableKeyword, and AFXTupleKeyword."""
+        """Returns the text string that represents the current keyword value.
+
+        Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword,
+        AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXSymConstKeyword, AFXTogglableKeyword, and
+        AFXTupleKeyword.
+        """
 
     def isActive(self):
         """Returns True if the keyword is active."""
 
     def isRequired(self):
-        """Returns True if the keyword is a required argument of the host command; or returns False if the keyword is optional."""
+        """Returns True if the keyword is a required argument of the host command; or returns False if the
+        keyword is optional."""
 
     def isValueChanged(self):
-        """Returns True if the keyword value differs from its previous value. Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword, AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword."""
+        """Returns True if the keyword value differs from its previous value.
+
+        Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword,
+        AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword.
+        """
 
     def setRequired(self, val: bool):
         """Sets this object as a required keyword of the host command.
@@ -56,7 +71,6 @@ class AFXKeyword(FXDataTarget):
         Parameters
         ----------
         val : bool
-
         """
 
     def setSetupCommands(self, cmds: str):
@@ -65,7 +79,6 @@ class AFXKeyword(FXDataTarget):
         Parameters
         ----------
         cmds : str
-
         """
 
     def setValueToDefault(self, ignoreUnspecified: bool = False):
@@ -78,7 +91,15 @@ class AFXKeyword(FXDataTarget):
         """
 
     def setValueToPrevious(self):
-        """Sets the keyword value to its previous value. Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword, AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword."""
+        """Sets the keyword value to its previous value.
+
+        Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword,
+        AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword.
+        """
 
     def syncPreviousValue(self):
-        """Sets the keyword's previous value to its current value. Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword, AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword."""
+        """Sets the keyword's previous value to its current value.
+
+        Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFloatKeyword,
+        AFXIntKeyword, AFXObjectKeyword, AFXStringKeyword, AFXTogglableKeyword, and AFXTupleKeyword.
+        """

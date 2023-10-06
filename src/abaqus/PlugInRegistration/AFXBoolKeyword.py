@@ -35,16 +35,25 @@ class AFXBoolKeyword(AFXKeyword):
         """
 
     def getTypeName(self):
-        """Returns the name of the keyword type. Implements AFXKeyword."""
+        """Returns the name of the keyword type.
+
+        Implements AFXKeyword.
+        """
 
     def getValue(self):
         """Returns the keyword's current value."""
 
     def getValueAsString(self):
-        """Returns the text string that represents the keyword's current value. Implements AFXKeyword."""
+        """Returns the text string that represents the keyword's current value.
+
+        Implements AFXKeyword.
+        """
 
     def isValueChanged(self):
-        """Returns True if the keyword value differs from its previous value. Implements AFXKeyword."""
+        """Returns True if the keyword value differs from its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def setDefaultValue(self, defaultValue: bool):
         """Sets the keyword's default value.
@@ -92,7 +101,13 @@ class AFXBoolKeyword(AFXKeyword):
         """
 
     def setValueToPrevious(self):
-        """Sets the keyword value to its previous value. Implements AFXKeyword."""
+        """Sets the keyword value to its previous value.
+
+        Implements AFXKeyword.
+        """
 
     def syncPreviousValue(self):
-        """Sets the keyword's previous value to its current value. Implements AFXKeyword."""
+        """Sets the keyword's previous value to its current value.
+
+        Implements AFXKeyword.
+        """

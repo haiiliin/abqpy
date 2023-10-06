@@ -4,4 +4,4 @@ from .FXObject import FXObject
 
 
 class FXListItem(FXObject):
-    """List item"""
+    """List item."""

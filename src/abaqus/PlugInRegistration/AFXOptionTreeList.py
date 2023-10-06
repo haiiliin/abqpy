@@ -8,7 +8,8 @@ from .FXScrollWindow import FXScrollWindow
 
 
 class AFXOptionTreeList(FXScrollWindow):
-    """This class provides a scrolled list of groups of options that may be toggled on or off as a group or individually."""
+    """This class provides a scrolled list of groups of options that may be toggled on or off as a group or
+    individually."""
 
     def __init__(
         self,
@@ -110,19 +111,31 @@ class AFXOptionTreeList(FXScrollWindow):
         """
 
     def getContentHeight(self):
-        """Returns the content height. Reimplemented from FXScrollWindow."""
+        """Returns the content height.
+
+        Reimplemented from FXScrollWindow.
+        """
 
     def getContents(self):
         """Returns the content window."""
 
     def getContentWidth(self):
-        """Returns the content width. Reimplemented from FXScrollWindow."""
+        """Returns the content width.
+
+        Reimplemented from FXScrollWindow.
+        """
 
     def getDefaultHeight(self):
-        """Returns the default height. Reimplemented from FXScrollArea."""
+        """Returns the default height.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getDefaultWidth(self):
-        """Returns the default width. Reimplemented from FXScrollArea."""
+        """Returns the default width.
+
+        Reimplemented from FXScrollArea.
+        """
 
     def getFirstItem(self):
         """Returns the first root item."""
@@ -155,7 +168,10 @@ class AFXOptionTreeList(FXScrollWindow):
         """Returns the vertical inter-child spacing."""
 
     def layout(self):
-        """Recalculates layout. Reimplemented from FXScrollWindow."""
+        """Recalculates layout.
+
+        Reimplemented from FXScrollWindow.
+        """
 
     def moveContents(self, x: int, y: int):
         """Moves contents to the specified position.

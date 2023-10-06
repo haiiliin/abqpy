@@ -9,7 +9,10 @@ from .FXIcon import FXIcon
 
 
 class FXLabel(FXFrame):
-    """A label widget can be used to place a text and/or icon for explanation purposes. The text label may have an optional tooltip and/or help string."""
+    """A label widget can be used to place a text and/or icon for explanation purposes.
+
+    The text label may have an optional tooltip and/or help string.
+    """
 
     def __init__(
         self,
@@ -53,26 +56,49 @@ class FXLabel(FXFrame):
         pt : int
 
         pb : int
-
         """
 
     def create(self):
-        """Create server-side resources. Reimplemented from FXWindow. Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and AFXFlyoutButton."""
+        """Create server-side resources.
+
+        Reimplemented from FXWindow. Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and
+        AFXFlyoutButton.
+        """
 
     def detach(self):
-        """Detach server-side resources. Reimplemented from FXWindow. Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and AFXFlyoutButton."""
+        """Detach server-side resources.
+
+        Reimplemented from FXWindow. Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and
+        AFXFlyoutButton.
+        """
 
     def disable(self):
-        """Disable the window. Reimplemented from FXWindow. Reimplemented in AFXFlyoutButton."""
+        """Disable the window.
+
+        Reimplemented from FXWindow. Reimplemented in AFXFlyoutButton.
+        """
 
     def enable(self):
-        """Enable the window. Reimplemented from FXWindow. Reimplemented in AFXFlyoutButton."""
+        """Enable the window.
+
+        Reimplemented from FXWindow. Reimplemented in AFXFlyoutButton.
+        """
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXFrame. Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu, FXRadioButton, and FXToggleButton."""
+        """Return default height.
+
+        Reimplemented from FXFrame. Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton,
+        FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu,
+        FXRadioButton, and FXToggleButton.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXFrame. Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu, FXRadioButton, and FXToggleButton."""
+        """Return default width.
+
+        Reimplemented from FXFrame. Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton,
+        FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu,
+        FXRadioButton, and FXToggleButton.
+        """
 
     def getFont(self):
         """Get the text font."""
@@ -104,7 +130,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         fnt : FXFont
-
         """
 
     def setHelpText(self, text: str):
@@ -113,7 +138,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         text : str
-
         """
 
     def setIcon(self, ic: FXIcon):
@@ -122,7 +146,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         ic : FXIcon
-
         """
 
     def setIconPosition(self, mode: int):
@@ -131,7 +154,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         mode : int
-
         """
 
     def setJustify(self, mode: int):
@@ -140,7 +162,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         mode : int
-
         """
 
     def setText(self, text: str):
@@ -149,7 +170,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         text : str
-
         """
 
     def setTextColor(self, clr: FXColor):
@@ -158,7 +178,6 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         clr : FXColor
-
         """
 
     def setTipText(self, text: str):
@@ -167,5 +186,4 @@ class FXLabel(FXFrame):
         Parameters
         ----------
         text : str
-
         """

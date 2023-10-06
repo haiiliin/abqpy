@@ -2,37 +2,37 @@ List item
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxlistitem.png)
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **List styles**
 
-| **LIST_EXTENDEDSELECT** | 
+| **LIST_EXTENDEDSELECT** |
 
 Extended selection mode allows for drag-selection of ranges of items.
 
- |
-| **LIST_SINGLESELECT** | 
+|
+| **LIST_SINGLESELECT** |
 
 Single selection mode allows up to one item to be selected.
 
- |
-| **LIST_BROWSESELECT** | 
+|
+| **LIST_BROWSESELECT** |
 
 Browse selection mode enforces one single item to be selected at all times.
 
- |
-| **LIST_MULTIPLESELECT** | 
+|
+| **LIST_MULTIPLESELECT** |
 
 Multiple selection mode is used for selection of individual items.
 
- |
-| **LIST_AUTOSELECT** | 
+|
+| **LIST_AUTOSELECT** |
 
 Automatically select under cursor.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -54,7 +54,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

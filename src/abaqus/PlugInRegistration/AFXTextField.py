@@ -64,13 +64,22 @@ class AFXTextField(FXPacker, AFXDataComponent):
         """
 
     def create(self):
-        """Creates the text field. Reimplemented from FXComposite."""
+        """Creates the text field.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the text field. Reimplemented from FXWindow."""
+        """Disables the text field.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the text field. Reimplemented from FXWindow."""
+        """Enables the text field.
+
+        Reimplemented from FXWindow.
+        """
 
     def getCheck(self):
         """Returns the state of the check button or the radio button."""
@@ -79,7 +88,10 @@ class AFXTextField(FXPacker, AFXDataComponent):
         """Returns the cursor position."""
 
     def getDefaultWidth(self):
-        """Returns the default width of the text field. Reimplemented from FXPacker."""
+        """Returns the default width of the text field.
+
+        Reimplemented from FXPacker.
+        """
 
     def getExponentType(self):
         """Returns the exponent type of the text field for real and complex types."""
@@ -172,7 +184,10 @@ class AFXTextField(FXPacker, AFXDataComponent):
         """
 
     def setFocus(self):
-        """Moves the focus to the text field. Reimplemented from FXWindow."""
+        """Moves the focus to the text field.
+
+        Reimplemented from FXWindow.
+        """
 
     def setFocusAndSelection(self):
         """Sets the focus to the input field and selects its contents."""
@@ -235,7 +250,9 @@ class AFXTextField(FXPacker, AFXDataComponent):
         """
 
     def setPrecision(self, p: int):
-        """Sets the precision of the text field for real and complex types. Limitation: If an AFXTextField widget uses an AFXFloatKeyword object as its target, the widget must have AFXTEXTFIELD_FLOAT as one of its options for the precision setting to take effect.
+        """Sets the precision of the text field for real and complex types. Limitation: If an AFXTextField
+        widget uses an AFXFloatKeyword object as its target, the widget must have AFXTEXTFIELD_FLOAT as one of
+        its options for the precision setting to take effect.
 
         Parameters
         ----------

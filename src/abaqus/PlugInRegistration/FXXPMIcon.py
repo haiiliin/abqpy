@@ -27,5 +27,4 @@ class FXXPMIcon(FXIcon):
         w : int
 
         h : int
-
         """

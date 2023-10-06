@@ -2,22 +2,22 @@ The menu caption is a widget which can be used as a caption above a number of me
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxmenucaption.png)
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Menu Caption options**
 
-| **MENU_AUTOGRAY** | 
+| **MENU_AUTOGRAY** |
 
 Automatically gray out when not updated.
 
- |
-| **MENU_AUTOHIDE** | 
+|
+| **MENU_AUTOHIDE** |
 
 Automatically hide button when not updated.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -39,7 +39,7 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.
 

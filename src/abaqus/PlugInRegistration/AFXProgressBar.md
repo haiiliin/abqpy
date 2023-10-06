@@ -2,16 +2,17 @@ This class contains a progress bar, which can present work-in-progress in a numb
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxprogressbar.png)
 
-### AFXProgressBar(p, tgt=None, sel=0, opts=FRAME\_SUNKEN| FRAME\_THICK, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT\_PAD)  
+### AFXProgressBar(p, tgt=None, sel=0, opts=FRAME_SUNKEN| FRAME_THICK, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite | | Parent widget. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
-| opts | Int | FRAME\_SUNKEN| FRAME\_THICK | Options and hints. |
+| opts | Int | FRAME_SUNKEN| FRAME_THICK | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
 | y | Int | 0 | Y coordinate of origin. |
 | w | Int | 0 | Width of the widget. |
@@ -21,84 +22,96 @@ Constructor.
 | pt | Int | DEFAULT_PAD | Top padding (margin). |
 | pb | Int | DEFAULT_PAD | Bottom padding (margin). |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Creates the progress bar.
 
 Reimplemented from FXProgressBar.
 
-### getBarStyle()  
+### getBarStyle()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the progress bar style.
 
 Reimplemented from FXProgressBar.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default height.
 
 Reimplemented from FXProgressBar.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the default width.
 
 Reimplemented from FXProgressBar.
 
-### getNumCursorBoxes()  
+### getNumCursorBoxes()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the number of cursor boxes displayed.
 
-### getProgress()  
+### getProgress()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the current progress amount.
 
 Reimplemented from FXProgressBar.
 
-### getTotal()  
+### getTotal()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the total progress amount.
 
 Reimplemented from FXProgressBar.
 
-### hide()  
+### hide()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Hides the progress bar.
 
 Reimplemented from FXWindow.
 
-### hideNumber()  
+### hideNumber()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Hides the progress bar iteration or percentage text.
 
 Reimplemented from FXProgressBar.
 
-### setBarStyle(style)  
+### setBarStyle(style)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the progress bar style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | Style flag. |
+| style | Int | | Style flag. |
 
-### setNumCursorBoxes(nb)  
+### setNumCursorBoxes(nb)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the number of cursor boxes to display.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nb | Int |   | Number of boxes. |
+| nb | Int | | Number of boxes. |
 
-### setProgress(value)  
+### setProgress(value)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the current progress amount that is used by a progress bar in either iteration or percentage mode; the progress amount is ingored by a progress bar in scanner mode.
@@ -106,9 +119,10 @@ Sets the current progress amount that is used by a progress bar in either iterat
 Reimplemented from FXProgressBar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int | | |
 
-### setTotal(value)  
+### setTotal(value)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the total progress amount that is used by a progress bar in either iteration or percentage mode; the progress amount is ingored by a progress bar in scanner mode.
@@ -116,16 +130,18 @@ Sets the total progress amount that is used by a progress bar in either iteratio
 Reimplemented from FXProgressBar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int | | |
 
-### show()  
+### show()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Shows the progress bar.
 
 Reimplemented from FXWindow.
 
-### showNumber(style=AFXPROGRESSBAR_PERCENTAGE)  
+### showNumber(style=AFXPROGRESSBAR_PERCENTAGE)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Shows the progress iteration or percentage text.
@@ -133,40 +149,41 @@ Shows the progress iteration or percentage text.
 | **Argument** | **Type** | **Default** | **Description** |
 | style | Int | AFXPROGRESSBAR_PERCENTAGE | Style flag. |
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### Global flags  
-![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
+### Global flags
 
+![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 **Flags for progress bar styles.**
 
-| **AFXPROGRESSBAR_PERCENTAGE** | 
+| **AFXPROGRESSBAR_PERCENTAGE** |
 
 Percentage complete mode.
 
- |
-| **AFXPROGRESSBAR_HORIZONTAL** | 
+|
+| **AFXPROGRESSBAR_HORIZONTAL** |
 
 Horizontal display.
 
- |
-| **AFXPROGRESSBAR_VERTICAL** | 
+|
+| **AFXPROGRESSBAR_VERTICAL** |
 
 Vertical display.
 
- |
-| **AFXPROGRESSBAR_SCANNER** | 
+|
+| **AFXPROGRESSBAR_SCANNER** |
 
 Scanner mode.
 
- |
-| **AFXPROGRESSBAR_ITERATOR** | 
+|
+| **AFXPROGRESSBAR_ITERATOR** |
 
 Iterator mode.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -188,6 +205,6 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.

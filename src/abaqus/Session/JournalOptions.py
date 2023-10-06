@@ -11,11 +11,10 @@ from .NumberFormat import NumberFormat
 
 @abaqus_class_doc
 class JournalOptions:
-    """A JournalOptions object specifies how to record selection of geometry in the journal and
-    replay files. **journalOptions** can also be used to set the numeric formatting options
-    for field report output, geometry commands output, and a default format for other
-    numeric output. The JournalOptions object has no constructor. Abaqus creates the
-    **journalOptions** member when a session is started.
+    """A JournalOptions object specifies how to record selection of geometry in the journal and replay files.
+    **journalOptions** can also be used to set the numeric formatting options for field report output, geometry
+    commands output, and a default format for other numeric output. The JournalOptions object has no
+    constructor. Abaqus creates the **journalOptions** member when a session is started.
 
     .. note::
         This object can be accessed by::

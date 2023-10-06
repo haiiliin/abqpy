@@ -4,4 +4,4 @@ from .FXObject import FXObject
 
 
 class FXIconItem(FXObject):
-    """Icon item"""
+    """Icon item."""

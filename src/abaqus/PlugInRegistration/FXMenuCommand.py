@@ -7,7 +7,11 @@ from .FXObject import FXObject
 
 
 class FXMenuCommand(FXMenuCaption):
-    """The menu command widget is used to invoke a command in the application from a menu. Menu commands may reflect the state of the application by graying out, becoming hidden, or by a check mark or bullit."""
+    """The menu command widget is used to invoke a command in the application from a menu.
+
+    Menu commands may reflect the state of the application by graying out, becoming hidden, or by a check
+    mark or bullit.
+    """
 
     def __init__(
         self,
@@ -33,11 +37,13 @@ class FXMenuCommand(FXMenuCaption):
         sel : int
 
         opts : int
-
         """
 
     def canFocus(self):
-        """Yes it can receive the focus. Reimplemented from FXWindow."""
+        """Yes it can receive the focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def check(self):
         """Place checkmark next to text."""
@@ -49,10 +55,16 @@ class FXMenuCommand(FXMenuCaption):
         """Return accelarator text."""
 
     def getDefaultHeight(self):
-        """Return default height. Reimplemented from FXMenuCaption."""
+        """Return default height.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def getDefaultWidth(self):
-        """Return default width. Reimplemented from FXMenuCaption."""
+        """Return default width.
+
+        Reimplemented from FXMenuCaption.
+        """
 
     def isChecked(self):
         """Return True if checked."""
@@ -66,7 +78,6 @@ class FXMenuCommand(FXMenuCaption):
         Parameters
         ----------
         text : str
-
         """
 
     def uncheck(self):

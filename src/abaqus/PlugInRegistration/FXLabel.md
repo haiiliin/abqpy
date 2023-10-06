@@ -2,26 +2,28 @@ A label widget can be used to place a text and/or icon for explanation purposes.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxlabel.png)
 
-### FXLabel(p, text, ic=None, opts=LABEL\_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT\_PAD, pr=DEFAULT\_PAD, pt=DEFAULT\_PAD, pb=DEFAULT_PAD)  
+### FXLabel(p, text, ic=None, opts=LABEL_NORMAL, x=0, y=0, w=0, h=0, pl=DEFAULT_PAD, pr=DEFAULT_PAD, pt=DEFAULT_PAD, pb=DEFAULT_PAD)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Construct label with given text and icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| opts | Int | LABEL_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite | | |
+| text | String | | |
+| ic | FXIcon | None | |
+| opts | Int | LABEL_NORMAL | |
+| x | Int | 0 | |
+| y | Int | 0 | |
+| w | Int | 0 | |
+| h | Int | 0 | |
+| pl | Int | DEFAULT_PAD | |
+| pr | Int | DEFAULT_PAD | |
+| pt | Int | DEFAULT_PAD | |
+| pb | Int | DEFAULT_PAD | |
 
-### create()  
+### create()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Create server-side resources.
@@ -30,7 +32,8 @@ Reimplemented from FXWindow.
 
 Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and AFXFlyoutButton.
 
-### detach()  
+### detach()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Detach server-side resources.
@@ -39,7 +42,8 @@ Reimplemented from FXWindow.
 
 Reimplemented in FXMenuButton, FXOptionMenu, FXToggleButton, and AFXFlyoutButton.
 
-### disable()  
+### disable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Disable the window.
@@ -48,7 +52,8 @@ Reimplemented from FXWindow.
 
 Reimplemented in AFXFlyoutButton.
 
-### enable()  
+### enable()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Enable the window.
@@ -57,7 +62,8 @@ Reimplemented from FXWindow.
 
 Reimplemented in AFXFlyoutButton.
 
-### getDefaultHeight()  
+### getDefaultHeight()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default height.
@@ -66,7 +72,8 @@ Reimplemented from FXFrame.
 
 Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu, FXRadioButton, and FXToggleButton.
 
-### getDefaultWidth()  
+### getDefaultWidth()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Return default width.
@@ -75,55 +82,65 @@ Reimplemented from FXFrame.
 
 Reimplemented in FXCheckButton, FXMDIDeleteButton, FXMDIRestoreButton, FXMDIMaximizeButton, FXMDIMinimizeButton, FXMDIWindowButton, FXMenuButton, FXOption, FXOptionMenu, FXRadioButton, and FXToggleButton.
 
-### getFont()  
+### getFont()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the text font.
 
-### getHelpText()  
+### getHelpText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the status line help text for this label.
 
-### getIcon()  
+### getIcon()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the icon for this label.
 
-### getIconPosition()  
+### getIconPosition()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current icon position.
 
-### getJustify()  
+### getJustify()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current text-justification mode.
 
-### getText()  
+### getText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the text for this label.
 
-### getTextColor()  
+### getTextColor()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the current text color.
 
-### getTipText()  
+### getTipText()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Get the tool tip message for this label.
 
-### setFont(fnt)  
+### setFont(fnt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the text font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont | | |
 
-### setHelpText(text)  
+### setHelpText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the status line help text for this label.
@@ -131,9 +148,10 @@ Set the status line help text for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### setIcon(ic)  
+### setIcon(ic)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the icon for this label.
@@ -141,25 +159,28 @@ Set the icon for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ic | FXIcon |   |   |
+| ic | FXIcon | | |
 
-### setIconPosition(mode)  
+### setIconPosition(mode)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current icon position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int | | |
 
-### setJustify(mode)  
+### setJustify(mode)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current text-justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int | | |
 
-### setText(text)  
+### setText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the text for this label.
@@ -167,17 +188,19 @@ Set the text for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### setTextColor(clr)  
+### setTextColor(clr)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the current text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor | | |
 
-### setTipText(text)  
+### setTipText(text)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Set the tool tip message for this label.
@@ -185,70 +208,69 @@ Set the tool tip message for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String | | |
 
-### Global flags  
+### Global flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Relationship options for icon-labels**
 
-| **ICON\_UNDER\_TEXT** | 
+| **ICON_UNDER_TEXT** |
 
 Icon appears under text.
 
- |
-| **ICON\_AFTER\_TEXT** | 
+|
+| **ICON_AFTER_TEXT** |
 
 Icon appears after text (to its right).
 
- |
-| **ICON\_BEFORE\_TEXT** | 
+|
+| **ICON_BEFORE_TEXT** |
 
 Icon appears before text (to its left).
 
- |
-| **ICON\_ABOVE\_TEXT** | 
+|
+| **ICON_ABOVE_TEXT** |
 
 Icon appears above text.
 
- |
-| **ICON\_BELOW\_TEXT** | 
+|
+| **ICON_BELOW_TEXT** |
 
 Icon appears below text.
 
- |
-| **TEXT\_OVER\_ICON** | 
+|
+| **TEXT_OVER_ICON** |
 
-Same as ICON\_UNDER\_TEXT.
+Same as ICON_UNDER_TEXT.
 
- |
-| **TEXT\_AFTER\_ICON** | 
+|
+| **TEXT_AFTER_ICON** |
 
-Same as ICON\_BEFORE\_TEXT.
+Same as ICON_BEFORE_TEXT.
 
- |
-| **TEXT\_BEFORE\_ICON** | 
+|
+| **TEXT_BEFORE_ICON** |
 
-Same as ICON\_AFTER\_TEXT.
+Same as ICON_AFTER_TEXT.
 
- |
-| **TEXT\_ABOVE\_ICON** | 
+|
+| **TEXT_ABOVE_ICON** |
 
-Same as ICON\_BELOW\_TEXT.
+Same as ICON_BELOW_TEXT.
 
- |
-| **TEXT\_BELOW\_ICON** | 
+|
+| **TEXT_BELOW_ICON** |
 
-Same as ICON\_ABOVE\_TEXT.
+Same as ICON_ABOVE_TEXT.
 
- |
-
+|
 
 **Normal way to show label**
 
-| **LABEL_NORMAL** | 
+| **LABEL_NORMAL** |
 
-Combination of JUSTIFY\_NORMAL & ICON\_BEFORE_TEXT.
+Combination of JUSTIFY_NORMAL & ICON_BEFORE_TEXT.
 
- |
+|

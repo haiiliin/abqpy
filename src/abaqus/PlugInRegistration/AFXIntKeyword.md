@@ -10,19 +10,21 @@ This class is designed for the command keywords that have integer values.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxintkeyword.png)
 
-### AFXIntKeyword(command, name, isRequired=False, defaultValue=INT_DEFAULT, evalExpression=True)  
+### AFXIntKeyword(command, name, isRequired=False, defaultValue=INT_DEFAULT, evalExpression=True)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand | | Host command. |
+| name | String | | Keyword name. |
 | isRequired | Bool | False | True if the keyword is a required argument of the command. |
 | defaultValue | Int | INT_DEFAULT | Default value. |
 | evalExpression | Bool | True | True if the keyword supports expression evaluation. |
 
-### getTypeName()  
+### getTypeName()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the name of the keyword type.
@@ -31,12 +33,14 @@ Implements AFXKeyword.
 
 Reimplemented in AFXSymConstKeyword.
 
-### getValue()  
+### getValue()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the keyword's current value.
 
-### getValueAsString()  
+### getValueAsString()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns the text string that represents the keyword's current value.
@@ -45,30 +49,34 @@ Implements AFXKeyword.
 
 Reimplemented in AFXSymConstKeyword.
 
-### isValueChanged()  
+### isValueChanged()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True if the keyword value differs from its previous value.
 
 Implements AFXKeyword.
 
-### setDefaultValue(defaultValue)  
+### setDefaultValue(defaultValue)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the keyword's default value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValue | Int |   | Default value. |
+| defaultValue | Int | | Default value. |
 
-### setValue(newValue)  
+### setValue(newValue)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the keyword's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Int |   | New value. |
+| newValue | Int | | New value. |
 
-### setValueToDefault(ignoreUnspecified=False)  
+### setValueToDefault(ignoreUnspecified=False)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the keyword value to its default.
@@ -76,14 +84,16 @@ Sets the keyword value to its default.
 | **Argument** | **Type** | **Default** | **Description** |
 | ignoreUnspecified | Bool | False | Ignore setting the value if the default is unspecified. |
 
-### setValueToPrevious()  
+### setValueToPrevious()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the keyword value to its previous value.
 
 Implements AFXKeyword.
 
-### syncPreviousValue()  
+### syncPreviousValue()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Sets the keyword's previous value to its current value.
@@ -110,6 +120,6 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.

@@ -4,7 +4,12 @@ from .AFXToolsetGui import AFXToolsetGui
 
 
 class AFXProcedureToolsetGui(AFXToolsetGui):
-    """This is the base class for toolset GUIs used in procedure steps (e.g. the Sketch toolset) and provides an interface for managing the toolset's GUI items. In conjuction with the AFXProcedureToolsetGuiData class, it provides a mechanism to overlay menubar, toolbar, and toolbox GUI items while the step executes."""
+    """This is the base class for toolset GUIs used in procedure steps (e.g. the Sketch toolset) and provides an
+    interface for managing the toolset's GUI items.
+
+    In conjuction with the AFXProcedureToolsetGuiData class, it provides a mechanism to overlay menubar,
+    toolbar, and toolbox GUI items while the step executes.
+    """
 
     def __init__(self, toolsetName: str):
         """Constructor.

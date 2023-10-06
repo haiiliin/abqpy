@@ -94,8 +94,8 @@ class DisplayGroup:
 
     @abaqus_method_doc
     def intersect(self, leaf: Leaf):
-        """This method redefines the display group to be only those items that are shared by the
-        **leaf** argument and the display group.
+        """This method redefines the display group to be only those items that are shared by the **leaf**
+        argument and the display group.
 
         Parameters
         ----------

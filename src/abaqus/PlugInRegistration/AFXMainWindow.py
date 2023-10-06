@@ -9,7 +9,10 @@ from .FXMainWindow import FXMainWindow
 
 
 class AFXMainWindow(FXMainWindow):
-    """This class is responsible for constructing the components of the main window. It also provides accessors for the various components constructed."""
+    """This class is responsible for constructing the components of the main window.
+
+    It also provides accessors for the various components constructed.
+    """
 
     def __init__(
         self,
@@ -59,7 +62,8 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def appendTreeTab(self, text: str, name: str):
-        """Appends a new tab item to the tree toolset tab book and returns a vertical frame managed by the new tab item; you must call create() on the vertical frame after you construct all its child widgets.
+        """Appends a new tab item to the tree toolset tab book and returns a vertical frame managed by the new
+        tab item; you must call create() on the vertical frame after you construct all its child widgets.
 
         Parameters
         ----------
@@ -81,7 +85,10 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def create(self):
-        """Virtual base class method for creating windowing system resources. Reimplemented from FXTopWindow."""
+        """Virtual base class method for creating windowing system resources.
+
+        Reimplemented from FXTopWindow.
+        """
 
     def getContextBar(self):
         """Returns a pointer to the context bar container."""
@@ -90,10 +97,16 @@ class AFXMainWindow(FXMainWindow):
         """Returns the current tab item."""
 
     def getDefaultHeight(self):
-        """Returns the default main window height. Reimplemented from FXTopWindow."""
+        """Returns the default main window height.
+
+        Reimplemented from FXTopWindow.
+        """
 
     def getDefaultWidth(self):
-        """Returns the default main window width. Reimplemented from FXTopWindow."""
+        """Returns the default main window width.
+
+        Reimplemented from FXTopWindow.
+        """
 
     def getDisplayedNameAtIndex(self, index: int):
         """Returns the displayed name at the given position in the list.
@@ -177,7 +190,8 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def getToolsetKernelInitializationCommands(self):
-        """Returns the command string that should initialize the toolsets in the kernel that are corresponding to the toolsets registered with the main window."""
+        """Returns the command string that should initialize the toolsets in the kernel that are corresponding
+        to the toolsets registered with the main window."""
 
     def getWorkDirectory(self):
         """Returns the current working directory."""
@@ -189,7 +203,10 @@ class AFXMainWindow(FXMainWindow):
         """Hides the message area interface."""
 
     def makeCustomToolsets(self):
-        """This method has no base class implementation; it may be used by customizers to construct Abaqus/CAE toolsets or toolsets derived from Abaqus/CAE toolsets; constructing those toolsets in this method is necessary to insure that the toolset will be available to standard Abaqus/CAE modules that register that toolset, and to avoid creating duplicate widgets when the toolset is used by a custom toolset."""
+        """This method has no base class implementation; it may be used by customizers to construct Abaqus/CAE
+        toolsets or toolsets derived from Abaqus/CAE toolsets; constructing those toolsets in this method is
+        necessary to insure that the toolset will be available to standard Abaqus/CAE modules that register that
+        toolset, and to avoid creating duplicate widgets when the toolset is used by a custom toolset."""
 
     def registerHelpToolset(self, tool: AFXToolsetGui, opts: int):
         """Registers the Help toolset.
@@ -203,7 +220,8 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def registerModule(self, displayedName: str, moduleImportName: str, kernelInitializationCommand: str):
-        """Registers a module to make it available in the module combo; also registers the initialization string to be sent to the kernel the first time the module is loaded.
+        """Registers a module to make it available in the module combo; also registers the initialization string
+        to be sent to the kernel the first time the module is loaded.
 
         Parameters
         ----------
@@ -227,7 +245,9 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def setApplicabilityForTreeTab(self, name: str, moduleNames: str):
-        """Sets the modules that are applicable to the given tree tab. When switching modules, if the current tab is applicable to the new module, it will remain current. When a tree tab is created, it is applicable to all modules--use this method to set the applicability to only certain modules.
+        """Sets the modules that are applicable to the given tree tab. When switching modules, if the current
+        tab is applicable to the new module, it will remain current. When a tree tab is created, it is
+        applicable to all modules--use this method to set the applicability to only certain modules.
 
         Parameters
         ----------
@@ -247,7 +267,10 @@ class AFXMainWindow(FXMainWindow):
         """
 
     def setVisibilityForTreeTab(self, name: str, moduleNames: str):
-        """Sets the modules in which a tree tab is visible. When switching modules, if the tab has not been specified to be visible in the new module, the tab will be hidden; otherwise it will be shown. When a tree tab is created it is visible in all modules--use this method to set the visibility to only certain modules.
+        """Sets the modules in which a tree tab is visible. When switching modules, if the tab has not been
+        specified to be visible in the new module, the tab will be hidden; otherwise it will be shown. When a
+        tree tab is created it is visible in all modules--use this method to set the visibility to only certain
+        modules.
 
         Parameters
         ----------
@@ -278,5 +301,4 @@ class AFXMainWindow(FXMainWindow):
         Parameters
         ----------
         message : str
-
         """

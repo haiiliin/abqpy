@@ -26,16 +26,28 @@ class AFXNote(FXHorizontalFrame):
         """
 
     def create(self):
-        """Creates the note. Reimplemented from FXComposite."""
+        """Creates the note.
+
+        Reimplemented from FXComposite.
+        """
 
     def detach(self):
-        """Detaches the server-resources of the note. Reimplemented from FXComposite."""
+        """Detaches the server-resources of the note.
+
+        Reimplemented from FXComposite.
+        """
 
     def disable(self):
-        """Disables the note. Reimplemented from FXWindow."""
+        """Disables the note.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the note. Reimplemented from FXWindow."""
+        """Enables the note.
+
+        Reimplemented from FXWindow.
+        """
 
     def getText(self):
         """Returns the note's message string."""

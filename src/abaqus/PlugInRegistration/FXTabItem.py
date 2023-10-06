@@ -7,7 +7,12 @@ from .FXTabBar import FXTabBar
 
 
 class FXTabItem(FXLabel):
-    """A tab item is placed in a tab bar or tab book. When selected, the tab item sends a message to its parent, and causes itself to become the active tab, and raised slightly above the other tabs. In the tab book, activating a tab item also causes the corresponding panel to be raised to the top."""
+    """A tab item is placed in a tab bar or tab book.
+
+    When selected, the tab item sends a message to its parent, and causes itself to become the active tab,
+    and raised slightly above the other tabs. In the tab book, activating a tab item also causes the
+    corresponding panel to be raised to the top.
+    """
 
     def __init__(
         self,
@@ -51,8 +56,10 @@ class FXTabItem(FXLabel):
         pt : int
 
         pb : int
-
         """
 
     def canFocus(self):
-        """Returns True because a tab item can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a tab item can receive focus.
+
+        Reimplemented from FXWindow.
+        """

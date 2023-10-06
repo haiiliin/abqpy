@@ -8,7 +8,8 @@ from .FXPacker import FXPacker
 
 
 class AFXSlider(FXPacker, AFXDataComponent):
-    """This class provides a slider, which allows the user to specify a value by dragging its value indicator."""
+    """This class provides a slider, which allows the user to specify a value by dragging its value
+    indicator."""
 
     def __init__(
         self,
@@ -56,22 +57,37 @@ class AFXSlider(FXPacker, AFXDataComponent):
         """
 
     def canFocus(self):
-        """Returns True because a slider can receive focus. Reimplemented from FXWindow."""
+        """Returns True because a slider can receive focus.
+
+        Reimplemented from FXWindow.
+        """
 
     def disable(self):
-        """Disables the slider. Reimplemented from FXWindow."""
+        """Disables the slider.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the slider. Reimplemented from FXWindow."""
+        """Enables the slider.
+
+        Reimplemented from FXWindow.
+        """
 
     def getDecimalPlaces(self):
         """Returns the number of decimal points displayed."""
 
     def getDefaultHeight(self):
-        """Returns the default height. Reimplemented from FXPacker."""
+        """Returns the default height.
+
+        Reimplemented from FXPacker.
+        """
 
     def getDefaultWidth(self):
-        """Returns the default width. Reimplemented from FXPacker."""
+        """Returns the default width.
+
+        Reimplemented from FXPacker.
+        """
 
     def getIncrement(self):
         """Returns the slider's auto-increment/decrement value."""
@@ -83,7 +99,8 @@ class AFXSlider(FXPacker, AFXDataComponent):
         """Returns the minimum label's text."""
 
     def getRange(self):
-        """Returns a sequence of ints (low, high) representing the widget's allowable minimum and maximum values."""
+        """Returns a sequence of ints (low, high) representing the widget's allowable minimum and maximum
+        values."""
 
     def getSliderStyle(self):
         """Returns the slider's style."""
@@ -101,7 +118,10 @@ class AFXSlider(FXPacker, AFXDataComponent):
         """Returns the slider's value."""
 
     def recalc(self):
-        """Recalculates the slider. Redefined to handle slider movement. Reimplemented from FXWindow."""
+        """Recalculates the slider.
+
+        Redefined to handle slider movement. Reimplemented from FXWindow.
+        """
 
     def setDecimalPlaces(self, dp: int):
         """Sets the number of decimal points displayed.
@@ -196,4 +216,7 @@ class AFXSlider(FXPacker, AFXDataComponent):
         """
 
     def show(self):
-        """Shows the slider. Reimplemented from FXWindow."""
+        """Shows the slider.
+
+        Reimplemented from FXWindow.
+        """

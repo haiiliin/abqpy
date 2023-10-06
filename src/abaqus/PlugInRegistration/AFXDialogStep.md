@@ -2,47 +2,53 @@ This class provides dialog steps in GUI procedures.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxdialogstep.png)
 
-### AFXDialogStep(owner, dialog, prompt)  
+### AFXDialogStep(owner, dialog, prompt)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor that takes a prompt for the prompt area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
-| prompt | String |   |   |
+| owner | AFXProcedure | | Procedure creating the step. |
+| dialog | AFXDataDialog | | Dialog box to be posted in this step. |
+| prompt | String | | |
 
-### AFXDialogStep(owner, dialog)  
+### AFXDialogStep(owner, dialog)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor that supplies a default prompt for the prompt area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
+| owner | AFXProcedure | | Procedure creating the step. |
+| dialog | AFXDataDialog | | Dialog box to be posted in this step. |
 
-### onCancel()  
+### onCancel()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is cancelled.
 
 Reimplemented from AFXStep.
 
-### onExecute()  
+### onExecute()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called to execute steps returned by getFirstStep and getNextStep.
 
 Reimplemented from AFXStep.
 
-### onResume()  
+### onResume()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is resumed.
 
 Reimplemented from AFXStep.
 
-### onSuspend()  
+### onSuspend()
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Called when the step is suspended.

@@ -7,7 +7,10 @@ from .FXObject import FXObject
 
 
 class AFXList(FXList):
-    """This class is a list widget that allows displaying items in a scrollable window. Each item has associated data set as integers as items are added."""
+    """This class is a list widget that allows displaying items in a scrollable window.
+
+    Each item has associated data set as integers as items are added.
+    """
 
     def __init__(
         self,
@@ -59,16 +62,25 @@ class AFXList(FXList):
         """
 
     def disable(self):
-        """Disables the list. Reimplemented from FXWindow."""
+        """Disables the list.
+
+        Reimplemented from FXWindow.
+        """
 
     def enable(self):
-        """Enables the list. Reimplemented from FXWindow."""
+        """Enables the list.
+
+        Reimplemented from FXWindow.
+        """
 
     def getAutoCommit(self):
         """Returns the auto-commit flag."""
 
     def getDefaultHeight(self):
-        """Returns the default height of the list. Reimplemented from FXList."""
+        """Returns the default height of the list.
+
+        Reimplemented from FXList.
+        """
 
     def getItemIndexForData(self, data: str):
         """Returns the index of the first item with the associated data or -1 if not found.
@@ -76,14 +88,16 @@ class AFXList(FXList):
         Parameters
         ----------
         data : str
-
         """
 
     def getItemProvider(self):
         """Returns the provider of the list's items."""
 
     def getSingleSelection(self):
-        """Returns the index of the uniquely selected item. If more than one item or no items are selected, returns -1."""
+        """Returns the index of the uniquely selected item.
+
+        If more than one item or no items are selected, returns -1.
+        """
 
     def insertItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):
         """Inserts a new item at the given index.
@@ -121,7 +135,6 @@ class AFXList(FXList):
         Parameters
         ----------
         commit : bool
-
         """
 
     def setItemProvider(self, cp: FXObject):
@@ -130,5 +143,4 @@ class AFXList(FXList):
         Parameters
         ----------
         cp : FXObject
-
         """

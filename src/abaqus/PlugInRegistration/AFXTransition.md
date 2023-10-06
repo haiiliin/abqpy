@@ -2,128 +2,135 @@ This class is designed for the finite state transition that the GUI (mostly the 
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxtransition.png)
 
-### AFXTransition(boolKeyword, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(boolKeyword, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| boolKeyword | AFXBoolKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Bool |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| boolKeyword | AFXBoolKeyword | | Keyword. |
+| op | Operator | | Operator type. |
+| refValue | Bool | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### AFXTransition(floatKeyword, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(floatKeyword, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| floatKeyword | AFXFloatKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| floatKeyword | AFXFloatKeyword | | Keyword. |
+| op | Operator | | Operator type. |
+| refValue | Float | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### AFXTransition(intKeyword, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(intKeyword, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| intKeyword | AFXIntKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| intKeyword | AFXIntKeyword | | Keyword. |
+| op | Operator | | Operator type. |
+| refValue | Int | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### AFXTransition(togKeyword, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(togKeyword, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| togKeyword | AFXTogglableKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Bool |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| togKeyword | AFXTogglableKeyword | | Keyword. |
+| op | Operator | | Operator type. |
+| refValue | Bool | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### AFXTransition(floatTarget, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(floatTarget, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| floatTarget | AFXFloatTarget |   | Target. |
-| op | Operator |   | Operator type. |
-| refValue | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| floatTarget | AFXFloatTarget | | Target. |
+| op | Operator | | Operator type. |
+| refValue | Float | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### AFXTransition(intTarget, op, refValue, tgt, sel, ptr=None)  
+### AFXTransition(intTarget, op, refValue, tgt, sel, ptr=None)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| intTarget | AFXIntTarget |   | Target. |
-| op | Operator |   | Operator type. |
-| refValue | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| intTarget | AFXIntTarget | | Target. |
+| op | Operator | | Operator type. |
+| refValue | Int | | Reference value. |
+| tgt | FXObject | | Message target. |
+| sel | Int | | Message selector. |
 | ptr | String | None | Message data. |
 
-### process(sender)  
+### process(sender)
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Returns True and sends a message if the expression defined by the constructor arguments evaluates to True; returns False without performing any actions if otherwise.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Message sender. |
+| sender | FXObject | | Message sender. |
 
-### Class flags  
+### Class flags
+
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
-
 
 **Flags for specifying transition operators.**
 
-| **EQ** | 
+| **EQ** |
 
 Equal to.
 
- |
-| **NE** | 
+|
+| **NE** |
 
 Not equal to.
 
- |
-| **LT** | 
+|
+| **LT** |
 
 Less than.
 
- |
-| **LE** | 
+|
+| **LE** |
 
 Less than or equal to.
 
- |
-| **GT** | 
+|
+| **GT** |
 
 Greater than.
 
- |
-| **GE** | 
+|
+| **GE** |
 
 Greater than or equal to.
 
- |
+|
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
@@ -145,6 +152,6 @@ Subject:
 
 Feedback on User Assistance
 
-*
+-
 
 I acknowledge I have read and I hereby accept the [privacy policy](https://www.3ds.com/privacy-policy) under which my personal data will be used by Dassault Systèmes.

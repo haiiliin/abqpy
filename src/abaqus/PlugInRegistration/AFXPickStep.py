@@ -95,19 +95,34 @@ class AFXPickStep(AFXStep):
         """
 
     def onCancel(self):
-        """Called when the step is cancelled. Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep."""
+        """Called when the step is cancelled.
+
+        Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep.
+        """
 
     def onExecute(self):
-        """Called to execute the steps returned by getFirstStep and getNextStep. Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep."""
+        """Called to execute the steps returned by getFirstStep and getNextStep.
+
+        Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep.
+        """
 
     def onResume(self):
-        """Called when the step is resumed. Reimplemented from AFXStep."""
+        """Called when the step is resumed.
+
+        Reimplemented from AFXStep.
+        """
 
     def onSuspend(self):
-        """Called when the step is suspended. Reimplemented from AFXStep."""
+        """Called when the step is suspended.
+
+        Reimplemented from AFXStep.
+        """
 
     def reset(self):
-        """Allows a step to reset any of its data (if needed) when looping. Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep."""
+        """Allows a step to reset any of its data (if needed) when looping.
+
+        Reimplemented from AFXStep. Reimplemented in AFXOrderedPickStep.
+        """
 
     def setEdgeRefinements(self, refinement: int):
         """Sets the refinements to be used when picking edges.

@@ -18,12 +18,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FreeBodyOptions(_OptionsBase):
-    """The FreeBodyOptions object stores values and attributes associated with a free body
-    plot. The FreeBodyOptions object has no constructor command. Abaqus creates a
-    *defaultOdbDisplay.freeBodyOptions* member when you import the Visualization module.
-    Abaqus creates a **FreeBodyOptions** member when it creates the OdbDisplay object, using
-    the values from *defaultOdbDisplay.freeBodyOptions*. Abaqus creates the **odbDisplay**
-    member when a viewport is created, using the values from **defaultOdbDisplay**.
+    """The FreeBodyOptions object stores values and attributes associated with a free body plot. The
+    FreeBodyOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.freeBodyOptions*
+    member when you import the Visualization module. Abaqus creates a **FreeBodyOptions** member when it creates
+    the OdbDisplay object, using the values from *defaultOdbDisplay.freeBodyOptions*. Abaqus creates the
+    **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**.
+
     FreeBodyOptions objects are accessed in one of two ways:
     - The default free body options. These settings are used as defaults when other
     **freeBodyOptions** members are created. These settings can be set to customize user

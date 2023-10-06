@@ -60,5 +60,4 @@ class FXMainWindow(FXTopWindow):
         hs : int
 
         vs : int
-
         """
