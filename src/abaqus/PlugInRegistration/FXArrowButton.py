@@ -10,7 +10,7 @@ from .FXObject import FXObject
 class FXArrowButton(FXFrame):
     """Button with an arrow; the arrow can point in any direction.
 
-    When clicked, the arrow button sends a SEL\_COMMAND to its target. When ARROW\_REPEAT is passed, the
+    When clicked, the arrow button sends a SEL_COMMAND to its target. When ARROW_REPEAT is passed, the
     arrow button sends a SEL_COMMAND repeatedly while the button is pressed.
     """
 

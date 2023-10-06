@@ -8,7 +8,7 @@ from .FXWindow import FXWindow
 class FXDialogBox(FXTopWindow):
     """DialogBox window.
 
-    When receiving ID\_CANCEL or ID\_ACCEPT, the DialogBox breaks out of the modal loop and returns False or
+    When receiving ID_CANCEL or ID_ACCEPT, the DialogBox breaks out of the modal loop and returns False or
     True, respectively. To close the DialogBox when not running modally, simply send it ID_HIDE.
     """
 

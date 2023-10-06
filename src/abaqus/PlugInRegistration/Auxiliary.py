@@ -4,8 +4,16 @@ from __future__ import annotations
 
 from typing import Callable
 
+from .AFXApp import AFXApp
+from .AFXModuleGui import AFXModuleGui
 from .constants import FONT_PROPORTIONAL
+from .FXBMPIcon import FXBMPIcon
+from .FXFont import FXFont
+from .FXGIFIcon import FXGIFIcon
+from .FXObject import FXObject
+from .FXPNGIcon import FXPNGIcon
 from .FXWindow import FXWindow
+from .FXXPMIcon import FXXPMIcon
 
 
 def addExitCallback(callback: Callable):
@@ -18,7 +26,7 @@ def addExitCallback(callback: Callable):
     """
 
 
-def afxCreateIcon(fileName: str):
+def afxCreateIcon(fileName: str) -> FXBMPIcon | FXGIFIcon | FXPNGIcon | FXXPMIcon:
     """Returns an icon created by reading the specified file, which can be in one of these formats: BMP, GIF,
     PNG, XPM. The file format is assumed from the file extension (which is not case sensitive). Returns 0 if the
     file cannot be opened.
@@ -28,9 +36,10 @@ def afxCreateIcon(fileName: str):
     fileName : str
         File name.
     """
+    ...
 
 
-def afxCreateBMPIcon(fileName: str):
+def afxCreateBMPIcon(fileName: str) -> FXBMPIcon:
     """Returns an icon created by reading the specified file in BMP format. Returns 0 if the file cannot be
     opened.
 
@@ -39,9 +48,10 @@ def afxCreateBMPIcon(fileName: str):
     fileName : str
         File name.
     """
+    ...
 
 
-def afxCreateGIFIcon(fileName: str):
+def afxCreateGIFIcon(fileName: str) -> FXGIFIcon:
     """Returns an icon created by reading the specified file in GIF format. Returns 0 if the file cannot be
     opened.
 
@@ -50,9 +60,10 @@ def afxCreateGIFIcon(fileName: str):
     fileName : str
         File name.
     """
+    ...
 
 
-def afxCreatePNGIcon(fileName: str):
+def afxCreatePNGIcon(fileName: str) -> FXPNGIcon:
     """Returns an icon created by reading the specified file in PNG format. Returns 0 if the file cannot be
     opened.
 
@@ -61,9 +72,10 @@ def afxCreatePNGIcon(fileName: str):
     fileName : str
         File name.
     """
+    ...
 
 
-def afxCreateXPMIcon(fileName: str):
+def afxCreateXPMIcon(fileName: str) -> FXXPMIcon:
     """Returns an icon created by reading the specified file in XPM format. Returns 0 if the file cannot be
     opened.
 
@@ -72,6 +84,7 @@ def afxCreateXPMIcon(fileName: str):
     fileName : str
         File name.
     """
+    ...
 
 
 def afxGetIcon(fileName: str, size: str):
@@ -97,33 +110,27 @@ def displayURL(url: str):
     """
 
 
-def getAFXApp():
+def getAFXApp() -> AFXApp:
     """Returns the application object."""
+    ...
 
 
-def getAFXAliasMap(widget: FXWindow, name: str):
-    """Sets the name key of a widget.
-
-    Parameters
-    ----------
-    widget : FXWindow
-        The widget for which the name is being set. The name key is used, along with a prefix, to identify the widget.
-    name : str
-        The name of the widget.
-    """
+def getAFXAliasMap():
+    """Returns the alias map."""
 
 
-def getAFXFont(opts: int = FONT_PROPORTIONAL):
+def getAFXFont(opts: int = FONT_PROPORTIONAL) -> FXFont:
     """Returns the specified font.
 
     Parameters
     ----------
     opts : int
-        Type of font to get. Possible choices are FONT\_PROPORTIONAL, FONT\_MONOSPACE, FONT\_REGULAR, FONT\_BOLD, FONT\_ITALIC, FONT\_BASE, or FONT_SMALL.
+        Type of font to get. Possible choices are FONT_PROPORTIONAL, FONT_MONOSPACE, FONT_REGULAR, FONT_BOLD, FONT_ITALIC, FONT_BASE, or FONT_SMALL.
     """
+    ...
 
 
-def afxGetColorHexSpecFromID(colorId: int):
+def afxGetColorHexSpecFromID(colorId: int) -> str:
     """Returns the equivalent hex string for the specified color index.
 
     Parameters
@@ -131,9 +138,10 @@ def afxGetColorHexSpecFromID(colorId: int):
     colorId : int
         The index of the color to be converted to a hex string. For example, green would be FXRGB(0, 255,0). See the Colors appendix of the Abaqus GUI Toolkit User's Guide for details.
     """
+    ...
 
 
-def afxGetColorHexSpecFromName(colorName: str):
+def afxGetColorHexSpecFromName(colorName: str) -> str:
     """Returns the equivalent hex string for the specified color name.
 
     Parameters
@@ -141,37 +149,42 @@ def afxGetColorHexSpecFromName(colorName: str):
     colorName : str
         The name of the color to be converted to a hex string. For example, 'Red'. See the Colors appendix of the Abaqus GUI Toolkit User's Guide for details.
     """
+    ...
 
 
-def getCurrentContext():
+def getCurrentContext() -> dict:
     """Returns the current GUI context dictionary, which contains the following keys: _mdbName_, _viewportName_,
     _objectPath_, _objectType_, _modelName_, and _moduleName_.
 
     You can be notified of context changes by using the [registerCurrentContext](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEGUIRefHtml/pt01ch01gob125.htm?contextscope=all#gui-auxiliary-registercurrentcontext) function.
     """
+    ...
 
 
-def getCurrentModuleGui():
+def getCurrentModuleGui() -> AFXModuleGui:
     """Returns the current moduleGui object.
 
     You can call that object's getModuleName method to check its name.
     """
+    ...
 
 
-def getCursorPosition():
+def getCursorPosition() -> tuple[bool, float, float, int]:
     """Returns a tuple of status,x,y,buttonState.
 
     The status (TRUE or FALSE) indicates the success of the call. The x and y values represent the position
     of the cursor in the window's coordinate system (origin is in the upper left, positive Y points
     downward). This method is defined in FXWindow, so it may be called on any object derived from FXWindow.
     """
+    ...
 
 
-def getDisplayedObjectType():
+def getDisplayedObjectType() -> str:
     """Returns the type of the object displayed in the current viewport.
 
     Possible return values are: PART, ASSEMBLY, ODB, XY_PLOT, SKETCH, or None.
     """
+    ...
 
 
 def getSeparator(parent, count: int):
@@ -186,7 +199,7 @@ def getSeparator(parent, count: int):
     """
 
 
-def getWidgetFromText(parent, text: str):
+def getWidgetFromText(parent, text: str) -> FXObject:
     """Returns a widget whose label or tip text matches the specified text and is also a child of the specified
     widget.
 
@@ -197,6 +210,7 @@ def getWidgetFromText(parent, text: str):
     text : str
         The text to be matched (must be an exact match).
     """
+    ...
 
 
 def openWithURL(url: str):

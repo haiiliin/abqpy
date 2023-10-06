@@ -16,9 +16,9 @@ class FXScrollbar(FXWindow):
     middle mouse (same as the left mouse only the scroll position can hop to the place where the click is
     made). Finally, if the mouse sports a wheel, the scroll bar can be manipulated by means of the mouse
     wheel as well. Holding down the Control-key during wheel motion will cause the scrolling to go faster
-    than normal. While moving the scroll bar, a message of type SEL\_CHANGED will be sent to the target, and
+    than normal. While moving the scroll bar, a message of type SEL_CHANGED will be sent to the target, and
     the message data will reflect the current position of type FXint. At the end of the interaction, the
-    scroll bar will send a message of type SEL\_COMMAND to notify the target of the final position.
+    scroll bar will send a message of type SEL_COMMAND to notify the target of the final position.
     """
 
     def __init__(

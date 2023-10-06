@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .AFXMainWindow import AFXMainWindow
 from .FXApp import FXApp
 
 
@@ -42,14 +43,17 @@ class AFXApp(FXApp):
         Reimplemented from FXApp.
         """
 
-    def getAFXMainWindow(self):
+    def getAFXMainWindow(self) -> AFXMainWindow:
         """Returns a pointer to the AFXMainWindow."""
+        ...
 
-    def getBasePrerelease(self):
+    def getBasePrerelease(self) -> bool:
         """Returns True if the base product is a prerelease."""
+        ...
 
-    def getBaseProductName(self):
+    def getBaseProductName(self) -> str:
         """Returns the base product name."""
+        ...
 
     def getBaseVersionNumbers(self, majorNumber: int, minorNumber: int, updateNumber: int):
         """Returns the base product's major, minor, and update numbers.
@@ -64,17 +68,21 @@ class AFXApp(FXApp):
             Update number.
         """
 
-    def getKernelInitializationCommand(self):
+    def getKernelInitializationCommand(self) -> str:
         """Returns the command string that will be issued upon application startup."""
+        ...
 
-    def getPrerelease(self):
+    def getPrerelease(self) -> bool:
         """Returns True if this is a prerelease."""
+        ...
 
-    def getProductName(self):
+    def getProductName(self) -> str:
         """Returns the product name."""
+        ...
 
-    def getVersionNumbers(self):
+    def getVersionNumbers(self) -> tuple[int, int, int]:
         """Returns the major, minor, and update numbers."""
+        ...
 
     def init(self, argc: int, argv: str, *args, **kwargs):
         """Initializes the application and connects to the kernel.
@@ -86,20 +94,24 @@ class AFXApp(FXApp):
         argv : str
         """
 
-    def isLocked(self):
+    def isLocked(self) -> bool:
         """Returns True if the GUI is locked or False if otherwise.
 
         Reimplemented from FXApp.
         """
+        ...
 
-    def isProductCAE(self):
+    def isProductCAE(self) -> bool:
         """Returns True if the base product is Abaqus/CAE."""
+        ...
 
-    def isProductViewer(self):
+    def isProductViewer(self) -> bool:
         """Returns True if the base product is Abaqus/Viewer."""
+        ...
 
-    def isLearningEdition(self):
+    def isLearningEdition(self) -> bool:
         """Returns True if the base product is a learning edition."""
+        ...
 
     def lock(self):
         """Locks the GUI (normally used during command and mode processing)."""
