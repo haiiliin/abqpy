@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-FXSplitter
-
 Splitter window is used to interactively repartition two or more subpanes. Space may be subdivided horizontally or vertically. When the splitter is itself resized, the right-most (bottom-most) child window will be resized unless the splitter window is reversed; if the splitter is reversed, the left-most (top-most) child window will be resized instead. The splitter widget sends a SEL\_CHANGED to its target during the resizing of the panes; at the end of the resize interaction, it sends a SEL\_COMMAND to signify that the resize operation is complete. Normally, children are resizable from 0 upwards; however, if the child in a horizontally oriented splitter has LAYOUT\_FILL\_X in combination with LAYOUT\_FIX\_WIDTH, it will not be made smaller than its default width, except when the child is the last visible widget (or first when the option SPLITTER\_REVERSED has been passed to the splitter). In a vertically oriented splitter, children with LAYOUT\_FILL\_Y and LAYOUT\_FIX_HEIGHT behave analogously. These options only affect interactive resizing.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxsplitter.png)

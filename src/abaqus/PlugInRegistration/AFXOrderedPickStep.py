@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 from .AFXObjectKeyword import AFXObjectKeyword
+from .AFXPickStep import AFXPickStep
 from .AFXProcedure import AFXProcedure
 
 
-class AFXOrderedPickStep:
-    """|"""
+class AFXOrderedPickStep(AFXPickStep):
+    """This class is used to provide pick steps in GUI procedures."""
 
     def __init__(
         self, owner: AFXProcedure, keyword: AFXObjectKeyword, prompt: str, entitiesToPick: int, highlightLevel: int = 1

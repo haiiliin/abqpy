@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-FXWindow
-
 Base class for all windows
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxwindow.png)

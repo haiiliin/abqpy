@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-AFXVerticalAligner
-
 This class is used to automatically vertically align its children "container" widgets (e.g. AFXTextField or AFXComboBox). The width of the first widget in the container of each child of the vertical aligner is set to the width of the widest first widget of all the vertical aligner's children.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxverticalaligner.png)

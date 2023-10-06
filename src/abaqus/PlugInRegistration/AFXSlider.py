@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import AFXSLIDER_NORMAL
 from .FXComposite import FXComposite
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXSlider:
+class AFXSlider(FXPacker, AFXDataComponent):
     """This class provides a slider, which allows the user to specify a value by dragging its value indicator."""
 
     def __init__(

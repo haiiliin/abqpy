@@ -3,11 +3,12 @@ from __future__ import annotations
 from .constants import BUTTON_NORMAL, DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
+from .FXLabel import FXLabel
 from .FXObject import FXObject
 
 
-class FXButton:
-    """|"""
+class FXButton(FXLabel):
+    """A button provides a push button, with optional icon and/or text label. When pressed, the button widget sends a SEL_COMMAND to its target."""
 
     def __init__(
         self,

@@ -1,5 +1,3 @@
-| 
-
 This class provides the interface for creating an FXMenuPane and performing various management activities on it.
 
 ![](../SIMACAERefImages/gui-afxmenupane.png)

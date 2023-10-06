@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from .AFXGuiObjectManager import AFXGuiObjectManager
 
-class AFXToolsetGui:
+
+class AFXToolsetGui(AFXGuiObjectManager):
     """This is the base class for toolset GUIs and provides an interface for managing the toolset's GUI items. It provides a mechanism to add in menubar, toolbar, and toolbox GUI items."""
 
     def __init__(self, toolsetName: str):

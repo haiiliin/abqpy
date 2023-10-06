@@ -1,5 +1,3 @@
-| 
-
 This class is used to provide pick steps in GUI procedures.
 
 ![](../SIMACAERefImages/gui-afxorderedpickstep.png)

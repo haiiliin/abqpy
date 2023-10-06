@@ -2,11 +2,12 @@ from __future__ import annotations
 
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
+from .FXMenuCaption import FXMenuCaption
 from .FXPopup import FXPopup
 
 
-class FXMenuTitle:
-    """|"""
+class FXMenuTitle(FXMenuCaption):
+    """A menu title is a child of a menu bar which is responsible for popping up a pulldown menu."""
 
     def __init__(self, p: FXComposite, text: str, ic: FXIcon | None = None, pup: FXPopup | None = None, opts: int = 0):
         """Constructor.

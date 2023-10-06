@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 from .AFXBoolKeyword import AFXBoolKeyword
-from .AFXForm import AFXForm
+from .AFXFileDialog import AFXFileDialog
 from .AFXIntTarget import AFXIntTarget
-from .AFXStringKeyword import AFXStringKeyword
 from .AFXStringTarget import AFXStringTarget
 from .constants import AFXSELECTFILE_ANY
 from .FXWindow import FXWindow
 
 
-class AFXFileSelectorDialog:
+class AFXFileSelectorDialog(AFXFileDialog):
     """Abaqus"""
 
     def __init__(

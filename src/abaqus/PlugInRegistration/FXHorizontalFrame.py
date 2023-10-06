@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
+from .FXPacker import FXPacker
 
 
-class FXHorizontalFrame:
-    """Abaqus"""
+class FXHorizontalFrame(FXPacker):
+    """Horizontal frame layout manager widget is used to automatically place child-windows horizontally from left-to-right, or right-to-left, depending on the child window's layout hints."""
 
     def __init__(
         self,

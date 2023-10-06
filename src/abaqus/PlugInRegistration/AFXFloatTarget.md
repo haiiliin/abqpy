@@ -1,5 +1,3 @@
-| 
-
 This class is designed for floating-point targets.
 
 ![](../SIMACAERefImages/gui-afxfloattarget.png)

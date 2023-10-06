@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-FXMenuCaption
-
 The menu caption is a widget which can be used as a caption above a number of menu commands in a menu.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxmenucaption.png)

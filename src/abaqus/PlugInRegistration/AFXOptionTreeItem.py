@@ -5,9 +5,10 @@ from typing_extensions import Self
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXOptionTreeItem:
+class AFXOptionTreeItem(FXPacker):
     """This class is a tree widget with check buttons."""
 
     def __init__(

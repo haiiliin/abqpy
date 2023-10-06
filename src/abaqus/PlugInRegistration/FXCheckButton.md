@@ -1,5 +1,3 @@
-| 
-
 A check button is a tri-state button. Normally, it is either True or False, and toggles between True or False whenever it is pressed. A third state MAYBE may be set to indicate that no selection has been made yet by the user, or that the state is ambiguous. When pressed, the check button sends a SEL_COMMAND to its target, and the message data represents the state of the check button.
 
 ![](../SIMACAERefImages/gui-fxcheckbutton.png)

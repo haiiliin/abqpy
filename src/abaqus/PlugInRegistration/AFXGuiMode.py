@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .AFXGuiCommand import AFXGuiCommand
 from .AFXGuiObjectManager import AFXGuiObjectManager
+from .AFXMode import AFXMode
 from .FXObject import FXObject
 
 
-class AFXGuiMode:
+class AFXGuiMode(AFXMode):
     """This class is the abstract base class for modes."""
 
     def __init__(self, owner: AFXGuiObjectManager):

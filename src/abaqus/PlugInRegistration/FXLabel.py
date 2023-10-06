@@ -4,10 +4,11 @@ from .constants import DEFAULT_PAD, LABEL_NORMAL
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
+from .FXFrame import FXFrame
 from .FXIcon import FXIcon
 
 
-class FXLabel:
+class FXLabel(FXFrame):
     """A label widget can be used to place a text and/or icon for explanation purposes. The text label may have an optional tooltip and/or help string."""
 
     def __init__(

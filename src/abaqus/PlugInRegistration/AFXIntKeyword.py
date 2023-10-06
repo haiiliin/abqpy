@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 from .constants import INT_DEFAULT
 
 
-class AFXIntKeyword:
+class AFXIntKeyword(AFXKeyword):
     """Abaqus"""
 
     def __init__(

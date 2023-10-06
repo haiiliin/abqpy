@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .FXIcon import FXIcon
+from .FXIconItem import FXIconItem
 
 
-class FXFileItem:
-    """|"""
+class FXFileItem(FXIconItem):
+    """File item"""
 
     def __init__(self, text: str, bi: FXIcon | None = None, mi: FXIcon | None = None, ptr: str = "None"):
         """Constructor.

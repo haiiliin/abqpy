@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .FXColor import FXColor
+from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXIcon import FXIcon
 from .FXMDIClient import FXMDIClient
@@ -8,7 +9,7 @@ from .FXMenuPane import FXMenuPane
 from .FXPopup import FXPopup
 
 
-class FXMDIChild:
+class FXMDIChild(FXComposite):
     """The MDI child window contains the application work area in a Multiple Document Interface application."""
 
     def __init__(

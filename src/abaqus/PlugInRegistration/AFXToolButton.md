@@ -1,5 +1,3 @@
-| 
-
 This class contains a button for use in the tool bar or the toolbox.
 
 ![](../SIMACAERefImages/gui-afxtoolbutton.png)

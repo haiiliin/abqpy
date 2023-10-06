@@ -2,9 +2,10 @@ from __future__ import annotations
 
 from .AFXDataDialog import AFXDataDialog
 from .AFXProcedure import AFXProcedure
+from .AFXStep import AFXStep
 
 
-class AFXDialogStep:
+class AFXDialogStep(AFXStep):
     """This class provides dialog steps in GUI procedures."""
 
     def __init__(self, owner: AFXProcedure, dialog: AFXDataDialog):

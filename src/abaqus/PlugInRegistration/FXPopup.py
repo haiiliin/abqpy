@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 from .FXColor import FXColor
+from .FXShell import FXShell
 from .FXWindow import FXWindow
 
 
-class FXPopup:
-    """|"""
+class FXPopup(FXShell):
+    """Popup window"""
 
     def __init__(self, owner: FXWindow, x: int = 0, y: int = 0, w: int = 0, h: int = 0):
         """Construct popup pane.

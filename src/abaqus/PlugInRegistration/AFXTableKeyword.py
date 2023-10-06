@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+from .AFXComTableKeyword import AFXComTableKeyword
 from .AFXGuiCommand import AFXGuiCommand
 
 
-class AFXTableKeyword:
-    """|"""
+class AFXTableKeyword(AFXComTableKeyword):
+    """This class is designed for command keywords that have table values."""
 
     def __init__(
         self,

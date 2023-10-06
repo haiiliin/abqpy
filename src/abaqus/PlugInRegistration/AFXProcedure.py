@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 from .AFXDialog import AFXDialog
+from .AFXGuiMode import AFXGuiMode
 from .AFXGuiObjectManager import AFXGuiObjectManager
 from .AFXStep import AFXStep
 from .constants import ALL, CLOSEST, INSIDE_CROSSING, NORMAL, RECTANGLE
 from .FXObject import FXObject
 
 
-class AFXProcedure:
+class AFXProcedure(AFXGuiMode):
     """This class provides the basis for writing procedures."""
 
     def __init__(self, owner: AFXGuiObjectManager, type: typeEnum = NORMAL):

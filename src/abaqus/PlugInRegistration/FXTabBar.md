@@ -1,7 +1,3 @@
-FXTabBar
-
-| 
-
 The tab bar layout manager arranges tab items side by side, and raises the active tab item above the neighboring tab items. The tab bar can be have the tab items on the top or bottom for horizontal arrangement, or on the left or right for vertical arrangement.
 
 ![](../SIMACAERefImages/gui-fxtabbar.png)

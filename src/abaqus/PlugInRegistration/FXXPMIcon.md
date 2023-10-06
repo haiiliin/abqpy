@@ -1,5 +1,3 @@
-| 
-
 X Pixmap icon.
 
 ![](../SIMACAERefImages/gui-fxxpmicon.png)

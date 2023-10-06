@@ -3,10 +3,11 @@ from __future__ import annotations
 from typing import Type
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 from .constants import ON_OFF
 
 
-class AFXBoolKeyword:
+class AFXBoolKeyword(AFXKeyword):
     """This class is designed for command keywords that have Boolean values."""
 
     def __init__(

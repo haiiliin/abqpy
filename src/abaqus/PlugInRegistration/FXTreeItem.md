@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-FXTreeItem
-
 Tree list Item
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxtreeitem.png)

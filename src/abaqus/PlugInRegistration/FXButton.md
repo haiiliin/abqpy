@@ -1,5 +1,3 @@
-| 
-
 A button provides a push button, with optional icon and/or text label. When pressed, the button widget sends a SEL_COMMAND to its target.
 
 ![](../SIMACAERefImages/gui-fxbutton.png)

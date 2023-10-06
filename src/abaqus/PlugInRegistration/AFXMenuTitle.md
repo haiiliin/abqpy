@@ -1,5 +1,3 @@
-| 
-
 This class provides the interface for creating an FXMenuTitle and performing various management activities on it. It will use utility methods so the menu title is correctly managed for modules and procedure toolsets.
 
 ![](../SIMACAERefImages/gui-afxmenutitle.png)

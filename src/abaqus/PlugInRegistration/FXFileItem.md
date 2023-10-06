@@ -1,5 +1,3 @@
-| 
-
 File item
 
 ![](../SIMACAERefImages/gui-fxfileitem.png)

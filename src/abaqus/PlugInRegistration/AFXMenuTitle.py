@@ -1,13 +1,12 @@
 from __future__ import annotations
-
-from .AFXGuiObjectManager import AFXGuiObjectManager
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
+from .FXMenuTitle import FXMenuTitle
 from .FXPopup import FXPopup
 
 
-class AFXMenuTitle:
-    """|"""
+class AFXMenuTitle(FXMenuTitle):
+    """This class provides the interface for creating an FXMenuTitle and performing various management activities on it. It will use utility methods so the menu title is correctly managed for modules and procedure toolsets."""
 
     def __init__(self, parent: FXComposite, label: str, ic: FXIcon | None = None, popup: FXPopup | None = None):
         """Constructor that takes a parent.

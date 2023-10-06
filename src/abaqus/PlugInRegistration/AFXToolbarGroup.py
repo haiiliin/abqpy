@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXGuiObjectManager import AFXGuiObjectManager
+from .FXToolbar import FXToolbar
 
 
-class AFXToolbarGroup:
+class AFXToolbarGroup(FXToolbar):
     """This class creates a container to be used for groups in the toolbar. It creates a vertical separator after the group. It will use utility methods so the group is correctly managed."""
 
     def __init__(self, owner: AFXGuiObjectManager, name: str = "''", title: str = "''"):

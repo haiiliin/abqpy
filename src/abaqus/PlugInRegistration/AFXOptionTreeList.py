@@ -4,9 +4,10 @@ from .AFXOptionTreeItem import AFXOptionTreeItem
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXObject import FXObject
+from .FXScrollWindow import FXScrollWindow
 
 
-class AFXOptionTreeList:
+class AFXOptionTreeList(FXScrollWindow):
     """This class provides a scrolled list of groups of options that may be toggled on or off as a group or individually."""
 
     def __init__(

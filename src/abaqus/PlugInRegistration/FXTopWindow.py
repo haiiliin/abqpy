@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .FXIcon import FXIcon
+from .FXShell import FXShell
 
 
-class FXTopWindow:
+class FXTopWindow(FXShell):
     """Abstract base class for all top-level windows"""
 
     def create(self):

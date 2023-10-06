@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXProcedure import AFXProcedure
+from .AFXStep import AFXStep
 
 
-class AFXEditSketchStep:
+class AFXEditSketchStep(AFXStep):
     """This class is used to provide pick steps in GUI procedures."""
 
     def __init__(self, owner: AFXProcedure, sketchName: str, prompt: str = "'Edit a sketch'"):

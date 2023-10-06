@@ -1,5 +1,3 @@
-| 
-
 A menu title is a child of a menu bar which is responsible for popping up a pulldown menu.
 
 ![](../SIMACAERefImages/gui-fxmenutitle.png)

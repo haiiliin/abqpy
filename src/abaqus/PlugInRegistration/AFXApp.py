@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from .FXApp import FXApp
 
-class AFXApp:
+
+class AFXApp(FXApp):
     """This class is responsible for providing some high-level GUI control methods."""
 
     def __init__(

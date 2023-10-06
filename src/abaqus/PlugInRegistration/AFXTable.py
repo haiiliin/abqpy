@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .AFXBaseTable import AFXBaseTable
+from .AFXDataComponent import AFXDataComponent
 from .constants import AFXTABLE_LIST_NORMAL, AFXTABLE_NORMAL, DEFAULT_MARGIN
 from .FXColor import FXColor
 from .FXComposite import FXComposite
@@ -8,7 +10,7 @@ from .FXIcon import FXIcon
 from .FXObject import FXObject
 
 
-class AFXTable:
+class AFXTable(AFXBaseTable, AFXDataComponent):
     """This class implements an editable table."""
 
     def __init__(

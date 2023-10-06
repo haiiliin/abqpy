@@ -1,10 +1,8 @@
 from __future__ import annotations
-
-from .AFXTable import AFXTable
 from .FXObject import FXObject
 
 
-class AFXColumnItems:
+class AFXColumnItems(FXObject):
     """Abaqus"""
 
     def __init__(self, referenceColumn: int, tgt: FXObject | None = None, sel: int = 0, opts: int = 0):

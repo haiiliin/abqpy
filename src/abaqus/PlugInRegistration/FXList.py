@@ -5,10 +5,11 @@ from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXListItem import FXListItem
 from .FXObject import FXObject
+from .FXScrollArea import FXScrollArea
 
 
-class FXList:
-    """Abaqus"""
+class FXList(FXScrollArea):
+    """List Widget"""
 
     def __init__(
         self,

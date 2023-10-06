@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .FXObject import FXObject
 
-class FXListItem:
-    """Abaqus"""
+
+class FXListItem(FXObject):
+    """List item"""

@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-AFXProgressBar
-
 This class contains a progress bar, which can present work-in-progress in a number of different styles.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxprogressbar.png)

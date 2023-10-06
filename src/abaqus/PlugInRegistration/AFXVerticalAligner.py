@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
+from .FXVerticalFrame import FXVerticalFrame
 
 
-class AFXVerticalAligner:
-    """Abaqus"""
+class AFXVerticalAligner(FXVerticalFrame):
+    """This class is used to automatically vertically align its children "container" widgets (e.g. AFXTextField or AFXComboBox). The width of the first widget in the container of each child of the vertical aligner is set to the width of the widest first widget of all the vertical aligner's children."""
 
     def __init__(
         self,

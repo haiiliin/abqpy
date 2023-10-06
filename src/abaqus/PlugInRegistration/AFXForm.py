@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 from .AFXDialog import AFXDialog
+from .AFXGuiMode import AFXGuiMode
 from .AFXGuiObjectManager import AFXGuiObjectManager
 from .FXObject import FXObject
 
 
-class AFXForm:
+class AFXForm(AFXGuiMode):
     """Abaqus"""
 
     def __init__(self, owner: AFXGuiObjectManager):

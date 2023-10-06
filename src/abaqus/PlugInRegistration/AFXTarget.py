@@ -3,7 +3,7 @@ from __future__ import annotations
 from .FXObject import FXObject
 
 
-class AFXTarget:
+class AFXTarget(FXObject):
     """This class is the base class for all target objects."""
 
     def __init__(self):

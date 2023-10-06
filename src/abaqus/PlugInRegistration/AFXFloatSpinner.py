@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXFloatSpinner:
+class AFXFloatSpinner(FXPacker, AFXDataComponent):
     """Convenience class for creating a labeled spinner. The label field can be a label or check button (AFXFLOATSPINNER_CHECKBUTTON option)."""
 
     def __init__(

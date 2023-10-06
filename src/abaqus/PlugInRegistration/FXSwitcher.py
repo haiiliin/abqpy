@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
+from .FXPacker import FXPacker
 
 
-class FXSwitcher:
-    """|"""
+class FXSwitcher(FXPacker):
+    """The Switcher layout manager automatically arranges its child windows such that one of them is placed on top; all other child windows are hidden. Switcher provides a convenient method to conserve screen real-estate by arranging several GUI panels to appear in the same space, depending on context. Switcher ignores all layout hints from its children:- all children are stretched according to the switcher layout managers own size. When the SWITCHER\_HCOLLAPSE or SWITCHER\_VCOLLAPSE options are used, Switcher's default size is based on the width or height of the current child, instead of the maximum width or height of all of the children."""
 
     def __init__(
         self,

@@ -1,5 +1,3 @@
-| 
-
 This class is designed for integer targets.
 
 ![](../SIMACAERefImages/gui-afxinttarget.png)

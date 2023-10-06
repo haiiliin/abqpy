@@ -6,11 +6,12 @@ from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXIcon import FXIcon
 from .FXObject import FXObject
+from .FXScrollArea import FXScrollArea
 from .FXTreeItem import FXTreeItem
 
 
-class FXTreeList:
-    """Abaqus"""
+class FXTreeList(FXScrollArea):
+    """Tree list Widget"""
 
     def __init__(
         self,

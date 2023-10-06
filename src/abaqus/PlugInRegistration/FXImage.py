@@ -4,10 +4,11 @@ from typing import Any
 
 from .FXApp import FXApp
 from .FXColor import FXColor
+from .FXDrawable import FXDrawable
 
 
-class FXImage:
-    """Abaqus"""
+class FXImage(FXDrawable):
+    """Image class"""
 
     def __init__(self, a: FXApp, pix: Any | None = None, opts: int = 0, w: int = 1, h: int = 1):
         """Create an image.

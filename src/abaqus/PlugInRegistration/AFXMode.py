@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from .FXObject import FXObject
 
-class AFXMode:
-    """Abaqus"""
+
+class AFXMode(FXObject):
+    """This class is the base class for modes."""
 
     def __init__(self):
         """Constructor."""

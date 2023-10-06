@@ -2,12 +2,13 @@ from __future__ import annotations
 
 from .AFXObjectKeyword import AFXObjectKeyword
 from .AFXProcedure import AFXProcedure
+from .AFXStep import AFXStep
 from .AFXTupleKeyword import AFXTupleKeyword
 from .constants import ARRAY, ONE
 
 
-class AFXPickStep:
-    """|"""
+class AFXPickStep(AFXStep):
+    """This class is used to provide pick steps in GUI procedures."""
 
     def __init__(
         self,

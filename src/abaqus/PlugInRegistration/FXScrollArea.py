@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from .FXComposite import FXComposite
 
-class FXScrollArea:
+
+class FXScrollArea(FXComposite):
     """The scroll area widget manages a content area and a viewport area through which the content is viewed. When the content area becomes larger than the viewport area, scrollbars are placed to permit viewing of the entire content by scrolling the content. Depending on the mode, scrollbars may be displayed on an as-needed basis, always, or never. Normally, the scroll area's size and the content's size are independent; however, it is possible to disable scrolling in the horizontal (vertical) direction. In this case, the content width (height) will influence the width (height) of the scroll area widget. For content which is time-consuming to repaint, continuous scrolling may be turned off."""
 
     def getContentWidth(self):

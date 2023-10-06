@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import NOTE_INFORMATION
 from .FXComposite import FXComposite
+from .FXHorizontalFrame import FXHorizontalFrame
 
 
-class AFXNote:
-    """Abaqus"""
+class AFXNote(FXHorizontalFrame):
+    """This class prefixes a given message string by either "Note:" or "Warning:"."""
 
     def __init__(self, p: FXComposite, message: str, opts: int = NOTE_INFORMATION, x: int = 0, y: int = 0):
         """Constructor.

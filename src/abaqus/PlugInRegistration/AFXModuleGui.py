@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from .AFXGuiObjectManager import AFXGuiObjectManager
 
-class AFXModuleGui:
+
+class AFXModuleGui(AFXGuiObjectManager):
     """This is the base class for module GUIs and provides an interface for module GUI management."""
 
     def __init__(self, moduleName: str, displayTypes: int):

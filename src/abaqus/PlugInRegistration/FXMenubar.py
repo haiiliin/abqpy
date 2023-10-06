@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .FXToolbar import FXToolbar
 
-class FXMenubar:
-    """Abaqus"""
+
+class FXMenubar(FXToolbar):
+    """Menu bar."""

@@ -8,10 +8,11 @@ from .FXIcon import FXIcon
 from .FXIconItem import FXIconItem
 from .FXIconListSortFunc import FXIconListSortFunc
 from .FXObject import FXObject
+from .FXScrollArea import FXScrollArea
 
 
-class FXIconList:
-    """Abaqus"""
+class FXIconList(FXScrollArea):
+    """Icon List Widget"""
 
     def __init__(
         self,

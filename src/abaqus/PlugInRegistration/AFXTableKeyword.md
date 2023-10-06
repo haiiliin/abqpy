@@ -1,5 +1,3 @@
-| 
-
 This class is designed for command keywords that have table values.
 
 ![](../SIMACAERefImages/gui-afxtablekeyword.png)

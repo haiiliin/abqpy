@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from .AFXTarget import AFXTarget
 
-class AFXFloatTarget:
-    """|"""
+
+class AFXFloatTarget(AFXTarget):
+    """This class is designed for floating-point targets."""
 
     def __init__(self, initialValue: float = 0.0):
         """Constructor.

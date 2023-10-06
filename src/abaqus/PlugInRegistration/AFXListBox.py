@@ -2,14 +2,16 @@ from __future__ import annotations
 
 from typing import Any
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXIcon import FXIcon
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXListBox:
+class AFXListBox(FXPacker, AFXDataComponent):
     """This class implements a labeled list box. It allows the user to select entries from a drop-down list. Each item has associated data set as integers initially as items are added."""
 
     def __init__(

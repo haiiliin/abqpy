@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXMode import AFXMode
+from .FXObject import FXObject
 
 
-class AFXCommand:
+class AFXCommand(FXObject):
     """This class is the abstract base class for command classes that are processed by modes."""
 
     def __init__(self, mode: AFXMode, method: str, objectName: str = "''", registerQuery: bool = False):

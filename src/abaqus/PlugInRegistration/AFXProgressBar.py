@@ -3,10 +3,11 @@ from __future__ import annotations
 from .constants import AFXPROGRESSBAR_PERCENTAGE, DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXObject import FXObject
+from .FXProgressBar import FXProgressBar
 
 
-class AFXProgressBar:
-    """Abaqus"""
+class AFXProgressBar(FXProgressBar):
+    """This class contains a progress bar, which can present work-in-progress in a number of different styles."""
 
     def __init__(
         self,

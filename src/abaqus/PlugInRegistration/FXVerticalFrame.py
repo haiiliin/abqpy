@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
+from .FXPacker import FXPacker
 
 
-class FXVerticalFrame:
-    """Abaqus"""
+class FXVerticalFrame(FXPacker):
+    """Vertical frame layout manager widget is used to automatically place child-windows vertically from top-to-bottom, or bottom-to-top, depending on the child window's layout hints."""
 
     def __init__(
         self,

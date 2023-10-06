@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
+from .FXList import FXList
 from .FXObject import FXObject
 
 
-class AFXList:
+class AFXList(FXList):
     """This class is a list widget that allows displaying items in a scrollable window. Each item has associated data set as integers as items are added."""
 
     def __init__(

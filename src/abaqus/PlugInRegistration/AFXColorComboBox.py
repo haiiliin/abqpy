@@ -5,9 +5,10 @@ from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXColorComboBox:
+class AFXColorComboBox(FXPacker):
     """This class contains a label that precedes a color well, which allows the user to bring up a color dialog box by double clicking. When connected to an AFXStringKeyword, this widget will assign the value of the button's current color to the keyword in hex format (for example, "FF0000")."""
 
     def AFXColorButton(

@@ -5,9 +5,10 @@ from .AFXToolsetGui import AFXToolsetGui
 from .constants import DECOR_ALL
 from .FXApp import FXApp
 from .FXIcon import FXIcon
+from .FXMainWindow import FXMainWindow
 
 
-class AFXMainWindow:
+class AFXMainWindow(FXMainWindow):
     """This class is responsible for constructing the components of the main window. It also provides accessors for the various components constructed."""
 
     def __init__(

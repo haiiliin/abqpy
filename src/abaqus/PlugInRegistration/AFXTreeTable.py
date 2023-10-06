@@ -1,14 +1,16 @@
 from __future__ import annotations
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import AFXTREETABLE_LIST_NORMAL, AFXTREETABLE_NORMAL
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXObject import FXObject
+from .FXScrollArea import FXScrollArea
 from .FXTreeItem import FXTreeItem
 
 
-class AFXTreeTable:
-    """Abaqus"""
+class AFXTreeTable(FXScrollArea, AFXDataComponent):
+    """This class combines a tree widget with a table widget to allow associating a row of data with an item in a tree."""
 
     def __init__(
         self,

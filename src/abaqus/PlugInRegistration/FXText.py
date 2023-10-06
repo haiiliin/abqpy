@@ -4,9 +4,10 @@ from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXObject import FXObject
+from .FXScrollArea import FXScrollArea
 
 
-class FXText:
+class FXText(FXScrollArea):
     """Multiline text widget"""
 
     def __init__(

@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXFont import FXFont
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXSpinner:
+class AFXSpinner(FXPacker, AFXDataComponent):
     """This class contains a label that precedes a spin box that allows the user to specify a value by clicking on its arrow buttons."""
 
     def __init__(

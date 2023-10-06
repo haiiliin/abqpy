@@ -4,10 +4,12 @@ from typing import Any
 
 from .FXApp import FXApp
 from .FXColor import FXColor
+from .FXIcon import FXIcon
+from .FXRGB import FXRGB
 
 
-class FXBMPIcon:
-    """|"""
+class FXBMPIcon(FXIcon):
+    """Microsoft Bitmap icon."""
 
     def __init__(
         self,

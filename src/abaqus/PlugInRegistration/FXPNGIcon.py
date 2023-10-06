@@ -4,10 +4,12 @@ from typing import Any
 
 from .FXApp import FXApp
 from .FXColor import FXColor
+from .FXIcon import FXIcon
+from .FXRGB import FXRGB
 
 
-class FXPNGIcon:
-    """|"""
+class FXPNGIcon(FXIcon):
+    """Portable Network Graphics (PNG) Icon class."""
 
     def __init__(
         self,

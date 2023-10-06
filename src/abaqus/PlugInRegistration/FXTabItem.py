@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_PAD, TAB_TOP_NORMAL
 from .FXIcon import FXIcon
+from .FXLabel import FXLabel
 from .FXTabBar import FXTabBar
 
 
-class FXTabItem:
+class FXTabItem(FXLabel):
     """A tab item is placed in a tab bar or tab book. When selected, the tab item sends a message to its parent, and causes itself to become the active tab, and raised slightly above the other tabs. In the tab book, activating a tab item also causes the corresponding panel to be raised to the top."""
 
     def __init__(

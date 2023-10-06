@@ -1,17 +1,11 @@
 from __future__ import annotations
-
-from .constants import (
-    FONTENCODING_DEFAULT,
-    FONTSETWIDTH_DONTCARE,
-    FONTSLANT_REGULAR,
-    FONTWEIGHT_NORMAL,
-)
 from .FXApp import FXApp
 from .FXFontDesc import FXFontDesc
+from .FXId import FXId
 
 
-class FXFont:
-    """Abaqus"""
+class FXFont(FXId):
+    """Font class"""
 
     def __init__(self, a: FXApp, nm: str):
         """Construct a font with given X11 font string.

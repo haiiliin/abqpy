@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 
 
-class AFXTupleKeyword:
+class AFXTupleKeyword(AFXKeyword):
     """This class manages values which are sent as tuples in a command."""
 
     def __init__(

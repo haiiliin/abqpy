@@ -10,7 +10,7 @@ from .FXWindow import FXWindow
 from .SOCKET import SOCKET
 
 
-class FXApp:
+class FXApp(FXObject):
     """Application Object"""
 
     def __init__(self, name: str = "Application", vendor: str = "FoxDefault"):

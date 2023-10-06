@@ -2,9 +2,11 @@ from __future__ import annotations
 
 from typing_extensions import Self
 
+from .FXWindow import FXWindow
 
-class FXComposite:
-    """Abaqus"""
+
+class FXComposite(FXWindow):
+    """Base composite."""
 
     def __init__(self, p: Self, opts: int = 0, x: int = 0, y: int = 0, w: int = 0, h: int = 0):
         """Constructor.

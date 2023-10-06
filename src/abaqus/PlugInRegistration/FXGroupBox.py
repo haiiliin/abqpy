@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from .constants import DEFAULT_SPACING, GROUPBOX_NORMAL
 from .FXComposite import FXComposite
+from .FXPacker import FXPacker
 
 
-class FXGroupBox:
-    """Abaqus"""
+class FXGroupBox(FXPacker):
+    """A group box widget provides a nice raised or sunken border around a group of widgets, providing a visual delineation. Typically, a title is placed over the border to provide some clarification. Radio buttons placed inside a group box automatically assume mutually exclusive behaviour, i.e. at most one radio button will be checked at any one time."""
 
     def __init__(
         self,

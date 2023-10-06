@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 
 
-class AFXComTableKeyword:
+class AFXComTableKeyword(AFXKeyword):
     """This class manages values which are sent as tables in a command."""
 
     def __init__(

@@ -1,5 +1,3 @@
-| 
-
 A child of the Root window.
 
 ![](../SIMACAERefImages/gui-fxshell.png)

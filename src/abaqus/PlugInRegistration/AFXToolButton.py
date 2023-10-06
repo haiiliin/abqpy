@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+from .FXButton import FXButton
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 
 
-class AFXToolButton:
-    """|"""
+class AFXToolButton(FXButton):
+    """This class contains a button for use in the tool bar or the toolbox."""
 
     def __init__(
         self,

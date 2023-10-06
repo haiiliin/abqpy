@@ -1,5 +1,3 @@
-| 
-
 This class provides the interface for creating an FXMenuCascade and performing various management activities on it. It will use utility methods so the menu cascade is correctly managed for modules and toolsets.
 
 ![](../SIMACAERefImages/gui-afxmenucascade.png)

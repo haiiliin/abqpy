@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .FXApp import FXApp
+from .FXComposite import FXComposite
 from .FXVisual import FXVisual
 
 
-class FXRootWindow:
+class FXRootWindow(FXComposite):
     """Root window."""
 
     def __init__(self, a: FXApp, vis: FXVisual):

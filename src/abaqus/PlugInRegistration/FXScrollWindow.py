@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .FXComposite import FXComposite
+from .FXSrollArea import FXSrollArea
 
 
-class FXScrollWindow:
+class FXScrollWindow(FXSrollArea):
     """The scroll window widget scrolls an arbitrary child window. Use the scroll window when parts of the user interface itself need to be scrolled, for example when applications need to run on small screens."""
 
     def __init__(self, p: FXComposite, opts: int = 0, x: int = 0, y: int = 0, w: int = 0, h: int = 0):

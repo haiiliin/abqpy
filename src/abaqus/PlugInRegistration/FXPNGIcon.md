@@ -1,5 +1,3 @@
-| 
-
 Portable Network Graphics (PNG) Icon class.
 
 ![](../SIMACAERefImages/gui-fxpngicon.png)

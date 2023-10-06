@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from .AFXTarget import AFXTarget
 
-class AFXStringTarget:
-    """|"""
+
+class AFXStringTarget(AFXTarget):
+    """This class is designed for string targets."""
 
     def __init__(self, initialValue: str = "''"):
         """Constructor.

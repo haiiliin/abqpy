@@ -2,9 +2,10 @@ from __future__ import annotations
 
 from .AFXObjectKeyword import AFXObjectKeyword
 from .AFXProcedure import AFXProcedure
+from .AFXStep import AFXStep
 
 
-class AFXCreateSketchStep:
+class AFXCreateSketchStep(AFXStep):
     """This class is used to provide pick steps in GUI procedures."""
 
     def __init__(

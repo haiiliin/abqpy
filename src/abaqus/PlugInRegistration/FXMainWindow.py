@@ -3,9 +3,10 @@ from __future__ import annotations
 from .constants import DECOR_ALL
 from .FXApp import FXApp
 from .FXIcon import FXIcon
+from .FXTopWindow import FXTopWindow
 
 
-class FXMainWindow:
+class FXMainWindow(FXTopWindow):
     """Main application window."""
 
     def __init__(

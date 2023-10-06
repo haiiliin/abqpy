@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .AFXGuiObjectManager import AFXGuiObjectManager
+from .FXMenuPane import FXMenuPane
 
 
-class AFXMenuPane:
-    """|"""
+class AFXMenuPane(FXMenuPane):
+    """This class provides the interface for creating an FXMenuPane and performing various management activities on it."""
 
     def __init__(self, owner: AFXGuiObjectManager):
         """Constructor.

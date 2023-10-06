@@ -1,5 +1,3 @@
-| 
-
 The menu separator is a simple decorative groove used to delineate items in a popup menu.
 
 ![](../SIMACAERefImages/gui-fxmenuseparator.png)

@@ -2,11 +2,12 @@ from __future__ import annotations
 
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
+from .FXMenuCaption import FXMenuCaption
 from .FXObject import FXObject
 
 
-class FXMenuCommand:
-    """Abaqus"""
+class FXMenuCommand(FXMenuCaption):
+    """The menu command widget is used to invoke a command in the application from a menu. Menu commands may reflect the state of the application by graying out, becoming hidden, or by a check mark or bullit."""
 
     def __init__(
         self,

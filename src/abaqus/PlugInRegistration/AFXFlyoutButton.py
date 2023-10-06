@@ -1,12 +1,11 @@
 from __future__ import annotations
-
-from .AFXFlyoutItem import AFXFlyoutItem
 from .constants import AFXFLYOUT_NORMAL
 from .FXComposite import FXComposite
+from .FXLabel import FXLabel
 from .FXPopup import FXPopup
 
 
-class AFXFlyoutButton:
+class AFXFlyoutButton(FXLabel):
     """This class contains a button that acts like a regular FXButton when pressed and released quickly but displays a popup menu when pressed and held for a short time duration."""
 
     def __init__(

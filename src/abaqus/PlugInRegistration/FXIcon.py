@@ -4,9 +4,10 @@ from typing import Any
 
 from .FXApp import FXApp
 from .FXColor import FXColor
+from .FXImage import FXImage
 
 
-class FXIcon:
+class FXIcon(FXImage):
     """Icon class."""
 
     def __init__(self, a: FXApp, pix: Any | None = None, clr: FXColor = 0, opts: int = 0, w: int = 1, h: int = 1):

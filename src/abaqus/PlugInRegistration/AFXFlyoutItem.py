@@ -1,11 +1,12 @@
 from __future__ import annotations
 
+from .FXButton import FXButton
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 
 
-class AFXFlyoutItem:
+class AFXFlyoutItem(FXButton):
     """This class contains a button that is placed in the popup menu of the flyout button."""
 
     def __init__(

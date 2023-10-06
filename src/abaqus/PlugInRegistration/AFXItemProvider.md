@@ -1,5 +1,3 @@
-| 
-
 This class provides a way to supply items to widgets, such as AFXComboBox and AFXList.
 
 ![](../SIMACAERefImages/gui-afxitemprovider.png)

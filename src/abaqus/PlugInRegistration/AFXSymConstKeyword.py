@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXIntKeyword import AFXIntKeyword
 
 
-class AFXSymConstKeyword:
+class AFXSymConstKeyword(AFXIntKeyword):
     """This class is designed for the command keywords that have symbolic constant values."""
 
     def __init__(self, command: AFXCommand, name: str, isRequired: bool = False, defaultValue: int = 0):

@@ -1,5 +1,3 @@
-| 
-
 Microsoft Bitmap icon.
 
 ![](../SIMACAERefImages/gui-fxbmpicon.png)

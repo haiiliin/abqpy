@@ -1,5 +1,3 @@
-| 
-
 Vertical separator
 
 ![](../SIMACAERefImages/gui-fxverticalseparator.png)

@@ -1,5 +1,3 @@
-| 
-
 Horizontal separator
 
 ![](../SIMACAERefImages/gui-fxhorizontalseparator.png)

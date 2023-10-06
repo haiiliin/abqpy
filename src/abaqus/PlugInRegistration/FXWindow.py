@@ -4,11 +4,12 @@ from typing_extensions import Self
 
 from .FXColor import FXColor
 from .FXComposite import FXComposite
+from .FXDrawable import FXDrawable
 from .FXObject import FXObject
 
 
-class FXWindow:
-    """Abaqus"""
+class FXWindow(FXDrawable):
+    """Base class for all windows"""
 
     def __init__(self, p: FXComposite, opts: int = 0, x: int = 0, y: int = 0, w: int = 0, h: int = 0):
         """Constructor.

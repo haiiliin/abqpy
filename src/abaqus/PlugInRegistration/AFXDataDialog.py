@@ -1,18 +1,14 @@
 from __future__ import annotations
 
 from .AFXBoolKeyword import AFXBoolKeyword
-from .AFXFloatKeyword import AFXFloatKeyword
-from .AFXFloatTarget import AFXFloatTarget
+from .AFXDialog import AFXDialog
 from .AFXGuiMode import AFXGuiMode
-from .AFXIntKeyword import AFXIntKeyword
-from .AFXIntTarget import AFXIntTarget
-from .AFXTogglableKeyword import AFXTogglableKeyword
 from .constants import DIALOG_NORMAL
 from .FXObject import FXObject
 from .FXWindow import FXWindow
 
 
-class AFXDataDialog:
+class AFXDataDialog(AFXDialog):
     """AFXDataDialog"""
 
     def __init__(

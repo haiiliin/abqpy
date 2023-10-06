@@ -1,5 +1,3 @@
-| 
-
 This class is designed for the GUI commands processed by modes.
 
 ![](../SIMACAERefImages/gui-afxguicommand.png)

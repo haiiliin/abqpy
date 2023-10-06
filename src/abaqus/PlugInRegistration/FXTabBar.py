@@ -3,10 +3,11 @@ from __future__ import annotations
 from .constants import DEFAULT_SPACING, TABBOOK_NORMAL
 from .FXComposite import FXComposite
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class FXTabBar:
-    """FXTabBar"""
+class FXTabBar(FXPacker):
+    """The tab bar layout manager arranges tab items side by side, and raises the active tab item above the neighboring tab items. The tab bar can be have the tab items on the top or bottom for horizontal arrangement, or on the left or right for vertical arrangement."""
 
     def __init__(
         self,

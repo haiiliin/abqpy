@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 from .constants import FLOAT_DEFAULT
 
 
-class AFXFloatKeyword:
+class AFXFloatKeyword(AFXKeyword):
     """This class is designed for the command keywords that have floating-point values."""
 
     def __init__(

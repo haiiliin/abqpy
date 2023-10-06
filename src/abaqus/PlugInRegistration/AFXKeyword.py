@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .FXDataTarget import FXDataTarget
 
 
-class AFXKeyword:
+class AFXKeyword(FXDataTarget):
     """Abaqus"""
 
     def __init__(self, command: AFXCommand, name: str, isRequired: bool = False):

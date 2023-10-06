@@ -1,13 +1,15 @@
 from __future__ import annotations
 
+from .AFXDataComponent import AFXDataComponent
 from .constants import AFXTEXTFIELD_STRING, DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXExponent import FXExponent
 from .FXFont import FXFont
 from .FXObject import FXObject
+from .FXPacker import FXPacker
 
 
-class AFXTextField:
+class AFXTextField(FXPacker, AFXDataComponent):
     """This class contains a label that precedes a text field that allows the user to enter in text."""
 
     def __init__(

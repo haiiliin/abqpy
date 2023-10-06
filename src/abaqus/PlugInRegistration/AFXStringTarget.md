@@ -1,5 +1,3 @@
-| 
-
 This class is designed for string targets.
 
 ![](../SIMACAERefImages/gui-afxstringtarget.png)

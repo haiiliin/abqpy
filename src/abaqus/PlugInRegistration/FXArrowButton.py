@@ -3,10 +3,11 @@ from __future__ import annotations
 from .constants import ARROW_NORMAL, DEFAULT_PAD
 from .FXColor import FXColor
 from .FXComposite import FXComposite
+from .FXFrame import FXFrame
 from .FXObject import FXObject
 
 
-class FXArrowButton:
+class FXArrowButton(FXFrame):
     """Button with an arrow; the arrow can point in any direction. When clicked, the arrow button sends a SEL\_COMMAND to its target. When ARROW\_REPEAT is passed, the arrow button sends a SEL_COMMAND repeatedly while the button is pressed."""
 
     def __init__(

@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .FXComposite import FXComposite
+from .FXFrame import FXFrame
 
 
-class FXHorizontalSeparator:
-    """|"""
+class FXHorizontalSeparator(FXFrame):
+    """Horizontal separator"""
 
     def __init__(
         self,

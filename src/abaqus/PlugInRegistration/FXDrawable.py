@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from .FXId import FXId
 
-class FXDrawable:
+
+class FXDrawable(FXId):
     """Drawable is an abstract base class for any surface that can be drawn upon, such as a FXWindow, or FXImage."""
 
     def getHeight(self):

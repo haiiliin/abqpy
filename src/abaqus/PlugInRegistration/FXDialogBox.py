@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 from .constants import PLACEMENT_CURSOR
-from .FXApp import FXApp
+from .FXTopWindow import FXTopWindow
 from .FXWindow import FXWindow
 
 
-class FXDialogBox:
-    """Abaqus"""
+class FXDialogBox(FXTopWindow):
+    """DialogBox window. When receiving ID\_CANCEL or ID\_ACCEPT, the DialogBox breaks out of the modal loop and returns False or True, respectively. To close the DialogBox when not running modally, simply send it ID_HIDE."""
 
     def __init__(
         self,

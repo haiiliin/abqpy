@@ -1,5 +1,3 @@
-| 
-
 This class creates a container to be used for groups in the toolbox. It will use utility methods so the group is correctly managed for modules and toolsets.
 
 ![](../SIMACAERefImages/gui-afxtoolboxgroup.png)

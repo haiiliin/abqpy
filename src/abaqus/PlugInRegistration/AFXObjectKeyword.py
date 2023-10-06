@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 from .AFXCommand import AFXCommand
+from .AFXKeyword import AFXKeyword
 
 
-class AFXObjectKeyword:
-    """Abaqus"""
+class AFXObjectKeyword(AFXKeyword):
+    """This class is designed for the command keywords that have objects as values."""
 
     def __init__(self, command: AFXCommand, name: str, isRequired: bool = False, defaultValue: str = "''"):
         """Constructor.

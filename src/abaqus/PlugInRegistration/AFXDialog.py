@@ -3,12 +3,13 @@ from __future__ import annotations
 from .constants import DIALOG_NORMAL
 from .FXApp import FXApp
 from .FXComposite import FXComposite
+from .FXDialogBox import FXDialogBox
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 from .FXWindow import FXWindow
 
 
-class AFXDialog:
+class AFXDialog(FXDialogBox):
     """AFXDialog"""
 
     def __init__(

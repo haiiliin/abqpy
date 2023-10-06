@@ -3,10 +3,11 @@ from __future__ import annotations
 from .constants import DEFAULT_PAD, FRAME_NORMAL
 from .FXColor import FXColor
 from .FXComposite import FXComposite
+from .FXWindow import FXWindow
 
 
-class FXFrame:
-    """Abaqus"""
+class FXFrame(FXWindow):
+    """Base Frame"""
 
     def __init__(
         self,

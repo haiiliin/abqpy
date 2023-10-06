@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from .FXObject import FXObject
 
-class AFXItemProvider:
-    """|"""
+
+class AFXItemProvider(FXObject):
+    """This class provides a way to supply items to widgets, such as AFXComboBox and AFXList."""
 
     def __init__(self, initialItems: str = "''"):
         """Constructor.

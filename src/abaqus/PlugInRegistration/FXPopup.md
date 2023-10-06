@@ -1,5 +1,3 @@
-| 
-
 Popup window
 
 ![](../SIMACAERefImages/gui-fxpopup.png)

@@ -1,5 +1,3 @@
-| 
-
 GIF Icon class.
 
 ![](../SIMACAERefImages/gui-fxgificon.png)

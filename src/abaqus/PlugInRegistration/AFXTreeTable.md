@@ -1,11 +1,3 @@
-Abaqus
-
-GUI Toolkit Reference
-
-All Classes
-
-AFXTreeTable
-
 This class combines a tree widget with a table widget to allow associating a row of data with an item in a tree.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-afxtreetable.png)

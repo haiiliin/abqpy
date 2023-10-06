@@ -7,7 +7,7 @@ from .FXIcon import FXIcon
 from .FXObject import FXObject
 
 
-class AFXGuiObjectManager:
+class AFXGuiObjectManager(FXObject):
     """This is a base class for management of GUI components found in the menubar, toolbar, and toolbox."""
 
     def __init__(self, source: Self):
