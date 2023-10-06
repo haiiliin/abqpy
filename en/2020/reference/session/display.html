@@ -2143,6 +2143,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin.html" class="md-nav__link">
+        <span class="md-ellipsis">Plug-<wbr>in Registration</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3894,9 +3909,6 @@
 <tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.writeOBJFile" title="abaqus.Session.SessionBase.SessionBase.writeOBJFile (Python method) — This method exports the current viewport objects to a file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code></a>(fileName[, canvasObjects])</p></td>
 <td><p>This method exports the current viewport objects to a file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb (Python method) — This method opens an existing output database (.odb) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example:"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code></a>(name[, path, readOnly])</p></td>
-<td><p>This method opens an existing output database (<cite>.odb</cite>) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::.</p></td>
-</tr>
 </tbody>
 </table>
 </details></div>
@@ -3944,7 +3956,7 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.DisplayGroup.DisplayGroupSession.DisplayGroup">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroup</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">leaf</span></span></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/DisplayGroup/DisplayGroupSession.py#L9-L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupSession.DisplayGroup" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>DisplayGroup objects are used to select a subset of the entities displayed in the viewport.</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
@@ -4118,7 +4130,7 @@ contents.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.DisplayGroup.LeafFromSurfaceVarRange.Leaf">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Leaf</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">leafType</span></span></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/DisplayGroup/LeafFromSurfaceVarRange.py#L9-L47"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.LeafFromSurfaceVarRange.Leaf" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Leaf objects are used to specify the items in a display group. Leaf objects are constructed as temporary
 objects, which are then used as arguments to DisplayGroup commands. Leaf objects have similarities to Set
 objects; however, Leaf objects are evaluated when the DisplayGroup expression is evaluated, and they can
@@ -4150,7 +4162,7 @@ DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstance</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/DisplayGroup/DisplayGroupInstance.py#L7-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A DisplayGroupInstance object stores the IDs of the entities displayed in a viewport. The
 DisplayGroupInstance object has no constructor. When you set a display group to be plotted in a viewport,
 Abaqus/CAE creates a DisplayGroupInstance object for each display group and places it in the
@@ -4189,7 +4201,7 @@ objects that are members of the DisplayGroupInstance repository member of the Od
 <dd class="field-odd"><p>A Dictionary object.</p>
 </dd>
 <dt class="field-even" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements-return-type">Return type<span class="colon">:</span><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.elements-return-type" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4223,7 +4235,7 @@ member of OdbDisplay object.</p>
 <dd class="field-odd"><p>A Dictionary object.</p>
 </dd>
 <dt class="field-even" id="abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes-return-type">Return type<span class="colon">:</span><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance.nodes-return-type" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -4266,7 +4278,7 @@ OFF.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayGroupInstanceRepository</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/DisplayGroup/DisplayGroupInstanceRepository.py#L6-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The DisplayGroupInstanceRepository object stores DisplayGroupInstance objects. In addition to all the
 standard Python repository methods, the DisplayGroupInstance repository defines additional methods as
 described below.</p>
