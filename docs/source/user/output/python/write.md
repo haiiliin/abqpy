@@ -10,18 +10,20 @@ The example script in {ref}`creating-an-output-database` also illustrates how yo
 
 You use the Odb constructor to create a new, empty Odb object.
 
-```python2
-odb = Odb(name='myData',
-    analysisTitle='derived data',
-    description='test problem',
-    path='testWrite.odb')
+```python
+odb = Odb(
+    name="myData",
+    analysisTitle="derived data",
+    description="test problem",
+    path="testWrite.odb",
+)
 ```
 
 For a full description of the Odb command, see {py:class}`~abaqus.Odb.Odb.Odb` object. Abaqus creates the RootAssembly object when you create or open an output database.
 
 You use the `save` method to `save` the output database.
 
-```python2
+```python
 odb.save()
 ```
 
@@ -35,41 +37,44 @@ To define the geometry of your model, you first create the parts that are used b
 
   If the part was created by Abaqus/CAE, the description of the native Abaqus/CAE geometry is stored in the model database, but it is not stored in the output database. A part is stored in an output database as a collection of nodes, elements, surfaces, and sets. You use the Part constructor to add a part to the Odb object. You can specify the type of the part; however, only DEFORMABLE_BODY is currently supported. For example,\`
 
-  ```python2
-  part1 = odb.Part(name='part-1',
-      embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
+  ```python
+  part1 = odb.Part(name="part-1", embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
   ```
 
   For a full description of the Part constructor, see {py:class}`~abaqus.Odb.OdbPart.OdbPart`. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.
 
   You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,
 
-  ```python2
-  nodeData = (  (1, 1,0,0),  (2, 2,0,0),
-            (3, 2,1,0.1),  (4, 1,1,0.1),
-            (5, 2,-1,-0.1),  (6, 1,-1,-0.1), )
-  part1.addNodes(nodeData=nodeData, nodeSetName='nset-1')
+  ```python
+  nodeData = (
+      (1, 1, 0, 0),
+      (2, 2, 0, 0),
+      (3, 2, 1, 0.1),
+      (4, 1, 1, 0.1),
+      (5, 2, -1, -0.1),
+      (6, 1, -1, -0.1),
+  )
+  part1.addNodes(nodeData=nodeData, nodeSetName="nset-1")
   ```
 
   For a full description of the addNodes command, see {py:meth}`~abaqus.Odb.OdbPart.OdbPart.addNodes`. After you have created nodes, you can use the NodeSetFromNodeLabels constructor to create a node set from the node labels. For more information, see {py:meth}`~abaqus.Odb.OdbPart.OdbPart.NodeSetFromNodeLabels`. Similarly, you use the addElements method to add elements to the part using a sequence of element labels, element connectivity, and element type. You can also define an optional element set and an optional section category. For example,
 
-  ```python2
+  ```python
   # Set up the section categories
 
-  sCat = odb.SectionCategory(name='S5',
-      description='Five-Layered Shell')
+  sCat = odb.SectionCategory(name="S5", description="Five-Layered Shell")
 
-  spBot = sCat.SectionPoint(number=1,
-      description='Bottom')
-  spMid = sCat.SectionPoint(number=3,
-      description='Middle')
-  spTop = sCat.SectionPoint(number=5,
-      description='Top')
+  spBot = sCat.SectionPoint(number=1, description="Bottom")
+  spMid = sCat.SectionPoint(number=3, description="Middle")
+  spTop = sCat.SectionPoint(number=5, description="Top")
 
-  elementData = ((1, 1,2,3,4),
-              (2, 6,5,2,1),)
-  part1.addElements(elementData=elementData, type='S4',
-  elementSetName='eset-1', sectionCategory=sCat)
+  elementData = (
+      (1, 1, 2, 3, 4),
+      (2, 6, 5, 2, 1),
+  )
+  part1.addElements(
+      elementData=elementData, type="S4", elementSetName="eset-1", sectionCategory=sCat
+  )
   ```
 
   For a full description of the addElements command, see {py:meth}`~abaqus.Odb.OdbPart.OdbPart.addElements`.
@@ -78,7 +83,7 @@ To define the geometry of your model, you first create the parts that are used b
 
   The root assembly is created when you create the output database. You access the RootAssembly object using the same syntax as that used for reading from an output database.
 
-  ```python2
+  ```python
   odb.rootAssembly
   ```
 
@@ -88,9 +93,9 @@ To define the geometry of your model, you first create the parts that are used b
 
   You use the Instance constructor to create part instances of the parts you have already defined using the Part constructor. For example,
 
-  ```python2
+  ```python
   a = odb.rootAssembly
-  instance1 = a.Instance(name='part-1-1', object=part1)
+  instance1 = a.Instance(name="part-1-1", object=part1)
   ```
 
   You can also supply an optional local coordinate system that specifies the rotation and translation of the part instance. You can add nodes and elements only to a part; you cannot add elements and nodes to a part instance. As a result, you should create the nodes and elements that define the geometry of a part before you instance the part. For a full description of the Instance command, see {py:class}`~abaqus.Odb.OdbInstance.OdbInstance`.
@@ -99,16 +104,16 @@ To define the geometry of your model, you first create the parts that are used b
 
   Region commands are used to create sets from element labels, node labels, and element faces. You can create a set on a part, part instance, or the root assembly. Node and element labels are unique within an instance but not within the assembly. As a result, a set on the root assembly requires the names of the part instances associated with the nodes and elements. You can also use region commands to create surfaces. For example,
 
-  ```python2
+  ```python
   # An element set on an instance
-  eLabels = [9,99]
-  elementSet = instance1.ElementSetFromElementLabels(
-      name='elsetA',elementLabels=eLabels)
+  eLabels = [9, 99]
+  elementSet = instance1.ElementSetFromElementLabels(name="elsetA", elementLabels=eLabels)
   # A node set on the rootAssembly
-  nodeLabels = (5,11)
-  instanceName = 'part-1-1'
+  nodeLabels = (5, 11)
+  instanceName = "part-1-1"
   nodeSet = assembly.NodeSetFromNodeLabels(
-      name='nodesetRA',((instanceName,nodeLabels),))
+      name="nodesetRA", nodeLabels=((instanceName, nodeLabels),)
+  )
   ```
 
   The region commands are described in {doc}`/reference/mdb/model/part_assembly/region`.
@@ -117,10 +122,10 @@ To define the geometry of your model, you first create the parts that are used b
 
   You use the Material object to list material properties.Materials are stored in the materials repository under the Odb object.To create an isotropic elastic material, with a Young's modulus of 12000.0 and an effective Poisson's ratio of 0.3 in the output database:
 
-  ```python2
+  ```python
   materialName = "Elastic Material"
   material_1 = odb.Material(name=materialName)
-  material_1.Elastic(type=ISOTROPIC,table=((12000,0.3),))
+  material_1.Elastic(type=ISOTROPIC, table=((12000, 0.3),))
   ```
 
   For more information, see {doc}`/reference/mdb/model/material`.
@@ -129,20 +134,19 @@ To define the geometry of your model, you first create the parts that are used b
 
   You use the Section object to create sections and profiles.Sections are stored in the sections repository under the Odb object.The following code creates a homogeneous solid section object. A Material object must be present before creating a Section object. An exception is thrown if the material does not exist.
 
-  ```python2
-  sectionName = 'Homogeneous Solid Section'
+  ```python
+  sectionName = "Homogeneous Solid Section"
   mySection = odb.HomogeneousSolidSection(
-                    name = sectionName,
-                    material = materialName,
-                    thickness = 2.0)
+      name=sectionName, material=materialName, thickness=2.0
+  )
   ```
 
   To create a circular beam profile object in the output database:
 
-  ```python2
+  ```python
   profileName = "Circular Profile"
   radius = 10.00
-  odb.CircularProfile(name = profileName, r = radius)
+  odb.CircularProfile(name=profileName, r=radius)
   ```
 
 - **Section assignments**
@@ -151,11 +155,10 @@ To define the geometry of your model, you first create the parts that are used b
 
   All Elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in an Instance object and their section properties. The section properties include the associated material name. To create an element set and assign a section:
 
-  ```python2
-  elLabels = (1,2)
-  elset = instance.ElementSetFromElementLabels(
-  name=materialName, elementLabels=elLabels)
-  instance.assignSection(region=elset,section=section)
+  ```python
+  elLabels = (1, 2)
+  elset = instance.ElementSetFromElementLabels(name=materialName, elementLabels=elLabels)
+  instance.assignSection(region=elset, section=section)
   ```
 
 ## Writing results data
@@ -166,9 +169,8 @@ To write results data to the output database, you first create the Step objects 
 
   You use the Step constructor to create a results step for time, frequency, or modal domain results. For example,
 
-  ```python2
-  step1 = odb.Step(name='step-1',
-      description='', domain=TIME, timePeriod=1.0)
+  ```python
+  step1 = odb.Step(name="step-1", description="", domain=TIME, timePeriod=1.0)
   ```
 
   The `Step` constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see {py:class}`~abaqus.Step.Step.Step`.
@@ -177,9 +179,8 @@ To write results data to the output database, you first create the Step objects 
 
   You use the Frame constructor to create a frame for field output. For example,
 
-  ```python2
-  frame1 = step1.Frame(incrementNumber=1,
-      frameValue=0.1, description='')
+  ```python
+  frame1 = step1.Frame(incrementNumber=1, frameValue=0.1, description="")
   ```
 
   For a full description of the Frame command, see {py:class}`~abaqus.Odb.OdbFrame.OdbFrame`.
@@ -188,18 +189,16 @@ To write results data to the output database, you first create the Step objects 
 
 A FieldOutput object contains a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You add field output data to a Frame object by first creating a FieldOutput object using the FieldOutput constructor and then adding data to the FieldOutput object using the `addData` method. For example,
 
-```python2
+```python
 # Create the part and the instance.
 
-part1 = odb.Part(name='part-1',
-    embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
+part1 = odb.Part(name="part-1", embeddedSpace=THREE_D, type=DEFORMABLE_BODY)
 a = odb.rootAssembly
-instance1 = a.Instance(name='part-1-1', object=part1)
+instance1 = a.Instance(name="part-1-1", object=part1)
 
 # Write nodal displacements
 
-uField = frame1.FieldOutput(name='U',
-    description='Displacements', type=VECTOR)
+uField = frame1.FieldOutput(name="U", description="Displacements", type=VECTOR)
 
 # Create the node labels.
 
@@ -207,18 +206,12 @@ nodeLabelData = (1, 2, 3, 4, 5, 6)
 
 # Each set of data corresponds to a node label.
 
-dispData = ((1,2,3),
-            (4,5,6),
-            (7,8,9),
-            (10,11,12),
-            (13, 14, 15),
-            (16,17,18))
+dispData = ((1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, 12), (13, 14, 15), (16, 17, 18))
 
 # Add nodal data to the FieldOutput object using the
 # node labels and the nodal data for this part instance.
 
-uField.addData(position=NODAL, instance=instance1,
-    labels=nodeLabelData, data=dispData)
+uField.addData(position=NODAL, instance=instance1, labels=nodeLabelData, data=dispData)
 
 # Make this the default deformed field for this step.
 
@@ -231,17 +224,17 @@ For a full description of the FieldOutput constructor, see {py:class}`~abaqus.Od
 
 The previous examples show how you can use commands to set the default field variable and deformed field variable. Abaqus/CAE uses the default field variable setting to determine the variable to display in a contour plot; for example, stress. Similarly, the default deformed field variable determines the variable that distinguishes a deformed plot from an undeformed plot. Typically, you will use displacement for the default deformed field variable; you cannot specify an invariant or a component. The default variable settings apply for each frame in the step. For example, the following statements use the deformation 'U' as the default setting for both field variable and deformed field variable settings during a particular step:
 
-```python2
-field=odb.steps['impact'].frames[1].fieldOutputs['U']
-odb.steps['impact'].setDefaultField(field)
-odb.steps['impact'].setDefaultDeformedField(field)
+```python
+field = odb.steps["impact"].frames[1].fieldOutputs["U"]
+odb.steps["impact"].setDefaultField(field)
+odb.steps["impact"].setDefaultDeformedField(field)
 ```
 
 You can set a different default field variable and deformed field variable for different steps. You will need to use a loop to set the defaults for each step. For example,
 
-```python2
+```python
 for step in odb.steps.values():
-step.setDefaultField(field)
+    step.setDefaultField(field)
 ```
 
 ## Writing history output data
@@ -258,7 +251,7 @@ History data from an analysis cannot contain multiple points.
 
 The output from all history requests that relate to a specified point is collected in one HistoryRegion object. You use the HistoryPoint constructor to create the point. For example,
 
-```python2
+```python
 point1 = HistoryPoint(element=instance1.elements[0])
 ```
 
@@ -266,41 +259,33 @@ For a full description of the HistoryPoint command, see {py:class}`~abaqus.Odb.H
 
 You then use the HistoryRegion constructor to create a HistoryRegion object:
 
-```python2
-step1 = odb.Step(name='step-1',
-    description='', domain=TIME, timePeriod=1.0)
-h1 = step1.HistoryRegion(name='my history',
-    description='my stuff',point=point1)
+```python
+step1 = odb.Step(name="step-1", description="", domain=TIME, timePeriod=1.0)
+h1 = step1.HistoryRegion(name="my history", description="my stuff", point=point1)
 ```
 
 For a full description of the HistoryRegion command, see {py:class}`~abaqus.Odb.HistoryRegion.HistoryRegion`.
 
 You use the HistoryOutput constructor to add variables to the HistoryRegion object.
 
-```python2
-h1_u1 = h1.HistoryOutput(name='U1',
-    description='Displacement', type=SCALAR)
-h1_rf1 = h1.HistoryOutput(name='RF1',
-    description='Reaction Force', type=SCALAR)
+```python
+h1_u1 = h1.HistoryOutput(name="U1", description="Displacement", type=SCALAR)
+h1_rf1 = h1.HistoryOutput(name="RF1", description="Reaction Force", type=SCALAR)
 
 
 # Similarly for Step 2
 
-step2 = odb.Step(name='step-2',
-    description='', domain=TIME, timePeriod=1.0)
-h2 = step2.HistoryRegion(name='my history',
-    description='my stuff', point=point1)
-h2_u1 = h2.HistoryOutput(name='U1',
-    description='Displacement', type=SCALAR)
-h2_rf1 = h2.HistoryOutput(name='RF1',
-    description='Reaction Force', type=SCALAR)
+step2 = odb.Step(name="step-2", description="", domain=TIME, timePeriod=1.0)
+h2 = step2.HistoryRegion(name="my history", description="my stuff", point=point1)
+h2_u1 = h2.HistoryOutput(name="U1", description="Displacement", type=SCALAR)
+h2_rf1 = h2.HistoryOutput(name="RF1", description="Reaction Force", type=SCALAR)
 ```
 
 Each HistoryOutput object contains a sequence of (**frameValue**, **value**) sequences. The HistoryOutput object has a method (addData) for adding data. Each data item is a sequence of (**frameValue**, **value**). In a time domain analysis (**domain** = TIME) the sequence is (**stepTime**, **value**). In a frequency domain analysis (**domain** = FREQUENCY) the sequence is (**frequency**, **value**). In a modal domain analysis (**domain** = MODAL) the sequence is (**mode**, **value**).
 
 You add the data values as time and data tuples. The number of data items must correspond to the number of time items. For example,
 
-```python2
+```python
 timeData = (0.0, 0.1, 0.3, 1.0)
 u1Data = (0.0, 0.0004, 0.0067, 0.0514)
 rf1Data = (27.456, 32.555, 8.967, 41.222)

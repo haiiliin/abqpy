@@ -2,13 +2,12 @@
 
 Sample postprocessing programs to perform commonly exercised tasks are presented in separate sections in this chapter. These and other C++ postprocessing programs must be compiled and linked using the make parameter when running the Abaqus execution procedure (see [Making user-defined executables and subroutines](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-makeproc.htm?contextscope=all)). To link properly, the programs cannot contain a C++ main routine. Instead, the programs must begin with a C++ function called ABQmain.
 
-```python2
+```c++
 #include <odb_API.h>
 
-int ABQmain(int argc, char **argv)
-{
-    //Insert user code here
-    return 0
+int ABQmain(int argc, char **argv) {
+    // Insert user code here
+    return 0;
 }
 ```
 

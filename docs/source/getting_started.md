@@ -162,10 +162,13 @@ Now you can run your Abaqus/Python script with the following methods:
   This is the most convenient way to run the script, it is equivalent to the `abqpy` command with some default
   predefined arguments.
 - Use the {py:obj}`abqpy.cli.abaqus` object (an {py:obj}`abqpy.cli.AbqpyCLI` object) to run the script:
+
   ```python
   from abqpy.cli import abaqus
+
   abaqus.cae(script="script.py")
   ```
+
   The {py:obj}`abqpy.cli.abaqus` object is the object used for the `abqpy` command, you can call the methods in this
   object directly to run the script. This method is convenient when you want to call the Abaqus/Python script in another
   Python script since typing annotations are provided for the methods, so you can check the docstring of the methods for
@@ -173,11 +176,7 @@ Now you can run your Abaqus/Python script with the following methods:
 
 ```{warning}
 `abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
-If you run the script under the debug mode, the script will not be submitted to Abaqus, but it will run in the
-Python interpreter where `abqpy` is installed. Since `abqpy` does not implement the whole Abaqus/Python APIs,
-the script may not (and most likely) run correctly. However, for some simple scripts, it may work, in this way
-you can use the debugger to check the variables in the Abaqus API roughly. But still, the script will not be
-submitted to Abaqus.
+If you run the script under the debug mode, the script will be opened in Abaqus PDE where you can debug it.
 ```
 
 - Create an Abaqus Model

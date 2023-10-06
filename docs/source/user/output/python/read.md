@@ -22,14 +22,14 @@ abaqus fetch job=viewer_tutorial
 
 To make the Odb commands available to your script, you first need to import the odbAccess module using the following statements:
 
-```python2
+```python
 from odbAccess import *
 from abaqusConstants import *
 ```
 
 To make the material and section Odb commands available to your script, you also need to import the relevant module using the following statements:
 
-```python2
+```python
 from odbMaterial import *
 from odbSection import *
 ```
@@ -38,8 +38,8 @@ from odbSection import *
 
 You use the `openOdb` method to open an existing output database. For example, the following statement opens the output database used by the Abaqus/CAE Visualization module tutorial:
 
-```python2
-odb = openOdb(path='viewer_tutorial.odb')
+```python
+odb = openOdb(path="viewer_tutorial.odb")
 ```
 
 After you open the output database, you can access its contents using the methods and members of the Odb object returned by the openOdb method. In the above example the Odb object is referred to by the variable odb. For a full description of the openOdb command, see {func}`~odbAccess.openOdb`.
@@ -52,7 +52,7 @@ The following list describes the objects in model data and the commands you use 
 
   An output database contains only one root assembly. You access the root assembly through the OdbAssembly object.
 
-  ```python2
+  ```python
   myAssembly = odb.rootAssembly
   ```
 
@@ -60,15 +60,15 @@ The following list describes the objects in model data and the commands you use 
 
   Part instances are stored in the instances repository under the OdbAssembly object. The following statements display the repository keys of the part instances in the tutorial output database:
 
-  ```python2
+  ```python
   for instanceName in odb.rootAssembly.instances.keys():
-      print instanceName
+      print(instanceName)
   ```
 
   The output database contains only one part instance, and the resulting output is
 
-  ```python2
-  PART-1-1
+  ```
+  PART - 1 - 1
   ```
 
 - **Regions**
@@ -81,28 +81,26 @@ The following list describes the objects in model data and the commands you use 
 
   For example, the following statement displays the node sets in the OdbAssembly object:
 
-  ```python2
-  print 'Node sets = ',odb.rootAssembly.nodeSets.keys()
+  ```python
+  print("Node sets = ", odb.rootAssembly.nodeSets.keys())
   ```
 
   The resulting output is
 
-  ```python2
+  ```
   Node sets = ['ALL NODES']
   ```
 
   The following statements display the node sets and the element sets in the PART-1-1 part instance:
 
-  ```python2
-  print 'Node sets = ',odb.rootAssembly.instances[
-      'PART-1-1'].nodeSets.keys()
-  print 'Element sets = ',odb.rootAssembly.instances[
-     'PART-1-1'].elementSets.keys()
+  ```python
+  print("Node sets = ", odb.rootAssembly.instances["PART-1-1"].nodeSets.keys())
+  print("Element sets = ", odb.rootAssembly.instances["PART-1-1"].elementSets.keys())
   ```
 
   The resulting output is
 
-  ```python2
+  ```
   Node sets =  ['ALLN', 'BOT', 'CENTER', 'N1', 'N19', 'N481',
                   'N499', 'PUNCH', 'TOP']
   Element sets = ['CENT', 'ETOP', 'FOAM', 'PMASS', 'UPPER']
@@ -110,9 +108,8 @@ The following list describes the objects in model data and the commands you use 
 
   The following statement assigns a variable (topNodeSet) to the 'TOP' node set in the PART-1-1 part instance:
 
-  ```python2
-  topNodeSet = odb.rootAssembly.instances[
-      'PART-1-1'].nodeSets['TOP']
+  ```python
+  topNodeSet = odb.rootAssembly.instances["PART-1-1"].nodeSets["TOP"]
   ```
 
   The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in [using regions to read a subset of field output data].
@@ -125,44 +122,43 @@ The following list describes the objects in model data and the commands you use 
 
   Access the materials repository using the command:
 
-  ```python2
+  ```python
   allMaterials = odb.materials
   for materialName in allMaterials.keys():
-      print 'Material Name : ',materialName
+      print("Material Name : ", materialName)
   ```
 
   To print isotropic elastic material properties in a material object:
 
-  ```python2
+  ```python
   for material in allMaterials.values():
-      if hasattr(material,'elastic'):
+      if hasattr(material, "elastic"):
           elastic = material.elastic
           if elastic.type == ISOTROPIC:
-              print 'isotropic elastic behavior, type = %s' \
-              % elastic.moduli
-          title1 = 'Young modulus  Poisson\'s ratio  '
-          title2 = ''
+              print("isotropic elastic behavior, type = %s" % elastic.moduli)
+          title1 = "Young modulus  Poisson's ratio  "
+          title2 = ""
           if elastic.temperatureDependency == ON:
-              title2 = 'Temperature  '
+              title2 = "Temperature  "
           dep = elastic.dependencies
-          title3 = ''
+          title3 = ""
           for x in range(dep):
-              title3 += ' field # %d' % x
-          print '%s %s %s' % (title1,title2,title3)
+              title3 += " field # %d" % x
+          print("%s %s %s" % (title1, title2, title3))
           for dataline in elastic.table:
-              print dataline
+              print(dataline)
   ```
 
   Some Material definitions have suboptions. For example, to access the smoothing type used for biaxial test data specified for a hyperelastic material:
 
-  ```python2
-  if hasattr(material,'hyperelastic'):
+  ```python
+  if hasattr(material, "hyperelastic"):
       hyperelastic = material.hyperelastic
       testData = hyperelastic.testData
       if testData == ON:
-          if hasattr(hyperelastic,'biaxialTestData'):
+          if hasattr(hyperelastic, "biaxialTestData"):
               biaxialTestData = hyperelastic.biaxialTestData
-              print 'smoothing type : ',biaxialTestData.smoothing
+              print("smoothing type : ", biaxialTestData.smoothing)
   ```
 
   {doc}`/reference/mdb/model/material` describes the Material object commands in more detail.
@@ -175,38 +171,36 @@ The following list describes the objects in model data and the commands you use 
 
   The following statements display the repository keys of the sections in an output database:
 
-  ```python2
+  ```python
   allSections = odb.sections
   for sectionName in allSections.keys():
-      print 'Section Name : ',sectionName
+      print("Section Name : ", sectionName)
   ```
 
   The Section object can be one of the various section types. The type command provides information on the section type. For example, to determine whether a section is of type homogeneous solid section and to print its thickness and associated material name:
 
-  ```python2
+  ```python
   for mySection in allSections.values():
       if type(mySection) == HomogeneousSolidSectionType:
-          print 'material name = ', mySection.material
-          print 'thickness = ', mySection.thickness
+          print("material name = ", mySection.material)
+          print("thickness = ", mySection.thickness)
   ```
 
   Similarily, to access the beam profile repository:
 
-  ```python2
+  ```python
   allProfiles = odb.profiles.values()
   numProfiles = len(allProfiles)
-  print 'Total Number of profiles in the ODB : %d' \
-      % numProfiles
+  print("Total Number of profiles in the ODB : %d" % numProfiles)
   ```
 
 The Profile object can be one of the various profile types. The type command provides information on the profile type. For example, to output the radius of all circular profiles in the odb:
 
-> ```python2
-> for myProfile in allProfiles:
->     if type(myProfile) == CircularProfileType:
->         print 'profile name = %s, radius = %8.3f' \
->             % (myProfile.name,myProfile.r)
-> ```
+```python
+for myProfile in allProfiles:
+    if type(myProfile) == CircularProfileType:
+        print("profile name = %s, radius = %8.3f" % (myProfile.name, myProfile.r))
+```
 
 - **Section assignments**
 
@@ -214,18 +208,18 @@ The Profile object can be one of the various profile types. The type command pro
 
   All elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in a part instance and their section properties. The section properties include the associated material name. To access the sectionAssignments repository from the PartInstance object:
 
-  ```python2
+  ```python
   instances = odb.rootAssembly.instances
   for instance in instances.values():
       assignments = instance.sectionAssignments
-      print 'Instance : ',instance.name
-        for sa in assignments:
+      print("Instance : ", instance.name)
+      for sa in assignments:
           region = sa.region
           elements = region.elements
-          print '  Section : ',sa.sectionName
-          print '  Elements associated with this section : '
+          print("  Section : ", sa.sectionName)
+          print("  Elements associated with this section : ")
           for e in elements:
-              print '  label : ',e.label
+              print("  label : ", e.label)
   ```
 
 - **Analytical rigid surfaces**
@@ -248,30 +242,30 @@ The following list describes the objects in results data and the commands you us
 
   Steps are stored in the steps repository under the Odb object. The key to the steps repository is the name of the step. The following statements print out the keys of each step in the repository:
 
-  ```python2
+  ```python
   for stepName in odb.steps.keys():
-      print stepName
+      print(stepName)
   ```
 
   The resulting output is
 
-  ```python2
-  Step-1
-  Step-2
-  Step-3
+  ```
+  Step - 1
+  Step - 2
+  Step - 3
   ```
 
   ````{note}
   An index of 0 in a sequence refers to the first value in the sequence, and an index of −1 refers to the last value. You can use the following syntax to refer to an individual item in a repository:
 
-  ```python2
+  ```python
   step1 = odb.steps.values()[0]
-  print step1.name
+  print(step1.name)
   ```
 
   The resulting output is
 
-  ```python2
+  ```
   Step-1
   ```
   ````
@@ -280,17 +274,18 @@ The following list describes the objects in results data and the commands you us
 
   Each step contains a sequence of frames, where each increment of the analysis (or each mode in an eigenvalue analysis) that resulted in output to the output database is called a frame. The following statement assigns a variable to the last frame in the first step:
 
-  ```python2
-  lastFrame = odb.steps['Step-1'].frames[-1]
+  ```python
+  lastFrame = odb.steps["Step-1"].frames[-1]
   ```
 
 ## Reading field output data
 
 Field output data are stored in the fieldOutputs repository under the OdbFrame object. The key to the repository is the name of the variable. The following statements list all the variables found in the last frame of the first step (the statements use the variable `lastFrame` that we defined previously):
 
-```python2
-for fieldName in lastFrame.fieldOutputs.keys():
-    print fieldName
+```pycon
+>>> for fieldName in lastFrame.fieldOutputs.keys():
+...     print(fieldName)
+...
 COPEN    TARGET/IMPACTOR
 CPRESS   TARGET/IMPACTOR
 CSHEAR1  TARGET/IMPACTOR
@@ -307,24 +302,24 @@ Different variables can be written to the output database at different frequenci
 
 You can use the following to view all the available field data in a frame:
 
-```python2
+```python
 # For each field output value in the last frame,
 # print the name, description, and type members.
 
 for f in lastFrame.fieldOutputs.values():
-    print f.name, ':', f.description
-    print 'Type: ', f.type
+    print(f.name, ":", f.description)
+    print("Type: ", f.type)
 
     # For each location value, print the position.
 
     for loc in f.locations:
-        print 'Position:',loc.position
-    print
+        print("Position:", loc.position)
+    print()
 ```
 
 The resulting print output lists all the field output variables in a particular frame, along with their type and position.
 
-```python2
+```
 COPEN    TARGET/IMPACTOR : Contact opening
 Type:  SCALAR
 Position: NODAL
@@ -368,21 +363,20 @@ Position: NODAL
 
 In turn, a FieldOutput object has a member **values** that is a sequence of FieldValue objects that contain data. Each data value in the sequence has a particular location in the model. You can query the FieldValue object to determine the location of a data value; for example,
 
-```python2
-displacement=lastFrame.fieldOutputs['U']
-fieldValues=displacement.values
+```python
+displacement = lastFrame.fieldOutputs["U"]
+fieldValues = displacement.values
 
 # For each displacement value, print the nodeLabel
 # and data members.
 
 for v in fieldValues:
-    print 'Node = %d U[x] = %6.4f, U[y] = %6.4f' % (v.nodeLabel,
-    v.data[0], v.data[1])
+    print("Node = %d U[x] = %6.4f, U[y] = %6.4f" % (v.nodeLabel, v.data[0], v.data[1]))
 ```
 
 The resulting output is
 
-```python2
+```
 Node = 1 U[x] = 0.0000, U[y] = -76.4580
 Node = 3 U[x] = -0.0000, U[y] = -64.6314
 Node = 5 U[x] = 0.0000, U[y] = -52.0814
@@ -393,13 +387,13 @@ Node = 11 U[x] = -0.0000, U[y] = -20.3237...
 
 The data in the FieldValue object depend on the field output variable, which is displacement in the above example. The following command lists all the members of a particular FieldValue object:
 
-```python2
+```python
 fieldValues[0].__members__
 ```
 
 The resulting output is
 
-```python2
+```
 ['instance', 'elementLabel', 'nodeLabel', 'position',
 'face', 'integrationPoint', 'sectionPoint',
 'localCoordSystem', 'type', 'data', 'magnitude',
@@ -414,57 +408,61 @@ Where applicable, you can obtain section point information from the FieldValue o
 
 After you have created an OdbSet object using model data, you can use the getSubset method to read only the data corresponding to that region. Typically, you will be reading data from a region that refers to a node set or an element set. For example, the following statements create a variable called center that refers to the node set PUNCH at the center of the hemispherical punch. In a previous section you created the displacement variable that refers to the displacement of the entire model in the final frame of the first step. Now you use the getSubset command to get the displacement for only the center region.
 
-```python2
-center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
+```python
+center = odb.rootAssembly.instances["PART-1-1"].nodeSets["PUNCH"]
 centerDisplacement = displacement.getSubset(region=center)
 centerValues = centerDisplacement.values
 for v in centerValues:
-    print v.nodeLabel, v.data
+    print(v.nodeLabel, v.data)
 ```
 
 The resulting output is
 
-```python2
+```
 1000 array([0.0000, -76.4555], 'd')
 ```
 
 The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the `len()` function, and the ``range() `function, see :doc:``/user/python/introduction/python-basics:sequences\` and {ref}`sequence-operations`.
 
-```python2
-opCenter = \
-    odb.rootAssembly.instances['PART-1-1'].elementSets['CENT']
-stressField = odb.steps['Step-2'].frames[3].fieldOutputs['S']
+```python
+opCenter = odb.rootAssembly.instances["PART-1-1"].elementSets["CENT"]
+stressField = odb.steps["Step-2"].frames[3].fieldOutputs["S"]
 
 # The following variable represents the stress at
 # integration points for CAX4 elements from the
 # element set "CENT."
 
-field = stressField.getSubset(region=topCenter,
-    position=INTEGRATION_POINT, elementType = 'CAX4')
+field = stressField.getSubset(
+    region=topCenter, position=INTEGRATION_POINT, elementType="CAX4"
+)
 fieldValues = field.values
 for v in fieldValues:
-    print 'Element label = ', v.elementLabel,
+    print(
+        "Element label = ",
+        v.elementLabel,
+    )
     if v.integrationPoint:
-        print 'Integration Point = ', v.integrationPoint
+        print("Integration Point = ", v.integrationPoint)
     else:
-        print
-# For each tensor component.
+        print()
+    # For each tensor component.
 
     for component in v.data:
+        # Print using a format. The comma at the end of the
+        # print statement suppresses the carriage return.
 
-# Print using a format. The comma at the end of the
-# print statement suppresses the carriage return.
+        print(
+            "%-10.5f" % component,
+        )
 
-        print '%-10.5f' % component,
+    # After each tuple has printed, print a carriage return.
 
-# After each tuple has printed, print a carriage return.
-
-    print
+    print()
 ```
 
 The resulting output is
 
-```python2
+```
 Element label =  1 Integration Point =  1
 S : 0.01230    -0.05658   0.00892    -0.00015
 Element label =  1 Integration Point =  2
@@ -545,16 +543,16 @@ The history output data can be retrieved from the HistoryRegion objects in the o
 
 The following statements read the tutorial output database and write the U2 history data from the second step to an ASCII file that can be plotted by Abaqus/CAE:
 
-```python2
+```python
 from odbAccess import *
 
-odb = openOdb(path='viewer_tutorial.odb')
-step2 = odb.steps['Step-2']
-region = step2.historyRegions['Node PART-1-1.1000']
-u2Data = region.historyOutputs['U2'].data
-dispFile = open('disp.dat','w')
+odb = openOdb(path="viewer_tutorial.odb")
+step2 = odb.steps["Step-2"]
+region = step2.historyRegions["Node PART-1-1.1000"]
+u2Data = region.historyOutputs["U2"].data
+dispFile = open("disp.dat", "w")
 for time, u2Disp in u2Data:
-    dispFile.write('%10.4E   %10.4E\n' % (time, u2Disp))
+    dispFile.write("%10.4E   %10.4E\n" % (time, u2Disp))
 dispFile.close()
 ```
 
@@ -569,7 +567,7 @@ abaqus fetch job=odbElementConnectivity
 abaqus fetch job=viewer_tutorial
 ```
 
-```python2
+```python
 # odbElementConnectivity.py
 # Script to extract node and element information.
 #
@@ -589,8 +587,10 @@ import sys
 # Check that an output database was specified.
 
 if len(sys.argv) != 2:
-    print 'Error: you must supply the name \
-        of an odb on the command line'
+    print(
+        "Error: you must supply the name \
+        of an odb on the command line"
+    )
     sys.exit(1)
 
 # Get the command line argument.
@@ -605,20 +605,19 @@ assembly = odb.rootAssembly
 
 # Model data output
 
-print 'Model data for ODB: ', odbPath
+print("Model data for ODB: ", odbPath)
 
 # For each instance in the assembly.
 
 numNodes = numElements = 0
 
 for name, instance in assembly.instances.items():
-
     n = len(instance.nodes)
-    print 'Number of nodes of instance %s: %d' % (name, n)
+    print("Number of nodes of instance %s: %d" % (name, n))
     numNodes = numNodes + n
 
-    print
-    print 'NODAL COORDINATES'
+    print()
+    print("NODAL COORDINATES")
 
     # For each node of each part instance
     # print the node label and the nodal coordinates.
@@ -626,34 +625,38 @@ for name, instance in assembly.instances.items():
     # Two-dimensional parts include X- and Y-coordinates.
 
     if instance.embeddedSpace == THREE_D:
-        print '    X         Y         Z'
+        print("    X         Y         Z")
         for node in instance.nodes:
-            print node.coordinates
+            print(node.coordinates)
     else:
-        print '    X         Y'
+        print("    X         Y")
         for node in instance.nodes:
-            print node.coordinates
+            print(node.coordinates)
 
     # For each element of each part instance
     # print the element label, the element type, the
     # number of nodes, and the element connectivity.
 
     n = len(instance.elements)
-    print 'Number of elements of instance ', name, ': ', n
+    print("Number of elements of instance ", name, ": ", n)
     numElements = numElements + n
 
-    print 'ELEMENT CONNECTIVITY'
-    print ' Number  Type    Connectivity'
+    print("ELEMENT CONNECTIVITY")
+    print(" Number  Type    Connectivity")
     for element in instance.elements:
-        print '%5d %8s' % (element.label, element.type),
+        print(
+            "%5d %8s" % (element.label, element.type),
+        )
         for nodeNum in element.connectivity:
-        print '%4d' % nodeNum,
-        print
+            print(
+                "%4d" % nodeNum,
+            )
+        print()
 
-print
-print 'Number of instances: ', len(assembly.instances)
-print 'Total number of elements: ', numElements
-print 'Total number of nodes: ', numNodes
+print()
+print("Number of instances: ", len(assembly.instances))
+print("Total number of elements: ", numElements)
+print("Total number of nodes: ", numNodes)
 ```
 
 ## An example of reading field data from an output database
@@ -664,7 +667,7 @@ The following script combines many of the commands you have already seen and ill
 > abaqus fetch job=odbRead
 > abaqus fetch job=viewer_tutorial
 
-```python2
+```python
 # odbRead.py
 # A script to read the Abaqus/CAE Visualization module tutorial
 # output database and read displacement data from the node at
@@ -672,23 +675,23 @@ The following script combines many of the commands you have already seen and ill
 
 from odbAccess import *
 
-odb = openOdb(path='viewer_tutorial.odb')
+odb = openOdb(path="viewer_tutorial.odb")
 
 # Create a variable that refers to the
 # last frame of the first step.
 
-lastFrame = odb.steps['Step-1'].frames[-1]
+lastFrame = odb.steps["Step-1"].frames[-1]
 
 # Create a variable that refers to the displacement 'U'
 # in the last frame of the first step.
 
-displacement = lastFrame.fieldOutputs['U']
+displacement = lastFrame.fieldOutputs["U"]
 
 # Create a variable that refers to the node set 'PUNCH'
 # located at the center of the hemispherical punch.
 # The set is  associated with the part instance 'PART-1-1'.
 
-center = odb.rootAssembly.instances['PART-1-1'].nodeSets['PUNCH']
+center = odb.rootAssembly.instances["PART-1-1"].nodeSets["PUNCH"]
 
 # Create a variable that refers to the displacement of the node
 # set in the last frame of the first step.
@@ -699,18 +702,18 @@ centerDisplacement = displacement.getSubset(region=center)
 # in the node set (a single node in this example).
 
 for v in centerDisplacement.values:
-    print 'Position = ', v.position,'Type = ',v.type
-    print 'Node label = ', v.nodeLabel
-    print 'X displacement = ', v.data[0]
-    print 'Y displacement = ', v.data[1]
-    print 'Displacement magnitude =', v.magnitude
+    print("Position = ", v.position, "Type = ", v.type)
+    print("Node label = ", v.nodeLabel)
+    print("X displacement = ", v.data[0])
+    print("Y displacement = ", v.data[1])
+    print("Displacement magnitude =", v.magnitude)
 
 odb.close()
 ```
 
 The resulting output is
 
-```python2
+```
 Position =  NODAL Type =  VECTOR
 Node label =  1000
 X displacement =  -8.29017850095e-34
