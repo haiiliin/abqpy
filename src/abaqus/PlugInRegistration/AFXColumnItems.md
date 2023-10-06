@@ -82,6 +82,12 @@ Sets the message target.
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
+**Message ID's.**
+
+| **ID_TABLE** |
+
+Table ID.
+
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 
 [Privacy Policy](https://www.3ds.com/privacy-policy).
