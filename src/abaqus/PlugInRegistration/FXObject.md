@@ -13,7 +13,7 @@ Get class name of some object.
 Check if object is member of metaclass.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| metaclass | FXMetaClass |   |   |
+| metaclass | FXMetaClass |   |   |
 
 ### onDefault()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -28,9 +28,9 @@ Reimplemented in FXDelegator, FXGLViewer, FXMDIChild, and FXMDIClient.
 Handles messages sent to this class.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | The sender of the message. |
-| sel | FXSelector |   | The selector of the message. |
-| ptr | void* |   | Associated data. |
+| sender | FXObject |   | The sender of the message. |
+| sel | FXSelector |   | The selector of the message. |
+| ptr | void* |   | Associated data. |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

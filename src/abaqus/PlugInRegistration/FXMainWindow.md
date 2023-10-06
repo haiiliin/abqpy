@@ -8,18 +8,18 @@ Main application window.
 Construct a main window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| name | String |   |   |
-| ic | FXIcon | None |   |
-| mi | FXIcon | None |   |
-| opts | Int | DECOR_ALL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | 0 |   |
-| pr | Int | 0 |   |
-| pt | Int | 0 |   |
-| pb | Int | 0 |   |
-| hs | Int | 0 |   |
-| vs | Int | 0 |   |
+| a | FXApp |   |   |
+| name | String |   |   |
+| ic | FXIcon | None |   |
+| mi | FXIcon | None |   |
+| opts | Int | DECOR_ALL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | 0 |   |
+| pr | Int | 0 |   |
+| pt | Int | 0 |   |
+| pb | Int | 0 |   |
+| hs | Int | 0 |   |
+| vs | Int | 0 |   |

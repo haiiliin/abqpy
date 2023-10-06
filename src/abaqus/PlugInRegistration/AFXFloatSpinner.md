@@ -8,9 +8,9 @@ Convenience class for creating a labeled spinner. The label field can be a label
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| ncols | Int |   | Number of columns in the spinner. |
-| labelText | String |   | Label preceeding spinner. |
+| p | FXComposite |   | Parent widget. |
+| ncols | Int |   | Number of columns in the spinner. |
+| labelText | String |   | Label preceeding spinner. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -112,7 +112,7 @@ Returns True if the spinner is set to the read-only state.
 Sets the state of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool |   | Button state. |
+| state | Bool |   | Button state. |
 
 ### setCheckButtonSelector(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -120,7 +120,7 @@ Sets the state of the check button or the radio button.
 Sets the message ID of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | Selector. |
+| sel | Int |   | Selector. |
 
 ### setCheckButtonTarget(tgt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -128,7 +128,7 @@ Sets the message ID of the check button or the radio button.
 Sets the message target of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   | Target. |
+| tgt | FXObject |   | Target. |
 
 ### setEditable(edit=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -144,7 +144,7 @@ Sets the editable state for the input field of spinner.
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Help text. |
+| text | String |   | Help text. |
 
 ### setIncrement(incr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -152,7 +152,7 @@ Sets the status line help text.
 Sets the spinner increment.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| incr | Float |   | Increment. |
+| incr | Float |   | Increment. |
 
 ### setLabelFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -160,7 +160,7 @@ Sets the spinner increment.
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   | Label font. |
+| fnt | FXFont |   | Label font. |
 
 ### setLabelText(txt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -168,7 +168,7 @@ Sets the label font.
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Label text. |
+| txt | String |   | Label text. |
 
 ### setRange(low, high)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -176,8 +176,8 @@ Sets the label string.
 Sets the spinner range.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| low | Float |   | Minimum value. |
-| high | Float |   | Maximum value. |
+| low | Float |   | Minimum value. |
+| high | Float |   | Maximum value. |
 
 ### setReadOnlyState(edit=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -193,7 +193,7 @@ Sets the read-only state of the spinner.
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Tooltip text. |
+| text | String |   | Tooltip text. |
 
 ### setValue(val, notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -201,7 +201,7 @@ Sets the tool tip message.
 Sets the spinner value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| val | Float |   | Value. |
+| val | Float |   | Value. |
 | notify | Bool | False | Notification flag. |
 
 ### Class flags  

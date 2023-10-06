@@ -26,7 +26,7 @@ Constructor.
 Appends a string to the item string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| str | String |   |   |
+| str | String |   |   |
 
 ### append
 
@@ -38,7 +38,7 @@ Appends a string to the item string.
 Appends a character to the item string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | String |   |   |
+| ch | String |   |   |
 
 ### empty
 
@@ -77,7 +77,7 @@ Returns the version of provider's items.
 Clears the contents of the item string and reallocates space.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sz | Int | 0 |   |
+| sz | Int | 0 |   |
 
 ### setItems
 
@@ -89,7 +89,7 @@ Clears the contents of the item string and reallocates space.
 Sets all of the providers's items, clearing any previous items first.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newItems | String |   | Sequence string with new items. |
+| newItems | String |   | Sequence string with new items. |
 
 
 

@@ -22,8 +22,8 @@ Undefined copy constructor (this class has no copy semantics).
 Forces the content string to contain a tuple with the given number of elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| num | Int |   | New number of elements. |
-| fill | String |   | String to insert in empty spaces. |
+| num | Int |   | New number of elements. |
+| fill | String |   | String to insert in empty spaces. |
 
 ### getContentString()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -43,7 +43,7 @@ Returns the element separator character.
 Returns the length in characters of a sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
+| index | Int |   | Element index. |
 
 ### getNumElements()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -56,7 +56,7 @@ Returns the number of elements in this sequence.
 Returns the position in the content string of the beginning character of the sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
+| index | Int |   | Element index. |
 
 ### getValue(index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -64,7 +64,7 @@ Returns the position in the content string of the beginning character of the seq
 Returns the value of a sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
+| index | Int |   | Element index. |
 
 ### insert(index, numElements, val)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -72,9 +72,9 @@ Returns the value of a sequence element.
 Inserts many copies of an element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index at which inserting begins. |
-| numElements | Int |   | Number of elements to insert. |
-| val | String |   | Value for the new elements. |
+| index | Int |   | Element index at which inserting begins. |
+| numElements | Int |   | Number of elements to insert. |
+| val | String |   | Value for the new elements. |
 
 ### isValidSequence()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -87,8 +87,8 @@ Returns True if this object contains a valid sequence.
 Removes elements starting at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index at which removal begins. |
-| numElements | Int |   | Number of elements to remove. |
+| index | Int |   | Element index at which removal begins. |
+| numElements | Int |   | Number of elements to remove. |
 
 ### setContentString(seqstr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -96,7 +96,7 @@ Removes elements starting at the given index.
 Resets all values for the sequence elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| seqstr | String |   | Sequence string with new values. |
+| seqstr | String |   | Sequence string with new values. |
 
 ### setElementSeparator(sep)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -104,7 +104,7 @@ Resets all values for the sequence elements.
 Sets the element separator character.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sep | String |   | Separator character. |
+| sep | String |   | Separator character. |
 
 ### setLength(index, length)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -112,8 +112,8 @@ Sets the element separator character.
 Sets the length of the sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
-| length | Int |   | New length (in characters). |
+| index | Int |   | Element index. |
+| length | Int |   | New length (in characters). |
 
 ### setPosition(index, position)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -121,8 +121,8 @@ Sets the length of the sequence element.
 Sets the position of the sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
-| position | Int |   | New position within the string. |
+| index | Int |   | Element index. |
+| position | Int |   | New position within the string. |
 
 ### setValue(index, value, replaceAll=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -130,8 +130,8 @@ Sets the position of the sequence element.
 Sets the value of a sequence element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
-| value | String |   | New value. |
+| index | Int |   | Element index. |
+| value | String |   | New value. |
 | replaceAll | Bool | False | If False (default), leading and trailing spaces will be preserved, otherwise, all space between separators will be replaced with the new value. |
 
 ### trimWhiteSpace(index)  
@@ -140,4 +140,4 @@ Sets the value of a sequence element.
 Adjusts the position and length of the element to trim leading and trailing white spaces.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index. |
+| index | Int |   | Element index. |

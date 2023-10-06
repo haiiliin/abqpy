@@ -46,7 +46,7 @@ Returns the target's current value.
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | String |   | New value. |
+| newValue | String |   | New value. |
 
 
 

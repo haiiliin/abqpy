@@ -14,11 +14,11 @@ A menu title is a child of a menu bar which is responsible for popping up a pull
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| pup | FXPopup | None |   |
-| opts | Int | 0 |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| ic | FXIcon | None |   |
+| pup | FXPopup | None |   |
+| opts | Int | 0 |   |
 
 ### canFocus
 
@@ -94,7 +94,7 @@ Return popup menu.
 Set popup menu to pop up.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| menu | FXPopup |   |   |
+| menu | FXPopup |   |   |
 
 
 

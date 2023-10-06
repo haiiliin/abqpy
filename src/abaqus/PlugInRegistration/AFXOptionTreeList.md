@@ -8,8 +8,8 @@ This class provides a scrolled list of groups of options that may be toggled on 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| nvis | Int |   | Number of visible items of list. |
+| p | FXComposite |   | Parent widget. |
+| nvis | Int |   | Number of visible items of list. |
 | opts | Int | 0 | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
 | y | Int | 0 | Y coordinate of origin. |
@@ -28,7 +28,7 @@ Constructor.
 Adds a new item with the given text as the first item of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Item text. |
+| text | String |   | Item text. |
 | tgt | FXObject | None | Item target. |
 | msg | Int | 0 | Item selector. |
 
@@ -38,7 +38,7 @@ Adds a new item with the given text as the first item of the list.
 Adds a new item with the given text as the last item of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Item text. |
+| text | String |   | Item text. |
 | tgt | FXObject | None | Item target. |
 | msg | Int | 0 | Item selector. |
 
@@ -61,9 +61,9 @@ Computes the item size to be used as a base for default height computation.
 Creates a new tree item object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Item text. |
-| tgt | FXObject |   | Item target. |
-| msg | Int |   | Item selector. |
+| text | String |   | Item text. |
+| tgt | FXObject |   | Item target. |
+| msg | Int |   | Item selector. |
 
 ### getContentHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -161,8 +161,8 @@ Reimplemented from FXScrollWindow.
 Moves contents to the specified position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   | X location. |
-| y | Int |   | Y location |
+| x | Int |   | X location. |
+| y | Int |   | Y location |
 
 ### removeItem(item)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -170,7 +170,7 @@ Moves contents to the specified position.
 Removes the given item from the list. This method does nothing if the given item does not exist.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| item | AFXOptionTreeItem |   | Item to be removed. |
+| item | AFXOptionTreeItem |   | Item to be removed. |
 
 ### setHSpacing(hs)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -178,7 +178,7 @@ Removes the given item from the list. This method does nothing if the given item
 Sets the horizontal inter-child spacing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| hs | Int |   | Horizontal spacing. |
+| hs | Int |   | Horizontal spacing. |
 
 ### setNumVisible(nvis)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -186,7 +186,7 @@ Sets the horizontal inter-child spacing.
 Sets the number of visible items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nvis | Int |   | Number of visible items. |
+| nvis | Int |   | Number of visible items. |
 
 ### setPadBottom(pb)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -194,7 +194,7 @@ Sets the number of visible items.
 Sets the bottom padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   | Bottom padding. |
+| pb | Int |   | Bottom padding. |
 
 ### setPadLeft(pl)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -202,7 +202,7 @@ Sets the bottom padding.
 Sets the left padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   | Left padding. |
+| pl | Int |   | Left padding. |
 
 ### setPadRight(pr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -210,7 +210,7 @@ Sets the left padding.
 Sets the right padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   | Right padding. |
+| pr | Int |   | Right padding. |
 
 ### setPadTop(pt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -218,7 +218,7 @@ Sets the right padding.
 Sets the top padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   | Top padding. |
+| pt | Int |   | Top padding. |
 
 ### setVSpacing(vs)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -226,7 +226,7 @@ Sets the top padding.
 Sets the vertical inter-child spacing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| vs | Int |   | Vertical spacing. |
+| vs | Int |   | Vertical spacing. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

@@ -14,8 +14,8 @@ This class provides the interface for creating an FXMenuTitle and performing var
 Constructor that takes an owner.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (module or toolset GUI). |
-| label | String |   | Label string. |
+| owner | AFXGuiObjectManager |   | Owner (module or toolset GUI). |
+| label | String |   | Label string. |
 | ic | FXIcon | None | Icon. |
 | popup | FXPopup | None | Pulldown menu. |
 
@@ -29,8 +29,8 @@ Constructor that takes an owner.
 Constructor that takes a parent.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| parent | FXComposite |   | Parent widget. |
-| label | String |   | Label string. |
+| parent | FXComposite |   | Parent widget. |
+| label | String |   | Label string. |
 | ic | FXIcon | None | Icon. |
 | popup | FXPopup | None | Pulldown menu. |
 

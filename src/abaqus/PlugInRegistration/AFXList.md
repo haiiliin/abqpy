@@ -8,8 +8,8 @@ This class is a list widget that allows displaying items in a scrollable window.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| nvis | Int |   | Number of visible items. |
+| p | FXComposite |   | Parent widget. |
+| nvis | Int |   | Number of visible items. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -24,7 +24,7 @@ Constructor.
 Adds a new item to the end of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text |
+| text | String |   | Text |
 | icon | FXIcon | None | Icon |
 | sel | Int | 0 | Integer associated with this item |
 
@@ -60,7 +60,7 @@ Reimplemented from FXList.
 Returns the index of the first item with the associated data or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| data |   |   |   |
+| data |   |   |   |
 
 ### getItemProvider()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -78,8 +78,8 @@ Returns the index of the uniquely selected item. If more than one item or no ite
 Inserts a new item at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index |
-| text | String |   | Text |
+| index | Int |   | Index |
+| text | String |   | Text |
 | icon | FXIcon | None | Icon |
 | sel | Int | 0 | Integer associated with this item |
 
@@ -89,8 +89,8 @@ Inserts a new item at the given index.
 Replaces the item at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index |
-| text | String |   | Text |
+| index | Int |   | Index |
+| text | String |   | Text |
 | icon | FXIcon | None | Icon |
 | sel | Int | 0 | Integer associated with this item |
 
@@ -100,7 +100,7 @@ Replaces the item at the given index.
 Sets the auto-commit option for handling double clicks. This option is turned on by default.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| commit | Bool |   |   |
+| commit | Bool |   |   |
 
 ### setItemProvider(cp)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -108,7 +108,7 @@ Sets the auto-commit option for handling double clicks. This option is turned on
 Sets the provider of the list's items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cp | FXObject |   |   |
+| cp | FXObject |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

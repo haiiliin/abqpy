@@ -8,8 +8,8 @@ This class contains a button that is placed in the popup menu of the flyout butt
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| text | String |   | Label string. |
+| p | FXComposite |   | Parent widget. |
+| text | String |   | Label string. |
 | ic | FXIcon | None | Icon. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
@@ -45,4 +45,4 @@ Sets the icon for the flyout item.
 Reimplemented from FXLabel.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ic | FXIcon |   |   |
+| ic | FXIcon |   |   |

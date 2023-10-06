@@ -8,8 +8,8 @@ This is the base class for module GUIs and provides an interface for module GUI 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| moduleName | String |   | Name used to identify this module. |
-| displayTypes | Int |   | Types of primary objects that this module may display. |
+| moduleName | String |   | Name used to identify this module. |
+| displayTypes | Int |   | Types of primary objects that this module may display. |
 
 ### activate()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -37,7 +37,7 @@ Returns the type of the primary objects which may be displayed when this module 
 Deactivates and hides the module's GUI components in the menubar, toolbar and toolbox.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| location | Int |   | Location where gui components are placed. |
+| location | Int |   | Location where gui components are placed. |
 
 ### show(location)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -45,7 +45,7 @@ Deactivates and hides the module's GUI components in the menubar, toolbar and to
 Activates and shows the module's GUI components in the menubar, toolbar and toolbox.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| location | Int |   | Location where gui components are placed. |
+| location | Int |   | Location where gui components are placed. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

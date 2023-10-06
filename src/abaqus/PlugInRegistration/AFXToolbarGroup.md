@@ -8,7 +8,7 @@ This class creates a container to be used for groups in the toolbar. It creates 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the group. |
+| owner | AFXGuiObjectManager |   | Creator of the group. |
 | name | String | '' | English toolset name. |
 | title | String | '' | Name appearing in the title bar when the group is floating. |
 
@@ -72,7 +72,7 @@ Reimplemented from FXToolbar.
 Sets the English identifier for the group.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   |   |
+| name | String |   |   |
 
 ### setTitle(title)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -80,7 +80,7 @@ Sets the English identifier for the group.
 Sets the name appearing in the title bar when the group is floating.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| title | String |   |   |
+| title | String |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

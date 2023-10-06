@@ -21,7 +21,7 @@ Constructor.
 Returns the command at the given index (returns 0 if the index is out-of-bounds).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Command index (0-based). |
+| index | Int |   | Command index (0-based). |
 
 ### getNumCommands()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

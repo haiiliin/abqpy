@@ -16,18 +16,18 @@ Vertical frame layout manager widget is used to automatically place child-window
 Construct a vertical frame layout manager.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
-| hs | Int | DEFAULT_SPACING |   |
-| vs | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| opts | Int | 0 |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
+| hs | Int | DEFAULT_SPACING |   |
+| vs | Int | DEFAULT_SPACING |   |
 
 ### getDefaultHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

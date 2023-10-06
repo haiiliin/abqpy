@@ -8,9 +8,9 @@ This class provides dialog steps in GUI procedures.
 Constructor that takes a prompt for the prompt area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
-| prompt | String |   |   |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
+| prompt | String |   |   |
 
 ### AFXDialogStep(owner, dialog)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -18,8 +18,8 @@ Constructor that takes a prompt for the prompt area.
 Constructor that supplies a default prompt for the prompt area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| dialog | AFXDataDialog |   | Dialog box to be posted in this step. |
 
 ### onCancel()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

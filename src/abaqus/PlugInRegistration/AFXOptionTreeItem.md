@@ -8,8 +8,8 @@ This class is a tree widget with check buttons.
 Constructor creating a top-level (root) tree item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| label | String |   | Label text. |
+| p | FXComposite |   | Parent widget. |
+| label | String |   | Label text. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -30,7 +30,7 @@ Constructor creating a top-level (root) tree item.
 Creates a new tree item as a sibling after (below) the tree item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| label | String |   | Item label. |
+| label | String |   | Item label. |
 | tgt | FXObject | None | Item target. |
 | sel | Int | 0 | Item selector. |
 
@@ -40,7 +40,7 @@ Creates a new tree item as a sibling after (below) the tree item.
 Creates a new tree item as a sibling before (above) the tree item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| label | String |   | Item label. |
+| label | String |   | Item label. |
 | tgt | FXObject | None | Item target. |
 | sel | Int | 0 | Item selector. |
 
@@ -50,7 +50,7 @@ Creates a new tree item as a sibling before (above) the tree item.
 Creates a new tree item as the first child of the tree item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| label | String |   | Item label. |
+| label | String |   | Item label. |
 | tgt | FXObject | None | Item target. |
 | sel | Int | 0 | Item selector. |
 
@@ -60,7 +60,7 @@ Creates a new tree item as the first child of the tree item.
 Creates a new tree item as the last child of the tree item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| label | String |   | Item label. |
+| label | String |   | Item label. |
 | tgt | FXObject | None | Item target. |
 | sel | Int | 0 | Item selector. |
 
@@ -70,7 +70,7 @@ Creates a new tree item as the last child of the tree item.
 Returns the child tree at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### collapse()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -88,7 +88,7 @@ Computes default size of the arrow button.
 Checks whether the given tree is a child of this object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tree | AFXOptionTreeItem |   | Item. |
+| tree | AFXOptionTreeItem |   | Item. |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -191,7 +191,7 @@ Reimplemented from FXWindow.
 Returns the index of an immediate child tree, or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tree | AFXOptionTreeItem |   | Item. |
+| tree | AFXOptionTreeItem |   | Item. |
 
 ### isChildOf(tree)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -199,7 +199,7 @@ Returns the index of an immediate child tree, or -1 if not found.
 Checks whether this object is contained in the given tree.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tree | AFXOptionTreeItem |   | Item. |
+| tree | AFXOptionTreeItem |   | Item. |
 
 ### isExpanded()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -219,7 +219,7 @@ Reimplemented from FXWindow.
 Sets the size of the arrow button for this object and all its children.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| size | Int |   | Size. |
+| size | Int |   | Size. |
 
 ### setCheck(check, notify, propagating=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -227,8 +227,8 @@ Sets the size of the arrow button for this object and all its children.
 Sets the check state of the tree item and its children, optionally notifying targets.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| check | Int |   | Check state. |
-| notify | Bool |   | Notification flag. |
+| check | Int |   | Check state. |
+| notify | Bool |   | Notification flag. |
 | propagating | Bool | False | Propagation flag. |
 
 ### setCheck(check=True)  
@@ -245,7 +245,7 @@ Sets the check state of the tree item and its children.
 Sets the label text shown in the tree item's check button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Label text. |
+| txt | String |   | Label text. |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -260,7 +260,7 @@ Reimplemented from FXWindow.
 Updates the check state of the tree item and its ancestors.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool |   | Notification flag. |
+| notify | Bool |   | Notification flag. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

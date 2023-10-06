@@ -16,18 +16,18 @@ Packer is a layout manager which automatically places child windows inside its a
 Construct packer layout manager.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
-| hs | Int | DEFAULT_SPACING |   |
-| vs | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| opts | Int | 0 |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
+| hs | Int | DEFAULT_SPACING |   |
+| vs | Int | DEFAULT_SPACING |   |
 
 ### getBaseColor()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -118,7 +118,7 @@ Return current vertical inter-child spacing.
 Change base gui color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setBorderColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -126,7 +126,7 @@ Change base gui color.
 Change border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setFrameStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -134,7 +134,7 @@ Change border color.
 Change frame style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setHiliteColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -142,7 +142,7 @@ Change frame style.
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setHSpacing(hs)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -150,7 +150,7 @@ Change highlight color.
 Change horizontal inter-child spacing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| hs | Int |   |   |
+| hs | Int |   |   |
 
 ### setPackingHints(ph)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -158,7 +158,7 @@ Change horizontal inter-child spacing.
 Change packing hints.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ph | Int |   |   |
+| ph | Int |   |   |
 
 ### setPadBottom(pb)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -166,7 +166,7 @@ Change packing hints.
 Change bottom padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   |   |
+| pb | Int |   |   |
 
 ### setPadLeft(pl)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -174,7 +174,7 @@ Change bottom padding.
 Change left padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   |   |
+| pl | Int |   |   |
 
 ### setPadRight(pr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -182,7 +182,7 @@ Change left padding.
 Change right padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   |   |
+| pr | Int |   |   |
 
 ### setPadTop(pt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -190,7 +190,7 @@ Change right padding.
 Change top padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   |   |
+| pt | Int |   |   |
 
 ### setShadowColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -198,7 +198,7 @@ Change top padding.
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setVSpacing(vs)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -206,7 +206,7 @@ Change shadow color.
 Change vertical inter-child spacing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| vs | Int |   |   |
+| vs | Int |   |   |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

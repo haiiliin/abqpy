@@ -13,7 +13,7 @@ Constructor.
 Associates the data with a string variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | String |   | Variable to be associated with. |
+| value | String |   | Variable to be associated with. |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -21,7 +21,7 @@ Associates the data with a string variable.
 Associates the data with a floating-point variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   | Variable to be associated with. |
+| value | Float |   | Variable to be associated with. |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -29,7 +29,7 @@ Associates the data with a floating-point variable.
 Associates the data with an integer variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   | Variable to be associated with. |
+| value | Int |   | Variable to be associated with. |
 
 ### getSelector()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -59,7 +59,7 @@ Implemented in AFXFloatTarget, AFXIntTarget, and AFXStringTarget.
 Sets the message ID of this target object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| msgId | Int |   | Message ID. |
+| msgId | Int |   | Message ID. |
 
 ### setTarget(target)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -67,7 +67,7 @@ Sets the message ID of this target object.
 Sets the target of this target object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| target | FXObject |   | Target. |
+| target | FXObject |   | Target. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

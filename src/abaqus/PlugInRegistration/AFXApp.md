@@ -44,9 +44,9 @@ Returns the base product name.
 Returns the base product's major, minor, and update numbers.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| majorNumber | Int |   | Version number. |
-| minorNumber | Int |   | Release number. |
-| updateNumber | Int |   | Update number. |
+| majorNumber | Int |   | Version number. |
+| minorNumber | Int |   | Release number. |
+| updateNumber | Int |   | Update number. |
 
 ### getKernelInitializationCommand()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -74,8 +74,8 @@ Returns the major, minor, and update numbers.
 Initializes the application and connects to the kernel.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| argc | Int |   |   |
-| argv | String |   |   |
+| argc | Int |   |   |
+| argv | String |   |   |
 
 ### isLocked()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -119,7 +119,7 @@ Run an event loop till some flag becomes non-zero.
 Reimplemented from FXApp.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| condition | Int |   |   |
+| condition | Int |   |   |
 
 ### unlock()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

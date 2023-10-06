@@ -16,8 +16,8 @@ This class prefixes a given message string by either "Note:" or "Warning:".
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| message | String |   | Note message string. |
+| p | FXComposite |   | Parent widget. |
+| message | String |   | Note message string. |
 | opts | Int | NOTE_INFORMATION | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
 | y | Int | 0 | Y coordinate of origin. |
@@ -61,7 +61,7 @@ Returns the note's message string.
 Sets the note's message string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| message | String |   | Message. |
+| message | String |   | Message. |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

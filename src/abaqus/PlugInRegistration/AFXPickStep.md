@@ -14,10 +14,10 @@ This class is used to provide pick steps in GUI procedures.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
-| prompt | String |   | Step's prompt displayed in prompt area. |
-| entitiesToPick | Int |   | Type of entities to pick. |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
+| prompt | String |   | Step's prompt displayed in prompt area. |
+| entitiesToPick | Int |   | Type of entities to pick. |
 | numberToPick | pickAmountEnum | ONE | How many entities to pick. |
 | highlightLevel | Int | 1 | Highlight level. |
 | sequenceStyle | sequenceStyleEnum | ARRAY | Sequence style of picked variables in the command. |
@@ -32,7 +32,7 @@ Constructor.
 Adds an element set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String |   | Name of set. |
 
 ### addGeometrySetSelection
 
@@ -44,7 +44,7 @@ Adds an element set to the step's selections.
 Adds a geometry set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String |   | Name of set. |
 
 ### addNodeSetSelection
 
@@ -56,7 +56,7 @@ Adds a geometry set to the step's selections.
 Adds a node set to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of set. |
+| name | String |   | Name of set. |
 
 ### addPointKeyIn
 
@@ -68,7 +68,7 @@ Adds a node set to the step's selections.
 Creates a textfield on the prompt line as an alternative method of specifying a point.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXTupleKeyword |   | Keyword |
+| keyword | AFXTupleKeyword |   | Keyword |
 
 ### addSurfaceSelection
 
@@ -80,7 +80,7 @@ Creates a textfield on the prompt line as an alternative method of specifying a 
 Adds a surface to the step's selections.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of surface. |
+| name | String |   | Name of surface. |
 
 ### allowRepeatedSelections
 
@@ -165,7 +165,7 @@ Reimplemented in AFXOrderedPickStep.
 Sets the refinements to be used when picking edges.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setElementEdgeRefinements
 
@@ -177,7 +177,7 @@ Sets the refinements to be used when picking edges.
 Sets the refinements to be used when picking element edges.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setElementFaceRefinements
 
@@ -189,7 +189,7 @@ Sets the refinements to be used when picking element edges.
 Sets the refinements to be used when picking element faces.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setElementRefinements
 
@@ -201,7 +201,7 @@ Sets the refinements to be used when picking element faces.
 Sets the refinements to be used when picking elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setFaceRefinements
 
@@ -213,7 +213,7 @@ Sets the refinements to be used when picking elements.
 Sets the refinements to be used when picking faces.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setInstanceRefinements
 
@@ -225,7 +225,7 @@ Sets the refinements to be used when picking faces.
 Sets the refinements to be used when picking instances.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setNodeRefinements
 
@@ -237,7 +237,7 @@ Sets the refinements to be used when picking instances.
 Sets the refinements to be used when picking nodes.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setSketchRefinements
 
@@ -249,7 +249,7 @@ Sets the refinements to be used when picking nodes.
 Sets the refinements to be used when picking sketches.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### setXyRefinements
 
@@ -261,7 +261,7 @@ Sets the refinements to be used when picking sketches.
 Sets the refinements to be used when picking xy objects.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| refinement | Int |   | Refinement flag. |
+| refinement | Int |   | Refinement flag. |
 
 ### Class flags  
 ![](../IconsReference/butix_top_wline.png)

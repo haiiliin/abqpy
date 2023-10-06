@@ -8,8 +8,8 @@ This class is designed for the command keywords that have floating-point values.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand |   | Host command. |
+| name | String |   | Keyword name. |
 | isRequired | Bool | False | True if the keyword is a required argument of the command. |
 | defaultValue | Float | FLOAT_DEFAULT | Default value. |
 | precision | Int | 6 | Precision for converting the keyword's floating-point value to a text string. |
@@ -51,7 +51,7 @@ Implements AFXKeyword.
 Sets the keyword's default value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValue | String |   | Default value. |
+| defaultValue | String |   | Default value. |
 
 ### setDefaultValue(defaultValue)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -59,7 +59,7 @@ Sets the keyword's default value.
 Sets the keyword's default value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValue | Float |   | Default value. |
+| defaultValue | Float |   | Default value. |
 
 ### setPrecision(precision)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -67,7 +67,7 @@ Sets the keyword's default value.
 Sets the precision that is used for converting the keyword's floating-point value to a text string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| precision | Int |   |   |
+| precision | Int |   |   |
 
 ### setValue(newValue)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -75,7 +75,7 @@ Sets the precision that is used for converting the keyword's floating-point valu
 Sets the keyword's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | String |   | New value. |
+| newValue | String |   | New value. |
 
 ### setValue(newValue)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -83,7 +83,7 @@ Sets the keyword's current value.
 Sets the keyword's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float |   | New value. |
 
 ### setValueToDefault(ignoreUnspecified=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

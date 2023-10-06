@@ -12,9 +12,9 @@ This class is used to provide pick steps in GUI procedures.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
-| sheetSize | float |   | Sketch sheet size when creating. |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
+| sheetSize | float |   | Sketch sheet size when creating. |
 | prompt | String | 'Create a sketch' | Step's prompt displayed in prompt area. |
 
 ### onCancel

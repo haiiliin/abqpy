@@ -8,7 +8,7 @@ This class provides a slider, which allows the user to specify a value by draggi
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite |   | Parent widget. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | AFXSLIDER_NORMAL | Options and hints. |
@@ -119,7 +119,7 @@ Reimplemented from FXWindow.
 Sets the number of decimal points displayed.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| dp | Int |   | Number of decimal places. |
+| dp | Int |   | Number of decimal places. |
 
 ### setIncrement(inc)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -127,7 +127,7 @@ Sets the number of decimal points displayed.
 Sets the slider's auto-increment/decrement value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| inc | Int |   | Increment. |
+| inc | Int |   | Increment. |
 
 ### setMaxLabelText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -135,7 +135,7 @@ Sets the slider's auto-increment/decrement value.
 Sets the maximum label's text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Max label text. |
+| text | String |   | Max label text. |
 
 ### setMinLabelText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -143,7 +143,7 @@ Sets the maximum label's text.
 Sets the minimum label's text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Min label text. |
+| text | String |   | Min label text. |
 
 ### setRange(lo, hi)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -151,8 +151,8 @@ Sets the minimum label's text.
 Sets the slider's maximum and minimum values.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| lo | Int |   | Minimum value. |
-| hi | Int |   | Maximum value. |
+| lo | Int |   | Minimum value. |
+| hi | Int |   | Maximum value. |
 
 ### setSliderStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -160,7 +160,7 @@ Sets the slider's maximum and minimum values.
 Sets the slider's style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | Style flag. |
+| style | Int |   | Style flag. |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -168,7 +168,7 @@ Sets the slider's style.
 Sets the slider's tip text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Tip text. |
+| text | String |   | Tip text. |
 
 ### setTitleLabelJustify(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -176,7 +176,7 @@ Sets the slider's tip text.
 Sets the title label's justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   | Justification mode. |
+| mode | Int |   | Justification mode. |
 
 ### setTitleLabelText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -184,7 +184,7 @@ Sets the title label's justification mode.
 Sets the title label's text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Title text. |
+| text | String |   | Title text. |
 
 ### setValue(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -192,7 +192,7 @@ Sets the title label's text.
 Sets the slider's value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   | Value. |
+| value | Int |   | Value. |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

@@ -16,11 +16,11 @@ Image class
 Create an image.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| pix |   | None |   |
-| opts | Int | 0 |   |
-| w | Int | 1 |   |
-| h | Int | 1 |   |
+| a | FXApp |   |   |
+| pix |   | None |   |
+| opts | Int | 0 |   |
+| w | Int | 1 |   |
+| h | Int | 1 |   |
 
 ### blend(color, sharpen=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -28,8 +28,8 @@ Create an image.
 Blends the icon with the specified color; should only be used on icons that support an alpha channel, for example, PNG.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   |   |
-| sharpen | Bool | True |   |
+| color | FXColor |   |   |
+| sharpen | Bool | True |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -69,8 +69,8 @@ To get to the option flags.
 Get pixel at x,y.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### render()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -89,8 +89,8 @@ Reimplemented from FXDrawable.
 Reimplemented in FXIcon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### scale(w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -98,8 +98,8 @@ Reimplemented in FXIcon.
 Rescale pixels image to the specified width and height.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### setPixel(x, y, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -107,9 +107,9 @@ Rescale pixels image to the specified width and height.
 Change pixel at x,y.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| color | FXColor |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| color | FXColor |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

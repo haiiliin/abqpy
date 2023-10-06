@@ -10,8 +10,8 @@ This class is the base class for all data dialogs, which collect data from the u
 Constructor that creates a dialog box that occludes the main window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | AFXGuiMode |   | Host mode. |
-| title | String |   | Title string. |
+| mode | AFXGuiMode |   | Host mode. |
+| title | String |   | Title string. |
 | actionButtonIds | Int | 0 | ID's of action buttons to be created. |
 | opts | Int | DIALOG_NORMAL | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
@@ -25,9 +25,9 @@ Constructor that creates a dialog box that occludes the main window.
 Constructor that creates a dialog box that occludes its owner widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | AFXGuiMode |   | Host mode. |
-| owner | FXWindow |   | Owner widget. |
-| title | String |   | Title string. |
+| mode | AFXGuiMode |   | Host mode. |
+| owner | FXWindow |   | Owner widget. |
+| title | String |   | Title string. |
 | actionButtonIds | Int | 0 | ID's of action buttons to be created. |
 | opts | Int | DIALOG_NORMAL | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
@@ -41,11 +41,11 @@ Constructor that creates a dialog box that occludes its owner widget.
 Adds a finite state transition to the dialog box. When the expression "target.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| target | AFXIntTarget |   | Target. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| target | AFXIntTarget |   | Target. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Int |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### addTransition(target, op, value, tgt, sel, ptr=None)  
@@ -54,11 +54,11 @@ Adds a finite state transition to the dialog box. When the expression "target.ge
 Adds a finite state transition to the dialog box. When the expression "target.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| target | AFXFloatTarget |   | Target. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| target | AFXFloatTarget |   | Target. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Float |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### addTransition(keyword, op, value, tgt, sel, ptr=None)  
@@ -67,11 +67,11 @@ Adds a finite state transition to the dialog box. When the expression "target.ge
 Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXTogglableKeyword |   | Keyword. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| keyword | AFXTogglableKeyword |   | Keyword. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Int |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### addTransition(keyword, op, value, tgt, sel, ptr=None)  
@@ -80,11 +80,11 @@ Adds a finite state transition to the dialog box. When the expression "keyword.g
 Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXIntKeyword |   | Keyword. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| keyword | AFXIntKeyword |   | Keyword. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Int |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### addTransition(keyword, op, value, tgt, sel, ptr=None)  
@@ -93,11 +93,11 @@ Adds a finite state transition to the dialog box. When the expression "keyword.g
 Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXFloatKeyword |   | Keyword. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| keyword | AFXFloatKeyword |   | Keyword. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Float |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### addTransition(keyword, op, value, tgt, sel, ptr=None)  
@@ -106,11 +106,11 @@ Adds a finite state transition to the dialog box. When the expression "keyword.g
 Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value" evaluates to True, an sel message will be sent to the tgt object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| keyword | AFXBoolKeyword |   | Keyword. |
-| op | AFXTransition::Operator |   | Operator type. |
-| value | Bool |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| keyword | AFXBoolKeyword |   | Keyword. |
+| op | AFXTransition::Operator |   | Operator type. |
+| value | Bool |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### bailout()  
@@ -131,7 +131,7 @@ Returns the dialog box's host mode.
 Handles the error that occurs when the given keyword or target contains invalid contents. This method will select the contents of the widget that is set for the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| kwd | FXObject |   | Object that contains invalid contents. |
+| kwd | FXObject |   | Object that contains invalid contents. |
 
 ### onTableError(tableKwd, row, col)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -139,9 +139,9 @@ Handles the error that occurs when the given keyword or target contains invalid 
 Handles the error that occurs when the given table keyword or target contains an invalid element. This method will select the contents of the widget that is set for the element of the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tableKwd | FXObject |   | Object that contains invalid element. |
-| row | Int |   | Row index. |
-| col | Int |   | Column index. |
+| tableKwd | FXObject |   | Object that contains invalid element. |
+| row | Int |   | Row index. |
+| col | Int |   | Column index. |
 
 ### onTupleError(tupleKwd, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -149,8 +149,8 @@ Handles the error that occurs when the given table keyword or target contains an
 Handles the error that occurs when the given tuple keyword or target contains an invalid element. This method will select the contents of the widget that is set for the element of the keyword or target (with setWidgetForKeyword()). If no such widget is specified explicitly, it will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tupleKwd | FXObject |   | Object that contains invalid element. |
-| index | Int |   | Element index. |
+| tupleKwd | FXObject |   | Object that contains invalid element. |
+| index | Int |   | Element index. |
 
 ### processUpdates()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

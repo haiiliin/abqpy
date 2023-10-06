@@ -12,8 +12,8 @@ This class is used to provide pick steps in GUI procedures.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| sketchName | String |   | Name of sketch to edit, blank if create. |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| sketchName | String |   | Name of sketch to edit, blank if create. |
 | prompt | String | 'Edit a sketch' | Step's prompt displayed in prompt area. |
 
 ### onCancel

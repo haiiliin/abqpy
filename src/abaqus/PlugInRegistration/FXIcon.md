@@ -8,12 +8,12 @@ Icon class.
 Create an icon with an initial pixel buffer pix, a transparent color clr, and options as in FXImage.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| pix |   | None |   |
-| clr | FXColor | 0 |   |
-| opts | Int | 0 |   |
-| w | Int | 1 |   |
-| h | Int | 1 |   |
+| a | FXApp |   |   |
+| pix |   | None |   |
+| clr | FXColor | 0 |   |
+| opts | Int | 0 |   |
+| w | Int | 1 |   |
+| h | Int | 1 |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -51,5 +51,5 @@ Resize pixmap to the specified width and height.
 Reimplemented from FXImage.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |

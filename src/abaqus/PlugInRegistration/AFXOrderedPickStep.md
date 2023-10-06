@@ -14,10 +14,10 @@ This class is used to provide pick steps in GUI procedures.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXProcedure |   | Procedure creating the step. |
-| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
-| prompt | String |   | Step's prompt displayed in prompt area. |
-| entitiesToPick | Int |   | Type of entities to pick. |
+| owner | AFXProcedure |   | Procedure creating the step. |
+| keyword | AFXObjectKeyword |   | Object kwd containing pick variable. Part of AFXGuiCommand. |
+| prompt | String |   | Step's prompt displayed in prompt area. |
+| entitiesToPick | Int |   | Type of entities to pick. |
 | highlightLevel | Int | 1 | Highlight level. |
 
 ### onCancel

@@ -14,9 +14,9 @@ This class provides the interface for creating an FXMenuCascade and performing v
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the menu cascade. |
-| p | FXComposite |   | Parent widget. |
-| label | String |   | Label for the menu button. |
+| owner | AFXGuiObjectManager |   | Creator of the menu cascade. |
+| p | FXComposite |   | Parent widget. |
+| label | String |   | Label for the menu button. |
 | ic | FXIcon | None | Menu button icon. |
 | popup | FXPopup | None | Menu cascade's pullright pane. |
 

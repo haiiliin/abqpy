@@ -8,8 +8,8 @@ This class provides the basis for writing procedures.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the procedure. |
-| type | typeEnum | NORMAL |   |
+| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the procedure. |
+| type | typeEnum | NORMAL |   |
 
 ### activate()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -79,7 +79,7 @@ Returns the step to which the procedure should loop back after processing its co
 Returns the next step to be executed; if zero is returned the procedure will process its commands.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| previousStep | AFXStep |   | Previous step. |
+| previousStep | AFXStep |   | Previous step. |
 
 ### getNumSteps()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -92,7 +92,7 @@ Returns the number of steps in the step stack.
 This method is called if an error occurs while issuing commands. It can be reimplemented in derived classes to perform special error handling.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| exc | nex_Exception |   | Exception. |
+| exc | nex_Exception |   | Exception. |
 
 ### onBackup()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -110,9 +110,9 @@ Called when a procedure cancels.
 Message handler for handling backup button activation.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject |   | Sender. |
+| sel | Int |   | Selector. |
+| ptr | String |   | Data. |
 
 ### onCmdHandle2BtnBailout(sender, sel, ptr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -120,9 +120,9 @@ Message handler for handling backup button activation.
 Message handler for handling the user 2 button bailout choice.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject |   | Sender. |
+| sel | Int |   | Selector. |
+| ptr | String |   | Data. |
 
 ### onCmdHandleBailout(sender, sel, ptr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -130,9 +130,9 @@ Message handler for handling the user 2 button bailout choice.
 Message handler for handling the user 3 button bailout choice.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Sender. |
-| sel | Int |   | Selector. |
-| ptr | String |   | Data. |
+| sender | FXObject |   | Sender. |
+| sel | Int |   | Selector. |
+| ptr | String |   | Data. |
 
 ### onResume()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -155,7 +155,7 @@ Called when a procedure's step changes in value.
 Sets the current dialog box of the mode. Procedures will have this set by AFXDialogStep.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| db | AFXDialog |   | Dialog box. |
+| db | AFXDialog |   | Dialog box. |
 
 ### setSelectionOptions(pickDepth=CLOSEST, pickScope=ALL, dragShape=RECTANGLE, dragScope=INSIDE_CROSSING, isoLines=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

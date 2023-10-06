@@ -8,9 +8,9 @@ This class implements a labeled list box. It allows the user to select entries f
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| nvis | Int |   | Number of visible items. |
-| labelText | String |   | Label string. |
+| p | FXComposite |   | Parent widget. |
+| nvis | Int |   | Number of visible items. |
+| labelText | String |   | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -29,8 +29,8 @@ Constructor.
 Adds an item to the end of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text |
-| icon | FXIcon | None |   |
+| text | String |   | Text |
+| icon | FXIcon | None |   |
 | sel | Int | 0 | Icon Integer associated with this item |
 
 ### clearItems()  
@@ -75,7 +75,7 @@ Returns the status line help text.
 Returns the data for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int |   |   |
 
 ### getItemIndexForData(data)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -83,7 +83,7 @@ Returns the data for the specified item.
 Returns the index of the first item with the associated data or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| data |   |   |   |
+| data |   |   |   |
 
 ### getLabelFont()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -116,8 +116,8 @@ Returns the tool tip message.
 Inserts a new item at the specified index position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index |
-| text | String |   | Text |
+| index | Int |   | Index |
+| text | String |   | Text |
 | icon | FXIcon | None | Icon |
 | sel | Int | 0 | Integer associated with this item |
 
@@ -127,7 +127,7 @@ Inserts a new item at the specified index position.
 Returns True if the item at the specified index position is the current item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int |   |   |
 
 ### isReadOnlyState()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -140,7 +140,7 @@ Returns True if the list box is set to the read-only state.
 Removes the item at the specified index position from the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int |   |   |
 
 ### replaceItem(index, text, icon=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -148,8 +148,8 @@ Removes the item at the specified index position from the list.
 Replaces the item at the specified index position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index |
-| text | String |   | Text |
+| index | Int |   | Index |
+| text | String |   | Text |
 | icon | FXIcon | None | Icon |
 | sel | Int | 0 | Integer associated with this item |
 
@@ -159,8 +159,8 @@ Replaces the item at the specified index position.
 Sets the current item. (The index is zero-based).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int |   |   |
+| notify | Bool | False |   |
 
 ### setHelpText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -168,7 +168,7 @@ Sets the current item. (The index is zero-based).
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### setItemData(index, ptr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -176,8 +176,8 @@ Sets the status line help text.
 Sets the data for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| ptr | String |   |   |
+| index | Int |   |   |
+| ptr | String |   |   |
 
 ### setLabelFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -185,7 +185,7 @@ Sets the data for the specified item.
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont |   |   |
 
 ### setLabelText(txt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -193,7 +193,7 @@ Sets the label font.
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   |   |
+| txt | String |   |   |
 
 ### setNumVisible(nvis)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -201,7 +201,7 @@ Sets the label string.
 Sets the number of visible items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nvis | Int |   |   |
+| nvis | Int |   |   |
 
 ### setReadOnlyState(readonly=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -209,7 +209,7 @@ Sets the number of visible items.
 Sets the read-only state of the list box.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| readonly | Bool | True |   |
+| readonly | Bool | True |   |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -217,7 +217,7 @@ Sets the read-only state of the list box.
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

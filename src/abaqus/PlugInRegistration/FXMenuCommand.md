@@ -16,12 +16,12 @@ The menu command widget is used to invoke a command in the application from a me
 Construct a menu command.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | 0 |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| ic | FXIcon | None |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | 0 |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -75,7 +75,7 @@ Return True if radio-checked.
 Set accelerator text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### uncheck()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

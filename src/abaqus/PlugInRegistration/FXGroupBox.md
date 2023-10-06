@@ -16,19 +16,19 @@ A group box widget provides a nice raised or sunken border around a group of wid
 Construct group box layout manager.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| opts | Int | GROUPBOX_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
-| hs | Int | DEFAULT_SPACING |   |
-| vs | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| opts | Int | GROUPBOX_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
+| hs | Int | DEFAULT_SPACING |   |
+| vs | Int | DEFAULT_SPACING |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -83,7 +83,7 @@ Return current groupbox title text.
 Change group box title text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

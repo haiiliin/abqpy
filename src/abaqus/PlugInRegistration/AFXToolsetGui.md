@@ -14,7 +14,7 @@ This is the base class for toolset GUIs and provides an interface for managing t
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| toolsetName | String |   | Toolset name passed in from derived toolsets. |
+| toolsetName | String |   | Toolset name passed in from derived toolsets. |
 
 ### activate
 
@@ -53,7 +53,7 @@ Returns the name of the toolset given on construction.
 Hides the GUI components in the menubar, toolbar, and toolbox.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| location | Int |   | Flags indicating the location where GUI components are placed. Possible values are GUI\_IN\_NONE, GUI\_IN\_MENUBAR, GUI\_IN\_TOOL\_PANE, GUI\_IN\_TOOLBAR, and GUI\_IN_TOOLBOX. |
+| location | Int |   | Flags indicating the location where GUI components are placed. Possible values are GUI\_IN\_NONE, GUI\_IN\_MENUBAR, GUI\_IN\_TOOL\_PANE, GUI\_IN\_TOOLBAR, and GUI\_IN_TOOLBOX. |
 
 ### show
 
@@ -65,7 +65,7 @@ Hides the GUI components in the menubar, toolbar, and toolbox.
 Shows the GUI components in the menubar, toolbar, and toolbox.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| location | Int |   | Flags indicating the location where GUI components are placed. Possible values are GUI\_IN\_NONE, GUI\_IN\_MENUBAR, GUI\_IN\_TOOL\_PANE, GUI\_IN\_TOOLBAR, and GUI\_IN_TOOLBOX. |
+| location | Int |   | Flags indicating the location where GUI components are placed. Possible values are GUI\_IN\_NONE, GUI\_IN\_MENUBAR, GUI\_IN\_TOOL\_PANE, GUI\_IN\_TOOLBAR, and GUI\_IN_TOOLBOX. |
 
 
 

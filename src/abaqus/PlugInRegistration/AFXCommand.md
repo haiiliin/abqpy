@@ -8,8 +8,8 @@ This class is the abstract base class for command classes that are processed by 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | AFXMode |   | Host mode. |
-| method | String |   | Method. |
+| mode | AFXMode |   | Host mode. |
+| method | String |   | Method. |
 | objectName | String | '' | Object name. |
 | registerQuery | Bool | False | True if a query should be registered when the command is used for the GUI. |
 
@@ -39,7 +39,7 @@ Returns the expanded object name that has all the "%s"'s replaced by the current
 Returns the keyword with the given name (returns 0 if none is found).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Keyword name. |
+| name | String |   | Keyword name. |
 
 ### getKeyword(index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -47,7 +47,7 @@ Returns the keyword with the given name (returns 0 if none is found).
 Returns the keyword at the given index (returns 0 if the index is out-of-bounds).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Keyword index (0-based). |
+| index | Int |   | Keyword index (0-based). |
 
 ### getMethod()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -98,7 +98,7 @@ Sets the values of all keywords to their previous values.
 Sets the command's method.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| method | String |   | Method. |
+| method | String |   | Method. |
 
 ### setObjectName(objectName)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -106,7 +106,7 @@ Sets the command's method.
 Sets the object name.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| objectName | String |   | Object name. |
+| objectName | String |   | Object name. |
 
 ### setRequired(val)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -114,7 +114,7 @@ Sets the object name.
 Sets this command as required or optional; if True the command will always be sent, if False the command will be sent only if it has modified keywords or if it has no keywords.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| val | Bool |   |   |
+| val | Bool |   |   |
 
 ### syncKeywordPreviousValues()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

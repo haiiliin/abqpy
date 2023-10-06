@@ -16,8 +16,8 @@ This class connects the selected items in a single column of an AFXTable to a ke
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| table | AFXTable |   | Table to use. |
-| referenceColumn | Int |   | Index of the reference column. |
+| table | AFXTable |   | Table to use. |
+| referenceColumn | Int |   | Index of the reference column. |
 | opts | Int | 0 | Selection options (not used). |
 
 ### AFXColumnItems(referenceColumn, tgt=None, sel=0, opts=0)  
@@ -26,7 +26,7 @@ Constructor.
 Constructor for use with a keyword.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| referenceColumn | Int |   | Index of the reference column. |
+| referenceColumn | Int |   | Index of the reference column. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Selection options (not used). |
@@ -52,7 +52,7 @@ Returns the message target.
 Sets the table reference column, whose selected items will be sent to the target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Table column index. |
+| index | Int |   | Table column index. |
 
 ### setSelector(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -60,7 +60,7 @@ Sets the table reference column, whose selected items will be sent to the target
 Sets the message ID.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | New message ID. |
+| sel | Int |   | New message ID. |
 
 ### setTarget(tgt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -68,7 +68,7 @@ Sets the message ID.
 Sets the message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   | New message target. |
+| tgt | FXObject |   | New message target. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

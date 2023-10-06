@@ -14,16 +14,16 @@ Horizontal separator
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | SEPARATOR\_GROOVE| LAYOUT\_FILL_X |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | 1 |   |
-| pr | Int | 1 |   |
-| pt | Int | 0 |   |
-| pb | Int | 0 |   |
+| p | FXComposite |   |   |
+| opts | Int | SEPARATOR\_GROOVE| LAYOUT\_FILL_X |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | 1 |   |
+| pr | Int | 1 |   |
+| pt | Int | 0 |   |
+| pb | Int | 0 |   |
 
 ### getDefaultHeight
 

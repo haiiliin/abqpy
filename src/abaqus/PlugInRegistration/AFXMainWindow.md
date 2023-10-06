@@ -8,8 +8,8 @@ This class is responsible for constructing the components of the main window. It
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| app | FXApp |   | FXApp object. |
-| title | String |   | Main window title. |
+| app | FXApp |   | FXApp object. |
+| title | String |   | Main window title. |
 | icon | FXIcon | None | Main window icon. |
 | miniIcon | FXIcon | None | Minimized icon. |
 | opts | Int | DECOR_ALL | Main window options. |
@@ -24,8 +24,8 @@ Constructor.
 Appends a module name to the list of modules to which a tree tab is applicable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of the tab item. |
-| moduleName | String |   | Module name to be appended to the list of the tab's applicable modules. |
+| name | String |   | Name of the tab item. |
+| moduleName | String |   | Module name to be appended to the list of the tab's applicable modules. |
 
 ### appendTreeTab(text, name)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -33,8 +33,8 @@ Appends a module name to the list of modules to which a tree tab is applicable.
 Appends a new tab item to the tree toolset tab book and returns a vertical frame managed by the new tab item; you must call create() on the vertical frame after you construct all its child widgets.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text to be shown in the new tab item. |
-| name | String |   | Name of the new tab item. |
+| text | String |   | Text to be shown in the new tab item. |
+| name | String |   | Name of the new tab item. |
 
 ### appendVisibleModuleForTreeTab(name, moduleName)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -42,8 +42,8 @@ Appends a new tab item to the tree toolset tab book and returns a vertical frame
 Appends a module to the list of modules in which a tree tab is visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of the tab item. |
-| moduleName | String |   | Module name to be appended to the list of the tab's modules in which it is visible. |
+| name | String |   | Name of the tab item. |
+| moduleName | String |   | Module name to be appended to the list of the tab's modules in which it is visible. |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -82,7 +82,7 @@ Reimplemented from FXTopWindow.
 Returns the displayed name at the given position in the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Position in the module list. |
+| index | Int |   | Position in the module list. |
 
 ### getDrawingAreaHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -110,7 +110,7 @@ Returns a pointer to the menubar.
 Returns the module specified by the given name argument.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | A String that specifies the module to get. |
+| name | String |   | A String that specifies the module to get. |
 
 ### getModuleName(displayedName)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -118,7 +118,7 @@ Returns the module specified by the given name argument.
 Returns the module name for the given displayed name.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| displayedName | String |   | Displayed module name (English). |
+| displayedName | String |   | Displayed module name (English). |
 
 ### getNumModules()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -136,7 +136,7 @@ Returns the Plugin toolset.
 Returns the selector of the given shortcut function. Throws exception if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| function | String |   | A String specifying the function as shown in the Customize dialog box. |
+| function | String |   | A String specifying the function as shown in the Customize dialog box. |
 
 ### getTargetFromFunction(function)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -144,7 +144,7 @@ Returns the selector of the given shortcut function. Throws exception if not fou
 Returns the target of the given shortcut function. Throws exception if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| function | String |   | A String specifying the function as shown in the Customize dialog box. |
+| function | String |   | A String specifying the function as shown in the Customize dialog box. |
 
 ### getToolbox()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -167,7 +167,7 @@ Returns a pointer to the Tools menu title.
 Returns the toolset specified by the given name argument.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | A String in the local language that specifies to toolset to get. |
+| name | String |   | A String in the local language that specifies to toolset to get. |
 
 ### getToolsetKernelInitializationCommands()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -200,8 +200,8 @@ This method has no base class implementation; it may be used by customizers to c
 Registers the Help toolset.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tool | AFXToolsetGui |   | Pointer to toolset being registered. |
-| opts | Int |   | Options for creating toolset GUI components. |
+| tool | AFXToolsetGui |   | Pointer to toolset being registered. |
+| opts | Int |   | Options for creating toolset GUI components. |
 
 ### registerModule(displayedName, moduleImportName)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -209,8 +209,8 @@ Registers the Help toolset.
 Registers a module to make it available in the module combo; Uses predefined initialization strings for Abaqus modules.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| displayedName | String |   | The name that will be displayed in the Module combo box in the context bar. |
-| moduleImportName | String |   | The name that will be used to import this module. |
+| displayedName | String |   | The name that will be displayed in the Module combo box in the context bar. |
+| moduleImportName | String |   | The name that will be used to import this module. |
 
 ### registerModule(displayedName, moduleImportName, kernelInitializationCommand)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -218,9 +218,9 @@ Registers a module to make it available in the module combo; Uses predefined ini
 Registers a module to make it available in the module combo; also registers the initialization string to be sent to the kernel the first time the module is loaded.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| displayedName | String |   | The name that will be displayed in the Module combo box in the context bar. |
-| moduleImportName | String |   | The name that will be used to import this module. |
-| kernelInitializationCommand | String |   | The Python command sent to kernel when the module is loaded. |
+| displayedName | String |   | The name that will be displayed in the Module combo box in the context bar. |
+| moduleImportName | String |   | The name that will be used to import this module. |
+| kernelInitializationCommand | String |   | The Python command sent to kernel when the module is loaded. |
 
 ### registerToolset(tool, opts)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -228,8 +228,8 @@ Registers a module to make it available in the module combo; also registers the 
 Registers a toolset that is always available in the main window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tool | AFXGuiObjectManager |   | Pointer to the object being registered. |
-| opts | Int |   | Options for creating toolset GUI components. |
+| tool | AFXGuiObjectManager |   | Pointer to the object being registered. |
+| opts | Int |   | Options for creating toolset GUI components. |
 
 ### setApplicabilityForTreeTab(name, moduleNames)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -237,8 +237,8 @@ Registers a toolset that is always available in the main window.
 Sets the modules that are applicable to the given tree tab. When switching modules, if the current tab is applicable to the new module, it will remain current. When a tree tab is created, it is applicable to all modules--use this method to set the applicability to only certain modules.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of the tab item. |
-| moduleNames | String |   | A String containing module names separated by commas. |
+| name | String |   | Name of the tab item. |
+| moduleNames | String |   | A String containing module names separated by commas. |
 
 ### setCurrentTreeTab(name)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -246,7 +246,7 @@ Sets the modules that are applicable to the given tree tab. When switching modul
 Sets the tree toolset tab book's current tab item to the tab item specified by the given name.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of the tab item to be set current. |
+| name | String |   | Name of the tab item to be set current. |
 
 ### setVisibilityForTreeTab(name, moduleNames)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -254,8 +254,8 @@ Sets the tree toolset tab book's current tab item to the tab item specified by t
 Sets the modules in which a tree tab is visible. When switching modules, if the tab has not been specified to be visible in the new module, the tab will be hidden; otherwise it will be shown. When a tree tab is created it is visible in all modules--use this method to set the visibility to only certain modules.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   | Name of the tab item. |
-| moduleNames | String |   | A String containing module names separated by commas. |
+| name | String |   | Name of the tab item. |
+| moduleNames | String |   | A String containing module names separated by commas. |
 
 ### setWorkDirectory(directory)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -263,7 +263,7 @@ Sets the modules in which a tree tab is visible. When switching modules, if the 
 Sets the current working directory.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| directory | String |   | A String specifying the new work directory. |
+| directory | String |   | A String specifying the new work directory. |
 
 ### showCli()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -281,7 +281,7 @@ Shows the message area interface.
 Writes a string to the message area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| message | String |   |   |
+| message | String |   |   |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

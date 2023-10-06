@@ -23,10 +23,10 @@ File time.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
-| bi | FXIcon | None |   |
-| mi | FXIcon | None |   |
-| ptr | String | None |   |
+| text | String |   |   |
+| bi | FXIcon | None |   |
+| mi | FXIcon | None |   |
+| ptr | String | None |   |
 
 ### getDate
 

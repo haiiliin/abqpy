@@ -8,18 +8,18 @@ Button with an arrow; the arrow can point in any direction. When clicked, the ar
 Construct arrow button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | ARROW_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | ARROW_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -92,7 +92,7 @@ Get tool tip message for this arrow button.
 Set the fill color for the arrow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setArrowSize(size)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -100,7 +100,7 @@ Set the fill color for the arrow.
 Set the default arrow size.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| size | Int |   |   |
+| size | Int |   |   |
 
 ### setArrowStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -108,7 +108,7 @@ Set the default arrow size.
 Set the arrow style flags.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setJustify(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -116,7 +116,7 @@ Set the arrow style flags.
 Set the current justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int |   |   |
 
 ### setState(s)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -124,7 +124,7 @@ Set the current justification mode.
 Set the button state (where True means the button is down).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Bool |   |   |
+| s | Bool |   |   |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -132,7 +132,7 @@ Set the button state (where True means the button is down).
 Set tool tip message for this arrow button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

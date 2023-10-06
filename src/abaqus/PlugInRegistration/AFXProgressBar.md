@@ -16,7 +16,7 @@ This class contains a progress bar, which can present work-in-progress in a numb
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite |   | Parent widget. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | FRAME\_SUNKEN| FRAME\_THICK | Options and hints. |
@@ -96,7 +96,7 @@ Reimplemented from FXProgressBar.
 Sets the progress bar style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | Style flag. |
+| style | Int |   | Style flag. |
 
 ### setNumCursorBoxes(nb)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -104,7 +104,7 @@ Sets the progress bar style.
 Sets the number of cursor boxes to display.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nb | Int |   | Number of boxes. |
+| nb | Int |   | Number of boxes. |
 
 ### setProgress(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -114,7 +114,7 @@ Sets the current progress amount that is used by a progress bar in either iterat
 Reimplemented from FXProgressBar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### setTotal(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -124,7 +124,7 @@ Sets the total progress amount that is used by a progress bar in either iteratio
 Reimplemented from FXProgressBar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

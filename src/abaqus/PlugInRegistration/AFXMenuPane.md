@@ -14,7 +14,7 @@ This class provides the interface for creating an FXMenuPane and performing vari
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Manager of the pane. |
+| owner | AFXGuiObjectManager |   | Manager of the pane. |
 
 ### getOwner
 

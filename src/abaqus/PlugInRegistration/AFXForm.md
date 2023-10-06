@@ -16,7 +16,7 @@ This class is the abstract base class for forms.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the form. |
+| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the form. |
 
 ### activate()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -64,7 +64,7 @@ Returns the first dialog box to be posted.
 Returns the next dialog box to be posted.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| previousDialog | AFXDialog |   | Previous dialog box. |
+| previousDialog | AFXDialog |   | Previous dialog box. |
 
 ### issueCommands(writeToReplay=True, writeToJournal=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -81,7 +81,7 @@ Generates commands based on the current state, sends the commands, and deactivat
 Sets the modal state; if True, dialogs will be posted as modal. By default the form posts dialogs as non-modal.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| postModalDialogs | Bool |   | True if the form should post dialogs as modal. |
+| postModalDialogs | Bool |   | True if the form should post dialogs as modal. |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

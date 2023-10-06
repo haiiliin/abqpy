@@ -8,19 +8,19 @@ A radio button is a tri-state button. Normally, it is either True or False; a th
 Construct new radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | RADIOBUTTON_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | RADIOBUTTON_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -54,7 +54,7 @@ Reimplemented from FXLabel.
 Set radio button state (True, False or MAYBE).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Bool | True |   |
+| s | Bool | True |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

@@ -14,16 +14,16 @@ The Switcher layout manager automatically arranges its child windows such that o
 Construct a switcher layout manager.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| opts | Int | 0 |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
 
 ### getCurrent
 
@@ -66,8 +66,8 @@ Reimplemented from FXPacker.
 Bring the child window at index to the top.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
-| notify | Bool | False |   |
+| index | Int |   |   |
+| notify | Bool | False |   |
 
 ### Class flags  
 ![](../IconsReference/butix_top_wline.png)

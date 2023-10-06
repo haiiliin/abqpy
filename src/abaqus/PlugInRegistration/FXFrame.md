@@ -16,16 +16,16 @@ Base Frame
 Construct frame window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | FRAME_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| opts | Int | FRAME_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### getBaseColor()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -101,7 +101,7 @@ Get shadow color.
 Change base gui color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setBorderColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -109,7 +109,7 @@ Change base gui color.
 Change border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setFrameStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -117,7 +117,7 @@ Change border color.
 Change frame style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setHiliteColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -125,7 +125,7 @@ Change frame style.
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setPadBottom(pb)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -133,7 +133,7 @@ Change highlight color.
 Change bottom padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   |   |
+| pb | Int |   |   |
 
 ### setPadLeft(pl)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -141,7 +141,7 @@ Change bottom padding.
 Change left padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   |   |
+| pl | Int |   |   |
 
 ### setPadRight(pr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -149,7 +149,7 @@ Change left padding.
 Change right padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   |   |
+| pr | Int |   |   |
 
 ### setPadTop(pt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -157,7 +157,7 @@ Change right padding.
 Change top padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   |   |
+| pt | Int |   |   |
 
 ### setShadowColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -165,7 +165,7 @@ Change top padding.
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

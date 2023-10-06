@@ -46,7 +46,7 @@ Returns the target's current value.
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float |   | New value. |
 
 
 
@@ -97,7 +97,7 @@ Returns the target's current value.
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float |   | New value. |
 AFXFloatTarget
 
 | 
@@ -148,7 +148,7 @@ Returns the target's current value.
 Sets the target's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Float |   | New value. |
+| newValue | Float |   | New value. |
 
 
 
@@ -196,9 +196,9 @@ Guide
 
 1-7 of
 
-  Previous
+  Previous
 
-Next   
+Next   
 
 [Global flags](/2023/English/DSSIMULIA_Established/SIMACAEGUIRefHtml/pt01ch01gob17.htm?contextscope=all&id=e7faec1d3b0b4606acfb60c793f4fce1#d0e5748 "Global flags")
 

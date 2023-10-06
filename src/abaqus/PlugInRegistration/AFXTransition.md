@@ -16,11 +16,11 @@ This class is designed for the finite state transition that the GUI (mostly the 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| boolKeyword | AFXBoolKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Bool |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| boolKeyword | AFXBoolKeyword |   | Keyword. |
+| op | Operator |   | Operator type. |
+| refValue | Bool |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### AFXTransition(floatKeyword, op, refValue, tgt, sel, ptr=None)  
@@ -29,11 +29,11 @@ Constructor.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| floatKeyword | AFXFloatKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| floatKeyword | AFXFloatKeyword |   | Keyword. |
+| op | Operator |   | Operator type. |
+| refValue | Float |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### AFXTransition(intKeyword, op, refValue, tgt, sel, ptr=None)  
@@ -42,11 +42,11 @@ Constructor.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| intKeyword | AFXIntKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| intKeyword | AFXIntKeyword |   | Keyword. |
+| op | Operator |   | Operator type. |
+| refValue | Int |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### AFXTransition(togKeyword, op, refValue, tgt, sel, ptr=None)  
@@ -55,11 +55,11 @@ Constructor.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| togKeyword | AFXTogglableKeyword |   | Keyword. |
-| op | Operator |   | Operator type. |
-| refValue | Bool |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| togKeyword | AFXTogglableKeyword |   | Keyword. |
+| op | Operator |   | Operator type. |
+| refValue | Bool |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### AFXTransition(floatTarget, op, refValue, tgt, sel, ptr=None)  
@@ -68,11 +68,11 @@ Constructor.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| floatTarget | AFXFloatTarget |   | Target. |
-| op | Operator |   | Operator type. |
-| refValue | Float |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| floatTarget | AFXFloatTarget |   | Target. |
+| op | Operator |   | Operator type. |
+| refValue | Float |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### AFXTransition(intTarget, op, refValue, tgt, sel, ptr=None)  
@@ -81,11 +81,11 @@ Constructor.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| intTarget | AFXIntTarget |   | Target. |
-| op | Operator |   | Operator type. |
-| refValue | Int |   | Reference value. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message selector. |
+| intTarget | AFXIntTarget |   | Target. |
+| op | Operator |   | Operator type. |
+| refValue | Int |   | Reference value. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message selector. |
 | ptr | String | None | Message data. |
 
 ### process(sender)  
@@ -94,7 +94,7 @@ Constructor.
 Returns True and sends a message if the expression defined by the constructor arguments evaluates to True; returns False without performing any actions if otherwise.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sender | FXObject |   | Message sender. |
+| sender | FXObject |   | Message sender. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

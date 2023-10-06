@@ -16,7 +16,7 @@ This class is used to automatically vertically align its children "container" wi
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite |   | Parent widget. |
 | opts | Int | 0 | Options and hints. |
 | x | Int | 0 | X coordinate of the origin. |
 | y | Int | 0 | Y coordinate of the origin. |

@@ -8,18 +8,18 @@ The tab book layout manager arranges pairs of children; the even numbered childr
 Construct tab book.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | TABBOOK_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | TABBOOK_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
 
 ### getDefaultHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

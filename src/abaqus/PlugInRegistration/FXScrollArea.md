@@ -33,8 +33,8 @@ Reimplemented in FXList, FXTable, FXText, FXTreeList, AFXBaseTable, AFXOptionTre
 Get the current position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### getScrollStyle()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -81,8 +81,8 @@ Move contents to the specified position.
 Reimplemented in FXIconList, FXMDIClient, FXScrollWindow, FXTable, FXText, AFXBaseTable, AFXOptionTreeList, and AFXTable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### setPosition(x, y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -90,8 +90,8 @@ Reimplemented in FXIconList, FXMDIClient, FXScrollWindow, FXTable, FXText, AFXBa
 Set the current position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### setScrollStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -99,7 +99,7 @@ Set the current position.
 Change scroll style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### verticalScrollbar()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

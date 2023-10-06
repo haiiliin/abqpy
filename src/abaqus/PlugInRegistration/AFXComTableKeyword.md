@@ -8,8 +8,8 @@ This class manages values which are sent as tables in a command.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand |   | Host command. |
+| name | String |   | Keyword name. |
 | isRequired | Bool | False | True if this keyword is a required argument. |
 | minLength | Int | 0 | Minimum (and default) row length. |
 | maxLength | Int | -1 | Maximum row length (-1 => unlimited). |
@@ -21,9 +21,9 @@ Constructor.
 Returns True if the two table element values compare equal (index not used).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Element index (not used). |
-| a | String |   | First value. |
-| b | String |   | Second value. |
+| index | Int |   | Element index (not used). |
+| a | String |   | First value. |
+| b | String |   | Second value. |
 
 ### getColumnStyle(index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -31,7 +31,7 @@ Returns True if the two table element values compare equal (index not used).
 Returns the style of the column elements. Will never return AFXTABLE\_STYLE\_DEFAULT!
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Column index. |
+| index | Int |   | Column index. |
 
 ### getColumnType(index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -39,7 +39,7 @@ Returns the style of the column elements. Will never return AFXTABLE\_STYLE\_DEF
 Returns the type of the column elements. Will never return AFXTABLE\_TYPE\_DEFAULT!
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Column index. |
+| index | Int |   | Column index. |
 
 ### getDefaultStyle()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -62,8 +62,8 @@ Returns the default values for this table.
 Returns the formatted value of the table element, suitable for placing in a command. If the element has AFXTABLE_EVALUATE style, and its contents are invalid, an exception will be thrown.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
-| column | Int |   | Column index. |
+| row | Int |   | Row index. |
+| column | Int |   | Column index. |
 
 ### getMaxNumColumns()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -81,7 +81,7 @@ Returns the minimum number of columns.
 Returns the number of columns in the row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### getNumRows()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -94,7 +94,7 @@ Returns the number of rows in the table.
 Returns a string with the contents of a table row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### getTypeName()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -111,8 +111,8 @@ Reimplemented in AFXTableKeyword.
 Returns the value of a table element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
-| column | Int |   | Column index. |
+| row | Int |   | Row index. |
+| column | Int |   | Column index. |
 
 ### getValueAsDouble()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -137,7 +137,7 @@ Implements AFXKeyword.
 Returns the element value substituted for blank for the column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### getValues()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -155,8 +155,8 @@ Returns a string with values substituted for blanks for all table columns.
 Inserts columns starting at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Starting index. |
-| numColumns | Int |   | Number of columns to insert. |
+| index | Int |   | Starting index. |
+| numColumns | Int |   | Number of columns to insert. |
 
 ### insertRows(index, numRows)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -164,8 +164,8 @@ Inserts columns starting at the given index.
 Inserts rows starting at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Starting index. |
-| numRows | Int |   | Number of rows to insert. |
+| index | Int |   | Starting index. |
+| numRows | Int |   | Number of rows to insert. |
 
 ### isValueChanged()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -180,8 +180,8 @@ Implements AFXKeyword.
 Removes columns starting at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Starting index. |
-| numColumns | Int |   | Number of columns to remove. |
+| index | Int |   | Starting index. |
+| numColumns | Int |   | Number of columns to remove. |
 
 ### removeRows(index, numRows)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -189,8 +189,8 @@ Removes columns starting at the given index.
 Removes rows starting at the given index.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Starting index. |
-| numRows | Int |   | Number of rows to remove. |
+| index | Int |   | Starting index. |
+| numRows | Int |   | Number of rows to remove. |
 
 ### setColumnStyle(index, style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -198,8 +198,8 @@ Removes rows starting at the given index.
 Sets the style of the column elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Column index. |
-| style | Int |   | New column style. |
+| index | Int |   | Column index. |
+| style | Int |   | New column style. |
 
 ### setColumnType(index, type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -207,8 +207,8 @@ Sets the style of the column elements.
 Sets the type of the column elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Column index. |
-| type | Int |   | New column type. |
+| index | Int |   | Column index. |
+| type | Int |   | New column type. |
 
 ### setDefaultStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -216,7 +216,7 @@ Sets the type of the column elements.
 Sets the default style for the table elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | New default style. |
+| style | Int |   | New default style. |
 
 ### setDefaultType(type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -224,7 +224,7 @@ Sets the default style for the table elements.
 Sets the default type for table elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| type | Int |   | New default type. |
+| type | Int |   | New default type. |
 
 ### setDefaultValues(values)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -232,7 +232,7 @@ Sets the default type for table elements.
 Sets the default values for this table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| values | String |   | Sequence string with default values. |
+| values | String |   | Sequence string with default values. |
 
 ### setMaxNumColumns(length)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -240,7 +240,7 @@ Sets the default values for this table.
 Sets the maximum number of columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| length | Int |   | New maximum number of columns, or -1 for unbounded. |
+| length | Int |   | New maximum number of columns, or -1 for unbounded. |
 
 ### setMinNumColumns(length)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -248,7 +248,7 @@ Sets the maximum number of columns.
 Sets the minimum number of columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| length | Int |   | New minimum length. |
+| length | Int |   | New minimum length. |
 
 ### setNumColumnsRange(minLength, maxLength)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -256,8 +256,8 @@ Sets the minimum number of columns.
 Sets the allowable range for the number of columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| minLength | Int |   | New minimum number of columns. |
-| maxLength | Int |   | New maximum number of columns, or -1 for unbounded. |
+| minLength | Int |   | New minimum number of columns. |
+| maxLength | Int |   | New maximum number of columns, or -1 for unbounded. |
 
 ### setRow(row, seq)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -265,8 +265,8 @@ Sets the allowable range for the number of columns.
 Sets the contents of a table row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
-| seq | String |   | Sequence with elements. |
+| row | Int |   | Row index. |
+| seq | String |   | Sequence with elements. |
 
 ### setValue(row, column, value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -274,9 +274,9 @@ Sets the contents of a table row.
 Sets the value of a table element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
-| column | Int |   | Column index. |
-| value | String |   | New value. |
+| row | Int |   | Row index. |
+| column | Int |   | Column index. |
+| value | String |   | New value. |
 
 ### setValueForBlank(column, value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -284,8 +284,8 @@ Sets the value of a table element.
 Sets the element value substituted for blank for the column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| value | String |   | New value. |
+| column | Int |   | Column index. |
+| value | String |   | New value. |
 
 ### setValues(values)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -293,7 +293,7 @@ Sets the element value substituted for blank for the column.
 Sets all values for the table elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| values | String |   | Table string with new values. |
+| values | String |   | Table string with new values. |
 
 ### setValuesForBlanks(values)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -301,7 +301,7 @@ Sets all values for the table elements.
 Sets the values substituted for blanks for all table columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| values | String |   | String containing comma-separated values. |
+| values | String |   | String containing comma-separated values. |
 
 ### setValueToDefault(ignoreUnspecified=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

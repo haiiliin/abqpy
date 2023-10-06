@@ -130,8 +130,8 @@ Move this window to the specified position in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### place(placement)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -139,7 +139,7 @@ Reimplemented from FXWindow.
 Position the window based on placement.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| placement | Int |   |   |
+| placement | Int |   |   |
 
 ### position(x, y, w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -149,10 +149,10 @@ Move and resize this window in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### resize(w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -162,8 +162,8 @@ Resize this window to the specified width and height.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### setDecorations(decorations)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -171,7 +171,7 @@ Reimplemented from FXWindow.
 Change title and border decorations.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| decorations | Int |   |   |
+| decorations | Int |   |   |
 
 ### setFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -186,7 +186,7 @@ Reimplemented from FXShell.
 Change horizontal spacing between children.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| hs | Int |   |   |
+| hs | Int |   |   |
 
 ### setIcon(ic)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -194,7 +194,7 @@ Change horizontal spacing between children.
 Change window icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ic | FXIcon |   |   |
+| ic | FXIcon |   |   |
 
 ### setMiniIcon(ic)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -202,7 +202,7 @@ Change window icon.
 Change window mini (title) icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ic | FXIcon |   |   |
+| ic | FXIcon |   |   |
 
 ### setPackingHints(ph)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -210,7 +210,7 @@ Change window mini (title) icon.
 Change packing hints for children.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ph | Int |   |   |
+| ph | Int |   |   |
 
 ### setPadBottom(pb)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -218,7 +218,7 @@ Change packing hints for children.
 Change bottom padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pb | Int |   |   |
+| pb | Int |   |   |
 
 ### setPadLeft(pl)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -226,7 +226,7 @@ Change bottom padding.
 Change left padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pl | Int |   |   |
+| pl | Int |   |   |
 
 ### setPadRight(pr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -234,7 +234,7 @@ Change left padding.
 Change right padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pr | Int |   |   |
+| pr | Int |   |   |
 
 ### setPadTop(pt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -242,7 +242,7 @@ Change right padding.
 Change top padding.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pt | Int |   |   |
+| pt | Int |   |   |
 
 ### setTitle(name)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -250,7 +250,7 @@ Change top padding.
 Change window title.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   |   |
+| name | String |   |   |
 
 ### setVSpacing(vs)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -258,7 +258,7 @@ Change window title.
 Change vertical spacing between children.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| vs | Int |   |   |
+| vs | Int |   |   |
 
 ### show(placement)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -266,7 +266,7 @@ Change vertical spacing between children.
 Show this window with given placement.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| placement | Int |   |   |
+| placement | Int |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

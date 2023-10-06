@@ -54,7 +54,7 @@ Reimplemented in FXFont.
 Set user data pointer.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ptr | String |   |   |
+| ptr | String |   |   |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

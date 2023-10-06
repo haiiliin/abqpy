@@ -16,8 +16,8 @@ This class is the abstract base class for all command keywords.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command, or NULL to create a keyword not associated with a command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand |   | Host command, or NULL to create a keyword not associated with a command. |
+| name | String |   | Keyword name. |
 | isRequired | Bool | False | True if the keyword is a required argument of the command. |
 
 ### activate()  
@@ -82,7 +82,7 @@ Implemented in AFXBoolKeyword, AFXComSymConstKeyword, AFXComTableKeyword, AFXFlo
 Sets this object as a required keyword of the host command.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| val | Bool |   |   |
+| val | Bool |   |   |
 
 ### setSetupCommands(cmds)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -90,7 +90,7 @@ Sets this object as a required keyword of the host command.
 Sets variable initialization commands needed by the keyword.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cmds | String |   |   |
+| cmds | String |   |   |
 
 ### setValueToDefault(ignoreUnspecified=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

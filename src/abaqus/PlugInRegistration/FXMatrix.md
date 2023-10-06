@@ -8,19 +8,19 @@ The Matrix layout manager automatically arranges its child windows in rows and c
 Construct a matrix layout manager with n rows or columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| n | Int | 1 |   |
-| opts | Int | MATRIX\_BY\_ROWS |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
-| hs | Int | DEFAULT_SPACING |   |
-| vs | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| n | Int | 1 |   |
+| opts | Int | MATRIX\_BY\_ROWS |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
+| hs | Int | DEFAULT_SPACING |   |
+| vs | Int | DEFAULT_SPACING |   |
 
 ### getDefaultHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -52,7 +52,7 @@ Return the number of rows.
 Change the number of columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nc | Int |   |   |
+| nc | Int |   |   |
 
 ### setNumRows(nr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -60,7 +60,7 @@ Change the number of columns.
 Change the number of rows.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nr | Int |   |   |
+| nr | Int |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

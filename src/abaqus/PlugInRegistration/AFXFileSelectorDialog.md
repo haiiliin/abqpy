@@ -16,10 +16,10 @@ This class extends the FXFileDialog class and is designed to work with the mode 
 Constructor typically used to create a dialog box that is posted by a mode (e.g. by getFirstDialog); a keyword is used for the pathName. If the dialog box allows multiple selection, the pathName keyword contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| form | AFXForm |   | Form. |
-| title | String |   | Dialog box title. |
-| pathNameKw | AFXStringKeyword |   | Path name keyword. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| form | AFXForm |   | Form. |
+| title | String |   | Dialog box title. |
+| pathNameKw | AFXStringKeyword |   | Path name keyword. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
 | patterns | String | * | File filter patterns. |
 | patternIndexTgt | AFXIntTarget | None | Index used to select a file filter pattern when the dialog box is posted. |
@@ -30,10 +30,10 @@ Constructor typically used to create a dialog box that is posted by a mode (e.g.
 Constructor typically used to create a dialog box that is posted from another dialog box (e.g. from a "Select..." button); a keyword is used for the pathName. If the dialog box allows multiple selection, the pathName keyword contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   | Owner |
-| title | String |   | Dialog box title. |
-| pathNameKw | AFXStringKeyword |   | Path name keyword. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| owner | FXWindow |   | Owner |
+| title | String |   | Dialog box title. |
+| pathNameKw | AFXStringKeyword |   | Path name keyword. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
 | patterns | String | * | File filter patterns. |
 | patternIndexTgt | AFXIntTarget | None | Index used to select a file filter pattern when the dialog box is posted. |
@@ -44,10 +44,10 @@ Constructor typically used to create a dialog box that is posted from another di
 Constructor typically used to create a dialog box that is posted by a mode (e.g. by getFirstDialog); a target is used for the pathName. If the dialog box allows multiple selection, the pathName target contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| form | AFXForm |   | Form. |
-| title | String |   | Dialog box title. |
-| pathNameTgt | AFXStringTarget |   | Path name target. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| form | AFXForm |   | Form. |
+| title | String |   | Dialog box title. |
+| pathNameTgt | AFXStringTarget |   | Path name target. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
 | patterns | String | * | File filter patterns. |
 | patternIndexTgt | AFXIntTarget | None | Index used to select a file filter pattern when the dialog box is posted. |
@@ -58,10 +58,10 @@ Constructor typically used to create a dialog box that is posted by a mode (e.g.
 Constructor typically used to create a dialog box that is posted from another dialog box (e.g. from a "Select..." button); a target is used for the pathName. If the dialog box allows multiple selection, the pathName target contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   | Owner |
-| title | String |   | Dialog box title. |
-| pathNameTgt | AFXStringTarget |   | Path name target. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| owner | FXWindow |   | Owner |
+| title | String |   | Dialog box title. |
+| pathNameTgt | AFXStringTarget |   | Path name target. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
 | patterns | String | * | File filter patterns. |
 | patternIndexTgt | AFXIntTarget | None | Index used to select a file filter pattern when the dialog box is posted. |

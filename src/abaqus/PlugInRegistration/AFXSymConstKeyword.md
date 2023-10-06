@@ -8,8 +8,8 @@ This class is designed for the command keywords that have symbolic constant valu
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand |   | Host command. |
+| name | String |   | Keyword name. |
 | isRequired | Bool | False | True if the keyword is a required argument of the command. |
 | defaultValue | Int | 0 | Default value. |
 
@@ -33,7 +33,7 @@ Reimplemented from AFXIntKeyword.
 Sets the keyword's default value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValue | Int |   | Default value. |
+| defaultValue | Int |   | Default value. |
 
 ### setDefaultValueByString(defaultValueString)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -41,7 +41,7 @@ Sets the keyword's default value.
 Sets the keyword's default value (returns True if the given text string is valid).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValueString | String |   | Default value in text string form. |
+| defaultValueString | String |   | Default value in text string form. |
 
 ### setDefaultValueByString(defaultValueString)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -49,7 +49,7 @@ Sets the keyword's default value (returns True if the given text string is valid
 Sets the keyword's default value (returns True if the given text string is valid).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValueString | String |   | Default value in text string form. |
+| defaultValueString | String |   | Default value in text string form. |
 
 ### setValue(newValue)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -57,7 +57,7 @@ Sets the keyword's default value (returns True if the given text string is valid
 Sets the keyword's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Int |   | New value. |
+| newValue | Int |   | New value. |
 
 ### setValueByString(newValueString)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -65,7 +65,7 @@ Sets the keyword's current value.
 Sets the keyword's current value (returns True if the given text string is valid).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValueString | String |   | New value in text string form. |
+| newValueString | String |   | New value in text string form. |
 
 ### setValueByString(newValueString)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -73,7 +73,7 @@ Sets the keyword's current value (returns True if the given text string is valid
 Sets the keyword's current value (returns True if the given text string is valid).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValueString | String |   | New value in text string form. |
+| newValueString | String |   | New value in text string form. |
 
 ### setValueToDefault(ignoreUnspecified=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

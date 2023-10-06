@@ -8,18 +8,18 @@ A label widget can be used to place a text and/or icon for explanation purposes.
 Construct label with given text and icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| opts | Int | LABEL_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| ic | FXIcon | None |   |
+| opts | Int | LABEL_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -121,7 +121,7 @@ Get the tool tip message for this label.
 Set the text font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont |   |   |
 
 ### setHelpText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -131,7 +131,7 @@ Set the status line help text for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### setIcon(ic)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -141,7 +141,7 @@ Set the icon for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ic | FXIcon |   |   |
+| ic | FXIcon |   |   |
 
 ### setIconPosition(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -149,7 +149,7 @@ Reimplemented in AFXFlyoutItem.
 Set the current icon position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int |   |   |
 
 ### setJustify(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -157,7 +157,7 @@ Set the current icon position.
 Set the current text-justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int |   |   |
 
 ### setText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -167,7 +167,7 @@ Set the text for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### setTextColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -175,7 +175,7 @@ Reimplemented in AFXFlyoutItem.
 Set the current text color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -185,7 +185,7 @@ Set the tool tip message for this label.
 Reimplemented in AFXFlyoutItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

@@ -8,8 +8,8 @@ A Data Target allows a valuator widget such as a Slider or Text Field to be dire
 Associate with nothing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -17,9 +17,9 @@ Associate with nothing.
 Associate with character variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | String |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | String |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -27,9 +27,9 @@ Associate with character variable.
 Associate with unsigned character variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Int |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -37,9 +37,9 @@ Associate with unsigned character variable.
 Associate with signed short variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Int |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -47,9 +47,9 @@ Associate with signed short variable.
 Associate with unsigned short variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Int |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -57,9 +57,9 @@ Associate with unsigned short variable.
 Associate with int variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Int |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -67,9 +67,9 @@ Associate with int variable.
 Associate with unsigned int variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Int |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -77,9 +77,9 @@ Associate with unsigned int variable.
 Associate with float variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Float |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -87,9 +87,9 @@ Associate with float variable.
 Associate with double variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | Float |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### FXDataTarget(value, tgt=None, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -97,9 +97,9 @@ Associate with double variable.
 Associate with string variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | String |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
+| value | String |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -107,7 +107,7 @@ Associate with string variable.
 Associate with string variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | String |   |   |
+| value | String |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -115,7 +115,7 @@ Associate with string variable.
 Associate with double variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   |   |
+| value | Float |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -123,7 +123,7 @@ Associate with double variable.
 Associate with float variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   |   |
+| value | Float |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -131,7 +131,7 @@ Associate with float variable.
 Associate with unsigned int variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -139,7 +139,7 @@ Associate with unsigned int variable.
 Associate with int variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -147,7 +147,7 @@ Associate with int variable.
 Associate with unsigned short variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -155,7 +155,7 @@ Associate with unsigned short variable.
 Associate with signed short variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -163,7 +163,7 @@ Associate with signed short variable.
 Associate with unsigned character variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   |   |
+| value | Int |   |   |
 
 ### connect(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -171,7 +171,7 @@ Associate with unsigned character variable.
 Associate with character variable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | String |   |   |
+| value | String |   |   |
 
 ### connect()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -204,7 +204,7 @@ Return type of data its connected to.
 Set the message identifier for this data target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   |   |
+| sel | Int |   |   |
 
 ### setTarget(t)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -212,7 +212,7 @@ Set the message identifier for this data target.
 Set the message target object for this data target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| t | FXObject |   |   |
+| t | FXObject |   |   |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

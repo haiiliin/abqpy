@@ -16,8 +16,8 @@ This class is the base class for steps used in a GUI procedure.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| prompt | String |   | Prompt. |
-| owner | AFXProcedure |   | Owner. |
+| prompt | String |   | Prompt. |
+| owner | AFXProcedure |   | Owner. |
 
 ### onCancel()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

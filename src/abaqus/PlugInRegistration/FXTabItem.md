@@ -8,18 +8,18 @@ A tab item is placed in a tab bar or tab book. When selected, the tab item sends
 Construct a tab item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXTabBar |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| opts | Int | TAB\_TOP\_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | 6 |   |
-| pr | Int | 6 |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXTabBar |   |   |
+| text | String |   |   |
+| ic | FXIcon | None |   |
+| opts | Int | TAB\_TOP\_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | 6 |   |
+| pr | Int | 6 |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

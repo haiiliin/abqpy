@@ -14,7 +14,7 @@ This class creates a container to be used for groups in the toolbox. It will use
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the toolbox group. |
+| owner | AFXGuiObjectManager |   | Creator of the toolbox group. |
 | parent | FXComposite | None | Parent widget. |
 
 ### getOwner

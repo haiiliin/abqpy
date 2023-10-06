@@ -14,8 +14,8 @@ The menu separator is a simple decorative groove used to delineate items in a po
 Construct a menu separator.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | 0 |   |
+| p | FXComposite |   |   |
+| opts | Int | 0 |   |
 
 ### getDefaultHeight
 

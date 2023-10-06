@@ -8,8 +8,8 @@ Root window.
 Construct root window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| vis | FXVisual |   |   |
+| a | FXApp |   |   |
+| vis | FXVisual |   |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -54,8 +54,8 @@ Root window can not be moved.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### position(x, y, w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -65,10 +65,10 @@ Root window can not be positioned.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### recalc()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -85,8 +85,8 @@ Root window can not be resized.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

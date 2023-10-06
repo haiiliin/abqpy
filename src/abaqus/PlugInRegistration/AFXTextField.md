@@ -8,9 +8,9 @@ This class contains a label that precedes a text field that allows the user to e
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| ncols | Int |   | Number of columns. |
-| labelText | String |   | Label string. |
+| p | FXComposite |   | Parent widget. |
+| ncols | Int |   | Number of columns. |
+| labelText | String |   | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | AFXTEXTFIELD_STRING | Options and hints. |
@@ -127,7 +127,7 @@ Returns True if the layout orientation is vertical.
 Sets the state of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool |   | Check state. |
+| state | Bool |   | Check state. |
 
 ### setCheckButtonSelector(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -135,7 +135,7 @@ Sets the state of the check button or the radio button.
 Sets the message ID of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | Selector. |
+| sel | Int |   | Selector. |
 
 ### setCheckButtonTarget(checkVal=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -151,7 +151,7 @@ Sets the message target of the check button or the radio button.
 Sets the cursor position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   | Position. |
+| pos | Int |   | Position. |
 
 ### setEditable(edit=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -167,7 +167,7 @@ Sets the editable state for the text field.
 Sets the exponent type of the text field for real and complex types.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| e | FXExponent |   | Exponent type. |
+| e | FXExponent |   | Exponent type. |
 
 ### setFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -207,7 +207,7 @@ Sets the focus to the input field for the imaginary part and selects its content
 Sets the imaginary text for the complex text field.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Imaginary text field text. |
+| text | String |   | Imaginary text field text. |
 
 ### setJustify(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -215,7 +215,7 @@ Sets the imaginary text for the complex text field.
 Sets the text justification mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   | Justification flag. |
+| mode | Int |   | Justification flag. |
 
 ### setLabelFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -223,7 +223,7 @@ Sets the text justification mode.
 Sets the label's text font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   | Label font. |
+| fnt | FXFont |   | Label font. |
 
 ### setLabelText(txt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -231,7 +231,7 @@ Sets the label's text font.
 Sets the label text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Label text. |
+| txt | String |   | Label text. |
 
 ### setNumColumns(cols)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -239,7 +239,7 @@ Sets the label text.
 Sets the number of columns. Note: The column width is based on the width of "m" of the font used.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cols | Int |   | Number of columns. |
+| cols | Int |   | Number of columns. |
 
 ### setPrecision(p)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -247,7 +247,7 @@ Sets the number of columns. Note: The column width is based on the width of "m" 
 Sets the precision of the text field for real and complex types. Limitation: If an AFXTextField widget uses an AFXFloatKeyword object as its target, the widget must have AFXTEXTFIELD_FLOAT as one of its options for the precision setting to take effect.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | Int |   | Precision. |
+| p | Int |   | Precision. |
 
 ### setReadOnlyState(readonly=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -263,8 +263,8 @@ Sets the read-only state of the text field.
 Select the specified number of characters starting at given position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   | Position. |
-| len | Int |   | Length. |
+| pos | Int |   | Position. |
+| len | Int |   | Length. |
 
 ### setText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -272,7 +272,7 @@ Select the specified number of characters starting at given position.
 Sets the text in the input field.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text field text. |
+| text | String |   | Text field text. |
 
 ### setValueType(type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -280,7 +280,7 @@ Sets the text in the input field.
 Sets the value type (AFXTEXTFIELD_FLOAT, etc.) of the text field.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| type | Int |   | Value type. |
+| type | Int |   | Value type. |
 
 ### setVerticalLayout(vertical)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -288,7 +288,7 @@ Sets the value type (AFXTEXTFIELD_FLOAT, etc.) of the text field.
 Sets the layout orientation of the text field.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| vertical | Bool |   | Vertical flag. |
+| vertical | Bool |   | Vertical flag. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

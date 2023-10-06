@@ -8,7 +8,7 @@ This class contains a button that acts like a regular FXButton when pressed and 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
+| p | FXComposite |   | Parent widget. |
 | pup | FXPopup | None | Popup containing flyout items. |
 | act | Int | 0 | Current button index (0-based). |
 | opts | Int | AFXFLYOUT_NORMAL | Options and hints. |
@@ -82,7 +82,7 @@ Returns the flyout button state.
 Sets the flyout button style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | Button style (see Flags for flyout button options.) |
+| style | Int |   | Button style (see Flags for flyout button options.) |
 
 ### setCurrentItem(item)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -90,7 +90,7 @@ Sets the flyout button style.
 Sets the current item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| item | AFXFlyoutItem |   | Item. |
+| item | AFXFlyoutItem |   | Item. |
 
 ### setCurrentItem(index, setCheck=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -98,7 +98,7 @@ Sets the current item.
 Sets the current item and depresses the button if setCheck is True. The specified item index is 0-based, and only valid items are counted (items such as separators are not counted).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 | setCheck | Bool | False | Value of check button. |
 
 ### setPane(pup)  
@@ -107,7 +107,7 @@ Sets the current item and depresses the button if setCheck is True. The specifie
 Sets the popup menu.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pup | FXPopup |   | Popup menu. |
+| pup | FXPopup |   | Popup menu. |
 
 ### setState(state)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -115,7 +115,7 @@ Sets the popup menu.
 Sets the flyout button state.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Int |   | State (see FXButton's Button state bits). |
+| state | Int |   | State (see FXButton's Button state bits). |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

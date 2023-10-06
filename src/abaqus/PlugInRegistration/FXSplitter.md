@@ -16,12 +16,12 @@ Splitter window is used to interactively repartition two or more subpanes. Space
 Construct new splitter widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | SPLITTER_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite |   |   |
+| opts | Int | SPLITTER_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### FXSplitter(p, tgt, sel, opts=SPLITTER_NORMAL, x=0, y=0, w=0, h=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -29,14 +29,14 @@ Construct new splitter widget.
 Construct new splitter widget, which will notify target about size changes.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject |   |   |
-| sel | Int |   |   |
-| opts | Int | SPLITTER_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite |   |   |
+| tgt | FXObject |   |   |
+| sel | Int |   |   |
+| opts | Int | SPLITTER_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### getDefaultHeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -63,7 +63,7 @@ Return current splitter style.
 Change splitter style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

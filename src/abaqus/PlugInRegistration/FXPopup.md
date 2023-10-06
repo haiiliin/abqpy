@@ -14,12 +14,12 @@ Popup window
 Construct popup pane.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   |   |
-| opts | Int | POPUP\_VERTICAL| FRAME\_RAISED| FRAME_THICK |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| owner | FXWindow |   |   |
+| opts | Int | POPUP\_VERTICAL| FRAME\_RAISED| FRAME_THICK |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### getBaseColor
 
@@ -143,11 +143,11 @@ Pop down the menu.
 Popup the menu and grab to the given owner.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| grabto | FXWindow |   |   |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| grabto | FXWindow |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### setBaseColor
 
@@ -159,7 +159,7 @@ Popup the menu and grab to the given owner.
 Change base color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setBorderColor
 
@@ -171,7 +171,7 @@ Change base color.
 Change border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setFrameStyle
 
@@ -183,7 +183,7 @@ Change border color.
 Change frame style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setHiliteColor
 
@@ -195,7 +195,7 @@ Change frame style.
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setOrientation
 
@@ -207,7 +207,7 @@ Change highlight color.
 Change popup orientation.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| orient | Int |   |   |
+| orient | Int |   |   |
 
 ### setShadowColor
 
@@ -219,7 +219,7 @@ Change popup orientation.
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setShrinkWrap
 
@@ -231,7 +231,7 @@ Change shadow color.
 Change shrinkwrap mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sw | Bool |   |   |
+| sw | Bool |   |   |
 
 ### Global flags  
 ![](../IconsReference/butix_top_wline.png)

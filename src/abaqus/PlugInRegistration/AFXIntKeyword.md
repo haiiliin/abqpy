@@ -16,8 +16,8 @@ This class is designed for the command keywords that have integer values.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXCommand |   | Host command. |
-| name | String |   | Keyword name. |
+| command | AFXCommand |   | Host command. |
+| name | String |   | Keyword name. |
 | isRequired | Bool | False | True if the keyword is a required argument of the command. |
 | defaultValue | Int | INT_DEFAULT | Default value. |
 | evalExpression | Bool | True | True if the keyword supports expression evaluation. |
@@ -58,7 +58,7 @@ Implements AFXKeyword.
 Sets the keyword's default value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultValue | Int |   | Default value. |
+| defaultValue | Int |   | Default value. |
 
 ### setValue(newValue)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -66,7 +66,7 @@ Sets the keyword's default value.
 Sets the keyword's current value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| newValue | Int |   | New value. |
+| newValue | Int |   | New value. |
 
 ### setValueToDefault(ignoreUnspecified=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

@@ -8,11 +8,11 @@ This class implements an editable table.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| numVisRows | Int |   | Number of rows to display. |
-| numVisColumns | Int |   | Number of columns to display. |
-| numRows | Int |   | Total number of rows including leading rows. |
-| numColumns | Int |   | Total number of columns including leading columns. |
+| p | FXComposite |   | Parent widget. |
+| numVisRows | Int |   | Number of rows to display. |
+| numVisColumns | Int |   | Number of columns to display. |
+| numRows | Int |   | Total number of rows including leading rows. |
+| numColumns | Int |   | Total number of columns including leading columns. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | AFXTABLE_NORMAL | Options and hints. |
@@ -31,7 +31,7 @@ Constructor.
 Adds a list that have only text items to the table and returns the list ID. The text strings of the list items are delimited by tab "\\t" characters in the given text. The list is used by items of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Tab "\\t" delimited text string (e.g. "0\\t50\\t100\\t150"). |
+| text | String |   | Tab "\\t" delimited text string (e.g. "0\\t50\\t100\\t150"). |
 | opts | Int | AFXTABLE\_LIST\_NORMAL | Options. |
 
 ### addList(opts=AFXTABLE\_LIST\_NORMAL)  
@@ -48,8 +48,8 @@ Adds a list to the table and returns the list ID. The list is used by items of t
 Appends an item to the specified table list; returns the index of the new item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list to append to. |
-| text | String |   | Item's text. |
+| listId | Int |   | ID of the list to append to. |
+| text | String |   | Item's text. |
 | icon | FXIcon | None | Item's icon. |
 
 ### beginEdit(row, column)  
@@ -58,8 +58,8 @@ Appends an item to the specified table list; returns the index of the new item.
 Sets the specified item in edit mode if the item is editable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### cancelEdit()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -72,10 +72,10 @@ Cancels the edit mode.
 Clears the text in the items in the specified range.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| startRow | Int |   | Row in which to start clearing. |
-| startColumn | Int |   | Column in which to start clearing. |
-| endRow | Int |   | Row in which to end clearing. |
-| endColumn | Int |   | Column in which to end clearing. |
+| startRow | Int |   | Row in which to start clearing. |
+| startColumn | Int |   | Column in which to start clearing. |
+| endRow | Int |   | Row in which to end clearing. |
+| endColumn | Int |   | Column in which to end clearing. |
 | clearEditableOnly | Bool | True | Specify True to clear the text of editable items only. |
 
 ### clearListItems(listId)  
@@ -84,7 +84,7 @@ Clears the text in the items in the specified range.
 Removes all items from the specified table list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list to clear. |
+| listId | Int |   | ID of the list to clear. |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -99,7 +99,7 @@ Reimplemented from AFXBaseTable.
 Deletes columns starting at the specified column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| startColumn | Int |   | Starting column. |
+| startColumn | Int |   | Starting column. |
 | numColumns | Int | 1 | Number of columns to delete. |
 | notify | Bool | False | Specify True to notify target of the deletion. |
 
@@ -109,7 +109,7 @@ Deletes columns starting at the specified column.
 Deletes rows starting at the specified row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| startRow | Int |   | Starting row. |
+| startRow | Int |   | Starting row. |
 | numRows | Int | 1 | Number of rows to delete. |
 | notify | Bool | False | Specify True to notify target of the deletion. |
 
@@ -119,8 +119,8 @@ Deletes rows starting at the specified row.
 Deselects the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### deselectRow(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -128,7 +128,7 @@ Deselects the specified item.
 Deselects all items in the row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### destroy()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -157,8 +157,8 @@ Reimplemented from FXWindow.
 Disables the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### enable()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -173,8 +173,8 @@ Reimplemented from FXWindow.
 Enables the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getColumnAtX(x)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -182,7 +182,7 @@ Enables the specified item.
 Returns the column at the specified x coordinate; returns -1 if x is outside of the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   | X coordinate. |
+| x | Int |   | X coordinate. |
 
 ### getColumnSortOrder(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -190,7 +190,7 @@ Returns the column at the specified x coordinate; returns -1 if x is outside of 
 Returns the sort order of the given column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### getColumnWidth(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -198,7 +198,7 @@ Returns the sort order of the given column.
 Returns the width, in pixels, of the specified column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### getCurrentColumn()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -263,8 +263,8 @@ Reimplemented from AFXBaseTable.
 Gets the background color of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemBoolValue(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -272,8 +272,8 @@ Gets the background color of an item.
 Returns the value of an item of type BOOL.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemColor(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -281,8 +281,8 @@ Returns the value of an item of type BOOL.
 Returns the color of an item of type COLOR. The color is "As is", "Default", or a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C").
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemFloatValue(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -290,8 +290,8 @@ Returns the color of an item of type COLOR. The color is "As is", "Default", or 
 Returns the value of an item of type FLOAT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemIcon(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -299,8 +299,8 @@ Returns the value of an item of type FLOAT.
 Returns the icon of an item of type ICON.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemIntValue(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -308,8 +308,8 @@ Returns the icon of an item of type ICON.
 Returns the value of an item of type INT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemListId(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -317,8 +317,8 @@ Returns the value of an item of type INT.
 Returns the list ID of an item of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemListIndex(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -326,8 +326,8 @@ Returns the list ID of an item of type LIST.
 Returns the list index (selection) of an item of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemProvider()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -340,8 +340,8 @@ Returns the item provider of this object.
 Returns the message ID for an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemTarget(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -349,8 +349,8 @@ Returns the message ID for an item.
 Returns the target for an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemText(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -358,8 +358,8 @@ Returns the target for an item.
 Returns the text of an item of type TEXT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemTextColor(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -367,8 +367,8 @@ Returns the text of an item of type TEXT.
 Returns the text color of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemType(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -376,8 +376,8 @@ Returns the text color of an item.
 Returns the type of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getItemValue(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -385,8 +385,8 @@ Returns the type of an item.
 Returns the text-form value of an item of any type.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### getLeadingColumns()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -413,8 +413,8 @@ Reimplemented from AFXBaseTable.
 Returns the icon of the item at the specified index of the specified table list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list. |
-| index | Int |   | Index into the list of the item to return. |
+| listId | Int |   | ID of the list. |
+| index | Int |   | Index into the list of the item to return. |
 
 ### getListItemText(listId, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -422,8 +422,8 @@ Returns the icon of the item at the specified index of the specified table list.
 Returns the text of the item at the specified index of the specified table list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list. |
-| index | Int |   | Index into the list of the item to return. |
+| listId | Int |   | ID of the list. |
+| index | Int |   | Index into the list of the item to return. |
 
 ### getNumColumns()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -443,7 +443,7 @@ Returns the number of empty (non-trailing) rows at the bottom of the table.
 Returns the number of items in the specified table list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list. |
+| listId | Int |   | ID of the list. |
 
 ### getNumRows()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -458,7 +458,7 @@ Reimplemented from AFXBaseTable.
 Returns the width required for a column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 | excludeTitle | Bool | True | Specify True to ignore the width of leading and trailing items of the column. |
 
 ### getPreferredRowHeight(row)  
@@ -467,7 +467,7 @@ Returns the width required for a column.
 Returns the height required for a row (useful for multi-line labels).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### getRowAtY(y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -475,7 +475,7 @@ Returns the height required for a row (useful for multi-line labels).
 Returns the row at the specified y coordinate; returns -1 if y is outside of the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| y | Int |   | Y coordinate. |
+| y | Int |   | Y coordinate. |
 
 ### getRowHeight(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -483,7 +483,7 @@ Returns the row at the specified y coordinate; returns -1 if y is outside of the
 Returns the height, in pixels, of the specified row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### getSelBackColor()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -529,7 +529,7 @@ Reimplemented from AFXBaseTable.
 Inserts columns at the specified location.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| startColumn | Int |   | Starting column. |
+| startColumn | Int |   | Starting column. |
 | numColumns | Int | 1 | Number of columns to insert. |
 | notify | Bool | False | Specify True to notify target of the insertion. |
 
@@ -539,7 +539,7 @@ Inserts columns at the specified location.
 Inserts rows at the specified location.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| startRow | Int |   | Starting row. |
+| startRow | Int |   | Starting row. |
 | numRows | Int | 1 | Number of rows to insert. |
 | notify | Bool | False | Specify True to notify target of the insertion. |
 
@@ -549,7 +549,7 @@ Inserts rows at the specified location.
 Returns True if any item in the column is selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### isAnyItemInRowSelected(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -557,7 +557,7 @@ Returns True if any item in the column is selected.
 Returns True if any item in the row is selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### isColumnSelected(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -565,7 +565,7 @@ Returns True if any item in the row is selected.
 Returns True if all items in the column are selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### isColumnSortable(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -573,7 +573,7 @@ Returns True if all items in the column are selected.
 Returns True if the items of the given column can be sorted.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### isItemBool(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -581,8 +581,8 @@ Returns True if the items of the given column can be sorted.
 Returns True if the specified item is of type BOOL.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemColor(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -590,8 +590,8 @@ Returns True if the specified item is of type BOOL.
 Returns True if the specified item is of type COLOR.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemEditable(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -599,8 +599,8 @@ Returns True if the specified item is of type COLOR.
 Returns True if the item is editable.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemEmpty(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -608,8 +608,8 @@ Returns True if the item is editable.
 Returns True if the specified item does not have a value. This method checks the actual contents of the specified item and does not account for the empty-item policy for the item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemIcon(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -617,8 +617,8 @@ Returns True if the specified item does not have a value. This method checks the
 Returns True if the specified item is of type ICON.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemList(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -626,8 +626,8 @@ Returns True if the specified item is of type ICON.
 Returns True if the specified item is of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemSelected(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -635,8 +635,8 @@ Returns True if the specified item is of type LIST.
 Returns True if the specified item is selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemText(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -644,8 +644,8 @@ Returns True if the specified item is selected.
 Returns True if the specified item is of type TEXT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isItemVisible(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -653,8 +653,8 @@ Returns True if the specified item is of type TEXT.
 Returns True if the specified item is visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### isRowSelected(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -662,7 +662,7 @@ Returns True if the specified item is visible.
 Returns True if all items in the row are selected.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### killFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -692,8 +692,8 @@ Reimplemented from AFXBaseTable.
 Scrolls to make the specified row, column fully visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### makeRowVisible(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -701,7 +701,7 @@ Scrolls to make the specified row, column fully visible.
 Scrolls vertically (only) to make the specified row fully visible.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### moveContents(x, y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -709,8 +709,8 @@ Scrolls vertically (only) to make the specified row fully visible.
 Scrolls the contents.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   | Distance scrolled in X direction. |
-| y | Int |   | Distance scrolled in Y direction. |
+| x | Int |   | Distance scrolled in X direction. |
+| y | Int |   | Distance scrolled in Y direction. |
 
 ### recalc()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -725,8 +725,8 @@ Reimplemented from AFXBaseTable.
 Removes the item at the specified index from the specified table list; returns the number of items remaining in list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| listId | Int |   | ID of the list to remove from. |
-| index | Int |   | Index of the list item to remove. |
+| listId | Int |   | ID of the list to remove from. |
+| index | Int |   | Index of the list item to remove. |
 
 ### selectItem(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -734,8 +734,8 @@ Removes the item at the specified index from the specified table list; returns t
 Selects the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### selectRow(row)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -743,7 +743,7 @@ Selects the specified item.
 Selects all items in the row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
+| row | Int |   | Row index. |
 
 ### setColumnBoolIcons(column, trueIcon=None, falseIcon=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -751,7 +751,7 @@ Selects all items in the row.
 Sets the True and False icons of all existing and future items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 | trueIcon | FXIcon | None | Icon displayed when value is True; 0 = default icon. |
 | falseIcon | FXIcon | None | Icon displayed when value is False; 0 = default icon. |
 
@@ -761,8 +761,8 @@ Sets the True and False icons of all existing and future items in a column of ty
 Sets the value of all existing and future items in a column of type BOOL. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| value | Bool |   | Specify True or False. |
+| column | Int |   | Column index. |
+| value | Bool |   | Specify True or False. |
 
 ### setColumnColor(column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -770,8 +770,8 @@ Sets the value of all existing and future items in a column of type BOOL. Specif
 Sets the color of all existing and future items in a column of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| color | String |   | Color. |
+| column | Int |   | Column index. |
+| color | String |   | Color. |
 
 ### setColumnColorItemDefault(column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -779,8 +779,8 @@ Sets the color of all existing and future items in a column of type COLOR. The c
 Sets the color of the color item in the flyout menu for all existing and future items that display "As is" or "Default" in a column of type COLOR. The color is either a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C") or a pre-defined color name (e.g., "Red"). Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| color | String |   | Color. |
+| column | Int |   | Column index. |
+| color | String |   | Color. |
 
 ### setColumnColorOptions(column, opts)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -788,8 +788,8 @@ Sets the color of the color item in the flyout menu for all existing and future 
 Sets the color flyout options for all existing and future items in a column of type COLOR. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| opts | Int |   | Options (see ColorFlyoutOptions). |
+| column | Int |   | Column index. |
+| opts | Int |   | Options (see ColorFlyoutOptions). |
 
 ### setColumnEditable(column, editable)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -797,8 +797,8 @@ Sets the color flyout options for all existing and future items in a column of t
 Sets the editability of all existing and future items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| editable | Bool |   | Specify True for editable, False for read-only. |
+| column | Int |   | Column index. |
+| editable | Bool |   | Specify True for editable, False for read-only. |
 
 ### setColumnFloatValue(column, value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -806,8 +806,8 @@ Sets the editability of all existing and future items in a column. Specifying -1
 Sets the value of all existing and future items in a column of type FLOAT. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| value | Float |   | Floating-point value. |
+| column | Int |   | Column index. |
+| value | Float |   | Floating-point value. |
 
 ### setColumnIcon(column, icon=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -815,7 +815,7 @@ Sets the value of all existing and future items in a column of type FLOAT. Speci
 Sets the icon of all existing and future items in a column of type ICON. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 | icon | FXIcon | None | Icon. |
 
 ### setColumnIntValue(column, value)  
@@ -824,8 +824,8 @@ Sets the icon of all existing and future items in a column of type ICON. Specify
 Sets the value of all existing and future items in a column of type INT. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| value | Int |   | Integer value. |
+| column | Int |   | Column index. |
+| value | Int |   | Integer value. |
 
 ### setColumnJustify(column, justify)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -833,8 +833,8 @@ Sets the value of all existing and future items in a column of type INT. Specify
 Sets the justification of all existing and future items in a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| justify | Int |   | Justification (see ItemJustify). |
+| column | Int |   | Column index. |
+| justify | Int |   | Justification (see ItemJustify). |
 
 ### setColumnListId(column, listId)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -842,8 +842,8 @@ Sets the justification of all existing and future items in a column. Specifying 
 Sets the list ID of all existing and future items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| listId | Int |   | List ID. |
+| column | Int |   | Column index. |
+| listId | Int |   | List ID. |
 
 ### setColumnListIndex(column, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -851,8 +851,8 @@ Sets the list ID of all existing and future items in a column of type LIST. Spec
 Sets the list index (selection) of all existing and future items in a column of type LIST. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| index | Int |   | Index of item to be selected. |
+| column | Int |   | Column index. |
+| index | Int |   | Index of item to be selected. |
 
 ### setColumnSortable(column, sortable)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -860,8 +860,8 @@ Sets the list index (selection) of all existing and future items in a column of 
 Sets a column to be sortable or not. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| sortable | Bool |   | Specify True for sortable, False for otherwise. |
+| column | Int |   | Column index. |
+| sortable | Bool |   | Specify True for sortable, False for otherwise. |
 
 ### setColumnSortOrder(column, order)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -869,8 +869,8 @@ Sets a column to be sortable or not. Specifying -1 for the column will change al
 Sets the sort order of the given column. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| order | Int |   | Sort order (see SortOrder). |
+| column | Int |   | Column index. |
+| order | Int |   | Sort order (see SortOrder). |
 
 ### setColumnText(column, text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -878,8 +878,8 @@ Sets the sort order of the given column. Specifying -1 for the column will chang
 Sets the text of all existing and future items in a column of type TEXT. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| text | String |   | Text. |
+| column | Int |   | Column index. |
+| text | String |   | Text. |
 
 ### setColumnType(column, type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -887,8 +887,8 @@ Sets the text of all existing and future items in a column of type TEXT. Specify
 Sets the type of a column. Specifying -1 for the column will change all columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| type | Int |   | Type (see Flags for item types). |
+| column | Int |   | Column index. |
+| type | Int |   | Type (see Flags for item types). |
 
 ### setColumnWidth(column, width)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -896,8 +896,8 @@ Sets the type of a column. Specifying -1 for the column will change all columns 
 Sets the width, in pixels, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table. Specify -1 for the width will resize each specified column to best fit the width of the title(s) currently shown in its leading and trailing items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| width | Int |   | Width in pixels. |
+| column | Int |   | Column index. |
+| width | Int |   | Width in pixels. |
 
 ### setColumnWidthInChars(column, numChars)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -905,8 +905,8 @@ Sets the width, in pixels, of the specified column. Specifying -1 for the column
 Sets the width, in number of characters, of the specified column. Specifying -1 for the column will change all non-leading and non-trailing columns in the table and set the default for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
-| numChars | Int |   | Width in number of characters. |
+| column | Int |   | Column index. |
+| numChars | Int |   | Width in number of characters. |
 
 ### setCurrentItem(row, column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -914,8 +914,8 @@ Sets the width, in number of characters, of the specified column. Specifying -1 
 Sets the specified item to be the current item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 
 ### setCurrentSortColumn(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -923,7 +923,7 @@ Sets the specified item to be the current item.
 Sets the current sort column. The given column must be sortable; otherwise the current sort column will not change.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### setDefaultBoolIcons(trueIcon=None, falseIcon=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -940,7 +940,7 @@ Sets the default True and False icons for the table (0 = default icon).
 Sets the default bool value for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Bool |   | Specify True or False. |
+| value | Bool |   | Specify True or False. |
 
 ### setDefaultColor(color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -948,7 +948,7 @@ Sets the default bool value for the table.
 Sets the default color for all items of type COLOR in the table. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | String |   | Color. |
+| color | String |   | Color. |
 
 ### setDefaultColumnWidth(width)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -956,7 +956,7 @@ Sets the default color for all items of type COLOR in the table. The color can b
 Sets the default width, in pixels, for all columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| width | Int |   | Width in pixels. |
+| width | Int |   | Width in pixels. |
 
 ### setDefaultFloatValue(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -964,7 +964,7 @@ Sets the default width, in pixels, for all columns.
 Sets the default floating-point value for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Float |   | Floating-point value. |
+| value | Float |   | Floating-point value. |
 
 ### setDefaultIntValue(value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -972,7 +972,7 @@ Sets the default floating-point value for the table.
 Sets the default integer value for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int |   | Integer value. |
+| value | Int |   | Integer value. |
 
 ### setDefaultJustify(justify)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -980,7 +980,7 @@ Sets the default integer value for the table.
 Sets the default justification for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| justify | Int |   | Justification (see ItemJustify). |
+| justify | Int |   | Justification (see ItemJustify). |
 
 ### setDefaultRowHeight(height)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -988,7 +988,7 @@ Sets the default justification for the table.
 Sets the default height, in pixels, for all rows.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| height | Int |   | Height in pixels. |
+| height | Int |   | Height in pixels. |
 
 ### setDefaultText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -996,7 +996,7 @@ Sets the default height, in pixels, for all rows.
 Sets the default text for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text. |
+| text | String |   | Text. |
 
 ### setDefaultType(type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1004,7 +1004,7 @@ Sets the default text for the table.
 Sets the default type for the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| type | Int |   | Type (see Flags for item types). |
+| type | Int |   | Type (see Flags for item types). |
 
 ### setEmptyItemDefault(defaultVal)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1012,7 +1012,7 @@ Sets the default type for the table.
 Sets the default value (in text form) used for empty items of the table if its empty-item policy includes DEFAULT\_IF\_EMPTY.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| defaultVal | String |   | Default value in text form. |
+| defaultVal | String |   | Default value in text form. |
 
 ### setEmptyItemPolicy(policy)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1020,7 +1020,7 @@ Sets the default value (in text form) used for empty items of the table if its e
 Sets the policy for handling empty items of the table (see EmptyItemPolicy).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| policy | Int |   | Flags for handling empty items (see EmptyItemPolicy). |
+| policy | Int |   | Flags for handling empty items (see EmptyItemPolicy). |
 
 ### setFont(font)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1028,7 +1028,7 @@ Sets the policy for handling empty items of the table (see EmptyItemPolicy).
 Sets the font for all text items in the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| font | FXFont |   | Font. |
+| font | FXFont |   | Font. |
 
 ### setGridColor(color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1036,7 +1036,7 @@ Sets the font for all text items in the table.
 Sets the color for the gridlines in the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   | Color. |
+| color | FXColor |   | Color. |
 
 ### setItemBackColor(row, column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1044,9 +1044,9 @@ Sets the color for the gridlines in the table.
 Sets the background color of an item using an FXColor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| color | FXColor |   | Color index. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| color | FXColor |   | Color index. |
 
 ### setItemBackColor(row, column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1054,9 +1054,9 @@ Sets the background color of an item using an FXColor.
 Sets the background color of an item using a string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| color | String |   | Color name. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| color | String |   | Color name. |
 
 ### setItemBoolIcons(row, column, trueIcon=None, falseIcon=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1064,8 +1064,8 @@ Sets the background color of an item using a string.
 Sets the True and False icons of an item of type BOOL.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 | trueIcon | FXIcon | None | Icon displayed when value is True; 0 = default icon. |
 | falseIcon | FXIcon | None | Icon displayed when value is False; 0 = default icon. |
 
@@ -1075,9 +1075,9 @@ Sets the True and False icons of an item of type BOOL.
 Sets the value of an item of type BOOL.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| value | Bool |   | Specify True or False. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| value | Bool |   | Specify True or False. |
 
 ### setItemColor(row, column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1085,9 +1085,9 @@ Sets the value of an item of type BOOL.
 Sets the color of an item of type COLOR. The color can be "As is", "Default", a color hex specification in the form of "RRGGBB" (e.g., "#0A1B2C"), or a pre-defined color name (e.g., "Red").
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| color | String |   | Color. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| color | String |   | Color. |
 
 ### setItemEditable(row, column, editable)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1095,9 +1095,9 @@ Sets the color of an item of type COLOR. The color can be "As is", "Default", a 
 Sets the editability of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| editable | Bool |   | Specify True for editable, False for read-only. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| editable | Bool |   | Specify True for editable, False for read-only. |
 
 ### setItemFloatValue(row, column, value)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1105,9 +1105,9 @@ Sets the editability of an item.
 Sets the value of an item of type FLOAT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| value | Float |   | Floating-point value. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| value | Float |   | Floating-point value. |
 
 ### setItemIcon(row, column, icon=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1115,8 +1115,8 @@ Sets the value of an item of type FLOAT.
 Sets the icon of an item of type ICON.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
 | icon | FXIcon | None | Icon. |
 
 ### setItemIntValue(row, column, value)  
@@ -1125,9 +1125,9 @@ Sets the icon of an item of type ICON.
 Sets the value of an item of type INT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| value | Int |   | Integer value. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| value | Int |   | Integer value. |
 
 ### setItemJustify(row, column, justify)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1135,9 +1135,9 @@ Sets the value of an item of type INT.
 Sets the justification of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| justify | Int |   | Justification (see ItemJustify). |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| justify | Int |   | Justification (see ItemJustify). |
 
 ### setItemListId(row, column, listId)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1145,9 +1145,9 @@ Sets the justification of an item.
 Sets the list ID of an item of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| listId | Int |   | List ID. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| listId | Int |   | List ID. |
 
 ### setItemListIndex(row, column, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1155,9 +1155,9 @@ Sets the list ID of an item of type LIST.
 Sets the list index (selection) of an item of type LIST.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| index | Int |   | Index of item to be selected. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| index | Int |   | Index of item to be selected. |
 
 ### setItemProvider(ip)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1165,7 +1165,7 @@ Sets the list index (selection) of an item of type LIST.
 Sets the item provider of this object.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ip | FXObject |   | Item provideer. |
+| ip | FXObject |   | Item provideer. |
 
 ### setItemSpan(row, column, numRows, numColumns)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1173,10 +1173,10 @@ Sets the item provider of this object.
 Sets a leading item to span more than one row or column.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| numRows | Int |   | Number of rows to span. |
-| numColumns | Int |   | Number of columns to span. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| numRows | Int |   | Number of rows to span. |
+| numColumns | Int |   | Number of columns to span. |
 
 ### setItemTarget(row, column, tgt, msg=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1184,9 +1184,9 @@ Sets a leading item to span more than one row or column.
 Sets the target and message ID for an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| tgt | FXObject |   | Target. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| tgt | FXObject |   | Target. |
 | msg | Int | 0 | Message ID. |
 
 ### setItemText(row, column, text)  
@@ -1195,9 +1195,9 @@ Sets the target and message ID for an item.
 Sets the text of an item of type TEXT.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| text | String |   | Text. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| text | String |   | Text. |
 
 ### setItemTextColor(row, column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1205,9 +1205,9 @@ Sets the text of an item of type TEXT.
 Sets the text color of an item using an FXColor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| color | FXColor |   | Color index. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| color | FXColor |   | Color index. |
 
 ### setItemTextColor(row, column, color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1215,9 +1215,9 @@ Sets the text color of an item using an FXColor.
 Sets the text color of an item using a string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| color | String |   | Color name. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| color | String |   | Color name. |
 
 ### setItemType(row, column, type)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1225,9 +1225,9 @@ Sets the text color of an item using a string.
 Sets the type of an item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| type | Int |   | Type (see Flags for item types). |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| type | Int |   | Type (see Flags for item types). |
 
 ### setItemValue(row, column, valueText)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1235,9 +1235,9 @@ Sets the type of an item.
 Sets the value of an item of any type that can interpret a text string for its value. Returns True if the value of the specified item is set successfully.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index of item. |
-| column | Int |   | Column index of item. |
-| valueText | String |   | Text-form value of item. |
+| row | Int |   | Row index of item. |
+| column | Int |   | Column index of item. |
+| valueText | String |   | Text-form value of item. |
 
 ### setLeadingColumnLabels(str, column=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1245,7 +1245,7 @@ Sets the value of an item of any type that can interpret a text string for its v
 Sets the labels of a leading column. Note: this API must be used to set the header column labels, otherwise labels will be overwritten by auto-numbering.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| str | String |   | Tab "\\t" delimited list, can also contain newline characters indicating that label contains multiple lines of text (e.g. "Young's\\nModulus\\tPoisson's\\nRatio"). |
+| str | String |   | Tab "\\t" delimited list, can also contain newline characters indicating that label contains multiple lines of text (e.g. "Young's\\nModulus\\tPoisson's\\nRatio"). |
 | column | Int | 0 | Column, this column must have previously been specified as a leading column (see setLeadingColumns). |
 
 ### setLeadingColumns(numColumns)  
@@ -1254,7 +1254,7 @@ Sets the labels of a leading column. Note: this API must be used to set the head
 Sets the number of leading columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| numColumns | Int |   | Number of columns. |
+| numColumns | Int |   | Number of columns. |
 
 ### setLeadingFont(font)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1262,7 +1262,7 @@ Sets the number of leading columns.
 Sets the font of the leading rows and columns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| font | FXFont |   | Font. |
+| font | FXFont |   | Font. |
 
 ### setLeadingRowLabels(str, row=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1270,7 +1270,7 @@ Sets the font of the leading rows and columns.
 Set the labels of a leading row. Note: this API must be used to set the header row labels, otherwise labels will be overwritten by auto-numbering.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| str | String |   | Tab "\\t" delimited list, can also contain newline characters indicating that label contains multiple lines of text (e.g. "Young's\\nModulus\\tPoisson's\\nRatio"). |
+| str | String |   | Tab "\\t" delimited list, can also contain newline characters indicating that label contains multiple lines of text (e.g. "Young's\\nModulus\\tPoisson's\\nRatio"). |
 | row | Int | 0 | Row, this row must have previously been specified as a leading row (see setLeadingRows). |
 
 ### setLeadingRows(numRows)  
@@ -1279,7 +1279,7 @@ Set the labels of a leading row. Note: this API must be used to set the header r
 Sets the number of leading rows.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| numRows | Int |   | Number of rows. |
+| numRows | Int |   | Number of rows. |
 
 ### setListMaxVisible(maxVisible)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1287,7 +1287,7 @@ Sets the number of leading rows.
 Sets the maximum number of visible items for all table lists.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| maxVisible | Int |   | Maximum number of visible items. |
+| maxVisible | Int |   | Maximum number of visible items. |
 
 ### setRowHeight(row, height)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1295,8 +1295,8 @@ Sets the maximum number of visible items for all table lists.
 Sets the height, in pixels, of the specified row.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| row | Int |   | Row index. |
-| height | Int |   | Height in pixels. |
+| row | Int |   | Row index. |
+| height | Int |   | Height in pixels. |
 
 ### setSelBackColor(color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1304,7 +1304,7 @@ Sets the height, in pixels, of the specified row.
 Sets the selection background color of the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   | Color index. |
+| color | FXColor |   | Color index. |
 
 ### setSelTextColor(color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1312,7 +1312,7 @@ Sets the selection background color of the table.
 Sets the selection text color of the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   | Color index. |
+| color | FXColor |   | Color index. |
 
 ### setStretchableColumn(column)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1320,7 +1320,7 @@ Sets the selection text color of the table.
 Sets the stretchable column. (This method only works for the last column.)
 
 | **Argument** | **Type** | **Default** | **Description** |
-| column | Int |   | Column index. |
+| column | Int |   | Column index. |
 
 ### setTableSize(numRows, numColumns, notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1328,8 +1328,8 @@ Sets the stretchable column. (This method only works for the last column.)
 Sets the size of the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| numRows | Int |   | Number of rows. |
-| numColumns | Int |   | Number of columns. |
+| numRows | Int |   | Number of rows. |
+| numColumns | Int |   | Number of columns. |
 | notify | Bool | False | Specify True to notify target of change. |
 
 ### setTableStyle(style)  
@@ -1338,7 +1338,7 @@ Sets the size of the table.
 Sets the table options.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   | Style flag (see Flags for AFX table options). |
+| style | Int |   | Style flag (see Flags for AFX table options). |
 
 ### setVisibleColumns(visibleColumns)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1346,7 +1346,7 @@ Sets the table options.
 Sets the number of visible columns in the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| visibleColumns | Int |   | Number of visible columns. |
+| visibleColumns | Int |   | Number of visible columns. |
 
 ### setVisibleRows(visibleRows)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1354,7 +1354,7 @@ Sets the number of visible columns in the table.
 Sets the number of visible rows in the table.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| visibleRows | Int |   | Number of visible rows. |
+| visibleRows | Int |   | Number of visible rows. |
 
 ### shadeReadOnlyItems(shadeItems)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -1362,7 +1362,7 @@ Sets the number of visible rows in the table.
 Makes the table to use a different, typically shaded, background color for read-only items if True is passed to the method. The table would use the same regular background color for both editable and read-only items if False is passed to the method.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| shadeItems | Bool |   | Specify True to use a different background color for read-only items. |
+| shadeItems | Bool |   | Specify True to use a different background color for read-only items. |
 
 ### showHorizontalGrid(on=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

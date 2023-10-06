@@ -13,7 +13,7 @@ Deserialization.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| toolsetName | String |   | Toolset name passed in from derived toolsets. |
+| toolsetName | String |   | Toolset name passed in from derived toolsets. |
 
 ### swapInToolsetItems()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

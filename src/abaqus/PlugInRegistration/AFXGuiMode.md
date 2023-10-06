@@ -8,7 +8,7 @@ This class is the abstract base class for modes.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the mode. |
+| owner | AFXGuiObjectManager |   | Owner (a module or a toolset) of the mode. |
 
 ### activate()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -93,7 +93,7 @@ Returns the ID of the button that the user pressed in the currently posted dialo
 Posts a dialog box with an error message for the given exception. The derived class should redefine this method if it needs to handle the exception differently.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| exc | nex_Exception |   | Exception. |
+| exc | nex_Exception |   | Exception. |
 
 ### handleKeywordException(exc)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -101,7 +101,7 @@ Posts a dialog box with an error message for the given exception. The derived cl
 Posts a dialog box with an error message for the given exception thrown by a keyword during data validation.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| exc | nex_Exception |   | Exception. |
+| exc | nex_Exception |   | Exception. |
 
 ### isKeyword(object)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -109,7 +109,7 @@ Posts a dialog box with an error message for the given exception thrown by a key
 Returns True if the object is one of the mode's keywords.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| object | FXObject |   |   |
+| object | FXObject |   |   |
 
 ### issueCommands(writeToReplay=True, writeToJournal=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -131,7 +131,7 @@ Method indicating if the dialog box should be cancelled if the context changes (
 Hook method called whenever the command's object changes in Kernel. By default this function does nothing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXGuiCommand |   | Command for which the query fired. |
+| command | AFXGuiCommand |   | Command for which the query fired. |
 
 ### registerDefaultsObject(command, objectName)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -139,8 +139,8 @@ Hook method called whenever the command's object changes in Kernel. By default t
 Registers the defaults object that will be queried when the Defaults button in the dialog box is pressed.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | AFXGuiCommand |   | Command whose keywords to be populated with the defaults object values. |
-| objectName | String |   | Name of defaults object to be queried. |
+| command | AFXGuiCommand |   | Command whose keywords to be populated with the defaults object values. |
+| objectName | String |   | Name of defaults object to be queried. |
 
 ### registerQueries()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -158,7 +158,7 @@ Unregisters queries and deletes all the associated proxies.
 Sends the given command string (which can contain multiple commands, separated by command delimiters).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| command | String |   | Command string. |
+| command | String |   | Command string. |
 | writeToReplay | Bool | True | True if commands should be written to the replay file; False if not. |
 | writeToJournal | Bool | False | True if commands should be written to the journal file; False if not. |
 
@@ -168,7 +168,7 @@ Sends the given command string (which can contain multiple commands, separated b
 Sets the mode's name.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   |   |
+| name | String |   |   |
 
 ### unregisterAllQueries()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

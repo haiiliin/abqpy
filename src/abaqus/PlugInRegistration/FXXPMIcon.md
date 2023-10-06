@@ -14,12 +14,12 @@ X Pixmap icon.
 Construct icon from compiled-in X Pixmap format.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| pix | String | None |   |
-| clr | FXColor | FXRGB(192, 192, 192) |   |
-| opts | Int | 0 |   |
-| w | Int | 1 |   |
-| h | Int | 1 |   |
+| a | FXApp |   |   |
+| pix | String | None |   |
+| clr | FXColor | FXRGB(192, 192, 192) |   |
+| opts | Int | 0 |   |
+| w | Int | 1 |   |
+| h | Int | 1 |   |
 
 
 

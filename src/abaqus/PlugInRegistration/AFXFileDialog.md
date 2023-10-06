@@ -10,10 +10,10 @@ This class contains a file selection dialog box.
 Constructor that creates a dialog box that always occludes its owner widget when overlapping with the widget. The constructor expects a string keyword for storing the selected file name. If the dialog box allows multiple selection, the string keyword contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   | Parent widget. |
-| title | String |   | Dialog title. |
-| pathNameKw | AFXStringKeyword |   | Path name keyword. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| owner | FXWindow |   | Parent widget. |
+| title | String |   | Dialog title. |
+| pathNameKw | AFXStringKeyword |   | Path name keyword. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
@@ -26,9 +26,9 @@ Constructor that creates a dialog box that always occludes its owner widget when
 Constructor that creates a dialog box that always occludes the main window when overlapping with the main window. The constructor expects a string keyword for storing the selected file name. If the dialog box allows multiple selection, the string keyword contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| title | String |   | Dialog title. |
-| pathNameKw | AFXStringKeyword |   | Path name keyword. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| title | String |   | Dialog title. |
+| pathNameKw | AFXStringKeyword |   | Path name keyword. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
@@ -41,10 +41,10 @@ Constructor that creates a dialog box that always occludes the main window when 
 Constructor that creates a dialog box that always occludes its owner widget when overlapping with the widget. The constructor expects a string target for storing the selected file name. If the dialog box allows multiple selection, the string target contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   | Parent widget. |
-| title | String |   | Dialog title. |
-| pathNameTgt | AFXStringTarget |   | Path name target. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| owner | FXWindow |   | Parent widget. |
+| title | String |   | Dialog title. |
+| pathNameTgt | AFXStringTarget |   | Path name target. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
@@ -57,9 +57,9 @@ Constructor that creates a dialog box that always occludes its owner widget when
 Constructor that creates a dialog box that always occludes the main window when overlapping with the main window. The constructor expects a string target for storing the selected file name. If the dialog box allows multiple selection, the string target contains comma-separated path names of all selected files.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| title | String |   | Dialog title. |
-| pathNameTgt | AFXStringTarget |   | Path name target. |
-| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
+| title | String |   | Dialog title. |
+| pathNameTgt | AFXStringTarget |   | Path name target. |
+| readOnlyKw | AFXBoolKeyword |   | Read-only keyword. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | mode | Int | AFXSELECTFILE_ANY | File selection mode. |
@@ -112,7 +112,7 @@ Returns the list of patterns.
 Returns the pattern text for a given pattern number.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| patno | Int |   |   |
+| patno | Int |   |   |
 
 ### getPressedButtonId()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -140,7 +140,7 @@ Returns the file selection mode.
 Sets the current active pattern.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| n | Int |   |   |
+| n | Int |   |   |
 
 ### setDirectory(path)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -148,7 +148,7 @@ Sets the current active pattern.
 Sets the current directory.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| path | String |   |   |
+| path | String |   |   |
 
 ### setFileBoxStyle(style)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -156,7 +156,7 @@ Sets the current directory.
 Sets the file list style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setFilename(path)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -164,7 +164,7 @@ Sets the file list style.
 Sets the file name.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| path | String |   |   |
+| path | String |   |   |
 
 ### setItemSpace(s)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -172,7 +172,7 @@ Sets the file name.
 Sets the inter-item spacing (in pixels).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Int |   |   |
+| s | Int |   |   |
 
 ### setPattern(ptrn)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -180,7 +180,7 @@ Sets the inter-item spacing (in pixels).
 Sets the file pattern.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ptrn | String |   |   |
+| ptrn | String |   |   |
 
 ### setPatternList(patterns)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -188,7 +188,7 @@ Sets the file pattern.
 Sets the list of file patterns.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| patterns | String |   |   |
+| patterns | String |   |   |
 
 ### setPatternListMaxVisible(maxVisible)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -196,7 +196,7 @@ Sets the list of file patterns.
 Sets the maximum number of visible items for the file pattern list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| maxVisible | Int |   |   |
+| maxVisible | Int |   |   |
 
 ### setPatternText(patno, text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -204,8 +204,8 @@ Sets the maximum number of visible items for the file pattern list.
 Sets the pattern text for a pattern number.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| patno | Int |   |   |
-| text | String |   |   |
+| patno | Int |   |   |
+| text | String |   |   |
 
 ### setReadOnly(state)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -213,7 +213,7 @@ Sets the pattern text for a pattern number.
 Sets the initial state of read-only button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool |   |   |
+| state | Bool |   |   |
 
 ### setReadOnlyPatterns(patterns)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -223,7 +223,7 @@ Sets the patterns that force the display of the read-only button; separate the e
 .
 
 | **Argument** | **Type** | **Default** | **Description** |
-| patterns | String |   |   |
+| patterns | String |   |   |
 
 ### setSelectMode(mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -231,7 +231,7 @@ Sets the patterns that force the display of the read-only button; separate the e
 Sets the file selection mode.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| mode | Int |   |   |
+| mode | Int |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -259,4 +259,4 @@ Returns True if the read-only button is shown.
 Shows the read-only button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| show | Bool |   |   |
+| show | Bool |   |   |

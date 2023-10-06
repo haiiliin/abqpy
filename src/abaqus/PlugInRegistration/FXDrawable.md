@@ -25,8 +25,8 @@ Resize drawable to the specified width and height.
 Reimplemented in FXBitmap, FXIcon, FXIconList, FXImage, FXMDIChild, FXRootWindow, FXText, FXTopWindow, and FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.
 

@@ -8,10 +8,10 @@ This class implements a labeled combo box. It allows the user to select entries 
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| ncols | Int |   | Number of columns in the combo box (use 0 for auto-sizing). |
-| nvis | Int |   | Number of visible items in the combo box's drop down list. |
-| text | String |   | Label string. |
+| p | FXComposite |   | Parent widget. |
+| ncols | Int |   | Number of columns in the combo box (use 0 for auto-sizing). |
+| nvis | Int |   | Number of visible items in the combo box's drop down list. |
+| text | String |   | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -30,7 +30,7 @@ Constructor.
 Adds an item to the end of the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Text. |
+| text | String |   | Text. |
 | sel | Int | 0 | Integer associated with this item. |
 
 ### clearItems()  
@@ -80,7 +80,7 @@ Returns the status line help text.
 Returns the data for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### getItemIndexForData(data)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -88,7 +88,7 @@ Returns the data for the specified item.
 Returns the index of the first item with the associated data or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| data |   |   |   |
+| data |   |   |   |
 
 ### getItemIndexForFloat(val)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -96,7 +96,7 @@ Returns the index of the first item with the associated data or -1 if not found.
 Returns the index of the first item with the text evaluating to the given value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| val | Float |   |   |
+| val | Float |   |   |
 
 ### getItemProvider()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -109,7 +109,7 @@ Returns the provider of the combo box's items.
 Returns the text for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### getLabelFont()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -152,8 +152,8 @@ Returns the tool tip message.
 Inserts a new item at the specified index position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
-| text | String |   | Text. |
+| index | Int |   | Index. |
+| text | String |   | Text. |
 | sel | Int | 0 | Integer associated with this item |
 
 ### isEditable()  
@@ -167,7 +167,7 @@ Returns True if the text in the input field may be edited.
 Returns True if the item at the specified index position is the current item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### isReadOnlyState()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -180,7 +180,7 @@ Returns True if the combo box appears in the read-only state.
 Removes the item at the specified index position from the list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### replaceItem(index, text, sel=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -188,8 +188,8 @@ Removes the item at the specified index position from the list.
 Replaces the item at the specified index position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
-| text | String |   | Text. |
+| index | Int |   | Index. |
+| text | String |   | Text. |
 | sel | Int | 0 | Integer associated with this item |
 
 ### setCheck(state)  
@@ -198,7 +198,7 @@ Replaces the item at the specified index position.
 Sets the state of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool |   | Button state. |
+| state | Bool |   | Button state. |
 
 ### setCheckButtonSelector(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -206,7 +206,7 @@ Sets the state of the check button or the radio button.
 Sets the message ID of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | Selector. |
+| sel | Int |   | Selector. |
 
 ### setCheckButtonTarget(tgt, checkVal=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -214,7 +214,7 @@ Sets the message ID of the check button or the radio button.
 Sets the message target of the check button or the radio button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   | Target. |
+| tgt | FXObject |   | Target. |
 | checkVal | Bool | False | Value of check button. |
 
 ### setCurrentItem(index)  
@@ -223,7 +223,7 @@ Sets the message target of the check button or the radio button.
 Sets the current item (the index is zero-based).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
+| index | Int |   | Index. |
 
 ### setEditable(edit=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -254,7 +254,7 @@ Moves the focus to the input field of the widget.
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Help text. |
+| text | String |   | Help text. |
 
 ### setItemData(index, ptr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -262,8 +262,8 @@ Sets the status line help text.
 Sets the data for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
-| ptr | String |   | Data. |
+| index | Int |   | Index. |
+| ptr | String |   | Data. |
 
 ### setItemProvider(cp)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -271,7 +271,7 @@ Sets the data for the specified item.
 Sets the provider of this object items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cp | FXObject |   | Item provider. |
+| cp | FXObject |   | Item provider. |
 
 ### setItemText(index, text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -279,8 +279,8 @@ Sets the provider of this object items.
 Sets the text for the specified item.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   | Index. |
-| text | String |   | Text. |
+| index | Int |   | Index. |
+| text | String |   | Text. |
 
 ### setLabelFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -288,7 +288,7 @@ Sets the text for the specified item.
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   | Label font. |
+| fnt | FXFont |   | Label font. |
 
 ### setLabelText(txt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -296,7 +296,7 @@ Sets the label font.
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Label text. |
+| txt | String |   | Label text. |
 
 ### setMaxVisible(maxVis)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -304,7 +304,7 @@ Sets the label string.
 Sets the maximum number of visible items. The combo box will show up to the given maximum number of items in its list. If the combo box has more items, its list will show a scroll bar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| maxVis | Int |   | Maximum number of visible items. |
+| maxVis | Int |   | Maximum number of visible items. |
 
 ### setNumColumns(cols)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -312,7 +312,7 @@ Sets the maximum number of visible items. The combo box will show up to the give
 Sets the number of columns in the combo box; passing zero will cause the combo box to always have the number of columns equal to the maximum item length.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| cols | Int |   | Number of columns. |
+| cols | Int |   | Number of columns. |
 
 ### setNumVisible(nvis)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -320,7 +320,7 @@ Sets the number of columns in the combo box; passing zero will cause the combo b
 Sets the number of visible items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| nvis | Int |   | Number of visible items. |
+| nvis | Int |   | Number of visible items. |
 
 ### setReadOnlyState(readonly=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -336,7 +336,7 @@ Sets the read-only state of the combo box.
 Sets the text displayed in the input field.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   | Input field text. |
+| txt | String |   | Input field text. |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -344,7 +344,7 @@ Sets the text displayed in the input field.
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Tooltip text. |
+| text | String |   | Tooltip text. |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

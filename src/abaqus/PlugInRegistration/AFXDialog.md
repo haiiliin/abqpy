@@ -10,7 +10,7 @@ This class is the base class for all Abaqus GUI Toolkit dialog boxes.
 Constructor that creates a dialog box that always occludes the main window when overlapping with the main window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| title | String |   | Title string. |
+| title | String |   | Title string. |
 | actionButtonIds | Int | 0 | ID's of action buttons to be created. |
 | opts | Int | DIALOG_NORMAL | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
@@ -24,8 +24,8 @@ Constructor that creates a dialog box that always occludes the main window when 
 Constructor that creates a dialog box that always occludes its owner widget when overlapping with the widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | FXWindow |   | Owner widget. |
-| title | String |   | Title string. |
+| owner | FXWindow |   | Owner widget. |
+| title | String |   | Title string. |
 | actionButtonIds | Int | 0 | ID's of action buttons to be created. |
 | opts | Int | DIALOG_NORMAL | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
@@ -39,8 +39,8 @@ Constructor that creates a dialog box that always occludes its owner widget when
 Constructor that creates a dialog box that may be occluded by any other windows of the application.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| app | FXApp |   | Application. |
-| title | String |   | Title string. |
+| app | FXApp |   | Application. |
+| title | String |   | Title string. |
 | actionButtonIds | Int | 0 | ID's of action buttons to be created. |
 | opts | Int | DIALOG_NORMAL | Options and hints. |
 | x | Int | 0 | X coordinate of origin. |
@@ -54,9 +54,9 @@ Constructor that creates a dialog box that may be occluded by any other windows 
 Adds a custom action button in the action area of the dialog box.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | Label string. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message ID. |
+| text | String |   | Label string. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message ID. |
 
 ### appendActionButton(buttonID)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -64,7 +64,7 @@ Adds a custom action button in the action area of the dialog box.
 Adds a standard action button in the action area of the dialog box.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| buttonID | ButtonID |   | Button ID. |
+| buttonID | ButtonID |   | Button ID. |
 
 ### bailout()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -86,12 +86,12 @@ Reimplemented from FXTopWindow.
 Creates an action area button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| parent | FXComposite |   | Parent widget. |
-| text | String |   | Label string. |
-| icon | FXIcon |   | Icon. |
-| tgt | FXObject |   | Message target. |
-| sel | Int |   | Message ID. |
-| opts | Int |   | Options and hints. |
+| parent | FXComposite |   | Parent widget. |
+| text | String |   | Label string. |
+| icon | FXIcon |   | Icon. |
+| tgt | FXObject |   | Message target. |
+| sel | Int |   | Message ID. |
+| opts | Int |   | Options and hints. |
 
 ### getActionButton(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -99,7 +99,7 @@ Creates an action area button.
 Returns the action button with the specified message ID; returns 0 if none of the action buttons has the message ID.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   | Message ID. |
+| sel | Int |   | Message ID. |
 
 ### getUnpostHints()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -121,7 +121,7 @@ Reimplemented in AFXManagerMenuDB, and AFXMessageDialog.
 Handles the error that occurs when the given keyword or target contains invalid contents. This method will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| kwd | FXObject |   | Object that contains invalid contents. |
+| kwd | FXObject |   | Object that contains invalid contents. |
 
 ### onTableError(tableKwd, row, col)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -129,9 +129,9 @@ Handles the error that occurs when the given keyword or target contains invalid 
 Handles the error that occurs when the given table keyword or target contains an invalid element. This method will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tableKwd | FXObject |   | Object that contains invalid element. |
-| row | Int |   | Row index. |
-| col | Int |   | Column index. |
+| tableKwd | FXObject |   | Object that contains invalid element. |
+| row | Int |   | Row index. |
+| col | Int |   | Column index. |
 
 ### onTupleError(tupleKwd, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -139,8 +139,8 @@ Handles the error that occurs when the given table keyword or target contains an
 Handles the error that occurs when the given tuple keyword or target contains an invalid element. This method will select the contents of the widget that has the keyword or target as its message target.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tupleKwd | FXObject |   | Object that contains invalid element. |
-| index | Int |   | Element index. |
+| tupleKwd | FXObject |   | Object that contains invalid element. |
+| index | Int |   | Element index. |
 
 ### selectContents(widget)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -148,7 +148,7 @@ Handles the error that occurs when the given tuple keyword or target contains an
 Selects the contents of the given widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| widget | FXWindow |   | Widget to select. |
+| widget | FXWindow |   | Widget to select. |
 
 ### selectTableElement(widget, row, col)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -156,9 +156,9 @@ Selects the contents of the given widget.
 Selects the given (row,col) element in the 2D array of elements displayed by the given widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| widget | FXWindow |   | Widget to select. |
-| row | Int |   | Row index. |
-| col | Int |   | Column index. |
+| widget | FXWindow |   | Widget to select. |
+| row | Int |   | Row index. |
+| col | Int |   | Column index. |
 
 ### selectTupleElement(widget, index)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -166,8 +166,8 @@ Selects the given (row,col) element in the 2D array of elements displayed by the
 Selects the element at the given index in the sequence of elements displayed by the given widget.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| widget | FXWindow |   | Widget to select. |
-| index | Int |   | Element index. |
+| widget | FXWindow |   | Widget to select. |
+| index | Int |   | Element index. |
 
 ### setOnPopdownTarget(target)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -175,7 +175,7 @@ Selects the element at the given index in the sequence of elements displayed by 
 Sets the object to be notified when the dialog box is unposted.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| target | FXObject |   | Object to be notified when the dialog box is unposted. |
+| target | FXObject |   | Object to be notified when the dialog box is unposted. |
 
 ### setUnpostHints(hints)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -183,7 +183,7 @@ Sets the object to be notified when the dialog box is unposted.
 Sets the action that the poster should perform on this dialog box when it is unposted.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| hints | Int |   |   |
+| hints | Int |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

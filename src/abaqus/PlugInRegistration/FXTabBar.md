@@ -16,18 +16,18 @@ The tab bar layout manager arranges tab items side by side, and raises the activ
 Construct a tab bar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | TABBOOK_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_SPACING |   |
-| pr | Int | DEFAULT_SPACING |   |
-| pt | Int | DEFAULT_SPACING |   |
-| pb | Int | DEFAULT_SPACING |   |
+| p | FXComposite |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | TABBOOK_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_SPACING |   |
+| pr | Int | DEFAULT_SPACING |   |
+| pt | Int | DEFAULT_SPACING |   |
+| pb | Int | DEFAULT_SPACING |   |
 
 ### create
 
@@ -94,8 +94,8 @@ Return tab bar style.
 Change currently active tab item; this raises the active tab item slightly above the neighboring tab items.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| panel | Int |   |   |
-| notify | Bool | False |   |
+| panel | Int |   |   |
+| notify | Bool | False |   |
 
 ### setTabStyle
 
@@ -107,7 +107,7 @@ Change currently active tab item; this raises the active tab item slightly above
 Change tab tab style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### Class flags  
 ![](../IconsReference/butix_top_wline.png)

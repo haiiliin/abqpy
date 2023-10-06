@@ -8,15 +8,15 @@ The MDI child window contains the application work area in a Multiple Document I
 Construct MDI Child window with given name and icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXMDIClient |   |   |
-| name | String |   |   |
-| ic | FXIcon | None |   |
-| mn | FXMenuPane | None |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXMDIClient |   |   |
+| name | String |   |   |
+| ic | FXIcon | None |   |
+| mn | FXMenuPane | None |   |
+| opts | Int | 0 |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -119,7 +119,7 @@ Return True if minimized.
 Maximize MDI Child.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False |   |
 
 ### minimize(notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -127,7 +127,7 @@ Maximize MDI Child.
 Minimize/iconify MDI Child.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False |   |
 
 ### move(x, y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -137,8 +137,8 @@ Move this window to the specified position in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### position(x, y, w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -148,10 +148,10 @@ Move and resize this window in the parent's coordinates.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### resize(w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -161,8 +161,8 @@ Resize this window to the specified width and height.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### restore(notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -170,7 +170,7 @@ Reimplemented from FXWindow.
 Restore MDI Child to normal.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| notify | Bool | False |   |
+| notify | Bool | False |   |
 
 ### setFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -178,7 +178,7 @@ Restore MDI Child to normal.
 Set title font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont |   |   |
 
 ### setHiliteColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -186,7 +186,7 @@ Set title font.
 Change colors.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setIconX(x)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -194,7 +194,7 @@ Change colors.
 Change iconified position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
+| x | Int |   |   |
 
 ### setNormalX(x)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -202,7 +202,7 @@ Change iconified position.
 Change normal (restored) position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
+| x | Int |   |   |
 
 ### setTitle(name)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -210,7 +210,7 @@ Change normal (restored) position.
 Change MDI Child's title.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String |   |   |
+| name | String |   |   |
 
 ### setWindowIcon(icon)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -218,7 +218,7 @@ Change MDI Child's title.
 Set window icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| icon | FXIcon |   |   |
+| icon | FXIcon |   |   |
 
 ### setWindowMenu(menu)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -226,7 +226,7 @@ Set window icon.
 Set window menu.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| menu | FXPopup |   |   |
+| menu | FXPopup |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

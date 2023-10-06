@@ -14,14 +14,14 @@ The scroll bar is used when a document has a larger content than may be made vis
 Construct scroll bar.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | SCROLLBAR_VERTICAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | SCROLLBAR_VERTICAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### getBorderColor
 
@@ -127,7 +127,7 @@ Return shadow color.
 Return border color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setHiliteColor
 
@@ -139,7 +139,7 @@ Return border color.
 Change highlight color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setLine
 
@@ -151,7 +151,7 @@ Change highlight color.
 Set scoll increment for line.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| l | Int |   |   |
+| l | Int |   |   |
 
 ### setPage
 
@@ -163,7 +163,7 @@ Set scoll increment for line.
 Set viewport page size.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | Int |   |   |
+| p | Int |   |   |
 
 ### setPosition
 
@@ -175,8 +175,8 @@ Set viewport page size.
 Change current scroll position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | Int |   |   |
-| notifyTgt | Bool | False |   |
+| p | Int |   |   |
+| notifyTgt | Bool | False |   |
 
 ### setRange
 
@@ -188,7 +188,7 @@ Change current scroll position.
 Set content size range.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| r | Int |   |   |
+| r | Int |   |   |
 
 ### setScrollbarStyle
 
@@ -200,7 +200,7 @@ Set content size range.
 Get the current scrollbar style.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setShadowColor
 
@@ -212,7 +212,7 @@ Get the current scrollbar style.
 Change shadow color.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### Global flags  
 ![](../IconsReference/butix_top_wline.png)

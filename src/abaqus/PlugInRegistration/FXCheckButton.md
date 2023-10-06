@@ -14,19 +14,19 @@ A check button is a tri-state button. Normally, it is either True or False, and 
 Construct new check button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | CHECKBUTTON_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | CHECKBUTTON_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### canFocus
 
@@ -82,7 +82,7 @@ Reimplemented from FXLabel.
 Set check button state (True, False or MAYBE).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| state | Bool | True |   |
+| state | Bool | True |   |
 
 ### Global flags  
 ![](../IconsReference/butix_top_wline.png)

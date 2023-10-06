@@ -16,8 +16,8 @@ Font class
 Construct font from font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| fontdesc | FXFontDesc |   |   |
+| a | FXApp |   |   |
+| fontdesc | FXFontDesc |   |   |
 
 ### FXFont(a, face, sz, wt=FONTWEIGHT\_NORMAL, sl=FONTSLANT\_REGULAR, enc=FONTENCODING\_DEFAULT, setw=FONTSETWIDTH\_DONTCARE, h=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -25,14 +25,14 @@ Construct font from font description.
 Construct a font with given face name, size in points(pixels), weight, slant, character set encoding, setwidth, and hints.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| face | String |   |   |
-| sz | Int |   |   |
-| wt | Int | FONTWEIGHT_NORMAL |   |
-| sl | Int | FONTSLANT_REGULAR |   |
-| enc | Int | FONTENCODING_DEFAULT |   |
-| setw | Int | FONTSETWIDTH_DONTCARE |   |
-| h | Int | 0 |   |
+| a | FXApp |   |   |
+| face | String |   |   |
+| sz | Int |   |   |
+| wt | Int | FONTWEIGHT_NORMAL |   |
+| sl | Int | FONTSLANT_REGULAR |   |
+| enc | Int | FONTENCODING_DEFAULT |   |
+| setw | Int | FONTSETWIDTH_DONTCARE |   |
+| h | Int | 0 |   |
 
 ### FXFont(a, nm)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -40,8 +40,8 @@ Construct a font with given face name, size in points(pixels), weight, slant, ch
 Construct a font with given X11 font string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| a | FXApp |   |   |
-| nm | String |   |   |
+| a | FXApp |   |   |
+| nm | String |   |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -80,7 +80,7 @@ Ascent from baseline.
 Get font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fontdesc | FXFontDesc |   |   |
+| fontdesc | FXFontDesc |   |   |
 
 ### getFontDescent()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -148,8 +148,8 @@ Get slant.
 Calculate height of given text in this font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | The string whose height is being evaluated. |
-| n | Int |   | The number of characters in 'text,' starting from the left end, for which the height will be returned. |
+| text | String |   | The string whose height is being evaluated. |
+| n | Int |   | The number of characters in 'text,' starting from the left end, for which the height will be returned. |
 
 ### getTextWidth(text, n)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -157,8 +157,8 @@ Calculate height of given text in this font.
 Calculate width of given text in this font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   | The string whose width is being evaluated. |
-| n | Int |   | The number of characters in 'text,' starting from the left end, for which the width will be returned. |
+| text | String |   | The string whose width is being evaluated. |
+| n | Int |   | The number of characters in 'text,' starting from the left end, for which the width will be returned. |
 
 ### getWeight()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -171,7 +171,7 @@ Get font weight.
 See if font has glyph for ch.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | Int |   |   |
+| ch | Int |   |   |
 
 ### isFontMono()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -184,7 +184,7 @@ Find out if the font is monotype or proportional.
 Left bearing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | String |   |   |
+| ch | String |   |   |
 
 ### rightBearing(ch)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -192,7 +192,7 @@ Left bearing.
 Right bearing.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ch | String |   |   |
+| ch | String |   |   |
 
 ### setFontDesc(fontdesc)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -200,7 +200,7 @@ Right bearing.
 Change font description.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fontdesc | FXFontDesc |   |   |
+| fontdesc | FXFontDesc |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

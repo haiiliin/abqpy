@@ -16,12 +16,12 @@ Base class for all windows
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | 0 |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
+| p | FXComposite |   |   |
+| opts | Int | 0 |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
 
 ### canFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -38,7 +38,7 @@ Return the child window at specified index, or NULL if the index is negative or 
 Reimplemented in AFXOptionTreeItem.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| index | Int |   |   |
+| index | Int |   |   |
 
 ### containsChild(child)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -46,7 +46,7 @@ Reimplemented in AFXOptionTreeItem.
 Return True if specified window is a child of this window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| child | FXWindow |   |   |
+| child | FXWindow |   |   |
 
 ### create()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -135,7 +135,7 @@ Return height for given width.
 Reimplemented in FXDockSite.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| givenwidth | Int |   |   |
+| givenwidth | Int |   |   |
 
 ### getKey()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -210,7 +210,7 @@ Return width for given height.
 Reimplemented in FXDockSite.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| givenheight | Int |   |   |
+| givenheight | Int |   |   |
 
 ### getX()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -228,7 +228,7 @@ Get this window's y-coordinate, in the parent's coordinate system.
 Grab the mouse to this window; future mouse events will be reported to this window even while the cursor goes outside of this window
 
 | **Argument** | **Type** | **Default** | **Description** |
-| confineTo | FXWindow | None |   |
+| confineTo | FXWindow | None |   |
 
 ### grabbed()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -253,7 +253,7 @@ Reimplemented in FXTopWindow, AFXManagerMenuDB, AFXMenuTitle, AFXToolbarGroup, A
 Return the index (starting from zero) of the specified child window, or -1 if the window is not a child or NULL
 
 | **Argument** | **Type** | **Default** | **Description** |
-| window | FXWindow |   |   |
+| window | FXWindow |   |   |
 
 ### isActive()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -268,7 +268,7 @@ Reimplemented in AFXToolbarGroup.
 Return True if specified window is this window's parent.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| window | FXWindow |   |   |
+| window | FXWindow |   |   |
 
 ### isDefault()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -291,7 +291,7 @@ Return True if this is the initial default window.
 Relink this window after sibling in the window list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sibling | FXWindow |   |   |
+| sibling | FXWindow |   |   |
 
 ### linkBefore(sibling)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -299,7 +299,7 @@ Relink this window after sibling in the window list.
 Relink this window before sibling in the window list.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sibling | FXWindow |   |   |
+| sibling | FXWindow |   |   |
 
 ### move(x, y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -309,8 +309,8 @@ Move this window to the specified position in the parent's coordinates.
 Reimplemented in FXMDIChild, FXRootWindow, and FXTopWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### numChildren()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -327,10 +327,10 @@ Move and resize this window in the parent's coordinates.
 Reimplemented in FXIconList, FXMDIChild, FXRootWindow, FXText, and FXTopWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### recalc()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -350,10 +350,10 @@ If marked but not yet painted, paint the entire window.
 If marked but not yet painted, paint the given area.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### resize(w, h)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -365,8 +365,8 @@ Reimplemented from FXDrawable.
 Reimplemented in FXIconList, FXMDIChild, FXRootWindow, FXText, and FXTopWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
-| h | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### setBackColor(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -376,7 +376,7 @@ Set window background color.
 Reimplemented in FXComboBox, and FXListBox.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setCursorPosition(x, y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -384,8 +384,8 @@ Reimplemented in FXComboBox, and FXListBox.
 Warp the cursor to the new position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
 
 ### setFocus()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -400,7 +400,7 @@ Reimplemented in FXButton, FXColorWell, FXIconList, FXList, FXMenuCascade, FXMen
 Set the window height.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| h | Int |   |   |
+| h | Int |   |   |
 
 ### setInitial(enable=True)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -408,7 +408,7 @@ Set the window height.
 Make this window the initial default window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| enable | Bool | True |   |
+| enable | Bool | True |   |
 
 ### setKey(k)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -416,7 +416,7 @@ Make this window the initial default window.
 Change window key.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| k | Int |   |   |
+| k | Int |   |   |
 
 ### setLayoutHints(lout)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -424,7 +424,7 @@ Change window key.
 Set layout hints for this window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| lout | Int |   |   |
+| lout | Int |   |   |
 
 ### setSelector(sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -432,7 +432,7 @@ Set layout hints for this window.
 Set the message identifier for this window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sel | Int |   |   |
+| sel | Int |   |   |
 
 ### setTarget(t)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -440,7 +440,7 @@ Set the message identifier for this window.
 Set the message target object for this window.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| t | FXObject |   |   |
+| t | FXObject |   |   |
 
 ### setWidth(w)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -448,7 +448,7 @@ Set the message target object for this window.
 Set the window width.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| w | Int |   |   |
+| w | Int |   |   |
 
 ### setX(x)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -456,7 +456,7 @@ Set the window width.
 Set this window's x-coordinate, in the parent's coordinate system.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
+| x | Int |   |   |
 
 ### setY(y)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -464,7 +464,7 @@ Set this window's x-coordinate, in the parent's coordinate system.
 Set this window's y-coordinate, in the parent's coordinate system.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| y | Int |   |   |
+| y | Int |   |   |
 
 ### show()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -484,11 +484,11 @@ Return True if the window is shown.
 Translate coordinates from this window's coordinate space to towindow's coordinate space.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tox | Int |   |   |
-| toy | Int |   |   |
-| towindow | FXWindow |   |   |
-| fromx | Int |   |   |
-| fromy | Int |   |   |
+| tox | Int |   |   |
+| toy | Int |   |   |
+| towindow | FXWindow |   |   |
+| fromx | Int |   |   |
+| fromy | Int |   |   |
 
 ### ungrab()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -506,10 +506,10 @@ Mark the entire window client area dirty.
 Mark the specified rectangle dirty, i.e. to be repainted.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| x | Int |   |   |
-| y | Int |   |   |
-| w | Int |   |   |
-| h | Int |   |   |
+| x | Int |   |   |
+| y | Int |   |   |
+| w | Int |   |   |
+| h | Int |   |   |
 
 ### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

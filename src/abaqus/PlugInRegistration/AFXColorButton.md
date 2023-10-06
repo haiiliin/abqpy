@@ -8,8 +8,8 @@ This class contains a label that precedes a color well, which allows the user to
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| text | String |   | Label string. |
+| p | FXComposite |   | Parent widget. |
+| text | String |   | Label string. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |
 | opts | Int | 0 | Options and hints. |
@@ -74,7 +74,7 @@ Returns the tool tip message.
 Sets the status line help text.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### setLabelFont(fnt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -82,7 +82,7 @@ Sets the status line help text.
 Sets the label font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fnt | FXFont |   |   |
+| fnt | FXFont |   |   |
 
 ### setLabelText(txt)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -90,7 +90,7 @@ Sets the label font.
 Sets the label string.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| txt | String |   |   |
+| txt | String |   |   |
 
 ### setRGBA(clr)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -98,7 +98,7 @@ Sets the label string.
 Sets the color of the button.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| clr | FXColor |   |   |
+| clr | FXColor |   |   |
 
 ### setTipText(text)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -106,7 +106,7 @@ Sets the color of the button.
 Sets the tool tip message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| text | String |   |   |
+| text | String |   |   |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

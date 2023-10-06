@@ -10,8 +10,8 @@ Copyright notice of library.
 Construct application object; the name and vendor strings are used as keys into the registry database for this application's settings
 
 | **Argument** | **Type** | **Default** | **Description** |
-| name | String | Application |   |
-| vendor | String | FoxDefault |   |
+| name | String | Application |   |
+| vendor | String | FoxDefault |   |
 
 ### addChore(tgt, sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -19,8 +19,8 @@ Construct application object; the name and vendor strings are used as keys into 
 Add a idle processing message to be sent to target object when the system becomes idle, i.e. there are no events to be processed.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| tgt | FXObject |   |   |
-| sel | Int |   |   |
+| tgt | FXObject |   |   |
+| sel | Int |   |   |
 
 ### addInput(fd, mode, tgt, sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -30,10 +30,10 @@ Add a file descriptor fd to be watched for activity as determined by mode, where
 On Windows, a Win32 event, not a file descriptor, must be specified. The client code for this interface must be platform-dependent. See addSocket below for a portable interface. CAE
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fd | FXInputHandle |   |   |
-| mode | Int |   |   |
-| tgt | FXObject |   |   |
-| sel | Int |   |   |
+| fd | FXInputHandle |   |   |
+| mode | Int |   |   |
+| tgt | FXObject |   |   |
+| sel | Int |   |   |
 
 ### addSocket(sd, mode, tgt, sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -43,10 +43,10 @@ CAE Add a socket descriptor sd to be watched for activity as determined by mode,
 This is identical to addInput on Unix. It behaves the same on Windows.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sd | SOCKET |   |   |
-| mode | Int |   |   |
-| tgt | FXObject |   |   |
-| sel | Int |   |   |
+| sd | SOCKET |   |   |
+| mode | Int |   |   |
+| tgt | FXObject |   |   |
+| sel | Int |   |   |
 
 ### addTimeout(ms, tgt, sel)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -54,9 +54,9 @@ This is identical to addInput on Unix. It behaves the same on Windows.
 Add timeout message to be sent to target object in ms milliseconds; the timer fires only once after the interval expires.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| ms | Int |   |   |
-| tgt | FXObject |   |   |
-| sel | Int |   |   |
+| ms | Int |   |   |
+| tgt | FXObject |   |   |
+| sel | Int |   |   |
 
 ### beep()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -126,9 +126,9 @@ Obtain application-wide settings.
 Initialize application. Parses and removes common command line arguments, reads the registry. Finally, if connect is True, it opens the display.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| argc | Int |   |   |
-| argv | String |   |   |
-| connect | Bool | True |   |
+| argc | Int |   |   |
+| argv | String |   |   |
+| connect | Bool | True |   |
 
 ### peekEvent()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -146,7 +146,7 @@ Schedule a refresh.
 Remove idle processing message.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| c | FXChore |   |   |
+| c | FXChore |   |   |
 
 ### removeInput(fd, mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -154,8 +154,8 @@ Remove idle processing message.
 Remove input message and target object for the specified file descriptor and mode, which is a bitwise OR of (INPUT\_READ, INPUT\_WRITE, INPUT_EXCEPT).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| fd | FXInputHandle |   |   |
-| mode | Int |   |   |
+| fd | FXInputHandle |   |   |
+| mode | Int |   |   |
 
 ### removeSocket(sd, mode)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -163,8 +163,8 @@ Remove input message and target object for the specified file descriptor and mod
 CAE Remove input message and target object for the specified socket descriptor and mode, which is a bitwise OR of (INPUT\_READ, INPUT\_WRITE, INPUT_EXCEPT).
 
 | **Argument** | **Type** | **Default** | **Description** |
-| sd | SOCKET |   |   |
-| mode | Int |   |   |
+| sd | SOCKET |   |   |
+| mode | Int |   |   |
 
 ### removeTimeout(t)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -172,7 +172,7 @@ CAE Remove input message and target object for the specified socket descriptor a
 Remove timeout, returns NULL.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| t | FXTimer |   |   |
+| t | FXTimer |   |   |
 
 ### repaint()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -199,7 +199,7 @@ Run an event loop till some flag becomes non-zero.
 Reimplemented in AFXApp.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| condition | Int |   |   |
+| condition | Int |   |   |
 
 ### runWhileEvents(window=None)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -207,7 +207,7 @@ Reimplemented in AFXApp.
 Run event loop while there are events are available in the queue. Returns 1 when all events in the queue have been handled, and 0 when the event loop was terminated due to stop() or stopModal(). Except for the modal window and its children, user input to all windows is blocked; if the modal window is NULL all user input is blocked.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| window | FXWindow | None |   |
+| window | FXWindow | None |   |
 
 ### setBorderColor(color)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -215,7 +215,7 @@ Run event loop while there are events are available in the queue. Returns 1 when
 Change default colors.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| color | FXColor |   |   |
+| color | FXColor |   |   |
 
 ### setNormalFont(font)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -223,7 +223,7 @@ Change default colors.
 Change default font.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| font | FXFont |   |   |
+| font | FXFont |   |   |
 
 ### setTypingSpeed(speed)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -231,7 +231,7 @@ Change default font.
 Change application-wide settings.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| speed | Int |   |   |
+| speed | Int |   |   |
 
 ### stop(value=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -239,7 +239,7 @@ Change application-wide settings.
 Terminate the outermost event loop, and all inner modal loops; All more deeper nested event loops will be terminated with code equal to 0, while the outermost event loop will return code equal to value.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| value | Int | 0 |   |
+| value | Int | 0 |   |
 
 ### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

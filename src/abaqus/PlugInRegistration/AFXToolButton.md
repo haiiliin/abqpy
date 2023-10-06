@@ -14,8 +14,8 @@ This class contains a button for use in the tool bar or the toolbox.
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   | Parent widget. |
-| label | String |   | Label for the button. |
+| p | FXComposite |   | Parent widget. |
+| label | String |   | Label for the button. |
 | icon | FXIcon | None | Icon for the button. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |

@@ -12,9 +12,9 @@ This class provides the interface for creating an FXMenuCommand and performing v
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| owner | AFXGuiObjectManager |   | Creator of the menu command. |
-| p | FXComposite |   | Parent widget. |
-| label | String |   | Label for the menu button. |
+| owner | AFXGuiObjectManager |   | Creator of the menu command. |
+| p | FXComposite |   | Parent widget. |
+| label | String |   | Label for the menu button. |
 | ic | FXIcon | None | Menu button icon. |
 | tgt | FXObject | None | Message target. |
 | sel | Int | 0 | Message ID. |

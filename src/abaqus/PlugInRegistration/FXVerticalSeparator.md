@@ -14,16 +14,16 @@ Vertical separator
 Constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| opts | Int | SEPARATOR\_GROOVE| LAYOUT\_FILL_Y |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | 0 |   |
-| pr | Int | 0 |   |
-| pt | Int | 1 |   |
-| pb | Int | 1 |   |
+| p | FXComposite |   |   |
+| opts | Int | SEPARATOR\_GROOVE| LAYOUT\_FILL_Y |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | 0 |   |
+| pr | Int | 0 |   |
+| pt | Int | 1 |   |
+| pb | Int | 1 |   |
 
 ### getDefaultHeight
 

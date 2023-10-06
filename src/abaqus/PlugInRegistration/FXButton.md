@@ -14,20 +14,20 @@ A button provides a push button, with optional icon and/or text label. When pres
 Construct button with text and icon.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXComposite |   |   |
-| text | String |   |   |
-| ic | FXIcon | None |   |
-| tgt | FXObject | None |   |
-| sel | Int | 0 |   |
-| opts | Int | BUTTON_NORMAL |   |
-| x | Int | 0 |   |
-| y | Int | 0 |   |
-| w | Int | 0 |   |
-| h | Int | 0 |   |
-| pl | Int | DEFAULT_PAD |   |
-| pr | Int | DEFAULT_PAD |   |
-| pt | Int | DEFAULT_PAD |   |
-| pb | Int | DEFAULT_PAD |   |
+| p | FXComposite |   |   |
+| text | String |   |   |
+| ic | FXIcon | None |   |
+| tgt | FXObject | None |   |
+| sel | Int | 0 |   |
+| opts | Int | BUTTON_NORMAL |   |
+| x | Int | 0 |   |
+| y | Int | 0 |   |
+| w | Int | 0 |   |
+| h | Int | 0 |   |
+| pl | Int | DEFAULT_PAD |   |
+| pr | Int | DEFAULT_PAD |   |
+| pt | Int | DEFAULT_PAD |   |
+| pb | Int | DEFAULT_PAD |   |
 
 ### canFocus
 
@@ -70,7 +70,7 @@ Get the button state.
 Set the button style flags.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| style | Int |   |   |
+| style | Int |   |   |
 
 ### setDefault
 
@@ -84,7 +84,7 @@ Set as default button.
 Reimplemented from FXWindow.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| enable | Bool | True |   |
+| enable | Bool | True |   |
 
 ### setState
 
@@ -96,7 +96,7 @@ Reimplemented from FXWindow.
 Set the button state.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| s | Int |   |   |
+| s | Int |   |   |
 
 ### Global flags  
 ![](../IconsReference/butix_top_wline.png)

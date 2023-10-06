@@ -13,7 +13,7 @@ Default constructor.
 Copy constructor.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| orig | FXObjectList |   |   |
+| orig | FXObjectList |   |   |
 
 ### append(p)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -21,7 +21,7 @@ Copy constructor.
 Append element.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXObject |   |   |
+| p | FXObject |   |   |
 
 ### clear()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -34,8 +34,8 @@ Remove all elements.
 Find object in list, searching backward; return position or -1.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXObject |   |   |
-| pos | Int | 2147483647 |   |
+| p | FXObject |   |   |
+| pos | Int | 2147483647 |   |
 
 ### findf(p, pos=0)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -43,8 +43,8 @@ Find object in list, searching backward; return position or -1.
 Find object in list, searching forward; return position or -1.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXObject |   |   |
-| pos | Int | 0 |   |
+| p | FXObject |   |   |
+| pos | Int | 0 |   |
 
 ### insert(pos, p)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -52,8 +52,8 @@ Find object in list, searching forward; return position or -1.
 Insert element at certain position.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
-| p | FXObject |   |   |
+| pos | Int |   |   |
+| p | FXObject |   |   |
 
 ### no(n)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -61,7 +61,7 @@ Insert element at certain position.
 Set number of elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| n | Int |   |   |
+| n | Int |   |   |
 
 ### no()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -74,7 +74,7 @@ Return number of elements.
 Remove element p.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| p | FXObject |   |   |
+| p | FXObject |   |   |
 
 ### remove(pos)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -82,7 +82,7 @@ Remove element p.
 Remove element at pos.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| pos | Int |   |   |
+| pos | Int |   |   |
 
 ### size(m)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
@@ -90,7 +90,7 @@ Remove element at pos.
 Set max number of elements.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| m | Int |   |   |
+| m | Int |   |   |
 
 ### size()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
