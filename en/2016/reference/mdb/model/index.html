@@ -2175,6 +2175,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin.html" class="md-nav__link">
+        <span class="md-ellipsis">Plug-<wbr>in Registration</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -4264,7 +4279,7 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Model.ModelBase.KeywordBlock">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">KeywordBlock</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/Model/ModelBase.py#L8-L119"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.ModelBase.KeywordBlock" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The KeywordBlock object contains a representation of its model in the Abaqus input file format. You may
 edit the contents of the KeywordBlock to add solver functionality that is not supported by Abaqus/CAE. As a
 general rule, edits to the KeywordBlock object should be made as the last step prior to writing the actual
@@ -4310,7 +4325,7 @@ keyword and its associated data</p>
 </dl>
 </dd>
 <dt class="field-even" id="abaqus.Model.ModelBase.KeywordBlock.insert-raises">Raises<span class="colon">:</span><a class="headerlink" href="#abaqus.Model.ModelBase.KeywordBlock.insert-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.11)"><strong>IndexError</strong></a> – </p>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.12)"><strong>IndexError</strong></a> – </p>
 </dd>
 </dl>
 </dd></dl>
@@ -4341,7 +4356,7 @@ keyword and its associated data.</p>
 </dl>
 </dd>
 <dt class="field-even" id="abaqus.Model.ModelBase.KeywordBlock.replace-raises">Raises<span class="colon">:</span><a class="headerlink" href="#abaqus.Model.ModelBase.KeywordBlock.replace-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.11)"><strong>IndexError</strong></a> – </p>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.12)"><strong>IndexError</strong></a> – </p>
 </dd>
 </dl>
 </dd></dl>
@@ -4411,7 +4426,7 @@ this information from other parts of the Mdb.</p>
 </dl>
 </dd>
 <dt class="field-even" id="abaqus.Model.ModelBase.KeywordBlock.synchVersions-raises">Raises<span class="colon">:</span><a class="headerlink" href="#abaqus.Model.ModelBase.KeywordBlock.synchVersions-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.11)"><strong>IndexError</strong></a> – </p>
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#IndexError" title="(in Python v3.12)"><strong>IndexError</strong></a> – </p>
 </dd>
 </dl>
 </dd></dl>
@@ -4422,7 +4437,7 @@ this information from other parts of the Mdb.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Model.ModelBase.ModelBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelBase</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">NOT_SET</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">STANDARD_EXPLICIT</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2016/src/abaqus/Model/ModelBase.py#L55-L489"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Model.ModelBase.ModelBase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
