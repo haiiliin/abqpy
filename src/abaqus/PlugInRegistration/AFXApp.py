@@ -76,7 +76,7 @@ class AFXApp(FXApp):
     def getVersionNumbers(self):
         """Returns the major, minor, and update numbers."""
 
-    def init(self, argc: int, argv: str):
+    def init(self, argc: int, argv: str, *args, **kwargs):
         """Initializes the application and connects to the kernel.
 
         Parameters

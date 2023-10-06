@@ -90,7 +90,7 @@ class AFXGuiMode(AFXMode):
     def getPressedButtonId(self):
         """Returns the ID of the button that the user pressed in the currently posted dialog box."""
 
-    def handleException(self, exc: nex_Exception):
+    def handleException(self, exc):
         """Posts a dialog box with an error message for the given exception. The derived class should redefine
         this method if it needs to handle the exception differently.
 
@@ -100,7 +100,7 @@ class AFXGuiMode(AFXMode):
             Exception.
         """
 
-    def handleKeywordException(self, exc: nex_Exception):
+    def handleKeywordException(self, exc):
         """Posts a dialog box with an error message for the given exception thrown by a keyword during data
         validation.
 

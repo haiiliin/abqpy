@@ -5,7 +5,9 @@ These functions can be accessed by::
     from abaqusGui import getAFXApp
     toolset=getAFXApp().getAFXMainWindow().getPluginToolset()
 """
-from .constants import ALL
+from typing import Sequence
+
+from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant
 from .FXIcon import FXIcon
 
 
@@ -13,8 +15,8 @@ def registerKernelMenuButton(
     moduleName: str,
     functionName: str,
     buttonText: str = "",
-    icon: FXIcon = None,
-    applicableModules: str = ALL,
+    icon: FXIcon | None = None,
+    applicableModules: SymbolicConstant | Sequence[str] = ALL,
     version: str = "N/A",
     author: str = "N/A",
     description: str = "N/A",
@@ -59,8 +61,8 @@ def registerKernelToolButton(
     moduleName: str,
     functionName: str,
     buttonText: str = "",
-    icon: FXIcon = None,
-    applicableModules: str = ALL,
+    icon: FXIcon | None = None,
+    applicableModules: SymbolicConstant | Sequence[str] = ALL,
     version: str = "N/A",
     author: str = "N/A",
     description: str = "N/A",

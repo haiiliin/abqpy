@@ -45,7 +45,7 @@ class AFXDialog(FXDialogBox):
             Height of the widget.
         """
 
-    def appendActionButton(self, buttonID: ButtonID):
+    def appendActionButton(self, buttonID):
         """Adds a standard action button in the action area of the dialog box.
 
         Parameters

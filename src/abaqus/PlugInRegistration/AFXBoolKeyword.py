@@ -14,7 +14,7 @@ class AFXBoolKeyword(AFXKeyword):
         self,
         command: AFXCommand,
         name: str,
-        booleanType: Type = ON_OFF,
+        booleanType = ON_OFF,
         isRequired: bool = False,
         defaultValue: bool = False,
     ):

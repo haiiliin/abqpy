@@ -48,7 +48,7 @@ class AFXList(FXList):
             Height of the widget.
         """
 
-    def appendItem(self, text: str, icon: FXIcon | None = None, sel: int = 0):
+    def appendItem(self, text: str, icon: FXIcon | None = None, sel: int = 0):  # type: ignore
         """Adds a new item to the end of the list.
 
         Parameters
@@ -99,7 +99,7 @@ class AFXList(FXList):
         If more than one item or no items are selected, returns -1.
         """
 
-    def insertItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):
+    def insertItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):  # type: ignore
         """Inserts a new item at the given index.
 
         Parameters
@@ -114,7 +114,7 @@ class AFXList(FXList):
             Integer associated with this item
         """
 
-    def replaceItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):
+    def replaceItem(self, index: int, text: str, icon: FXIcon | None = None, sel: int = 0):  # type: ignore
         """Replaces the item at the given index.
 
         Parameters

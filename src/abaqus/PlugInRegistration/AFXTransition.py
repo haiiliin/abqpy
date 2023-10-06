@@ -13,6 +13,9 @@ class AFXTransition(FXObject):
     When the expression evaluates to True, a message with the given selector will be sent to the specified
     message target.
     """
+    
+    class Operator:
+        ...
 
     def __init__(
         self, intTarget: AFXIntTarget, op: Operator, refValue: int, tgt: FXObject, sel: int, ptr: str = "None"

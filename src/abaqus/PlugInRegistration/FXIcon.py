@@ -10,7 +10,7 @@ from .FXImage import FXImage
 class FXIcon(FXImage):
     """Icon class."""
 
-    def __init__(self, a: FXApp, pix: Any | None = None, clr: FXColor = 0, opts: int = 0, w: int = 1, h: int = 1):
+    def __init__(self, a: FXApp, pix: Any | None = None, clr: FXColor | int = 0, opts: int = 0, w: int = 1, h: int = 1):
         """Create an icon with an initial pixel buffer pix, a transparent color clr, and options as in FXImage.
 
         Parameters

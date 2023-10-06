@@ -11,7 +11,7 @@ from .FXObject import FXObject
 class AFXProcedure(AFXGuiMode):
     """This class provides the basis for writing procedures."""
 
-    def __init__(self, owner: AFXGuiObjectManager, type: typeEnum = NORMAL):
+    def __init__(self, owner: AFXGuiObjectManager, type = NORMAL):
         """Constructor.
 
         Parameters
@@ -85,7 +85,7 @@ class AFXProcedure(AFXGuiMode):
     def getNumSteps(self):
         """Returns the number of steps in the step stack."""
 
-    def handleException(self, exc: nex_Exception):
+    def handleException(self, exc):
         """This method is called if an error occurs while issuing commands. It can be reimplemented in derived
         classes to perform special error handling.
 
@@ -160,10 +160,10 @@ class AFXProcedure(AFXGuiMode):
 
     def setSelectionOptions(
         self,
-        pickDepth: pickDepthEnum = CLOSEST,
-        pickScope: pickScopeEnum = ALL,
-        dragShape: dragShapeEnum = RECTANGLE,
-        dragScope: dragScopeEnum = INSIDE_CROSSING,
+        pickDepth = CLOSEST,
+        pickScope = ALL,
+        dragShape = RECTANGLE,
+        dragScope = INSIDE_CROSSING,
         isoLines: bool = True,
     ):
         """Sets the selection options to be used for picking.
