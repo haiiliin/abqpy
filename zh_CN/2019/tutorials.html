@@ -1264,7 +1264,7 @@
 </code></pre></div>
 </div>
 <h3 id="open-the-output-database">打开输出数据库<a class="headerlink" href="#open-the-output-database" title="此标题的永久链接">¶</a></h3>
-<p>我们可以使用 <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/index.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb (Python 方法) — This method opens an existing output database (.odb) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example:"><code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code></a> 方法打开输出数据库：</p>
+<p>我们可以使用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code> 方法打开输出数据库：</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">visualization</span>
 <span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;Job-1.odb&#39;</span><span class="p">)</span>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport: 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">odb</span><span class="p">)</span>
