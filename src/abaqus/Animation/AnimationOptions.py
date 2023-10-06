@@ -21,10 +21,9 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class AnimationOptions(_OptionsBase):
-    """The AnimationOptions object is used to store values and attributes associated with an
-    AnimationController object.
-    The AnimationOptions object has no constructor command. Abaqus creates the
-    **animationOptions** member when it creates the AnimationController object.
+    """The AnimationOptions object is used to store values and attributes associated with an AnimationController
+    object. The AnimationOptions object has no constructor command. Abaqus creates the **animationOptions**
+    member when it creates the AnimationController object.
 
     .. note::
         This object can be accessed by::

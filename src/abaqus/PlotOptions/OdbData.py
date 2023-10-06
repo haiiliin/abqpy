@@ -25,10 +25,9 @@ from .TieConstraint import TieConstraint
 
 @abaqus_class_doc
 class OdbData(_OptionsBase):
-    """The OdbData object stores non persistent values and attributes associated with an open
-    odb for the given session. The OdbData object has no constructor. Abaqus creates the
-    **odbData** repository when you import the Visualization module. Abaqus creates a OdbData
-    object when an odb is opened.
+    """The OdbData object stores non persistent values and attributes associated with an open odb for the given
+    session. The OdbData object has no constructor. Abaqus creates the **odbData** repository when you import
+    the Visualization module. Abaqus creates a OdbData object when an odb is opened.
 
     .. note::
         This object can be accessed by::

@@ -28,12 +28,12 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CommonOptions(DGCommonOptions):
-    """The CommonOptions object stores values and attributes that are common to all plot
-    states. The CommonOptions object has no constructor command. Abaqus creates a
-    *defaultOdbDisplay.commonOptions* member when you import the Visualization module.
-    Abaqus creates a **commonOptions** member when it creates the OdbDisplay object, using the
-    values from *defaultOdbDisplay.commonOptions*. Abaqus creates the **odbDisplay** member
-    when a viewport is created, using the values from **defaultOdbDisplay**.
+    """The CommonOptions object stores values and attributes that are common to all plot states. The
+    CommonOptions object has no constructor command. Abaqus creates a *defaultOdbDisplay.commonOptions* member
+    when you import the Visualization module. Abaqus creates a **commonOptions** member when it creates the
+    OdbDisplay object, using the values from *defaultOdbDisplay.commonOptions*. Abaqus creates the
+    **odbDisplay** member when a viewport is created, using the values from **defaultOdbDisplay**.
+
     CommonOptions objects are accessed in one of two ways:
     - The default common options. These settings are used as defaults when other
     **commonOptions** members are created. These settings can be set to customize user

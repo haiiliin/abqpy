@@ -14,10 +14,9 @@ from ..UtilityAndView.abaqusConstants import (
 
 @abaqus_class_doc
 class DGSymbolOptions:
-    """The DGSymbolOptions object stores values and attributes associated with a symbol plot.
-    The DGSymbolOptions object has no constructor command. Abaqus creates an
-    *odbDisplayOptions.symbolOptions* member when a display group instance is created, using
-    values from *odbDisplay.symbolOptions*.
+    """The DGSymbolOptions object stores values and attributes associated with a symbol plot. The
+    DGSymbolOptions object has no constructor command. Abaqus creates an *odbDisplayOptions.symbolOptions*
+    member when a display group instance is created, using values from *odbDisplay.symbolOptions*.
 
     .. note::
         This object can be accessed by::

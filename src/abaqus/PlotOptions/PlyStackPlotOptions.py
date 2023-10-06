@@ -18,8 +18,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PlyStackPlotOptions(_OptionsBase):
-    """The PlyStackPlotOptions object stores values and attributes associated with aViewport
-    object. The PlyStackPlotOptions object has no constructor command. Abaqus creates the
+    """The PlyStackPlotOptions object stores values and attributes associated with aViewport object. The
+    PlyStackPlotOptions object has no constructor command. Abaqus creates the
     *detailPlotOptions.plyStackPlotPlotOptions* member whenever a Viewport is created.
 
     .. note::

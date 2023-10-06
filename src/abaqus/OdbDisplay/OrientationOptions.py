@@ -21,13 +21,13 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class OrientationOptions(DGOrientationOptions):
-    """The OrientationOptions object stores values and attributes associated with a material
-    orientation plot. The OrientationOptions object has no constructor command. Abaqus
-    creates a *defaultOdbDisplay.materialOrientationOptions* member when you import the
-    Visualization module. Abaqus creates a **materialOrientationOptions** member when it
-    creates the OdbDisplay object, using the values from
-    *defaultOdbDisplay.materialOrientationOptions*. Abaqus creates the **odbDisplay** member
-    when a viewport is created, using the values from **defaultOdbDisplay**.
+    """The OrientationOptions object stores values and attributes associated with a material orientation plot.
+    The OrientationOptions object has no constructor command. Abaqus creates a
+    *defaultOdbDisplay.materialOrientationOptions* member when you import the Visualization module. Abaqus
+    creates a **materialOrientationOptions** member when it creates the OdbDisplay object, using the values from
+    *defaultOdbDisplay.materialOrientationOptions*. Abaqus creates the **odbDisplay** member when a viewport is
+    created, using the values from **defaultOdbDisplay**.
+
     OrientationOptions objects are accessed in one of two ways:
     - The default material orientation options. These settings are used as defaults when
     other **materialOrientationOptions** members are created. These settings can be set to

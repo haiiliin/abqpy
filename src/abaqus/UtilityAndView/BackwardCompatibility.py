@@ -5,17 +5,15 @@ from ..UtilityAndView.abaqusConstants import ON, Boolean
 
 @abaqus_class_doc
 class BackwardCompatibility:
-    """The BackwardCompatibility object enables the user to control access to deprecated
-    commands in the Abaqus Scripting Interface and to collect data on which deprecated
-    commands have been used. This enables the user to check that no deprecated methods,
-    members, or arguments have been used. Data are recorded on any deprecated members,
-    methods, or arguments that are used.
-    The BackwardCompatibility object has no constructor. The abaqus module and the odbAccess
-    module each have a member named backwardCompatibility.
-    By default, the value of the **includeDeprecated** member is ON, and Abaqus will execute a
-    script containing deprecated commands with no indication that you should update the
-    script. You can do either of the following to change the value of the
-    **includeDeprecated** member and to determine which commands have been deprecated:
+    """The BackwardCompatibility object enables the user to control access to deprecated commands in the Abaqus
+    Scripting Interface and to collect data on which deprecated commands have been used. This enables the user
+    to check that no deprecated methods, members, or arguments have been used. Data are recorded on any
+    deprecated members, methods, or arguments that are used. The BackwardCompatibility object has no
+    constructor. The abaqus module and the odbAccess module each have a member named backwardCompatibility. By
+    default, the value of the **includeDeprecated** member is ON, and Abaqus will execute a script containing
+    deprecated commands with no indication that you should update the script. You can do either of the following
+    to change the value of the **includeDeprecated** member and to determine which commands have been
+    deprecated:
 
     - From the command line interface in Abaqus/CAE or from an Abaqus Scripting Interface
       script that is run from within Abaqus/CAE, use the following command::

@@ -558,11 +558,11 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def PartFromMeshMirror(self, name: str, part: "PartBase", point1: tuple, point2: tuple):
-        """This method creates a Part object by mirroring an existing orphan mesh Part object about
-        a specified plane and places it in the parts repository. The result is a union of the
-        original and the mirrored copy. Contrast the PartFromMeshMirror method with the
-        **mirrorPlane** argument of the Part copy constructor. The **mirrorPlane** argument creates
-        only the second half of the part but does not unite the two halves.
+        """This method creates a Part object by mirroring an existing orphan mesh Part object about a specified
+        plane and places it in the parts repository. The result is a union of the original and the mirrored
+        copy. Contrast the PartFromMeshMirror method with the **mirrorPlane** argument of the Part copy
+        constructor. The **mirrorPlane** argument creates only the second half of the part but does not unite
+        the two halves.
 
         .. note::
             This function can be accessed by::
@@ -1455,13 +1455,12 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def projectEdgesOntoSketch(self, sketch: str, edges: tuple, constrainToBackground: Boolean = True):
-        """This method projects the selected edges of a part onto the specified ConstrainedSketch
-        object. The edges appear as sketch geometry after projection. If the plane of projection
-        is not parallel to the specified edge, the resultant sketch geometry may be of a
-        different type. For example, a circular edge can be projected as an ellipse or a line
-        depending on the angle of the plane of projection. By default, the projected edge will
-        be constrained to the background geometry. You can remove this constraint by setting
-        **constrainToBackground** to False.
+        """This method projects the selected edges of a part onto the specified ConstrainedSketch object. The
+        edges appear as sketch geometry after projection. If the plane of projection is not parallel to the
+        specified edge, the resultant sketch geometry may be of a different type. For example, a circular edge
+        can be projected as an ellipse or a line depending on the angle of the plane of projection. By default,
+        the projected edge will be constrained to the background geometry. You can remove this constraint by
+        setting **constrainToBackground** to False.
 
         Parameters
         ----------

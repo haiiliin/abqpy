@@ -8,16 +8,14 @@ from ..UtilityAndView.abaqusConstants import (
     SymbolicConstant,
 )
 
-"""The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a 
-later release. The upgradeScript module allows you to upgrade over several releases at 
-one time. It also allows you to upgrade only kernel commands, only GUI commands, or 
-both. 
+"""The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a later release. The
+upgradeScript module allows you to upgrade over several releases at one time. It also allows you to upgrade only
+kernel commands, only GUI commands, or both.
 
-.. note:: 
+.. note::
     This object can be accessed by::
 
         import upgradeScript
-
 """
 
 

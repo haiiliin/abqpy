@@ -81,9 +81,9 @@ class OdbStep(OdbStepBase):
     @overload
     @abaqus_method_doc
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
-        """This constructor creates an OdbFrame object in the frequency domain and appends it to
-        the frame sequence. The arguments to the constructor are valid only when
-        **domain** = FREQUENCY or **domain** = MODAL.
+        """This constructor creates an OdbFrame object in the frequency domain and appends it to the frame
+        sequence. The arguments to the constructor are valid only when **domain** = FREQUENCY or **domain** =
+        MODAL.
 
         .. note::
             This function can be accessed by::
