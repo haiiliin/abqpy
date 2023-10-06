@@ -10636,6 +10636,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin.html" class="md-nav__link">
+        <span class="md-ellipsis">Plug-<wbr>in Registration</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -21631,7 +21646,7 @@ OFF.</p>
 <dd class="field-odd"><dl class="simple api-field highlight">
 <dt id="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea.name"><span class="n sig-name">name</span><a class="headerlink" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea.name" title="永久链接至目标">¶</a></dt><dd><p>A String specifying the geometric restriction repository key.</p>
 </dd>
-<dt><span class="sig-name descname">region</span><span class="p"> : </span><span class="desctype"><a class="hxr-hoverxref hxr-tooltip reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Region" title="abaqus.Region.Region.Region (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f24c0da5b10&gt;</span></code></span></dt><dd><p>A Region object specifying the region to which the geometric restriction is applied.
+<dt><span class="sig-name descname">region</span><span class="p"> : </span><span class="desctype"><a class="hxr-hoverxref hxr-tooltip reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Region" title="abaqus.Region.Region.Region (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f8d5c847b50&gt;</span></code></span></dt><dd><p>A Region object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p>
 </dd>
@@ -22983,7 +22998,7 @@ OFF.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.TurnControl.GeometricRestriction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">GeometricRestriction</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/TurnControl.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.TurnControl.GeometricRestriction" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The GeometricRestriction object is the abstract base type for other GeometricRestriction objects. The
 GeometricRestriction object has no explicit constructor. The methods and members of the GeometricRestriction
 object are common to all objects derived from GeometricRestriction.</p>
@@ -23556,7 +23571,7 @@ default value is EVERY_CYCLE.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.TopologyTask.DesignResponse">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DesignResponse</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/TopologyTask.py#L4-L18"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.TopologyTask.DesignResponse" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The DesignResponse object is the abstract base type for other DesignResponse objects. The
 DesponseResponse object has no explicit constructor. The methods and members of the DesignResponse object
 are common to all objects derived from DesignResponse.</p>
@@ -23586,7 +23601,7 @@ are common to all objects derived from DesignResponse.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Optimization.TopologyTask.ObjectiveFunction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ObjectiveFunction</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">objectives</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">MINIMIZE</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/TopologyTask.py#L10-L81"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.TopologyTask.ObjectiveFunction" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The ObjectiveFunction object defines the objective of the optimization.</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
@@ -23649,7 +23664,7 @@ MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Optimization.TopologyTask.OptimizationConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationConstraint</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">designResponse</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">restrictionValue</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">restrictionMethod</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">ABSOLUTE_EQUAL</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/TopologyTask.py#L9-L110"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.TopologyTask.OptimizationConstraint" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The OptimizationConstraint object constrains an optimization from making changes to the topology of the
 model.</p>
 <div class="note admonition">
@@ -24298,7 +24313,7 @@ the default value is MODEL.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="abaqus.Optimization.OptimizationTask.FrozenArea.setValues-">参数<span class="colon">:</span><a class="headerlink" href="#abaqus.Optimization.OptimizationTask.FrozenArea.setValues-" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><dl class="simple api-field highlight">
-<dt><span class="sig-name descname">region</span><span class="p"> : </span><span class="desctype"><a class="hxr-hoverxref hxr-tooltip reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Region" title="abaqus.Region.Region.Region (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f24c0d95810&gt;</span></code></span></dt><dd><p>A Region object specifying the region to which the geometric restriction is applied.
+<dt><span class="sig-name descname">region</span><span class="p"> : </span><span class="desctype"><a class="hxr-hoverxref hxr-tooltip reference internal" href="part_assembly/region.html#abaqus.Region.Surface.Region" title="abaqus.Region.Region.Region (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f8d5c867f50&gt;</span></code></span></dt><dd><p>A Region object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p>
 </dd>
@@ -24518,7 +24533,7 @@ condition is applied. The default value is MODEL.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.TopologyTask.StopCondition">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StopCondition</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/TopologyTask.py#L6-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.TopologyTask.StopCondition" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The StopCondition object is the abstract base type for other StopCondition objects. The StopCondition
 object has no explicit constructor. The methods and members of the StopCondition object are common to all
 objects derived from StopCondition.</p>
@@ -24555,7 +24570,7 @@ condition is applied. The default value is MODEL.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjective">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationObjective</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/OptimizationObjectiveArray.py#L10-L36"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationObjectiveArray.OptimizationObjective" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>An OptimizationObjective is an object used to define objectives in an objective function.</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
@@ -24606,7 +24621,7 @@ OFF.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.OptimizationTaskBase.OptimizationTaskBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationTaskBase</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/OptimizationTaskBase.py#L13-L46"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.OptimizationTaskBase.OptimizationTaskBase" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The OptimizationTask object is the abstract base type for other OptimizationTask objects. The
 OptimizationTask object has no explicit constructor. The methods and members of the OptimizationTask object
 are common to all objects derived from OptimizationTask.</p>
@@ -27702,7 +27717,7 @@ default value is None.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Optimization.StepOptionArray.StepOption">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StepOption</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Optimization/StepOptionArray.py#L6-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Optimization.StepOptionArray.StepOption" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A StepOption is an object used to define step options in a design response.</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
