@@ -974,6 +974,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin.html" class="md-nav__link">
+        <span class="md-ellipsis">Plug-<wbr>in Registration</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1330,7 +1345,7 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.InputFileParser.InputFile.InputFile">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputFile</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/InputFileParser/InputFile.py#L6-L93"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The InputFile object is used to store the definitions in an Abaqus input file. InputFile objects can be
 created using the methods described in this section.</p>
 <div class="note admonition">
@@ -1440,7 +1455,7 @@ False.</p>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordSequence</span></code></p>
 </dd>
 <dt class="field-even" id="abaqus.InputFileParser.InputFile.InputFile.parse-">抛出<span class="colon">:</span><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.parse-" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.11）"><strong>ValueError</strong></a> – If you parse an input file more than once, a ValueError is raised for each subsequent
+<dd class="field-even"><p><a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.12）"><strong>ValueError</strong></a> – If you parse an input file more than once, a ValueError is raised for each subsequent
     parsing.</p>
 </dd>
 </dl>
@@ -1454,7 +1469,7 @@ False.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AbaqusNDarray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/InputFileParser/AbaqusNDarray.py#L4-L18"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The AbaqusNDarray object is a sequence object derived from numpy.ndarray and is used to store numeric
 keyword data from an Abaqus input file. This object is similar to the numpy.ndarray object, but the numeric
 elements are returned as standard Python objects, not numpy numeric types. The numeric elements can be:</p>
@@ -1477,7 +1492,7 @@ cases, it will be False.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.InputFileParser.Keyword.Keyword">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Keyword</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2020/src/abaqus/InputFileParser/Keyword.py#L6-L34"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.Keyword.Keyword" title="永久链接至目标">¶</a></dt>
-<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.11）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The Keyword object is used to store a keyword definition from an Abaqus input file. Keyword objects are
 returned via the InputFile.parse() method.</p>
 <div class="note admonition">
