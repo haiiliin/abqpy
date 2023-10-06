@@ -3,10 +3,10 @@ from __future__ import annotations
 from .AFXBoolKeyword import AFXBoolKeyword
 from .AFXDialog import AFXDialog
 from .AFXGuiMode import AFXGuiMode
+from .AFXTransition import AFXTransition
 from .constants import DIALOG_NORMAL
 from .FXObject import FXObject
 from .FXWindow import FXWindow
-from .AFXTransition import AFXTransition
 
 
 class AFXDataDialog(AFXDialog):
@@ -49,7 +49,13 @@ class AFXDataDialog(AFXDialog):
         """
 
     def addTransition(
-        self, keyword: AFXBoolKeyword, op: AFXTransition.Operator, value: bool, tgt: FXObject, sel: int, ptr: str = "None"
+        self,
+        keyword: AFXBoolKeyword,
+        op: AFXTransition.Operator,
+        value: bool,
+        tgt: FXObject,
+        sel: int,
+        ptr: str = "None",
     ):
         """Adds a finite state transition to the dialog box. When the expression "keyword.getValue() op value"
         evaluates to True, an sel message will be sent to the tgt object.

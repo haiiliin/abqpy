@@ -16,9 +16,9 @@ class AFXPickStep(AFXStep):
         keyword: AFXObjectKeyword,
         prompt: str,
         entitiesToPick: int,
-        numberToPick = ONE,
+        numberToPick=ONE,
         highlightLevel: int = 1,
-        sequenceStyle = ARRAY,
+        sequenceStyle=ARRAY,
     ):
         """Constructor.
 

@@ -11,7 +11,7 @@ from .FXObject import FXObject
 class AFXProcedure(AFXGuiMode):
     """This class provides the basis for writing procedures."""
 
-    def __init__(self, owner: AFXGuiObjectManager, type = NORMAL):
+    def __init__(self, owner: AFXGuiObjectManager, type=NORMAL):
         """Constructor.
 
         Parameters
@@ -160,10 +160,10 @@ class AFXProcedure(AFXGuiMode):
 
     def setSelectionOptions(
         self,
-        pickDepth = CLOSEST,
-        pickScope = ALL,
-        dragShape = RECTANGLE,
-        dragScope = INSIDE_CROSSING,
+        pickDepth=CLOSEST,
+        pickScope=ALL,
+        dragShape=RECTANGLE,
+        dragScope=INSIDE_CROSSING,
         isoLines: bool = True,
     ):
         """Sets the selection options to be used for picking.

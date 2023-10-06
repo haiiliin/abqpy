@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Type
-
 from .AFXCommand import AFXCommand
 from .AFXKeyword import AFXKeyword
 from .constants import ON_OFF
@@ -14,7 +12,7 @@ class AFXBoolKeyword(AFXKeyword):
         self,
         command: AFXCommand,
         name: str,
-        booleanType = ON_OFF,
+        booleanType=ON_OFF,
         isRequired: bool = False,
         defaultValue: bool = False,
     ):
