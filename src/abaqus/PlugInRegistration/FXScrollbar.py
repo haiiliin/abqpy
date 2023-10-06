@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import SCROLLBAR_VERTICAL
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXObject import FXObject

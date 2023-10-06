@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_PAD, FRAME_NORMAL
+from .constants import DEFAULT_PAD
 from .FXColor import FXColor
 from .FXComposite import FXComposite
-from .FXWindow import FXWindow
+from .FXWindow import FRAME_NORMAL, FXWindow
 
 #: Default justification is centered text.
 JUSTIFY_NORMAL: int = hash("JUSTIFY_NORMAL")

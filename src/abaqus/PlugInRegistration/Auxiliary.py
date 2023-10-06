@@ -6,7 +6,6 @@ from typing import Callable
 
 from .AFXApp import AFXApp
 from .AFXModuleGui import AFXModuleGui
-from .constants import FONT_PROPORTIONAL
 from .FXBMPIcon import FXBMPIcon
 from .FXFont import FXFont
 from .FXGIFIcon import FXGIFIcon
@@ -116,6 +115,15 @@ def getAFXApp() -> AFXApp:
 
 def getAFXAliasMap():
     """Returns the alias map."""
+
+
+FONT_PROPORTIONAL: int = hash("FONT_PROPORTIONAL")
+FONT_MONOSPACE: int = hash("FONT_MONOSPACE")
+FONT_REGULAR: int = hash("FONT_REGULAR")
+FONT_BOLD: int = hash("FONT_BOLD")
+FONT_ITALIC: int = hash("FONT_ITALIC")
+FONT_BASE: int = hash("FONT_BASE")
+FONT_SMALL: int = hash("FONT_SMALL")
 
 
 def getAFXFont(opts: int = FONT_PROPORTIONAL) -> FXFont:

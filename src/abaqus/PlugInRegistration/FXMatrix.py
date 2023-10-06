@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_SPACING, MATRIX_BY_ROWS
+from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXPacker import FXPacker
 

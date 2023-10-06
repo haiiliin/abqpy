@@ -4,7 +4,6 @@ from .AFXDialog import AFXDialog
 from .AFXGuiMode import AFXGuiMode
 from .AFXGuiObjectManager import AFXGuiObjectManager
 from .AFXStep import AFXStep
-from .constants import ALL, CLOSEST, INSIDE_CROSSING, NORMAL, RECTANGLE
 from .FXObject import FXObject
 
 

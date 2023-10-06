@@ -4,7 +4,6 @@ from .AFXBoolKeyword import AFXBoolKeyword
 from .AFXFileDialog import AFXFileDialog
 from .AFXIntTarget import AFXIntTarget
 from .AFXStringTarget import AFXStringTarget
-from .constants import AFXSELECTFILE_ANY
 from .FXWindow import FXWindow
 
 #: A single file, existing or not (to save to).

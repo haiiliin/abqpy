@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import AFXFLYOUT_NORMAL
 from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXPopup import FXPopup
@@ -16,6 +15,9 @@ AFXFLYOUT_TOOLBAR: int = hash("AFXFLYOUT_TOOLBAR")
 
 #: Popup horizontal.
 AFXFLYOUT_HORIZONTAL: int = hash("AFXFLYOUT_HORIZONTAL")
+
+#: Normal flyout button.
+AFXFLYOUT_NORMAL: int = hash("AFXFLYOUT_NORMAL")
 
 #: Popup vertical.
 AFXFLYOUT_VERTICAL: int = hash("AFXFLYOUT_VERTICAL")

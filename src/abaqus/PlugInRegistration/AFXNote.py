@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import NOTE_INFORMATION
 from .FXComposite import FXComposite
 from .FXHorizontalFrame import FXHorizontalFrame
 

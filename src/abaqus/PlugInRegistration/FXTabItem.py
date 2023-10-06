@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_PAD, TAB_TOP_NORMAL
+from .constants import DEFAULT_PAD
 from .FXIcon import FXIcon
 from .FXLabel import FXLabel
 from .FXTabBar import FXTabBar
@@ -16,6 +16,9 @@ TAB_RIGHT: int = hash("TAB_RIGHT")
 
 #: Bottom side tabs.
 TAB_BOTTOM: int = hash("TAB_BOTTOM")
+
+#: Normal tab item style.
+TAB_TOP_NORMAL: int = hash("TAB_TOP_NORMAL")
 
 
 class FXTabItem(FXLabel):

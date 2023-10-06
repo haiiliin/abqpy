@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import LIST_NORMAL
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXListItem import FXListItem
@@ -21,6 +20,9 @@ LIST_MULTIPLESELECT: int = hash("LIST_MULTIPLESELECT")
 
 #: Automatically select under cursor.
 LIST_AUTOSELECT: int = hash("LIST_AUTOSELECT")
+
+#: Normal list style.
+LIST_NORMAL: int = hash("LIST_NORMAL")
 
 
 class FXList(FXScrollArea):

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_SPACING, TABBOOK_NORMAL
+from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXPacker import FXPacker
@@ -19,6 +19,9 @@ TABBOOK_LEFTTABS: int = hash("TABBOOK_LEFTTABS")
 
 #: Tabs on right.
 TABBOOK_RIGHTTABS: int = hash("TABBOOK_RIGHTTABS")
+
+#: Normal tab book style.
+TABBOOK_NORMAL: int = hash("TABBOOK_NORMAL")
 
 
 class FXTabBar(FXPacker):

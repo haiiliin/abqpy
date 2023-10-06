@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_SPACING, GROUPBOX_NORMAL
+from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXPacker import FXPacker
 
@@ -12,6 +12,9 @@ GROUPBOX_TITLE_CENTER: int = hash("GROUPBOX_TITLE_CENTER")
 
 #: Title is right-justified.
 GROUPBOX_TITLE_RIGHT: int = hash("GROUPBOX_TITLE_RIGHT")
+
+#: Normal group box style.
+GROUPBOX_NORMAL: int = hash("GROUPBOX_NORMAL")
 
 
 class FXGroupBox(FXPacker):

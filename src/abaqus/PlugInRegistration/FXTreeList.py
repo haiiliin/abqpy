@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import TREELIST_NORMAL
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
@@ -38,6 +37,9 @@ TREELIST_CHECK_BOXES: int = hash("TREELIST_CHECK_BOXES")
 
 #: Propagate checked state to children and parents.
 TREELIST_PROPAGATE_CHECKS: int = hash("TREELIST_PROPAGATE_CHECKS")
+
+#: Normal tree list style.
+TREELIST_NORMAL: int = hash("TREELIST_NORMAL")
 
 
 class FXTreeList(FXScrollArea):

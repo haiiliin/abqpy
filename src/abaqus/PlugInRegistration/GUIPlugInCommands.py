@@ -2,7 +2,7 @@
 from typing import Sequence
 
 from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant
-from .constants import ID_ACTIVATE
+from .AFXMode import AFXMode
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 
@@ -11,7 +11,7 @@ def registerGuiMenuButton(
     toolboxName: str,
     object: FXObject,
     buttonText: str = "",
-    messageId: int = ID_ACTIVATE,
+    messageId: int = AFXMode.ID_ACTIVATE,
     icon: FXIcon | None = None,
     kernelInitString: str = "",
     applicableModules: SymbolicConstant | Sequence[str] = ALL,
@@ -68,7 +68,7 @@ def registerGuiMenuButton(
 def registerGuiToolButton(
     toolboxName: str,
     object: FXObject,
-    messageId: int = ID_ACTIVATE,
+    messageId: int = AFXMode.ID_ACTIVATE,
     buttonText: str = "",
     icon: FXIcon | None = None,
     kernelInitString: str = "",

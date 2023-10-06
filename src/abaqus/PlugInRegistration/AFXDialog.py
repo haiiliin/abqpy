@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import DIALOG_NORMAL
 from .FXApp import FXApp
 from .FXComposite import FXComposite
 from .FXDialogBox import FXDialogBox

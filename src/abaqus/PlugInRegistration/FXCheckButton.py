@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import CHECKBUTTON_NORMAL, DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXObject import FXObject

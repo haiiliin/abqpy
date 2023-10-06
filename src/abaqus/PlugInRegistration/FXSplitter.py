@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import SPLITTER_NORMAL
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 
@@ -15,6 +14,9 @@ SPLITTER_REVERSED: int = hash("SPLITTER_REVERSED")
 
 #: Track continuous during split.
 SPLITTER_TRACKING: int = hash("SPLITTER_TRACKING")
+
+#: Normal splitter style.
+SPLITTER_NORMAL: int = hash("SPLITTER_NORMAL")
 
 
 class FXSplitter(FXComposite):

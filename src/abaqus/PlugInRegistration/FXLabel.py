@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_PAD, LABEL_NORMAL
+from .constants import DEFAULT_PAD
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont

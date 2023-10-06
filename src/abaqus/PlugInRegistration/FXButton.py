@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import BUTTON_NORMAL, DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXLabel import FXLabel

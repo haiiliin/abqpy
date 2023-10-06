@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from .AFXCommand import AFXCommand
 from .AFXKeyword import AFXKeyword
-from .constants import ON_OFF
 
 
 class AFXBoolKeyword(AFXKeyword):

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from .AFXDataComponent import AFXDataComponent
-from .constants import AFXSLIDER_NORMAL
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXPacker import FXPacker

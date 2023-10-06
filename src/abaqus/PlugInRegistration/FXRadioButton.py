@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_PAD, RADIOBUTTON_NORMAL
+from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXObject import FXObject
@@ -10,6 +10,9 @@ RADIOBUTTON_AUTOGRAY: int = hash("RADIOBUTTON_AUTOGRAY")
 
 #: Automatically hide when not updated.
 RADIOBUTTON_AUTOHIDE: int = hash("RADIOBUTTON_AUTOHIDE")
+
+#: Normal radio button style.
+RADIOBUTTON_NORMAL: int = hash("RADIOBUTTON_NORMAL")
 
 
 class FXRadioButton(FXLabel):

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from .AFXDataComponent import AFXDataComponent
-from .constants import AFXTREETABLE_LIST_NORMAL, AFXTREETABLE_NORMAL
 from .FXComposite import FXComposite
 from .FXIcon import FXIcon
 from .FXObject import FXObject
@@ -37,6 +36,9 @@ AFXTREETABLE_NORMAL: int = hash("AFXTREETABLE_NORMAL")
 
 #: Do not pre-select any list item.
 AFXTREETABLE_LIST_PRESELECT_NONE: int = hash("AFXTREETABLE_LIST_PRESELECT_NONE")
+
+#: Normal list.
+AFXTREETABLE_LIST_NORMAL: int = hash("AFXTREETABLE_LIST_NORMAL")
 
 
 class AFXTreeTable(FXScrollArea, AFXDataComponent):

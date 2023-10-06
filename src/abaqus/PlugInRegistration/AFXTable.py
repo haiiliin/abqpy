@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from .AFXBaseTable import AFXBaseTable
 from .AFXDataComponent import AFXDataComponent
-from .constants import AFXTABLE_LIST_NORMAL, AFXTABLE_NORMAL, DEFAULT_MARGIN
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont

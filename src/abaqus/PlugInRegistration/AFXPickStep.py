@@ -4,7 +4,6 @@ from .AFXObjectKeyword import AFXObjectKeyword
 from .AFXProcedure import AFXProcedure
 from .AFXStep import AFXStep
 from .AFXTupleKeyword import AFXTupleKeyword
-from .constants import ARRAY, ONE
 
 
 class AFXPickStep(AFXStep):

@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import ARROW_NORMAL, DEFAULT_PAD
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFrame import FXFrame

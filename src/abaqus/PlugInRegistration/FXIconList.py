@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import ICONLIST_NORMAL
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
@@ -39,6 +38,9 @@ ICONLIST_ROWS: int = hash("ICONLIST_ROWS")
 
 #: Column-wise mode.
 ICONLIST_COLUMNS: int = hash("ICONLIST_COLUMNS")
+
+#: Normal icon list style.
+ICONLIST_NORMAL: int = hash("ICONLIST_NORMAL")
 
 
 class FXIconList(FXScrollArea):

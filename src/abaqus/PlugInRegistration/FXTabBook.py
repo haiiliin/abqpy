@@ -1,9 +1,12 @@
 from __future__ import annotations
 
-from .constants import DEFAULT_SPACING, TABBOOK_NORMAL
+from .constants import DEFAULT_SPACING
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXTabBar import FXTabBar
+
+#: Normal tab book style.
+TABBOOK_NORMAL: int = hash("TABBOOK_NORMAL")
 
 
 class FXTabBook(FXTabBar):

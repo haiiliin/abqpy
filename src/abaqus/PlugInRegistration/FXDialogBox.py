@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from .constants import PLACEMENT_CURSOR
 from .FXTopWindow import FXTopWindow
 from .FXWindow import FXWindow
 

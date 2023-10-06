@@ -4,9 +4,11 @@ from .AFXBoolKeyword import AFXBoolKeyword
 from .AFXDialog import AFXDialog
 from .AFXIntTarget import AFXIntTarget
 from .AFXStringTarget import AFXStringTarget
-from .constants import AFXSELECTFILE_ANY
 from .FXObject import FXObject
 from .FXWindow import FXWindow
+
+#: A single file, existing or not (to save to).
+AFXSELECTFILE_ANY: int = hash("AFXSELECTFILE_ANY")
 
 
 class AFXFileDialog(AFXDialog):
