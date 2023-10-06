@@ -18,7 +18,9 @@ from abaqus.PlugInRegistration.AFXDialog import AFXDialog  # noqa
 from abaqus.PlugInRegistration.AFXDialogStep import AFXDialogStep  # noqa
 from abaqus.PlugInRegistration.AFXEditSketchStep import AFXEditSketchStep  # noqa
 from abaqus.PlugInRegistration.AFXFileDialog import AFXFileDialog  # noqa
-from abaqus.PlugInRegistration.AFXFileSelectorDialog import AFXFileSelectorDialog  # noqa
+from abaqus.PlugInRegistration.AFXFileSelectorDialog import (  # noqa
+    AFXFileSelectorDialog,
+)
 from abaqus.PlugInRegistration.AFXFloatKeyword import AFXFloatKeyword  # noqa
 from abaqus.PlugInRegistration.AFXFloatSpinner import AFXFloatSpinner  # noqa
 from abaqus.PlugInRegistration.AFXFloatTarget import AFXFloatTarget  # noqa
@@ -48,7 +50,9 @@ from abaqus.PlugInRegistration.AFXOptionTreeList import AFXOptionTreeList  # noq
 from abaqus.PlugInRegistration.AFXOrderedPickStep import AFXOrderedPickStep  # noqa
 from abaqus.PlugInRegistration.AFXPickStep import AFXPickStep  # noqa
 from abaqus.PlugInRegistration.AFXProcedure import AFXProcedure  # noqa
-from abaqus.PlugInRegistration.AFXProcedureToolsetGui import AFXProcedureToolsetGui  # noqa
+from abaqus.PlugInRegistration.AFXProcedureToolsetGui import (  # noqa
+    AFXProcedureToolsetGui,
+)
 from abaqus.PlugInRegistration.AFXProgressBar import AFXProgressBar  # noqa
 from abaqus.PlugInRegistration.AFXSequenceString import AFXSequenceString  # noqa
 from abaqus.PlugInRegistration.AFXSlider import AFXSlider  # noqa
@@ -89,7 +93,9 @@ from abaqus.PlugInRegistration.FXFrame import FXFrame  # noqa
 from abaqus.PlugInRegistration.FXGIFIcon import FXGIFIcon  # noqa
 from abaqus.PlugInRegistration.FXGroupBox import FXGroupBox  # noqa
 from abaqus.PlugInRegistration.FXHorizontalFrame import FXHorizontalFrame  # noqa
-from abaqus.PlugInRegistration.FXHorizontalSeparator import FXHorizontalSeparator  # noqa
+from abaqus.PlugInRegistration.FXHorizontalSeparator import (  # noqa
+    FXHorizontalSeparator,
+)
 from abaqus.PlugInRegistration.FXIcon import FXIcon  # noqa
 from abaqus.PlugInRegistration.FXIconItem import FXIconItem  # noqa
 from abaqus.PlugInRegistration.FXIconList import FXIconList  # noqa

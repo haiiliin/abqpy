@@ -12,7 +12,6 @@ from .FXFont import FXFont
 from .FXGIFIcon import FXGIFIcon
 from .FXObject import FXObject
 from .FXPNGIcon import FXPNGIcon
-from .FXWindow import FXWindow
 from .FXXPMIcon import FXXPMIcon
 
 
