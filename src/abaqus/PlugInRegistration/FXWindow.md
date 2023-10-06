@@ -511,11 +511,9 @@ Mark the specified rectangle dirty, i.e. to be repainted.
 | w | Int |   |   |
 | h | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Layout hints for child widgets**
 
@@ -645,7 +643,6 @@ Explicit placement.
 
  |
 
-### 
 
 **Frame border appearance styles (for subclasses)**
 
@@ -690,7 +687,6 @@ Regular raised/thick border.
 
  |
 
-### 
 
 **Packing style (for packers)**
 
@@ -710,7 +706,6 @@ Uniform width.
 
  |
 
-### 
 
 **BackgroundStyle**
 

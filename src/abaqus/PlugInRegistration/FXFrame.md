@@ -167,11 +167,9 @@ Change shadow color.
 | **Argument** | **Type** | **Default** | **Description** |
 | clr | FXColor |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Justification modes used by certain subclasses**
 

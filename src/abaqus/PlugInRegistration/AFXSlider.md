@@ -201,11 +201,9 @@ Shows the slider.
 
 Reimplemented from FXWindow.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -220,11 +218,9 @@ Last ID for this class.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **options for tickmarks.**
 

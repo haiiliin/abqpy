@@ -69,11 +69,9 @@ Bring the child window at index to the top.
 | index | Int |   |   |
 | notify | Bool | False |   |
 
-###   
-Class flags  
+### Class flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **ID's that identify children of the switcher; these ID's can be used to set the current child by sending the switcher a message using MKUINT(id, SEL_COMMAND).**
 
@@ -128,11 +126,9 @@ ID for the 10th child.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Switcher options**
 

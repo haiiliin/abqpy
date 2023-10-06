@@ -87,11 +87,9 @@ Uncheck the item.
 
 Uncheck radio bullit.
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **States the menu command can be in**
 

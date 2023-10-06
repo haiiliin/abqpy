@@ -70,8 +70,7 @@ Sets the message target.
 | **Argument** | **Type** | **Default** | **Description** |
 | tgt | FXObject |   | New message target. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 By clicking on Send, you accept that Dassault Systèmes will process your personal data and may contact you for further information.

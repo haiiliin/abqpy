@@ -192,11 +192,9 @@ Sets the spinner's value.
 | val | Int |   | Value. |
 | notify | Bool | False | Notification flag. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 | **ID_BUTTON** | 
 
@@ -209,11 +207,9 @@ ID for the spinner.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX spinner options.**
 

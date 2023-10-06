@@ -192,11 +192,9 @@ Reimplemented in AFXProcedure.
 
 Checks whether keywords of active commands contain valid data and, if not, posts a dialog box with an error message.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 

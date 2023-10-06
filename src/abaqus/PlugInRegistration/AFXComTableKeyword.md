@@ -325,11 +325,9 @@ Sets the keyword's previous value to its current value.
 
 Implements AFXKeyword.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -349,11 +347,9 @@ For debugging.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for table options.**
 

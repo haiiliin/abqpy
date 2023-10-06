@@ -117,11 +117,9 @@ Sets the flyout button state.
 | **Argument** | **Type** | **Default** | **Description** |
 | state | Int |   | State (see FXButton's Button state bits). |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -136,11 +134,9 @@ ID used when hiding flyout item.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for flyout button options.**
 

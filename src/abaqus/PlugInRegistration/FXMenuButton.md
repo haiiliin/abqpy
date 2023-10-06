@@ -2,11 +2,9 @@ A menu button posts a popup menu when clicked. There are many ways to control th
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxmenubutton.png)
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Menu button options**
 

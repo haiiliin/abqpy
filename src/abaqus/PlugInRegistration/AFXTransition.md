@@ -96,11 +96,9 @@ Returns True and sends a message if the expression defined by the constructor ar
 | **Argument** | **Type** | **Default** | **Description** |
 | sender | FXObject |   | Message sender. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for specifying transition operators.**
 

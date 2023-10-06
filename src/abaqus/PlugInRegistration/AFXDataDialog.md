@@ -157,11 +157,9 @@ Handles the error that occurs when the given tuple keyword or target contains an
 
 Performs state processing during the GUI update cycles. This class provides an empty implementation of this method, and the derived class should redefine the method if it needs to process state updating.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -171,11 +169,9 @@ Used to update the state.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for data dialog box options.**
 

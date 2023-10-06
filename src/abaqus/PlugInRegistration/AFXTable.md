@@ -1380,11 +1380,9 @@ Controls the display of vertical gridlines in the table.
 | **Argument** | **Type** | **Default** | **Description** |
 | on | Bool | True | True if gridlines should be displayed. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for popup menu items.**
 
@@ -1474,7 +1472,6 @@ Display all menu items.
 
  |
 
-### 
 
 **Message ID's.**
 
@@ -1554,7 +1551,6 @@ ID for the "OK to overwrite?" warning dialog box.
 
  |
 
-### 
 
 | **IGNORE\_BOTTOM\_EMPTY_ROWS** | 
 
@@ -1562,7 +1558,6 @@ not exposed in python
 
  |
 
-### 
 
 **Flags for color flyouts (used for items of type COLOR).**
 
@@ -1587,7 +1582,6 @@ Color item has both As Is and Default in its flyout. This is the default option.
 
  |
 
-### 
 
 **Flags for how empty items should be handled by the AFXTable value-retrieving and error-checking API's**
 
@@ -1612,7 +1606,6 @@ Include empty rows at the bottom of the table.
 
  |
 
-### 
 
 **Flags for item alignment.**
 
@@ -1647,7 +1640,6 @@ Middle justified (vertical).
 
  |
 
-### 
 
 **Flags for item types.**
 
@@ -1687,7 +1679,6 @@ Item accepts color selection via a color flyout.
 
  |
 
-### 
 
 **Flags for real formats.**
 
@@ -1707,7 +1698,6 @@ Automatic.
 
  |
 
-### 
 
 **Flags for sorting items in a column.**
 
@@ -1727,11 +1717,9 @@ Sort items of the column in the descending order.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX table options.**
 
@@ -1791,7 +1779,6 @@ Default table options--use extended selection mode, columns are resizable, and l
 
  |
 
-### 
 
 **Flags for the table's list (for items of type LIST).**
 

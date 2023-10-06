@@ -62,11 +62,9 @@ Change the number of rows.
 | **Argument** | **Type** | **Default** | **Description** |
 | nr | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Matrix packing options**
 

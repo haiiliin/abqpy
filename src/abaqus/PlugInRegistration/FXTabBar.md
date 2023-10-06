@@ -109,11 +109,9 @@ Change tab tab style.
 | **Argument** | **Type** | **Default** | **Description** |
 | style | Int |   |   |
 
-###   
-Class flags  
+### Class flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 | **ID\_OPEN\_ITEM** | 
 
@@ -126,11 +124,9 @@ Switch to panel ID\_OPEN\_FIRST+i.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Tab Book options**
 

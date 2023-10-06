@@ -214,11 +214,9 @@ Change shadow color.
 | **Argument** | **Type** | **Default** | **Description** |
 | clr | FXColor |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Scrollbar styles**
 

@@ -625,11 +625,9 @@ Repaint item at index.
 | **Argument** | **Type** | **Default** | **Description** |
 | index | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Icon list styles**
 

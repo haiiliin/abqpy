@@ -126,11 +126,9 @@ Reimplemented from FXApp.
 
 Unlocks the GUI.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 

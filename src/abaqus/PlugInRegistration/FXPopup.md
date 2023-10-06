@@ -233,11 +233,9 @@ Change shrinkwrap mode.
 | **Argument** | **Type** | **Default** | **Description** |
 | sw | Bool |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Popup internal orientation**
 

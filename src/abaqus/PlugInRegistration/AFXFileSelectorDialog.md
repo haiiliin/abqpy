@@ -66,11 +66,9 @@ Constructor typically used to create a dialog box that is posted from another di
 | patterns | String | * | File filter patterns. |
 | patternIndexTgt | AFXIntTarget | None | Index used to select a file filter pattern when the dialog box is posted. |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **File selection modes**
 

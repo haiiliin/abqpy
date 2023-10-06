@@ -120,11 +120,9 @@ Return True if this is a socket.
 
 Return True if this is a symbolic link item.
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **File List options**
 

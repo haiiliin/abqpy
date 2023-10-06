@@ -28,11 +28,9 @@ Returns True because a tab item can receive focus.
 
 Reimplemented from FXWindow.
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Tab Item orientations which affect border**
 

@@ -228,11 +228,9 @@ Set window menu.
 | **Argument** | **Type** | **Default** | **Description** |
 | menu | FXPopup |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **MDI Child Window styles**
 

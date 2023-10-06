@@ -47,11 +47,9 @@ Return default width.
 
 Reimplemented from FXFrame.
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Separator Options**
 

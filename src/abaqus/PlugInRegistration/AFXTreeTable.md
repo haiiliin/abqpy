@@ -1265,11 +1265,9 @@ Makes the table to use a different, typically shaded, background color for read-
 | **Argument** | **Type** | **Default** | **Description** |
 | shadeItems | Bool |   | Specify True to use a different background color for read-only items. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for color flyouts (used for items of type COLOR).**
 
@@ -1294,7 +1292,6 @@ Color item has both As Is and Default in its flyout. This is the default option.
 
  |
 
-### 
 
 **Flags for item alignment.**
 
@@ -1334,7 +1331,6 @@ Middle justified (vertical).
 
  |
 
-### 
 
 **Flags for item types.**
 
@@ -1374,7 +1370,6 @@ Item accepts color selection via a color flyout.
 
  |
 
-### 
 
 **Flags for real formats.**
 
@@ -1394,11 +1389,9 @@ Automatic.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX tree table options.**
 
@@ -1448,7 +1441,6 @@ Default table options--use extended selection mode, columns are resizable, and l
 
  |
 
-### 
 
 **Flags for the table's list (for items of type LIST).**
 

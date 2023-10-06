@@ -63,11 +63,9 @@ Sets the note's message string.
 | **Argument** | **Type** | **Default** | **Description** |
 | message | String |   | Message. |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for note styles.**
 

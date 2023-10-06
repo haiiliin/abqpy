@@ -111,11 +111,9 @@ Change pixel at x,y.
 | y | Int |   |   |
 | color | FXColor |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Image rendering hints**
 

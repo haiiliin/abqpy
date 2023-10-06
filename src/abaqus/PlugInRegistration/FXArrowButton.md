@@ -134,11 +134,9 @@ Set tool tip message for this arrow button.
 | **Argument** | **Type** | **Default** | **Description** |
 | text | String |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Arrow style options**
 

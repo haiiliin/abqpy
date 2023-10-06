@@ -60,11 +60,9 @@ Reimplemented in FXInputDialog, and FXReplaceDialog.
 | **Argument** | **Type** | **Default** | **Description** |
 | placement | Int | PLACEMENT_CURSOR |   |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 | **ID_CANCEL** | 
 

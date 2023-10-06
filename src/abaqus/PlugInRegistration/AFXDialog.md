@@ -202,11 +202,9 @@ Posts the dialog box as a modal dialog box. The dialog box is centered against t
 | **Argument** | **Type** | **Default** | **Description** |
 | occludedWindow | FXWindow | None | Widget to be occluded (0 for the owner widget). |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -256,7 +254,6 @@ Dismiss button ID.
 
  |
 
-### 
 
 **Standard action button ID's.**
 
@@ -306,11 +303,9 @@ Adds a Yes to All button to action area.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for dialog box options.**
 

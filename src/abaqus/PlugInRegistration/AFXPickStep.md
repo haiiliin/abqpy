@@ -263,11 +263,9 @@ Sets the refinements to be used when picking xy objects.
 | **Argument** | **Type** | **Default** | **Description** |
 | refinement | Int |   | Refinement flag. |
 
-###   
-Class flags  
+### Class flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for the number of entities to pick.**
 
@@ -282,7 +280,6 @@ Allow one or more entities to be picked.
 
  |
 
-### 
 
 **Flags for refining pickable entities.**
 
@@ -382,7 +379,6 @@ Allow only exterior entities to be picked.
 
  |
 
-### 
 
 **Flags for pickable entities.**
 
@@ -547,7 +543,6 @@ Allow picking of XY coordinates from an XY plot, with the option to type in XY v
 
  |
 
-### 
 
 **Flags for the command sequence style of the picked items.**
 

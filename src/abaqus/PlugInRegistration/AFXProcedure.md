@@ -176,11 +176,9 @@ Checks whether keywords of active commands for the current dialog box contain va
 
 Reimplemented from AFXGuiMode.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -195,7 +193,6 @@ ID for the backup button.
 
  |
 
-### 
 
 **Flags for the drag scope.**
 
@@ -225,7 +222,6 @@ Pick entities outside the drag shape only.
 
  |
 
-### 
 
 **Flags for the drag shape.**
 
@@ -245,7 +241,6 @@ Use polygonal drag shape.
 
  |
 
-### 
 
 **Flags for the pick depth.**
 
@@ -260,7 +255,6 @@ Pick entities at any depth.
 
  |
 
-### 
 
 **Flags for the pick scope.**
 
@@ -280,7 +274,6 @@ Pick all entities.
 
  |
 
-### 
 
 **Flags for the activate action.**
 

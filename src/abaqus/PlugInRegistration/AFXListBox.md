@@ -219,11 +219,9 @@ Sets the tool tip message.
 | **Argument** | **Type** | **Default** | **Description** |
 | text | String |   |   |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -238,11 +236,9 @@ ID for the text field.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX list box options.**
 

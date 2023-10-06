@@ -241,11 +241,9 @@ Terminate the outermost event loop, and all inner modal loops; All more deeper n
 | **Argument** | **Type** | **Default** | **Description** |
 | value | Int | 0 |   |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Messages applications understand.**
 
@@ -260,11 +258,9 @@ Dump the current widget tree.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **File input modes for addInput**
 
@@ -289,7 +285,6 @@ Except input fd.
 
  |
 
-### 
 
 **All ways of being modal**
 
@@ -309,7 +304,6 @@ Modal for popup (always dispatch to popup).
 
  |
 
-### 
 
 **Default cursors provided by the application**
 

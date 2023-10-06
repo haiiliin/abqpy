@@ -770,11 +770,9 @@ Repaint item.
 | **Argument** | **Type** | **Default** | **Description** |
 | item | FXTreeItem |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Tree list styles**
 

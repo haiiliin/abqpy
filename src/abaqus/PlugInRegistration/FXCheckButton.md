@@ -84,11 +84,9 @@ Set check button state (True, False or MAYBE).
 | **Argument** | **Type** | **Default** | **Description** |
 | state | Bool | True |   |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **CheckButton styles**
 

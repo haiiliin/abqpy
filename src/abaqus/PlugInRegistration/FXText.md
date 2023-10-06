@@ -603,11 +603,9 @@ Change number of visible rows.
 | **Argument** | **Type** | **Default** | **Description** |
 | rows | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Text widget options**
 
@@ -647,7 +645,6 @@ Show active line.
 
  |
 
-### 
 
 **Selection modes**
 

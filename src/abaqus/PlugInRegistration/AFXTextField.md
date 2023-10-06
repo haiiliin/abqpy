@@ -290,11 +290,9 @@ Sets the layout orientation of the text field.
 | **Argument** | **Type** | **Default** | **Description** |
 | vertical | Bool |   | Vertical flag. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -324,11 +322,9 @@ ID for the text field with imaginary part.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX textfield options.**
 

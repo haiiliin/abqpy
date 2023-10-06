@@ -69,11 +69,9 @@ Sets the target of this target object.
 | **Argument** | **Type** | **Default** | **Description** |
 | target | FXObject |   | Target. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for the type of target.**
 

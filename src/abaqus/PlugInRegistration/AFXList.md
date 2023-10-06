@@ -110,11 +110,9 @@ Sets the provider of the list's items.
 | **Argument** | **Type** | **Default** | **Description** |
 | cp | FXObject |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for AFX list options.**
 

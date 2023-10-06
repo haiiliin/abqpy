@@ -47,11 +47,9 @@ Activates and shows the module's GUI components in the menubar, toolbar and tool
 | **Argument** | **Type** | **Default** | **Description** |
 | location | Int |   | Location where gui components are placed. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Message ID's.**
 
@@ -61,7 +59,6 @@ MISSING ENUMERATOR DESCRIPTION
 
  |
 
-### 
 
 **Flags for the object to display.**
 

@@ -10,11 +10,9 @@ List item
 
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAERefImages/gui-fxlistitem.png)
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **List styles**
 

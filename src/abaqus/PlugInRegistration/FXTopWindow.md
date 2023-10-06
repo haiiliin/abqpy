@@ -277,11 +277,9 @@ Reimplemented from FXWindow.
 
 Reimplemented in AFXDialog, AFXFileDialog, and AFXMessageDialog.
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 | **ID_ICONIFY** | 
 
@@ -299,11 +297,9 @@ Toolbar asks to dock.
 
  |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Title and border decorations**
 
@@ -348,7 +344,6 @@ Window menu.
 
  |
 
-### 
 
 **Initial window placement**
 

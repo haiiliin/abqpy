@@ -345,11 +345,9 @@ Change the number of visible items.
 | **Argument** | **Type** | **Default** | **Description** |
 | nvis | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **List styles**
 

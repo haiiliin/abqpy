@@ -202,11 +202,9 @@ Change font description.
 | **Argument** | **Type** | **Default** | **Description** |
 | fontdesc | FXFontDesc |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Font style hints which influence the matcher**
 
@@ -276,7 +274,6 @@ Polymorphic fonts.
 
  |
 
-### 
 
 **Font slant**
 
@@ -311,7 +308,6 @@ Reversed oblique.
 
  |
 
-### 
 
 **Font character set encoding**
 
@@ -461,7 +457,6 @@ Latin 8 (Celtic).
 
  |
 
-### 
 
 **Font weight**
 
@@ -526,7 +521,6 @@ Black.
 
  |
 
-### 
 
 **Font relative setwidth**
 

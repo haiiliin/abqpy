@@ -141,15 +141,12 @@ Shows the progress iteration or percentage text.
 | **Argument** | **Type** | **Default** | **Description** |
 | style | Int | AFXPROGRESSBAR_PERCENTAGE | Style flag. |
 
-###   
-Class flags  
+### Class flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Flags for progress bar styles.**
 

@@ -56,11 +56,9 @@ Set radio button state (True, False or MAYBE).
 | **Argument** | **Type** | **Default** | **Description** |
 | s | Bool | True |   |
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **RadioButton flags**
 

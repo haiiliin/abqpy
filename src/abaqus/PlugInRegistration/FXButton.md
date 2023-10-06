@@ -98,11 +98,9 @@ Set the button state.
 | **Argument** | **Type** | **Default** | **Description** |
 | s | Int |   |   |
 
-###   
-Global flags  
+### Global flags  
 ![](../IconsReference/butix_top_wline.png)
 
-### 
 
 **Button state bits**
 
@@ -132,7 +130,6 @@ Same as STATE_ENGAGED (used for check buttons or radio buttons).
 
  |
 
-### 
 
 **Button flags**
 

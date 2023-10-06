@@ -106,11 +106,9 @@ Change scroll style.
 
 Return a pointer to the vertical scrollbar.
 
-###   
-Global flags  
+### Global flags  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
-### 
 
 **Scrollbar options**
 
