@@ -6,6 +6,21 @@ from .AFXGuiObjectManager import AFXGuiObjectManager
 class AFXModuleGui(AFXGuiObjectManager):
     """This is the base class for module GUIs and provides an interface for module GUI management."""
 
+    #: Displays a part primary object.
+    PART: int = hash("PART")
+
+    #: Displays an assembly primary object.
+    ASSEMBLY: int = hash("ASSEMBLY")
+
+    #: Displays an ODB primary object.
+    ODB: int = hash("ODB")
+
+    #: Displays an XY plot primary object.
+    XY_PLOT: int = hash("XY_PLOT")
+
+    #: Displays a sketch primary object.
+    SKETCH: int = hash("SKETCH")
+
     def __init__(self, moduleName: str, displayTypes: int):
         """Constructor.
 

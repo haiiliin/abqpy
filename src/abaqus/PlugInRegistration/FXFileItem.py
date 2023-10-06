@@ -3,6 +3,15 @@ from __future__ import annotations
 from .FXIcon import FXIcon
 from .FXIconItem import FXIconItem
 
+#: Show hidden files or directories.
+FILELIST_SHOWHIDDEN: int = hash("FILELIST_SHOWHIDDEN")
+
+#: Show only directories.
+FILELIST_SHOWDIRS: int = hash("FILELIST_SHOWDIRS")
+
+#: Do not create associations for files.
+FILELIST_NO_OWN_ASSOC: int = hash("FILELIST_NO_OWN_ASSOC")
+
 
 class FXFileItem(FXIconItem):
     """File item."""

@@ -3,9 +3,54 @@ from __future__ import annotations
 from .AFXCommand import AFXCommand
 from .AFXKeyword import AFXKeyword
 
+#: Any type is accepted.
+AFXTABLE_TYPE_ANY: int = hash("AFXTABLE_TYPE_ANY")
+
+#: Column type is the same as the table default type.
+AFXTABLE_TYPE_DEFAULT: int = hash("AFXTABLE_TYPE_DEFAULT")
+
+#: Column stores integer numbers.
+AFXTABLE_TYPE_INT: int = hash("AFXTABLE_TYPE_INT")
+
+#: Column stores floating-point numbers.
+AFXTABLE_TYPE_FLOAT: int = hash("AFXTABLE_TYPE_FLOAT")
+
+#: Column stores string values.
+AFXTABLE_TYPE_STRING: int = hash("AFXTABLE_TYPE_STRING")
+
+#: Column stores True or False.
+AFXTABLE_TYPE_BOOL: int = hash("AFXTABLE_TYPE_BOOL")
+
+#: Mask for column types.
+AFXTABLE_TYPE_MASK: int = hash("AFXTABLE_TYPE_MASK")
+
+#: Allow empty values for the column elements.
+AFXTABLE_ALLOW_EMPTY: int = hash("AFXTABLE_ALLOW_EMPTY")
+
+#: Always substitute the default for empty values.
+AFXTABLE_DEFAULT_IF_EMPTY: int = hash("AFXTABLE_DEFAULT_IF_EMPTY")
+
+#: Evaluate integer and float elements.
+AFXTABLE_EVALUATE: int = hash("AFXTABLE_EVALUATE")
+
+#: Use table default column style.
+AFXTABLE_STYLE_DEFAULT: int = hash("AFXTABLE_STYLE_DEFAULT")
+
+#: Mask for column styles.
+AFXTABLE_STYLE_MASK: int = hash("AFXTABLE_STYLE_MASK")
+
 
 class AFXComTableKeyword(AFXKeyword):
     """This class manages values which are sent as tables in a command."""
+
+    #: ID for AFXTable widgets.
+    ID_TABLE: int = hash("ID_TABLE")
+
+    #: ID for widgets exchanging array strings.
+    ID_VALUE: int = hash("ID_VALUE")
+
+    #: For debugging.
+    ID_PRINTSNIPPET: int = hash("ID_PRINTSNIPPET")
 
     def __init__(
         self,

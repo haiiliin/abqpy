@@ -8,9 +8,87 @@ from .FXIcon import FXIcon
 from .FXObject import FXObject
 from .FXWindow import FXWindow
 
+#: Creates the action area horizontally at the bottom of the dialog box.
+DIALOG_ACTIONS_BOTTOM: int = hash("DIALOG_ACTIONS_BOTTOM")
+
+#: Creates the action area vertically at the right side of the dialog box.
+DIALOG_ACTIONS_RIGHT: int = hash("DIALOG_ACTIONS_RIGHT")
+
+#: Do not create the action area.
+DIALOG_ACTIONS_NONE: int = hash("DIALOG_ACTIONS_NONE")
+
+#: Creates a separator in the action area.
+DIALOG_ACTIONS_SEPARATOR: int = hash("DIALOG_ACTIONS_SEPARATOR")
+
+#: Deletes the dialog box when unposted.
+DIALOG_UNPOST_DELETE: int = hash("DIALOG_UNPOST_DELETE")
+
+#: Destroys the dialog box when unposted.
+DIALOG_UNPOST_DESTROY: int = hash("DIALOG_UNPOST_DESTROY")
+
+#: Do nothing when unposted.
+DIALOG_UNPOST_NOTHING: int = hash("DIALOG_UNPOST_NOTHING")
+
+#: Default dialog box options.
+DIALOG_NORMAL: int = hash("DIALOG_NORMAL")
+
 
 class AFXDialog(FXDialogBox):
     """AFXDialog."""
+
+    #: OK button ID.
+    ID_CLICKED_OK: int = hash("ID_CLICKED_OK")
+
+    #: Contiue button ID.
+    ID_CLICKED_CONTINUE: int = hash("ID_CLICKED_CONTINUE")
+
+    #: Yes button ID.
+    ID_CLICKED_YES: int = hash("ID_CLICKED_YES")
+
+    #: Yes to All button ID.
+    ID_CLICKED_YES_TO_ALL: int = hash("ID_CLICKED_YES_TO_ALL")
+
+    #: Apply button ID.
+    ID_CLICKED_APPLY: int = hash("ID_CLICKED_APPLY")
+
+    #: Defaults button ID.
+    ID_CLICKED_DEFAULTS: int = hash("ID_CLICKED_DEFAULTS")
+
+    #: No button ID.
+    ID_CLICKED_NO: int = hash("ID_CLICKED_NO")
+
+    #: Cacncel button ID.
+    ID_CLICKED_CANCEL: int = hash("ID_CLICKED_CANCEL")
+
+    #: Dismiss button ID.
+    ID_CLICKED_DISMISS: int = hash("ID_CLICKED_DISMISS")
+
+    #: Adds an Apply button to action area.
+    APPLY: int = hash("APPLY")
+
+    #: Adds a Cancel button to action area.
+    CANCEL: int = hash("CANCEL")
+
+    #: Adds a Continue button to action area.
+    CONTINUE: int = hash("CONTINUE")
+
+    #: Adds a Defaults button to action area.
+    DEFAULTS: int = hash("DEFAULTS")
+
+    #: Adds a Dismiss button to action area.
+    DISMISS: int = hash("DISMISS")
+
+    #: Adds a No button to action area.
+    NO: int = hash("NO")
+
+    #: Adds an OK button to action area.
+    OK: int = hash("OK")
+
+    #: Adds a Yes button to action area.
+    YES: int = hash("YES")
+
+    #: Adds a Yes to All button to action area.
+    YES_TO_ALL: int = hash("YES_TO_ALL")
 
     def __init__(
         self,

@@ -8,6 +8,15 @@ from .FXMDIClient import FXMDIClient
 from .FXMenuPane import FXMenuPane
 from .FXPopup import FXPopup
 
+#: Normal display mode.
+MDI_NORMAL: int = hash("MDI_NORMAL")
+
+#: Window appears maximized.
+MDI_MAXIMIZED: int = hash("MDI_MAXIMIZED")
+
+#: Window is iconified or minimized.
+MDI_MINIMIZED: int = hash("MDI_MINIMIZED")
+
 
 class FXMDIChild(FXComposite):
     """The MDI child window contains the application work area in a Multiple Document Interface application."""

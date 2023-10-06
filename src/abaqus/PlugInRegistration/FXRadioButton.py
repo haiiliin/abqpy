@@ -5,6 +5,12 @@ from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXObject import FXObject
 
+#: Automatically gray out when not updated.
+RADIOBUTTON_AUTOGRAY: int = hash("RADIOBUTTON_AUTOGRAY")
+
+#: Automatically hide when not updated.
+RADIOBUTTON_AUTOHIDE: int = hash("RADIOBUTTON_AUTOHIDE")
+
 
 class FXRadioButton(FXLabel):
     """A radio button is a tri-state button.

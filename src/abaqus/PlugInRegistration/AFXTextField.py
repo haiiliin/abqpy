@@ -8,9 +8,51 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Value field is a string.
+AFXTEXTFIELD_STRING: int = hash("AFXTEXTFIELD_STRING")
+
+#: Value field is an integer.
+AFXTEXTFIELD_INTEGER: int = hash("AFXTEXTFIELD_INTEGER")
+
+#: Value field is a double.
+AFXTEXTFIELD_FLOAT: int = hash("AFXTEXTFIELD_FLOAT")
+
+#: Value fields consist of the real and imaginay components of a complex number.
+AFXTEXTFIELD_COMPLEX: int = hash("AFXTEXTFIELD_COMPLEX")
+
+#: Use a check button instead of a label.
+AFXTEXTFIELD_CHECKBUTTON: int = hash("AFXTEXTFIELD_CHECKBUTTON")
+
+#: Use a radio button instead of a label.
+AFXTEXTFIELD_RADIOBUTTON: int = hash("AFXTEXTFIELD_RADIOBUTTON")
+
+#: Orient label or button above text field.
+AFXTEXTFIELD_VERTICAL: int = hash("AFXTEXTFIELD_VERTICAL")
+
+#: Configure text field to the read-only state.
+AFXTEXTFIELD_READONLY: int = hash("AFXTEXTFIELD_READONLY")
+
+#: Allow IME (Japanese etc.) input.
+AFXTEXTFIELD_IME: int = hash("AFXTEXTFIELD_IME")
+
 
 class AFXTextField(FXPacker, AFXDataComponent):
     """This class contains a label that precedes a text field that allows the user to enter in text."""
+
+    #: ID for setting imaginary values.
+    ID_SETIMAGINARYVALUE: int = hash("ID_SETIMAGINARYVALUE")
+
+    #: ID for getting imaginary values.
+    ID_GETIMAGINARYVALUE: int = hash("ID_GETIMAGINARYVALUE")
+
+    #: ID for the check/radio button.
+    ID_BUTTON: int = hash("ID_BUTTON")
+
+    #: ID for the text field.
+    ID_TEXT: int = hash("ID_TEXT")
+
+    #: ID for the text field with imaginary part.
+    ID_IMG_TEXT: int = hash("ID_IMG_TEXT")
 
     def __init__(
         self,

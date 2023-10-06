@@ -7,6 +7,39 @@ from .FXFont import FXFont
 from .FXFrame import FXFrame
 from .FXIcon import FXIcon
 
+#: Icon appears under text.
+ICON_UNDER_TEXT: int = hash("ICON_UNDER_TEXT")
+
+#: Icon appears after text (to its right).
+ICON_AFTER_TEXT: int = hash("ICON_AFTER_TEXT")
+
+#: Icon appears before text (to its left).
+ICON_BEFORE_TEXT: int = hash("ICON_BEFORE_TEXT")
+
+#: Icon appears above text.
+ICON_ABOVE_TEXT: int = hash("ICON_ABOVE_TEXT")
+
+#: Icon appears below text.
+ICON_BELOW_TEXT: int = hash("ICON_BELOW_TEXT")
+
+#: Same as ICON_UNDER_TEXT.
+TEXT_OVER_ICON: int = hash("TEXT_OVER_ICON")
+
+#: Same as ICON_BEFORE_TEXT.
+TEXT_AFTER_ICON: int = hash("TEXT_AFTER_ICON")
+
+#: Same as ICON_AFTER_TEXT.
+TEXT_BEFORE_ICON: int = hash("TEXT_BEFORE_ICON")
+
+#: Same as ICON_BELOW_TEXT.
+TEXT_ABOVE_ICON: int = hash("TEXT_ABOVE_ICON")
+
+#: Same as ICON_ABOVE_TEXT.
+TEXT_BELOW_ICON: int = hash("TEXT_BELOW_ICON")
+
+#: Combination of JUSTIFY_NORMAL & ICON_BEFORE_TEXT.
+LABEL_NORMAL: int = hash("LABEL_NORMAL")
+
 
 class FXLabel(FXFrame):
     """A label widget can be used to place a text and/or icon for explanation purposes.

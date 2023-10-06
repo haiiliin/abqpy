@@ -12,6 +12,12 @@ class FXDialogBox(FXTopWindow):
     True, respectively. To close the DialogBox when not running modally, simply send it ID_HIDE.
     """
 
+    #: Closes the dialog, cancel the entry.
+    ID_CANCEL: int = hash("ID_CANCEL")
+
+    #: Closes the dialog, accept the entry.
+    ID_ACCEPT: int = hash("ID_ACCEPT")
+
     def __init__(
         self,
         owner: FXWindow,

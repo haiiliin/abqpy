@@ -10,6 +10,12 @@ from .FXIcon import FXIcon
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Orient label above list box.
+AFXLISTBOX_VERTICAL: int = hash("AFXLISTBOX_VERTICAL")
+
+#: Configure list box to the read-only state.
+AFXLISTBOX_READONLY: int = hash("AFXLISTBOX_READONLY")
+
 
 class AFXListBox(FXPacker, AFXDataComponent):
     """This class implements a labeled list box.
@@ -17,6 +23,12 @@ class AFXListBox(FXPacker, AFXDataComponent):
     It allows the user to select entries from a drop-down list. Each item has associated data set as
     integers initially as items are added.
     """
+
+    #: ID for the list box.
+    ID_LIST: int = hash("ID_LIST")
+
+    #: ID for the text field.
+    ID_FIELD: int = hash("ID_FIELD")
 
     def __init__(
         self,

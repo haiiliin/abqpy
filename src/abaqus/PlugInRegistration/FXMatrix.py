@@ -4,6 +4,12 @@ from .constants import DEFAULT_SPACING, MATRIX_BY_ROWS
 from .FXComposite import FXComposite
 from .FXPacker import FXPacker
 
+#: Fixed number of rows, add columns as needed.
+MATRIX_BY_ROWS: int = hash("MATRIX_BY_ROWS")
+
+#: Fixed number of columns, adding rows as needed.
+MATRIX_BY_COLUMNS: int = hash("MATRIX_BY_COLUMNS")
+
 
 class FXMatrix(FXPacker):
     """The Matrix layout manager automatically arranges its child windows in rows and columns.

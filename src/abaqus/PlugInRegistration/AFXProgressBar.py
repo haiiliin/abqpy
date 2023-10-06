@@ -5,6 +5,21 @@ from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXProgressBar import FXProgressBar
 
+#: Percentage complete mode.
+AFXPROGRESSBAR_PERCENTAGE: int = hash("AFXPROGRESSBAR_PERCENTAGE")
+
+#: Horizontal display.
+AFXPROGRESSBAR_HORIZONTAL: int = hash("AFXPROGRESSBAR_HORIZONTAL")
+
+#: Vertical display.
+AFXPROGRESSBAR_VERTICAL: int = hash("AFXPROGRESSBAR_VERTICAL")
+
+#: Scanner mode.
+AFXPROGRESSBAR_SCANNER: int = hash("AFXPROGRESSBAR_SCANNER")
+
+#: Iterator mode.
+AFXPROGRESSBAR_ITERATOR: int = hash("AFXPROGRESSBAR_ITERATOR")
+
 
 class AFXProgressBar(FXProgressBar):
     """This class contains a progress bar, which can present work-in-progress in a number of different

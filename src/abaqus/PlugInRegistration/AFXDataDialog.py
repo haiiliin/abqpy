@@ -8,9 +8,15 @@ from .constants import DIALOG_NORMAL
 from .FXObject import FXObject
 from .FXWindow import FXWindow
 
+#: Perform bailout checks when the Cancel button is clicked.
+DATADIALOG_BAILOUT: int = hash("DATADIALOG_BAILOUT")
+
 
 class AFXDataDialog(AFXDialog):
     """AFXDataDialog."""
+
+    #: Used to update the state.
+    ID_UPDATE_STATE: int = hash("ID_UPDATE_STATE")
 
     def __init__(
         self,

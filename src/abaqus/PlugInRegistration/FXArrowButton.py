@@ -6,6 +6,36 @@ from .FXComposite import FXComposite
 from .FXFrame import FXFrame
 from .FXObject import FXObject
 
+#: No arrow.
+ARROW_NONE: int = hash("ARROW_NONE")
+
+#: Arrow points up.
+ARROW_UP: int = hash("ARROW_UP")
+
+#: Arrow points down.
+ARROW_DOWN: int = hash("ARROW_DOWN")
+
+#: Arrow points left.
+ARROW_LEFT: int = hash("ARROW_LEFT")
+
+#: Arrow points right.
+ARROW_RIGHT: int = hash("ARROW_RIGHT")
+
+#: Button repeats if held down.
+ARROW_REPEAT: int = hash("ARROW_REPEAT")
+
+#: Automatically gray out when not updated.
+ARROW_AUTOGRAY: int = hash("ARROW_AUTOGRAY")
+
+#: Automatically hide button when not updated.
+ARROW_AUTOHIDE: int = hash("ARROW_AUTOHIDE")
+
+#: Button is toolbar-style.
+ARROW_TOOLBAR: int = hash("ARROW_TOOLBAR")
+
+#: Button is spinner-style.
+ARROW_SPINNER: int = hash("ARROW_SPINNER")
+
 
 class FXArrowButton(FXFrame):
     """Button with an arrow; the arrow can point in any direction.

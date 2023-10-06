@@ -14,6 +14,12 @@ class FXDataTarget(FXObject):
     substracting ID_OPTION from the message ID.
     """
 
+    #: Will cause the FXDataTarget to ask sender for value.
+    ID_VALUE: int = hash("ID_VALUE")
+
+    #: ID_OPTION+i will set the value to i where -10000<=i<=10000.
+    ID_OPTION: int = hash("ID_OPTION")
+
     def __init__(self, value: str, tgt: FXObject | None = None, sel: int = 0):
         """Associate with string variable.
 

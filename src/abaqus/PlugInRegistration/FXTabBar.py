@@ -5,6 +5,21 @@ from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Tabs on top (default).
+TABBOOK_TOPTABS: int = hash("TABBOOK_TOPTABS")
+
+#: Tabs on bottom.
+TABBOOK_BOTTOMTABS: int = hash("TABBOOK_BOTTOMTABS")
+
+#: Tabs on left.
+TABBOOK_SIDEWAYS: int = hash("TABBOOK_SIDEWAYS")
+
+#: Tabs on left.
+TABBOOK_LEFTTABS: int = hash("TABBOOK_LEFTTABS")
+
+#: Tabs on right.
+TABBOOK_RIGHTTABS: int = hash("TABBOOK_RIGHTTABS")
+
 
 class FXTabBar(FXPacker):
     """The tab bar layout manager arranges tab items side by side, and raises the active tab item above the
@@ -13,6 +28,12 @@ class FXTabBar(FXPacker):
     The tab bar can be have the tab items on the top or bottom for horizontal arrangement, or on the left or
     right for vertical arrangement.
     """
+
+    #: Sent from one of the FXTabItems.
+    ID_OPEN_ITEM: int = hash("ID_OPEN_ITEM")
+
+    #: Switch to panel ID_OPEN_FIRST+i.
+    ID_OPEN_FIRST: int = hash("ID_OPEN_FIRST")
 
     def __init__(
         self,

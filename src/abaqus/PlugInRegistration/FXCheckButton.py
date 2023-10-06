@@ -5,6 +5,12 @@ from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXObject import FXObject
 
+#: Automatically gray out when not updated.
+CHECKBUTTON_AUTOGRAY: int = hash("CHECKBUTTON_AUTOGRAY")
+
+#: Automatically hide when not updated.
+CHECKBUTTON_AUTOHIDE: int = hash("CHECKBUTTON_AUTOHIDE")
+
 
 class FXCheckButton(FXLabel):
     """A check button is a tri-state button.

@@ -5,6 +5,33 @@ from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXWindow import FXWindow
 
+#: Default justification is centered text.
+JUSTIFY_NORMAL: int = hash("JUSTIFY_NORMAL")
+
+#: Contents centered horizontally.
+JUSTIFY_CENTER_X: int = hash("JUSTIFY_CENTER_X")
+
+#: Contents left-justified.
+JUSTIFY_LEFT: int = hash("JUSTIFY_LEFT")
+
+#: Contents right-justified.
+JUSTIFY_RIGHT: int = hash("JUSTIFY_RIGHT")
+
+#: Combination of JUSTIFY_LEFT & JUSTIFY_RIGHT.
+JUSTIFY_HZ_APART: int = hash("JUSTIFY_HZ_APART")
+
+#: Contents centered vertically.
+JUSTIFY_CENTER_Y: int = hash("JUSTIFY_CENTER_Y")
+
+#: Contents aligned with label top.
+JUSTIFY_TOP: int = hash("JUSTIFY_TOP")
+
+#: Contents aligned with label bottom.
+JUSTIFY_BOTTOM: int = hash("JUSTIFY_BOTTOM")
+
+#: Combination of JUSTIFY_TOP & JUSTIFY_BOTTOM.
+JUSTIFY_VT_APART: int = hash("JUSTIFY_VT_APART")
+
 
 class FXFrame(FXWindow):
     """Base Frame."""

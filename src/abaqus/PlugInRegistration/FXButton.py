@@ -6,6 +6,39 @@ from .FXIcon import FXIcon
 from .FXLabel import FXLabel
 from .FXObject import FXObject
 
+#: Button is up.
+STATE_UP: int = hash("STATE_UP")
+
+#: Button is down.
+STATE_DOWN: int = hash("STATE_DOWN")
+
+#: Button is engaged.
+STATE_ENGAGED: int = hash("STATE_ENGAGED")
+
+#: Same as STATE_UP (used for check buttons or radio buttons).
+STATE_UNCHECKED: int = hash("STATE_UNCHECKED")
+
+#: Same as STATE_ENGAGED (used for check buttons or radio buttons).
+STATE_CHECKED: int = hash("STATE_CHECKED")
+
+#: Automatically gray out when not updated.
+BUTTON_AUTOGRAY: int = hash("BUTTON_AUTOGRAY")
+
+#: Automatically hide button when not updated.
+BUTTON_AUTOHIDE: int = hash("BUTTON_AUTOHIDE")
+
+#: Toolbar style button \[flat look\].
+BUTTON_TOOLBAR: int = hash("BUTTON_TOOLBAR")
+
+#: May become default button when receiving focus.
+BUTTON_DEFAULT: int = hash("BUTTON_DEFAULT")
+
+#: This button is the initial default button.
+BUTTON_INITIAL: int = hash("BUTTON_INITIAL")
+
+#: Normal button style.
+BUTTON_NORMAL: int = hash("BUTTON_NORMAL")
+
 
 class FXButton(FXLabel):
     """A button provides a push button, with optional icon and/or text label.

@@ -7,6 +7,126 @@ from .FXComposite import FXComposite
 from .FXDrawable import FXDrawable
 from .FXObject import FXObject
 
+#: Default layout mode.
+LAYOUT_NORMAL: int = hash("LAYOUT_NORMAL")
+
+#: Pack on top side (default).
+LAYOUT_SIDE_TOP: int = hash("LAYOUT_SIDE_TOP")
+
+#: Pack on bottom side.
+LAYOUT_SIDE_BOTTOM: int = hash("LAYOUT_SIDE_BOTTOM")
+
+#: Pack on left side.
+LAYOUT_SIDE_LEFT: int = hash("LAYOUT_SIDE_LEFT")
+
+#: Pack on right side.
+LAYOUT_SIDE_RIGHT: int = hash("LAYOUT_SIDE_RIGHT")
+
+#: Matrix column is stretchable.
+LAYOUT_FILL_COLUMN: int = hash("LAYOUT_FILL_COLUMN")
+
+#: Matrix row is stretchable.
+LAYOUT_FILL_ROW: int = hash("LAYOUT_FILL_ROW")
+
+#: Stick on left (default).
+LAYOUT_LEFT: int = hash("LAYOUT_LEFT")
+
+#: Stick on right.
+LAYOUT_RIGHT: int = hash("LAYOUT_RIGHT")
+
+#: Center horizontally.
+LAYOUT_CENTER_X: int = hash("LAYOUT_CENTER_X")
+
+#: X fixed.
+LAYOUT_FIX_X: int = hash("LAYOUT_FIX_X")
+
+#: Stick on top (default).
+LAYOUT_TOP: int = hash("LAYOUT_TOP")
+
+#: Stick on bottom.
+LAYOUT_BOTTOM: int = hash("LAYOUT_BOTTOM")
+
+#: Center vertically.
+LAYOUT_CENTER_Y: int = hash("LAYOUT_CENTER_Y")
+
+#: Y fixed CAE: Copied from FOX 1.4.34 to support dockable tool bars.
+LAYOUT_FIX_Y: int = hash("LAYOUT_FIX_Y")
+
+#: Dock on same galley if it fits.
+LAYOUT_DOCK_SAME: int = hash("LAYOUT_DOCK_SAME")
+
+#: Dock on next galley LAYOUT_RESERVED_1 = 0x00000040, LAYOUT_RESERVED_2 = 0x00000080,
+LAYOUT_DOCK_NEXT: int = hash("LAYOUT_DOCK_NEXT")
+
+#: CAE End.
+LAYOUT_RESERVED_1: int = hash("LAYOUT_RESERVED_1")
+
+#: Width fixed.
+LAYOUT_FIX_WIDTH: int = hash("LAYOUT_FIX_WIDTH")
+
+#: height fixed
+LAYOUT_FIX_HEIGHT: int = hash("LAYOUT_FIX_HEIGHT")
+
+#: Minimum width is the default.
+LAYOUT_MIN_WIDTH: int = hash("LAYOUT_MIN_WIDTH")
+
+#: Minimum height is the default.
+LAYOUT_MIN_HEIGHT: int = hash("LAYOUT_MIN_HEIGHT")
+
+#: Stretch or shrink horizontally.
+LAYOUT_FILL_X: int = hash("LAYOUT_FILL_X")
+
+#: Stretch or shrink vertically.
+LAYOUT_FILL_Y: int = hash("LAYOUT_FILL_Y")
+
+#: Explicit placement.
+LAYOUT_EXPLICIT: int = hash("LAYOUT_EXPLICIT")
+
+#: Default is no frame.
+FRAME_NONE: int = hash("FRAME_NONE")
+
+#: Sunken border.
+FRAME_SUNKEN: int = hash("FRAME_SUNKEN")
+
+#: Raised border.
+FRAME_RAISED: int = hash("FRAME_RAISED")
+
+#: Thick border.
+FRAME_THICK: int = hash("FRAME_THICK")
+
+#: A groove or etched-in border.
+FRAME_GROOVE: int = hash("FRAME_GROOVE")
+
+#: A ridge or embossed border.
+FRAME_RIDGE: int = hash("FRAME_RIDGE")
+
+#: Simple line border.
+FRAME_LINE: int = hash("FRAME_LINE")
+
+#: Regular raised/thick border.
+FRAME_NORMAL: int = hash("FRAME_NORMAL")
+
+#: Default is each its own size.
+PACK_NORMAL: int = hash("PACK_NORMAL")
+
+#: Uniform height.
+PACK_UNIFORM_HEIGHT: int = hash("PACK_UNIFORM_HEIGHT")
+
+#: Uniform width.
+PACK_UNIFORM_WIDTH: int = hash("PACK_UNIFORM_WIDTH")
+
+#: Default.
+BACKGROUND_NORMAL: int = hash("BACKGROUND_NORMAL")
+
+#: Horizontal gradient background.
+BACKGROUND_H_GRADIENT: int = hash("BACKGROUND_H_GRADIENT")
+
+#: Vertical gradient background.
+BACKGROUND_V_GRADIENT: int = hash("BACKGROUND_V_GRADIENT")
+
+#: plain background
+BACKGROUND_PLAIN: int = hash("BACKGROUND_PLAIN")
+
 
 class FXWindow(FXDrawable):
     """Base class for all windows."""

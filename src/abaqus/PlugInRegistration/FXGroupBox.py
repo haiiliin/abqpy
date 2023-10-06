@@ -4,6 +4,15 @@ from .constants import DEFAULT_SPACING, GROUPBOX_NORMAL
 from .FXComposite import FXComposite
 from .FXPacker import FXPacker
 
+#: Title is left-justified.
+GROUPBOX_TITLE_LEFT: int = hash("GROUPBOX_TITLE_LEFT")
+
+#: Title is centered.
+GROUPBOX_TITLE_CENTER: int = hash("GROUPBOX_TITLE_CENTER")
+
+#: Title is right-justified.
+GROUPBOX_TITLE_RIGHT: int = hash("GROUPBOX_TITLE_RIGHT")
+
 
 class FXGroupBox(FXPacker):
     """A group box widget provides a nice raised or sunken border around a group of widgets, providing a visual

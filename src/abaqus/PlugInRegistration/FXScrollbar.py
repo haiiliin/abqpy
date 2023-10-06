@@ -6,6 +6,12 @@ from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXWindow import FXWindow
 
+#: Horizontally oriented.
+SCROLLBAR_HORIZONTAL: int = hash("SCROLLBAR_HORIZONTAL")
+
+#: Vertically oriented.
+SCROLLBAR_VERTICAL: int = hash("SCROLLBAR_VERTICAL")
+
 
 class FXScrollbar(FXWindow):
     """The scroll bar is used when a document has a larger content than may be made visible.

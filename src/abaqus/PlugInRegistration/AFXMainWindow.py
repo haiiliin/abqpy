@@ -14,6 +14,21 @@ class AFXMainWindow(FXMainWindow):
     It also provides accessors for the various components constructed.
     """
 
+    #: Used to handle the quit message.
+    ID_QUIT: int = hash("ID_QUIT")
+
+    #: Used to handle tabbing.
+    ID_TAB: int = hash("ID_TAB")
+
+    #: Toggle the visibility of the model tree.
+    ID_TOGGLE_MODEL_TREE: int = hash("ID_TOGGLE_MODEL_TREE")
+
+    #: Toggle full screen.
+    ID_TOGGLE_FULL_SCREEN: int = hash("ID_TOGGLE_FULL_SCREEN")
+
+    #: Do not use, do not delete; for use by derived classes.
+    ID_LAST: int = hash("ID_LAST")
+
     def __init__(
         self,
         app: FXApp,

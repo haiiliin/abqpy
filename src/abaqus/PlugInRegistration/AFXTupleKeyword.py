@@ -3,9 +3,48 @@ from __future__ import annotations
 from .AFXCommand import AFXCommand
 from .AFXKeyword import AFXKeyword
 
+#: Any type is accepted.
+AFXTUPLE_TYPE_ANY: int = hash("AFXTUPLE_TYPE_ANY")
+
+#: Element type is the same as the tuple default type.
+AFXTUPLE_TYPE_DEFAULT: int = hash("AFXTUPLE_TYPE_DEFAULT")
+
+#: Element is an integer number.
+AFXTUPLE_TYPE_INT: int = hash("AFXTUPLE_TYPE_INT")
+
+#: Element is a floating-point number.
+AFXTUPLE_TYPE_FLOAT: int = hash("AFXTUPLE_TYPE_FLOAT")
+
+#: Element is a string.
+AFXTUPLE_TYPE_STRING: int = hash("AFXTUPLE_TYPE_STRING")
+
+#: Element is True or False.
+AFXTUPLE_TYPE_BOOL: int = hash("AFXTUPLE_TYPE_BOOL")
+
+#: Mask for element types.
+AFXTUPLE_TYPE_MASK: int = hash("AFXTUPLE_TYPE_MASK")
+
+#: Allow empty values for the element.
+AFXTUPLE_ALLOW_EMPTY: int = hash("AFXTUPLE_ALLOW_EMPTY")
+
+#: Always substitute the default for an empty value.
+AFXTUPLE_DEFAULT_IF_EMPTY: int = hash("AFXTUPLE_DEFAULT_IF_EMPTY")
+
+#: Evaluate integer and float elements.
+AFXTUPLE_EVALUATE: int = hash("AFXTUPLE_EVALUATE")
+
+#: Use tuple default element style.
+AFXTUPLE_STYLE_DEFAULT: int = hash("AFXTUPLE_STYLE_DEFAULT")
+
+#: Mask for element styles.
+AFXTUPLE_STYLE_MASK: int = hash("AFXTUPLE_STYLE_MASK")
+
 
 class AFXTupleKeyword(AFXKeyword):
     """This class manages values which are sent as tuples in a command."""
+
+    #: For debugging.
+    ID_PRINTSNIPPET: int = hash("ID_PRINTSNIPPET")
 
     def __init__(
         self,

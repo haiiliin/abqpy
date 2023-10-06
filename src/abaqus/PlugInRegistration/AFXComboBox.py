@@ -9,6 +9,24 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Use a check button instead of a label.
+AFXCOMBOBOX_CHECKBUTTON: int = hash("AFXCOMBOBOX_CHECKBUTTON")
+
+#: Use a radio button instead of a label.
+AFXCOMBOBOX_RADIOBUTTON: int = hash("AFXCOMBOBOX_RADIOBUTTON")
+
+#: Orient label or button above combo box.
+AFXCOMBOBOX_VERTICAL: int = hash("AFXCOMBOBOX_VERTICAL")
+
+#: Allow interaction with float keywords.
+AFXCOMBOBOX_FLOAT: int = hash("AFXCOMBOBOX_FLOAT")
+
+#: Configure combo box to the read-only state.
+AFXCOMBOBOX_READONLY: int = hash("AFXCOMBOBOX_READONLY")
+
+#: Include spinner buttons.
+AFXCOMBOBOX_SPINNER: int = hash("AFXCOMBOBOX_SPINNER")
+
 
 class AFXComboBox(FXPacker, AFXDataComponent):
     """This class implements a labeled combo box.
@@ -16,6 +34,18 @@ class AFXComboBox(FXPacker, AFXDataComponent):
     It allows the user to select entries from a drop-down list. Each item has associated data set as
     integers as items are added.
     """
+
+    #: Label or button ID.
+    ID_BUTTON: int = hash("ID_BUTTON")
+
+    #: Combo box ID.
+    ID_COMBO: int = hash("ID_COMBO")
+
+    #: Up arrow button ID.
+    ID_INCREMENT: int = hash("ID_INCREMENT")
+
+    #: Down arrow button ID.
+    ID_DECREMENT: int = hash("ID_DECREMENT")
 
     def __init__(
         self,

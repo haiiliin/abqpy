@@ -9,9 +9,108 @@ from .FXTimer import FXTimer
 from .FXWindow import FXWindow
 from .SOCKET import SOCKET
 
+#: Inactive.
+INPUT_NONE: int = hash("INPUT_NONE")
+
+#: Read input fd.
+INPUT_READ: int = hash("INPUT_READ")
+
+#: Write input fd.
+INPUT_WRITE: int = hash("INPUT_WRITE")
+
+#: Except input fd.
+INPUT_EXCEPT: int = hash("INPUT_EXCEPT")
+
+#: Non modal event loop (dispatch normally).
+MODAL_FOR_NONE: int = hash("MODAL_FOR_NONE")
+
+#: Modal dialog (beep if outside of modal dialog).
+MODAL_FOR_WINDOW: int = hash("MODAL_FOR_WINDOW")
+
+#: Modal for popup (always dispatch to popup).
+MODAL_FOR_POPUP: int = hash("MODAL_FOR_POPUP")
+
+#: Arrow cursor.
+DEF_ARROW_CURSOR: int = hash("DEF_ARROW_CURSOR")
+
+#: Reverse arrow cursor.
+DEF_RARROW_CURSOR: int = hash("DEF_RARROW_CURSOR")
+
+#: Text cursor.
+DEF_TEXT_CURSOR: int = hash("DEF_TEXT_CURSOR")
+
+#: Horizontal split cursor.
+DEF_HSPLIT_CURSOR: int = hash("DEF_HSPLIT_CURSOR")
+
+#: Vertical split cursor.
+DEF_VSPLIT_CURSOR: int = hash("DEF_VSPLIT_CURSOR")
+
+#: Cross split cursor.
+DEF_XSPLIT_CURSOR: int = hash("DEF_XSPLIT_CURSOR")
+
+#: Color swatch drag cursor.
+DEF_SWATCH_CURSOR: int = hash("DEF_SWATCH_CURSOR")
+
+#: Move cursor.
+DEF_MOVE_CURSOR: int = hash("DEF_MOVE_CURSOR")
+
+#: Resize horizontal edge.
+DEF_DRAGH_CURSOR: int = hash("DEF_DRAGH_CURSOR")
+
+#: Resize vertical edge.
+DEF_DRAGV_CURSOR: int = hash("DEF_DRAGV_CURSOR")
+
+#: Resize upper-leftcorner.
+DEF_DRAGTL_CURSOR: int = hash("DEF_DRAGTL_CURSOR")
+
+#: Resize bottom-right corner.
+DEF_DRAGBR_CURSOR: int = hash("DEF_DRAGBR_CURSOR")
+
+#: Resize upper-right corner.
+DEF_DRAGTR_CURSOR: int = hash("DEF_DRAGTR_CURSOR")
+
+#: Resize bottom-left corner.
+DEF_DRAGBL_CURSOR: int = hash("DEF_DRAGBL_CURSOR")
+
+#: Drag and drop stop.
+DEF_DNDSTOP_CURSOR: int = hash("DEF_DNDSTOP_CURSOR")
+
+#: Drag and drop copy.
+DEF_DNDCOPY_CURSOR: int = hash("DEF_DNDCOPY_CURSOR")
+
+#: Drag and drop move.
+DEF_DNDMOVE_CURSOR: int = hash("DEF_DNDMOVE_CURSOR")
+
+#: Drag and drop link.
+DEF_DNDLINK_CURSOR: int = hash("DEF_DNDLINK_CURSOR")
+
+#: Cross hair cursor.
+DEF_CROSSHAIR_CURSOR: int = hash("DEF_CROSSHAIR_CURSOR")
+
+#: North-east cursor.
+DEF_CORNERNE_CURSOR: int = hash("DEF_CORNERNE_CURSOR")
+
+#: North-west cursor.
+DEF_CORNERNW_CURSOR: int = hash("DEF_CORNERNW_CURSOR")
+
+#: South-east cursor.
+DEF_CORNERSE_CURSOR: int = hash("DEF_CORNERSE_CURSOR")
+
+#: South-west cursor.
+DEF_CORNERSW_CURSOR: int = hash("DEF_CORNERSW_CURSOR")
+
+#: Rotate cursor.
+DEF_ROTATE_CURSOR: int = hash("DEF_ROTATE_CURSOR")
+
 
 class FXApp(FXObject):
     """Application Object."""
+
+    #: Terminate the application normally.
+    ID_QUIT: int = hash("ID_QUIT")
+
+    #: Dump the current widget tree.
+    ID_DUMP: int = hash("ID_DUMP")
 
     def __init__(self, name: str = "Application", vendor: str = "FoxDefault"):
         """Copyright notice of library. Construct application object; the name and vendor strings are used as

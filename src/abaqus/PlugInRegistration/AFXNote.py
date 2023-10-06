@@ -4,6 +4,12 @@ from .constants import NOTE_INFORMATION
 from .FXComposite import FXComposite
 from .FXHorizontalFrame import FXHorizontalFrame
 
+#: Information note.
+NOTE_INFORMATION: int = hash("NOTE_INFORMATION")
+
+#: Warning note.
+NOTE_WARNING: int = hash("NOTE_WARNING")
+
 
 class AFXNote(FXHorizontalFrame):
     """This class prefixes a given message string by either "Note:" or "Warning:"."""

@@ -4,6 +4,15 @@ from .FXColor import FXColor
 from .FXShell import FXShell
 from .FXWindow import FXWindow
 
+#: Vertical orientation.
+POPUP_VERTICAL: int = hash("POPUP_VERTICAL")
+
+#: Horizontal orientation.
+POPUP_HORIZONTAL: int = hash("POPUP_HORIZONTAL")
+
+#: Shrinkwrap to content.
+POPUP_SHRINKWRAP: int = hash("POPUP_SHRINKWRAP")
+
 
 class FXPopup(FXShell):
     """Popup window."""

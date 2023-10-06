@@ -6,6 +6,18 @@ from .FXObject import FXObject
 class AFXTarget(FXObject):
     """This class is the base class for all target objects."""
 
+    #: Unspecified.
+    UNSPECIFIED: int = hash("UNSPECIFIED")
+
+    #: Integer.
+    INT: int = hash("INT")
+
+    #: Float.
+    FLOAT: int = hash("FLOAT")
+
+    #: String.
+    STRING: int = hash("STRING")
+
     def __init__(self):
         """Constructor."""
 

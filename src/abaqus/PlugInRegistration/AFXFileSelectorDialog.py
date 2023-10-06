@@ -7,6 +7,21 @@ from .AFXStringTarget import AFXStringTarget
 from .constants import AFXSELECTFILE_ANY
 from .FXWindow import FXWindow
 
+#: A single file, existing or not (to save to).
+AFXSELECTFILE_ANY: int = hash("AFXSELECTFILE_ANY")
+
+#: An existing file (to load).
+AFXSELECTFILE_EXISTING: int = hash("AFXSELECTFILE_EXISTING")
+
+#: Multiple existing files.
+AFXSELECTFILE_MULTIPLE: int = hash("AFXSELECTFILE_MULTIPLE")
+
+#: Multiple existing files or directories.
+AFXSELECTFILE_MULTIPLE_ALL: int = hash("AFXSELECTFILE_MULTIPLE_ALL")
+
+#: Existing directory.
+AFXSELECTFILE_DIRECTORY: int = hash("AFXSELECTFILE_DIRECTORY")
+
 
 class AFXFileSelectorDialog(AFXFileDialog):
     """Abaqus."""

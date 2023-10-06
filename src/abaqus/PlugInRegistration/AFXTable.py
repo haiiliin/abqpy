@@ -9,9 +9,225 @@ from .FXFont import FXFont
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 
+#: Allow users to resize columns.
+AFXTABLE_COLUMN_RESIZABLE: int = hash("AFXTABLE_COLUMN_RESIZABLE")
+
+#: Allow users to resize rows.
+AFXTABLE_ROW_RESIZABLE: int = hash("AFXTABLE_ROW_RESIZABLE")
+
+#: Allow users to resize rows and columns.
+AFXTABLE_RESIZE: int = hash("AFXTABLE_RESIZE")
+
+#: Disallow column selections (selecting a header/footer item in a column selects the whole column).
+AFXTABLE_NO_COLUMN_SELECT: int = hash("AFXTABLE_NO_COLUMN_SELECT")
+
+#: Disallow row selections (selecting a header/footer item in a row selects the whole row).
+AFXTABLE_NO_ROW_SELECT: int = hash("AFXTABLE_NO_ROW_SELECT")
+
+#: Selecting any item in a row selects the whole row.
+AFXTABLE_ROW_MODE: int = hash("AFXTABLE_ROW_MODE")
+
+#: Use extended selection mode that allows multiple items to be selected and allows users to drag-select a range of items.
+AFXTABLE_EXTENDED_SELECT: int = hash("AFXTABLE_EXTENDED_SELECT")
+
+#: Use single selection mode that allows up to one item to be selected.
+AFXTABLE_SINGLE_SELECT: int = hash("AFXTABLE_SINGLE_SELECT")
+
+#: Use browse selection mode that enforces one single item to be selected at all times.
+AFXTABLE_BROWSE_SELECT: int = hash("AFXTABLE_BROWSE_SELECT")
+
+#: Table is editable.
+AFXTABLE_EDITABLE: int = hash("AFXTABLE_EDITABLE")
+
+#: Default table options--use extended selection mode, columns are resizable, and layout fills both X and Y directions.
+AFXTABLE_NORMAL: int = hash("AFXTABLE_NORMAL")
+
+#: Do not pre-select any list item.
+AFXTABLE_LIST_PRESELECT_NONE: int = hash("AFXTABLE_LIST_PRESELECT_NONE")
+
 
 class AFXTable(AFXBaseTable, AFXDataComponent):
     """This class implements an editable table."""
+
+    #: Popup not displayed.
+    POPUP_NONE: int = hash("POPUP_NONE")
+
+    #: Display "Cut" menu item.
+    POPUP_CUT: int = hash("POPUP_CUT")
+
+    #: Display "Copy" menu item.
+    POPUP_COPY: int = hash("POPUP_COPY")
+
+    #: Display "Paste" menu item.
+    POPUP_PASTE: int = hash("POPUP_PASTE")
+
+    #: Convenience flag for specifying multiple menu items.
+    POPUP_EDIT: int = hash("POPUP_EDIT")
+
+    #: Display "Insert Row Before/After" menu items.
+    POPUP_INSERT_ROW: int = hash("POPUP_INSERT_ROW")
+
+    #: Display "Insert Column Before/After" menu items.
+    POPUP_INSERT_COLUMN: int = hash("POPUP_INSERT_COLUMN")
+
+    #: Display "Delete Rows" menu item.
+    POPUP_DELETE_ROW: int = hash("POPUP_DELETE_ROW")
+
+    #: Display "Delete Columns" menu item.
+    POPUP_DELETE_COLUMN: int = hash("POPUP_DELETE_COLUMN")
+
+    #: Display "Clear Contents" and "Clear Table" menu items.
+    POPUP_CLEAR_CONTENTS: int = hash("POPUP_CLEAR_CONTENTS")
+
+    #: Convenience flag for specifying multiple menu items.
+    POPUP_MODIFY_ROW: int = hash("POPUP_MODIFY_ROW")
+
+    #: Convenience flag for specifying multiple menu items.
+    POPUP_MODIFY_COLUMN: int = hash("POPUP_MODIFY_COLUMN")
+
+    #: Convenience flag for specifying multiple menu items.
+    POPUP_MODIFY: int = hash("POPUP_MODIFY")
+
+    #: Display "Read from File" menu item.
+    POPUP_READ_FROM_FILE: int = hash("POPUP_READ_FROM_FILE")
+
+    #: Display "Write to File" menu item.
+    POPUP_WRITE_TO_FILE: int = hash("POPUP_WRITE_TO_FILE")
+
+    #: Display "Read from file" and "Write to file" menu items.
+    POPUP_FILE: int = hash("POPUP_FILE")
+
+    #: Display all menu items.
+    POPUP_ALL: int = hash("POPUP_ALL")
+
+    #: ID for the Cut button.
+    ID_CUT_SEL: int = hash("ID_CUT_SEL")
+
+    #: ID for the Copy button.
+    ID_COPY_SEL: int = hash("ID_COPY_SEL")
+
+    #: ID for the Paste button.
+    ID_PASTE_SEL: int = hash("ID_PASTE_SEL")
+
+    #: ID for the Insert Column buttons.
+    ID_ADD_COLUMN: int = hash("ID_ADD_COLUMN")
+
+    #: ID for the Insert Row buttons.
+    ID_ADD_ROW: int = hash("ID_ADD_ROW")
+
+    #: ID for the Delete Columns button.
+    ID_DELETE_COLUMNS: int = hash("ID_DELETE_COLUMNS")
+
+    #: ID for the Delete Rows button.
+    ID_DELETE_ROWS: int = hash("ID_DELETE_ROWS")
+
+    #: ID for the Clear Contents button.
+    ID_CLEAR_SEL: int = hash("ID_CLEAR_SEL")
+
+    #: ID for the Clear Table button.
+    ID_CLEAR_TABLE: int = hash("ID_CLEAR_TABLE")
+
+    #: ID for the Read from File button.
+    ID_READ_SEL: int = hash("ID_READ_SEL")
+
+    #: ID for the Write to File button.
+    ID_WRITE: int = hash("ID_WRITE")
+
+    #: ID for the Read Data from ASCII File dialog box used by the Read from File button.
+    ID_FILE_DB: int = hash("ID_FILE_DB")
+
+    #: ID for the "Data were truncated" warning dialog box.
+    ID_READ_WARNING: int = hash("ID_READ_WARNING")
+
+    #: ID for the file selection dialog box used by the Write to File button.
+    ID_WRITE_FILE_DB: int = hash("ID_WRITE_FILE_DB")
+
+    #: ID for the "OK to overwrite?" warning dialog box.
+    ID_CONFIRM_WRITE: int = hash("ID_CONFIRM_WRITE")
+
+    #: not exposed in python
+    IGNORE_BOTTOM_EMPTY_ROWS: int = hash("IGNORE_BOTTOM_EMPTY_ROWS")
+
+    #: Color item has no As Is and Default in its flyout.
+    COLOR_INCLUDE_COLOR_ONLY: int = hash("COLOR_INCLUDE_COLOR_ONLY")
+
+    #: Color item has As Is in its flyout.
+    COLOR_INCLUDE_AS_IS: int = hash("COLOR_INCLUDE_AS_IS")
+
+    #: Color item has Default in its flyout.
+    COLOR_INCLUDE_DEFAULT: int = hash("COLOR_INCLUDE_DEFAULT")
+
+    #: Color item has both As Is and Default in its flyout. This is the default option.
+    COLOR_INCLUDE_ALL: int = hash("COLOR_INCLUDE_ALL")
+
+    #: Disallow an item to be empty (default).
+    DISALLOW_EMPTY: int = hash("DISALLOW_EMPTY")
+
+    #: Allow an item to be empty.
+    ALLOW_EMPTY: int = hash("ALLOW_EMPTY")
+
+    #: Allow an item to be empty and use its default value for the item.
+    DEFAULT_IF_EMPTY: int = hash("DEFAULT_IF_EMPTY")
+
+    #: Include empty rows at the bottom of the table.
+    KEEP_BOTTOM_EMPTY_ROWS: int = hash("KEEP_BOTTOM_EMPTY_ROWS")
+
+    #: Left justified.
+    LEFT: int = hash("LEFT")
+
+    #: Right justified.
+    RIGHT: int = hash("RIGHT")
+
+    #: Center justified (horizontal).
+    CENTER: int = hash("CENTER")
+
+    #: Top justified.
+    TOP: int = hash("TOP")
+
+    #: Bottom justified.
+    BOTTOM: int = hash("BOTTOM")
+
+    #: Middle justified (vertical).
+    MIDDLE: int = hash("MIDDLE")
+
+    #: Item accepts a text string via a text field.
+    TEXT: int = hash("TEXT")
+
+    #: Item accepts a floating-point number via a text field.
+    FLOAT: int = hash("FLOAT")
+
+    #: Item accepts an integer via a text field.
+    INT: int = hash("INT")
+
+    #: Item accepts input from a list.
+    LIST: int = hash("LIST")
+
+    #: Item is a boolean; displayed as an icon.
+    BOOL: int = hash("BOOL")
+
+    #: Item displays an icon and does not accept input.
+    ICON: int = hash("ICON")
+
+    #: Item accepts color selection via a color flyout.
+    COLOR: int = hash("COLOR")
+
+    #: General.
+    GENERAL: int = hash("GENERAL")
+
+    #: Scientific.
+    SCIENTIFIC: int = hash("SCIENTIFIC")
+
+    #: Automatic.
+    AUTOMATIC: int = hash("AUTOMATIC")
+
+    #: Sort currently not active for the column.
+    SORT_INACTIVE: int = hash("SORT_INACTIVE")
+
+    #: Sort items of the column in the ascending order.
+    SORT_ASCENDING: int = hash("SORT_ASCENDING")
+
+    #: Sort items of the column in the descending order.
+    SORT_DESCENDING: int = hash("SORT_DESCENDING")
 
     def __init__(
         self,

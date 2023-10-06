@@ -7,6 +7,9 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Orient label above button.
+AFXCOLORBUTTON_VERTICAL: int = hash("AFXCOLORBUTTON_VERTICAL")
+
 
 class AFXColorButton(FXPacker):
     """This class contains a label that precedes a color well, which allows the user to bring up a color dialog
@@ -15,6 +18,9 @@ class AFXColorButton(FXPacker):
     When connected to an AFXStringKeyword, this widget will assign the value of the button's current color
     to the keyword in hex format (for example, "FF0000").
     """
+
+    #: ID for color button.
+    ID_COLORWELL: int = hash("ID_COLORWELL")
 
     def __init__(
         self,

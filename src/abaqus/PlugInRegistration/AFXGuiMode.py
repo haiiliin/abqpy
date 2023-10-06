@@ -9,6 +9,12 @@ from .FXObject import FXObject
 class AFXGuiMode(AFXMode):
     """This class is the abstract base class for modes."""
 
+    #: Used to destroy dialogs.
+    ID_DESTROY_DIALOGS: int = hash("ID_DESTROY_DIALOGS")
+
+    #: Used to handle bailout.
+    ID_HANDLE_BAILOUT: int = hash("ID_HANDLE_BAILOUT")
+
     def __init__(self, owner: AFXGuiObjectManager):
         """Constructor.
 

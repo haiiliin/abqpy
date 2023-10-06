@@ -6,6 +6,36 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXScrollArea import FXScrollArea
 
+#: Text is NOT editable.
+TEXT_READONLY: int = hash("TEXT_READONLY")
+
+#: Wrap at word breaks.
+TEXT_WORDWRAP: int = hash("TEXT_WORDWRAP")
+
+#: Overstrike mode.
+TEXT_OVERSTRIKE: int = hash("TEXT_OVERSTRIKE")
+
+#: Fixed wrap columns.
+TEXT_FIXEDWRAP: int = hash("TEXT_FIXEDWRAP")
+
+#: Insert spaces for tabs.
+TEXT_NO_TABS: int = hash("TEXT_NO_TABS")
+
+#: Autoindent.
+TEXT_AUTOINDENT: int = hash("TEXT_AUTOINDENT")
+
+#: Show active line.
+TEXT_SHOWACTIVE: int = hash("TEXT_SHOWACTIVE")
+
+#: Select characters.
+SELECT_CHARS: int = hash("SELECT_CHARS")
+
+#: Select words.
+SELECT_WORDS: int = hash("SELECT_WORDS")
+
+#: Select lines.
+SELECT_LINES: int = hash("SELECT_LINES")
+
 
 class FXText(FXScrollArea):
     """Multiline text widget."""

@@ -6,10 +6,49 @@ from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Slider shown horizontally.
+AFXSLIDER_HORIZONTAL: int = hash("AFXSLIDER_HORIZONTAL")
+
+#: Slider shown vertically.
+AFXSLIDER_VERTICAL: int = hash("AFXSLIDER_VERTICAL")
+
+#: Slider has arrow head pointing up.
+AFXSLIDER_ARROW_UP: int = hash("AFXSLIDER_ARROW_UP")
+
+#: Slider has arrow head pointing down.
+AFXSLIDER_ARROW_DOWN: int = hash("AFXSLIDER_ARROW_DOWN")
+
+#: Slider has arrow head pointing left.
+AFXSLIDER_ARROW_LEFT: int = hash("AFXSLIDER_ARROW_LEFT")
+
+#: Slider has arrow head pointing right.
+AFXSLIDER_ARROW_RIGHT: int = hash("AFXSLIDER_ARROW_RIGHT")
+
+#: Slider is inside the slot rather than overhanging.
+AFXSLIDER_INSIDE_BAR: int = hash("AFXSLIDER_INSIDE_BAR")
+
+#: Show slider value.
+AFXSLIDER_SHOW_VALUE: int = hash("AFXSLIDER_SHOW_VALUE")
+
+#: Show slider above its title.
+AFXSLIDER_ABOVE_TITLE: int = hash("AFXSLIDER_ABOVE_TITLE")
+
+#: Show slider after its title.
+AFXSLIDER_AFTER_TITLE: int = hash("AFXSLIDER_AFTER_TITLE")
+
+#: Default slider options--slider is horizontal, inside the slot, and shown above its title label.
+AFXSLIDER_NORMAL: int = hash("AFXSLIDER_NORMAL")
+
 
 class AFXSlider(FXPacker, AFXDataComponent):
     """This class provides a slider, which allows the user to specify a value by dragging its value
     indicator."""
+
+    #: ID for the slider.
+    ID_SLIDER: int = hash("ID_SLIDER")
+
+    #: Last ID for this class.
+    ID_LAST: int = hash("ID_LAST")
 
     def __init__(
         self,

@@ -7,10 +7,28 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Use a check button instead of a label.
+AFXSPINNER_CHECKBUTTON: int = hash("AFXSPINNER_CHECKBUTTON")
+
+#: Use a radio button instead of a label.
+AFXSPINNER_RADIOBUTTON: int = hash("AFXSPINNER_RADIOBUTTON")
+
+#: Orient label or button above spinner.
+AFXSPINNER_VERTICAL: int = hash("AFXSPINNER_VERTICAL")
+
+#: Configure spinner to the read-only state.
+AFXSPINNER_READONLY: int = hash("AFXSPINNER_READONLY")
+
 
 class AFXSpinner(FXPacker, AFXDataComponent):
     """This class contains a label that precedes a spin box that allows the user to specify a value by clicking
     on its arrow buttons."""
+
+    #: ID for the check or radio button.
+    ID_BUTTON: int = hash("ID_BUTTON")
+
+    #: ID for the spinner.
+    ID_SPINNER: int = hash("ID_SPINNER")
 
     def __init__(
         self,

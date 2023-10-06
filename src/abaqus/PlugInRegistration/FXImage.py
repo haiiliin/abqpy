@@ -6,6 +6,36 @@ from .FXApp import FXApp
 from .FXColor import FXColor
 from .FXDrawable import FXDrawable
 
+#: Keep pixel data in client.
+IMAGE_KEEP: int = hash("IMAGE_KEEP")
+
+#: Pixel data is owned by image.
+IMAGE_OWNED: int = hash("IMAGE_OWNED")
+
+#: Dither image to look better.
+IMAGE_DITHER: int = hash("IMAGE_DITHER")
+
+#: Turn off dithering and map to nearest color.
+IMAGE_NEAREST: int = hash("IMAGE_NEAREST")
+
+#: Data has alpha channel.
+IMAGE_ALPHA: int = hash("IMAGE_ALPHA")
+
+#: Force opaque background.
+IMAGE_OPAQUE: int = hash("IMAGE_OPAQUE")
+
+#: Override transparancy color.
+IMAGE_ALPHACOLOR: int = hash("IMAGE_ALPHACOLOR")
+
+#: Using shared memory image.
+IMAGE_SHMI: int = hash("IMAGE_SHMI")
+
+#: Using shared memory pixmap.
+IMAGE_SHMP: int = hash("IMAGE_SHMP")
+
+#: Guess transparency color from corners.
+IMAGE_ALPHAGUESS: int = hash("IMAGE_ALPHAGUESS")
+
 
 class FXImage(FXDrawable):
     """Image class."""

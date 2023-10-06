@@ -5,6 +5,9 @@ from .FXIcon import FXIcon
 from .FXList import FXList
 from .FXObject import FXObject
 
+#: Don't automatically commit on double click.
+AFXLIST_NO_AUTOCOMMIT: int = hash("AFXLIST_NO_AUTOCOMMIT")
+
 
 class AFXList(FXList):
     """This class is a list widget that allows displaying items in a scrollable window.

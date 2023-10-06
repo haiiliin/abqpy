@@ -11,6 +11,21 @@ from .FXPacker import FXPacker
 class AFXOptionTreeItem(FXPacker):
     """This class is a tree widget with check buttons."""
 
+    #: Toggles display of frame with children.
+    ID_TOGGLEEXPAND: int = hash("ID_TOGGLEEXPAND")
+
+    #: Represents checked state of this object.
+    ID_CHECKSTATE: int = hash("ID_CHECKSTATE")
+
+    #: Container for the subtree.
+    ID_SUBTREE: int = hash("ID_SUBTREE")
+
+    #: Expands frame with children.
+    ID_EXPAND: int = hash("ID_EXPAND")
+
+    #: Collapses frame with children.
+    ID_COLLAPSE: int = hash("ID_COLLAPSE")
+
     def __init__(
         self,
         p: FXComposite,

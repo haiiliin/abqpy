@@ -5,10 +5,34 @@ from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXPopup import FXPopup
 
+#: Automatically gray out when no target.
+AFXFLYOUT_AUTOGRAY: int = hash("AFXFLYOUT_AUTOGRAY")
+
+#: Automatically hide when no target.
+AFXFLYOUT_AUTOHIDE: int = hash("AFXFLYOUT_AUTOHIDE")
+
+#: Toolbar style button.
+AFXFLYOUT_TOOLBAR: int = hash("AFXFLYOUT_TOOLBAR")
+
+#: Popup horizontal.
+AFXFLYOUT_HORIZONTAL: int = hash("AFXFLYOUT_HORIZONTAL")
+
+#: Popup vertical.
+AFXFLYOUT_VERTICAL: int = hash("AFXFLYOUT_VERTICAL")
+
+#: Current item is always active.
+AFXFLYOUT_RADIO: int = hash("AFXFLYOUT_RADIO")
+
 
 class AFXFlyoutButton(FXLabel):
     """This class contains a button that acts like a regular FXButton when pressed and released quickly but
     displays a popup menu when pressed and held for a short time duration."""
+
+    #: ID for the popup timer.
+    ID_AFXFLYOUT_TIMER: int = hash("ID_AFXFLYOUT_TIMER")
+
+    #: ID used when hiding flyout item.
+    ID_HIDE_ITEM: int = hash("ID_HIDE_ITEM")
 
     def __init__(
         self,

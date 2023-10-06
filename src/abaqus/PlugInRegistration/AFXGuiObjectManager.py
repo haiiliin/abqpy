@@ -6,9 +6,27 @@ from .AFXDialog import AFXDialog
 from .FXIcon import FXIcon
 from .FXObject import FXObject
 
+#: GUI has no components in standard locations.
+GUI_IN_NONE: int = hash("GUI_IN_NONE")
+
+#: GUI has components in the menubar.
+GUI_IN_MENUBAR: int = hash("GUI_IN_MENUBAR")
+
+#: GUI has components in the Tools pull down pane.
+GUI_IN_TOOL_PANE: int = hash("GUI_IN_TOOL_PANE")
+
+#: GUI has components in the toolbar.
+GUI_IN_TOOLBAR: int = hash("GUI_IN_TOOLBAR")
+
+#: GUI has components in the toolbox.
+GUI_IN_TOOLBOX: int = hash("GUI_IN_TOOLBOX")
+
 
 class AFXGuiObjectManager(FXObject):
     """This is a base class for management of GUI components found in the menubar, toolbar, and toolbox."""
+
+    #: Used to destroy dialogs.
+    ID_DESTROY_DIALOGS: int = hash("ID_DESTROY_DIALOGS")
 
     def __init__(self, source: Self):
         """Undefined copy constructor (this class does not have copy semantics).

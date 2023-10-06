@@ -7,6 +7,9 @@ from .FXFont import FXFont
 from .FXObject import FXObject
 from .FXPacker import FXPacker
 
+#: Orient label above button.
+AFXCOLORBUTTON_VERTICAL: int = hash("AFXCOLORBUTTON_VERTICAL")
+
 
 class AFXColorComboBox(FXPacker):
     """This class contains a label that precedes a color well, which allows the user to bring up a color dialog

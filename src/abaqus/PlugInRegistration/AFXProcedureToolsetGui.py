@@ -11,6 +11,9 @@ class AFXProcedureToolsetGui(AFXToolsetGui):
     toolbar, and toolbox GUI items while the step executes.
     """
 
+    #: Do not use, do not delete; for use by derived classes.
+    ID_LAST: int = hash("ID_LAST")
+
     def __init__(self, toolsetName: str):
         """Constructor.
 

@@ -7,6 +7,12 @@ from .FXApp import FXApp
 class AFXApp(FXApp):
     """This class is responsible for providing some high-level GUI control methods."""
 
+    #: Used to query whether the GUI is locked.
+    ID_QUERY_GUILOCK: int = hash("ID_QUERY_GUILOCK")
+
+    #: Used to change the cursor.
+    ID_SHOW_HOURGLASS: int = hash("ID_SHOW_HOURGLASS")
+
     def __init__(
         self,
         appName: str = "Abaqus/CAE",

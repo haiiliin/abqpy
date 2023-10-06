@@ -5,6 +5,15 @@ from .FXIcon import FXIcon
 from .FXMenuCaption import FXMenuCaption
 from .FXObject import FXObject
 
+#: Normal, unchecked state.
+MENUSTATE_NORMAL: int = hash("MENUSTATE_NORMAL")
+
+#: Checked with a checkmark.
+MENUSTATE_CHECKED: int = hash("MENUSTATE_CHECKED")
+
+#: Checked with a bullet.
+MENUSTATE_RCHECKED: int = hash("MENUSTATE_RCHECKED")
+
 
 class FXMenuCommand(FXMenuCaption):
     """The menu command widget is used to invoke a command in the application from a menu.

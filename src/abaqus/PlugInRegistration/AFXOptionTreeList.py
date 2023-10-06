@@ -11,6 +11,9 @@ class AFXOptionTreeList(FXScrollWindow):
     """This class provides a scrolled list of groups of options that may be toggled on or off as a group or
     individually."""
 
+    #: ID for the content window.
+    ID_CONTENTS: int = hash("ID_CONTENTS")
+
     def __init__(
         self,
         p: FXComposite,

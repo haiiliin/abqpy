@@ -17,6 +17,24 @@ class AFXTransition(FXObject):
     class Operator:
         ...
 
+    #: Equal to.
+    EQ: int = hash("EQ")
+
+    #: Not equal to.
+    NE: int = hash("NE")
+
+    #: Less than.
+    LT: int = hash("LT")
+
+    #: Less than or equal to.
+    LE: int = hash("LE")
+
+    #: Greater than.
+    GT: int = hash("GT")
+
+    #: Greater than or equal to.
+    GE: int = hash("GE")
+
     def __init__(
         self, intTarget: AFXIntTarget, op: Operator, refValue: int, tgt: FXObject, sel: int, ptr: str = "None"
     ):

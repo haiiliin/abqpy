@@ -11,6 +11,57 @@ from .FXObject import FXObject
 class AFXProcedure(AFXGuiMode):
     """This class provides the basis for writing procedures."""
 
+    #: ID for handling bailout.
+    ID_HANDLE_2BTN_BAILOUT: int = hash("ID_HANDLE_2BTN_BAILOUT")
+
+    #: ID for the backup button.
+    ID_BACKUP: int = hash("ID_BACKUP")
+
+    #: Pick entities inside the drag shape only.
+    INSIDE: int = hash("INSIDE")
+
+    #: Pick entities inside and crossing the drag shape.
+    INSIDE_CROSSING: int = hash("INSIDE_CROSSING")
+
+    #: Pick entities crossing the drag shape only.
+    CROSSING: int = hash("CROSSING")
+
+    #: Pick entities outside and crossing the drag shape.
+    OUTSIDE_CROSSING: int = hash("OUTSIDE_CROSSING")
+
+    #: Pick entities outside the drag shape only.
+    OUTSIDE: int = hash("OUTSIDE")
+
+    #: Use rectangular drag shape.
+    RECTANGLE: int = hash("RECTANGLE")
+
+    #: Use circular drag shape.
+    CIRCLE: int = hash("CIRCLE")
+
+    #: Use polygonal drag shape.
+    POLYGON: int = hash("POLYGON")
+
+    #: Only pick the entity closest to the screen.
+    CLOSEST: int = hash("CLOSEST")
+
+    #: Pick entities at any depth.
+    INFINITE: int = hash("INFINITE")
+
+    #: Pick only interior entities.
+    INTERIOR: int = hash("INTERIOR")
+
+    #: Pick only exterior entities.
+    EXTERIOR: int = hash("EXTERIOR")
+
+    #: Pick all entities.
+    ALL: int = hash("ALL")
+
+    #: Cancel the currently running procedure (default).
+    NORMAL: int = hash("NORMAL")
+
+    #: Suspend the currently running procedure.
+    SUBPROCEDURE: int = hash("SUBPROCEDURE")
+
     def __init__(self, owner: AFXGuiObjectManager, type=NORMAL):
         """Constructor.
 

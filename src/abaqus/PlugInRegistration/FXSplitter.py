@@ -4,6 +4,18 @@ from .constants import SPLITTER_NORMAL
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 
+#: Split horizontally.
+SPLITTER_HORIZONTAL: int = hash("SPLITTER_HORIZONTAL")
+
+#: Split vertically.
+SPLITTER_VERTICAL: int = hash("SPLITTER_VERTICAL")
+
+#: Reverse-anchored.
+SPLITTER_REVERSED: int = hash("SPLITTER_REVERSED")
+
+#: Track continuous during split.
+SPLITTER_TRACKING: int = hash("SPLITTER_TRACKING")
+
 
 class FXSplitter(FXComposite):
     """Splitter window is used to interactively repartition two or more subpanes.

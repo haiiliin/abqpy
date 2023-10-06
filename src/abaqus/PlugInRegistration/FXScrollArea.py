@@ -2,6 +2,39 @@ from __future__ import annotations
 
 from .FXComposite import FXComposite
 
+#: Show the scrollbars when needed.
+SCROLLERS_NORMAL: int = hash("SCROLLERS_NORMAL")
+
+#: Always show horizontal scrollers.
+HSCROLLER_ALWAYS: int = hash("HSCROLLER_ALWAYS")
+
+#: Never show horizontal scrollers.
+HSCROLLER_NEVER: int = hash("HSCROLLER_NEVER")
+
+#: Always show vertical scrollers.
+VSCROLLER_ALWAYS: int = hash("VSCROLLER_ALWAYS")
+
+#: Never show vertical scrollers.
+VSCROLLER_NEVER: int = hash("VSCROLLER_NEVER")
+
+#: Horizontal scrolling turned on (default).
+HSCROLLING_ON: int = hash("HSCROLLING_ON")
+
+#: Horizontal scrolling turned off.
+HSCROLLING_OFF: int = hash("HSCROLLING_OFF")
+
+#: Vertical scrolling turned on (default).
+VSCROLLING_ON: int = hash("VSCROLLING_ON")
+
+#: Vertical scrolling turned off.
+VSCROLLING_OFF: int = hash("VSCROLLING_OFF")
+
+#: Scrollers track continuously for smooth scrolling.
+SCROLLERS_TRACK: int = hash("SCROLLERS_TRACK")
+
+#: Scrollers don't track continuously.
+SCROLLERS_DONT_TRACK: int = hash("SCROLLERS_DONT_TRACK")
+
 
 class FXScrollArea(FXComposite):
     """The scroll area widget manages a content area and a viewport area through which the content is viewed.

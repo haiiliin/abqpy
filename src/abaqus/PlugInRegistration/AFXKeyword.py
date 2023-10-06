@@ -7,6 +7,12 @@ from .FXDataTarget import FXDataTarget
 class AFXKeyword(FXDataTarget):
     """Abaqus."""
 
+    #: Used to activate the keyword.
+    ID_ACTIVATE: int = hash("ID_ACTIVATE")
+
+    #: Used to deactivate the keyword.
+    ID_DEACTIVATE: int = hash("ID_DEACTIVATE")
+
     def __init__(self, command: AFXCommand, name: str, isRequired: bool = False):
         """Constructor.
 

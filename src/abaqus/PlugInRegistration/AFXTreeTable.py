@@ -8,10 +8,103 @@ from .FXObject import FXObject
 from .FXScrollArea import FXScrollArea
 from .FXTreeItem import FXTreeItem
 
+#: Allow users to resize columns.
+AFXTREETABLE_COLUMN_RESIZABLE: int = hash("AFXTREETABLE_COLUMN_RESIZABLE")
+
+#: Disallow column selections (selecting a header/footer item in a column selects the whole column).
+AFXTREETABLE_NO_COLUMN_SELECT: int = hash("AFXTREETABLE_NO_COLUMN_SELECT")
+
+#: Selecting any item in a row selects the whole row.
+AFXTREETABLE_ROW_MODE: int = hash("AFXTREETABLE_ROW_MODE")
+
+#: Use extended selection mode that allows multiple items to be selected and allows users to drag-select a range of items.
+AFXTREETABLE_EXTENDED_SELECT: int = hash("AFXTREETABLE_EXTENDED_SELECT")
+
+#: Use single selection mode that allows up to one item to be selected.
+AFXTREETABLE_SINGLE_SELECT: int = hash("AFXTREETABLE_SINGLE_SELECT")
+
+#: Use browse selection mode that enforces one single item to be selected at all times.
+AFXTREETABLE_BROWSE_SELECT: int = hash("AFXTREETABLE_BROWSE_SELECT")
+
+#: Show item check boxes.
+AFXTREETABLE_CHECK_BOXES: int = hash("AFXTREETABLE_CHECK_BOXES")
+
+#: Propagate checked state to children and parents.
+AFXTREETABLE_PROPAGATE_CHECKS: int = hash("AFXTREETABLE_PROPAGATE_CHECKS")
+
+#: Default table options--use extended selection mode, columns are resizable, and layout fills both X and Y directions.
+AFXTREETABLE_NORMAL: int = hash("AFXTREETABLE_NORMAL")
+
+#: Do not pre-select any list item.
+AFXTREETABLE_LIST_PRESELECT_NONE: int = hash("AFXTREETABLE_LIST_PRESELECT_NONE")
+
 
 class AFXTreeTable(FXScrollArea, AFXDataComponent):
     """This class combines a tree widget with a table widget to allow associating a row of data with an item in
     a tree."""
+
+    #: Color item has no As Is and Default in its flyout.
+    COLOR_INCLUDE_COLOR_ONLY: int = hash("COLOR_INCLUDE_COLOR_ONLY")
+
+    #: Color item has As Is in its flyout.
+    COLOR_INCLUDE_AS_IS: int = hash("COLOR_INCLUDE_AS_IS")
+
+    #: Color item has Default in its flyout.
+    COLOR_INCLUDE_DEFAULT: int = hash("COLOR_INCLUDE_DEFAULT")
+
+    #: Color item has both As Is and Default in its flyout. This is the default option.
+    COLOR_INCLUDE_ALL: int = hash("COLOR_INCLUDE_ALL")
+
+    #: Not yet implemented (Real).
+    REAL: int = hash("REAL")
+
+    #: Left justified.
+    LEFT: int = hash("LEFT")
+
+    #: Right justified.
+    RIGHT: int = hash("RIGHT")
+
+    #: Center justified (horizontal).
+    CENTER: int = hash("CENTER")
+
+    #: Top justified.
+    TOP: int = hash("TOP")
+
+    #: Bottom justified.
+    BOTTOM: int = hash("BOTTOM")
+
+    #: Middle justified (vertical).
+    MIDDLE: int = hash("MIDDLE")
+
+    #: Item accepts a text string via a text field.
+    TEXT: int = hash("TEXT")
+
+    #: Item accepts a floating-point number via a text field.
+    FLOAT: int = hash("FLOAT")
+
+    #: Item accepts an integer via a text field.
+    INT: int = hash("INT")
+
+    #: Item accepts input from a list.
+    LIST: int = hash("LIST")
+
+    #: Item is a boolean; displayed as an icon.
+    BOOL: int = hash("BOOL")
+
+    #: Item displays an icon and does not accept input.
+    ICON: int = hash("ICON")
+
+    #: Item accepts color selection via a color flyout.
+    COLOR: int = hash("COLOR")
+
+    #: General.
+    GENERAL: int = hash("GENERAL")
+
+    #: Scientific.
+    SCIENTIFIC: int = hash("SCIENTIFIC")
+
+    #: Automatic.
+    AUTOMATIC: int = hash("AUTOMATIC")
 
     def __init__(
         self,

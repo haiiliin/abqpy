@@ -3,6 +3,18 @@ from __future__ import annotations
 from .FXComposite import FXComposite
 from .FXFrame import FXFrame
 
+#: Nothing visible.
+SEPARATOR_NONE: int = hash("SEPARATOR_NONE")
+
+#: Etched-in looking groove.
+SEPARATOR_GROOVE: int = hash("SEPARATOR_GROOVE")
+
+#: Embossed looking ridge.
+SEPARATOR_RIDGE: int = hash("SEPARATOR_RIDGE")
+
+#: Simple line.
+SEPARATOR_LINE: int = hash("SEPARATOR_LINE")
+
 
 class FXVerticalSeparator(FXFrame):
     """Vertical separator."""

@@ -3,6 +3,48 @@ from __future__ import annotations
 from .FXIcon import FXIcon
 from .FXShell import FXShell
 
+#: Borderless window.
+DECOR_NONE: int = hash("DECOR_NONE")
+
+#: Window title.
+DECOR_TITLE: int = hash("DECOR_TITLE")
+
+#: Minimize button.
+DECOR_MINIMIZE: int = hash("DECOR_MINIMIZE")
+
+#: Maximize button.
+DECOR_MAXIMIZE: int = hash("DECOR_MAXIMIZE")
+
+#: Close button.
+DECOR_CLOSE: int = hash("DECOR_CLOSE")
+
+#: Border.
+DECOR_BORDER: int = hash("DECOR_BORDER")
+
+#: Resize handles.
+DECOR_RESIZE: int = hash("DECOR_RESIZE")
+
+#: Window menu.
+DECOR_MENU: int = hash("DECOR_MENU")
+
+#: Place it at the default size and location.
+PLACEMENT_DEFAULT: int = hash("PLACEMENT_DEFAULT")
+
+#: Place window to be fully visible.
+PLACEMENT_VISIBLE: int = hash("PLACEMENT_VISIBLE")
+
+#: Place it under the cursor position.
+PLACEMENT_CURSOR: int = hash("PLACEMENT_CURSOR")
+
+#: Place it centered on its owner.
+PLACEMENT_OWNER: int = hash("PLACEMENT_OWNER")
+
+#: Place it centered on the screen.
+PLACEMENT_SCREEN: int = hash("PLACEMENT_SCREEN")
+
+#: Place it maximized to the screen size.
+PLACEMENT_MAXIMIZED: int = hash("PLACEMENT_MAXIMIZED")
+
 
 class FXTopWindow(FXShell):
     """Abstract base class for all top-level windows."""

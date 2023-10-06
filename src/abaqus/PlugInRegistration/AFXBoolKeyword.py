@@ -8,6 +8,12 @@ from .constants import ON_OFF
 class AFXBoolKeyword(AFXKeyword):
     """This class is designed for command keywords that have Boolean values."""
 
+    #: Keyword value will be ON or OFF.
+    ON_OFF: int = hash("ON_OFF")
+
+    #: Keyword value will be True or False.
+    TRUE_FALSE: int = hash("TRUE_FALSE")
+
     def __init__(
         self,
         command: AFXCommand,

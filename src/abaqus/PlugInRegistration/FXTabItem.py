@@ -5,6 +5,18 @@ from .FXIcon import FXIcon
 from .FXLabel import FXLabel
 from .FXTabBar import FXTabBar
 
+#: Top side tabs.
+TAB_TOP: int = hash("TAB_TOP")
+
+#: Left side tabs.
+TAB_LEFT: int = hash("TAB_LEFT")
+
+#: Right side tabs.
+TAB_RIGHT: int = hash("TAB_RIGHT")
+
+#: Bottom side tabs.
+TAB_BOTTOM: int = hash("TAB_BOTTOM")
+
 
 class FXTabItem(FXLabel):
     """A tab item is placed in a tab bar or tab book.
