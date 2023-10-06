@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXLabel import FXLabel
 from .FXObject import FXObject
@@ -9,6 +10,9 @@ CHECKBUTTON_AUTOGRAY: int = hash("CHECKBUTTON_AUTOGRAY")
 
 #: Automatically hide when not updated.
 CHECKBUTTON_AUTOHIDE: int = hash("CHECKBUTTON_AUTOHIDE")
+
+#: Normal check button.
+CHECKBUTTON_NORMAL: int = hash("CHECKBUTTON_NORMAL")
 
 
 class FXCheckButton(FXLabel):

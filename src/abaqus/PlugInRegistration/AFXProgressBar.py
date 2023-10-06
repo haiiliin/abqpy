@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .constants import AFXPROGRESSBAR_PERCENTAGE, DEFAULT_PAD
+from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXObject import FXObject
 from .FXProgressBar import FXProgressBar

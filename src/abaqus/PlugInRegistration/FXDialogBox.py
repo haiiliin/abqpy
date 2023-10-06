@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from .FXTopWindow import FXTopWindow
+from .FXTopWindow import PLACEMENT_CURSOR, FXTopWindow
 from .FXWindow import FXWindow
 
 

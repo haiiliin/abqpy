@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from .AFXDataComponent import AFXDataComponent
-from .constants import AFXTEXTFIELD_STRING, DEFAULT_PAD
+from .constants import DEFAULT_PAD
 from .FXComposite import FXComposite
 from .FXExponent import FXExponent
 from .FXFont import FXFont

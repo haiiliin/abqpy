@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .constants import DEFAULT_PAD
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFrame import FXFrame
@@ -34,6 +35,9 @@ ARROW_TOOLBAR: int = hash("ARROW_TOOLBAR")
 
 #: Button is spinner-style.
 ARROW_SPINNER: int = hash("ARROW_SPINNER")
+
+#: Normal arrow button.
+ARROW_NORMAL: int = hash("ARROW_NORMAL")
 
 
 class FXArrowButton(FXFrame):

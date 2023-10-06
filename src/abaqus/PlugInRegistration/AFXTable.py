@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .AFXBaseTable import AFXBaseTable
 from .AFXDataComponent import AFXDataComponent
+from .constants import DEFAULT_MARGIN
 from .FXColor import FXColor
 from .FXComposite import FXComposite
 from .FXFont import FXFont
@@ -43,6 +44,9 @@ AFXTABLE_NORMAL: int = hash("AFXTABLE_NORMAL")
 
 #: Do not pre-select any list item.
 AFXTABLE_LIST_PRESELECT_NONE: int = hash("AFXTABLE_LIST_PRESELECT_NONE")
+
+#: Normally list items
+AFXTABLE_LIST_NORMAL: int = hash("AFXTABLE_LIST_NORMAL")
 
 
 class AFXTable(AFXBaseTable, AFXDataComponent):
