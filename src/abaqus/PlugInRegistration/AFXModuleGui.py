@@ -1,0 +1,46 @@
+from __future__ import annotations
+
+
+class AFXModuleGui:
+    """This is the base class for module GUIs and provides an interface for module GUI management."""
+
+    def __init__(self, moduleName: str, displayTypes: int):
+        """Constructor.
+
+        Parameters
+        ----------
+        moduleName : str
+            Name used to identify this module.
+        displayTypes : int
+            Types of primary objects that this module may display.
+        """
+
+    def activate(self):
+        """Activates the module during switch processing (allows for module specific activation requirements)."""
+
+    def deactivate(self):
+        """Deactivates the module when switching out (allows for module specific deactivation requirements)."""
+
+    def getModuleName(self):
+        """Returns the name of the module given on construction."""
+
+    def getTypesToDisplay(self):
+        """Returns the type of the primary objects which may be displayed when this module is active (this currently assumes a single type)."""
+
+    def hide(self, location: int):
+        """Deactivates and hides the module's GUI components in the menubar, toolbar and toolbox.
+
+        Parameters
+        ----------
+        location : int
+            Location where gui components are placed.
+        """
+
+    def show(self, location: int):
+        """Activates and shows the module's GUI components in the menubar, toolbar and toolbox.
+
+        Parameters
+        ----------
+        location : int
+            Location where gui components are placed.
+        """
