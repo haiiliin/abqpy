@@ -651,13 +651,13 @@ Set the status line help text for this list.
 | **Argument** | **Type** | **Default** | **Description** |
 | text | String |   |   |
 
-### setIndent(in)  
+### setIndent(in_)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Change parent-child indent amount.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| in | Int |   |   |
+| in_ | Int |   |   |
 
 ### setItemCheck(item, check, notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

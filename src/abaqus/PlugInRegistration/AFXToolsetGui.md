@@ -1,5 +1,3 @@
-| 
-
 This is the base class for toolset GUIs and provides an interface for managing the toolset's GUI items. It provides a mechanism to add in menubar, toolbar, and toolbox GUI items.
 
 ![](../SIMACAERefImages/gui-afxtoolsetgui.png)

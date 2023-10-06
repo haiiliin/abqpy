@@ -711,13 +711,13 @@ Removes the specified tree item and corresponding table row.
 | item | FXTreeItem |   |   |
 | notify | Bool | False |   |
 
-### removeItems(from, to, notify=False)  
+### removeItems(from_, to, notify=False)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)
 
 Removes the specified tree items and their corresponding table rows, inclusively.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| from | FXTreeItem |   |   |
+| from_ | FXTreeItem |   |   |
 | to | FXTreeItem |   |   |
 | notify | Bool | False |   |
 

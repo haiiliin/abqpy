@@ -60,7 +60,7 @@ Reimplemented from FXList.
 Returns the index of the first item with the associated data or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| data |   |   |   |
+| data |  String |   |   |
 
 ### getItemProvider()  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

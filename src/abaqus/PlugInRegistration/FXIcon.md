@@ -9,7 +9,7 @@ Create an icon with an initial pixel buffer pix, a transparent color clr, and op
 
 | **Argument** | **Type** | **Default** | **Description** |
 | a | FXApp |   |   |
-| pix |   | None |   |
+| pix |  Any | None |   |
 | clr | FXColor | 0 |   |
 | opts | Int | 0 |   |
 | w | Int | 1 |   |

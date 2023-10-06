@@ -15,7 +15,7 @@ Construct icon from memory stream formatted in Microsoft BMP format.
 
 | **Argument** | **Type** | **Default** | **Description** |
 | a | FXApp |   |   |
-| pix |   | None |   |
+| pix | Any  | None |   |
 | clr | FXColor | FXRGB(192, 192, 192) |   |
 | opts | Int | 0 |   |
 | w | Int | 1 |   |

@@ -88,7 +88,7 @@ Returns the data for the specified item.
 Returns the index of the first item with the associated data or -1 if not found.
 
 | **Argument** | **Type** | **Default** | **Description** |
-| data |   |   |   |
+| data | Any  |   |   |
 
 ### getItemIndexForFloat(val)  
 ![](https://help.3ds.com/2023/English/DSSIMULIA_Established/IconsReference/butix_top_wline.png)

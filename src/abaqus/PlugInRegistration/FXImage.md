@@ -17,7 +17,7 @@ Create an image.
 
 | **Argument** | **Type** | **Default** | **Description** |
 | a | FXApp |   |   |
-| pix |   | None |   |
+| pix |  Any | None |   |
 | opts | Int | 0 |   |
 | w | Int | 1 |   |
 | h | Int | 1 |   |
