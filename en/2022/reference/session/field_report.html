@@ -1517,6 +1517,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin.html" class="md-nav__link">
+        <span class="md-ellipsis">Plug-<wbr>in Registration</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2645,9 +2660,6 @@
 <tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.writeOBJFile" title="abaqus.Session.SessionBase.SessionBase.writeOBJFile (Python method) — This method exports the current viewport objects to a file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code></a>(fileName[, canvasObjects])</p></td>
 <td><p>This method exports the current viewport objects to a file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="index.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb (Python method) — This method opens an existing output database (.odb) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example:"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code></a>(name[, path, readOnly])</p></td>
-<td><p>This method opens an existing output database (<cite>.odb</cite>) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::.</p></td>
-</tr>
 </tbody>
 </table>
 </details></div>
@@ -2785,7 +2797,7 @@ SPECIFY.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/FieldReport/FieldReportOptions.py#L18-L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The FieldReportOptions object stores settings used by the writeFieldReport method when you write a
 FieldOutput object to an ASCII file. The FieldReportOptions object has no constructor. Abaqus creates the
 <strong>fieldReportOptions</strong> member when you import the Visualization module.</p>
@@ -2915,7 +2927,7 @@ tabular report. The default value is OFF.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBodyReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/FieldReport/FreeBodyReportOptions.py#L11-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
 when you write free body computational results to an ASCII file. The
 FreeBodyReportOptions object has no constructor. Abaqus creates the
@@ -2978,7 +2990,7 @@ LOCAL. The default value is GLOBAL.</p>
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFieldVarList</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="p">()</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">/</span></span></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/FieldReport/OdbFieldVarList.py#L8-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
 <p>The read-only OdbFieldVarList object is a sequence listing all variables available for the current step
 and frame. Each item in the sequence is itself a sequence fully describing the given variable.</p>
 <div class="note admonition">
@@ -3002,7 +3014,7 @@ and frame. Each item in the sequence is itself a sequence fully describing the g
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbModelFieldVarList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/FieldReport/OdbModelFieldVarList.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The read-only OdbModelFieldVarList object lists all variables available for the model in the current
 OdbDisplay object.</p>
 <div class="note admonition">
