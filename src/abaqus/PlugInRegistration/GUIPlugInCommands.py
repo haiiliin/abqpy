@@ -11,7 +11,6 @@ from .PluginToolsetBase import PluginToolsetBase
 class GUIPluginToolset(PluginToolsetBase):
     def registerGuiMenuButton(
         self,
-        toolboxName: str,
         object: FXObject,
         buttonText: str = "",
         messageId: int = AFXMode.ID_ACTIVATE,
@@ -27,9 +26,6 @@ class GUIPluginToolset(PluginToolsetBase):
 
         Parameters
         ----------
-        toolboxName : str
-            A String specifying the name of the toolbox in which the button will be shown. The name appears in the toolbox
-            title bar.
         object : FXObject
             The GUI object to which a (messageId, SEL_COMMAND) message will be sent. The object must have been inherited
             from FXObject.
