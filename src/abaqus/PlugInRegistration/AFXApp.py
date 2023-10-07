@@ -51,15 +51,12 @@ class AFXApp(FXApp):
 
     def getAFXMainWindow(self) -> AFXMainWindow:  # type: ignore
         """Returns a pointer to the AFXMainWindow."""
-        ...
 
     def getBasePrerelease(self) -> bool:  # type: ignore
         """Returns True if the base product is a prerelease."""
-        ...
 
     def getBaseProductName(self) -> str:  # type: ignore
         """Returns the base product name."""
-        ...
 
     def getBaseVersionNumbers(self, majorNumber: int, minorNumber: int, updateNumber: int):
         """Returns the base product's major, minor, and update numbers.
@@ -76,19 +73,15 @@ class AFXApp(FXApp):
 
     def getKernelInitializationCommand(self) -> str:  # type: ignore
         """Returns the command string that will be issued upon application startup."""
-        ...
 
     def getPrerelease(self) -> bool:  # type: ignore
         """Returns True if this is a prerelease."""
-        ...
 
     def getProductName(self) -> str:  # type: ignore
         """Returns the product name."""
-        ...
 
     def getVersionNumbers(self) -> tuple[int, int, int]:  # type: ignore
         """Returns the major, minor, and update numbers."""
-        ...
 
     def init(self, argc: int, argv: str, *args, **kwargs):
         """Initializes the application and connects to the kernel.
@@ -105,19 +98,15 @@ class AFXApp(FXApp):
 
         Reimplemented from FXApp.
         """
-        ...
 
     def isProductCAE(self) -> bool:  # type: ignore
         """Returns True if the base product is Abaqus/CAE."""
-        ...
 
     def isProductViewer(self) -> bool:  # type: ignore
         """Returns True if the base product is Abaqus/Viewer."""
-        ...
 
     def isLearningEdition(self) -> bool:  # type: ignore
         """Returns True if the base product is a learning edition."""
-        ...
 
     def lock(self):
         """Locks the GUI (normally used during command and mode processing)."""
