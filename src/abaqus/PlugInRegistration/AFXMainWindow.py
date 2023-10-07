@@ -1,11 +1,18 @@
 from __future__ import annotations
 
 from .AFXGuiObjectManager import AFXGuiObjectManager
+from .AFXMenuPane import AFXMenuPane
+from .AFXMenuTitle import AFXMenuTitle
+from .AFXTarget import AFXTarget
 from .AFXToolsetGui import AFXToolsetGui
 from .constants import DECOR_ALL
 from .FXApp import FXApp
 from .FXIcon import FXIcon
 from .FXMainWindow import FXMainWindow
+from .FXMenubar import FXMenubar
+from .FXSelector import FXSelector
+from .FXTabItem import FXTabItem
+from .PluginToolset import PluginToolset
 
 
 class AFXMainWindow(FXMainWindow):
@@ -108,22 +115,22 @@ class AFXMainWindow(FXMainWindow):
     def getContextBar(self):
         """Returns a pointer to the context bar container."""
 
-    def getCurrentTreeTab(self):
+    def getCurrentTreeTab(self) -> FXTabItem:  # type: ignore
         """Returns the current tab item."""
 
-    def getDefaultHeight(self):
+    def getDefaultHeight(self) -> int:  # type: ignore
         """Returns the default main window height.
 
         Reimplemented from FXTopWindow.
         """
 
-    def getDefaultWidth(self):
+    def getDefaultWidth(self) -> int:  # type: ignore
         """Returns the default main window width.
 
         Reimplemented from FXTopWindow.
         """
 
-    def getDisplayedNameAtIndex(self, index: int):
+    def getDisplayedNameAtIndex(self, index: int) -> str:  # type: ignore
         """Returns the displayed name at the given position in the list.
 
         Parameters
@@ -132,16 +139,16 @@ class AFXMainWindow(FXMainWindow):
             Position in the module list.
         """
 
-    def getDrawingAreaHeight(self):
+    def getDrawingAreaHeight(self) -> int:  # type: ignore
         """Returns the height of the drawing area in pixels."""
 
-    def getDrawingAreaWidth(self):
+    def getDrawingAreaWidth(self) -> int:  # type: ignore
         """Returns the width of the drawing area in pixels."""
 
     def getHelpToolset(self):
         """Returns a pointer to the help toolset."""
 
-    def getMenubar(self):
+    def getMenubar(self) -> FXMenubar:  # type: ignore
         """Returns a pointer to the menubar."""
 
     def getModule(self, name: str):
@@ -153,7 +160,7 @@ class AFXMainWindow(FXMainWindow):
             A String that specifies the module to get.
         """
 
-    def getModuleName(self, displayedName: str):
+    def getModuleName(self, displayedName: str) -> str:  # type: ignore
         """Returns the module name for the given displayed name.
 
         Parameters
@@ -162,13 +169,13 @@ class AFXMainWindow(FXMainWindow):
             Displayed module name (English).
         """
 
-    def getNumModules(self):
+    def getNumModules(self) -> int:  # type: ignore
         """Returns the number of modules."""
 
-    def getPluginToolset(self):
+    def getPluginToolset(self) -> PluginToolset:  # type: ignore
         """Returns the Plugin toolset."""
 
-    def getSelectorFromFunction(self, function: str):
+    def getSelectorFromFunction(self, function: str) -> FXSelector:  # type: ignore
         """Returns the selector of the given shortcut function. Throws exception if not found.
 
         Parameters
@@ -177,7 +184,7 @@ class AFXMainWindow(FXMainWindow):
             A String specifying the function as shown in the Customize dialog box.
         """
 
-    def getTargetFromFunction(self, function: str):
+    def getTargetFromFunction(self, function: str) -> AFXTarget:  # type: ignore
         """Returns the target of the given shortcut function. Throws exception if not found.
 
         Parameters
@@ -189,10 +196,10 @@ class AFXMainWindow(FXMainWindow):
     def getToolbox(self):
         """Returns a pointer to the module toolbox container."""
 
-    def getToolMenuPane(self):
+    def getToolMenuPane(self) -> AFXMenuPane:  # type: ignore
         """Returns a pointer to the tools menu pane."""
 
-    def getToolMenuTitle(self):
+    def getToolMenuTitle(self) -> AFXMenuTitle:  # type: ignore
         """Returns a pointer to the Tools menu title."""
 
     def getToolset(self, name: str):
@@ -208,7 +215,7 @@ class AFXMainWindow(FXMainWindow):
         """Returns the command string that should initialize the toolsets in the kernel that are corresponding
         to the toolsets registered with the main window."""
 
-    def getWorkDirectory(self):
+    def getWorkDirectory(self) -> str:  # type: ignore
         """Returns the current working directory."""
 
     def hideCli(self):
