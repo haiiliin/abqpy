@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 import inspect
-import os
 import json
+import os
 import re
 import sys
 import typing
