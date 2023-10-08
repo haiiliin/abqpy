@@ -101,7 +101,6 @@ class Coupling(Constraint):
     #:     The ``alpha`` attribute was added.
     alpha: float = 0.0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -191,7 +190,6 @@ class Coupling(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         adjust: Boolean = OFF,

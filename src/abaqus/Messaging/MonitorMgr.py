@@ -18,7 +18,6 @@ class MonitorMgr:
             monitorManager
     """
 
-    @abaqus_method_doc
     def addMessageCallback(
         self,
         jobName: str,
@@ -102,7 +101,6 @@ class MonitorMgr:
         """
         ...
 
-    @abaqus_method_doc
     def removeMessageCallback(
         self,
         jobName: str,
@@ -182,7 +180,6 @@ class MonitorMgr:
         """
         ...
 
-    @abaqus_method_doc
     def checkMonitorStatus(self):
         """This method raises a MonitorError exception if the monitoring status is not ENABLED.
 

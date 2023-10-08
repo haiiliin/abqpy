@@ -42,7 +42,6 @@ class NumberFormat:
     #: value is 0.
     precision: int = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         blankPad: Boolean = ON,

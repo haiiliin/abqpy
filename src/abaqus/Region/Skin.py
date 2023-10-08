@@ -37,7 +37,6 @@ class Skin:
     #: A FaceArray object.
     faces: FaceArray = FaceArray([])
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -78,7 +77,6 @@ class Skin:
         """
         ...
 
-    @abaqus_method_doc
     def EditSkin(
         self,
         name: str = "",

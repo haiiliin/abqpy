@@ -120,7 +120,6 @@ class FractureCriterion:
     #: value is DEFAULT.
     unstableTolerance: Union[SymbolicConstant, float] = DEFAULT
 
-    @abaqus_method_doc
     def __init__(
         self,
         initTable: tuple,
@@ -173,7 +172,6 @@ class FractureCriterion:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FractureCriterion object."""
         ...

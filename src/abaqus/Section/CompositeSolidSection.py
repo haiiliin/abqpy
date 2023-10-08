@@ -37,7 +37,6 @@ class CompositeSolidSection(Section):
     #: string.
     layupName: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -73,7 +72,6 @@ class CompositeSolidSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, symmetric: Boolean = OFF, layupName: str = ""):
         """This method modifies the CompositeSolidSection object.
 

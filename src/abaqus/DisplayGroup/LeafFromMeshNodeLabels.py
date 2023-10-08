@@ -26,7 +26,6 @@ class LeafFromMeshNodeLabels(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, nodeSeq: Sequence[MeshNode]):
         """This method creates a Leaf object from a sequence of mesh node objects. Leaf objects specify the
         items in a display group.

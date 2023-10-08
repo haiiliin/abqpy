@@ -20,7 +20,6 @@ class XYReportOptions:
             session.xyReportOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         pageWidth: int = 80,

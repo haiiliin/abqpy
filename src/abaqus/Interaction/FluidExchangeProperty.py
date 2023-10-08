@@ -103,7 +103,6 @@ class FluidExchangeProperty(ContactProperty):
     #: **definition** = MASS_RATE_LEAK, or when **definition** = VOL_RATE_LEAK. The default value is 0.
     fieldDependencies: int = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -200,7 +199,6 @@ class FluidExchangeProperty(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[

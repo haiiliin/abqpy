@@ -315,7 +315,6 @@ class MaterialBase:
     #:     The ``meanFieldHomogenization`` attribute was added.
     meanFieldHomogenization: MeanFieldHomogenization = MeanFieldHomogenization()
 
-    @abaqus_method_doc
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
@@ -347,7 +346,6 @@ class MaterialBase:
             materialIdentifier,
         )
 
-    @abaqus_method_doc
     def materialsFromOdb(self, fileName: str):
         """This methods creates Material objects by reading an output database. The new materials are placed in
         the materials repository.

@@ -25,12 +25,10 @@ class Imperfection:
     #: OFF.
     suppressed: Boolean = OFF
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the imperfection that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the imperfection."""
         ...

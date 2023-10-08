@@ -43,7 +43,6 @@ class FaceArray(List[Face]):
             mdb.models[name].rootAssembly.surfaces[name].faces
     """
 
-    @abaqus_method_doc
     def __init__(self, faces: list[Face]) -> None:
         """This method creates a FaceArray object.
 
@@ -65,7 +64,6 @@ class FaceArray(List[Face]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[float, float, float],
@@ -74,7 +72,6 @@ class FaceArray(List[Face]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[tuple[float, float, float],],
@@ -83,7 +80,6 @@ class FaceArray(List[Face]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         *coordinates: tuple[tuple[float, float, float],],
@@ -91,7 +87,6 @@ class FaceArray(List[Face]):
     ) -> list[Face]:
         ...
 
-    @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Face, list[Face]]:
         """This method returns the object or objects in the FaceArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face that is at the arbitrary
@@ -134,7 +129,6 @@ class FaceArray(List[Face]):
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
-    @abaqus_method_doc
     def getExteriorEdges(self) -> EdgeArray:
         """This method returns the edges on the exterior of the faces in the FaceArray. That is, it returns the
         edges that are referenced by exactly one of the faces in the sequence.
@@ -147,16 +141,13 @@ class FaceArray(List[Face]):
         return EdgeArray([Edge()])
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> Face:  # type: ignore
         ...
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> list[Face]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, list[Face]]:  # type: ignore
         """This method returns the object or objects in the FaceArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
@@ -174,7 +165,6 @@ class FaceArray(List[Face]):
         """
         return Face() if isinstance(mask, str) else [Face()]
 
-    @abaqus_method_doc
     def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
@@ -185,7 +175,6 @@ class FaceArray(List[Face]):
         """
         return ""
 
-    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: float = 0,
@@ -219,7 +208,6 @@ class FaceArray(List[Face]):
         """
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding cylinder.
 
@@ -241,7 +229,6 @@ class FaceArray(List[Face]):
         """
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple, radius: str) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding sphere.
 
@@ -259,7 +246,6 @@ class FaceArray(List[Face]):
         """
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, Sequence[float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the face sequence.
@@ -276,7 +262,6 @@ class FaceArray(List[Face]):
         """
         return {"low": (0.0, 0.0, 0.0), "high": (0.0, 0.0, 0.0)}
 
-    @abaqus_method_doc
     def getClosest(
         self, coordinates: tuple, searchTolerance: str = ""
     ) -> dict[int, tuple[Face, tuple[float, float, float]]]:

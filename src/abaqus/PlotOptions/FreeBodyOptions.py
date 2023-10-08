@@ -39,7 +39,6 @@ class FreeBodyOptions(_OptionsBase):
             session.viewports[name].odbDisplay.freeBodyOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

@@ -24,7 +24,6 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
             session.odbs[name]
     """
 
-    @abaqus_method_doc
     def Part(
         self,
         name: str,
@@ -57,7 +56,6 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         self.parts[name] = odbPart = OdbPart(name, embeddedSpace, type)
         return odbPart
 
-    @abaqus_method_doc
     def Step(
         self,
         name: str,
@@ -169,7 +167,6 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         )
         return odbStep
 
-    @abaqus_method_doc
     def SectionCategory(self, name: str, description: str) -> SectionCategory:
         """This method creates a SectionCategory object.
 

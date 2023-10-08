@@ -30,7 +30,6 @@ class BeadGrowth(GeometricRestriction):
     #: **beadGrowth** or **shrink** or both must be specified The default value is 0.0.
     shrink: float = 0
 
-    @abaqus_method_doc
     def __init__(self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0):
         """This method creates a BeadGrowth object.
 
@@ -59,7 +58,6 @@ class BeadGrowth(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, beadGrowth: float = 0, shrink: float = 0):
         """This method modifies the BeadGrowth object.
 

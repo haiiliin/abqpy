@@ -14,7 +14,6 @@ class Transform:
             import assembly
     """
 
-    @abaqus_method_doc
     def matrix(self):
         """This method returns the transformation matrix as a tuple of 12 Floats.
 

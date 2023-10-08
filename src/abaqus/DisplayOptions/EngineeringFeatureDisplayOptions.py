@@ -20,7 +20,6 @@ class EngineeringFeatureDisplayOptions:
             session.viewports[name].partDisplay.engineeringFeatureOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         pointMassInertia: Boolean = ON,

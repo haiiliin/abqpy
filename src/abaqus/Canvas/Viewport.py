@@ -6,7 +6,6 @@ from .Layer import Layer
 
 @abaqus_class_doc
 class Viewport(AnnotationViewport):
-    @abaqus_method_doc
     def Layer(self, name: str, copyViewName: str = "") -> Layer:
         """This method creates a Layer object in the Layer repository.
 

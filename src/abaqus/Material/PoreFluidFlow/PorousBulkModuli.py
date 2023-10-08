@@ -26,7 +26,6 @@ class PorousBulkModuli:
         - POROUS BULK MODULI
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a PorousBulkModuli object.
 
@@ -50,7 +49,6 @@ class PorousBulkModuli:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousBulkModuli object."""
         ...

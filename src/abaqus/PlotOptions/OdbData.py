@@ -114,7 +114,6 @@ class OdbData(_OptionsBase):
     #: An OdbDiagnosticData object.
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
-    @abaqus_method_doc
     def setValues(self, activeFrames: Literal[C.ALL] | None = None, stepPeriods: tuple = ()):
         """This method modifies the OdbData object.
 

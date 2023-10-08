@@ -151,7 +151,6 @@ class AxisData:
     #: **systemTitle**.
     title: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         axisData: Union["AxisData", None] = None,

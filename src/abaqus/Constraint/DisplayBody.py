@@ -41,7 +41,6 @@ class DisplayBody(Constraint):
     #: three objects.
     controlPoints: ModelDotArray
 
-    @abaqus_method_doc
     def __init__(self, name: str, instance: PartInstance, controlPoints: ModelDotArray):
         """This method creates a DisplayBody object.
 
@@ -70,7 +69,6 @@ class DisplayBody(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DisplayBody object."""
         ...

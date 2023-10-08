@@ -17,7 +17,6 @@ class PredefinedFieldDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.predefinedFieldOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         temperatureField: Boolean = ON,

@@ -24,7 +24,6 @@ class Saturation(PredefinedField):
         - INITIAL CONDITIONS
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -64,7 +63,6 @@ class Saturation(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         name: str,

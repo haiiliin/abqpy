@@ -33,7 +33,6 @@ class JobMdb(MdbBase):
             mdb
     """
 
-    @abaqus_method_doc
     def Job(
         self,
         name: str,
@@ -203,7 +202,6 @@ class JobMdb(MdbBase):
         )
         return job
 
-    @abaqus_method_doc
     def JobFromInputFile(
         self,
         name: str,
@@ -347,7 +345,6 @@ class JobMdb(MdbBase):
         )
         return jobFromInputFile
 
-    @abaqus_method_doc
     def OptimizationProcess(
         self,
         name: str,

@@ -47,7 +47,6 @@ class DebondVCCT(Crack):
     #: value is 1.
     printToDATFrequency: int = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -89,7 +88,6 @@ class DebondVCCT(Crack):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,

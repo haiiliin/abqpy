@@ -58,7 +58,6 @@ class LayerProperties:
     #: default value is 0.0.
     radius: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         barArea: float,

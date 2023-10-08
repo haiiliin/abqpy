@@ -42,7 +42,6 @@ class ParameterColumn:
     #: A Set of allowed values for the parameter.
     allowedValues: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.INTEGER, C.FLOAT, C.STRING],

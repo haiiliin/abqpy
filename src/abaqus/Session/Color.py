@@ -20,7 +20,6 @@ class Color:
     #: between 0.0 and 1.0.
     rgb: float | None = None
 
-    @abaqus_method_doc
     def setByRGB(self, rgb: tuple):
         """This method changes the RGB value of a user-defined color. However, users cannot define colors, and
         this method does not modify system-defined colors.

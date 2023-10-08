@@ -33,7 +33,6 @@ class OptimizationConstraint:
     #: value is ABSOLUTE_EQUAL.
     restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -81,7 +80,6 @@ class OptimizationConstraint:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         restrictionMethod: Literal[

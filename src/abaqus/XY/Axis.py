@@ -75,7 +75,6 @@ class Axis:
     #: A LineStyle object specifying the line properties to be used when displaying axis ticks.
     tickStyle: LineStyle = LineStyle()
 
-    @abaqus_method_doc
     def setValues(
         self,
         axis: "Axis",

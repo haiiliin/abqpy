@@ -55,7 +55,6 @@ class ModelChange(Interaction):
     #: default value is OFF.
     includeStrain: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -105,7 +104,6 @@ class ModelChange(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         isRestart: Boolean = OFF,
@@ -139,7 +137,6 @@ class ModelChange(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF):
         """This method modifies the propagating data of an existing ModelChange object in the specified step.
 

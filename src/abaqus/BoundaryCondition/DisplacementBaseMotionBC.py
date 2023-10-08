@@ -56,7 +56,6 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,7 +110,6 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         amplitudeScaleFactor: float = 1,
@@ -147,7 +145,6 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, amplitude: str = ""):
         """This method modifies the propagating data for an existing DisplacementBaseMotionBC object in the
         specified step.

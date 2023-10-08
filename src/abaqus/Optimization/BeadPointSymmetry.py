@@ -29,7 +29,6 @@ class BeadPointSymmetry(GeometricRestriction):
     #: used. When this member is queried, it returns an Int. The default value is None.
     csys: int | None = None
 
-    @abaqus_method_doc
     def __init__(self, name: str, region: Region, csys: int | None = None):
         """This method creates a BeadPointSymmetry object.
 
@@ -56,7 +55,6 @@ class BeadPointSymmetry(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, csys: int | None = None):
         """This method modifies the BeadPointSymmetry object.
 

@@ -18,7 +18,6 @@ class UserOutputVariables:
         - USER OUTPUT VARIABLES
     """
 
-    @abaqus_method_doc
     def __init__(self, n: int = 0):
         """This method creates a UserOutputVariables object.
 
@@ -45,7 +44,6 @@ class UserOutputVariables:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the UserOutputVariables object.
 

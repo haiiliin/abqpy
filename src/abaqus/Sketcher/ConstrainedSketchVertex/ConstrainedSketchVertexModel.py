@@ -22,7 +22,6 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
-    @abaqus_method_doc
     def Spot(self, point: Sequence[float]) -> ConstrainedSketchVertex:
         """This method creates a spot (construction point) located at the specified coordinates.
 

@@ -53,7 +53,6 @@ class CohesiveSection(Section):
     #: is None.
     outOfPlaneThickness: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -105,7 +104,6 @@ class CohesiveSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT,

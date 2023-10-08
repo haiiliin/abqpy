@@ -25,7 +25,6 @@ class SizingMemberSize(GeometricRestriction):
     #: A Float specifying the min width.
     minWidth: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, region: Region, minWidth: float):
         """This method creates a SizingMemberSize object.
 
@@ -51,7 +50,6 @@ class SizingMemberSize(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the sizingMemberSize object."""
         ...

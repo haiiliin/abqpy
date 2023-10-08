@@ -49,7 +49,6 @@ class AnalyticalField(Field):
     #: An OdbMeshRegionData object.
     odbMeshRegionData: OdbMeshRegionData = OdbMeshRegionData("", "")
 
-    @abaqus_method_doc
     def OdbMeshRegionData(
         self,
         odbFileName: str,

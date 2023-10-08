@@ -17,7 +17,6 @@ class InteractionDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.interactionOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         surfaceContact: Boolean = ON,

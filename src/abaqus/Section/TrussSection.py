@@ -31,7 +31,6 @@ class TrussSection(Section):
     #: > 0. The default value is 1.0.
     area: float = 1
 
-    @abaqus_method_doc
     def __init__(self, name: str, material: str, area: float = 1):
         """This method creates a TrussSection object.
 
@@ -62,7 +61,6 @@ class TrussSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, area: float = 1):
         """This method modifies the TrussSection object.
 

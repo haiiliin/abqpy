@@ -16,7 +16,6 @@ class SketchModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def ConstrainedSketch(
         self,
         name: str,

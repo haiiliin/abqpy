@@ -34,7 +34,6 @@ class FluidLeakoff:
         - FLUID LEAKOFF
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         temperatureDependency: Boolean = OFF,
@@ -70,7 +69,6 @@ class FluidLeakoff:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FluidLeakoff object."""
         ...

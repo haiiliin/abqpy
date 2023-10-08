@@ -24,12 +24,10 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     """
 
     @overload
-    @abaqus_method_doc
     def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge:
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[tuple[float, float, float],],
@@ -38,7 +36,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         *coordinates: tuple[tuple[float, float, float],],
@@ -46,7 +43,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     ) -> list[IgnoredEdge]:
         ...
 
-    @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, list[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredEdge that is at
@@ -86,16 +82,13 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         return IgnoredEdge() if isinstance(first_arg[0], float) else [IgnoredEdge()]
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> IgnoredEdge:  # type: ignore
         ...
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredEdge]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredEdge, list[IgnoredEdge]]:  # type: ignore
         """This method returns the object or objects in the IgnoredEdgeArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
@@ -113,7 +106,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         """
         return IgnoredEdge() if isinstance(mask, str) else [IgnoredEdge()]
 
-    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -124,7 +116,6 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         """
         return ""
 
-    @abaqus_method_doc
     def getClosest(
         self, coordinates: tuple, searchTolerance: str = ""
     ) -> dict[str, tuple[IgnoredEdge, tuple[float, float, float]]]:

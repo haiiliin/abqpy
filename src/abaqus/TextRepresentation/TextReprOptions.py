@@ -22,7 +22,6 @@ class TextReprOptions:
             session.textReprOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         style: Literal[C.RECURSIVE] | None = None,

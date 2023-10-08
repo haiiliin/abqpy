@@ -15,7 +15,6 @@ class ViewerOptions:
             session.viewerOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         primaryVariableCaching: Boolean = ON,

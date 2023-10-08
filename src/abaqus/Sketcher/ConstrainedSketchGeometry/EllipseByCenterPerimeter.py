@@ -9,7 +9,6 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 @abaqus_class_doc
 class EllipseByCenterPerimeter(ConstrainedSketchGeometry):
-    @abaqus_method_doc
     def __init__(self, center: Sequence[float], axisPoint1: Sequence[float], axisPoint2: Sequence[float]):
         """This method constructs an ellipse using a center point, a major axis point, and a minor axis point.
         The ellipse is added to the geometry repository of the ConstrainedSketch object.

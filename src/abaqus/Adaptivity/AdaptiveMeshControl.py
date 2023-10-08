@@ -86,7 +86,6 @@ class AdaptiveMeshControl:
     #: method. The default value is 0.0.
     standardVolumetricSmoothingWeight: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -172,7 +171,6 @@ class AdaptiveMeshControl:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         remapping: Literal[C.SECOND_ORDER_ADVECTION, C.FIRST_ORDER_ADVECTION] = SECOND_ORDER_ADVECTION,

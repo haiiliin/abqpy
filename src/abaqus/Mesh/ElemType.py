@@ -180,7 +180,6 @@ class ElemType:
     #:     The ``initialGapOpening`` attribute was added.
     initialGapOpening: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         elemCode: Union[

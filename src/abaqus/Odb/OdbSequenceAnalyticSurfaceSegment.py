@@ -14,7 +14,6 @@ class OdbSequenceAnalyticSurfaceSegment:
             session.odbs[name].steps[name].frames[i].fieldOutputs[name].values[i].instance.analyticSurface.segments
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a OdbSequenceAnalyticSurfaceSegment object.
 
@@ -30,7 +29,6 @@ class OdbSequenceAnalyticSurfaceSegment:
         """
         ...
 
-    @abaqus_method_doc
     def Start(self, origin: tuple):
         """This method adds a AnalyticSurfaceSegment describing the first segment of the surface profile.
 
@@ -41,7 +39,6 @@ class OdbSequenceAnalyticSurfaceSegment:
         """
         ...
 
-    @abaqus_method_doc
     def Line(self, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing the line segment of the surface profile.
 
@@ -52,7 +49,6 @@ class OdbSequenceAnalyticSurfaceSegment:
         """
         ...
 
-    @abaqus_method_doc
     def Circle(self, center: tuple, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing a circular segment of the surface profile.
 
@@ -65,7 +61,6 @@ class OdbSequenceAnalyticSurfaceSegment:
         """
         ...
 
-    @abaqus_method_doc
     def Parabola(self, middlePoint: tuple, endPoint: tuple):
         """This method adds a AnalyticSurfaceSegment describing a parabolic segment of the surface profile.
 

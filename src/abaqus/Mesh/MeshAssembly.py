@@ -33,7 +33,6 @@ class MeshAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    @abaqus_method_doc
     def assignStackDirection(self, cells: Sequence[Cell], referenceRegion: Face):
         """This method assigns a stack direction to geometric cells. The stack direction will be used to orient
         the elements during mesh generation.
@@ -47,7 +46,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def associateMeshWithGeometry(
         self,
         geometricEntity: str,
@@ -82,7 +80,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def createVirtualTopology(
         self,
         regions: Sequence[Face],
@@ -181,7 +178,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deleteBoundaryLayerControls(self, regions: Sequence[Cell]):
         """This method deletes the control parameters for boundary layer mesh for all the specified regions.
 
@@ -193,7 +189,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deleteMesh(self, regions: Sequence[PartInstance]):
         """This method deletes a subset of the mesh that contains the native elements from the given part
         instances or regions.
@@ -206,7 +201,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deleteMeshAssociationWithGeometry(
         self, geometricEntities: Sequence[Cell], addBoundingEntities: Boolean = False
     ):
@@ -226,7 +220,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deletePreviewMesh(self):
         """This method deletes all boundary meshes in the assembly.
 
@@ -235,7 +228,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deleteSeeds(self, regions: Sequence[PartInstance]):
         """This method deletes the global edge seeds from the given part instances or deletes the local edge
         seeds from the given edges.
@@ -248,7 +240,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def generateBottomUpExtrudedMesh(
         self,
         cell: Cell,
@@ -303,7 +294,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def generateBottomUpSweptMesh(
         self,
         cell: Cell,
@@ -353,7 +343,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def generateBottomUpRevolvedMesh(
         self,
         cell: Cell,
@@ -400,7 +389,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def generateMesh(
         self,
         regions: Sequence[PartInstance] = (),
@@ -435,7 +423,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getEdgeSeeds(
         self,
         edge: Edge,
@@ -525,7 +512,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getElementType(self, region: str, elemShape: SymbolicConstant):
         """This method returns the ElemType object of a given element shape assigned to a region of the
         assembly.
@@ -551,7 +537,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()):
         """This method returns a sequence of face objects that are meshed with incompatible elements.
 
@@ -567,7 +552,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getMeshControl(
         self,
         region: str,
@@ -634,7 +618,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getMeshStats(self, regions: tuple):
         """This method returns the mesh statistics for the given part instances or regions.
 
@@ -651,7 +634,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getPartSeeds(
         self,
         region: PartInstance,
@@ -697,7 +679,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def getUnmeshedRegions(self):
         """This method returns all geometric regions in the assembly that require a mesh for submitting an
         analysis but are either unmeshed or are meshed incompletely.
@@ -709,7 +690,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def ignoreEntity(self, entities: tuple):
         """This method creates a virtual topology feature. Virtual topology allows unimportant entities to be
         ignored during mesh generation. You can combine two adjacent faces by specifying a common edge to
@@ -727,7 +707,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]):
         """This method restores vertices and edges that have been merged using a virtual topology feature.
 
@@ -744,7 +723,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def seedEdgeByBias(
         self,
         biasMethod: Literal[C.DOUBLE, C.SINGLE],
@@ -811,7 +789,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def seedEdgeByNumber(self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE] = FREE):
         """This method seeds the given edges uniformly based on the number of elements along the edges.
 
@@ -832,7 +809,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def seedEdgeBySize(
         self,
         edges: Sequence[Edge],
@@ -866,7 +842,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def seedPartInstance(
         self,
         regions: Sequence[PartInstance],
@@ -897,7 +872,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def setBoundaryLayerControls(
         self,
         regions: Sequence[Cell],
@@ -932,7 +906,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def setElementType(self, regions: tuple, elemTypes: Sequence[ElemType]):
         """This method assigns element types to the specified regions.
 
@@ -962,7 +935,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def setLogicalCorners(self, region: str, corners: str):
         """This method sets the logical corners for a mappable face region.
 
@@ -976,7 +948,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def setMeshControls(
         self,
         regions: tuple,
@@ -1057,7 +1028,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def setSweepPath(self, region: str, edge: Edge, sense: Literal[C.FORWARD]):
         """This method sets the sweep path for a sweepable region or the revolve path for a revolvable region.
 
@@ -1075,7 +1045,6 @@ class MeshAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def verifyMeshQuality(
         self,
         criterion: Literal[

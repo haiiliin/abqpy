@@ -49,7 +49,6 @@ class Eos:
             - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.JWL, C.IGNITIONANDGROWTH, C.TABULAR, C.IDEALGAS, C.USUP] = IDEALGAS,

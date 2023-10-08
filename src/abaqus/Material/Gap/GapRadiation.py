@@ -27,7 +27,6 @@ class GapRadiation:
         The ``GapRadiation`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         masterSurfaceEmissivity: float,
@@ -57,7 +56,6 @@ class GapRadiation:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the GapRadiation object."""
         ...

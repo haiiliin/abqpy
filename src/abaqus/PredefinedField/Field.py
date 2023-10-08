@@ -60,7 +60,6 @@ class Field(PredefinedField):
     #: **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -186,7 +185,6 @@ class Field(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the FieldState object from one step to a different step.
 
@@ -203,7 +201,6 @@ class Field(PredefinedField):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         outputVariable: str = "",
@@ -306,7 +303,6 @@ class Field(PredefinedField):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -22,7 +22,6 @@ class SizingClusterAreas(GeometricRestriction):
     #: applied.
     regions: tuple
 
-    @abaqus_method_doc
     def __init__(self, name: str, regions: tuple):
         """This method creates a SizingClusterAreas object.
 
@@ -46,7 +45,6 @@ class SizingClusterAreas(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SizingClusterAreas object."""
         ...

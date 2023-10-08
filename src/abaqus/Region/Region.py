@@ -56,7 +56,6 @@ class Region:
     """
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         elements: Sequence[Element] | None = None,
@@ -133,7 +132,6 @@ class Region:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         side1Faces: Union[Face, Sequence[Face], None] = None,

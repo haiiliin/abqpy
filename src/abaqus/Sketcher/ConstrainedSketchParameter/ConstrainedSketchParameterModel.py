@@ -18,7 +18,6 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
-    @abaqus_method_doc
     def ConstrainedSketchParameter(
         self,
         name: str,

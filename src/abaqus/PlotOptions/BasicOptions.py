@@ -429,7 +429,6 @@ class BasicOptions(_CopyOptionsBase):
     #: value is an empty sequence.
     userRegions: tuple = ()
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["BasicOptions", None] = None,

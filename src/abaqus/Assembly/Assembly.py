@@ -28,7 +28,6 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly,
             mdb.models[name].rootAssembly
     """
 
-    @abaqus_method_doc
     def ConnectorOrientation(
         self,
         region: Set,

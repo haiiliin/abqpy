@@ -55,7 +55,6 @@ class ConnectorFailure(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         releaseComponent: Literal[C.ALL] = ALL,
@@ -111,7 +110,6 @@ class ConnectorFailure(ConnectorBehaviorOption):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorFailure object.
 

@@ -6,7 +6,6 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 @abaqus_class_doc
 class Spline(ConstrainedSketchGeometry):
-    @abaqus_method_doc
     def __init__(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
 

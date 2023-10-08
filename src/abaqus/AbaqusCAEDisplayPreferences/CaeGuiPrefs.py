@@ -18,7 +18,6 @@ class CaeGuiPrefs:
     #: A String specifying the path to the preferences file.
     fileName: str = ""
 
-    @abaqus_method_doc
     def save(self, backupFile: Boolean = True):
         """This method saves the guiPreferences section specified in the current **fileName**.
 
@@ -31,7 +30,6 @@ class CaeGuiPrefs:
         # TODO: Implement this method
         ...
 
-    @abaqus_method_doc
     def saveAs(self, fileName: str):
         """This method saves the guiPreferences settings to the specified location.
 

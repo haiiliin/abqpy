@@ -32,7 +32,6 @@ class FailStrain:
         - FAIL STRAIN
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a FailStrain object.
 
@@ -62,7 +61,6 @@ class FailStrain:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FailStrain object.
 

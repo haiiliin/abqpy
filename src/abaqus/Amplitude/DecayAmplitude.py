@@ -44,7 +44,6 @@ class DecayAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -90,7 +89,6 @@ class DecayAmplitude(Amplitude):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method modifies the DecayAmplitude object.
 

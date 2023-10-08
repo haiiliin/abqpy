@@ -68,7 +68,6 @@ class ConnectorBehaviorOption:
     #: A TangentialBehavior object
     tangentialBehavior: TangentialBehavior = TangentialBehavior()
 
-    @abaqus_method_doc
     def TangentialBehavior(
         self,
         formulation: Literal[C.PENALTY, C.EXPONENTIAL_DECAY] = PENALTY,
@@ -146,7 +145,6 @@ class ConnectorBehaviorOption:
         )
         return tangentialBehavior
 
-    @abaqus_method_doc
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 
@@ -168,7 +166,6 @@ class ConnectorBehaviorOption:
         self.derivedComponent = derivedComponent = DerivedComponent()
         return derivedComponent
 
-    @abaqus_method_doc
     def ConnectorOptions(
         self,
         useBehRegSettings: Boolean = ON,

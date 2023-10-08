@@ -25,7 +25,6 @@ from .MappedField import MappedField
 
 @abaqus_class_doc
 class FieldModel(ModelBase):
-    @abaqus_method_doc
     def DiscreteField(
         self,
         name: str,
@@ -93,7 +92,6 @@ class FieldModel(ModelBase):
         )
         return discreteField
 
-    @abaqus_method_doc
     def ExpressionField(
         self, name: str, expression: str, localCsys: str | None = None, description: str = ""
     ) -> ExpressionField:
@@ -130,7 +128,6 @@ class FieldModel(ModelBase):
         self.analyticalFields[name] = expressionField = ExpressionField(name, expression, localCsys, description)
         return expressionField
 
-    @abaqus_method_doc
     def MappedField(
         self,
         name: str,

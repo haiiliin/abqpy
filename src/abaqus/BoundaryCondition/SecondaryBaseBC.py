@@ -42,7 +42,6 @@ class SecondaryBaseBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple):
         """This method creates a SecondaryBaseBC object.
 
@@ -70,13 +69,11 @@ class SecondaryBaseBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing SecondaryBaseBC object in the step where it is
         created."""
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data for an existing SecondaryBaseBC object in the specified
         step.

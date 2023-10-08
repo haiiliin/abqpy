@@ -13,7 +13,6 @@ from .OdbStepBase import OdbStepBase
 
 @abaqus_class_doc
 class OdbStep(OdbStepBase):
-    @abaqus_method_doc
     def HistoryRegion(
         self,
         name: str,
@@ -49,7 +48,6 @@ class OdbStep(OdbStepBase):
         return historyRegion
 
     @overload
-    @abaqus_method_doc
     def Frame(self, incrementNumber: int, frameValue: float, description: str = "") -> OdbFrame:
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
@@ -79,7 +77,6 @@ class OdbStep(OdbStepBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
@@ -108,7 +105,6 @@ class OdbStep(OdbStepBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def Frame(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0) -> OdbFrame:
         """This constructor creates an OdbFrame object for a specific load case and appends it to the frame
         sequence.
@@ -135,7 +131,6 @@ class OdbStep(OdbStepBase):
         """
         ...
 
-    @abaqus_method_doc
     def Frame(self, *args, **kwargs) -> OdbFrame:
         frame = OdbFrame(*args, **kwargs)
         self.frames.append(frame)

@@ -83,7 +83,6 @@ class LineStyle:
     #: LineStyle. The default value is 0.2.
     thickness: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         color: str = "",
@@ -126,7 +125,6 @@ class LineStyle:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         color: str = "",

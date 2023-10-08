@@ -41,7 +41,6 @@ class ConnectorMoment(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -101,7 +100,6 @@ class ConnectorMoment(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         region: str = "",
@@ -144,7 +142,6 @@ class ConnectorMoment(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

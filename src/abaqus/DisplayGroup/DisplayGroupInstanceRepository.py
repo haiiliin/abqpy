@@ -17,7 +17,6 @@ class DisplayGroupInstanceRepository:
             session.viewports[name].odbDisplay.displayGroupInstances
     """
 
-    @abaqus_method_doc
     def syncOptions(self, name: str, updateInstances: Boolean = ON):
         """This method synchronizes the display options stored on the OdbDisplay object with the display options
         stored on the DisplayGroupInstance object.

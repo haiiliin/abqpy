@@ -104,7 +104,6 @@ class MovieOptions(_CopyOptionsBase):
     #: The default value is 1.0.
     translucency: float = 1.0
 
-    @abaqus_method_doc
     def setValues(
         self,
         movieName: str = "",

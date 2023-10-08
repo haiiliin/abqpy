@@ -43,7 +43,6 @@ class OdbDatumCsys:
     #: A tuple of Floats specifying a point on the **Z** axis.
     zAxis: float | None = None
 
-    @abaqus_method_doc
     def DatumCsysByThreePoints(
         self,
         name: str,
@@ -82,7 +81,6 @@ class OdbDatumCsys:
         """
         ...
 
-    @abaqus_method_doc
     def DatumCsysByThreeNodes(
         self,
         name: str,
@@ -123,7 +121,6 @@ class OdbDatumCsys:
         """
         ...
 
-    @abaqus_method_doc
     def DatumCsysByThreeCircNodes(
         self,
         name: str,
@@ -164,7 +161,6 @@ class OdbDatumCsys:
         """
         ...
 
-    @abaqus_method_doc
     def DatumCsysBy6dofNode(
         self, name: str, coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL], origin: OdbMeshNode
     ):
@@ -196,7 +192,6 @@ class OdbDatumCsys:
         """
         ...
 
-    @abaqus_method_doc
     def DatumCsys(self, name: str, datumCsys: "OdbDatumCsys"):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
@@ -219,7 +214,6 @@ class OdbDatumCsys:
         """
         ...
 
-    @abaqus_method_doc
     def globalToLocal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this local
         coordinate system.
@@ -239,7 +233,6 @@ class OdbDatumCsys:
         """
         return (0.0, 0.0, 0.0)
 
-    @abaqus_method_doc
     def localToGlobal(self, coordinates: tuple[float, float, float]) -> tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global
         coordinate system.

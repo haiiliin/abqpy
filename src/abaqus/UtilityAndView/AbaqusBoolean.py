@@ -23,7 +23,6 @@ class AbaqusBoolean(int):
             from abaqusConstants import *
     """
 
-    @abaqus_method_doc
     def __init__(self, value: int) -> None:
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
@@ -47,7 +46,6 @@ class AbaqusBoolean(int):
         if value not in (0, 1):
             raise ValueError(f"AbaqusBoolean must have value argument 0 or 1.  {value} supplied")
 
-    @abaqus_method_doc
     def getId(self) -> int:
         return id(self)
 

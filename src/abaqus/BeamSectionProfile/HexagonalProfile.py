@@ -33,7 +33,6 @@ class HexagonalProfile(Profile):
     #: *t < (sqrt(3)/2)r*.
     t: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, r: float, t: float):
         """This method creates a HexagonalProfile object.
 
@@ -66,7 +65,6 @@ class HexagonalProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the HexagonalProfile object.
 

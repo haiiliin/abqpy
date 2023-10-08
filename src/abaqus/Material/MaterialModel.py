@@ -14,7 +14,6 @@ class MaterialModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 

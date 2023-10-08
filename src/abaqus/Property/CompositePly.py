@@ -92,7 +92,6 @@ class CompositePly:
     #: default value is an empty string.
     additionalRotationField: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         thickness: float,

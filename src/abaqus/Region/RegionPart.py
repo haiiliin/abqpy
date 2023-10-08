@@ -36,7 +36,6 @@ class RegionPart(RegionPartBase):
             import regionToolset
     """
 
-    @abaqus_method_doc
     def Surface(
         self,
         name: str,
@@ -194,7 +193,6 @@ class RegionPart(RegionPartBase):
         return surface
 
     @overload
-    @abaqus_method_doc
     def Set(
         self,
         name: str,
@@ -269,7 +267,6 @@ class RegionPart(RegionPartBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def Set(self, name: str, objectToCopy: SetType) -> SetType:
         """This method copies a set from an existing set.
 
@@ -293,12 +290,10 @@ class RegionPart(RegionPartBase):
         """
         ...
 
-    @abaqus_method_doc
     def Set(self, name, *args, **kwargs) -> SetType:
         self.sets[name] = aSet = SetType(name, *args, **kwargs)
         return aSet
 
-    @abaqus_method_doc
     def Skin(
         self,
         name: str,
@@ -340,7 +335,6 @@ class RegionPart(RegionPartBase):
         self.skins[name] = skin = SkinType(name, faces, edges, elementFaces, elementEdges)
         return skin
 
-    @abaqus_method_doc
     def EditSkin(
         self,
         name: str = "",
@@ -382,7 +376,6 @@ class RegionPart(RegionPartBase):
         self.skins[name] = skin = SkinType(name, faces, edges, elementFaces, elementEdges)
         return skin
 
-    @abaqus_method_doc
     def Stringer(
         self,
         name: str,
@@ -449,7 +442,6 @@ class RegionPart(RegionPartBase):
         """
         return SetType(name)
 
-    @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> SetType:
         """This method creates a set containing faces of the part marked with a specified color attribute.
         Third-party applications can assign color attributes to faces, and the color attribute can be imported
@@ -477,7 +469,6 @@ class RegionPart(RegionPartBase):
         """
         return SetType(name)
 
-    @abaqus_method_doc
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> SetType:
         """This method creates a set from a sequence of element labels in a model database.
 
@@ -508,7 +499,6 @@ class RegionPart(RegionPartBase):
         """
         return SetType(name)
 
-    @abaqus_method_doc
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> SetType:
         """This method creates a set from a sequence of node labels in a model database.
 
@@ -545,7 +535,6 @@ class RegionPart(RegionPartBase):
         """
         return SetType(name)
 
-    @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> SetType:
         """This method creates sets based on mapping sets from element centroid locations in an Odb.
 

@@ -26,7 +26,6 @@ class ConstrainedSketchOptions:
             mdb.models[name].sketches[name].sketchOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         sheetSize: float | None = None,

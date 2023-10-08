@@ -15,7 +15,6 @@ class FeatureOptions:
             mdb.models[name].featureOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         checkSelfIntersection: Boolean = ON,

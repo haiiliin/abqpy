@@ -47,7 +47,6 @@ class PrintOptions(_OptionsBase):
     #: to reduce file size. The quality of the image will be compromised. The default value is OFF.
     reduceColors: Boolean = OFF
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

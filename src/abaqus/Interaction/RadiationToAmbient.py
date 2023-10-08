@@ -60,7 +60,6 @@ class RadiationToAmbient(Interaction):
     #: only when **radiationType** = AMBIENT.
     ambientTemperatureAmp: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -121,7 +120,6 @@ class RadiationToAmbient(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -160,7 +158,6 @@ class RadiationToAmbient(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing RadiationToAmbient object in the specified
         step.

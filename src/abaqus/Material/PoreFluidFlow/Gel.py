@@ -25,7 +25,6 @@ class Gel:
         - GEL
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a Gel object.
 
@@ -47,7 +46,6 @@ class Gel:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Gel object."""
         ...

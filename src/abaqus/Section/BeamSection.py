@@ -169,7 +169,6 @@ class BeamSection(Section):
     #: model database but not for the ODB API.
     profileEnd: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -306,7 +305,6 @@ class BeamSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         poissonRatio: float = 0,

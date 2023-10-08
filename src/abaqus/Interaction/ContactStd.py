@@ -104,7 +104,6 @@ class ContactStd(Interaction):
     edgeToEdgeFormulation: str = NO
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -211,7 +210,6 @@ class ContactStd(Interaction):
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

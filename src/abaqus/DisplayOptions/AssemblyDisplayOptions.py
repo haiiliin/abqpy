@@ -159,7 +159,6 @@ class AssemblyDisplayOptions:
     #: any valid step name. The default value is "Initial".
     step: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         visibleInstances: tuple = (),

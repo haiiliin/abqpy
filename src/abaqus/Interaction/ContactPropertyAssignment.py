@@ -21,7 +21,6 @@ class ContactPropertyAssignment:
         - CONTACT PROPERTY ASSIGNMENT
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
         """This method allows modification of contact property assignments to domain pairs already defined in a
         given step.
@@ -40,7 +39,6 @@ class ContactPropertyAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
         """This method allows addition of contact property assignments to new domain pairs in a given step.
 
@@ -65,7 +63,6 @@ class ContactPropertyAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple, surfPair: Literal[C.SELF, C.GLOBAL]):
         """The delete method allows you to delete existing contact property assignments.
 

@@ -52,7 +52,6 @@ class FluidCavity(Interaction):
     #: normals. The default value is ON.
     checkNormals: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -104,7 +103,6 @@ class FluidCavity(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         ambientPressure: float = 0,

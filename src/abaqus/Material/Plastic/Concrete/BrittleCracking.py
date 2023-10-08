@@ -59,7 +59,6 @@ class BrittleCracking:
     #: A BrittleFailure object.
     brittleFailure: BrittleFailure = BrittleFailure(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -94,7 +93,6 @@ class BrittleCracking:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BrittleCracking object."""
         ...

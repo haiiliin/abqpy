@@ -156,7 +156,6 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: value is an empty sequence.
     independentComponents: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         frictionModel: Literal[C.PREDEFINED, C.USER_CUSTOMIZED] = PREDEFINED,
@@ -287,7 +286,6 @@ class ConnectorFriction(ConnectorBehaviorOption):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorFriction object.
 

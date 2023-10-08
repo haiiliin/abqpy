@@ -35,7 +35,6 @@ class CavityRadiationProp(ContactProperty):
     #: the data depend on field variables.Value of the second field variable.Etc.
     property: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -70,7 +69,6 @@ class CavityRadiationProp(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         temperatureDependency: Boolean = OFF,

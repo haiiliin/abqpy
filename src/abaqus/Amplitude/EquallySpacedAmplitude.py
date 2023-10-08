@@ -57,7 +57,6 @@ class EquallySpacedAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: SymbolicConstant = STEP
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -108,7 +107,6 @@ class EquallySpacedAmplitude(Amplitude):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         begin: float = 0,

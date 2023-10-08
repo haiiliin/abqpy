@@ -223,7 +223,6 @@ class ContourOptions(DGContourOptions):
     #:     The ``legendHideOutsideLimits`` attribute was added.
     legendHideOutsideLimits: Boolean = OFF
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["ContourOptions", None] = None,

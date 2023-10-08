@@ -33,7 +33,6 @@ class ImageAnimationOptions(_OptionsBase):
     #: A Boolean specifying whether to capture the view compass. The default value is OFF.
     compass: Boolean = OFF
 
-    @abaqus_method_doc
     def setValues(
         self,
         frameRate: int | None = None,

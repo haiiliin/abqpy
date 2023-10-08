@@ -69,7 +69,6 @@ class AssembledFastener(Fastener):
     #: empty string.
     scriptName: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -133,7 +132,6 @@ class AssembledFastener(Fastener):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,

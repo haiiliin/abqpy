@@ -166,7 +166,6 @@ class PlyStackPlotOptions(_OptionsBase):
     #: A Float specifying the size of the ply in the Z-direction. The default value is 0.8.
     sizeZ: float = 0.8
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

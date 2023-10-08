@@ -20,7 +20,6 @@ class AcousticMedium:
         - ACOUSTIC MEDIUM
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         acousticVolumetricDrag: Boolean = OFF,
@@ -88,7 +87,6 @@ class AcousticMedium:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AcousticMedium object.
 

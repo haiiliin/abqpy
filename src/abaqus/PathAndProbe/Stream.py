@@ -12,7 +12,6 @@ class Stream:
             session.streams[name]
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

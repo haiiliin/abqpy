@@ -22,7 +22,6 @@ class FluidInflator(Interaction):
         The ``FluidInflator`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -62,7 +61,6 @@ class FluidInflator(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, inflationTimeAmplitude: str = "", massFlowAmplitude: str = ""):
         """This method modifies the FluidInflator object.
 

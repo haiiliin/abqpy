@@ -30,7 +30,6 @@ class SurfaceCurrentDensity(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -79,7 +78,6 @@ class SurfaceCurrentDensity(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM, amplitude: str = UNSET):
         """This method modifies the data for an existing SurfaceCurrentDensity object in the step where it is
         created.
@@ -96,7 +94,6 @@ class SurfaceCurrentDensity(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -112,7 +112,6 @@ class ContactTangentialBehavior:
     #: are described below.
     table: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         formulation: Literal[
@@ -190,7 +189,6 @@ class ContactTangentialBehavior:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactTangentialBehavior object."""
         ...

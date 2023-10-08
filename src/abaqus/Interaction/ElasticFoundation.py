@@ -35,7 +35,6 @@ class ElasticFoundation(Interaction):
     #: A Float specifying the foundation stiffness per area (or per length for beams).
     stiffness: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, surface: Region, stiffness: float):
         """This method creates an ElasticFoundation object.
 
@@ -63,13 +62,11 @@ class ElasticFoundation(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the data for an existing ElasticFoundation object in the step where it is
         created."""
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, stiffness: float | None = None):
         """This method modifies the propagating data of an existing ElasticFoundation object in the specified
         step.

@@ -18,7 +18,6 @@ class UserDefinedField:
         - USER DEFINED FIELD
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method defines a UserDefinedField object.
 

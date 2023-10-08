@@ -37,7 +37,6 @@ class SurfacePoreFluid(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,7 +84,6 @@ class SurfacePoreFluid(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -111,7 +109,6 @@ class SurfacePoreFluid(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: float | None = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing SurfacePoreFluid object in the specified
         step.

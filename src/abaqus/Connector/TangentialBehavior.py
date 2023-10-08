@@ -98,7 +98,6 @@ class TangentialBehavior:
     #: table data are described below. The default value is an empty sequence.
     table: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         formulation: Literal[C.PENALTY, C.EXPONENTIAL_DECAY] = PENALTY,
@@ -163,7 +162,6 @@ class TangentialBehavior:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TangentialBehavior object."""
         ...

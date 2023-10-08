@@ -24,7 +24,6 @@ class SimpleShearTestData:
         - SIMPLE SHEAR TEST DATA
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SimpleShearTestData object.
 
@@ -46,7 +45,6 @@ class SimpleShearTestData:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SimpleShearTestData object."""
         ...

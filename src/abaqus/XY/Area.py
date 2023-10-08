@@ -111,7 +111,6 @@ class Area:
     #: The default value is (-1, 0). The valid range for each float is (0, 1).
     originOffset: Sequence[float] = ()
 
-    @abaqus_method_doc
     def setValues(
         self,
         area: "Area",

@@ -28,7 +28,6 @@ class SurfaceThicknessAssignment:
         - SURFACE PROPERTY ASSIGNMENT
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Union[Literal[C.THINNING, C.ORIGINAL], float]):
         """This method allows modification of surface thickness assignments already defined on surfaces in a
         given step.
@@ -54,7 +53,6 @@ class SurfaceThicknessAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(
         self,
         stepName: str,
@@ -92,7 +90,6 @@ class SurfaceThicknessAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface thickness assignments.
 

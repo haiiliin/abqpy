@@ -18,7 +18,6 @@ class PartModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def Part(
         self,
         name: str,

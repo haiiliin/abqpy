@@ -93,7 +93,6 @@ class HistoryPoint:
     node: OdbMeshNode
 
     @overload
-    @abaqus_method_doc
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
 
@@ -115,7 +114,6 @@ class HistoryPoint:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         element: OdbMeshElement,
@@ -171,7 +169,6 @@ class HistoryPoint:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
 
@@ -193,7 +190,6 @@ class HistoryPoint:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
@@ -215,7 +211,6 @@ class HistoryPoint:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
 

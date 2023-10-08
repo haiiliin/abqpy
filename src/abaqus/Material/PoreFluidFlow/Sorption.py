@@ -38,7 +38,6 @@ class Sorption:
         - SORPTION
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         absorptionTable: tuple,
@@ -87,7 +86,6 @@ class Sorption:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Sorption object.
 

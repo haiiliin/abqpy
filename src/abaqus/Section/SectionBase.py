@@ -33,7 +33,6 @@ class SectionBase:
     #: A TransverseShearShell object.
     transverseShear: TransverseShearShell = TransverseShearShell(0, 0, 0)
 
-    @abaqus_method_doc
     def sectionsFromOdb(self, fileName: str):
         """This method creates Section objects by reading an output database. The new sections are placed in the
         sections repository.

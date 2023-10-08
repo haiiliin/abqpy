@@ -53,7 +53,6 @@ class CrushableFoam:
     #: A RateDependent object.
     rateDependent: RateDependent = RateDependent(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -92,7 +91,6 @@ class CrushableFoam:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CrushableFoam object.
 

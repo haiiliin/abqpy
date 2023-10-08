@@ -53,7 +53,6 @@ class GeometricProperties:
     #: A SymbolicConstant specifying the surface interaction model type.
     modelType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(
         self,
         contactArea: float = 1,
@@ -107,7 +106,6 @@ class GeometricProperties:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GeometricProperties object."""
         ...

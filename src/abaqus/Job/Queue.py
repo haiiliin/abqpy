@@ -59,7 +59,6 @@ class Queue:
     #: A String specifying a description of the queue. The default value is an empty string.
     description: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

@@ -46,7 +46,6 @@ class StdXplCosimulation(Interaction):
     #: DEFAULT.
     stepSizeDefinition: SymbolicConstant = DEFAULT
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -93,7 +92,6 @@ class StdXplCosimulation(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         incrementation: Literal[C.LOCKSTEP, C.ALLOW_SUBCYCLING] = ALLOW_SUBCYCLING,

@@ -8,7 +8,6 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 @abaqus_class_doc
 class ConcentricConstraint(ConstrainedSketchConstraint):
-    @abaqus_method_doc
     def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
         """This method creates a concentric constraint. This constraint applies to any combination of circles,
         arcs, ellipses, and points and constrains them to be concentric. A concentric constraint implies that

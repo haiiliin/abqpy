@@ -15,7 +15,6 @@ class MpcConstraint:
     #: A String specifying the multipoint constraint name. This attribute is read-only.
     name: str = ""
 
-    @abaqus_method_doc
     def constraintData(self):
         """This method returns constraint data if any are associated with the object.
 

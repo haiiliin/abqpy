@@ -48,7 +48,6 @@ class FluidCavityPressureBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -91,7 +90,6 @@ class FluidCavityPressureBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF):
         """This method modifies the data for an existing FluidCavityPressureBC object in the step where it is
         created.
@@ -111,7 +109,6 @@ class FluidCavityPressureBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

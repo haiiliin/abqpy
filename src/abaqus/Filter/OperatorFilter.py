@@ -57,7 +57,6 @@ class OperatorFilter(Filter):
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
     invariant: SymbolicConstant = NONE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -114,7 +113,6 @@ class OperatorFilter(Filter):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         order: int = 2,

@@ -66,7 +66,6 @@ class MultipointConstraint(Constraint):
     #: DOF_MODE_MPC.The **userMode** argument applies only when **mpcType** = USER_MPC.
     userMode: SymbolicConstant = DOF_MODE_MPC
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -117,7 +116,6 @@ class MultipointConstraint(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         csys: str | None = None,

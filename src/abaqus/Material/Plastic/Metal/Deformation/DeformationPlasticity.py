@@ -29,7 +29,6 @@ class DeformationPlasticity:
         - DEFORMATION PLASTICITY
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a DeformationPlasticity object.
 
@@ -57,7 +56,6 @@ class DeformationPlasticity:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DeformationPlasticity object.
 

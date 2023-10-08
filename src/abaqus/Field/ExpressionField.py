@@ -33,7 +33,6 @@ class ExpressionField(AnalyticalField):
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, expression: str, localCsys: str | None = None, description: str = ""):
         """This method creates an ExpressionField object.
 
@@ -67,7 +66,6 @@ class ExpressionField(AnalyticalField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, localCsys: str | None = None, description: str = ""):
         """This method modifies the ExpressionField object.
 

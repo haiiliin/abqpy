@@ -138,7 +138,6 @@ class StdContactControl(ContactControl):
     #: default value is DEFAULT.
     enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -266,7 +265,6 @@ class StdContactControl(ContactControl):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         stiffnessScaleFactor: float = 1,

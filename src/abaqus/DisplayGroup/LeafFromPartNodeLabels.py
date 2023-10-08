@@ -22,7 +22,6 @@ class LeafFromPartNodeLabels(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, part: Part, nodeLabels: tuple):
         """This method creates a Leaf object from a sequence of Strings specifying node labels. Leaf objects
         specify the items in a display group.

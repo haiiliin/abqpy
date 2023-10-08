@@ -20,7 +20,6 @@ class ConstrainedSketcherOptions:
             session.sketcherOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         constructionGeometry: Boolean = ON,

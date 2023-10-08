@@ -42,7 +42,6 @@ class TopologyMemberSize(GeometricRestriction):
     #: is MINIMUM.
     sizeRestriction: SymbolicConstant = MINIMUM
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,7 +84,6 @@ class TopologyMemberSize(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         maxThickness: float = 0,

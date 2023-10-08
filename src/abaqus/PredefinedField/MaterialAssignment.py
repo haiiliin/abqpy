@@ -59,7 +59,6 @@ class MaterialAssignment(PredefinedField):
     #: integers between 0 and 255. The default value is an empty sequence.
     colorList: Sequence[tuple[int, int, int]] = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -110,7 +109,6 @@ class MaterialAssignment(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         useFields: Boolean = OFF,

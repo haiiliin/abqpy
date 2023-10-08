@@ -17,7 +17,6 @@ class ScratchOdb:
             session.scratchOdbs[name]
     """
 
-    @abaqus_method_doc
     def __init__(self, odb: Odb):
         """This method creates a new ScratchOdb object.
 

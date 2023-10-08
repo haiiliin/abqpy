@@ -81,7 +81,6 @@ class DiscreteFastener(Fastener):
     #: member is queried, it returns an Int. The default value is None.
     localCsys: int | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -144,7 +143,6 @@ class DiscreteFastener(Fastener):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         ur1: Boolean = ON,

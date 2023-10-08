@@ -22,7 +22,6 @@ class LeafFromInstance(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, instances: PartInstance):
         """This method creates a Leaf object from a sequence of part instance objects.
 

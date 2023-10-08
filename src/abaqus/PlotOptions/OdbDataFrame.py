@@ -14,7 +14,6 @@ class OdbDataFrame:
             session.odbData[name].steps[i].frames[i]
     """
 
-    @abaqus_method_doc
     def setValues(self, activateFrame: Boolean, update: Boolean = OFF):
         """This method modifies the OdbDataFrame object.
 

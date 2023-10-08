@@ -159,7 +159,6 @@ class EmagTimeHarmonicStep(AnalysisStep):
     #: COMPLEX. The default value is COMPLEX.
     factorization: SymbolicConstant = COMPLEX
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -202,7 +201,6 @@ class EmagTimeHarmonicStep(AnalysisStep):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, description: str = "", factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX):
         """This method modifies the EmagTimeHarmonicStep object.
 

@@ -94,7 +94,6 @@ class OdbInstanceBase:
     #: An AnalyticSurface object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
-    @abaqus_method_doc
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):
         """This method creates an OdbInstance object from an OdbPart object.
 
@@ -129,7 +128,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignBeamOrientation(self, region: str, method: Literal[C.N1_COSINES], vector: tuple):
         """This method assigns a beam section orientation to a region of a part instance.
 
@@ -146,7 +144,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignMaterialOrientation(
         self,
         region: str,
@@ -178,7 +175,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignRebarOrientation(
         self,
         region: str,
@@ -205,7 +201,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from an instance object.
 
@@ -226,7 +221,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from an instance object.
 
@@ -247,7 +241,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignSection(self, region: str, section: Section):
         """This method is used to assign a section to a region on an instance.
 
@@ -267,7 +260,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -291,7 +283,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
@@ -323,7 +314,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
@@ -355,7 +345,6 @@ class OdbInstanceBase:
         """
         ...
 
-    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: str,

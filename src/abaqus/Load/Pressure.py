@@ -37,7 +37,6 @@ class Pressure(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -100,7 +99,6 @@ class Pressure(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -132,7 +130,6 @@ class Pressure(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

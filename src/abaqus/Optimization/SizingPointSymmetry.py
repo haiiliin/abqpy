@@ -33,7 +33,6 @@ class SizingPointSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -68,7 +67,6 @@ class SizingPointSymmetry(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, csys: int | None = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the SizingPointSymmetry object.
 

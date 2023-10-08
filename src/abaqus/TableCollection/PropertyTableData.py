@@ -48,7 +48,6 @@ class PropertyTableData:
     #: PropertyTable, and the field variables mentioned in PropertyTableData.
     data: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         label: str = "",
@@ -96,7 +95,6 @@ class PropertyTableData:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PropertyTableData object.
 

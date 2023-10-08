@@ -11,7 +11,6 @@ class AutoColors:
             session.autoColors
     """
 
-    @abaqus_method_doc
     def setValues(self, colors: tuple):
         """This method changes the color palette.
 

@@ -21,7 +21,6 @@ class Control:
             mdb.models[name].steps[name].control
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         allowPropagation: Boolean = ON,

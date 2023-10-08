@@ -28,7 +28,6 @@ class EventSeriesType:
     #: A String array specifying fields. The default value is an empty array.
     fields: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, fields: str = ""):
         """This method creates an EventSeriesType object.
 
@@ -57,7 +56,6 @@ class EventSeriesType:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, fields: str = ""):
         """This method modifies the EventSeriesType object.
 

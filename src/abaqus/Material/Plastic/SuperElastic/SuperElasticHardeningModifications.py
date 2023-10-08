@@ -27,7 +27,6 @@ class SuperElasticHardeningModifications:
         - SUPERELASTIC HARDENING MODIFICATIONS
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SuperElasticHardeningModifications object.
 
@@ -55,7 +54,6 @@ class SuperElasticHardeningModifications:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SuperElasticHardeningModifications object.
 

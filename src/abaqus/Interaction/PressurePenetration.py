@@ -47,7 +47,6 @@ class PressurePenetration(Interaction):
     #:     The attribute ``slavePoints`` was renamed to ``secondaryPoints``.
     secondaryPoints: RegionArray = []
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -110,7 +109,6 @@ class PressurePenetration(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, amplitude: str = UNSET, penetrationTime: float = 0):
         """This method modifies the data for an existing PressurePenetration object in the step where it is
         created.
@@ -128,7 +126,6 @@ class PressurePenetration(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

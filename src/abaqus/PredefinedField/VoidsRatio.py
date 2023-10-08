@@ -34,7 +34,6 @@ class VoidsRatio(PredefinedField):
         - INITIAL CONDITIONS
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -105,7 +104,6 @@ class VoidsRatio(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,

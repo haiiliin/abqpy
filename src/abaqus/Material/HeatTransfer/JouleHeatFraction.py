@@ -18,7 +18,6 @@ class JouleHeatFraction:
         - JOULE HEAT FRACTION
     """
 
-    @abaqus_method_doc
     def __init__(self, fraction: float = 1):
         """This method creates a JouleHeatFraction object.
 
@@ -45,7 +44,6 @@ class JouleHeatFraction:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the JouleHeatFraction object.
 

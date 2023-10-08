@@ -58,7 +58,6 @@ class BackwardCompatibility:
     #: displayed when **reportDeprecated** is True. The default value is False.
     showKeysInReport: Boolean = False
 
-    @abaqus_method_doc
     def getDeprecatedMethodsUsed(self):
         """This method returns a list of deprecated methods used since the last call to
         resetDeprecatedMethodsUsed.
@@ -70,7 +69,6 @@ class BackwardCompatibility:
         """
         ...
 
-    @abaqus_method_doc
     def getDeprecatedArgsUsed(self):
         """This method returns a list of deprecated arguments used since the last call to
         resetDeprecatedArgsUsed.
@@ -82,17 +80,14 @@ class BackwardCompatibility:
         """
         ...
 
-    @abaqus_method_doc
     def resetDeprecatedMethodsUsed(self):
         """This method clears the list of deprecated methods used."""
         ...
 
-    @abaqus_method_doc
     def resetDeprecatedArgsUsed(self):
         """This method clears the list of deprecated arguments used."""
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         includeDeprecated: Boolean = ON,

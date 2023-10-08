@@ -69,7 +69,6 @@ class OptimizationProcess:
     #: and so on. The default value is None.
     saveEvery: int | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -141,12 +140,10 @@ class OptimizationProcess:
         """
         ...
 
-    @abaqus_method_doc
     def writeParAndInputFiles(self):
         """This method allows you to write par and input files for an optimization task."""
         ...
 
-    @abaqus_method_doc
     def submit(self, validate: Boolean = False):
         """This method submits an optimization process.
 
@@ -158,7 +155,6 @@ class OptimizationProcess:
         """
         ...
 
-    @abaqus_method_doc
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of all the analyses.
 
@@ -167,7 +163,6 @@ class OptimizationProcess:
         """
         ...
 
-    @abaqus_method_doc
     def extract(
         self,
         outputFileName: str,
@@ -221,7 +216,6 @@ class OptimizationProcess:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

@@ -88,7 +88,6 @@ class CDCTerm:
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     fieldDependencies: int = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         intrinsicComponents: tuple,
@@ -168,7 +167,6 @@ class CDCTerm:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CDCTerm object.
 
@@ -178,7 +176,6 @@ class CDCTerm:
         """
         ...
 
-    @abaqus_method_doc
     def ConnectorOptions(
         self,
         useBehRegSettings: Boolean = ON,

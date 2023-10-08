@@ -348,7 +348,6 @@ class ViewportBase(_OptionsBase):
     #: is an empty sequence.
     drawings: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -423,19 +422,16 @@ class ViewportBase(_OptionsBase):
         self.titleStyle = titleStyle
         self.customTitleString = customTitleString
 
-    @abaqus_method_doc
     def bringToFront(self):
         """This method moves the Viewport object to the front."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def disableMultipleColors(self):
         """This method disables applying multiple color mappings that was enabled using enableMultipleColors."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def disableRefresh(self):
         """This method disables Viewport refresh.
 
@@ -445,7 +441,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def disableColorCodeUpdates(self):
         """This method disables Viewport updates and internal computations triggered because of color coding.
 
@@ -456,7 +451,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def enableMultipleColors(self):
         """This method enables multiple color mappings to be applied at the same time.
 
@@ -465,19 +459,16 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def enableRefresh(self):
         """This method enables Viewport refresh disabled using disableRefresh."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def enableColorCodeUpdates(self):
         """This method enables Viewport color code updates disabled using disableColorCodeUpdates."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def getActiveElementLabels(self, useCut: Boolean = OFF, printResults: Boolean = OFF):
         """This method returns the element labels currently active in the viewport based on the current display
         group. The element labels are printed only when the **displayedObject** member in the Viewport object is
@@ -501,7 +492,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def getActiveNodeLabels(self, useCut: Boolean = OFF, printResults: Boolean = OFF):
         """This method returns the node labels currently active in the viewport based on the current display
         group. The node labels are printed only when the **displayedObject** member in the Viewport object is
@@ -525,7 +515,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def getPrimVarMinMaxLoc(self):
         """This method returns a dictionary containing the minimum, maximum and their location for the current
         primary variable. A contour plot should be displayed in the current viewport or else the method will
@@ -540,25 +529,21 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def makeCurrent(self):
         """This method makes theViewport object the current viewport."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def maximize(self):
         """This method maximizes the Viewport object to fill the drawing area."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def minimize(self):
         """This method minimizes the Viewport object to appear as an abbreviated title bar."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def offset(self, deltaX: float = 0, deltaY: float = 0):
         """This method modifies the current **X** *Y* location of the viewport by the specified distance.
 
@@ -574,20 +559,17 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def restore(self):
         """This method restores a maximized or minimized Viewport object to its previous size and location."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def sendToBack(self):
         """This method moves the Viewport object to the back."""
         # TODO: implement this method
         ...
 
     @overload
-    @abaqus_method_doc
     def setColor(self, initialColor: str, translucency: str = ""):
         """This method specifies the color assignment using **initialColor** and **translucency**. If
         **initialColor** has a value of 'As is', **translucency** has no effect. The setColor method
@@ -605,7 +587,6 @@ class ViewportBase(_OptionsBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def setColor(self, colorMapping: AttributeColorMap):
         """This method specifies the color assignment using attributes specified by an AttributeColorMap object.
         The setColor method has the following arguments:
@@ -620,7 +601,6 @@ class ViewportBase(_OptionsBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def setColor(
         self,
         leaf: Leaf,
@@ -671,7 +651,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def setColor(self, *args, **kwargs):
         # TODO: implement this method
         ...
@@ -686,7 +665,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         displayedObject: Displayable | None = None,
@@ -742,7 +720,6 @@ class ViewportBase(_OptionsBase):
             layerOffset=layerOffset,
         )
 
-    @abaqus_method_doc
     def addDrawings(self, names: tuple = ()):
         """This method identifies the names of Drawing objects to be rendered in the Viewport.
 
@@ -758,7 +735,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def removeDrawings(self, names: tuple = ()):
         """This method identifies the names of Drawing objects to no longer be rendered in the Viewport.
 
@@ -774,7 +750,6 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def timeDisplay(self, numFrames: int = 0, numSeconds: int = 10, degreesPerFrame: float = 0):
         """This method refreshes the Viewport display **numFrames** times and then checks to see if
         **numSeconds** seconds have elapsed. If not, it will continue refreshing the Viewport

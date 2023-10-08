@@ -47,7 +47,6 @@ from .XFEMCrack import XFEMCrack
 
 @abaqus_class_doc
 class EngineeringFeature(EngineeringFeatureBase):
-    @abaqus_method_doc
     def AssembledFastener(
         self,
         name: str,
@@ -123,7 +122,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return assembledFastener
 
-    @abaqus_method_doc
     def ContourIntegral(
         self,
         name: str,
@@ -217,7 +215,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return contourIntegral
 
-    @abaqus_method_doc
     def DebondVCCT(
         self,
         name: str,
@@ -266,7 +263,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return debondVCCT
 
-    @abaqus_method_doc
     def DiscreteFastener(
         self,
         name: str,
@@ -340,7 +336,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return discreteFastener
 
-    @abaqus_method_doc
     def HeatCapacitance(
         self,
         name: str,
@@ -381,7 +376,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return heatCapacitance
 
-    @abaqus_method_doc
     def NonstructuralMass(
         self,
         name: str,
@@ -422,7 +416,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         self.inertias[name] = nonstructuralMass = NonstructuralMass(name, region, units, magnitude, distribution)
         return nonstructuralMass
 
-    @abaqus_method_doc
     def PointFastener(
         self,
         name: str,
@@ -600,7 +593,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return pointFastener
 
-    @abaqus_method_doc
     def PointMassInertia(
         self,
         name: str,
@@ -696,7 +688,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return pointMassInertia
 
-    @abaqus_method_doc
     def SpringDashpotToGround(
         self,
         name: str,
@@ -761,7 +752,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return springDashpotToGround
 
-    @abaqus_method_doc
     def TwoPointSpringDashpot(
         self,
         name: str,
@@ -841,7 +831,6 @@ class EngineeringFeature(EngineeringFeatureBase):
         )
         return twoPointSpringDashpot
 
-    @abaqus_method_doc
     def XFEMCrack(
         self,
         name: str,

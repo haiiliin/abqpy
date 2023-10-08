@@ -73,7 +73,6 @@ class LocalStopCondition(StopCondition):
     #: condition is applied. The default value is MODEL.
     region: SymbolicConstant = MODEL
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -153,7 +152,6 @@ class LocalStopCondition(StopCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         comparisonOperation: Literal[

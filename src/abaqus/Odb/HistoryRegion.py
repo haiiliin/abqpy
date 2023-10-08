@@ -44,7 +44,6 @@ class HistoryRegion:
     #: object. The default value is None.
     loadCase: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -79,7 +78,6 @@ class HistoryRegion:
         ...
 
     @overload
-    @abaqus_method_doc
     def getSubset(self, variableName: str) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -96,7 +94,6 @@ class HistoryRegion:
         ...
 
     @overload
-    @abaqus_method_doc
     def getSubset(self, start: float) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -114,7 +111,6 @@ class HistoryRegion:
         ...
 
     @overload
-    @abaqus_method_doc
     def getSubset(self, start: float, end: float) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
@@ -133,7 +129,6 @@ class HistoryRegion:
         """
         ...
 
-    @abaqus_method_doc
     def getSubset(self, *args, **kwargs) -> HistoryRegion:
         return HistoryRegion("", "", HistoryPoint(OdbMeshNode()))
 

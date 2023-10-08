@@ -52,7 +52,6 @@ class AVIOptions(_OptionsBase):
     #: screen size.
     imageSize: int | None = None
 
-    @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: Literal[C.CODEC, C.RLE8, C.RAW32, C.AVI, C.RAW8] = RLE8,

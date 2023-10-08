@@ -32,7 +32,6 @@ class FieldReportOptions:
     #: Format of the number
     numberFormat: NumberFormat = NumberFormat()
 
-    @abaqus_method_doc
     def setValues(
         self,
         numColumns: int,
@@ -88,7 +87,6 @@ class FieldReportOptions:
         """
         ...
 
-    @abaqus_method_doc
     def NumberFormat(
         self,
         blankPad: Boolean = ON,

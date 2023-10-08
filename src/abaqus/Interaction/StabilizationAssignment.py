@@ -21,7 +21,6 @@ class StabilizationAssignment:
         - CONTACT STABILIZATION
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
         """This method allows modification of contact stabilization assignments to domain pairs already defined
         in a given step.
@@ -40,7 +39,6 @@ class StabilizationAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
         """This method allows addition of contact stabilization assignments to new domain pairs in a given step.
 
@@ -58,7 +56,6 @@ class StabilizationAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing contact stabilization assignments from a ContactStd
         object.

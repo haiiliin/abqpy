@@ -36,7 +36,6 @@ class MeanFieldVoid:
         The ``MeanFieldMatrix`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -110,7 +109,6 @@ class MeanFieldVoid:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the MeanFieldVoid object.
 

@@ -116,7 +116,6 @@ class RemeshingRule:
     #: value is None.
     elementCountLimit: int | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -224,12 +223,10 @@ class RemeshingRule:
         """
         ...
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the remeshing rule that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the remeshing rule.
 
@@ -237,7 +234,6 @@ class RemeshingRule:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

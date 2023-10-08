@@ -68,7 +68,6 @@ class OdbStepBase:
     #: media.
     acousticMassCenter: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -172,7 +171,6 @@ class OdbStepBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def getFrame(self, frameValue: str, match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given frame value.
 
@@ -202,7 +200,6 @@ class OdbStepBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def getFrame(self, loadCase: OdbLoadCase) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given load case.
 
@@ -224,7 +221,6 @@ class OdbStepBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def getFrame(
         self,
         loadCase: OdbLoadCase,
@@ -260,7 +256,6 @@ class OdbStepBase:
         """
         ...
 
-    @abaqus_method_doc
     def getFrame(self, *args, **kwargs) -> OdbFrame:
         return OdbFrame(0, 0.0)
 
@@ -286,7 +281,6 @@ class OdbStepBase:
         """
         return HistoryRegion("", "", point)
 
-    @abaqus_method_doc
     def setDefaultDeformedField(self, field: FieldOutput) -> None:
         """This method sets the default deformed field variable in a step.
 
@@ -297,7 +291,6 @@ class OdbStepBase:
         """
         ...
 
-    @abaqus_method_doc
     def setDefaultField(self, field: FieldOutput) -> None:
         """This method sets the default field variable in a step.
 

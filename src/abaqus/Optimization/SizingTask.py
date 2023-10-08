@@ -105,7 +105,6 @@ class SizingTask(OptimizationTask):
     #:     The ``groupSensitivities`` attribute was added.
     groupOperator: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -183,7 +182,6 @@ class SizingTask(OptimizationTask):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         abaqusSensitivities: Boolean = True,

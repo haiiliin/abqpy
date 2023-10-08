@@ -21,7 +21,6 @@ class SmoothingAssignment:
         - SURFACE PROPERTY ASSIGNMENT
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(
         self, stepName: str, index: int, value: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]
     ):
@@ -44,7 +43,6 @@ class SmoothingAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
         """This method allows addition of surface smoothing assignments to new surfaces in a given step.
 
@@ -63,7 +61,6 @@ class SmoothingAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface smoothing assignments from ContactExp and
         ContactStd objects.

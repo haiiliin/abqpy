@@ -31,7 +31,6 @@ class MeanFieldHomogenization:
         The ``MeanFieldHomogenization`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         angleSubdivision: int | None = None,
@@ -72,7 +71,6 @@ class MeanFieldHomogenization:
         """
         ...
 
-    @abaqus_method_doc
     def MeanFieldInclusion(
         self,
         name: str,
@@ -161,7 +159,6 @@ class MeanFieldHomogenization:
             temperatureGradientConcentrationTensor,
         )
 
-    @abaqus_method_doc
     def MeanFieldMatrix(self, name: str, material: str = "", isotropizationCoefficient: float | None = None):
         """This method creates a MeanFieldMatrix object.
 
@@ -191,7 +188,6 @@ class MeanFieldHomogenization:
         """
         return MeanFieldMatrix(name, material, isotropizationCoefficient)
 
-    @abaqus_method_doc
     def MeanFieldVoid(
         self,
         name: str,
@@ -280,7 +276,6 @@ class MeanFieldHomogenization:
             temperatureGradientConcentrationTensor,
         )
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the MeanFieldHomogenization object.
 

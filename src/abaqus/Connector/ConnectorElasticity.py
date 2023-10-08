@@ -121,7 +121,6 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
@@ -193,7 +192,6 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorElasticity object.
 

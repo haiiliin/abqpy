@@ -36,7 +36,6 @@ class ReferencePoint:
             mdb.models[name].rootAssembly.sets[name].referencePoints[i]
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],

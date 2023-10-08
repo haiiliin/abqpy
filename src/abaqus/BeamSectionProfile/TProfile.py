@@ -44,7 +44,6 @@ class TProfile(Profile):
     #: b*).
     tw: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, b: float, h: float, l: float, tf: float, tw: float):
         """This method creates a TProfile object.
 
@@ -85,7 +84,6 @@ class TProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TProfile object.
 

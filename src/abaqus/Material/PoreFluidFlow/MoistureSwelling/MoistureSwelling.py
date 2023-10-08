@@ -28,7 +28,6 @@ class MoistureSwelling:
     #: A Ratios object.
     ratios: Ratios = Ratios(((),))
 
-    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a MoistureSwelling object.
 
@@ -50,7 +49,6 @@ class MoistureSwelling:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MoistureSwelling object."""
         ...

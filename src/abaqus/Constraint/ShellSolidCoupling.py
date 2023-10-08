@@ -61,7 +61,6 @@ class ShellSolidCoupling(Constraint):
     #: when **influenceDistanceMethod** = SPECIFIED. The default value is 0.0.
     influenceDistance: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,7 +108,6 @@ class ShellSolidCoupling(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,

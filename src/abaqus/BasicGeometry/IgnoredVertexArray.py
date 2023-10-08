@@ -24,12 +24,10 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     """
 
     @overload
-    @abaqus_method_doc
     def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[tuple[float, float, float],],
@@ -38,7 +36,6 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         *coordinates: tuple[tuple[float, float, float],],
@@ -46,7 +43,6 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     ) -> list[IgnoredVertex]:
         ...
 
-    @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any IgnoredVertex object
@@ -84,16 +80,13 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         return IgnoredVertex() if isinstance(first_arg[0], float) else [IgnoredVertex()]
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> IgnoredVertex:  # type: ignore
         ...
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> list[IgnoredVertex]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, list[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large
@@ -111,7 +104,6 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         """
         return IgnoredVertex() if isinstance(mask, str) else [IgnoredVertex()]
 
-    @abaqus_method_doc
     def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
@@ -122,7 +114,6 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         """
         return ""
 
-    @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> dict[int, tuple[IgnoredVertex, tuple]]:
         """This method returns a object or objects in the IgnoredVertexArray closest to the given set of points,
         where the given points need not lie on the vertices in the IgnoredVertexArray.

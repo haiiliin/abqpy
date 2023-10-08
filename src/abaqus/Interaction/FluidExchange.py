@@ -47,7 +47,6 @@ class FluidExchange(Interaction):
     #: A Float specifying the effective exchange area. The default value is 1.0.
     exchangeArea: float = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -92,7 +91,6 @@ class FluidExchange(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[C.BETWEEN_CAVITIES, C.TO_ENVIRONMENT] = TO_ENVIRONMENT,

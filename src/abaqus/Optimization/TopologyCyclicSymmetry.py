@@ -46,7 +46,6 @@ class TopologyCyclicSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -91,7 +90,6 @@ class TopologyCyclicSymmetry(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,

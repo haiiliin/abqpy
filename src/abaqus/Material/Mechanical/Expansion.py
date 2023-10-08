@@ -55,7 +55,6 @@ class Expansion:
         - EXPANSION
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.ANISOTROPIC, C.ISOTROPIC, C.SHORT_FIBER, C.ORTHOTROPIC] = ISOTROPIC,
@@ -103,7 +102,6 @@ class Expansion:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Expansion object.
 

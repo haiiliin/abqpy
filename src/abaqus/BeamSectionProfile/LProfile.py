@@ -40,7 +40,6 @@ class LProfile(Profile):
     #: a*).
     t2: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, a: float, b: float, t1: float, t2: float):
         """This method creates a LProfile object.
 
@@ -78,7 +77,6 @@ class LProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the LProfile object.
 

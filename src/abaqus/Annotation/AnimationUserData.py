@@ -25,7 +25,6 @@ from .Text import Text
 
 @abaqus_class_doc
 class AnimationUserData(UserDataBase):
-    @abaqus_method_doc
     def Arrow(
         self,
         name: str,
@@ -206,7 +205,6 @@ class AnimationUserData(UserDataBase):
         )
         return arrow
 
-    @abaqus_method_doc
     def Text(
         self,
         name: str,

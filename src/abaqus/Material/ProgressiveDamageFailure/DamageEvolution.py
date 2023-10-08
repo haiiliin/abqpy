@@ -164,7 +164,6 @@ class DamageEvolution:
         - DAMAGE EVOLUTION
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.DISPLACEMENT, C.ENERGY],
@@ -244,7 +243,6 @@ class DamageEvolution:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageEvolution object.
 

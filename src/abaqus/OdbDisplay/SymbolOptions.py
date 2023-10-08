@@ -214,7 +214,6 @@ class SymbolOptions(DGSymbolOptions):
     #: value is "Red".
     tensorSelectedPrinColor: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["SymbolOptions", None] = None,

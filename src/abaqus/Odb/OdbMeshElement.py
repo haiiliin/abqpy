@@ -57,7 +57,6 @@ class OdbMeshElement:
     #: A String specifying the instance name.
     instanceName: str = ""
 
-    @abaqus_method_doc
     def getNormal(
         self,
         faceIndex: str,

@@ -53,7 +53,6 @@ class ConcreteTensionStiffening:
         - CONCRETE TENSION STIFFENING
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -100,7 +99,6 @@ class ConcreteTensionStiffening:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConcreteTensionStiffening object.
 

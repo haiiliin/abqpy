@@ -44,7 +44,6 @@ class ElementProgressiveActivation:
     #: exposed areas of the element facets are considered. The default value is NONE.
     freeSurfaceType: SymbolicConstant = NONE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -90,7 +89,6 @@ class ElementProgressiveActivation:
         """
         ...
 
-    @abaqus_method_doc
     def setValue(self):
         """The method modifies the ElementProgressiveActivation object.
 

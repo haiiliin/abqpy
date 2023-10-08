@@ -21,7 +21,6 @@ class CaeKerPrefs:
     #: represents.
     fileName: str = ""
 
-    @abaqus_method_doc
     def save(self, backupFile: Boolean = OFF):
         """This method saves the sessionOptions in the current **fileName**.
 
@@ -34,7 +33,6 @@ class CaeKerPrefs:
         # TODO: Implement this method
         ...
 
-    @abaqus_method_doc
     def saveAs(self, fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME):
         """This method saves the sessionOptions to the specified location.
 

@@ -33,7 +33,6 @@ class ParameterTable:
     #: A DataTableArray specifying all the dataTables in the ParameterTable.
     dataTables: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a ParameterTable object and places it in the parameterTables repository.
 
@@ -54,7 +53,6 @@ class ParameterTable:
         """
         ...
 
-    @abaqus_method_doc
     def Column(
         self,
         type: Literal[C.INTEGER, C.FLOAT, C.STRING],

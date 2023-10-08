@@ -69,7 +69,6 @@ class PartDisplayOptions:
     #: A MeshDisplayOptions object.
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
-    @abaqus_method_doc
     def setValues(
         self,
         renderStyle: Literal[C.SHADED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,

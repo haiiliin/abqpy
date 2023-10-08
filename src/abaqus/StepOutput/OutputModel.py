@@ -42,7 +42,6 @@ class OutputModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def FieldOutputRequest(
         self,
         name: str,
@@ -191,7 +190,6 @@ class OutputModel(ModelBase):
         )
         return self.fieldOutputRequests[name]
 
-    @abaqus_method_doc
     def HistoryOutputRequest(
         self,
         name: str,
@@ -342,7 +340,6 @@ class OutputModel(ModelBase):
         )
         return self.historyOutputRequests[name]
 
-    @abaqus_method_doc
     def IntegratedOutputSection(
         self,
         name: str,
@@ -408,7 +405,6 @@ class OutputModel(ModelBase):
         )
         return integratedOutputSection
 
-    @abaqus_method_doc
     def TimePoint(self, name: str, points: tuple) -> TimePoint:
         """This method creates a TimePoint object.
 

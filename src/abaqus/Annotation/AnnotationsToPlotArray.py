@@ -23,7 +23,6 @@ class AnnotationsToPlotArray(List[Annotation]):
     def __new__(cls: Type[AnnotationsToPlotArray]) -> AnnotationsToPlotArray:
         return super().__new__(cls)
 
-    @abaqus_method_doc
     def bringForward(self, index: str):
         """This method brings the Annotation object one position forward in the AnnotationsToPlotArray sequence.
 
@@ -36,7 +35,6 @@ class AnnotationsToPlotArray(List[Annotation]):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def bringToFront(self, index: str):
         """This method brings the Annotation object to the beginning of the AnnotationsToPlotArray sequence.
 
@@ -49,7 +47,6 @@ class AnnotationsToPlotArray(List[Annotation]):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def moveAfter(self, index: str, other: str):
         """This method moves the Annotation object after another object in the same AnnotationsToPlotArray
         sequence.
@@ -66,7 +63,6 @@ class AnnotationsToPlotArray(List[Annotation]):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def moveBefore(self, index: str, other: str):
         """This method moves the Annotation object before another object in the same AnnotationsToPlotArray
         sequence.
@@ -83,7 +79,6 @@ class AnnotationsToPlotArray(List[Annotation]):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def sendBackward(self, index: str):
         """This method sends the Annotation object one position backward in the AnnotationsToPlotArray sequence.
 
@@ -96,7 +91,6 @@ class AnnotationsToPlotArray(List[Annotation]):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def sendToBack(self, index: str):
         """This method sends the Annotation object to the end of the AnnotationsToPlotArray sequence.
 

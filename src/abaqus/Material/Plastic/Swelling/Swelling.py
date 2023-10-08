@@ -35,7 +35,6 @@ class Swelling:
     #: A Ratios object.
     ratios: Ratios = Ratios(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -75,7 +74,6 @@ class Swelling:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Swelling object.
 

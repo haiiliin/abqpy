@@ -8,7 +8,6 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 @abaqus_class_doc
 class VerticalConstraint(ConstrainedSketchConstraint):
-    @abaqus_method_doc
     def __init__(self, entity: ConstrainedSketchGeometry):
         """This method creates a vertical constraint. This constraint applies to a line and constrains it to be
         vertical.

@@ -57,7 +57,6 @@ class ActuatorSensor(Interaction):
     #: A sequence of Floats specifying the initial values of the solution-dependent variables.
     solutionDepVars: tuple
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,7 +110,6 @@ class ActuatorSensor(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ActuatorSensor object."""
         ...

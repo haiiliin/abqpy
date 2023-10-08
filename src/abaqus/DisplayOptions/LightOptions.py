@@ -65,7 +65,6 @@ class LightOptions:
     #: **colors** map in the **session** object.
     ambientColor: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         shading: Literal[C.SHADED, C.PHONG, C.GOURAUD] = GOURAUD,

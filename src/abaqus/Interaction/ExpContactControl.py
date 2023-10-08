@@ -56,7 +56,6 @@ class ExpContactControl(ContactControl):
     #: considered to be highly warped. The default value is 20.0.
     warpCutoff: float = 20
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,7 +110,6 @@ class ExpContactControl(ContactControl):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,

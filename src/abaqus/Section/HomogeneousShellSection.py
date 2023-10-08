@@ -132,7 +132,6 @@ class HomogeneousShellSection(GeometryShellSection):
     #: **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
     nodalThicknessField: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -242,7 +241,6 @@ class HomogeneousShellSection(GeometryShellSection):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         thickness: float = 0,

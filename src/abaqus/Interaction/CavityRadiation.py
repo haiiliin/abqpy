@@ -149,7 +149,6 @@ class CavityRadiation(Interaction):
     #: **periodicSymmetries** = 3. The default value is an empty sequence.
     periodicDistance_3: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -360,7 +359,6 @@ class CavityRadiation(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         surfaceEmissivities: tuple = (),
@@ -550,7 +548,6 @@ class CavityRadiation(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

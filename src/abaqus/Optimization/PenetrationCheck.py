@@ -32,7 +32,6 @@ class PenetrationCheck(GeometricRestriction):
     #: cycle. The default value is ON.
     presumeFeasibleRegionAtStart: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -68,7 +67,6 @@ class PenetrationCheck(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, presumeFeasibleRegionAtStart: Boolean = ON):
         """This method modifies the PenetrationCheck object.
 

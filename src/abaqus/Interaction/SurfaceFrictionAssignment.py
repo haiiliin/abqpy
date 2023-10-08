@@ -28,7 +28,6 @@ class SurfaceFrictionAssignment:
         The ``SurfaceFrictionAssignment`` class was added.
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: float):
         """This method allows modification of surface friction assignments already defined on surfaces in a
         given step.
@@ -49,7 +48,6 @@ class SurfaceFrictionAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]):
         """This method allows addition of surface friction assignments to new surfaces in a given step.
 
@@ -68,7 +66,6 @@ class SurfaceFrictionAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface friction assignments.
 

@@ -74,7 +74,6 @@ class AcousticImpedance(Interaction):
     #: and **nonreflectingType** = ELLIPTICAL or PROLATE.
     directionCosine: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -146,7 +145,6 @@ class AcousticImpedance(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
@@ -199,7 +197,6 @@ class AcousticImpedance(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = ""):
         """This method modifies the propagating data for an existing AcousticImpedance object in the specified
         step.

@@ -12,7 +12,6 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 @abaqus_class_doc
 class ArcByCenterEnds(ConstrainedSketchGeometry):
-    @abaqus_method_doc
     def __init__(
         self,
         center: Sequence[float],

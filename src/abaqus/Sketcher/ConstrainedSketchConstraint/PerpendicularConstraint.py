@@ -8,7 +8,6 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 @abaqus_class_doc
 class PerpendicularConstraint(ConstrainedSketchConstraint):
-    @abaqus_method_doc
     def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
         """This method creates a perpendicular constraint. This constraint applies to different types of
         ConstrainedSketchGeometry objects and constrains them to be perpendicular to each other.

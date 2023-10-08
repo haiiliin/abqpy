@@ -44,7 +44,6 @@ class Layer:
     #: A String specifying the name of the layer to copy.
     copyViewName: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, copyViewName: str = ""):
         """This method creates a Layer object in the Layer repository.
 
@@ -68,7 +67,6 @@ class Layer:
         self.name = name
         self.copyViewName = copyViewName
 
-    @abaqus_method_doc
     def moveBefore(self, name: str):
         """This method moves the layer object before another object in the layer repository.
 
@@ -80,7 +78,6 @@ class Layer:
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def moveAfter(self, name: str):
         """This method moves the layer object after another object in the layer repository.
 

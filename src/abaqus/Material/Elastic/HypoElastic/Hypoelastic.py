@@ -28,7 +28,6 @@ class Hypoelastic:
         - HYPOELASTIC
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, user: Boolean = OFF):
         """This method creates a Hypoelastic object.
 
@@ -53,7 +52,6 @@ class Hypoelastic:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hypoelastic object."""
         ...

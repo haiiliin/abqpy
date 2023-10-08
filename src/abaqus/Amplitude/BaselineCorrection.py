@@ -24,7 +24,6 @@ class BaselineCorrection:
     #: sequence.
     intervals: tuple = ()
 
-    @abaqus_method_doc
     def __init__(self, intervals: tuple = ()):
         """This method creates a BaselineCorrection object.
 
@@ -52,7 +51,6 @@ class BaselineCorrection:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BaselineCorrection object.
 

@@ -13,7 +13,6 @@ from .StdInitialization import StdInitialization
 
 @abaqus_class_doc
 class InteractionContactInitializationModel(ModelBase):
-    @abaqus_method_doc
     def ExpInitialization(
         self,
         name: str,
@@ -95,7 +94,6 @@ class InteractionContactInitializationModel(ModelBase):
         )
         return contactInitialization
 
-    @abaqus_method_doc
     def StdInitialization(
         self,
         name: str,

@@ -94,7 +94,6 @@ class OrientationOptions(DGOrientationOptions):
     #: value is "Red".
     axis3Color: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["OrientationOptions", None] = None,

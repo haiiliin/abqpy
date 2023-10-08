@@ -18,7 +18,6 @@ class GeometryDisplayOptions:
             session.viewports[name].partDisplay.geometryOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         geometryEdgesInShaded: Boolean = ON,

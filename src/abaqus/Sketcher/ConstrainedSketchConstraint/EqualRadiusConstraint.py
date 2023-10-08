@@ -8,7 +8,6 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 @abaqus_class_doc
 class EqualRadiusConstraint(ConstrainedSketchConstraint):
-    @abaqus_method_doc
     def __init__(self, entity1: ConstrainedSketchGeometry, entity2: str):
         """This method creates an equal radius constraint. This constraint applies to circles and arcs and
         constrains them such that their radii are equal.

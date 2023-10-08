@@ -45,7 +45,6 @@ class HistoryOutput:
     #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
     validInvariants: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,7 +83,6 @@ class HistoryOutput:
         ...
 
     @overload
-    @abaqus_method_doc
     def addData(self, frame: str, value: str) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 
@@ -99,7 +97,6 @@ class HistoryOutput:
         ...
 
     @overload
-    @abaqus_method_doc
     def addData(self, frame: tuple, value: tuple) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 
@@ -120,7 +117,6 @@ class HistoryOutput:
         ...
 
     @overload
-    @abaqus_method_doc
     def addData(self, data: tuple) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 

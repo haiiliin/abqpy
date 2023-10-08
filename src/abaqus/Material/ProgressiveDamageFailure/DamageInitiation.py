@@ -247,7 +247,6 @@ class DamageInitiation:
     #: A DamageStabilizationCohesive object.
     damageStabilizationCohesive: DamageStabilizationCohesive = DamageStabilizationCohesive()
 
-    @abaqus_method_doc
     def DuctileDamageInitiation(
         self,
         table: tuple,
@@ -334,7 +333,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def FldDamageInitiation(
         self,
         table: tuple,
@@ -415,7 +413,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def FlsdDamageInitiation(
         self,
         table: tuple,
@@ -496,7 +493,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def JohnsonCookDamageInitiation(
         self,
         table: tuple,
@@ -577,7 +573,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MaxeDamageInitiation(
         self,
         table: tuple,
@@ -662,7 +657,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MaxsDamageInitiation(
         self,
         table: tuple,
@@ -747,7 +741,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MkDamageInitiation(
         self,
         table: tuple,
@@ -828,7 +821,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MsfldDamageInitiation(
         self,
         table: tuple,
@@ -909,7 +901,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def QuadeDamageInitiation(
         self,
         table: tuple,
@@ -994,7 +985,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def QuadsDamageInitiation(
         self,
         table: tuple,
@@ -1079,7 +1069,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MaxpeDamageInitiation(
         self,
         table: tuple,
@@ -1164,7 +1153,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def MaxpsDamageInitiation(
         self,
         table: tuple,
@@ -1249,7 +1237,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def ShearDamageInitiation(
         self,
         table: tuple,
@@ -1330,7 +1317,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def HosfordCoulombDamageInitiation(
         self,
         table: tuple,
@@ -1414,7 +1400,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def HashinDamageInitiation(
         self,
         table: tuple,
@@ -1495,7 +1480,6 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def LaRC05DamageInitiation(
         self,
         table: tuple,
@@ -1576,12 +1560,10 @@ class DamageInitiation:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageInitiation object."""
         ...
 
-    @abaqus_method_doc
     def DamageEvolution(
         self,
         type: Literal[C.DISPLACEMENT, C.ENERGY],
@@ -1671,7 +1653,6 @@ class DamageInitiation:
             softening=softening,
         )
 
-    @abaqus_method_doc
     def DamageStabilizationCohesive(self, cohesiveCoeff: float | None = None) -> DamageStabilizationCohesive:
         """This method creates a DamageStabilizationCohesive object.
 

@@ -112,7 +112,6 @@ class GeometryShellSection(ShellSection):
     #: A TransverseShearShell object specifying the transverse shear stiffness properties.
     transverseShear: TransverseShearShell
 
-    @abaqus_method_doc
     def __init__(
         self,
         nodalThicknessField: str = "",
@@ -194,7 +193,6 @@ class GeometryShellSection(ShellSection):
         """
         ...
 
-    @abaqus_method_doc
     def RebarLayers(
         self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray
     ) -> RebarLayers:

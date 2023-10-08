@@ -33,7 +33,6 @@ class CellArray(List[Cell]):
             mdb.models[name].rootAssembly.sets[name].cells
     """
 
-    @abaqus_method_doc
     def __init__(self, cells: list[Cell]) -> None:
         """This method creates a CellArray object.
 
@@ -55,7 +54,6 @@ class CellArray(List[Cell]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[float, float, float],
@@ -64,7 +62,6 @@ class CellArray(List[Cell]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[tuple[float, float, float],],
@@ -73,7 +70,6 @@ class CellArray(List[Cell]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         *coordinates: tuple[tuple[float, float, float],],
@@ -81,7 +77,6 @@ class CellArray(List[Cell]):
     ) -> list[Cell]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Cell, list[Cell]]:  # type: ignore
         """This method returns the object or objects in the CellArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any entity that is at the
@@ -120,7 +115,6 @@ class CellArray(List[Cell]):
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
-    @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
         """This method returns the cell faces on the exterior of the CellArray. That is, it returns the faces
         that are referenced by exactly one of the cells in the sequence.
@@ -133,16 +127,13 @@ class CellArray(List[Cell]):
         return FaceArray([Face()])
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> Cell:  # type: ignore
         ...
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> list[Cell]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, list[Cell]]:  # type: ignore
         """This method returns the object or objects in the CellArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When large number of
@@ -165,7 +156,6 @@ class CellArray(List[Cell]):
         """
         return Cell() if isinstance(mask, str) else [Cell()]
 
-    @abaqus_method_doc
     def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
@@ -176,7 +166,6 @@ class CellArray(List[Cell]):
         """
         return ""
 
-    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: float = 0,
@@ -210,7 +199,6 @@ class CellArray(List[Cell]):
         """
         return CellArray([Cell()])
 
-    @abaqus_method_doc
     def getByBoundingCylinder(
         self,
         center1: tuple[float, float, float],
@@ -237,7 +225,6 @@ class CellArray(List[Cell]):
         """
         return CellArray([Cell()])
 
-    @abaqus_method_doc
     def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding sphere.
 
@@ -255,7 +242,6 @@ class CellArray(List[Cell]):
         """
         return CellArray([Cell()])
 
-    @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the cell sequence.

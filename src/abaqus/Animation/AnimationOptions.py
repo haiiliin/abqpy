@@ -137,7 +137,6 @@ class AnimationOptions(_OptionsBase):
     #: the color associated to each curve. The default value is "Default".
     xySymbolColor: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         mode: Literal[C.LOOP, C.SWING, C.PLAY_ONCE, C.LOOP_BACKWARD] = LOOP,

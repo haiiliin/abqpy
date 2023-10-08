@@ -40,7 +40,6 @@ class BeadRotationalSymmetry(GeometricRestriction):
     #: default value is None.
     csys: int | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -79,7 +78,6 @@ class BeadRotationalSymmetry(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, csys: int | None = None):
         """This method modifies the BeadRotationalSymmetry object.
 

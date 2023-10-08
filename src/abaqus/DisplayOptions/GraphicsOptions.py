@@ -278,7 +278,6 @@ class GraphicsOptions:
     #: valid color strings is in the **colors** map in the Session object.
     backgroundBottomColor: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         graphicsDriver: Literal[C.OPEN_GL] | None = None,

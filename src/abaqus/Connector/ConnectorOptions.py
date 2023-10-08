@@ -107,7 +107,6 @@ class ConnectorOptions:
     #: default value is CONSTANT.
     extrapolation: SymbolicConstant = CONSTANT
 
-    @abaqus_method_doc
     def __init__(
         self,
         useBehRegSettings: Boolean = ON,
@@ -194,7 +193,6 @@ class ConnectorOptions:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorOptions object.
 

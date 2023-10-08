@@ -15,7 +15,6 @@ class MemoryReductionOptions:
             session.memoryReductionOptions
     """
 
-    @abaqus_method_doc
     def setValues(self, reducedMemoryMode: Boolean = ON, percentThreshold: float = 75):
         """This method modifies the MemoryReductionOptions object.
 

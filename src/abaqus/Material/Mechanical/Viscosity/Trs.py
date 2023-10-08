@@ -31,7 +31,6 @@ class Trs:
         - TRS
     """
 
-    @abaqus_method_doc
     def __init__(self, definition: Literal[C.USER, C.WLF, C.ARRHENIUS] = WLF, table: tuple = ()):
         """This method creates a Trs object.
 
@@ -59,7 +58,6 @@ class Trs:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Trs object."""
         ...

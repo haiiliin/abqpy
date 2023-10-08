@@ -58,7 +58,6 @@ class Surface(Region):
     instances: int | None = None
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -190,7 +189,6 @@ class Surface(Region):
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: Surface) -> None:
         """This method copies a surface from an existing surface.
 
@@ -214,7 +212,6 @@ class Surface(Region):
         """
         ...
 
-    @abaqus_method_doc
     def __init__(self, *args, **kwargs) -> None:
         ...
 
@@ -251,7 +248,6 @@ class Surface(Region):
         """
         return Surface(name)
 
-    @abaqus_method_doc
     def SurfaceFromElsets(self, name: str, elementSetSeq: tuple) -> Surface:
         """This method creates a surface from a sequence of element sets in a model database.
 

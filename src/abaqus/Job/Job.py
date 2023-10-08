@@ -151,12 +151,10 @@ class Job:
     #:     The ``licenseType`` attribute was added.
     licenseType: SymbolicConstant = DEFAULT
 
-    @abaqus_method_doc
     def kill(self):
         """This method kills the analysis of a job."""
         ...
 
-    @abaqus_method_doc
     def submit(
         self,
         consistencyChecking: Boolean = ON,
@@ -180,7 +178,6 @@ class Job:
         """
         ...
 
-    @abaqus_method_doc
     def waitForCompletion(self):
         """This method interrupts the execution of the script until the end of the analysis.
 
@@ -189,7 +186,6 @@ class Job:
         """
         ...
 
-    @abaqus_method_doc
     def clearMessage(self):
         """This method clears **messages** and sets the **status** to NONE."""
         ...

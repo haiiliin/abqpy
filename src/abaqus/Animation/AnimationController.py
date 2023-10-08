@@ -30,7 +30,6 @@ class AnimationController(_OptionsBase):
     #: STOP and PLAY. The default value is STOP.
     state: SymbolicConstant = STOP
 
-    @abaqus_method_doc
     def play(self, duration: Literal[C.UNLIMITED] = UNLIMITED):
         """This method begins the animation.
 
@@ -48,25 +47,21 @@ class AnimationController(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def stop(self):
         """This method stops the animation."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def incrementFrame(self):
         """This method increments the animation frame."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def decrementFrame(self):
         """This method decrements the animation frame."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def showFrame(self, frame: int | None = None, value: float | None = None):
         """This method renders the specified frame of the animation.
 
@@ -83,19 +78,16 @@ class AnimationController(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def showFirstFrame(self):
         """This method renders the first frame of the animation."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def showLastFrame(self):
         """This method renders the last frame of the animation."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def setValues(self, animationType: Literal[C.HARMONIC, C.SCALE_FACTOR, C.TIME_HISTORY, C.NONE] = NONE):
         """This method modifies the AnimationController object.
 

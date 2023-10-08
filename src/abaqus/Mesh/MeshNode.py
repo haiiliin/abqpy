@@ -59,7 +59,6 @@ class MeshNode:
     #: A tuple of three Floats specifying the coordinates of the new node.
     coordinates: tuple[float, float, float]
 
-    @abaqus_method_doc
     def __init__(
         self,
         coordinates: tuple[float, float, float],
@@ -90,7 +89,6 @@ class MeshNode:
         """
         ...
 
-    @abaqus_method_doc
     def getElemEdges(self) -> tuple[MeshEdge, ...]:
         """This method returns a tuple of element edge objects that share the node.
 
@@ -101,7 +99,6 @@ class MeshNode:
         """
         return (MeshEdge(),)
 
-    @abaqus_method_doc
     def getElemFaces(self) -> tuple[MeshFace, ...]:
         """This method returns a tuple of element face objects that share the node.
 
@@ -112,7 +109,6 @@ class MeshNode:
         """
         return (MeshFace(),)
 
-    @abaqus_method_doc
     def getElements(self) -> tuple[MeshElement, ...]:
         """This method returns a tuple of element objects that share the node.
 
@@ -123,7 +119,6 @@ class MeshNode:
         """
         return (MeshElement(),)
 
-    @abaqus_method_doc
     def getNodesByFeatureEdge(self, angle: float) -> MeshNodeArray:
         """This method returns an array of mesh node objects that are obtained by recursively finding adjacent
         nodes along a feature edge that are at an angle of less than or equal to the specified face angle.
@@ -140,7 +135,6 @@ class MeshNode:
         """
         return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
-    @abaqus_method_doc
     def setValues(self, label: int | None = None) -> None:
         """This method modifies the MeshNode object.
 

@@ -58,7 +58,6 @@ class Permeability:
     #: on the velocity of fluid flow.
     velocityDependence: VelocityDependence = VelocityDependence(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         specificWeight: float,
@@ -103,7 +102,6 @@ class Permeability:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Permeability object.
 

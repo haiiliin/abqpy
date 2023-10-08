@@ -23,7 +23,6 @@ class AnimationSession(SessionBase):
             import animation
     """
 
-    @abaqus_method_doc
     def writeImageAnimation(
         self, fileName: str, format: Literal[C.AVI, C.VRML, C.QUICKTIME, C.COMPRESSED_VRML], canvasObjects: tuple = ()
     ):
@@ -45,7 +44,6 @@ class AnimationSession(SessionBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def Movie(
         self,
         name: str,

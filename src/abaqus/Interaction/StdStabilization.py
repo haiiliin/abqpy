@@ -50,7 +50,6 @@ class StdStabilization(ContactStabilization):
     #: default value is OFF.
     reset: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -103,7 +102,6 @@ class StdStabilization(ContactStabilization):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         zeroDistance: float | None = None,

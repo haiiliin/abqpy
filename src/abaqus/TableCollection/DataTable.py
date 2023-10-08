@@ -27,7 +27,6 @@ class DataTable:
     #: A DataColumnArray specifying all the dataColumns in the DataTable object.
     columns: str = ""
 
-    @abaqus_method_doc
     def __init__(self, label: str):
         """This method creates a DataTable object and places it in the dataTables array.
 

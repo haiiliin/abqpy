@@ -22,7 +22,6 @@ class InitializationAssignment:
         - CONTACT INITIALIZATION ASSIGNMENT
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: str):
         """This method allows modification of contact initialization assignments to domain pairs already defined
         in a given step.
@@ -41,7 +40,6 @@ class InitializationAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.CLEARANCE, C.SELF, C.GLOBAL]):
         """This method allows addition of contact initialization assignments to new domain pairs in a given
         step.
@@ -61,7 +59,6 @@ class InitializationAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing contact initialization assignments from a ContactStd
         or ContactExp object.

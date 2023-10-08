@@ -135,7 +135,6 @@ class PartInstance:
     #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF):
         """This method creates a PartInstance object and puts it into the instances repository.
 
@@ -180,7 +179,6 @@ class PartInstance:
         self.elemEdges = part.elemEdges
         self.elementEdges = part.elementEdges
 
-    @abaqus_method_doc
     def checkGeometry(self, detailed: Boolean = OFF, level: int | None = None):
         """This method checks the validity of the geometry of the part instance and prints a count of all
         topological entities on the part instance (faces, edges, vertices, etc.).
@@ -206,7 +204,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def Contact(
         self,
         movableList: tuple,
@@ -241,7 +238,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def ConvertConstraints(self):
         """This method converts the position constraints of an instance to absolute positions.
 
@@ -249,12 +245,10 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def getPosition(self):
         """This method prints the sum of the translations and rotations applied to the PartInstance object."""
         ...
 
-    @abaqus_method_doc
     def getRotation(self):
         """This method returns a tuple including the point of rotation, axis of rotation, and rotation angle (in
         degrees).
@@ -267,7 +261,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def getTranslation(self) -> tuple[float, float, float]:
         """This method returns a tuple of three Floats representing translation in the **X**, **Y**, and **Z**
         directions.
@@ -279,7 +272,6 @@ class PartInstance:
         """
         return (0.0, 0.0, 0.0)
 
-    @abaqus_method_doc
     def replace(self, instanceOf: Part, applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another part.
 
@@ -295,7 +287,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def rotateAboutAxis(self, axisPoint: Sequence[float], axisDirection: Sequence[float], angle: float):
         """This method translates an instance by the specified amount.
 
@@ -312,7 +303,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def translate(self, vector: tuple):
         """This method translates an instance by the specified amount.
 
@@ -323,7 +313,6 @@ class PartInstance:
         """
         ...
 
-    @abaqus_method_doc
     def translateTo(
         self,
         movableList: tuple,

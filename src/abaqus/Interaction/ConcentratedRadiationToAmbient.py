@@ -63,7 +63,6 @@ class ConcentratedRadiationToAmbient(Interaction):
     #: and ANALYTICAL_FIELD. The default value is UNIFORM.
     distributionType: SymbolicConstant = UNIFORM
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -127,7 +126,6 @@ class ConcentratedRadiationToAmbient(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         nodalArea: float = 1,
@@ -158,7 +156,6 @@ class ConcentratedRadiationToAmbient(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

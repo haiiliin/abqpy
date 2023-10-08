@@ -52,7 +52,6 @@ class StdInitialization(ContactInitialization):
     #: undergo strain-free adjustments.. The default value is None.
     overclosureTolerance: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -103,7 +102,6 @@ class StdInitialization(ContactInitialization):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,

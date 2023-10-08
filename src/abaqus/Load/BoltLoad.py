@@ -39,7 +39,6 @@ class BoltLoad(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -100,7 +99,6 @@ class BoltLoad(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
@@ -131,7 +129,6 @@ class BoltLoad(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

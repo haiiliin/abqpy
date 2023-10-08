@@ -31,7 +31,6 @@ class CyclicHardening:
         - CYCLIC HARDENING
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -66,7 +65,6 @@ class CyclicHardening:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CyclicHardening object."""
         ...

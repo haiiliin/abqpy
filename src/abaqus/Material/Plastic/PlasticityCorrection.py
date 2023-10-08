@@ -63,7 +63,6 @@ class PlasticityCorrection:
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.RAMBERG_OSGOOD, C.TABULAR],
@@ -102,7 +101,6 @@ class PlasticityCorrection:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PlasticityCorrection object.
 

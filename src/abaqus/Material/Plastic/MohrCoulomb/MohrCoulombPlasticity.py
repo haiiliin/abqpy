@@ -40,7 +40,6 @@ class MohrCoulombPlasticity:
     #: A TensionCutOff object.
     tensionCutOff: TensionCutOff = TensionCutOff(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -88,7 +87,6 @@ class MohrCoulombPlasticity:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MohrCoulombPlasticity object.
 

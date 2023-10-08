@@ -56,7 +56,6 @@ class IntegratedOutputSection:
     #: such that a least-squares fit surface will be used. The default value is OFF.
     projectOrientation: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -113,7 +112,6 @@ class IntegratedOutputSection:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         surface: Region,

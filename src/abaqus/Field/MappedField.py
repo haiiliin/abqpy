@@ -119,7 +119,6 @@ class MappedField(AnalyticalField):
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -228,7 +227,6 @@ class MappedField(AnalyticalField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         regionType: Literal[C.MESH, C.POINT, C.ODB] = POINT,

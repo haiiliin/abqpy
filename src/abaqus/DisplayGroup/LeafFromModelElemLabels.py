@@ -32,7 +32,6 @@ class LeafFromModelElemLabels(Leaf):
     #: specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
     elementLabels: tuple
 
-    @abaqus_method_doc
     def __init__(self, elementLabels: tuple):
         """This method creates a Leaf object from a sequence of element labels spanning several part instances.
 

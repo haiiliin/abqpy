@@ -23,7 +23,6 @@ class LeafFromOdbNodePick(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, nodePick: tuple):
         """This method creates a Leaf object from a tuple containing machine readable, compact strings defining
         the nodes picked for each part instance. Leaf objects specify the items in a display group.

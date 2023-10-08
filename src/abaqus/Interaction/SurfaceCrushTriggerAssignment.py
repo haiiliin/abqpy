@@ -28,7 +28,6 @@ class SurfaceCrushTriggerAssignment:
         The ``SurfaceCrushTriggerAssignment`` class was added.
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(
         self, stepName: str, index: int, value: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER], float]
     ):
@@ -54,7 +53,6 @@ class SurfaceCrushTriggerAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(
         self, stepName: str, assignments: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER, C.GLOBAL], float]
     ):
@@ -78,7 +76,6 @@ class SurfaceCrushTriggerAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface crush trigger assignments from a ContactExp
         object.

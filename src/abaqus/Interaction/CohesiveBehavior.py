@@ -82,7 +82,6 @@ class CohesiveBehavior:
     #: **defaultPenalties** = OFF.
     table: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         repeatedContacts: Boolean = OFF,
@@ -133,7 +132,6 @@ class CohesiveBehavior:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CohesiveBehavior object."""
         ...

@@ -22,7 +22,6 @@ class Mdb(AcisMdb, JobMdb):
             mdb
     """
 
-    @abaqus_method_doc
     def Model(
         self,
         name: str,

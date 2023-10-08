@@ -55,7 +55,6 @@ class Vertex:
     #: applicable).
     instanceName: tuple[float, ...]
 
-    @abaqus_method_doc
     def getEdges(self) -> tuple[int]:
         """This method returns a sequence consisting of the edge ids of the edges which share this vertex.
 
@@ -66,7 +65,6 @@ class Vertex:
         """
         return (0,)
 
-    @abaqus_method_doc
     def getNodes(self) -> MeshNodeArray:
         """This method returns an array of node objects that are associated with the vertex.
 
@@ -77,7 +75,6 @@ class Vertex:
         """
         return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
-    @abaqus_method_doc
     def getElements(self) -> MeshElementArray:
         """This method returns an array of element objects that are associated with the vertex.
 

@@ -28,7 +28,6 @@ class ObjectiveFunction:
     #: MINIMIZE, MAXIMIZE, and MINIMIZE_MAXIMUM. The default value is MINIMIZE.
     target: SymbolicConstant = MINIMIZE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -64,7 +63,6 @@ class ObjectiveFunction:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, target: Literal[C.MINIMIZE_MAXIMUM, C.MINIMIZE, C.MAXIMIZE] = MINIMIZE):
         """This method modifies the ObjectiveFunction object.
 

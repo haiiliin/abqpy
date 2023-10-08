@@ -108,7 +108,6 @@ class SurfaceToSurfaceContactExp(Interaction):
     #: A Region object specifying the contact region for which clearance is specified.
     clearanceRegion: Region | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -204,7 +203,6 @@ class SurfaceToSurfaceContactExp(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact pair. This
         command is valid only during the step in which the interaction is created.
@@ -214,7 +212,6 @@ class SurfaceToSurfaceContactExp(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
@@ -274,7 +271,6 @@ class SurfaceToSurfaceContactExp(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data for an existing SurfaceToSurfaceContactExp object in the
         specified step.

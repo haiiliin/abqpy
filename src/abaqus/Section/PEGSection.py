@@ -39,7 +39,6 @@ class PEGSection(Section):
     #: planes, ΔϕyΔ⁢ϕy. The default value is 0.0.
     wedgeAngle2: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -84,7 +83,6 @@ class PEGSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, thickness: float = 1, wedgeAngle1: float = 0, wedgeAngle2: float = 0):
         """This method modifies the PEGSection object.
 

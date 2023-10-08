@@ -47,7 +47,6 @@ class IProfile(Profile):
     #: A Float specifying the **t3** dimension (web thickness) of the I profile.
     t3: float
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -99,7 +98,6 @@ class IProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the IProfile object.
 

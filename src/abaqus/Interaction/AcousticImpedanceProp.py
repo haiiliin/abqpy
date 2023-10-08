@@ -42,7 +42,6 @@ class AcousticImpedanceProp(ContactProperty):
     #: OFF.
     frequencyDependency: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -82,7 +81,6 @@ class AcousticImpedanceProp(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(self, frequencyDependency: Boolean = OFF):
         """This method modifies the AcousticImpedanceProp object.
 

@@ -23,12 +23,10 @@ class Inertia:
     #: A Boolean specifying whether the inertia is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the inertia that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the inertia."""
         ...

@@ -16,7 +16,6 @@ class LoadDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.loadOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         concentratedForce: str = ON,

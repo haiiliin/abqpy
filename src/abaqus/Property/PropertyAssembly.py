@@ -21,7 +21,6 @@ class PropertyAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    @abaqus_method_doc
     def SectionAssignment(
         self,
         region: Set,

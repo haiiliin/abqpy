@@ -156,7 +156,6 @@ class AssemblyBase(AssemblyFeature):
     sectionAssignments: SectionAssignmentArray = []
 
     @overload
-    @abaqus_method_doc
     def Instance(self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF) -> PartInstance:
         """This method creates a PartInstance object and puts it into the instances repository.
 
@@ -187,7 +186,6 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @overload
-    @abaqus_method_doc
     def Instance(self, name: str, model: AssemblyModel, autoOffset: Boolean = OFF) -> ModelInstance:
         """This method creates a ModelInstance object and puts it into the instances repository.
 
@@ -214,7 +212,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def Instance(self, name: str, *args, **kwargs) -> Union[PartInstance, ModelInstance]:
         """This method creates a PartInstance object and puts it into the instances repository.
 
@@ -244,7 +241,6 @@ class AssemblyBase(AssemblyFeature):
         self.allInstances[name] = instance
         return instance
 
-    @abaqus_method_doc
     def InstanceFromBooleanCut(
         self,
         name: str,
@@ -281,7 +277,6 @@ class AssemblyBase(AssemblyFeature):
         """
         return PartInstance(name, Part("", THREE_D))
 
-    @abaqus_method_doc
     def InstanceFromBooleanMerge(
         self,
         name: str,
@@ -339,7 +334,6 @@ class AssemblyBase(AssemblyFeature):
         """
         return PartInstance(name, Part("", THREE_D))
 
-    @abaqus_method_doc
     def LinearInstancePattern(
         self,
         instanceList: tuple,
@@ -388,7 +382,6 @@ class AssemblyBase(AssemblyFeature):
         """
         return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
-    @abaqus_method_doc
     def RadialInstancePattern(
         self,
         instanceList: tuple,
@@ -432,7 +425,6 @@ class AssemblyBase(AssemblyFeature):
         """
         return [PartInstance(name, Part("", THREE_D)) for name in instanceList]
 
-    @abaqus_method_doc
     def backup(self):
         """This method makes a backup copy of the features in the assembly.
 
@@ -440,7 +432,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def clearGeometryCache(self):
         """This method deletes the geometry cache.
 
@@ -448,12 +439,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def deleteAllFeatures(self):
         """This method deletes all the features in the assembly."""
         ...
 
-    @abaqus_method_doc
     def deleteFeatures(self, featureNames: tuple):
         """This method deletes specified features from the assembly.
 
@@ -465,7 +454,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def excludeFromSimulation(self, instances: Sequence[PartInstance], exclude: str):
         """This method excludes the specified part instances from the analysis.
 
@@ -479,12 +467,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def featurelistInfo(self):
         """This method prints the name and status of all the features in the feature lists."""
         ...
 
-    @abaqus_method_doc
     def getMassProperties(
         self,
         regions: str = "",
@@ -601,7 +587,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def getAngle(self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""):
         """This method returns the angle between the specified entities.
 
@@ -635,7 +620,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def getCoordinates(self, entity: str, csys: DatumCsys = DatumCsys()):
         """This method returns the coordinates of a specified point.
 
@@ -658,7 +642,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF, csys: DatumCsys = DatumCsys()):
         """Depending on the arguments provided, this method returns one of the following:
 
@@ -688,7 +671,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def getFacesAndVerticesOfAttachmentLines(self, edges: EdgeArray):
         """Given an array of edge objects, this method returns a tuple of dictionary objects. Each object
         consists of five members including the attachment line and associated face and vertex objects.
@@ -715,7 +697,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def getSurfaceSections(self, surface: str):
         """This method returns a list of the sections assigned to the regions encompassed by the specified
         surface.
@@ -733,7 +714,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importEafFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an EAF file into the root assembly.
 
@@ -749,7 +729,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importParasolidFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from the Parasolid file into the root assembly.
 
@@ -765,7 +744,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importCatiaV5File(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from a CATIA V5 Elysium Neutral file into the root assembly.
 
@@ -782,7 +760,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importEnfFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an Elysium Neutral file created by Pro/ENGINEER, I-DEAS, or
         CATIA V5 into the root assembly.
@@ -800,7 +777,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importIdeasFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from an I-DEAS Elysium Neutral file into the root assembly.
 
@@ -817,7 +793,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def importProEFile(self, filename: str, ids: tuple = ()):
         """This method imports an assembly from a Pro/ENGINEER Elysium Neutral file into the root assembly.
 
@@ -834,7 +809,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def makeDependent(self, instances: Sequence[PartInstance]):
         """This method converts the specified part instances from independent to dependent part instances.
 
@@ -845,7 +819,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def makeIndependent(self, instances: Sequence[PartInstance]):
         """This method converts the specified part instances from dependent to independent part instances.
 
@@ -856,17 +829,14 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def printAssignedSections(self):
         """This method prints a summary of assigned connector sections."""
         ...
 
-    @abaqus_method_doc
     def printConnectorOrientations(self):
         """This method prints a summary of connector orientations."""
         ...
 
-    @abaqus_method_doc
     def projectReferencesOntoSketch(
         self,
         sketch: ConstrainedSketch,
@@ -902,7 +872,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def queryCachedStates(self):
         """This method displays the position of geometric states relative to the sequence of features in the
         assembly cache.
@@ -911,7 +880,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def regenerate(self):
         """This method regenerates the assembly and brings it up to date with the latest values of the assembly
         parameters.
@@ -923,12 +891,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def regenerationWarnings(self):
         """This method prints any regeneration warnings associated with the features."""
         ...
 
-    @abaqus_method_doc
     def restore(self):
         """This method restores the parameters of all features in the assembly to the value they had before a
         failed regeneration.
@@ -937,12 +903,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def resumeAllFeatures(self):
         """This method resumes all the suppressed features in the part or assembly."""
         ...
 
-    @abaqus_method_doc
     def resumeFeatures(self, featureNames: tuple):
         """This method resumes the specified suppressed features in the assembly.
 
@@ -953,12 +917,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def resumeLastSetFeatures(self):
         """This method resumes the last set of features to be suppressed in the assembly."""
         ...
 
-    @abaqus_method_doc
     def rotate(
         self,
         instanceList: Sequence[str],
@@ -982,7 +944,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def translate(self, instanceList: tuple, vector: tuple):
         """This method translates given instances by the specified amount.
 
@@ -995,12 +956,10 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def saveGeometryCache(self):
         """This method caches the current geometry, which improves regeneration performance."""
         ...
 
-    @abaqus_method_doc
     def setValues(self, regenerateConstraintsTogether: Boolean):
         """This method modifies the behavior associated with the specified assembly.
 
@@ -1019,7 +978,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def suppressFeatures(self, featureNames: tuple):
         """This method suppresses specified features.
 
@@ -1030,7 +988,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def unlinkInstances(self, instances: Sequence[PartInstance]):
         """This method converts the specified PartInstance objects from linked child instances to regular
         instances. The parts associated with the selected instances will be converted to regular parts as well.
@@ -1042,7 +999,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float | None = None):
         """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT) format.
 
@@ -1058,7 +1014,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def writeCADParameters(self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""):
         """This method writes the parameters that were imported from the CAD system to a parameter file.
 
@@ -1076,7 +1031,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def lock(self):
         """This method locks the assembly.
 
@@ -1085,7 +1039,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def unlock(self):
         """This method unlocks the assembly.
 
@@ -1093,7 +1046,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def setMeshNumberingControl(
         self,
         instances: Sequence[PartInstance],
@@ -1115,7 +1067,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def copyMeshPattern(
         self,
         elements: Sequence[MeshElement] = (),
@@ -1154,7 +1105,6 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @abaqus_method_doc
     def smoothNodes(self, nodes: Sequence[MeshNode] = ()):
         """This method smooths the given nodes of a native mesh, moving them locally to a more optimal location
         that improves the quality of the mesh.

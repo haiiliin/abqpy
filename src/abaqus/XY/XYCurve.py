@@ -65,7 +65,6 @@ class XYCurve:
     #: Possible values are LINE and SYMBOL. The default value is (LINE).
     displayTypes: SymbolicConstant
 
-    @abaqus_method_doc
     def Curve(self, name: str, data: XYData):
         """This method creates an XYCurve object from an XYData object.
 
@@ -88,7 +87,6 @@ class XYCurve:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         displayTypes: Literal[C.SYMBOL, C.LINE] | None = None,

@@ -56,7 +56,6 @@ class TopologyDemoldControl(GeometricRestriction):
     #: AUTO_TIGHT, POINT, SURFACE, and STAMP. The default value is AUTO.
     technique: SymbolicConstant = AUTO
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,7 +110,6 @@ class TopologyDemoldControl(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         csys: int | None = None,

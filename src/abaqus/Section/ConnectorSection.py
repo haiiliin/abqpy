@@ -164,7 +164,6 @@ class ConnectorSection(Section):
     #: A ConnectorBehaviorOptionArray object.
     behaviorOptions: ConnectorBehaviorOptionArray
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -324,7 +323,6 @@ class ConnectorSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         assembledType: Literal[

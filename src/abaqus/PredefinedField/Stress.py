@@ -27,7 +27,6 @@ class Stress(PredefinedField):
         The ``Stress`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -76,7 +75,6 @@ class Stress(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,

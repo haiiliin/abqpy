@@ -162,7 +162,6 @@ class OdbMeshRegionData:
     #: The default value is UNDEFINED_POSITION.
     displayOutputPosition: SymbolicConstant = UNDEFINED_POSITION
 
-    @abaqus_method_doc
     def __init__(
         self,
         odbFileName: str,
@@ -369,7 +368,6 @@ class OdbMeshRegionData:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the OdbMeshRegionData object."""
         ...

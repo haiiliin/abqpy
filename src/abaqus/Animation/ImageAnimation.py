@@ -19,7 +19,6 @@ class ImageAnimation:
     #: A String specifying the file to which the animation frames is to be written.
     fileName: str = ""
 
-    @abaqus_method_doc
     def __init__(self, fileName: str, format: Literal[C.AVI, C.QUICKTIME]):
         """This method creates an ImageAnimation object from the specified filename and format.
 
@@ -43,7 +42,6 @@ class ImageAnimation:
         """
         self.fileName = fileName
 
-    @abaqus_method_doc
     def writeFrame(self, canvasObjects: tuple = ()):
         """This method adds a frame to the ImageAnimation object.
 
@@ -56,13 +54,11 @@ class ImageAnimation:
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def close(self):
         """This method closes the ImageAnimation object."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def closed(self):
         """This method indicates if the ImageAnimation is open or closed for writing animation frames."""
         # TODO: implement this method

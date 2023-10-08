@@ -89,7 +89,6 @@ class ContactExp(Interaction):
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -179,7 +178,6 @@ class ContactExp(Interaction):
         super().__init__()
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

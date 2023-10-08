@@ -23,7 +23,6 @@ class ErrorIndicatorResult(RuleResult):
     #: corresponding to the error indicator variable represented by this ErrorIndicatorResult.
     results: str
 
-    @abaqus_method_doc
     def __init__(self, name: str, results: str):
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in a
         RemeshingRule for a given adaptivity iteration.

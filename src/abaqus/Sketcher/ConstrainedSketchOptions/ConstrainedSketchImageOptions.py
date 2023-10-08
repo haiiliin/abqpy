@@ -19,7 +19,6 @@ class ConstrainedSketchImageOptions:
             mdb.models[name].sketches[name].imageOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         imageName: str = "",

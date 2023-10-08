@@ -38,7 +38,6 @@ class TrapezoidalProfile(Profile):
     #: A Float specifying the **d** dimension of the Trapezoidal profile.
     d: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, a: float, b: float, c: float, d: float):
         """This method creates a TrapezoidalProfile object.
 
@@ -74,7 +73,6 @@ class TrapezoidalProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TrapezoidalProfile object.
 

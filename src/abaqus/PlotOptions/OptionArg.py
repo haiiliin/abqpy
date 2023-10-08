@@ -75,7 +75,6 @@ class OptionArg:
     #: 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value is 0.3.
     translucencyFactor: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,

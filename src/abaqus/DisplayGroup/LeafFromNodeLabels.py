@@ -32,7 +32,6 @@ class LeafFromNodeLabels(Leaf):
     #: node labels; for example, `'3:5'` and `'3:15:3'`.
     nodeLabels: tuple
 
-    @abaqus_method_doc
     def __init__(self, partInstanceName: str, nodeLabels: tuple):
         """This method creates a Leaf object from a sequence of node labels that belong to a single part
         instance.

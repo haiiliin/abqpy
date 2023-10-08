@@ -38,7 +38,6 @@ class TensileFailure:
         The ``TensileFailure`` class was added.
     """
 
-    @abaqus_method_doc
     def tensileFailure(
         self,
         table: tuple,
@@ -86,7 +85,6 @@ class TensileFailure:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TensileFailure object.
 

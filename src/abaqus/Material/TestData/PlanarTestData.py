@@ -38,7 +38,6 @@ class PlanarTestData:
         - PLANAR TEST DATA
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -81,7 +80,6 @@ class PlanarTestData:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PlanarTestData object."""
         ...

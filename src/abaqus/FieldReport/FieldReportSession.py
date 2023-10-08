@@ -13,7 +13,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class FieldReportSession(SessionBase):
-    @abaqus_method_doc
     def writeFieldReport(
         self,
         filename: str,
@@ -122,7 +121,6 @@ class FieldReportSession(SessionBase):
         """
         ...
 
-    @abaqus_method_doc
     def writeFreeBodyReport(
         self,
         fileName: str,

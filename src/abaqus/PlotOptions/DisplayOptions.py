@@ -28,7 +28,6 @@ class DisplayOptions(_CopyOptionsBase):
     #: SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and ORIENT_ON_DEF. The default value is (UNDEFORMED).
     plotState: tuple[SymbolicConstant, ...] = (UNDEFORMED,)
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["DisplayOptions", None] = None,

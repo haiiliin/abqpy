@@ -70,7 +70,6 @@ class SlideRegionControl(GeometricRestriction):
     #: **approach** is TURN. The default value is 0.01.
     tolerance3: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -139,7 +138,6 @@ class SlideRegionControl(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,

@@ -23,7 +23,6 @@ class Repository(Dict):
     [changeKey(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-utlrepositorypyc.htm?ContextScope=all#simaker-utlrepositorychangekeypyc)
     """
 
-    @abaqus_method_doc
     def changeKey(self, fromName: str, toName: str):
         """This method changes the name of a key in a repository and the **name** member of the value object.
 

@@ -89,7 +89,6 @@ class Set(Region):
     referencePoints: ReferencePointArray = []
 
     @overload
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -172,7 +171,6 @@ class Set(Region):
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: Set) -> None:
         """This method copies a set from an existing set.
 
@@ -196,7 +194,6 @@ class Set(Region):
         """
         ...
 
-    @abaqus_method_doc
     def __init__(self, *args, **kwargs) -> None:
         ...
 
@@ -230,7 +227,6 @@ class Set(Region):
         """
         return Set(name)
 
-    @abaqus_method_doc
     def SetFromColor(self, name: str, color: tuple) -> Set:
         """This method creates a set containing faces of the part marked with a specified color attribute.
         Third-party applications can assign color attributes to faces, and the color attribute can be imported
@@ -258,7 +254,6 @@ class Set(Region):
         """
         return Set(name)
 
-    @abaqus_method_doc
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
@@ -289,7 +284,6 @@ class Set(Region):
         """
         return Set(name)
 
-    @abaqus_method_doc
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
@@ -326,7 +320,6 @@ class Set(Region):
         """
         return Set(name)
 
-    @abaqus_method_doc
     def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
         """This method creates sets based on mapping sets from element centroid locations in an Odb.
 

@@ -21,7 +21,6 @@ class MeshEdgeArray(List[MeshEdge]):
             mdb.models[name].rootAssembly.instances[name].elementEdges
     """
 
-    @abaqus_method_doc
     def __init__(self, elemEdges: list[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
@@ -45,7 +44,6 @@ class MeshEdgeArray(List[MeshEdge]):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshEdgeArray:
         """This method returns the objects in the MeshEdgeArray identified using the specified
         **mask**. When large number of objects are involved, this method is highly efficient.
@@ -67,7 +65,6 @@ class MeshEdgeArray(List[MeshEdge]):
         """
         return MeshEdgeArray([MeshEdge()])
 
-    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 

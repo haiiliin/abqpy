@@ -28,7 +28,6 @@ class EulerianSection(Section):
     #: Material names. Internally the specified mapping gets sorted on Material instance name.
     data: str
 
-    @abaqus_method_doc
     def __init__(self, name: str, data: str):
         """This method creates a EulerianSection object.
 
@@ -53,7 +52,6 @@ class EulerianSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the EulerianSection object."""
         ...

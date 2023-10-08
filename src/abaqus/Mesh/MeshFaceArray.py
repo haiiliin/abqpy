@@ -21,7 +21,6 @@ class MeshFaceArray(List[MeshFace]):
             mdb.models[name].rootAssembly.instances[name].elementFaces
     """
 
-    @abaqus_method_doc
     def __init__(self, elemFaces: list[MeshFace]):
         """This method creates a MeshFaceArray object.
 
@@ -45,7 +44,6 @@ class MeshFaceArray(List[MeshFace]):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshFaceArray:
         """This method returns the objects in the MeshFaceArray identified using the specified
         **mask**. When large number of objects are involved, this method is highly efficient.
@@ -67,7 +65,6 @@ class MeshFaceArray(List[MeshFace]):
         """
         return MeshFaceArray([])
 
-    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 

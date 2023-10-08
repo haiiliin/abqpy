@@ -61,7 +61,6 @@ class EpsOptions(_OptionsBase):
     #: value is MEDIUM.
     shadingQuality: SymbolicConstant = MEDIUM
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

@@ -28,7 +28,6 @@ class Solubility:
         - SOLUBILITY
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a Solubility object.
 
@@ -58,7 +57,6 @@ class Solubility:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Solubility object.
 

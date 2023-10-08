@@ -53,7 +53,6 @@ class SubmodelBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -139,7 +138,6 @@ class SubmodelBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         globalDrivingRegion: str = "",
@@ -179,7 +177,6 @@ class SubmodelBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

@@ -23,7 +23,6 @@ class UserMaterial:
         - USER MATERIAL
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: Literal[C.THERMOMECHANICAL, C.THERMAL, C.MECHANICAL] = MECHANICAL,
@@ -79,7 +78,6 @@ class UserMaterial:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the UserMaterial object.
 

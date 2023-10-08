@@ -25,7 +25,6 @@ class IgnoredEdge:
     #: the edge.
     pointOn: float | None = None
 
-    @abaqus_method_doc
     def getSize(self, printResults: bool = True):
         """This method returns a Float indicating the length of the edge.
 
@@ -41,7 +40,6 @@ class IgnoredEdge:
         """
         ...
 
-    @abaqus_method_doc
     def getRadius(self):
         """This method returns the radius of a circular IgnoredEdge object.
 
@@ -56,7 +54,6 @@ class IgnoredEdge:
         """
         ...
 
-    @abaqus_method_doc
     def getCurvature(self, parameter: float, point: tuple[float, float, float]):
         """This method returns curvature information at a location on the IgnoredEdge object.
 

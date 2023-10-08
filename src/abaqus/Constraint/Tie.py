@@ -85,7 +85,6 @@ class Tie(Constraint):
     #: ON.
     thickness: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -155,7 +154,6 @@ class Tie(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a tied constraint.
 
@@ -163,7 +161,6 @@ class Tie(Constraint):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         adjust: Boolean = ON,

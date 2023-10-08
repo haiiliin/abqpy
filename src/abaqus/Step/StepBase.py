@@ -123,12 +123,10 @@ class StepBase:
     #: A repository of ActivateElements objects.
     activateElements: dict[str, ActivateElements] = {}
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the step that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the step."""
         ...

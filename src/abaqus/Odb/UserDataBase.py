@@ -63,7 +63,6 @@ class UserDataBase:
     #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
     data: float | None = None
 
-    @abaqus_method_doc
     def XYData(
         self,
         name: str,

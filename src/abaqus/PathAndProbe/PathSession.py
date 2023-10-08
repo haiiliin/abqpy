@@ -15,7 +15,6 @@ from .Stream import Stream
 
 @abaqus_class_doc
 class PathSession(SessionBase):
-    @abaqus_method_doc
     def Path(
         self,
         name: str,
@@ -123,7 +122,6 @@ class PathSession(SessionBase):
         )
         return path
 
-    @abaqus_method_doc
     def Spectrum(self, name: str, colors: tuple) -> Spectrum:
         """This method creates a Spectrum object and places it in the spectrums repository.
 
@@ -147,7 +145,6 @@ class PathSession(SessionBase):
         self.spectrums[name] = spectrum = Spectrum(name, colors)
         return spectrum
 
-    @abaqus_method_doc
     def Stream(
         self,
         name: str,

@@ -66,7 +66,6 @@ class KinematicHardening(PredefinedField):
     #: and ANALYTICAL_FIELD. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -122,7 +121,6 @@ class KinematicHardening(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         numBackStress: int = 1,

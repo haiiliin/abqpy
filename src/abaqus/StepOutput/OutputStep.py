@@ -23,7 +23,6 @@ class OutputStep(StepBase):
             mdb.models[name].steps[name]
     """
 
-    @abaqus_method_doc
     def DiagnosticPrint(
         self,
         allke: Boolean = ON,
@@ -110,7 +109,6 @@ class OutputStep(StepBase):
         )
         return diagnosticPrint
 
-    @abaqus_method_doc
     def Monitor(
         self,
         node: str,
@@ -176,7 +174,6 @@ class OutputStep(StepBase):
         self.monitor = monitor = Monitor(node, dof, frequency)
         return monitor
 
-    @abaqus_method_doc
     def Restart(
         self,
         numberIntervals: int = 0,

@@ -26,7 +26,6 @@ class LeafFromPartInstance(Leaf):
     #: A sequence of Strings specifying the names of the part instances.
     partInstanceName: tuple
 
-    @abaqus_method_doc
     def __init__(self, partInstanceName: tuple):
         """This method creates a Leaf object from a list of part instance names.
 

@@ -202,7 +202,6 @@ class SurfaceToSurfaceContactStd(Interaction):
     #:     The ``normalAdjustment`` attribute was added.
     normalAdjustment: SymbolicConstant = NONE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -375,7 +374,6 @@ class SurfaceToSurfaceContactStd(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a surface-to-surface contact pair. This
         command is valid only for the step in which the interaction is created.
@@ -385,7 +383,6 @@ class SurfaceToSurfaceContactStd(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
@@ -528,7 +525,6 @@ class SurfaceToSurfaceContactStd(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

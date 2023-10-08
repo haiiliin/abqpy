@@ -64,7 +64,6 @@ class SpringDashpotToGround(SpringDashpot):
     #: 0.0.
     dashpotCoefficient: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -119,7 +118,6 @@ class SpringDashpotToGround(SpringDashpot):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         orientation: str | None = None,

@@ -28,7 +28,6 @@ class LeafFromDisplayGroup(Leaf):
     #: A DisplayGroupArray object.
     displayGroup: DisplayGroupArray
 
-    @abaqus_method_doc
     def __init__(self, displayGroup: DisplayGroupArray):
         """This method creates a Leaf object from a sequence of Display Group objects.
 

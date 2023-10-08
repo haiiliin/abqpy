@@ -28,7 +28,6 @@ class TableCollectionAssembly(AssemblyBase):
 
     elementProgressiveActivations: dict[str, ElementProgressiveActivation] = {}
 
-    @abaqus_method_doc
     def ElementProgressiveActivation(
         self,
         name: str,

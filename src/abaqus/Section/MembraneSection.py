@@ -64,7 +64,6 @@ class MembraneSection(Section):
     #: value is an empty string.
     thicknessField: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -123,7 +122,6 @@ class MembraneSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         thickness: float = 1,

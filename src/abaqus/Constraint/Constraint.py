@@ -23,17 +23,14 @@ class Constraint:
     #: OFF.
     suppressed: Boolean = OFF
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the constraint that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the constraint."""
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing constraints.
 

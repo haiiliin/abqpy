@@ -39,7 +39,6 @@ class PropertyTable:
     #: array.
     variables: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, properties: str, variables: str = ""):
         """This method creates a PropertyTable object.
 
@@ -69,7 +68,6 @@ class PropertyTable:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, variables: str = ""):
         """This method modifies the PropertyTable object.
 
@@ -88,7 +86,6 @@ class PropertyTable:
         """
         ...
 
-    @abaqus_method_doc
     def PropertyTableData(
         self,
         label: str = "",

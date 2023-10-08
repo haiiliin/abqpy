@@ -87,7 +87,6 @@ class IncidentWave(Interaction):
     #: valid only when **definition** = CONWEP.
     magnitudeFactor: float = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -169,7 +168,6 @@ class IncidentWave(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[C.PRESSURE, C.UNDEX, C.CONWEP, C.ACCELERATION] = PRESSURE,

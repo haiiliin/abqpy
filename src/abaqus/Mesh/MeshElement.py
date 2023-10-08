@@ -66,7 +66,6 @@ class MeshElement:
     #: connectivity is node labels instead of node indices.
     connectivity: tuple[int, ...] = ()
 
-    @abaqus_method_doc
     def Element(
         self,
         nodes: Sequence[MeshNode],
@@ -110,7 +109,6 @@ class MeshElement:
         """
         return MeshElement()
 
-    @abaqus_method_doc
     def getNodes(self) -> tuple[MeshNode]:
         """This method returns a tuple of node objects of the element.
 
@@ -129,7 +127,6 @@ class MeshElement:
             ),
         )
 
-    @abaqus_method_doc
     def getElemEdges(self) -> tuple[MeshEdge]:
         """This method returns a tuple of unique element edge objects on the element.
 
@@ -140,7 +137,6 @@ class MeshElement:
         """
         return (MeshEdge(),)
 
-    @abaqus_method_doc
     def getElemFaces(self) -> tuple[MeshFace]:
         """This method returns a tuple of unique element face objects on the element.
 
@@ -151,7 +147,6 @@ class MeshElement:
         """
         return (MeshFace(),)
 
-    @abaqus_method_doc
     def getAdjacentElements(self) -> MeshElementArray:
         """This method returns an array of element objects adjacent to the mesh element.
 
@@ -162,7 +157,6 @@ class MeshElement:
         """
         return MeshElementArray([MeshElement()])
 
-    @abaqus_method_doc
     def getElementsByFeatureEdge(self, angle: float) -> MeshElementArray:
         """This method returns an array of mesh element objects that are obtained by recursively finding
         adjacent elements along a feature edge with a face angle of less than or equal to the specified angle.
@@ -179,7 +173,6 @@ class MeshElement:
         """
         return MeshElementArray([MeshElement()])
 
-    @abaqus_method_doc
     def setValues(self, label: int | None = None) -> None:
         """This method modifies the MeshElement object.
 

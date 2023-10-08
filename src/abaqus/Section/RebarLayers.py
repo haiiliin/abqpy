@@ -32,7 +32,6 @@ class RebarLayers:
     #: A LayerPropertiesArray object specifying the layers of reinforcement.
     layerTable: LayerPropertiesArray
 
-    @abaqus_method_doc
     def __init__(self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray):
         """This method creates a RebarLayers object.
 
@@ -58,7 +57,6 @@ class RebarLayers:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the RebarLayers object."""
         ...

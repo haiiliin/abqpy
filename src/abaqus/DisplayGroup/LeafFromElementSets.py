@@ -27,7 +27,6 @@ class LeafFromElementSets(Leaf):
     #: set.
     elementSets: tuple
 
-    @abaqus_method_doc
     def __init__(self, elementSets: tuple):
         """This method creates a Leaf object from a sequence of element sets.
 

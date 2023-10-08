@@ -134,7 +134,6 @@ class MaterialOrientation:
     #: axis of the discrete orientation.
     primaryAxisVector: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         region: Set,
@@ -239,7 +238,6 @@ class MaterialOrientation:
         """
         ...
 
-    @abaqus_method_doc
     def ReferenceOrientation(
         self,
         localCsys: DatumCsys | None = None,
@@ -350,7 +348,6 @@ class MaterialOrientation:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MaterialOrientation object."""
         ...

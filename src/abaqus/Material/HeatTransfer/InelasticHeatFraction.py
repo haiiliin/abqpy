@@ -19,7 +19,6 @@ class InelasticHeatFraction:
         - INELASTIC HEAT FRACTION
     """
 
-    @abaqus_method_doc
     def __init__(self, fraction: float = 0):
         """This method creates an InelasticHeatFraction object.
 
@@ -47,7 +46,6 @@ class InelasticHeatFraction:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the InelasticHeatFraction object.
 

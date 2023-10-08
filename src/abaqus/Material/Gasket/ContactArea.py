@@ -32,7 +32,6 @@ class ContactArea:
         - GASKET CONTACT AREA
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ContactArea object.
 
@@ -60,7 +59,6 @@ class ContactArea:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactArea object."""
         ...

@@ -11,7 +11,6 @@ from .ConstrainedSketchDimension import ConstrainedSketchDimension
 
 @abaqus_class_doc
 class DistanceDimension(ConstrainedSketchDimension):
-    @abaqus_method_doc
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,

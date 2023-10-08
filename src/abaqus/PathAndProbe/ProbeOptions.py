@@ -112,7 +112,6 @@ class ProbeOptions:
     #: "ODB" and "XYPlot". This member is read-only.
     probeObject: str = ""
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["ProbeOptions", None] = None,

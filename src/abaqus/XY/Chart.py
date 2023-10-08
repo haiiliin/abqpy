@@ -90,7 +90,6 @@ class Chart:
     #: of the Chart.
     transform: float | None = None
 
-    @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
         """This method distributes the colors on all curves displayed in the chart using the color palette
         defined by the xyColors object.
@@ -104,12 +103,10 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def autoSymbol(self):
         """This method distributes the symbols on all curves displayed in the chart."""
         ...
 
-    @abaqus_method_doc
     def fitCurves(self):
         """This method resets the transform of the chart.
 
@@ -117,7 +114,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def getAxis1(self, curve: str, quantityType: str):
         """This method returns the Axis object used for displaying the Axis1 of the XYCurve specified by name or
         object or used for the given QuantityType object.
@@ -145,7 +141,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def getAxis2(self, curve: str, quantityType: str):
         """This method returns the Axis object used for displaying the Axis2 of the XYCurve specified by name or
         object or used for the given QuantityType object.
@@ -173,7 +168,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def moveAxisUp(self, axis: str):
         """This method moves the relative position of the given Axis object up in the axis sequence of the
         Chart.
@@ -185,7 +179,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def moveAxisDown(self, axis: str):
         """This method moves the relative position of the given Axis object down in the axis sequence of the
         Chart.
@@ -197,7 +190,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def removeCurve(self, curve: str):
         """This method removes the given XYCurve from the Chart.
 
@@ -209,7 +201,6 @@ class Chart:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         chart: Union["Chart", None] = None,

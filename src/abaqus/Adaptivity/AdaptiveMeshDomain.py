@@ -33,7 +33,6 @@ class AdaptiveMeshDomain:
     #: increment. The default value is 1.
     meshSweeps: int = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         region: Region,
@@ -76,7 +75,6 @@ class AdaptiveMeshDomain:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AdaptiveMeshDomain object.
 

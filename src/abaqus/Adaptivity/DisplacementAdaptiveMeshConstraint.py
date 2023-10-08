@@ -45,7 +45,6 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: in the global coordinate system. The default value is None.
     localCsys: DatumCsys | None = DatumCsys()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -121,7 +120,6 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         super().__init__(name, region=region, category=MECHANICAL, localCsys=localCsys)
 
-    @abaqus_method_doc
     def setValues(
         self,
         u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
@@ -178,7 +176,6 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

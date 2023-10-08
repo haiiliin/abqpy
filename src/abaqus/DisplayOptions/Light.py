@@ -20,7 +20,6 @@ class Light:
             session.viewports[name].lightOptions.lights[i]
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         enabled: Boolean = OFF,

@@ -21,7 +21,6 @@ class MeshDisplayOptions:
             session.viewports[name].partDisplay.meshOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         nodeLabels: Boolean = OFF,

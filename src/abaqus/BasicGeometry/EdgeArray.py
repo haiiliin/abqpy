@@ -43,7 +43,6 @@ class EdgeArray(List[Edge]):
             mdb.models[name].rootAssembly.surfaces[name].edges
     """
 
-    @abaqus_method_doc
     def __init__(self, edges: list[Edge]) -> None:
         """This method creates an EdgeArray object.
 
@@ -65,7 +64,6 @@ class EdgeArray(List[Edge]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[float, float, float],
@@ -74,7 +72,6 @@ class EdgeArray(List[Edge]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         coordinates: tuple[tuple[float, float, float],],
@@ -83,7 +80,6 @@ class EdgeArray(List[Edge]):
         ...
 
     @overload
-    @abaqus_method_doc
     def findAt(
         self,
         *coordinates: tuple[tuple[float, float, float],],
@@ -91,7 +87,6 @@ class EdgeArray(List[Edge]):
     ) -> list[Edge]:
         ...
 
-    @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[Edge, list[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given coordinates. findAt
         initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge that is at the arbitrary
@@ -129,7 +124,6 @@ class EdgeArray(List[Edge]):
         first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
-    @abaqus_method_doc
     def getClosest(
         self, coordinates: tuple, searchTolerance: str = ""
     ) -> dict[int, tuple[Edge, tuple[float, float, float]]]:
@@ -165,16 +159,13 @@ class EdgeArray(List[Edge]):
         return {0: (Edge(), (0.0, 0.0, 0.0))}
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> Edge:  # type: ignore
         ...
 
     @overload
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Sequence[str]) -> list[Edge]:  # type: ignore
         ...
 
-    @abaqus_method_doc
     def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, list[Edge]]:  # type: ignore
         """This method returns the object or objects in the EdgeArray identified using the specified **mask**.
         This command is generated when the JournalOptions are set to COMPRESSEDINDEX. When a large number of
@@ -197,7 +188,6 @@ class EdgeArray(List[Edge]):
         """
         return Edge() if isinstance(mask, str) else [Edge()]
 
-    @abaqus_method_doc
     def getMask(self):
         """This method returns a string specifying the object or objects.
 
@@ -208,7 +198,6 @@ class EdgeArray(List[Edge]):
         """
         return ""
 
-    @abaqus_method_doc
     def getByBoundingBox(
         self,
         xMin: float = 0,
@@ -242,7 +231,6 @@ class EdgeArray(List[Edge]):
         """
         return EdgeArray([Edge()])
 
-    @abaqus_method_doc
     def getByBoundingCylinder(
         self,
         center1: tuple[float, float, float],
@@ -269,7 +257,6 @@ class EdgeArray(List[Edge]):
         """
         return EdgeArray([Edge()])
 
-    @abaqus_method_doc
     def getByBoundingSphere(
         self,
         center: tuple[float, float, float],
@@ -291,7 +278,6 @@ class EdgeArray(List[Edge]):
         """
         return EdgeArray([Edge()])
 
-    @abaqus_method_doc
     def getBoundingBox(self) -> dict[str, tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary values of
         the bounding box of the minimum size containing the edge sequence.

@@ -71,7 +71,6 @@ class PageSetupOptions(_OptionsBase):
     #: A Boolean specifying whether the output includes the date. The default value is ON.
     date: Boolean = ON
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

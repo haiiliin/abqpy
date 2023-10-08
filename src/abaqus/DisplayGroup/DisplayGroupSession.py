@@ -7,7 +7,6 @@ from .Leaf import Leaf
 
 @abaqus_class_doc
 class DisplayGroupSession(SessionBase):
-    @abaqus_method_doc
     def DisplayGroup(self, name: str, leaf: Leaf) -> DisplayGroup:
         """This method creates a DisplayGroup object.
 

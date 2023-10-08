@@ -18,7 +18,6 @@ class Damping:
         - DAMPING
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         alpha: float = 0,
@@ -61,7 +60,6 @@ class Damping:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Damping object.
 

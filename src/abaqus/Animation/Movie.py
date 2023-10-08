@@ -72,7 +72,6 @@ class Movie(_OptionsBase):
     #: time in this movie corresponding to **endFrame**. The default value is END_FRAME_TIME.
     timelineEndTime: Union[SymbolicConstant, float] = END_FRAME_TIME
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -143,7 +142,6 @@ class Movie(_OptionsBase):
         self.timelineStartTime = timelineStartTime
         self.timelineEndTime = timelineEndTime
 
-    @abaqus_method_doc
     def setValues(
         self,
         startFrame: int = 0,

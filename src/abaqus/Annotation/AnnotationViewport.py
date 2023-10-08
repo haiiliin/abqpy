@@ -15,7 +15,6 @@ class AnnotationViewport(ViewportBase):
             import annotationToolset
     """
 
-    @abaqus_method_doc
     def plotAnnotation(self, annotation: Annotation, index: int = 0):
         """This method plots an Annotation object in aViewport.
 

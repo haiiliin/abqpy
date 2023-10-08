@@ -12,7 +12,6 @@ class Spectrum:
             session.spectrums[name]
     """
 
-    @abaqus_method_doc
     def __init__(self, name: str, colors: tuple):
         """This method creates a Spectrum object and places it in the spectrums repository.
 

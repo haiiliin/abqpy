@@ -182,7 +182,6 @@ class IncidentWaveProperty(ContactProperty):
     #: **definition** = AIR_BLAST or **definition** = SURFACE_BLAST.
     pressureFactor: float = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -352,7 +351,6 @@ class IncidentWaveProperty(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[C.PLANAR, C.SPHERICAL, C.DIFFUSE, C.SURFACE_BLAST, C.AIR_BLAST] = PLANAR,

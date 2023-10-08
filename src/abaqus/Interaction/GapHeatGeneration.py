@@ -27,7 +27,6 @@ class GapHeatGeneration:
     #:     The attribute ``slaveFraction`` was renamed to ``secondaryFraction``.
     secondaryFraction: float = 0
 
-    @abaqus_method_doc
     def __init__(self, conversionFraction: float = 1, secondaryFraction: float = 0):
         """This method creates a GapHeatGeneration object.
 
@@ -55,7 +54,6 @@ class GapHeatGeneration:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the GapHeatGeneration object."""
         ...

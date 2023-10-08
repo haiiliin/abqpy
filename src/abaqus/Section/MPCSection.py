@@ -42,7 +42,6 @@ class MPCSection(Section):
     #: **mpcType** = USER_DEFINED.
     userType: int = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

@@ -55,7 +55,6 @@ class ConnAccelerationBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -140,7 +139,6 @@ class ConnAccelerationBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         region: str = "",
@@ -209,7 +207,6 @@ class ConnAccelerationBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

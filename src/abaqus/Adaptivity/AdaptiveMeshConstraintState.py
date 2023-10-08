@@ -47,7 +47,6 @@ class AdaptiveMeshConstraintState:
     #: adaptive mesh constraint has no amplitude reference.
     amplitude: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,

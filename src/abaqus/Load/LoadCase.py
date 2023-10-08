@@ -19,7 +19,6 @@ class LoadCase:
     #: OFF.
     suppressed: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -55,17 +54,14 @@ class LoadCase:
         """
         ...
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the load case that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the load case."""
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         boundaryConditions: tuple = (),

@@ -33,7 +33,6 @@ class XFEMCrackGrowth(Interaction):
     #: analysis step. The default value is ON.
     allowGrowth: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(self, name: str, createStepName: str, crackName: str, allowGrowth: Boolean = ON):
         """This method creates an XFEMCrackGrowth object.
 
@@ -61,7 +60,6 @@ class XFEMCrackGrowth(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, allowGrowth: Boolean = ON):
         """This method modifies the data for an existing XFEMCrackGrowth object in the step where it is created.
 
@@ -73,7 +71,6 @@ class XFEMCrackGrowth(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, allowGrowth: Boolean = ON):
         """This method modifies the propagating data for an existing XFEMCrackGrowth object in the specified
         step.

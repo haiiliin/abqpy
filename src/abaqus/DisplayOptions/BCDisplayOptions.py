@@ -16,7 +16,6 @@ class BCDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.bcOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         displacement: Boolean = ON,

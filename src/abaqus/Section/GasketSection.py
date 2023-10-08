@@ -58,7 +58,6 @@ class GasketSection(Section):
     #: thickness direction. The default value is DEFAULT.
     stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,7 +108,6 @@ class GasketSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         crossSection: float = 1,

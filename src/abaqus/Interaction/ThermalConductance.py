@@ -85,7 +85,6 @@ class ThermalConductance:
     #: table data are described below.
     pressureDepTable: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         definition: Literal[C.USER_DEFINED, C.TABULAR] = TABULAR,
@@ -148,7 +147,6 @@ class ThermalConductance:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ThermalConductance object."""
         ...

@@ -10,7 +10,6 @@ from .InterestingPoint import InterestingPoint
 
 @abaqus_class_doc
 class BasicGeometryPart(PartBase):
-    @abaqus_method_doc
     def InterestingPoint(self, edge: Edge, rule: Literal[C.MIDDLE, C.CENTER]) -> InterestingPoint:
         """This method creates an interesting point along an edge. An InterestingPoint is a temporary object.
 

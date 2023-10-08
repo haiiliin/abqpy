@@ -14,7 +14,6 @@ from .TransverseShearShell import TransverseShearShell
 
 @abaqus_class_doc
 class Section(ConnectorSection):
-    @abaqus_method_doc
     def TransverseShearBeam(
         self,
         scfDefinition: Literal[C.VALUE, C.ANALYSIS_DEFAULT, C.COMPUTED],
@@ -55,7 +54,6 @@ class Section(ConnectorSection):
         )
         return transverseShearBeam
 
-    @abaqus_method_doc
     def TransverseShearShell(self, k11: float, k22: float, k12: float) -> TransverseShearShell:
         """This method creates a TransverseShearShell object.
 

@@ -20,7 +20,6 @@ class TableCollectionStep(StepBase):
         The ``TableCollectionStep`` class was added.
     """
 
-    @abaqus_method_doc
     def ActivateElements(
         self,
         tableCollection: str,

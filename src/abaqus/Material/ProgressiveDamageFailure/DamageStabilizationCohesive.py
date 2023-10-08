@@ -47,7 +47,6 @@ class DamageStabilizationCohesive:
         - DAMAGE STABILIZATION
     """
 
-    @abaqus_method_doc
     def __init__(self, cohesiveCoeff: float | None = None):
         """This method creates a DamageStabilizationCohesive object.
 
@@ -99,7 +98,6 @@ class DamageStabilizationCohesive:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageStabilizationCohesive object.
 

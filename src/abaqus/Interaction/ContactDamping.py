@@ -64,7 +64,6 @@ class ContactDamping:
     #: data are described below.
     table: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         definition: Literal[C.DAMPING_COEFFICIENT, C.CRITICAL_DAMPING_FRACTION] = DAMPING_COEFFICIENT,
@@ -103,7 +102,6 @@ class ContactDamping:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ContactDamping object."""
         ...

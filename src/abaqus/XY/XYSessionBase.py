@@ -20,7 +20,6 @@ class XYSessionBase(SessionBase):
             import visualization
     """
 
-    @abaqus_method_doc
     def linearizeStress(
         self,
         name: str,
@@ -144,7 +143,6 @@ class XYSessionBase(SessionBase):
         """
         ...
 
-    @abaqus_method_doc
     def setPathTolerance(self, tolerance: float = 0.00001):
         """This method is used to set the **tolerance** to be used when creating XYData objects by extracting
         results along Path objects. This command should be exercised with caution since setting a value too low
@@ -161,7 +159,6 @@ class XYSessionBase(SessionBase):
         """
         ...
 
-    @abaqus_method_doc
     def getPathTolerance(self):
         """This method is used to get the **tolerance** used when creating XYData objects by extracting results
         along Path objects.
@@ -173,7 +170,6 @@ class XYSessionBase(SessionBase):
         """
         ...
 
-    @abaqus_method_doc
     def setLimitForXYDataPlots(self, limit: int | None = None):
         """This method is used to set the **limit** for number of XY data objects while creating XYData from
         field output.
@@ -190,7 +186,6 @@ class XYSessionBase(SessionBase):
         """
         ...
 
-    @abaqus_method_doc
     def getLimitForXYDataPlots(self):
         """This method is used to get the **limit** for number of XY data objects while creating XYData from
         field output.

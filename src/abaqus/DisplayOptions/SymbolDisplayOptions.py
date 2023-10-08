@@ -16,7 +16,6 @@ class SymbolDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.symbolOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         otherSymbolSize: int = 12,

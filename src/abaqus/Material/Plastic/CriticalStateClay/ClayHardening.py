@@ -29,7 +29,6 @@ class ClayHardening:
         - CLAY HARDENING
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ClayHardening object.
 
@@ -59,7 +58,6 @@ class ClayHardening:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ClayHardening object.
 

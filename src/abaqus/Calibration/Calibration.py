@@ -27,7 +27,6 @@ class Calibration:
     #: A String specifying the name of the new calibration.
     name: str
 
-    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates a Calibration object.
 
@@ -48,7 +47,6 @@ class Calibration:
         """
         ...
 
-    @abaqus_method_doc
     def Behavior(self, name: str, typeName: str) -> Behavior:
         """This method creates a Behavior object.
 
@@ -73,7 +71,6 @@ class Calibration:
         self.behaviors = behavior = Behavior(name, typeName)
         return behavior
 
-    @abaqus_method_doc
     def DataSet(self, name: str, data: tuple = (), type: str = "", form: str = "") -> DataSet:
         """This method creates a DataSet object.
 

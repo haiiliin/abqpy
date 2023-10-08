@@ -40,7 +40,6 @@ class SizingPlanarSymmetry(GeometricRestriction):
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -79,7 +78,6 @@ class SizingPlanarSymmetry(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the sizingPlanarSymmetry object."""
         ...

@@ -26,7 +26,6 @@ class RegionPairs:
         - CONTACT EXCLUSIONS
     """
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

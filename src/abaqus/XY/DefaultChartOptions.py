@@ -26,7 +26,6 @@ class DefaultChartOptions:
 
     areaStyle: AreaStyle = AreaStyle()
 
-    @abaqus_method_doc
     def setValues(
         self,
         areaStyle: AreaStyle,

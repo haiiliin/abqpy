@@ -39,7 +39,6 @@ class FilmConditionProp(ContactProperty):
     #: - Etc.
     property: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -78,7 +77,6 @@ class FilmConditionProp(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         temperatureDependency: Boolean = OFF,

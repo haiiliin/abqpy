@@ -45,7 +45,6 @@ class CrushStress:
     #: A CrushStressVelocityFactor object.
     crushStressVelocityFactor: CrushStressVelocityFactor = CrushStressVelocityFactor(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         crushStressTable: Sequence[Sequence[float]],
@@ -73,7 +72,6 @@ class CrushStress:
         self.temperatureDependency = temperatureDependency
         self.dependencies = dependencies
 
-    @abaqus_method_doc
     def setValues(
         self,
         crushStressTable: Sequence[Sequence[float]] = ((),),

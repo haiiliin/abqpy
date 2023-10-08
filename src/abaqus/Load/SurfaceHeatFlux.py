@@ -37,7 +37,6 @@ class SurfaceHeatFlux(Load):
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,7 +84,6 @@ class SurfaceHeatFlux(Load):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         field: str = "",
@@ -110,7 +108,6 @@ class SurfaceHeatFlux(Load):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, magnitude: float | None = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing SurfaceHeatFlux object in the specified
         step.

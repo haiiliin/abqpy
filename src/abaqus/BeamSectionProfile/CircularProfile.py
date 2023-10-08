@@ -29,7 +29,6 @@ class CircularProfile(Profile):
     #: library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all).
     r: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, r: float):
         """This method creates a CircularProfile object.
 
@@ -59,7 +58,6 @@ class CircularProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CircularProfile object.
 

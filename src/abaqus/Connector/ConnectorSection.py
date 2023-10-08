@@ -41,7 +41,6 @@ from .ConnectorStop import ConnectorStop
 
 @abaqus_class_doc
 class ConnectorSection(SectionBase):
-    @abaqus_method_doc
     def ConnectorDamage(
         self,
         coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
@@ -175,7 +174,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorDamping(
         self,
         type: Literal[C.STRUCTURAL, C.VISCOUS] = VISCOUS,
@@ -253,7 +251,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorElasticity(
         self,
         behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
@@ -327,7 +324,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorFailure(
         self,
         releaseComponent: Literal[C.ALL] = ALL,
@@ -385,7 +381,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorFriction(
         self,
         frictionModel: Literal[C.PREDEFINED, C.USER_CUSTOMIZED] = PREDEFINED,
@@ -518,7 +513,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorLock(
         self,
         lockingComponent: Literal[C.ALL] = ALL,
@@ -577,7 +571,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorPlasticity(
         self,
         coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
@@ -675,7 +668,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions.append(option)
         return option
 
-    @abaqus_method_doc
     def ConnectorPotential(
         self,
         componentStyle: Literal[C.COMPONENT_NUMBER, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
@@ -736,7 +728,6 @@ class ConnectorSection(SectionBase):
         self.behaviorOptions[componentNumber].connectorPotentials = option = ConnectorPotential()
         return option
 
-    @abaqus_method_doc
     def ConnectorStop(self, minMotion: float | None = None, maxMotion: float | None = None, components: tuple = ()):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 

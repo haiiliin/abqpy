@@ -41,7 +41,6 @@ class Ratios:
     #: An Int specifying the number of field variable dependencies. The default value is 0.
     dependencies: int = 0
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a Ratios object.
 
@@ -73,7 +72,6 @@ class Ratios:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Ratios object.
 

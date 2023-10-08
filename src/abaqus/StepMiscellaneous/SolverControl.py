@@ -21,7 +21,6 @@ class SolverControl:
             mdb.models[name].steps[name].solverControl
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         allowPropagation: Boolean = ON,

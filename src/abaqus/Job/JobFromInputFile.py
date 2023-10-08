@@ -151,7 +151,6 @@ class JobFromInputFile(Job):
     #:     The ``licenseType`` attribute was added.
     licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -290,7 +289,6 @@ class JobFromInputFile(Job):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS,

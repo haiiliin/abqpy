@@ -51,7 +51,6 @@ class TopologyMillingControl(GeometricRestriction):
     #: for the milling criteria.
     radius: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -98,7 +97,6 @@ class TopologyMillingControl(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         csys: int | None = None,

@@ -41,7 +41,6 @@ class EngineeringFeatureBase:
     #: A repository of Imperfection objects.
     imperfections: dict[str, Imperfection] = {}
 
-    @abaqus_method_doc
     def assignSeam(self, regions: Sequence[Region]):
         """This method creates a seam crack along an edge or a face.
 
@@ -53,7 +52,6 @@ class EngineeringFeatureBase:
         """
         ...
 
-    @abaqus_method_doc
     def deleteSeam(self, regions: Sequence[Region]):
         """This method deletes a seam crack.
 

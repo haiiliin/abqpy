@@ -17,7 +17,6 @@ class StopConditionDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.stopConditionOptions
     """
 
-    @abaqus_method_doc
     def setValues(self, localStopCondition: Boolean = ON):
         """This method modifies the StopConditionDisplayOptions object.
 

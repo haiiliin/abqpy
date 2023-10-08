@@ -134,7 +134,6 @@ class ViewCut:
     #:     The ``crossSectionalArea`` attribute was added.
     crossSectionalArea: float | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -208,7 +207,6 @@ class ViewCut:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         angle: float | None = None,
@@ -299,7 +297,6 @@ class ViewCut:
         """
         ...
 
-    @abaqus_method_doc
     def updateVariable(self):
         """This method updates the field associated with an isosurface cut to be consistent with the current
         primary variable."""

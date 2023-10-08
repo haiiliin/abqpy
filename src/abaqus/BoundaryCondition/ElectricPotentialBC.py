@@ -55,7 +55,6 @@ class ElectricPotentialBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -108,7 +107,6 @@ class ElectricPotentialBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         fieldName: str = "",
@@ -143,7 +141,6 @@ class ElectricPotentialBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

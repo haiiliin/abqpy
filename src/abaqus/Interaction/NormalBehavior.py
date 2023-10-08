@@ -115,7 +115,6 @@ class NormalBehavior:
     #: default value is 0.33333.
     lowerQuadraticRatio: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         contactStiffness: Union[Literal[C.AUGMENTED_LAGRANGE, C.PENALTY, C.DEFAULT, C.HARD, C.LINEAR], float] = DEFAULT,
@@ -208,7 +207,6 @@ class NormalBehavior:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the NormalBehavior object."""
         ...

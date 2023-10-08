@@ -71,7 +71,6 @@ class DiagnosticPrint:
     #: default value is OFF.
     mass: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         allke: Boolean = ON,
@@ -145,7 +144,6 @@ class DiagnosticPrint:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DiagnosticPrint object."""
         ...

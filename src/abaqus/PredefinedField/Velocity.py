@@ -59,7 +59,6 @@ class Velocity(PredefinedField):
     #: and FIELD_ANALYTICAL. The default value is MAGNITUDE.
     distributionType: SymbolicConstant = MAGNITUDE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -115,7 +114,6 @@ class Velocity(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, field: str = "", distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE):
         """This method modifies the Velocity object.
 

@@ -168,7 +168,6 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     #: value is an empty sequence.
     components: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
@@ -264,7 +263,6 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorPlasticity object.
 

@@ -73,7 +73,6 @@ class MagneticPermeability:
         - MAGNETIC PERMEABILITY
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -131,7 +130,6 @@ class MagneticPermeability:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MagneticPermeability object.
 

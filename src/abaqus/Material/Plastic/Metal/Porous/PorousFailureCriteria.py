@@ -18,7 +18,6 @@ class PorousFailureCriteria:
         - POROUS FAILURE CRITERIA
     """
 
-    @abaqus_method_doc
     def __init__(self, fraction: float = 1, criticalFraction: float = 1):
         """This method creates a PorousFailureCriteria object.
 
@@ -46,7 +45,6 @@ class PorousFailureCriteria:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PorousFailureCriteria object.
 

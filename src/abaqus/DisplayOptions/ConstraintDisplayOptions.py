@@ -17,7 +17,6 @@ class ConstraintDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.constraintOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         constraintEquation: Boolean = ON,

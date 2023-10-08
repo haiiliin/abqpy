@@ -47,7 +47,6 @@ class QuickTimeOptions(_OptionsBase):
     #: The maximum width and height will be at least as large as the screen dimensions.
     imageSize: int | None = None
 
-    @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: Literal[C.RLE24, C.RAW24] = RLE24,

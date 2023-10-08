@@ -24,12 +24,10 @@ class SpringDashpot:
     #: is OFF.
     suppressed: Boolean = OFF
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the spring/dashpot that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the spring/dashpot."""
         ...

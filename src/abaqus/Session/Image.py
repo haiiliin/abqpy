@@ -20,7 +20,6 @@ class Image:
     #: .rgb, .tga, .tif, or .xpm).
     fileName: str
 
-    @abaqus_method_doc
     def __init__(self, name: str, fileName: str):
         """This method creates an Image object from the contents of the specified file.
 
@@ -55,7 +54,6 @@ class Image:
         """
         ...
 
-    @abaqus_method_doc
     def ImageFromMovie(self, name: str, movieName: str, frame: int, time: float):
         """This method creates an Image object from a given frame of an existing Movie object.
 

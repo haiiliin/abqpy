@@ -17,7 +17,6 @@ class FreeBody:
             session.freeBodies[name]
     """
 
-    @abaqus_method_doc
     def FreeBodyFromEdges(
         self,
         name: str,
@@ -58,7 +57,6 @@ class FreeBody:
         """
         ...
 
-    @abaqus_method_doc
     def FreeBodyFromFaces(
         self,
         name: str,
@@ -99,7 +97,6 @@ class FreeBody:
         """
         ...
 
-    @abaqus_method_doc
     def FreeBodyFromNodesElements(
         self,
         name: str,

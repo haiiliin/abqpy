@@ -19,7 +19,6 @@ class AssemblyModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def Instance(self, name: str, objectToCopy: PartInstance):
         """This method copies a PartInstance object from the specified model and creates a new PartInstance
         object.
@@ -43,7 +42,6 @@ class AssemblyModel(ModelBase):
         """
         return self
 
-    @abaqus_method_doc
     def convertAllSketches(self, regenerate: Boolean = True, convertReversedSketches: Boolean = True):
         """This method converts all sketches from Abaqus 6.5 or earlier to the equivalent ConstrainedSketch
         objects.
@@ -66,7 +64,6 @@ class AssemblyModel(ModelBase):
         """
         ...
 
-    @abaqus_method_doc
     def linkInstances(self, instancesMap: tuple):
         """This method links the selected PartInstance objects to the corresponding PartInstance objects from
         the specified models. If all instances of a Part are selected for linking, the Part will be linked as

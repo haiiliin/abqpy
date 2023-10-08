@@ -19,7 +19,6 @@ class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
             mdb.models[name].sketches[name].geometry[i]
     """
 
-    @abaqus_method_doc
     def findAt(self, coordinates: tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchGeometry:
         """This method returns the ConstrainedSketchGeometry object located at the given coordinates.
 

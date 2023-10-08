@@ -57,7 +57,6 @@ class Feature:
     #: An Int specifying the ID of the feature.
     id: int | None = None
 
-    @abaqus_method_doc
     def AttachmentPoints(
         self,
         name: str,
@@ -115,7 +114,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def AttachmentPointsAlongDirection(
         self,
         name: str,
@@ -209,7 +207,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def AttachmentPointsOffsetFromEdges(
         self,
         name: str,
@@ -353,7 +350,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByCylFace(self, face: str) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the axis of a cylinder or cone.
 
@@ -379,7 +375,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByNormalToPlane(self, plane: str, point: int) -> Feature:
         """This method creates a Feature object and a DatumAxis object normal to the specified plane and passing
         through the specified point.
@@ -408,7 +403,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByParToEdge(self, edge: str, point: int) -> Feature:
         """This method creates a Feature object and a DatumAxis object parallel to the specified edge and
         passing through the specified point.
@@ -437,7 +431,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByPrincipalAxis(self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]) -> Feature:
         """This method creates a Feature object and a DatumAxis object along one of the three principal axes.
 
@@ -465,7 +458,6 @@ class Feature:
         return Feature()
 
     @overload
-    @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, axis: str, angle: float) -> Feature:
         """This method creates a Feature object and a DatumAxis object in a three-dimensional model by rotating
         a line about the specified axis through the specified angle.
@@ -499,7 +491,6 @@ class Feature:
         ...
 
     @overload
-    @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, point: int, angle: float) -> Feature:
         """This method creates a Feature object and a DatumAxis object in a two-dimensional model by rotating a
         line about the specified point through the specified angle.
@@ -532,7 +523,6 @@ class Feature:
         """
         ...
 
-    @abaqus_method_doc
     def DatumAxisByRotation(self, *args, **kwargs) -> Feature:
         return Feature()
 
@@ -569,7 +559,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByThruEdge(self, edge: str) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the specified edge.
 
@@ -595,7 +584,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByTwoPlane(self, plane1: str, plane2: str) -> Feature:
         """This method creates a Feature object and a DatumAxis object at the intersection of two planes.
 
@@ -623,7 +611,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumAxisByTwoPoint(self, point1: int, point2: int) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the line joining two points.
 
@@ -651,7 +638,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumCsysByDefault(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
@@ -685,7 +671,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumCsysByOffset(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
@@ -733,7 +718,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumCsysByThreePoints(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
@@ -790,7 +774,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumCsysByTwoLines(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
@@ -832,7 +815,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPlaneByPrincipalPlane(
         self, principalPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE], offset: float
     ) -> Feature:
@@ -865,7 +847,6 @@ class Feature:
         return Feature()
 
     @overload
-    @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, flip: Literal[C.SIDE1, C.SIDE2], offset: float) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset by a specified distance from an
         existing plane.
@@ -898,7 +879,6 @@ class Feature:
         ...
 
     @overload
-    @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, point: int) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset from an existing plane and
         passing through the specified point.
@@ -927,7 +907,6 @@ class Feature:
         """
         ...
 
-    @abaqus_method_doc
     def DatumPlaneByOffset(self, *args, **kwargs) -> Feature:
         return Feature()
 
@@ -961,7 +940,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPlaneByThreePoints(self, point1: int, point2: int, point3: int) -> Feature:
         """This method creates a Feature object and a DatumPlane object defined by passing through three points.
 
@@ -991,7 +969,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPlaneByLinePoint(self, line: str, point: int) -> Feature:
         """This method creates a Feature object and a DatumPlane object that pass through the specified line and
         through the specified point that does not lie on the line.
@@ -1020,7 +997,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPlaneByPointNormal(self, point: int, normal: str) -> Feature:
         """This method creates a Feature object and a DatumPlane object normal to the specified line and running
         through the specified point.
@@ -1049,7 +1025,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPlaneByTwoPoint(self, point1: int, point2: int) -> Feature:
         """This method creates a Feature object and a DatumPlane object midway between two points and normal to
         the line connecting the points.
@@ -1078,7 +1053,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByCoordinate(self, coords: tuple[float, float, float]) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the specified
         coordinates.
@@ -1102,7 +1076,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByOffset(self, point: int, vector: tuple) -> Feature:
         """This method creates a Feature object and a DatumPoint object offset from an existing point by a
         vector.
@@ -1127,7 +1100,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByMidPoint(self, point1: int, point2: int) -> Feature:
         """This method creates a Feature object and a DatumPoint object midway between two points.
 
@@ -1151,7 +1123,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByOnFace(self, face: str, edge1: str, offset1: float, edge2: str, offset2: float) -> Feature:
         """This method creates a Feature object and a DatumPoint object on the specified face, offset from two
         edges.
@@ -1186,7 +1157,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByEdgeParam(self, edge: Edge, parameter: float) -> Feature:
         """This method creates a Feature object and a DatumPoint object along an edge at a selected distance
         from one end of the edge.
@@ -1217,7 +1187,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByProjOnEdge(self, point: int, edge: str) -> Feature:
         """This method creates a Feature object and a DatumPoint object along an edge by projecting an existing
         point along the normal to the edge.
@@ -1246,7 +1215,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def DatumPointByProjOnFace(self, point: int, face: Face) -> Feature:
         """This method creates a Feature object and a DatumPoint object on a specified face by projecting an
         existing point onto the face.
@@ -1276,7 +1244,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def MakeSketchTransform(
         self,
         sketchPlane: Union[DatumPlane, Face],
@@ -1325,7 +1292,6 @@ class Feature:
         """
         return Transform()
 
-    @abaqus_method_doc
     def PartitionCellByDatumPlane(self, cells: Sequence[Cell], datumPlane: DatumPlane) -> Feature:
         """This method partitions one or more cells using the given datum plane.
 
@@ -1353,7 +1319,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByExtendFace(self, cells: Sequence[Cell], extendFace: str) -> Feature:
         """This method partitions one or more cells by extending the underlying geometry of a given face to
         partition the target cells.
@@ -1382,7 +1347,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByExtrudeEdge(
         self, cells: Sequence[Cell], edges: str, line: str, sense: Literal[C.FORWARD, C.REVERSE]
     ) -> Feature:
@@ -1420,7 +1384,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByPatchNCorners(self, cell: Cell, cornerPoints: tuple) -> Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given corner points.
 
@@ -1449,7 +1412,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByPatchNEdges(self, cell: str, edges: Sequence[Edge]) -> Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
 
@@ -1478,7 +1440,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByPlaneNormalToEdge(
         self,
         cells: Sequence[Cell],
@@ -1513,7 +1474,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
         self,
         cells: Sequence[Cell],
@@ -1548,7 +1508,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellByPlaneThreePoints(self, cells: Sequence[Cell], point1: int, point2: int, point3: int) -> Feature:
         """This method partitions one or more cells using a plane defined by three points.
 
@@ -1581,7 +1540,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionCellBySweepEdge(self, cells: Sequence[Cell], edges: Sequence[Edge], sweepPath: Edge) -> Feature:
         """This method partitions one or more cells by sweeping selected edges along the given sweep path.
 
@@ -1614,7 +1572,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionEdgeByDatumPlane(self, edges: Sequence[Edge], datumPlane: DatumPlane) -> Feature:
         """This method partitions an edge where it intersects with a datum plane.
 
@@ -1642,7 +1599,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionEdgeByParam(self, edges: Sequence[Edge], parameter: float) -> Feature:
         """This method partitions one or more edges at the given normalized edge parameter.
 
@@ -1671,7 +1627,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionEdgeByPoint(self, edge: Edge, point: int) -> Feature:
         """This method partitions an edge at the given point.
 
@@ -1699,7 +1654,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByAuto(self, face: Face) -> Feature:
         """This method automatically partitions a target face into simple regions that can be meshed using a
         structured meshing technique.
@@ -1722,7 +1676,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByCurvedPathEdgeParams(
         self, face: Face, edge1: Edge, parameter1: float, edge2: Edge, parameter2: float
     ) -> Feature:
@@ -1761,7 +1714,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByCurvedPathEdgePoints(
         self, face: Face, edge1: Edge, point1: int, edge2: Edge, point2: int
     ) -> Feature:
@@ -1798,7 +1750,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByDatumPlane(self, faces: Sequence[Face], datumPlane: DatumPlane) -> Feature:
         """This method partitions one or more faces using the given datum plane.
 
@@ -1822,7 +1773,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByExtendFace(self, faces: Sequence[Face], extendFace: Face) -> Feature:
         """This method partitions one or more faces by extending the underlying geometry of another given face
         to partition the target faces.
@@ -1848,7 +1798,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByIntersectFace(self, faces: Sequence[Face], cuttingFaces: Sequence[Face]) -> Feature:
         """This method partitions one or more faces using the given cutting faces to partition the target faces.
 
@@ -1872,7 +1821,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByProjectingEdges(
         self,
         faces: Sequence[Face],
@@ -1905,7 +1853,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceByShortestPath(self, faces: Sequence[Face], point1: int, point2: int) -> Feature:
         """This method partitions one or more faces using a minimum distance path between the two given points.
 
@@ -1937,7 +1884,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceBySketch(
         self,
         faces: Sequence[Face],
@@ -1978,7 +1924,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceBySketchDistance(
         self,
         faces: Sequence[Face],
@@ -2029,7 +1974,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceBySketchRefPoint(
         self,
         faces: Sequence[Face],
@@ -2077,7 +2021,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def PartitionFaceBySketchThruAll(
         self,
         faces: Sequence[Face],
@@ -2125,7 +2068,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def ReferencePoint(
         self,
         point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
@@ -2155,7 +2097,6 @@ class Feature:
         """
         return self
 
-    @abaqus_method_doc
     def RemoveWireEdges(self, wireEdgeList: Sequence[Edge]) -> Feature:
         """This method removes wire edges.
 
@@ -2178,7 +2119,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def WirePolyLine(
         self,
         points: float,
@@ -2228,7 +2168,6 @@ class Feature:
         """
         return Feature()
 
-    @abaqus_method_doc
     def isSuppressed(self) -> bool:
         """This method queries the suppressed state of the feature.
 
@@ -2239,7 +2178,6 @@ class Feature:
         """
         return True
 
-    @abaqus_method_doc
     def restore(self) -> None:
         """This method restores the parameters of a feature to the value they had when the backup method was
         invoked on the part or assembly.
@@ -2248,7 +2186,6 @@ class Feature:
         """
         ...
 
-    @abaqus_method_doc
     def resume(self) -> None:
         """This method resumes suppressed features.
 
@@ -2258,7 +2195,6 @@ class Feature:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         parameter: float = 0,
@@ -2298,7 +2234,6 @@ class Feature:
         """
         ...
 
-    @abaqus_method_doc
     def suppress(self) -> None:
         """This method suppresses features.
 

@@ -54,7 +54,6 @@ class ConnectorOrientation:
     #: A Float specifying the angle of the additional rotation. The default value is 0.0.
     angle2: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         region: Set,
@@ -107,7 +106,6 @@ class ConnectorOrientation:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorOrientation object."""
         ...

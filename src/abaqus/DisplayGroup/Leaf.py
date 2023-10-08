@@ -24,7 +24,6 @@ class Leaf:
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, leafType: Literal[C.ALL_ELEMENTS, C.ALL_SURFACES, C.EMPTY_LEAF, C.DEFAULT_MODEL, C.ALL_NODES]):
         """This method creates a Leaf object.
 

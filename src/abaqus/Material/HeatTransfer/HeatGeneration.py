@@ -18,7 +18,6 @@ class HeatGeneration:
         - HEAT GENERATION
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a HeatGeneration object.
 

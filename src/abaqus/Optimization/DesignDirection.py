@@ -80,7 +80,6 @@ class DesignDirection(GeometricRestriction):
     #: ON.
     u3: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -153,7 +152,6 @@ class DesignDirection(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         csys: int | None = None,

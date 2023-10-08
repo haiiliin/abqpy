@@ -32,7 +32,6 @@ class RectangularProfile(Profile):
     #: A positive Float specifying the **b** dimension of the rectangular profile.
     b: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, a: float, b: float):
         """This method creates a RectangularProfile object.
 
@@ -64,7 +63,6 @@ class RectangularProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the RectangularProfile object.
 

@@ -42,7 +42,6 @@ class SelfContactExp(Interaction):
     #: The default value is an empty string.
     contactControls: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -85,7 +84,6 @@ class SelfContactExp(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
@@ -105,7 +103,6 @@ class SelfContactExp(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data for an existing SelfContactExp object in the specified
         step.

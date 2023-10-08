@@ -40,7 +40,6 @@ class AdaptivityIteration:
     #: the model in this iteration of the adaptivity process.
     remeshingErrors: int
 
-    @abaqus_method_doc
     def __init__(
         self,
         iteration: int,
@@ -78,7 +77,6 @@ class AdaptivityIteration:
         """
         ...
 
-    @abaqus_method_doc
     def ErrorIndicatorResult(self, name: str, results: str) -> ErrorIndicatorResultType:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in a
         RemeshingRule for a given adaptivity iteration.
@@ -109,7 +107,6 @@ class AdaptivityIteration:
         self.ruleResults[name] = ruleResult = ErrorIndicatorResultType(name, results)
         return ruleResult
 
-    @abaqus_method_doc
     def RuleResult(
         self,
         name: str,

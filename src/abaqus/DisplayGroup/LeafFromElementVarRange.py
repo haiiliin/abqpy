@@ -40,7 +40,6 @@ class LeafFromElementVarRange(Leaf):
     #: range falls inside the specified minimum and maximum values. The default value is ON.
     insideRange: Boolean = ON
 
-    @abaqus_method_doc
     def __init__(
         self,
         minimumRange: float | None = None,

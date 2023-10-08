@@ -31,7 +31,6 @@ class RegionAssembly(RegionAssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    @abaqus_method_doc
     def Surface(
         self,
         name: str,
@@ -187,7 +186,6 @@ class RegionAssembly(RegionAssemblyBase):
         return surface
 
     @overload
-    @abaqus_method_doc
     def Set(
         self,
         name: str,
@@ -262,7 +260,6 @@ class RegionAssembly(RegionAssemblyBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 

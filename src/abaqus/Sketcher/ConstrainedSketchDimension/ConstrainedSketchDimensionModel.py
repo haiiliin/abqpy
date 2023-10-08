@@ -27,7 +27,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
             mdb.models[name].sketches[name]
     """
 
-    @abaqus_method_doc
     def AngularDimension(
         self,
         line1: ConstrainedSketchGeometry,
@@ -65,7 +64,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         return ConstrainedSketchDimension()
 
-    @abaqus_method_doc
     def HorizontalDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -103,7 +101,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         return ConstrainedSketchDimension()
 
-    @abaqus_method_doc
     def ObliqueDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -141,7 +138,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         return ConstrainedSketchDimension()
 
-    @abaqus_method_doc
     def RadialDimension(
         self,
         curve: ConstrainedSketchGeometry,
@@ -184,7 +180,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         return ConstrainedSketchDimension()
 
-    @abaqus_method_doc
     def VerticalDimension(
         self,
         vertex1: ConstrainedSketchVertex,
@@ -222,7 +217,6 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """
         return ConstrainedSketchDimension()
 
-    @abaqus_method_doc
     def DistanceDimension(
         self,
         entity1: ConstrainedSketchVertex,

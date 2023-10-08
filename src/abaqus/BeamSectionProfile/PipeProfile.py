@@ -32,7 +32,6 @@ class PipeProfile(Profile):
     #: A Float specifying the wall thickness of the pipe.
     t: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, r: float, t: float):
         """This method creates a PipeProfile object.
 
@@ -64,7 +63,6 @@ class PipeProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the PipeProfile object.
 

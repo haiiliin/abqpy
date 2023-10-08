@@ -39,7 +39,6 @@ class ArbitraryProfile(Profile):
     #: A sequence of sequences of Floats specifying the items described below.
     table: tuple
 
-    @abaqus_method_doc
     def __init__(self, name: str, table: tuple):
         """This method creates a ArbitraryProfile object.
 
@@ -67,7 +66,6 @@ class ArbitraryProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ArbitraryProfile object.
 

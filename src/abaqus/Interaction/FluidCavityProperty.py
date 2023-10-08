@@ -149,7 +149,6 @@ class FluidCavityProperty(ContactProperty):
     #: - Etc.
     capacityTable: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -283,7 +282,6 @@ class FluidCavityProperty(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,

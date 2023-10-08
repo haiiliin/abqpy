@@ -83,7 +83,6 @@ class SpectrumAmplitude(Amplitude):
     #: calculate the spectrum. The default value is an empty string.
     amplitude: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -161,7 +160,6 @@ class SpectrumAmplitude(Amplitude):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         specificationUnits: Literal[C.ACCELERATION, C.VELOCITY, C.GRAVITY, C.DISPLACEMENT] = ACCELERATION,

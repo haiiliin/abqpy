@@ -53,7 +53,6 @@ class FluidInflatorProperty(ContactProperty):
         The ``FluidInflatorProperty`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -115,7 +114,6 @@ class FluidInflatorProperty(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(
         self,
         dischargeCoefficient: float | None = None,

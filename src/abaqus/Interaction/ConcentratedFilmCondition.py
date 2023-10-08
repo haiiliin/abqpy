@@ -89,7 +89,6 @@ class ConcentratedFilmCondition(Interaction):
     #: are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
     sinkDistributionType: SymbolicConstant = UNIFORM
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -179,7 +178,6 @@ class ConcentratedFilmCondition(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         nodalArea: float = 1,
@@ -245,7 +243,6 @@ class ConcentratedFilmCondition(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str):
         """This method modifies the propagating data of an existing ConcentratedFilmCondition object in the
         specified step.

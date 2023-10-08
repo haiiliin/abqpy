@@ -33,7 +33,6 @@ class ShearTestData:
         - SHEAR TEST DATA
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, shrinf: float | None = None):
         r"""This method creates a ShearTestData object.
 
@@ -62,7 +61,6 @@ class ShearTestData:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ShearTestData object."""
         ...

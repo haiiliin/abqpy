@@ -9,7 +9,6 @@ from .ConstrainedSketchVertex import ConstrainedSketchVertex
 
 @abaqus_class_doc
 class Spot(ConstrainedSketchVertex):
-    @abaqus_method_doc
     def __init__(self, point: Sequence[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 

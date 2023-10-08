@@ -44,7 +44,6 @@ class AdaptivityProcess:
     #: default value is an empty string.
     jobPrefix: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, job: ModelJob, maxIterations: int = 3, jobPrefix: str = ""):
         """This method creates an AdaptivityProcess object.
 
@@ -80,7 +79,6 @@ class AdaptivityProcess:
         """
         ...
 
-    @abaqus_method_doc
     def submit(
         self,
         waitForCompletion: Boolean = OFF,
@@ -103,7 +101,6 @@ class AdaptivityProcess:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, maxIterations: int = 3, jobPrefix: str = ""):
         """This method modifies the AdaptivityProcess object.
 
@@ -120,7 +117,6 @@ class AdaptivityProcess:
         """
         ...
 
-    @abaqus_method_doc
     def AdaptivityIteration(
         self,
         iteration: int,

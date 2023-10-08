@@ -47,7 +47,6 @@ class BeadFilter(GeometricRestriction):
     #: The default value is FILTER_REGION.
     filterCheckRegion: Union[Literal[C.FILTER_REGION], Region] = FILTER_REGION
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -87,7 +86,6 @@ class BeadFilter(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         region: Region,

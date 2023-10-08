@@ -13,7 +13,6 @@ from .ConstrainedSketchDimension import ConstrainedSketchDimension
 
 @abaqus_class_doc
 class AngularDimension(ConstrainedSketchDimension):
-    @abaqus_method_doc
     def __init__(
         self,
         line1: ConstrainedSketchGeometry,

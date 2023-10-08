@@ -33,7 +33,6 @@ class FluidCavityPressure(PredefinedField):
     #: A Float specifying the initial fluid pressure.
     fluidPressure: float
 
-    @abaqus_method_doc
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
         """This method creates a FluidCavityPressure object.
 
@@ -58,7 +57,6 @@ class FluidCavityPressure(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the FluidCavityPressure object."""
         ...

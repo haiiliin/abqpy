@@ -86,7 +86,6 @@ class ContourIntegral(Crack):
     #: SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
     collapsedElementAtTip: SymbolicConstant = NONE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -166,7 +165,6 @@ class ContourIntegral(Crack):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         symmetric: Boolean = OFF,

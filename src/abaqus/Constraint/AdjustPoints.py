@@ -34,7 +34,6 @@ class AdjustPoints(Constraint):
     #: A Region object specifying the constraint control points.
     controlPoints: Region
 
-    @abaqus_method_doc
     def __init__(self, name: str, surface: Region, controlPoints: Region):
         """This method creates an AdjustPoints object.
 
@@ -59,7 +58,6 @@ class AdjustPoints(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the AdjustPoints object."""
         ...

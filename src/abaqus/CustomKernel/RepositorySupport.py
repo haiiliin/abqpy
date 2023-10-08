@@ -22,7 +22,6 @@ class RepositorySupport(CommandRegister):
             session.odbs[name].customData
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a RepositorySupport object.
 
@@ -38,7 +37,6 @@ class RepositorySupport(CommandRegister):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def Repository(self, name: str, constructors: Union[Callable, list[Callable]]) -> None:
         """This method installs a repository on the class. The repository is an instance of a
         RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored

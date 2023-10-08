@@ -56,7 +56,6 @@ class SingleTermDesignResponse(DesignResponse):
     #: A StepOptionArray object.
     stepOptions: StepOptionArray | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -111,7 +110,6 @@ class SingleTermDesignResponse(DesignResponse):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         csys: int | None = None,

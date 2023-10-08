@@ -24,7 +24,6 @@ class ProbeReport:
             session.probeReport
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: str | None = None,

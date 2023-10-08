@@ -65,7 +65,6 @@ class HistoryOutputRequest:
     #: None.The sequence can contain only one String.
     interactions: tuple | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -183,7 +182,6 @@ class HistoryOutputRequest:
         """
         ...
 
-    @abaqus_method_doc
     def deactivate(self, stepName: str) -> None:
         """This method deactivates the history output request in the specified step and all subsequent steps.
 
@@ -195,7 +193,6 @@ class HistoryOutputRequest:
         """
         ...
 
-    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str) -> None:
         """This method moves the history output request state object from one step to a different step.
 
@@ -210,7 +207,6 @@ class HistoryOutputRequest:
         """
         ...
 
-    @abaqus_method_doc
     def reset(self, stepName: str) -> None:
         """This method resets the history output request state of the specified step to the state of the
         previous step.
@@ -223,17 +219,14 @@ class HistoryOutputRequest:
         """
         ...
 
-    @abaqus_method_doc
     def resume(self) -> None:
         """This method resumes the history output request that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self) -> None:
         """This method suppresses the history output request."""
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         region: Union[Literal[C.MODEL], Region] = MODEL,
@@ -341,7 +334,6 @@ class HistoryOutputRequest:
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

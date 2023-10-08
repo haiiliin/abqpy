@@ -53,7 +53,6 @@ class Hyperfoam:
     #: A UniaxialTestData object.
     uniaxialTestData: UniaxialTestData = UniaxialTestData(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         testData: Boolean = OFF,
@@ -101,7 +100,6 @@ class Hyperfoam:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Hyperfoam object.
 

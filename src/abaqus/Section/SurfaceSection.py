@@ -39,7 +39,6 @@ class SurfaceSection(Section):
     #: 0.0.
     density: float = 0
 
-    @abaqus_method_doc
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):
         """This method creates a SurfaceSection object.
 

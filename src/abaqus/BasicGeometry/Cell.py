@@ -46,7 +46,6 @@ class Cell:
     #: applicable).
     instanceName: float | None = None
 
-    @abaqus_method_doc
     def getSize(self, printResults: Boolean = True):
         """This method returns a Float indicating the volume of the cell.
 
@@ -63,7 +62,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getFaces(self):
         """This method returns a sequence consisting of the face IDs of the faces which bound the cell.
 
@@ -74,7 +72,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getEdges(self):
         """This method returns a sequence consisting of the edge IDs of the edges on the cell.
 
@@ -85,7 +82,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getVertices(self):
         """This method returns a sequence consisting of the vertex IDs of the vertices on the cell.
 
@@ -96,7 +92,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getAdjacentCells(self):
         """This method returns an array of cell objects that share at least one face of the cell.
 
@@ -107,7 +102,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getNodes(self):
         """This method returns an array of node objects that are associated with the cell.
 
@@ -118,7 +112,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getElements(self):
         """This method returns an array of element objects that are associated with the cell.
 
@@ -129,7 +122,6 @@ class Cell:
         """
         ...
 
-    @abaqus_method_doc
     def getCADAttributes(self):
         """This method returns an array of CAD attribute strings associated with the cell when the part was
         created from CAD data.

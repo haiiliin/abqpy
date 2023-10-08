@@ -60,7 +60,6 @@ class OdbFrame:
     description: str = ""
 
     @overload
-    @abaqus_method_doc
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
@@ -90,7 +89,6 @@ class OdbFrame:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, mode: int, frequency: float, description: str = ""):
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
         the frame sequence. The arguments to the constructor are valid only when
@@ -119,7 +117,6 @@ class OdbFrame:
         ...
 
     @overload
-    @abaqus_method_doc
     def __init__(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0):
         """This constructor creates an OdbFrame object for a specific load case and appends it to the frame
         sequence.
@@ -149,7 +146,6 @@ class OdbFrame:
     def __init__(self, *args, **kwargs):
         ...
 
-    @abaqus_method_doc
     def Frame(self, *args, **kwargs):
         ...
 
@@ -207,7 +203,6 @@ class OdbFrame:
         ...
 
     @overload
-    @abaqus_method_doc
     def FieldOutput(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same output
         database.

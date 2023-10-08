@@ -12,7 +12,6 @@ class CommandRegister:
             import customKernel
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This class allows you to derive a general class that can be queried from the GUI and is capable of
         notifying the GUI when the contents of the class change.

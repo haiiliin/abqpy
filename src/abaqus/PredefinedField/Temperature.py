@@ -56,7 +56,6 @@ class Temperature(PredefinedField):
     #: **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED.
     region: Region = Region()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -182,7 +181,6 @@ class Temperature(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the TemperatureState object from one step to a different step.
 
@@ -199,7 +197,6 @@ class Temperature(PredefinedField):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         distributionType: Literal[
@@ -304,7 +301,6 @@ class Temperature(PredefinedField):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

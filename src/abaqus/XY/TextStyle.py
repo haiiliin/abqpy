@@ -54,7 +54,6 @@ class TextStyle:
     #: is 0.0.
     rotationAngle: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         color: str = "",
@@ -96,7 +95,6 @@ class TextStyle:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         color: str = "",

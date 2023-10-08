@@ -36,7 +36,6 @@ class ViewportAnnotationOptions:
             session.viewports[name].viewportAnnotationOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         triad: Boolean = ON,

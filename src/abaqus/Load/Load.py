@@ -21,7 +21,6 @@ class Load:
     #: A Region object specifying the region to which the load is applied.
     region: Region = Region()
 
-    @abaqus_method_doc
     def deactivate(self, stepName: str):
         """This method deactivates the load in the specified step and all its subsequent steps.
 
@@ -32,7 +31,6 @@ class Load:
         """
         ...
 
-    @abaqus_method_doc
     def move(self, fromStepName: str, toStepName: str):
         """This method moves the load state object from one step to a different step.
 
@@ -45,7 +43,6 @@ class Load:
         """
         ...
 
-    @abaqus_method_doc
     def reset(self, stepName: str):
         """This method resets the load state of the specified step to the state of the previous general analysis
         step.
@@ -57,17 +54,14 @@ class Load:
         """
         ...
 
-    @abaqus_method_doc
     def resume(self):
         """This method resumes the load that was previously suppressed."""
         ...
 
-    @abaqus_method_doc
     def suppress(self):
         """This method suppresses the load."""
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """This method allows you to delete existing loads.
 

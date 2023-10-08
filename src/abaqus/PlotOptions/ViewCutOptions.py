@@ -124,7 +124,6 @@ class ViewCutOptions(_CopyOptionsBase):
     #: default value is (0, 1, 0).
     yAxis: float | None = None
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["ViewCutOptions", None] = None,

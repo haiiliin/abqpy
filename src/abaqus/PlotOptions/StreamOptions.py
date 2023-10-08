@@ -31,7 +31,6 @@ class StreamOptions(_OptionsBase):
             session.viewports[name].odbDisplay.streamOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

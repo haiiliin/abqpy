@@ -24,7 +24,6 @@ class SaturationDependence:
         - PERMEABILITY
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple):
         """This method creates a SaturationDependence object.
 
@@ -50,7 +49,6 @@ class SaturationDependence:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SaturationDependence object.
 

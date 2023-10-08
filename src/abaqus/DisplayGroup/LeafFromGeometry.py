@@ -23,7 +23,6 @@ class LeafFromGeometry(Leaf):
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(self, edgeSeq: tuple = (), faceSeq: tuple = (), cellSeq: tuple = ()):
         """This method creates a Leaf object from a sequence of edge, face and cell geometry objects. Any
         combination of edge, face or cell arguments is allowed however the arguments must specify at least one

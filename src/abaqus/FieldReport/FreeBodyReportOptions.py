@@ -23,7 +23,6 @@ class FreeBodyReportOptions:
             session.freeBodyReportOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         numDigits: int = 3,

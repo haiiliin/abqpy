@@ -94,7 +94,6 @@ class Path:
     #: path. This argument is valid only when **type** = RADIAL.
     endRadius: Union[SymbolicConstant, float]
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

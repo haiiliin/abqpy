@@ -18,7 +18,6 @@ class Profile:
     #: A String specifying the repository key.
     name: str = ""
 
-    @abaqus_method_doc
     def beamProfilesFromOdb(self, fileName: str):
         """This method creates Profile objects by reading an output database. The new profiles are placed in the
         profiles repository.

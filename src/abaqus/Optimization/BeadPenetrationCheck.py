@@ -25,7 +25,6 @@ class BeadPenetrationCheck(GeometricRestriction):
     #: A Region object specifying the region to which the geometric restriction is applied.
     region: Region
 
-    @abaqus_method_doc
     def __init__(self, name: str, beadPenetrationCheckRegion: Region, region: Region):
         """This method creates a BeadPenetrationCheck object.
 
@@ -50,7 +49,6 @@ class BeadPenetrationCheck(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the BeadPenetrationCheck object."""
         ...

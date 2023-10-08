@@ -132,7 +132,6 @@ class Arrow(Annotation, _OptionsBase):
     #: VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     lineThickness: SymbolicConstant = VERY_THIN
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -311,7 +310,6 @@ class Arrow(Annotation, _OptionsBase):
         self.lineStyle = lineStyle
         self.lineThickness = lineThickness
 
-    @abaqus_method_doc
     def translateStartPoint(self, x: float | None = None, y: float | None = None):
         """This method translates the start point of the Arrow object on the viewport plane.
 
@@ -325,7 +323,6 @@ class Arrow(Annotation, _OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def translateEndPoint(self, x: float | None = None, y: float | None = None):
         """This method translates the end point of the Arrow object on the viewport plane.
 
@@ -339,7 +336,6 @@ class Arrow(Annotation, _OptionsBase):
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         startPoint: Sequence[float] = (0.0, 0.0),

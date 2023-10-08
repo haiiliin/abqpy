@@ -102,7 +102,6 @@ class CyclicSymmetry(Interaction):
     #: COMPUTED_TOLERANCE.
     positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -191,7 +190,6 @@ class CyclicSymmetry(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def swapSurfaces(self):
         """This method switches the main and secondary surfaces of a cyclic symmetry interaction.
 
@@ -199,7 +197,6 @@ class CyclicSymmetry(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         extractedNodalDiameter: Literal[C.ALL_NODAL_DIAMETER, C.SPECIFIED_NODAL_DIAMETER] = ALL_NODAL_DIAMETER,
@@ -245,7 +242,6 @@ class CyclicSymmetry(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

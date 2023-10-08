@@ -31,7 +31,6 @@ class SpecificHeat:
         - SPECIFIC HEAT
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -70,7 +69,6 @@ class SpecificHeat:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SpecificHeat object.
 

@@ -78,7 +78,6 @@ class PsOptions(_OptionsBase):
 
     shadingQuality: SymbolicConstant = MEDIUM
 
-    @abaqus_method_doc
     def setValues(
         self,
         *,

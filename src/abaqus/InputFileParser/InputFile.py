@@ -28,7 +28,6 @@ class InputFile:
     #: not be located.
     missingIncludes: tuple = ()
 
-    @abaqus_method_doc
     def __init__(self, file: str, directory: str = ""):
         """This method creates an InputFile object by reading an Abaqus input file.
 
@@ -51,7 +50,6 @@ class InputFile:
         """
         ...
 
-    @abaqus_method_doc
     def parse(
         self,
         organize: Boolean = False,

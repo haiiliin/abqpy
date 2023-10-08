@@ -9,7 +9,6 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 @abaqus_class_doc
 class ArcByStartEndTangent(ConstrainedSketchGeometry):
-    @abaqus_method_doc
     def __init__(self, point1: Sequence[float], point2: Sequence[float], vector: tuple):
         """This method constructs an arc using two vertices. The Arc object is added to the geometry repository
         of the ConstrainedSketch object.

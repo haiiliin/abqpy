@@ -52,7 +52,6 @@ class BoxProfile(Profile):
     #: **uniformThickness** = OFF. The default value is 0.0.
     t4: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -108,7 +107,6 @@ class BoxProfile(Profile):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, t2: float = 0, t3: float = 0, t4: float = 0):
         """This method modifies the BoxProfile object.
 

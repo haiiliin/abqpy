@@ -31,7 +31,6 @@ class Equation(Constraint):
     #: degree of freedom, and coordinate system ID. The coordinate system ID is optional.
     terms: tuple
 
-    @abaqus_method_doc
     def __init__(self, name: str, terms: tuple):
         """This method creates an Equation object.
 
@@ -60,7 +59,6 @@ class Equation(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Equation object.
 

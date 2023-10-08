@@ -45,7 +45,6 @@ class DamageStabilization:
         - DAMAGE STABILIZATION
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         fiberTensileCoeff: float,
@@ -109,7 +108,6 @@ class DamageStabilization:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageStabilization object.
 

@@ -28,7 +28,6 @@ class AcousticInterfaceSection(Section):
     #: The default value is 1.0.
     thickness: float = 1
 
-    @abaqus_method_doc
     def __init__(self, name: str, thickness: float = 1):
         """This method creates an AcousticInterfaceSection object.
 
@@ -58,7 +57,6 @@ class AcousticInterfaceSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, thickness: float = 1):
         """This method modifies the AcousticInterfaceSection object.
 

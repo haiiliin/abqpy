@@ -149,7 +149,6 @@ class StaticLinearPerturbationStep(AnalysisStep):
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: dict[str, PredefinedFieldState] = {}
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -196,7 +195,6 @@ class StaticLinearPerturbationStep(AnalysisStep):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

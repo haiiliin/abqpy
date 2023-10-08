@@ -36,7 +36,6 @@ class HomogeneousSolidSection(SolidSection):
     #:    The default value is now 1.0 instead of None.
     thickness: float | None = None
 
-    @abaqus_method_doc
     def __init__(self, name: str, material: str, thickness: float | None = None) -> None:
         """This method creates a HomogeneousSolidSection object.
 
@@ -71,7 +70,6 @@ class HomogeneousSolidSection(SolidSection):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, thickness: float = 1) -> None:
         """This method modifies the HomogeneousSolidSection object.
 

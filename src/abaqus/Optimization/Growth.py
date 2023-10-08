@@ -37,7 +37,6 @@ class Growth(GeometricRestriction):
     #: **growth** or **shrink** or both must be specified The default value is 0.0.
     shrink: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -78,7 +77,6 @@ class Growth(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         growth: float = 0,

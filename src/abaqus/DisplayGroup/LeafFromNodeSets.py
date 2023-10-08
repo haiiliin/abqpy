@@ -26,7 +26,6 @@ class LeafFromNodeSets(Leaf):
     #: A sequence of Strings specifying node sets or a String specifying a single node set.
     nodeSets: tuple
 
-    @abaqus_method_doc
     def __init__(self, nodeSets: tuple):
         """This method creates a Leaf object from a sequence of node sets.
 

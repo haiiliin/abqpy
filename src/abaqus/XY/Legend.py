@@ -59,7 +59,6 @@ class Legend:
     #: A TextStyle object specifying the text properties used to display the legend title.
     titleStyle: TextStyle = TextStyle()
 
-    @abaqus_method_doc
     def setValues(
         self,
         legend: "Legend",

@@ -24,7 +24,6 @@ class MainSecondaryAssignment:
         The MasterSlaveAssignment class was renamed to MainSecondaryAssignment.
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.BALANCED, C.SECONDARY, C.MAIN]):
         """This method allows modification of main-secondary assignments already defined on surface pairs in a
         given step.
@@ -44,7 +43,6 @@ class MainSecondaryAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Literal[C.BALANCED, C.SECONDARY, C.MAIN, C.GLOBAL]):
         """This method allows addition of main-secondary assignments to new surface pairs in a given step.
 
@@ -66,7 +64,6 @@ class MainSecondaryAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing main-secondary assignments.
 

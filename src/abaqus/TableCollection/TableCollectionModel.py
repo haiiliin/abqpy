@@ -19,7 +19,6 @@ class TableCollectionModel(ModelBase):
         The ``TableCollectionModel`` class was added.
     """
 
-    @abaqus_method_doc
     def EventSeries(
         self,
         name: str,
@@ -80,7 +79,6 @@ class TableCollectionModel(ModelBase):
         )
         return eventSeries
 
-    @abaqus_method_doc
     def EventSeriesType(self, name: str, createStepName: str, fields: str = "") -> EventSeriesType:
         """This method creates an EventSeriesType object.
 

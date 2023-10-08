@@ -89,7 +89,6 @@ class CombinedTermDesignResponse(DesignResponse):
     #: used when **method** is WEIGHTED_ADD. The default value is an empty sequence.
     weights: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -210,7 +209,6 @@ class CombinedTermDesignResponse(DesignResponse):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         filterMaxRadius: str | None = None,

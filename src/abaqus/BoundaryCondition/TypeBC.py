@@ -42,7 +42,6 @@ class TypeBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -91,7 +90,6 @@ class TypeBC(BoundaryCondition):
         self.localCsys = localCsys
 
     @staticmethod
-    @abaqus_method_doc
     def EncastreBC(
         name: str,
         createStepName: str,
@@ -131,7 +129,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def PinnedBC(
         name: str,
         createStepName: str,
@@ -171,7 +168,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def XsymmBC(
         name: str,
         createStepName: str,
@@ -211,7 +207,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def YsymmBC(
         name: str,
         createStepName: str,
@@ -251,7 +246,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def ZsymmBC(
         name: str,
         createStepName: str,
@@ -291,7 +285,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def XasymmBC(
         name: str,
         createStepName: str,
@@ -331,7 +324,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def YasymmBC(
         name: str,
         createStepName: str,
@@ -371,7 +363,6 @@ class TypeBC(BoundaryCondition):
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
     @staticmethod
-    @abaqus_method_doc
     def ZasymmBC(
         name: str,
         createStepName: str,
@@ -410,7 +401,6 @@ class TypeBC(BoundaryCondition):
         """
         return TypeBC(name, createStepName, region, buckleCase, localCsys)
 
-    @abaqus_method_doc
     def setValues(
         self,
         region: Region,
@@ -440,7 +430,6 @@ class TypeBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

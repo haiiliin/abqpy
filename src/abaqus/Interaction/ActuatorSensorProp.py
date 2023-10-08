@@ -30,7 +30,6 @@ class ActuatorSensorProp(ContactProperty):
     #: value is an empty sequence.
     integerProperties: tuple = ()
 
-    @abaqus_method_doc
     def __init__(self, name: str, realProperties: tuple = (), integerProperties: tuple = ()):
         """This method creates an ActuatorSensorProp object.
 
@@ -57,7 +56,6 @@ class ActuatorSensorProp(ContactProperty):
         """
         super().__init__(name)
 
-    @abaqus_method_doc
     def setValues(self, realProperties: tuple = (), integerProperties: tuple = ()):
         """This method modifies the ActuatorSensorProp object.
 

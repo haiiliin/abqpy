@@ -26,7 +26,6 @@ class SurfaceFeatureAssignment:
         - SURFACE PROPERTY ASSIGNMENT
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(
         self,
         stepName: str,
@@ -70,7 +69,6 @@ class SurfaceFeatureAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(
         self,
         stepName: str,
@@ -110,7 +108,6 @@ class SurfaceFeatureAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface feature angle assignments from a ContactExp
         object.

@@ -75,7 +75,6 @@ class ConnectorPotential:
     #: also 1.0 (i.e., the potential operator of the invoking behavior option must be SUM).
     hFunction: SymbolicConstant = ABS
 
-    @abaqus_method_doc
     def __init__(
         self,
         componentStyle: Literal[C.COMPONENT_NUMBER, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
@@ -135,7 +134,6 @@ class ConnectorPotential:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorPotential object.
 
@@ -145,7 +143,6 @@ class ConnectorPotential:
         """
         ...
 
-    @abaqus_method_doc
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 

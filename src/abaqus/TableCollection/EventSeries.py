@@ -48,7 +48,6 @@ class EventSeries:
     #: An Array of double specifying the values of fields provided in EventSeriesType.
     data: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -99,7 +98,6 @@ class EventSeries:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         transformType: str = NONE,

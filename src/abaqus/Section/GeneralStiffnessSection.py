@@ -85,7 +85,6 @@ class GeneralStiffnessSection(ShellSection):
     #: is an empty sequence.
     scalingData: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -157,7 +156,6 @@ class GeneralStiffnessSection(ShellSection):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         referenceTemperature: float | None = None,

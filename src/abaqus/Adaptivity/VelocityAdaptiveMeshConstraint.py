@@ -41,7 +41,6 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: in the global coordinate system. The default value is None.
     localCsys: DatumCsys | None = DatumCsys()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -117,7 +116,6 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         super().__init__(name=name, category=MECHANICAL, region=region)
 
-    @abaqus_method_doc
     def setValues(
         self,
         v1: Union[float, Literal[C.SET, C.UNSET]] = UNSET,
@@ -174,7 +172,6 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

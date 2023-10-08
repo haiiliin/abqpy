@@ -17,7 +17,6 @@ class OdbLoadCase:
     #: A String specifying the name of the OdbLoadCase object.
     name: str
 
-    @abaqus_method_doc
     def __init__(self, name: str):
         """This method creates an OdbLoadCase object.
 

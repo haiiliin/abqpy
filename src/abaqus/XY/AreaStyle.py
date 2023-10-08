@@ -46,7 +46,6 @@ class AreaStyle:
     #: using this AreaStyle. The default value is SOLID.
     style: SymbolicConstant = SOLID
 
-    @abaqus_method_doc
     def __init__(self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID):
         """This method creates an AreaStyle.
 
@@ -79,7 +78,6 @@ class AreaStyle:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID):
         """This method modifies the AreaStyle object.
 

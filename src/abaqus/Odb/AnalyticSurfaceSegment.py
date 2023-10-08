@@ -31,7 +31,6 @@ class AnalyticSurfaceSegment:
     #: single row contains coordinates of the start/end point.
     data: tuple
 
-    @abaqus_method_doc
     def __init__(self, type: Literal[C.CIRCLE, C.START, C.LINE, C.PARABOLA], data: tuple):
         """This method creates an AnalyticSurfaceSegment object.
 

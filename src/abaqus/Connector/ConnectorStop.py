@@ -36,7 +36,6 @@ class ConnectorStop(ConnectorBehaviorOption):
     #: specified. The default value is an empty sequence.
     components: tuple = ()
 
-    @abaqus_method_doc
     def __init__(self, minMotion: float | None = None, maxMotion: float | None = None, components: tuple = ()):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
@@ -72,7 +71,6 @@ class ConnectorStop(ConnectorBehaviorOption):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ConnectorStop object.
 

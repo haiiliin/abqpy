@@ -26,7 +26,6 @@ class JournalOptions:
     #: Format of the number
     numberFormat: NumberFormat = NumberFormat()
 
-    @abaqus_method_doc
     def setValues(
         self,
         replayGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
@@ -59,7 +58,6 @@ class JournalOptions:
         """
         ...
 
-    @abaqus_method_doc
     def NumberFormat(
         self,
         blankPad: Boolean = ON,

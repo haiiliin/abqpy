@@ -15,7 +15,6 @@ class RegisteredDictionary(CommandRegister, dict):
             import customKernel
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a RegisteredDictionary object.
 
@@ -31,7 +30,6 @@ class RegisteredDictionary(CommandRegister, dict):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def Methods(self):
         """The RegisteredDictionary object supports the same methods as a Python dictionary.
 
@@ -40,7 +38,6 @@ class RegisteredDictionary(CommandRegister, dict):
         # TODO: Implement this method
         ...
 
-    @abaqus_method_doc
     def changeKey(self, fromName: str, toName: str):
         """This method changes the name of a key in the dictionary.
 

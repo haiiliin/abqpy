@@ -100,7 +100,6 @@ class Viscoelastic:
     #: A VolumetricTestData object.
     volumetricTestData: VolumetricTestData = VolumetricTestData(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         domain: Literal[C.FREQUENCY, C.TIME],
@@ -173,7 +172,6 @@ class Viscoelastic:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscoelastic object.
 

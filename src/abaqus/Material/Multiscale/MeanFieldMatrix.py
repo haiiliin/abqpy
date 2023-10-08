@@ -23,7 +23,6 @@ class MeanFieldMatrix:
         The ``MeanFieldMatrix`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(self, name: str, material: str = "", isotropizationCoefficient: float | None = None):
         """This method creates a MeanFieldMatrix object.
 
@@ -53,7 +52,6 @@ class MeanFieldMatrix:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the MeanFieldMatrix object.
 

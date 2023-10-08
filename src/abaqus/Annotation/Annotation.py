@@ -21,31 +21,26 @@ class Annotation:
     #: A String specifying the annotation repository key.
     name: str = ""
 
-    @abaqus_method_doc
     def bringToFront(self):
         """This method brings the Annotation object to the top of the annotation stack."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def sendToBack(self):
         """This method sends the Annotation object to the bottom of the annotation stack."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def bringForward(self):
         """This method brings the Annotation object one position up in the annotation stack."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def sendBackward(self):
         """This method sends the Annotation object one position down in the annotation stack."""
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def moveBefore(self, name: str):
         """This method moves the Annotation object before another object in the same repository.
 
@@ -57,7 +52,6 @@ class Annotation:
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def moveAfter(self, name: str):
         """This method moves the Annotation object after another object in the same repository.
 
@@ -69,7 +63,6 @@ class Annotation:
         # TODO: implement this method
         ...
 
-    @abaqus_method_doc
     def translate(self, x: float | None = None, y: float | None = None):
         """This method translates the Annotation object on the viewport plane.
 

@@ -86,7 +86,6 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
     #: adaptive mesh constraint has no amplitude reference.
     amplitude: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         v1: float | None = None,

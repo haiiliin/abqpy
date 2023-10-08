@@ -26,7 +26,6 @@ class PngOptions(_OptionsBase):
     #: screen dimensions.
     imageSize: SymbolicConstant = SIZE_ON_SCREEN
 
-    @abaqus_method_doc
     def setValues(self, *, imageSize: Literal[C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN):
         """This method modifies the PngOptions object.
 

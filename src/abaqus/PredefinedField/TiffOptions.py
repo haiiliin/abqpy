@@ -17,7 +17,6 @@ class TiffOptions:
             session.tiffOptions
     """
 
-    @abaqus_method_doc
     def setValues(self, imageSize: Literal[C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN):
         """This method modifies the TiffOptions object.
 

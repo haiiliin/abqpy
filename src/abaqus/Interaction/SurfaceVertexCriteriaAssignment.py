@@ -28,7 +28,6 @@ class SurfaceVertexCriteriaAssignment:
         The ``SurfaceVertexCriteriaAssignment`` class was added.
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(
         self, stepName: str, index: int, value: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES], float]
     ):
@@ -51,7 +50,6 @@ class SurfaceVertexCriteriaAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]):
         """This method allows addition of surface vertex criteria assignments to new surfaces in a given step.
 
@@ -70,7 +68,6 @@ class SurfaceVertexCriteriaAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing surface vertex criteria assignments from a ContactStd
         object.

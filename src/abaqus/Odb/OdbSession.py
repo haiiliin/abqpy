@@ -8,7 +8,6 @@ from .ScratchOdb import ScratchOdb
 
 @abaqus_class_doc
 class OdbSession(SessionBase):
-    @abaqus_method_doc
     def ScratchOdb(self, odb: Odb) -> ScratchOdb:
         """This method creates a new ScratchOdb object.
 
@@ -32,7 +31,6 @@ class OdbSession(SessionBase):
 
     # The following method was originally in the ``OdbCommands`` page documentation
     # But it accessed only by ``session`` object.
-    @abaqus_method_doc
     def openOdb(self, name: str, path: str = "", readOnly: Boolean = OFF) -> Odb:
         """This method opens an existing output database (`.odb`) file and creates a new Odb object. This method
         is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the
@@ -75,7 +73,6 @@ class OdbSession(SessionBase):
         self.odbs[name] = odb = Odb(name)
         return odb
 
-    @abaqus_method_doc
     def upgradeOdb(self, existingOdbPath: str, upgradedOdbPath: str):
         """This method upgrades an existing Odb object to the current release and writes the upgraded version of the
         Odb object to a file. In addition, Abaqus/CAE writes information about the status of the upgrade to a log

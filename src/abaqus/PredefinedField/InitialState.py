@@ -54,7 +54,6 @@ class InitialState(PredefinedField):
     #: data. The default value is OFF.
     updateReferenceConfiguration: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -99,7 +98,6 @@ class InitialState(PredefinedField):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         endStep: Literal[C.LAST_STEP] = LAST_STEP,

@@ -23,7 +23,6 @@ class FilterModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def ButterworthFilter(
         self,
         name: str,
@@ -83,7 +82,6 @@ class FilterModel(ModelBase):
         )
         return butterworthFilter
 
-    @abaqus_method_doc
     def Chebyshev1Filter(
         self,
         name: str,
@@ -154,7 +152,6 @@ class FilterModel(ModelBase):
         )
         return chebyshev1Filter
 
-    @abaqus_method_doc
     def Chebyshev2Filter(
         self,
         name: str,
@@ -225,7 +222,6 @@ class FilterModel(ModelBase):
         )
         return chebyshev2Filter
 
-    @abaqus_method_doc
     def OperatorFilter(
         self,
         name: str,

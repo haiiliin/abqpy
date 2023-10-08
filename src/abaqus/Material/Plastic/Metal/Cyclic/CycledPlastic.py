@@ -26,7 +26,6 @@ class CycledPlastic:
         - CYCLED PLASTIC
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a CycledPlastic object.
 
@@ -50,7 +49,6 @@ class CycledPlastic:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the CycledPlastic object."""
         ...

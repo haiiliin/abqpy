@@ -64,7 +64,6 @@ class OdbAssemblyBase:
     #: A ConnectorOrientationArray object.
     connectorOrientations: ConnectorOrientationArray = []
 
-    @abaqus_method_doc
     def ConnectorOrientation(
         self,
         region: str,
@@ -113,7 +112,6 @@ class OdbAssemblyBase:
         """
         ...
 
-    @abaqus_method_doc
     def SectionAssignment(self, region: str, section: Section):
         """This method is used to assign a section on an assembly or part. Section assignment on the assembly is
         limited to the connector elements only.
@@ -132,7 +130,6 @@ class OdbAssemblyBase:
         """
         ...
 
-    @abaqus_method_doc
     def addElements(
         self,
         labels: tuple,
@@ -174,7 +171,6 @@ class OdbAssemblyBase:
         """
         ...
 
-    @abaqus_method_doc
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str | None = None):
         """This method adds nodes to the OdbAssembly object using node labels and coordinates. Warning:Adding
         nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours incorrectly.
@@ -197,7 +193,6 @@ class OdbAssemblyBase:
         """
         ...
 
-    @abaqus_method_doc
     def RigidBody(
         self,
         referenceNode: str,

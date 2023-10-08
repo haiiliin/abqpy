@@ -10,7 +10,6 @@ from .Queue import Queue
 
 @abaqus_class_doc
 class JobSession(SessionBase):
-    @abaqus_method_doc
     def Queue(
         self,
         name: str,

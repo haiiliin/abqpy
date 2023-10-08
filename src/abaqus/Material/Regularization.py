@@ -32,7 +32,6 @@ class Regularization:
     #: LOGARITHMIC.
     strainRateRegularization: SymbolicConstant = LOGARITHMIC
 
-    @abaqus_method_doc
     def __init__(self, rtol: float = 0, strainRateRegularization: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC):
         """This method creates a Regularization object.
 
@@ -63,7 +62,6 @@ class Regularization:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Regularization object.
 

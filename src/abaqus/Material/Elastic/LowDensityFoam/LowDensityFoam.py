@@ -32,7 +32,6 @@ class LowDensityFoam:
     #: A UniaxialTestData object.
     uniaxialCompressionTestData: UniaxialTestData = UniaxialTestData(((),))
 
-    @abaqus_method_doc
     def __init__(
         self,
         elementRemoval: Boolean = OFF,
@@ -84,7 +83,6 @@ class LowDensityFoam:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the LowDensityFoam object.
 

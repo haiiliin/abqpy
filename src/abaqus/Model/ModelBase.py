@@ -248,7 +248,6 @@ class ModelBase:
     #:     The ``eventSeriesDatas`` attribute was added.
     eventSeriesDatas: dict[str, EventSeriesData] = {}
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -306,7 +305,6 @@ class ModelBase:
         """
         self.steps["Initial"] = InitialStep()
 
-    @abaqus_method_doc
     def ModelFromInputFile(self, name: str, inputFileName: str):
         """This method creates a Model object by reading the keywords in an input file and creating the
         corresponding Abaqus/CAE objects.
@@ -332,7 +330,6 @@ class ModelBase:
         """
         ...
 
-    @abaqus_method_doc
     def ModelFromOdbFile(self, name: str, odbFileName: str):
         """This method creates a Model object by reading an output database and creating any corresponding
         Abaqus/CAE objects.
@@ -358,7 +355,6 @@ class ModelBase:
         """
         ...
 
-    @abaqus_method_doc
     def ModelFromNastranFile(
         self,
         modelName: str,
@@ -444,7 +440,6 @@ class ModelBase:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(
         self,
         description: str = "",

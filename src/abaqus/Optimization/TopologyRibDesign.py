@@ -59,7 +59,6 @@ class TopologyRibDesign(GeometricRestriction):
     #: region. The default value is RIBDESIGN_REGION.
     ribDesignCheckRegion: Union[Literal[C.RIBDESIGN_REGION], Region] = RIBDESIGN_REGION
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -109,7 +108,6 @@ class TopologyRibDesign(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         ribDirection: VertexArray,

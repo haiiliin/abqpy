@@ -50,7 +50,6 @@ class TabularAmplitude(Amplitude):
     #: and TOTAL. The default value is STEP.
     timeSpan: Literal[C.STEP, C.TOTAL] = STEP
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -94,7 +93,6 @@ class TabularAmplitude(Amplitude):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,

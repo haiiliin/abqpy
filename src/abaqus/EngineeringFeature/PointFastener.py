@@ -174,7 +174,6 @@ class PointFastener(Fastener):
     #: fastening points. The default value is OFF.
     unsorted: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -323,7 +322,6 @@ class PointFastener(Fastener):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         directionVector: tuple | None = None,

@@ -54,7 +54,6 @@ class OdbRigidBody:
     #: the motion of rigid body reference node.
     analyticSurface: AnalyticSurface | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         referenceNode: OdbSet,

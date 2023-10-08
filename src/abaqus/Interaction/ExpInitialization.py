@@ -75,7 +75,6 @@ class ExpInitialization(ContactInitialization):
     #: when **overclosureType** = INTERFERENCE.
     stepFraction: float = 1
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -146,7 +145,6 @@ class ExpInitialization(ContactInitialization):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,

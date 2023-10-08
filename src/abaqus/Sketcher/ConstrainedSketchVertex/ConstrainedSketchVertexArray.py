@@ -19,7 +19,6 @@ class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
             mdb.models[name].sketches[name].vertices[i]
     """
 
-    @abaqus_method_doc
     def findAt(self, coordinates: tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchVertex:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 

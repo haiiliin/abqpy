@@ -77,7 +77,6 @@ class BoundaryConditionModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def AccelerationBaseMotionBC(
         self,
         name: str,
@@ -144,7 +143,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = AccelerationBaseMotionBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def AccelerationBC(
         self,
         name: str,
@@ -239,7 +237,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = AccelerationBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def AcousticPressureBC(
         self,
         name: str,
@@ -303,7 +300,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = AcousticPressureBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def ConcentrationBC(
         self,
         name: str,
@@ -367,7 +363,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = ConcentrationBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def ConnAccelerationBC(
         self,
         name: str,
@@ -468,7 +463,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = ConnAccelerationBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def ConnDisplacementBC(
         self,
         name: str,
@@ -582,7 +576,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = ConnDisplacementBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def ConnVelocityBC(
         self,
         name: str,
@@ -683,7 +676,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = ConnVelocityBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def DisplacementBaseMotionBC(
         self,
         name: str,
@@ -750,7 +742,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = DisplacementBaseMotionBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def DisplacementBC(
         self,
         name: str,
@@ -862,7 +853,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = DisplacementBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def ElectricPotentialBC(
         self,
         name: str,
@@ -926,7 +916,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = ElectricPotentialBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def EulerianBC(
         self,
         name: str,
@@ -973,7 +962,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = EulerianBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def EulerianMotionBC(
         self,
         name: str,
@@ -1132,7 +1120,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = EulerianMotionBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def FluidCavityPressureBC(
         self,
         name: str,
@@ -1179,7 +1166,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = FluidCavityPressureBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def MagneticVectorPotentialBC(
         self,
         name: str,
@@ -1250,7 +1236,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def MaterialFlowBC(
         self,
         name: str,
@@ -1314,7 +1299,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = MaterialFlowBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def PorePressureBC(
         self,
         name: str,
@@ -1378,7 +1362,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = PorePressureBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def RetainedNodalDofsBC(
         self,
         name: str,
@@ -1438,7 +1421,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def SecondaryBaseBC(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple) -> SecondaryBaseBC:
         """This method creates a SecondaryBaseBC object.
 
@@ -1468,7 +1450,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = SecondaryBaseBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def SubmodelBC(
         self,
         name: str,
@@ -1571,7 +1552,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = SubmodelBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def TemperatureBC(
         self,
         name: str,
@@ -1639,7 +1619,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = TemperatureBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def VelocityBaseMotionBC(
         self,
         name: str,
@@ -1706,7 +1685,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = VelocityBaseMotionBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def VelocityBC(
         self,
         name: str,
@@ -1801,7 +1779,6 @@ class BoundaryConditionModel(ModelBase):
         self.steps[createStepName].boundaryConditionStates[name] = VelocityBCState()
         return boundaryCondition
 
-    @abaqus_method_doc
     def EncastreBC(
         self,
         name: str,
@@ -1850,7 +1827,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def PinnedBC(
         self,
         name: str,
@@ -1899,7 +1875,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def XsymmBC(
         self,
         name: str,
@@ -1948,7 +1923,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def YsymmBC(
         self,
         name: str,
@@ -1997,7 +1971,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def ZsymmBC(
         self,
         name: str,
@@ -2046,7 +2019,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def XasymmBC(
         self,
         name: str,
@@ -2095,7 +2067,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def YasymmBC(
         self,
         name: str,
@@ -2144,7 +2115,6 @@ class BoundaryConditionModel(ModelBase):
         )
         return boundaryCondition
 
-    @abaqus_method_doc
     def ZasymmBC(
         self,
         name: str,

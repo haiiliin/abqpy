@@ -73,7 +73,6 @@ class SelfContactStd(Interaction):
     #: The default value is an empty string.
     contactControls: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -128,7 +127,6 @@ class SelfContactStd(Interaction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
@@ -157,7 +155,6 @@ class SelfContactStd(Interaction):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data of an existing SelfContactStd object in the specified step.
 

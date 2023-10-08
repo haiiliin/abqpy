@@ -17,7 +17,6 @@ class GeometricRestrictionDisplayOptions:
             session.viewports[name].layers[name].assemblyDisplay.geometricRestrictionOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         drillControl: Boolean = ON,

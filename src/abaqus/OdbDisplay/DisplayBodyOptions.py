@@ -101,7 +101,6 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
     coordinateScaleFactors: float | None = None
 
-    @abaqus_method_doc
     def setValues(
         self,
         options: Union["DisplayBodyOptions", None] = None,

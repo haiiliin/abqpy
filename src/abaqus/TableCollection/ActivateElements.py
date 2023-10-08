@@ -33,7 +33,6 @@ class ActivateElements:
     #: activation.
     expansionTimeConstant: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         tableCollection: str,
@@ -72,7 +71,6 @@ class ActivateElements:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the ActivateElements object.
 

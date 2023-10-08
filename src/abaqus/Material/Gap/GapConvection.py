@@ -34,7 +34,6 @@ class GapConvection:
         The ``GapConvection`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         type: str,
@@ -68,7 +67,6 @@ class GapConvection:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the GapConvection object."""
         ...

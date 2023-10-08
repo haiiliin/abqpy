@@ -21,7 +21,6 @@ class SlidingTransitionAssignment:
         - CONTACT FORMULATION
     """
 
-    @abaqus_method_doc
     def changeValuesInStep(
         self,
         stepName: str,
@@ -46,7 +45,6 @@ class SlidingTransitionAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def appendInStep(
         self,
         stepName: str,
@@ -68,7 +66,6 @@ class SlidingTransitionAssignment:
         """
         ...
 
-    @abaqus_method_doc
     def delete(self, indices: tuple):
         """The delete method allows you to delete existing sliding transition assignments.
 

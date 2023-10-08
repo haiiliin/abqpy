@@ -47,7 +47,6 @@ class SuperElasticity:
     #: object](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superelastichardeningmodificationpyc.htm?ContextScope=all#simaker-c-superelastichardeningmodificationpyc).
     superElasticHardeningModifications: SuperElasticHardeningModifications = SuperElasticHardeningModifications(((),))
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, nonassociated: float | None = None):
         """This method creates a SuperElasticity object.
 
@@ -77,7 +76,6 @@ class SuperElasticity:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SuperElasticity object.
 

@@ -57,7 +57,6 @@ class Dielectric:
         - DIELECTRIC
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -95,7 +94,6 @@ class Dielectric:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Dielectric object."""
         ...

@@ -46,7 +46,6 @@ class DisplayGroup:
     #: module is part-based.
     partName: str = ""
 
-    @abaqus_method_doc
     def __init__(self, name: str, leaf: Leaf):
         """This method creates a DisplayGroup object.
 
@@ -69,7 +68,6 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def add(self, leaf: Leaf):
         """This method adds the specified items to the display group.
 
@@ -80,7 +78,6 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def either(self, leaf: Leaf):
         """This method redefines the display group to be only those items that are not shared by the **leaf**
         argument and by the display group.
@@ -92,7 +89,6 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def intersect(self, leaf: Leaf):
         """This method redefines the display group to be only those items that are shared by the
         **leaf** argument and the display group.
@@ -104,12 +100,10 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def redoLast(self):
         """This method redoes the last undone operation on the display group."""
         ...
 
-    @abaqus_method_doc
     def remove(self, leaf: Leaf):
         """This method removes the specified items from the display group.
 
@@ -120,7 +114,6 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def replace(self, leaf: Leaf):
         """This method replaces the contents of the display group with the specified items.
 
@@ -132,7 +125,6 @@ class DisplayGroup:
         """
         ...
 
-    @abaqus_method_doc
     def undoLast(self):
         """This method undoes the last operation performed on the display group."""
         ...

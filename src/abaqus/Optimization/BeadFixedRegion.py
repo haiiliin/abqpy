@@ -42,7 +42,6 @@ class BeadFixedRegion(GeometricRestriction):
     #: OFF.
     u3: Boolean = OFF
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -86,7 +85,6 @@ class BeadFixedRegion(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, csys: int | None = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF):
         """This method modifies the BeadFixedRegion object.
 

@@ -43,7 +43,6 @@ class TransverseShearBeam:
     #: of the section. The default value is 0.25.
     slendernessCompensation: Union[SymbolicConstant, float] = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         scfDefinition: Literal[C.VALUE, C.ANALYSIS_DEFAULT, C.COMPUTED],
@@ -81,7 +80,6 @@ class TransverseShearBeam:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the TransverseShearBeam object."""
         ...

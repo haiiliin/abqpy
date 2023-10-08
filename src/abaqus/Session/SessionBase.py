@@ -295,7 +295,6 @@ class SessionBase:
     #: A repository of Drawing objects.
     drawings: dict[str, Drawing] = {}
 
-    @abaqus_method_doc
     def setValues(self, kernelMemoryLimit: float | None = None):
         """This method modifies the Session object.
 
@@ -319,7 +318,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def enableCADConnection(self, CADName: str, portNum: int | None = None):
         """This method enables the Abaqus/CAE listening port for the specified **CAD** system.
 
@@ -341,7 +339,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def isCADConnectionEnabled(self):
         """This method checks the status of CAD Connection.
 
@@ -353,7 +350,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def disableCADConnection(self, CADName: str):
         """This method disables an associative import CAD connection that was enabled.
 
@@ -365,7 +361,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: int | None = None):
         """This method enables parameter updates for ProE and NX by establishing a connection with the listening
         port previously setup by the CAD application.
@@ -387,7 +382,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def setCADPortNumber(self, CADName: str, Port: str):
         """This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the
         listening port previously setup by the CAD application. This port number is used to send the parameter
@@ -404,7 +398,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def updateCADParameters(
         self,
         modelName: str,
@@ -440,7 +433,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def disableParameterUpdate(self, CADName: str):
         """This method disables an associative CAD connection using parameters.
 
@@ -452,7 +444,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def printToFile(
         self,
         fileName: str,
@@ -484,7 +475,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def printToPrinter(
         self,
         printCommand: str = "",
@@ -533,7 +523,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def saveOptions(self, directory: Literal[C.HOME, C.CURRENT]):
         """This method saves your customized display settings.
 
@@ -546,7 +535,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def writeVrmlFile(self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
@@ -563,7 +551,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def write3DXMLFile(self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
@@ -580,7 +567,6 @@ class SessionBase:
         """
         ...
 
-    @abaqus_method_doc
     def writeOBJFile(self, fileName: str, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 

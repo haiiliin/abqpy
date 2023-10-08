@@ -29,7 +29,6 @@ class SoretEffect:
         - KAPPA
     """
 
-    @abaqus_method_doc
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a SoretEffect object.
 
@@ -59,7 +58,6 @@ class SoretEffect:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the SoretEffect object.
 

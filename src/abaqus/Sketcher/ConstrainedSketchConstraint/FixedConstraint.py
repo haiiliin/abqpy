@@ -8,7 +8,6 @@ from .ConstrainedSketchConstraint import ConstrainedSketchConstraint
 
 @abaqus_class_doc
 class FixedConstraint(ConstrainedSketchConstraint):
-    @abaqus_method_doc
     def __init__(self, entity: ConstrainedSketchGeometry):
         """This method creates a fixed constraint. This constraint applies to a ConstrainedSketchGeometry object
         or a ConstrainedSketchVertex object and constrains them to be fixed in space. Both the location and the

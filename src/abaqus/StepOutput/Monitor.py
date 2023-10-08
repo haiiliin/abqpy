@@ -49,7 +49,6 @@ class Monitor:
     #: Abaqus/Standard analysis.
     frequency: int
 
-    @abaqus_method_doc
     def __init__(
         self,
         node: str,
@@ -118,7 +117,6 @@ class Monitor:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Monitor object.
 

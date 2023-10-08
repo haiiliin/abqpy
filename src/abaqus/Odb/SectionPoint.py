@@ -37,7 +37,6 @@ class SectionPoint:
     #: A String specifying the description of the section point.
     description: str
 
-    @abaqus_method_doc
     def __init__(self, number: int, description: str):
         """This method creates a SectionPoint object.
 

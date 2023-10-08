@@ -85,7 +85,6 @@ class PointMassInertia(Inertia):
     #: argument applies only to Abaqus/Standard analyses.
     composite: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -164,7 +163,6 @@ class PointMassInertia(Inertia):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         mass: float = 0,

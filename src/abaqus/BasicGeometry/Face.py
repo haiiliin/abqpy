@@ -71,7 +71,6 @@ class Face:
     #: applicable).
     instanceName: float | None = None
 
-    @abaqus_method_doc
     def getCentroid(self) -> Sequence[float]:
         """This method returns the centroid of a face.
 
@@ -83,7 +82,6 @@ class Face:
         """
         return (0.0, 0.0, 0.0)
 
-    @abaqus_method_doc
     def getCurvature(self, point: tuple[float, float, float], uParam: float, vParam: float) -> dict[str, float]:
         """This method returns information about the curvature at a location on the face.
 
@@ -119,7 +117,6 @@ class Face:
             "gaussianCurvature": 0.0,
         }
 
-    @abaqus_method_doc
     def getElements(self) -> "MeshElementArray":
         """This method returns an array of element objects that are associated with the face.
 
@@ -132,7 +129,6 @@ class Face:
 
         return MeshElementArray([MeshElement()])
 
-    @abaqus_method_doc
     def getElementFaces(self, faceSide: Literal[C.SIDE2, C.SIDE1, C.BOTH_SIDES] = BOTH_SIDES) -> "MeshFaceArray":
         """This method returns an array of mesh face objects. Each mesh face object contains the element label
         and the side of the element that lies on the geometric face.
@@ -153,7 +149,6 @@ class Face:
 
         return MeshFaceArray([MeshFace()])
 
-    @abaqus_method_doc
     def getNodes(self, faceSide: Literal[C.SIDE2, C.BOTH_SIDES] = BOTH_SIDES) -> "MeshNodeArray":
         """This method returns an array of mesh node objects. Each mesh node object contains the label of the
         node that lies on the geometric face.
@@ -176,7 +171,6 @@ class Face:
 
         return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
-    @abaqus_method_doc
     def getNormal(self, point: tuple[float, float, float]) -> Sequence[float]:
         """This method returns the normal to a face at the location specified by the **pointOn** member. The
         normal at a different location on the face can be obtained by specifying the optional **point**
@@ -202,7 +196,6 @@ class Face:
         """
         return (0.0, 0.0, 0.0)
 
-    @abaqus_method_doc
     def getSize(self, printResults: Boolean = True) -> float:
         """This method returns a Float indicating the area of the face.
 
@@ -218,7 +211,6 @@ class Face:
         """
         return 0.0
 
-    @abaqus_method_doc
     def getEdges(self) -> Sequence[int]:
         """This method returns a sequence consisting of the edge ids of the edges on the face.
 
@@ -229,7 +221,6 @@ class Face:
         """
         return (0,)
 
-    @abaqus_method_doc
     def getVertices(self) -> Sequence[int]:
         """This method returns a sequence consisting of the vertex ids of the vertices of the face.
 
@@ -240,7 +231,6 @@ class Face:
         """
         return (0,)
 
-    @abaqus_method_doc
     def getCells(self) -> Sequence[int]:
         """This method returns a sequence consisting of the cell ids of the cells to which this face belongs.
 
@@ -251,7 +241,6 @@ class Face:
         """
         return (0,)
 
-    @abaqus_method_doc
     def getAdjacentFaces(self) -> "FaceArray":
         """This method returns an array of face objects that share at least one edge of the face.
 
@@ -264,7 +253,6 @@ class Face:
 
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def getFacesByFaceAngle(self, angle: str) -> "FaceArray":
         """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
         that are at an angle of less than or equal to the specified angle.
@@ -283,7 +271,6 @@ class Face:
 
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def getFacesByCurvature(self) -> "FaceArray":
         """This method returns an array of Face objects that are obtained by recursively finding adjacent faces
         that share the same curvature.
@@ -297,7 +284,6 @@ class Face:
 
         return FaceArray([Face()])
 
-    @abaqus_method_doc
     def isNormalFlipped(self) -> Boolean:
         """This method determines whether the normal to the face is flipped from its default direction by the
         use of the flipNormal method on a Part object.
@@ -309,7 +295,6 @@ class Face:
         """
         return True
 
-    @abaqus_method_doc
     def getCADAttributes(self) -> list[str]:
         """This method returns an array of CAD attribute strings associated with the Face when the part was
         created from CAD data.

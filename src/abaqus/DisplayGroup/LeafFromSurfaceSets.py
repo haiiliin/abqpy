@@ -27,7 +27,6 @@ class LeafFromSurfaceSets(Leaf):
     #: set.
     surfaceSets: tuple
 
-    @abaqus_method_doc
     def __init__(self, surfaceSets: tuple):
         """This method creates a Leaf object from a sequence of surface sets.
 

@@ -7,7 +7,6 @@ from .LoadCase import LoadCase
 
 @abaqus_class_doc
 class LoadStep(StepBase):
-    @abaqus_method_doc
     def LoadCase(
         self,
         name: str,

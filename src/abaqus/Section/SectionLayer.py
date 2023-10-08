@@ -75,7 +75,6 @@ class SectionLayer:
     #: default value is "".
     additionalRotationField: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         thickness: float,

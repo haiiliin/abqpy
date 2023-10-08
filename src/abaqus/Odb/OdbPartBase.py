@@ -67,7 +67,6 @@ class OdbPartBase:
     #: An AnalyticSurface object specifying analytic Surface defined on the instance.
     analyticSurface: AnalyticSurface = AnalyticSurface()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -100,7 +99,6 @@ class OdbPartBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def addElements(
         self,
         labels: tuple,
@@ -129,7 +127,6 @@ class OdbPartBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def addElements(
         self,
         elementData: tuple,
@@ -155,7 +152,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def addElements(self, *args, **kwargs):
         ...
 
@@ -176,7 +172,6 @@ class OdbPartBase:
         ...
 
     @overload
-    @abaqus_method_doc
     def addNodes(self, nodeData: tuple, nodeSetName: str | None = None):
         """This method adds nodes to an OdbPart object using a sequence of node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to plot contours
@@ -192,7 +187,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def addNodes(self, *args, **kwargs):
         ...
 
@@ -212,7 +206,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignMaterialOrientation(
         self,
         region: str,
@@ -244,7 +237,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def assignRebarOrientation(
         self,
         region: str,
@@ -271,7 +263,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def getElementFromLabel(self, label: int):
         """This method is used to retrieved an element with a specific label from a part object.
 
@@ -292,7 +283,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def getNodeFromLabel(self, label: int):
         """This method is used to retrieved a node with a specific label from a part object.
 
@@ -313,7 +303,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the part object.
 
@@ -336,7 +325,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurfExtrude(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the part object.
 
@@ -359,7 +347,6 @@ class OdbPartBase:
         """
         ...
 
-    @abaqus_method_doc
     def AnalyticRigidSurfRevolve(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: float = 0):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the part object.
 

@@ -21,7 +21,6 @@ from .StdContactControl import StdContactControl
 
 @abaqus_class_doc
 class InteractionContactControlModel(ModelBase):
-    @abaqus_method_doc
     def ExpContactControl(
         self,
         name: str,
@@ -85,7 +84,6 @@ class InteractionContactControlModel(ModelBase):
         )
         return contactControl
 
-    @abaqus_method_doc
     def StdContactControl(
         self,
         name: str,

@@ -52,7 +52,6 @@ class NonstructuralMass(Inertia):
     #: MASS_PROPORTIONAL.The **distribution** argument applies only when **units** = TOTAL_MASS.
     distribution: SymbolicConstant = MASS_PROPORTIONAL
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -92,7 +91,6 @@ class NonstructuralMass(Inertia):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self, distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL
     ):

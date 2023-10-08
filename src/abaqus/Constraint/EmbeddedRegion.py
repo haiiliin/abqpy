@@ -62,7 +62,6 @@ class EmbeddedRegion(Constraint):
     #: **toleranceMethod** = FRACTIONAL or BOTH.
     fractionalTolerance: float = 0
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -115,7 +114,6 @@ class EmbeddedRegion(Constraint):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         weightFactorTolerance: float | None = None,

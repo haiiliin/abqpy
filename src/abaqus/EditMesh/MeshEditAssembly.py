@@ -27,7 +27,6 @@ class MeshEditAssembly(AssemblyBase):
             mdb.models[name].rootAssembly
     """
 
-    @abaqus_method_doc
     def collapseMeshEdge(self, edge: str, collapseMethod: Literal[C.FORWARD, C.REVERSE, C.AVERAGE]):
         """This method collapses an edge of a quadrilateral or triangular element of a part instance.
 
@@ -41,7 +40,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def combineElement(self, elements: tuple):
         """This method combines two triangular elements of a part instance.
 
@@ -52,7 +50,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def deleteElement(self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF):
         """This method deletes the given elements from a part instance. The elements must have been generated
         using the bottom-up meshing technique.
@@ -67,7 +64,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def projectNode(self, nodes: Sequence[MeshNode], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric entity, or a
         datum object.
@@ -83,7 +79,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def editNode(
         self,
         nodes: Sequence[MeshNode],
@@ -143,7 +138,6 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def mergeNodes(
         self,
         nodes: Sequence[MeshNode],
@@ -168,7 +162,6 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @overload
-    @abaqus_method_doc
     def mergeNodes(self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True):
         """Merge two nodes of a part instance. At least one of the two nodes must have been generated using the
         bottom-up meshing technique.
@@ -185,7 +178,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def mergeNodes(self, *args, **kwargs):
         ...
 
@@ -200,7 +192,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def splitMeshEdge(self, edge: str, parameter: float = 0):
         """This method splits an edge of a quadrilateral or triangular element of a part instance.
 
@@ -214,7 +205,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def swapMeshEdge(self, edge: str):
         """This method swaps the diagonal of two adjacent triangular elements of a part instance.
 
@@ -225,7 +215,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def generateMeshByOffset(
         self,
         region: Region,
@@ -279,7 +268,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def redoMeshEdit(self):
         """This method executes the edit mesh or the bottom-up meshing operation most recently undone by the
         undoMeshEdit method on an assembly.
@@ -291,7 +279,6 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @abaqus_method_doc
     def undoMeshEdit(self):
         """This method undoes the most recent edit mesh or the bottom-up meshing operation on an assembly and
         restores the mesh on the affected part instance to its previous state.

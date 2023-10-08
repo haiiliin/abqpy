@@ -45,7 +45,6 @@ class OptimizationTaskModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def BeadTask(
         self,
         name: str,
@@ -185,7 +184,6 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
-    @abaqus_method_doc
     def ShapeTask(
         self,
         name: str,
@@ -451,7 +449,6 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
-    @abaqus_method_doc
     def SizingTask(
         self,
         name: str,
@@ -544,7 +541,6 @@ class OptimizationTaskModel(ModelBase):
         )
         return optimizationTask
 
-    @abaqus_method_doc
     def TopologyTask(
         self,
         name: str,

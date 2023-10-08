@@ -40,13 +40,11 @@ class AttributeColorMap(_OptionsBase):
     #: :meth:`abaqus.Canvas.AttributeColorMap.updateOverrides` method.
     attributeColors: dict | None = None
 
-    @abaqus_method_doc
     def setDefaults(self):
         """This method resets the AttributeColorMap object to its default state."""
         #: TODO: Implement this method.
         ...
 
-    @abaqus_method_doc
     def setValues(self, overrides: dict | None = None, defaultOverrides: dict | None = None):
         """This method modifies the AttributeColorMap object.
 
@@ -66,7 +64,6 @@ class AttributeColorMap(_OptionsBase):
         """
         super().setValues(overrides=overrides, defaultOverrides=defaultOverrides)
 
-    @abaqus_method_doc
     def updateOverrides(self, overrides: dict | None = None, defaultOverrides: dict | None = None):
         """This method specifies additional overrides to be added to the current object definition.
 

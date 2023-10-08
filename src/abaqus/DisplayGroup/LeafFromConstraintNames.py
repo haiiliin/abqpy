@@ -29,7 +29,6 @@ class LeafFromConstraintNames(Leaf):
     #: SHELL_TO_SOLID_COUPLING, DISTRIBUTING_COUPLING, KINEMATIC_COUPLING, RIGID_BODY, and MPC.
     leafType: SymbolicConstant
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: tuple,

@@ -36,7 +36,6 @@ class AcousticInfiniteSection(Section):
     #: **order** ≤ 10. The default value is 10.
     order: int = 10
 
-    @abaqus_method_doc
     def __init__(self, name: str, material: str, thickness: float = 1, order: int = 10):
         """This method creates an AcousticInfiniteSection object.
 
@@ -72,7 +71,6 @@ class AcousticInfiniteSection(Section):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(self, thickness: float = 1, order: int = 10):
         """This method modifies the AcousticInfiniteSection object.
 

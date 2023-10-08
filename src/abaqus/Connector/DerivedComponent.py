@@ -35,7 +35,6 @@ class DerivedComponent:
     #: A CDCTermArray object.
     cdcTerms: CDCTermArray = []
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a DerivedComponent object.
 
@@ -62,7 +61,6 @@ class DerivedComponent:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DerivedComponent object.
 
@@ -72,7 +70,6 @@ class DerivedComponent:
         """
         ...
 
-    @abaqus_method_doc
     def CDCTerm(
         self,
         intrinsicComponents: tuple,

@@ -15,7 +15,6 @@ class MeshEditOptions:
             mdb.meshEditOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         maxUndoCacheElements: float = 0,

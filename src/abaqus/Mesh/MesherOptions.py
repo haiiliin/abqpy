@@ -29,7 +29,6 @@ class MesherOptions:
             session.defaultMesherOptions
     """
 
-    @abaqus_method_doc
     def setValues(
         self,
         elemShape2D: Literal[C.TRI, C.QUAD, C.QUAD_DOMINATED] = QUAD_DOMINATED,

@@ -9,7 +9,6 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 
 @abaqus_class_doc
 class FilletByRadius(ConstrainedSketchGeometry):
-    @abaqus_method_doc
     def __init__(
         self,
         radius: float,

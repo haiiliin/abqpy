@@ -15,7 +15,6 @@ class RegisteredList(CommandRegister, list):
             import customKernel
     """
 
-    @abaqus_method_doc
     def __init__(self):
         """This method creates a RegisteredList object.
 
@@ -31,7 +30,6 @@ class RegisteredList(CommandRegister, list):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def Methods(self):
         """The RegisteredList object supports the same methods as a standard Python list object."""
         # TODO: Implement this method

@@ -39,7 +39,6 @@ class RuleResult:
     #: Remeshing Rule.
     satisfiedVars: tuple = ()
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,

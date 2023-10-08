@@ -50,7 +50,6 @@ class ShapeMemberSize(GeometricRestriction):
     #:     The ``nodeGroupRegion`` attribute was added.
     nodeGroupRegion: str = ""
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -101,7 +100,6 @@ class ShapeMemberSize(GeometricRestriction):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         maxThickness: float = 0,

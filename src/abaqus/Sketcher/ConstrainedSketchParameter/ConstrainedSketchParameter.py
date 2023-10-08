@@ -27,7 +27,6 @@ class ConstrainedSketchParameter:
     #: one in the ordered list.
     previousParameter: str = ""
 
-    @abaqus_method_doc
     def Parameter(
         self,
         name: str,

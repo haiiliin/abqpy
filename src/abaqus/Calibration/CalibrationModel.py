@@ -14,7 +14,6 @@ class CalibrationModel(ModelBase):
             mdb.models[name]
     """
 
-    @abaqus_method_doc
     def Calibration(self, name: str) -> Calibration:
         """This method creates a Calibration object.
 

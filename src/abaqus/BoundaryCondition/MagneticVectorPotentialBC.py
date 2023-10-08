@@ -41,7 +41,6 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     #: in the global coordinate system. The default value is None.
     localCsys: str | None = None
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -101,7 +100,6 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         """
         super().__init__()
 
-    @abaqus_method_doc
     def setValues(
         self,
         component1: Literal[C.SET, C.UNSET] | None = None,
@@ -143,7 +141,6 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         """
         ...
 
-    @abaqus_method_doc
     def setValuesInStep(
         self,
         stepName: str,

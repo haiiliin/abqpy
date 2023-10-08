@@ -114,7 +114,6 @@ class Text(Annotation, _OptionsBase):
     #: JUSTIFY_LEFT.
     justification: SymbolicConstant = JUSTIFY_LEFT
 
-    @abaqus_method_doc
     def __init__(
         self,
         name: str,
@@ -249,7 +248,6 @@ class Text(Annotation, _OptionsBase):
         self.box = box
         self.justification = justification
 
-    @abaqus_method_doc
     def setValues(
         self,
         text: str = "",

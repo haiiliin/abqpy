@@ -37,7 +37,6 @@ class Viscosity:
     #: A Trs object.
     trs: Trs = Trs()
 
-    @abaqus_method_doc
     def __init__(
         self,
         table: tuple,
@@ -75,7 +74,6 @@ class Viscosity:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the Viscosity object.
 

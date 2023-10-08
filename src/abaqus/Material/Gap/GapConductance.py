@@ -35,7 +35,6 @@ class GapConductance:
         The ``GapConductance`` class was added.
     """
 
-    @abaqus_method_doc
     def __init__(
         self,
         pressureDependency: Boolean = OFF,
@@ -68,7 +67,6 @@ class GapConductance:
         """
         ...
 
-    @abaqus_method_doc
     def setValues(self):
         """This method modifies the GapConductance object."""
         ...

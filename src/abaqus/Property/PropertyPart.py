@@ -32,7 +32,6 @@ from .SectionAssignment import SectionAssignment
 
 @abaqus_class_doc
 class PropertyPart(PartBase):
-    @abaqus_method_doc
     def CompositeLayup(
         self,
         name: str,
@@ -96,7 +95,6 @@ class PropertyPart(PartBase):
         )
         return compositeLayup
 
-    @abaqus_method_doc
     def SectionAssignment(
         self,
         region: Set,
@@ -145,7 +143,6 @@ class PropertyPart(PartBase):
         self.sectionAssignments.append(sectionAssignment)
         return sectionAssignment
 
-    @abaqus_method_doc
     def MaterialOrientation(
         self,
         region: Set | None = None,
@@ -272,7 +269,6 @@ class PropertyPart(PartBase):
         self.materialOrientations.append(materialOrientation)
         return materialOrientation
 
-    @abaqus_method_doc
     def assignBeamSectionOrientation(self, region: tuple, method: Literal[C.N1_COSINES], n1: tuple):
         """This method assigns a beam section orientation to a region of a part.
 
@@ -295,7 +291,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def assignMaterialOrientation(
         self, region: tuple, localCsys: Datum, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, angle: float = 0
     ):
@@ -324,7 +319,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def assignRebarOrientation(
         self, region: tuple, localCsys: Datum, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, angle: float = 0
     ):
@@ -353,7 +347,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def flipNormal(self, regions: Region, referenceRegion: str = ""):
         """This method flips the normals of shell or membrane elements of an orphan mesh or of two-dimensional
         geometric regions.
@@ -378,7 +371,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def flipTangent(self, regions: Region):
         """This method flips the tangents of beam or truss elements of an orphan mesh or of one-dimensional
         geometric regions.
@@ -396,7 +388,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def unassignBeamSectionOrientation(self, index: int):
         """This method deletes a beam section orientation assignment.
 
@@ -412,7 +403,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def unassignMaterialOrientation(self, index: int):
         """This method deletes a material orientation assignment.
 
@@ -428,7 +418,6 @@ class PropertyPart(PartBase):
         """
         ...
 
-    @abaqus_method_doc
     def unassignRebarOrientation(self, index: int):
         """This method deletes a rebar orientation assignment.
 
