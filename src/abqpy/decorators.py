@@ -1,3 +1,4 @@
+import inspect
 import re
 from functools import partial
 from typing import Tuple
@@ -269,4 +270,8 @@ def abaqus_class_doc(cls):
         suffix=class_suffix.get(class_name, ""),
         label=class_name,
     )
+    for name, method in inspect.getmembers(cls, predicate=inspect.ismethod):
+        if name.startswith("_"):
+            continue
+        setattr(cls, name, abaqus_method_doc(method))
     return cls
