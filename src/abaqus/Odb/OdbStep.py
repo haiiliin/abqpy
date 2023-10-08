@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from .HistoryPoint import HistoryPoint
 from .HistoryRegion import HistoryRegion

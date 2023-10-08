@@ -4,7 +4,7 @@ from typing import Sequence, Union, overload
 
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstanceRepository import DisplayGroupInstanceRepository

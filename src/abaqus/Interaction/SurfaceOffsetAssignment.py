@@ -4,7 +4,7 @@ from typing import Sequence, Union
 
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..Material.Material import Material
 from ..Region.Region import Region

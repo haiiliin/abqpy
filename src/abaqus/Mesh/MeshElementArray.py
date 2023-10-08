@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, List, Sequence, Union
 
 from abaqus.BasicGeometry.Edge import Edge
 from abaqus.BasicGeometry.Face import Face
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from .MeshElement import MeshElement
 

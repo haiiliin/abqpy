@@ -5,7 +5,7 @@ from typing import Sequence, overload
 from typing_extensions import Literal
 
 # prevent circular imports
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray

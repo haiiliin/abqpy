@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from enum import Enum
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from .AbaqusBoolean import AbaqusBoolean
 

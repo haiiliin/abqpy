@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Sequence, Union, overload
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge

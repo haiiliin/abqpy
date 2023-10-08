@@ -4,7 +4,7 @@ from typing import Union
 
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
 from ..UtilityAndView.abaqusConstants import (

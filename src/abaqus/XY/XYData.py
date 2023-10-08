@@ -4,7 +4,7 @@ from typing import Sequence, Union, overload
 
 from typing_extensions import TYPE_CHECKING, Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import OFF, ON, REAL, Boolean, SymbolicConstant

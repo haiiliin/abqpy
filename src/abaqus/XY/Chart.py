@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Sequence, Union
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, ON, Boolean
 from ..UtilityAndView.View import View
