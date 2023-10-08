@@ -18,6 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 import inspect
+import json
 import os
 import re
 import sys
@@ -277,6 +278,8 @@ elif html_theme == "furo":
 elif html_theme == "sphinx_immaterial":
     READTHEDOCS = "READTHEDOCS" in os.environ
     versions = [str(v) for v in range(2023, 2015, -1)]
+    with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
+        edit_urls = json.load(f)
     html_theme_options = {
         "icon": {
             "repo": "fontawesome/brands/github",
@@ -285,7 +288,8 @@ elif html_theme == "sphinx_immaterial":
         "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
         "repo_url": "https://github.com/haiiliin/abqpy/",
         "repo_name": "abqpy",
-        "edit_uri": f"edit/{version}/docs/source",
+        "edit_uri": f"edit/{major}/docs/source",
+        "edit_url_pages": edit_urls[f"{major}"].get(language, {}),
         "globaltoc_collapse": True,
         "features": [
             "navigation.expand",
