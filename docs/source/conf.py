@@ -336,7 +336,7 @@ elif html_theme == "sphinx_immaterial":
             for ver in versions
         ],
         # END: version_dropdown
-        "alternate": [
+        "languages": [
             {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
             for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
         ],
