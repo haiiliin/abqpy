@@ -56,12 +56,7 @@ As you play a main file script, the Abaqus PDE automatically opens any files tha
 
 (cmd-pde-filemenu-nls)=
 
-```{figure} /images/cmd-pde-filemenu-nls.png
-:align: center
-:width: 50%
-
-The File menu
-```
+![](/images/cmd-pde-filemenu-nls.png){title="The File menu", width=50%, align=center}
 
 The following options are available from the File menu:
 
@@ -134,12 +129,7 @@ Use the **Settings** menu and tools to change some of the options in the Abaqus 
 
 (cmd-pde-settingsmenu-nls)=
 
-```{figure} /images/cmd-pde-settingsmenu-nls.png
-:align: center
-:width: 50%
-
-The Settings menu.
-```
+![](/images/cmd-pde-settingsmenu-nls.png){title="The Settings menu.", width=50%, align=center}
 
 The following items are available from the **Settings** menu:
 

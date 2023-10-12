@@ -13,12 +13,7 @@ The problem investigates the effects on the accuracy of the bending moment compu
 
 {numref}`cmd-skew-dim` illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
 
-```{figure} /images/exxskew-quadmesh-nls.png
-:align: center
-:width: 50%
-
-A 4 x 4 quadrilateral mesh of the plate.
-```
+![](/images/exxskew-quadmesh-nls.png){title="A 4 x 4 quadrilateral mesh of the plate.", width=50%, align=center}
 
 The plate is loaded by a uniform pressure of $1\times10^{-6}$ MPa applied over the entire surface. The edges of the plate are all simply supported. The analysis is performed for five different values of the skew angle, $\delta$: 90°, 80°, 60°, 40°, and 30°. The analysis is performed for two different quadrilateral elements: S4 and S8R.
 
@@ -104,12 +99,7 @@ The parameterized script changes the skew angle of the plate and computes the ma
 
 (cmd-skew-dim)=
 
-```{figure} /images/cmd-skew-dim.png
-:align: center
-:width: 50%
-
-Dimension the angle at the lower left corner of the plate.
-```
+![](/images/cmd-skew-dim.png){title="Dimension the angle at the lower left corner of the plate.", width=50%, align=center}
 
 ### Determine the indices of the dimension to modify and the vertices to move
 

@@ -102,6 +102,7 @@ automembers_autodoc_options = [
 # MyST configuration
 myst_enable_extensions = [
     "colon_fence",
+    "attrs_inline",
 ]
 
 # AutoAPI configuration

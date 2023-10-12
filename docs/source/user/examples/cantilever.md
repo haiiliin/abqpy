@@ -8,12 +8,7 @@ The example leads you through the Abaqus/CAE modeling process by visiting each o
 
 (gst-beam)=
 
-```{figure} /images/gst-beam.png
-:align: center
-:width: 100%
-
-A loaded cantilever beam.
-```
+![](/images/gst-beam.png){title="A loaded cantilever beam.", width=100%, align=center}
 
 ## Running the example
 

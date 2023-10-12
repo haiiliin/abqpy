@@ -4,10 +4,7 @@ Python is an interpreted language. This means you can type a statement and view 
 
 - If you have Abaqus installed on your Linux or Windows workstation, type abaqus python at the system prompt. Python enters its interpretive mode and displays the >>> prompt.
 
-  ```{image} /images/cmd-int-unix-nls.png
-  :align: center
-  :width: 100%
-  ```
+![](/images/cmd-int-unix-nls.png){width=100%, align=center}
 
   You can enter Python statements at the >>> prompt. To see the value of a variable or expression, type the variable name or expression at the Python prompt. To exit the Python interpreter, type **Ctrl + D** on Linux systems or **Ctrl + Z + Enter** on Windows systems.
 
@@ -17,9 +14,6 @@ Python is an interpreted language. This means you can type a statement and view 
 
   Click ![afxI_commandLine](/images/afxI_commandLine.png) in the lower left corner of the main window to display the command line interface. You may want to drag the handle at the top of the command line interface to increase the number of lines displayed.
 
-  ```{image} /images/cmd-int-cae.png
-  :align: center
-  :width: 100%
-  ```
+![](/images/cmd-int-cae.png){width=100%, align=center}
 
   If Abaqus/CAE displays new messages while you are using the command line interface, the message area tab turns red.

@@ -73,12 +73,7 @@ Abaqus does not write all the model data to the output database; for example, yo
 
 (odb-model-nls)=
 
-```{figure} /images/odb-model-nls.png
-:align: center
-:width: 100%
-
-The model data object model.
-```
+![](/images/odb-model-nls.png){title="The model data object model.", width=100%, align=center}
 
 The objects stored as model data in an output database are similar to the objects stored in an Abaqus/CAE model database. However, the output database does not require a model name because an analysis job always refers to a single model and the resulting output database can contain only one model. For example, the following Abaqus Scripting Interface statements refer to an Instance object in the model database:
 
@@ -189,12 +184,7 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   (odb-field-nls)=
 
-  ```{figure} /images/odb-field-nls.png
-  :align: center
-  :width: 100%
-
-  The field output data object model.
-  ```
+  ![](/images/odb-field-nls.png){title="The field output data object model.", width=100%, align=center}
 
 - **History output**
 
@@ -211,9 +201,4 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   % odb-history-nls:
 
-  ```{figure} /images/odb-history-nls.png
-  :align: center
-  :width: 100%
-
-  The history output data.
-  ```
+  ![](/images/odb-history-nls.png){title="The history output data.", width=100%, align=center}

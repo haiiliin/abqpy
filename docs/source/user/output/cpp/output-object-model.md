@@ -74,12 +74,7 @@ Abaqus does not write all the model data to the output database; for example, yo
 
 (odb-model-nls-cpp)=
 
-```{figure} /images/odb-model-nls.png
-:align: center
-:width: 100%
-
-The model data object model.
-```
+![](/images/odb-model-nls.png){title="The model data object model.", width=100%, align=center}
 
 ## Results data
 
@@ -99,12 +94,7 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   (odb-field-nls-1)=
 
-  ```{figure} /images/odb-field-nls.png
-  :align: center
-  :width: 100%
-
-  The field output data object model.
-  ```
+  ![](/images/odb-field-nls.png){title="The field output data object model.", width=100%, align=center}
 
 - **History output**
 
@@ -121,9 +111,4 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   (odb-history-nls-2)=
 
-  ```{figure} /images/odb-history-nls.png
-  :align: center
-  :width: 100%
-
-  The history output data.
-  ```
+  ![](/images/odb-history-nls.png){title="The history output data.", width=100%, align=center}

@@ -60,12 +60,7 @@ For example, {numref}`cmd-int-exception-nls` shows the layout of a typical excep
 
 (cmd-int-exception-nls)=
 
-```{figure} /images/cmd-int-exception-nls.png
-:align: center
-:width: 50%
-
-The layout of a typical exception description in the online documentation.
-```
+![](/images/cmd-int-exception-nls.png){title="The layout of a typical exception description in the online documentation.", width=50%, align=center}
 
 You use the exception type in your error handling routines.
 

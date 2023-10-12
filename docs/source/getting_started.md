@@ -181,19 +181,11 @@ If you run the script under the debug mode, the script will be opened in Abaqus 
 
 - Create an Abaqus Model
 
-  ```{image} images/model-code.*
-  :align: center
-  :alt: Create an Abaqus Model
-  :width: 100%
-  ```
+  ![](images/model-code.gif){title="Create an Abaqus Model", width=100%, align=center}
 
 - Extract Output Data
 
-  ```{image} images/output-code.*
-  :align: center
-  :alt: Extract Output Data
-  :width: 100%
-  ```
+  ![](images/output-code.gif){title="Extract Output Data", width=100%, align=center}
 
 ## Comments
 

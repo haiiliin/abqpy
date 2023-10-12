@@ -29,10 +29,7 @@ easier, and that is what `abqpy` does.
 
 The example model described in the following is simple, there is a square structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:
 
-```{image} images/model.png
-:align: center
-:width: 50%
-```
+![](images/model.png){width=50%, align=center}
 
 ### Header of the script
 
@@ -343,19 +340,13 @@ The distribution of `U3` of above model is showed as follows:
 
 (output)=
 
-```{image} /images/output.png
-:align: center
-:width: 70%
-```
+![](/images/output.png){width=70%, align=center}
 
 The distribution of the vertical displacement of a point in the top surface is showed as follows:
 
 (compression)=
 
-```{image} /images/compression.png
-:align: center
-:width: 70%
-```
+![](/images/compression.png){width=70%, align=center}
 
 ### The whole output script
 

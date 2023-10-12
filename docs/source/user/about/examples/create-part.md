@@ -19,12 +19,7 @@ The new viewport and the shaded part are shown in {numref}`cmd-int-aexample-nls`
 
 (cmd-int-aexample-nls)=
 
-```{figure} /images/cmd-int-aexample-nls.png
-:align: center
-:width: 50%
-
-The example creates a new viewport and a part.
-```
+![](/images/cmd-int-aexample-nls.png){title="The example creates a new viewport and a part.", width=50%, align=center}
 
 The example scripts from this guide can be copied to the user's working directory by using the Abaqus fetch utility:
 
@@ -132,12 +127,7 @@ The next statement in the script is shown in {numref}`cmd-righttoleft-nls`. You 
 
 (cmd-righttoleft-nls)=
 
-```{figure} /images/cmd-righttoleft-nls.png
-:align: center
-:width: 50%
-
-Creating a new model.
-```
+![](/images/cmd-righttoleft-nls.png){title="Creating a new model.", width=50%, align=center}
 
 ```python
 mySketch = myModel.ConstrainedSketch(name="Sketch A", sheetSize=200.0)

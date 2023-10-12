@@ -28,10 +28,7 @@ The `float` function on the third line converts the string returned by `getInput
 
 (utl-getinput-nls)=
 
-```{figure} /images/utl-getinput-nls.png
-:align: center
-:width: 50%
-```
+![](/images/utl-getinput-nls.png){width=50%, align=center}
 
 The next example shows how to modify a macro recorded by the **Macro Manager** in Abaqus/CAE to use the getInput function. The following text shows a macro named `createViewport` that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file `abaqusMacros.py` in your local or home directory.
 
@@ -63,10 +60,7 @@ The `eval` function in the third line of the macro converts the string returned 
 
 (utl-getinput-default-nls)=
 
-```{figure} /images/utl-getinput-default-nls.png
-:align: center
-:width: 50%
-```
+![](/images/utl-getinput-default-nls.png){width=50%, align=center}
 
 ## Requesting multiple inputs from the user
 
@@ -90,10 +84,7 @@ The following figure shows the dialog box that these statements create:
 
 (utl-getinputs-nls)=
 
-```{figure} /images/utl-getinputs-nls.png
-:align: center
-:width: 50%
-```
+![](/images/utl-getinputs-nls.png){width=50%, align=center}
 
 The `fields` argument to the `getInputs` method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,
 
@@ -133,7 +124,4 @@ The following figure shows the dialog box that appears when this script is execu
 
 (utl-getwarningreply-nls)=
 
-```{figure} /images/utl-getwarningreply-nls.png
-:align: center
-:width: 50%
-```
+![](/images/utl-getwarningreply-nls.png){width=50%, align=center}
