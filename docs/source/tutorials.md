@@ -4,7 +4,7 @@
 The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you must write codes that are compatible with Python 2 and Python 3.
 ```
 
-For more examples, check [](/examples/index.md).
+For more examples, check [](examples/index.md).
 
 Usually in Abaqus, we have several things to do:
 
