@@ -35,7 +35,7 @@ The example model described in the following is simple, there is a square struct
 
 Usually, when we use Python script to build the model, we need to import the following modules:
 
-```Python
+```python
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
@@ -43,7 +43,7 @@ from driverUtils import *
 
 Module `abaqus` contains two most important variable `mdb` and `session` which control the model. Module `abaqusConstants` contains constant strings used in modelling, i.e., when we defines a part using the following code:
 
-```Python
+```python
 mdb.models['Model-1'].Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
 ```
 
@@ -51,7 +51,7 @@ mdb.models['Model-1'].Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_
 
 Module `driverUtils` contains an important function `executeOnCaeStartup`, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script. Now, the header of our Python script would be like:
 
-```Python
+```python
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
@@ -63,7 +63,7 @@ executeOnCaeStartup()
 
 First we need to create a sketch that will be used to create the part, we need to use {py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to create a sketch:
 
-```Python
+```python
 model = mdb.models['Model-1']
 sketch = model.ConstrainedSketch(name='sketch', sheetSize=1.0)
 sketch.rectangle((0, 0), (1, 1))
@@ -71,7 +71,7 @@ sketch.rectangle((0, 0), (1, 1))
 
 In this code, we draw a sketch with a square. Now we can create a part using this sketch:
 
-```Python
+```python
 part = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
 part.BaseSolidExtrude(sketch=sketch, depth=1)
 ```
@@ -84,7 +84,7 @@ Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to crea
 
 We can use {py:meth}`~abaqus.Region.RegionPart.RegionPart.Set` and {py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and surfaces:
 
-```Python
+```python
 part.Set(name='set-all', cells=part.cells.findAt(coordinates=((0.5, 0.5, 0.5), )))
 part.Set(name='set-bottom', faces=part.faces.findAt(coordinates=((0.5, 0.5, 0.0), )))
 part.Set(name='set-top', faces=part.faces.findAt(coordinates=((0.5, 0.5, 1.0), )))
@@ -96,7 +96,7 @@ part.Surface(name='surface-top',
 
 We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances：
 
-```Python
+```python
 model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
 ```
 
@@ -104,20 +104,20 @@ model.rootAssembly.Instance(name='instance', part=part, dependent=ON)
 
 First we create a Material object using {py:meth}`~abaqus.Material.MaterialModel.MaterialModel.Material`:
 
-```Python
+```python
 material = model.Material(name='material')
 ```
 
 Then we assign some properties to the Material object, i.e., {py:meth}`~abaqus.Material.Material.Material.Elastic` and {py:meth}`~abaqus.Material.Material.Material.Density`:
 
-```Python
+```python
 material.Elastic(table=((1000, 0.2), ))
 material.Density(table=((2500, ), ))
 ```
 
 Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the section to the part region ({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):
 
-```Python
+```python
 model.HomogeneousSolidSection(name='section', material='material', thickness=None)
 part.SectionAssignment(region=part.sets['set-all'], sectionName='section')
 ```
@@ -126,7 +126,7 @@ part.SectionAssignment(region=part.sets['set-all'], sectionName='section')
 
 It is easy to create a {py:meth}`~abaqus.Step.StepModel.StepModel.StaticStep`:
 
-```Python
+```python
 step = model.StaticStep(name='Step-1', previous='Initial', description='',
                         timePeriod=1.0, timeIncrementationMethod=AUTOMATIC,
                         maxNumInc=100, initialInc=0.01, minInc=0.001, maxInc=0.1)
@@ -136,7 +136,7 @@ step = model.StaticStep(name='Step-1', previous='Initial', description='',
 
 We can use the {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest` and {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest` to specify field output and history output information.
 
-```Python
+```python
 field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
                                  variables=('S', 'E', 'U'))
 ```
@@ -145,7 +145,7 @@ field = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',
 
 We can use {py:meth}`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC` to create a displacement boundary condition:
 
-```Python
+```python
 bottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']
 bc = model.DisplacementBC(name='BC-1', createStepName='Initial',
                           region=bottom_instance, u3=SET)
@@ -157,7 +157,7 @@ It should be noted that region of the boundary condition should be a region of t
 
 We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create a pressure:
 
-```Python
+```python
 top_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']
 pressure = model.Pressure('pressure', createStepName='Step-1', region=top_instance,
                           magnitude=100)
@@ -167,7 +167,7 @@ pressure = model.Pressure('pressure', createStepName='Step-1', region=top_instan
 
 To mesh the model, we have to set the {py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh` module, so we need to import `mesh` module:
 
-```Python
+```python
 import mesh
 
 elem1 = mesh.ElemType(elemCode=C3D8R)
@@ -182,19 +182,19 @@ part.generateMesh()
 
 We can use {py:meth}`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:
 
-```Python
+```python
 job = mdb.Job(name='Job-1', model='Model-1')
 ```
 
 Then we can write the model to an input file (`.inp`):
 
-```Python
+```python
 job.writeInput()
 ```
 
 Then we can submit the job:
 
-```Python
+```python
 job.submit()
 job.waitForCompletion()
 ```
@@ -203,7 +203,7 @@ job.waitForCompletion()
 
 We can use {py:class}`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:
 
-```Python
+```python
 mdb.saveAs('compression.cae')
 ```
 
@@ -211,9 +211,7 @@ mdb.saveAs('compression.cae')
 
 The whole script of this example is showed as follows:
 
-```{code-block} Python
-:caption: compression.py
-
+```python
 from abaqus import *
 from abaqusConstants import *
 from caeModules import *
@@ -297,7 +295,7 @@ If we want to extract the output data, we have to write an output script.
 
 Similarly, we have to import some modules:
 
-```Python
+```python
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
@@ -309,7 +307,7 @@ executeOnCaeStartup()
 
 We can use {py:meth}`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:
 
-```Python
+```python
 import visualization
 odb = session.openOdb('Job-1.odb')
 session.viewports['Viewport: 1'].setValues(displayedObject=odb)
@@ -319,7 +317,7 @@ session.viewports['Viewport: 1'].setValues(displayedObject=odb)
 
 We can use the {py:meth}`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:
 
-```Python
+```python
 dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL,
                                        variable=(('U', NODAL, ((COMPONENT, 'U3'),)),),
                                        nodeSets=('INSTANCE.SET-TOP', ))
@@ -327,7 +325,7 @@ dataList = session.xyDataListFromField(odb=odb, outputPosition=NODAL,
 
 `dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):
 
-```Python
+```python
 import numpy as np
 
 data = np.array(dataList[0])
@@ -352,9 +350,7 @@ The distribution of the vertical displacement of a point in the top surface is s
 
 The whole output script of this example is showed as follows:
 
-```{code-block} Python
-:caption: compression-output.py
-
+```python
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
