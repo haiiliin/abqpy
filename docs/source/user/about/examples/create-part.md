@@ -15,7 +15,7 @@ The script does the following:
 - Creates a new viewport.
 - Displays a shaded image of the new part in the new viewport.
 
-The new viewport and the shaded part are shown in {numref}`cmd-int-aexample-nls`.
+The new viewport and the shaded part are shown in [](#cmd-int-aexample-nls).
 
 (cmd-int-aexample-nls)=
 
@@ -119,7 +119,7 @@ import part
 
 These statements provide access to the objects related to sketches and parts. sketch and part are called Python modules.
 
-The next statement in the script is shown in {numref}`cmd-righttoleft-nls`. You can read this statement from right to left as follows:
+The next statement in the script is shown in [](#cmd-righttoleft-nls). You can read this statement from right to left as follows:
 
 1. Create a new model named Model A.
 2. Store the new model in the model database mdb.

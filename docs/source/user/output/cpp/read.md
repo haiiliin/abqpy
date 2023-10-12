@@ -617,7 +617,7 @@ History output is output defined for a single point or for values calculated for
 History data from an analysis cannot contain multiple points.
 ```
 
-The history data object model is shown in {numref}`odb-history-nls-3`.
+The history data object model is shown in [](#odb-history-nls-3).
 
 (odb-history-nls-3)=
 

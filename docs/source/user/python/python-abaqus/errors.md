@@ -56,7 +56,7 @@ Each command in the [](/reference/index.md) lists the standard Abaqus Scripting 
 - The exception type.
 - The exception message.
 
-For example, {numref}`cmd-int-exception-nls` shows the layout of a typical exception description in the online documentation.
+For example, [](#cmd-int-exception-nls) shows the layout of a typical exception description in the online documentation.
 
 (cmd-int-exception-nls)=
 

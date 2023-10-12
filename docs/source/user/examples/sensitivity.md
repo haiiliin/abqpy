@@ -11,7 +11,7 @@ The problem investigates the effects on the accuracy of the bending moment compu
 - different shell formulations and
 - at different angles.
 
-{numref}`cmd-skew-dim` illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
+[](#cmd-skew-dim) illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.
 
 ![](/images/exxskew-quadmesh-nls.png){title="A 4 x 4 quadrilateral mesh of the plate.", width=50%, align=center}
 
@@ -95,7 +95,7 @@ The parameterized script changes the skew angle of the plate and computes the ma
 1. Return to the Part module.
 2. From the main menu bar, select **Feature -> Edit** and select the plate to edit.
 3. From the **Edit Feature** dialog box, select **Edit Section Sketch**.
-4. From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in {numref}`cmd-skew-dim`
+4. From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in [](#cmd-skew-dim)
 
 (cmd-skew-dim)=
 

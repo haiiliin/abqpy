@@ -19,7 +19,7 @@ The script does the following:
 - Selects the von Mises invariant of deltaStress as the default field output variable.
 - Plots a contour plot of the result.
 
-The resulting contour plot is shown in {numref}`cmd-super`.
+The resulting contour plot is shown in [](#cmd-super).
 
 (cmd-super)=
 

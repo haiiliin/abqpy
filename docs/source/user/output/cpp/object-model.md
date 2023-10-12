@@ -2,7 +2,7 @@
 
 You need to understand the object model for the output database both to read data from it and to write data to it. An object model describes the relationship between objects. The object model for the Abaqus/CAE model is described in [](/user/python/use-scripts/object-model.md).
 
-For example, consider the object model for field output data shown in {numref}`odb-overview-nls-1` The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.
+For example, consider the object model for field output data shown in [](#odb-overview-nls-1) The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.
 
 (odb-overview-nls-1)=
 

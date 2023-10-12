@@ -997,7 +997,7 @@ Use the following command to create the corresponding output database:
 abaqus job=singleTriangularElementModel
 ```
 
-The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in {numref}`cmd-odb-api-acousticviz`
+The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in [](#cmd-odb-api-acousticviz)
 
 (cmd-odb-api-acousticviz)=
 

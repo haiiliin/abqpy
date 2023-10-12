@@ -69,7 +69,7 @@ Abaqus does not write all the model data to the output database; for example, yo
 
   Interaction properties define the physical behavior of surfaces involved in an interaction. Only tangential friction behavior is written to the output database.
 
-{numref}`odb-model-nls` shows the model data object model.
+[](#odb-model-nls) shows the model data object model.
 
 (odb-model-nls)=
 
@@ -180,7 +180,7 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
 - **Field output**
 
-  Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an **X - Y** data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. {numref}`odb-field-nls` shows the field output data object model within an output database.
+  Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an **X - Y** data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. [](#odb-field-nls) shows the field output data object model within an output database.
 
   (odb-field-nls)=
 
@@ -197,7 +197,7 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
   - a region
   - the whole model
 
-  The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. {numref}`odb-history-nls` shows the history output data object model within an output database.
+  The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. [](#odb-history-nls) shows the history output data object model within an output database.
 
   % odb-history-nls:
 

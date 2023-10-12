@@ -1,6 +1,6 @@
 # Namespace
 
-Namespace is an important concept for the Abaqus Scripting Interface programmer. A namespace can be thought of as a program execution environment, and namespaces are independent of each other. Namespaces prevent conflict between variable names. You can use the same variable name to refer to different objects in different name spaces. {numref}`acl-all-schematic-nls-2` illustrates how commands interact with the Abaqus/CAE kernel.
+Namespace is an important concept for the Abaqus Scripting Interface programmer. A namespace can be thought of as a program execution environment, and namespaces are independent of each other. Namespaces prevent conflict between variable names. You can use the same variable name to refer to different objects in different name spaces. [](#acl-all-schematic-nls-2) illustrates how commands interact with the Abaqus/CAE kernel.
 
 (acl-all-schematic-nls-2)=
 
