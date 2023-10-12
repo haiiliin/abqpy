@@ -621,7 +621,7 @@ The history data object model is shown in [](#odb-history-nls-3).
 
 (odb-history-nls-3)=
 
-![](/images/odb-history-nls.png){title="The history data object model.", width=100%, align=center}
+![](../../../images/odb-history-nls.png){title="The history data object model.", width=100%, align=center}
 
 In contrast to field output, which is associated with a frame, history output is associated with a step. History output data are stored in the historyRegions repository under an OdbStep object. Abaqus creates keys to the historyRegions repository that describe the region; for example,
 

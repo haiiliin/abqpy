@@ -55,7 +55,7 @@ The debugger consists of a call stack area, action buttons, and the debugger com
 
 (cmd-pde-debugger-nls)=
 
-![](/images/cmd-pde-debugger-nls.png){title="The Abaqus PDE debugger.", width=100%, align=center}
+![](../../images/cmd-pde-debugger-nls.png){title="The Abaqus PDE debugger.", width=100%, align=center}
 
 The debugger uses a custom Python module named atxPdb, based on the Python pdb module. You can enter Pdb commands in the debugger CLI; you can also enter any Python statements in the debugger CLI. Python statements are executed in the same process—GUI, kernel, or local—that is running the current script (for more information, see [running a script]).
 

@@ -4,7 +4,7 @@
 
 (acl-all-schematic-nls-1)=
 
-![](/images/acl-all-schematic-nls.png){title="Abaqus Scripting Interface commands and Abaqus/CAE.", width=50%, align=center}
+![](../../images/acl-all-schematic-nls.png){title="Abaqus Scripting Interface commands and Abaqus/CAE.", width=50%, align=center}
 
 The Abaqus Scripting Interface allows you to bypass the Abaqus/CAE GUI and communicate directly with the kernel. A file containing Abaqus Scripting Interface commands is called a script. You can use scripts to do the following:
 

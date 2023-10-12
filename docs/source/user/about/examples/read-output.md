@@ -23,7 +23,7 @@ The resulting contour plot is shown in [](#cmd-super).
 
 (cmd-super)=
 
-![](/images/cmd-super.png){title="The resulting contour plot.", width=100%, align=center}
+![](../../../images/cmd-super.png){title="The resulting contour plot.", width=100%, align=center}
 
 Use the following commands to retrieve the script and the output database that is read by the script:
 

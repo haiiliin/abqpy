@@ -60,7 +60,7 @@ For example, [](#cmd-int-exception-nls) shows the layout of a typical exception 
 
 (cmd-int-exception-nls)=
 
-![](/images/cmd-int-exception-nls.png){title="The layout of a typical exception description in the online documentation.", width=50%, align=center}
+![](../../../images/cmd-int-exception-nls.png){title="The layout of a typical exception description in the online documentation.", width=50%, align=center}
 
 You use the exception type in your error handling routines.
 

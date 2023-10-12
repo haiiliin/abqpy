@@ -6,7 +6,7 @@ For example, consider the object model for field output data shown in [](#odb-ov
 
 (odb-overview-nls)=
 
-![](/images/odb-overview-nls.png){title="The output database object model.", width=100%, align=center}
+![](../../../images/odb-overview-nls.png){title="The output database object model.", width=100%, align=center}
 
 The object model translates directly to the structure of an Abaqus Scripting Interface command. For example, the following command refers to a Frame object in the sequence of frames contained in an OdbStep object:
 

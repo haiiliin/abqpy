@@ -1001,7 +1001,7 @@ The results from running the script twice using the single triangular-element mo
 
 (cmd-odb-api-acousticviz)=
 
-![](/images/cmd-odb-api-acousticviz.png){title="Displaying the acoustic pressure on several spheres.", width=50%, align=center}
+![](../../../images/cmd-odb-api-acousticviz.png){title="Displaying the acoustic pressure on several spheres.", width=50%, align=center}
 
 This model simulates the response of a sphere in "breathing" mode (a uniform radial expansion/compression mode). The model consists of one triangular ACIN3D3 element. Each node of the element is placed on a coordinate axis at a distance of $1.0$ from the origin that serves as the reference point for the infinite element. The acoustic material properties do not have physical significance; the values used are for convenience only. The loading consists of applying an in-phase pressure boundary condition to all the nodes. Under this loading and geometry, the model behaves as a spherical source (an acoustic monopole) radiating in the radial direction only. The acoustic pressure, $p$, and the acoustic far-field pressure, $p_{F A R}$, at a distance $r$ from the center of the sphere are
 

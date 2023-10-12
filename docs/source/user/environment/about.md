@@ -8,7 +8,7 @@ It is intended primarily for use with scripts that use the Abaqus/CAE graphical 
 
 (cmd-pde-nls)=
 
-![](/images/cmd-pde-nls.png){title="The Abaqus PDE.", width=100%, align=center}
+![](../../images/cmd-pde-nls.png){title="The Abaqus PDE.", width=100%, align=center}
 
 The PDE controls allow you to complete the following tasks:
 

@@ -6,7 +6,7 @@ For example, consider the case where the user is creating an elastic material an
 
 (cmd-int-table-editor-nls)=
 
-![](/images/cmd-int-table-editor-nls.png){width=50%, align=center}
+![](../../../images/cmd-int-table-editor-nls.png){width=50%, align=center}
 
 The equivalent Abaqus Scripting Interface command is
 

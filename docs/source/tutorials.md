@@ -338,13 +338,13 @@ The distribution of `U3` of above model is showed as follows:
 
 (output)=
 
-![](/images/output.png){width=70%, align=center}
+![](images/output.png){width=70%, align=center}
 
 The distribution of the vertical displacement of a point in the top surface is showed as follows:
 
 (compression)=
 
-![](/images/compression.png){width=70%, align=center}
+![](images/compression.png){width=70%, align=center}
 
 ### The whole output script
 
