@@ -199,6 +199,6 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
 
   The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. [](#odb-history-nls) shows the history output data object model within an output database.
 
-  % odb-history-nls:
+  (odb-history-nls)=
 
   ![](../../../images/odb-history-nls.png){title="The history output data.", width=100%, align=center}
