@@ -161,7 +161,7 @@ The following list describes the objects in model data and the commands you use 
               print("smoothing type : ", biaxialTestData.smoothing)
   ```
 
-  {doc}`/reference/mdb/model/material` describes the Material object commands in more detail.
+  [](/reference/mdb/model/material.md) describes the Material object commands in more detail.
 
 - **Sections**
 

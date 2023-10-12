@@ -43,7 +43,7 @@ odb_Odb& odb = openOdb("viewer_tutorial.odb");
 
 After you open the output database, you can access its contents using the methods and members of the Odb object returned by the `openOdb` method. In the above example the Odb object is referred to by the variable `odb`. For a full description of the `openOdb` command, see {func}`~odbAccess.openOdb`.
 
-The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find it useful to use the repository iterators to determine the keys of the repositories. For more information on repositories and sequences, see {doc}`utility`.
+The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find it useful to use the repository iterators to determine the keys of the repositories. For more information on repositories and sequences, see [](utility.md).
 
 - **The root assembly**
 
@@ -281,7 +281,7 @@ The following list describes the objects in model data and the commands you use 
   }
   ```
 
-  {doc}`/reference/mdb/model/material` describes the Material object commands in more detail; the odb_Union object is defined in [Union object](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-infunioncpp.htm?contextscope=all).
+  [](/reference/mdb/model/material.md) describes the Material object commands in more detail; the odb_Union object is defined in [Union object](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-infunioncpp.htm?contextscope=all).
 
 - **Sections**
 

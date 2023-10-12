@@ -365,7 +365,7 @@ except ValueError as error:
     print(error)
 ```
 
-Exception handling is discussed in more detail in Error handling in the {doc}`/reference/index`.
+Exception handling is discussed in more detail in Error handling in the [](/reference/index.md).
 
 (functions-and-modules)=
 

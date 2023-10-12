@@ -25,7 +25,7 @@ mdb.models["Model-1"].materials["steel"].Elastic(
 )
 ```
 
-The `table` argument is described in the {doc}`/reference/index` as a sequence of sequences of Floats.
+The `table` argument is described in the [](/reference/index.md) as a sequence of sequences of Floats.
 
 Lists, tuples, strings, and arrays are described in Sequences. In addition, the Abaqus Scripting Interface defines some of its own sequences that contain objects of the same type.
 

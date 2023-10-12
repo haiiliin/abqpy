@@ -43,7 +43,7 @@ The following naming rules apply:
 
 When you assign a variable in a Python program, the variable refers to a Python object, but the variable is not an object itself. For example, the expression numSpokes=3 creates a variable that refers to an integer object; however, numSpokes is not an object. You can change the object to which a variable refers. numSpokes can refer to a real number on one line, an integer on the next line, and a viewport on the next line.
 
-The first example script in {doc}`/user/about/examples/create-part` created a model using the following statement:
+The first example script in [](/user/about/examples/create-part.md) created a model using the following statement:
 
 ```python
 myModel = mdb.Model(name="Model A")
@@ -491,7 +491,7 @@ None
 
 ## Continuation lines and comments
 
-You can continue a statement on the following line if you break the statement between a set of (), {}, or \[\] delimiters. For example, look at the tuple that was used in {doc}`/user/about/examples/create-part` to assign the coordinates of the vertices to a variable:
+You can continue a statement on the following line if you break the statement between a set of (), {}, or \[\] delimiters. For example, look at the tuple that was used in [](/user/about/examples/create-part.md) to assign the coordinates of the vertices to a variable:
 
 ```python
 xyCoordsOuter = (

@@ -128,8 +128,8 @@ on the top of your script.
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
 [abqpy/examples at main · haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples)
-for some script examples. Or you may go {doc}`/tutorials` for a simple tutorial. For more documentation about
-Abaqus/Python scripting, please check {doc}`/reference/index` for more detailed API references.
+for some script examples. Or you may go [](/tutorials.md) for a simple tutorial. For more documentation about
+Abaqus/Python scripting, please check [](/reference/index.md) for more detailed API references.
 
 ## Setup your Abaqus Environment
 
@@ -154,7 +154,7 @@ Now you can run your Abaqus/Python script with the following methods:
   [python -m] abqpy cae script.py
   ```
   The advantage using `abqpy` command instead of using `abaqus` command directly is that you are able to customize the
-  default python launch command. See {doc}`cli` for more information about the `abqpy` command.
+  default python launch command. See [](cli.md) for more information about the `abqpy` command.
 - Use the Python 3 interpreter to run the script directly:
   ```sh
   python script.py

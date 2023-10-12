@@ -51,7 +51,7 @@ The following interface classes are provided:
   - `odb_StepRepository`
   - `odb_InstanceRepository`
 
-More detail on these interface utility objects can be found in {doc}`/reference/odb`.
+More detail on these interface utility objects can be found in [](/reference/odb.md).
 
 ## Utility interface examples
 

@@ -32,5 +32,5 @@ The PDE controls allow you to complete the following tasks:
 
 The following sections contain detailed information about each of the functions in the PDE:
 
-- {doc}`pde-basics`
-- {doc}`use-pde`
+- [](pde-basics.md)
+- [](use-pde.md)

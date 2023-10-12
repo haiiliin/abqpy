@@ -120,7 +120,7 @@ To define the geometry of your model, you first create the parts that are used b
   const odb_Set& nSetRA = rootAssy.NodeSet("nodeSetRA", namesRA, nodeLabelsRA);
   ```
 
-  The region commands are described in {doc}`/reference/mdb/model/part_assembly/region`.
+  The region commands are described in [](/reference/mdb/model/part_assembly/region.md).
 
 - **Materials**
 
@@ -149,7 +149,7 @@ To define the geometry of your model, you first create the parts that are used b
   material.Elastic(myTable, type);
   ```
 
-  For more information, see {doc}`/reference/mdb/model/material`.
+  For more information, see [](/reference/mdb/model/material.md).
 
 - **Sections**
 

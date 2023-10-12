@@ -32,7 +32,7 @@ However, there are other execution procedures that can be run with the `abaqus`
 command and also another options that could be passed to these commands. To supply
 that procedures and options, `abqpy` provides two alternatives. One of them is a
 separate **command line interface** (another alternative is to use an
-{doc}`System Environment Variable <envvars>`).
+[System Environment Variable](envvars.md)).
 
 Currently, `abqpy` command line interface provides several execution modes: **Abaqus/CAE
 Execution** mode and **Abaqus Python Execution** mode, and more:
