@@ -39,7 +39,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -m "Delete conflicted deleted files by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a || true
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref }}
