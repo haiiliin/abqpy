@@ -36,7 +36,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#abaqus-bat-path">
+<a class="md-skip" href="#envvar-ABAQUS_BAT_PATH">
           Skip to content
         </a>
 </div>
@@ -227,13 +227,13 @@
 </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-bat-path">
-<span class="md-ellipsis">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-command-options">
-<span class="md-ellipsis">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -357,13 +357,13 @@
 </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-bat-path">
-<span class="md-ellipsis">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-command-options">
-<span class="md-ellipsis">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -387,12 +387,18 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this heading">¶</a></h1>
-<h2 id="abaqus-bat-path"><code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code><a class="headerlink" href="#abaqus-bat-path" title="Permalink to this heading">¶</a></h2>
-<p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
+<p>The following environment variables can be used to configure the package.</p>
+<dl class="std envvar objdesc">
+<dt class="sig sig-object highlight std" id="envvar-ABAQUS_BAT_PATH">
+<span class="sig-name descname"><span class="pre">ABAQUS_BAT_PATH</span></span><a class="headerlink" href="#envvar-ABAQUS_BAT_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
 the default Abaqus command line executable. This variable is used by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> to run the Abaqus command line
 procedure inside the Python interpreter environment where it is installed.</p>
-<h2 id="abaqus-command-options"><code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code><a class="headerlink" href="#abaqus-command-options" title="Permalink to this heading">¶</a></h2>
-<p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
+</dd></dl>
+<dl class="std envvar objdesc">
+<dt class="sig sig-object highlight std" id="envvar-ABAQUS_COMMAND_OPTIONS">
+<span class="sig-name descname"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
 environment where it is installed is to run one of the two following command lines:</p>
 <ol class="arabic">
 <li><p>When there is a <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">abaqus</span></code> or <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">...</span></code> statement:</p>
@@ -442,6 +448,7 @@ strings, e.g.: <code class="docutils literal notranslate"><span class="pre">{'no
 </li>
 </ol>
 <p>One advantage in using this alternative is to change the options at run time inside the code.</p>
+</dd></dl>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
 <p>The snippet bellow changes the default procedure options before calling
 abaqus cae command procedure, at run time.</p>
