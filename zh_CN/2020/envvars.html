@@ -36,7 +36,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#abaqus-bat-path">
+<a class="md-skip" href="#envvar-ABAQUS_BAT_PATH">
           跳转至
         </a>
 </div>
@@ -227,13 +227,13 @@
 </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-bat-path">
-<span class="md-ellipsis">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
+<span aria-label="环境变量" class="objinfo-icon objinfo-icon__alias" title="环境变量">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (环境变量) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-command-options">
-<span class="md-ellipsis">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
+<span aria-label="环境变量" class="objinfo-icon objinfo-icon__alias" title="环境变量">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (环境变量) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -357,13 +357,13 @@
 </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-bat-path">
-<span class="md-ellipsis">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
+<span aria-label="环境变量" class="objinfo-icon objinfo-icon__alias" title="环境变量">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (环境变量) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#abaqus-command-options">
-<span class="md-ellipsis">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
+<span aria-label="环境变量" class="objinfo-icon objinfo-icon__alias" title="环境变量">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (环境变量) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -387,10 +387,16 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="environment-variables">环境变量<a class="headerlink" href="#environment-variables" title="此标题的永久链接">¶</a></h1>
-<h2 id="abaqus-bat-path"><code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code><a class="headerlink" href="#abaqus-bat-path" title="此标题的永久链接">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令行批处理文件的文件路径 (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>)。 仅在 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 不是默认的 Abaqus 命令行可执行文件时设置此环境变量。 此变量被用于在安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 的 Python 解释器环境中运行 Abaqus 命令行程序。</p>
-<h2 id="abaqus-command-options"><code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code><a class="headerlink" href="#abaqus-command-options" title="此标题的永久链接">¶</a></h2>
-<p>在 Python 环境中使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 默认将运行以下两个命令之一：</p>
+<p>The following environment variables can be used to configure the package.</p>
+<dl class="std envvar objdesc">
+<dt class="sig sig-object highlight std" id="envvar-ABAQUS_BAT_PATH">
+<span class="sig-name descname"><span class="pre">ABAQUS_BAT_PATH</span></span><a class="headerlink" href="#envvar-ABAQUS_BAT_PATH" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令行批处理文件的文件路径 (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>)。 仅在 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 不是默认的 Abaqus 命令行可执行文件时设置此环境变量。 此变量被用于在安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 的 Python 解释器环境中运行 Abaqus 命令行程序。</p>
+</dd></dl>
+<dl class="std envvar objdesc">
+<dt class="sig sig-object highlight std" id="envvar-ABAQUS_COMMAND_OPTIONS">
+<span class="sig-name descname"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="永久链接至目标">¶</a></dt>
+<dd><p>在 Python 环境中使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 默认将运行以下两个命令之一：</p>
 <ol class="arabic">
 <li><p>当存在 <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">abaqus</span></code> 或 <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">...</span></code> 语句时：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">noGUI</span><span class="o">=</span>script.py<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
@@ -434,6 +440,7 @@
 </li>
 </ol>
 <p>使用此方案的一个优点是在代码内的运行时更改选项。</p>
+</dd></dl>
 <h2 id="example">示例<a class="headerlink" href="#example" title="此标题的永久链接">¶</a></h2>
 <p>下面的代码片段在运行时更改了调用 abaqus cae 命令的默认选项。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/os.html#module-os" title="os"><span class="nn">os</span></a>
