@@ -210,151 +210,92 @@ StandaloneHTMLBuilder.supported_image_types = ["image/svg+xml", "image/gif", "im
 
 # -- Options for HTML output -------------------------------------------------
 
-# Get the sphinx theme from the branch name
-default_theme = "sphinx_immaterial"
-html_themes = {
-    "sphinx-rtd-theme": "sphinx_rtd_theme",
-    "sphinx-book-theme": "sphinx_book_theme",
-    "furo": "furo",
-}
-try:
-    import git
-
-    branch = git.repo.Repo("../../").active_branch.name
-except Exception:
-    branch = "2023"
-    if os.environ.get("READTHEDOCS_VERSION_TYPE", None) == "branch":
-        branch = os.environ.get("READTHEDOCS_VERSION_NAME", "2023")
-
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = os.environ.get("SPHINX_THEME", None) or html_themes.get(branch, default_theme)
+html_theme = "sphinx_immaterial"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-if html_theme == "sphinx_book_theme":
-    html_theme_options = {
-        "repository_url": "https://github.com/haiiliin/abqpy",
-        "use_source_button": True,
-        "path_to_docs": "docs/source",
-        "repository_branch": branch,
-        "use_edit_page_button": True,
-        "use_repository_button": True,
-        "use_issues_button": True,
-    }
-elif html_theme == "sphinx_rtd_theme":
-    html_theme_options = {}
-
-    html_context = dict(display_lower_left=True)
-    REPO_NAME = os.environ.get("REPO_NAME", "abqpy")
-    current_language = language
-    html_context["current_language"] = current_language
-    current_version = os.environ.get("VERSION", branch)
-    html_context["current_version"] = html_context["version"] = current_version
-    html_context["language_alias"] = {
-        "en": "English",
-        "zh_CN": "简体中文",
-    }
-    html_context["languages"] = [(lang, f"/{REPO_NAME}/{lang}/{current_version}/")
-                                 for lang in ("en", "zh_CN")]  # fmt: skip
-    branches = [str(v) for v in range(2023, 2015, -1)]
-    branches += ["sphinx-book-theme", "furo"]
-    html_context['versions'] = [(ver, f'/{REPO_NAME}/{current_language}/{ver}/')
-                                for ver in [branch for branch in branches]]  # fmt: skip
-    html_context["downloads"] = [
-        (
-            fmt,
-            f"/{REPO_NAME}/{current_language}/{current_version}/{project}-docs-{current_language}-{current_version}.{fmt}",
-        )
-        for fmt in ("pdf", "epub")
-    ]
-
-    html_sidebars = {
-        "*": ["versions.html"],
-    }
-elif html_theme == "furo":
-    html_theme_options = {}
-elif html_theme == "sphinx_immaterial":
-    READTHEDOCS = "READTHEDOCS" in os.environ
-    versions = [str(v) for v in range(2023, 2015, -1)]
-    with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
-        edit_urls = json.load(f)
-    html_theme_options = {
-        "icon": {
-            "repo": "fontawesome/brands/github",
-            "edit": "material/file-edit-outline",
+READTHEDOCS = "READTHEDOCS" in os.environ
+versions = [str(v) for v in range(2023, 2015, -1)]
+with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
+    edit_urls = json.load(f)
+html_theme_options = {
+    "icon": {
+        "repo": "fontawesome/brands/github",
+        "edit": "material/file-edit-outline",
+    },
+    "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
+    "repo_url": "https://github.com/haiiliin/abqpy/",
+    "repo_name": "abqpy",
+    "edit_uri": f"edit/{major}/docs/source",
+    "edit_url_pages": edit_urls[f"{major}"].get(language, {}),
+    "globaltoc_collapse": True,
+    "features": [
+        "navigation.expand",
+        "navigation.tabs",
+        # "toc.integrate",
+        "navigation.sections",
+        # "navigation.instant",
+        # "header.autohide",
+        "navigation.top",
+        # "navigation.tracking",
+        # "search.highlight",
+        "search.share",
+        "toc.follow",
+        "toc.sticky",
+        "content.tabs.link",
+        "announce.dismiss",
+    ],
+    "palette": [
+        {
+            "media": "(prefers-color-scheme: light)",
+            "scheme": "default",
+            "toggle": {
+                "icon": "material/brightness-7",
+                "name": "Switch to dark mode",
+            },
         },
-        "site_url": "https://abqpy.readthedocs.io/" if READTHEDOCS else "https://haiiliin.github.io/abqpy/",
-        "repo_url": "https://github.com/haiiliin/abqpy/",
-        "repo_name": "abqpy",
-        "edit_uri": f"edit/{major}/docs/source",
-        "edit_url_pages": edit_urls[f"{major}"].get(language, {}),
-        "globaltoc_collapse": True,
-        "features": [
-            "navigation.expand",
-            "navigation.tabs",
-            # "toc.integrate",
-            "navigation.sections",
-            # "navigation.instant",
-            # "header.autohide",
-            "navigation.top",
-            # "navigation.tracking",
-            # "search.highlight",
-            "search.share",
-            "toc.follow",
-            "toc.sticky",
-            "content.tabs.link",
-            "announce.dismiss",
-        ],
-        "palette": [
-            {
-                "media": "(prefers-color-scheme: light)",
-                "scheme": "default",
-                "toggle": {
-                    "icon": "material/brightness-7",
-                    "name": "Switch to dark mode",
-                },
+        {
+            "media": "(prefers-color-scheme: dark)",
+            "scheme": "slate",
+            "toggle": {
+                "icon": "material/brightness-4",
+                "name": "Switch to light mode",
             },
-            {
-                "media": "(prefers-color-scheme: dark)",
-                "scheme": "slate",
-                "toggle": {
-                    "icon": "material/brightness-4",
-                    "name": "Switch to light mode",
-                },
-            },
-        ],
-        # BEGIN: version_dropdown
-        "version_dropdown": True,
-        "version_info": [
-            {
-                "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
-                "title": ver,
-                "aliases": [],
-            }
-            for ver in versions
-        ],
-        # END: version_dropdown
-        "languages": [
-            {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
-            for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
-        ],
-        "toc_title_is_page_title": True,
-        # BEGIN: social icons
-        "social": [
-            {
-                "icon": "fontawesome/brands/github",
-                "link": "https://github.com/haiiliin/abqpy",
-                "name": "Source on github.com",
-            },
-            {
-                "icon": "fontawesome/brands/python",
-                "link": "https://pypi.org/project/abqpy",
-            },
-        ],
-        # END: social icons
-    }
+        },
+    ],
+    # BEGIN: version_dropdown
+    "version_dropdown": True,
+    "version_info": [
+        {
+            "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
+            "title": ver,
+            "aliases": [],
+        }
+        for ver in versions
+    ],
+    # END: version_dropdown
+    "languages": [
+        {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
+        for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
+    ],
+    "toc_title_is_page_title": True,
+    # BEGIN: social icons
+    "social": [
+        {
+            "icon": "fontawesome/brands/github",
+            "link": "https://github.com/haiiliin/abqpy",
+            "name": "Source on github.com",
+        },
+        {
+            "icon": "fontawesome/brands/python",
+            "link": "https://pypi.org/project/abqpy",
+        },
+    ],
+    # END: social icons
+}
 
 # Logo
 # html_logo = "_static/3ds-dark.svg"
