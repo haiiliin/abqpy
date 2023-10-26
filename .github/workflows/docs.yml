@@ -41,7 +41,7 @@ jobs:
           elif [ "${{ github.event_name }}" = "pull_request" ]; then
             echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
             echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.ref_name }}" = "2023" ]; then
+          elif [ "${{ github.event_name }}" = "push" ]; then
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=latest" >> $GITHUB_OUTPUT
           else
