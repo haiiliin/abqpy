@@ -6,9 +6,6 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))
-defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
-
 
 class AbaqusCAEConfig(BaseModel):
     database: Optional[str] = None
@@ -38,6 +35,8 @@ class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig):
     ...
 
 
+defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))
+defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
 options = AbaqusCommandOptions(**defaults)
 
 
