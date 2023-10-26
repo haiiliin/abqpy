@@ -3,8 +3,7 @@ name: docs
 on:
   push:
     branches:
-      - 20**
-      - furo
+      - "2023"
     paths:
       - "src/**"
       - "docs/source/**"
@@ -13,13 +12,13 @@ on:
   pull_request:
     branches:
       - "2023"
-    types: [opened, reopened, synchronize]
     paths:
       - "src/**"
       - "docs/source/**"
       - "examples/**"
       - ".github/workflows/docs.yml"
-  workflow_dispatch:
+  release:
+    types: [published]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -27,19 +26,39 @@ concurrency:
 
 env:
   REPO_NAME: ${{ github.event.repository.name }}
-  VERSION: ${{ github.event_name != 'pull_request' && github.ref_name || github.head_ref }}
 
 jobs:
+  branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the version
+        id: branch
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            echo "branch=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
+            echo "publish=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "publish=latest" >> $GITHUB_OUTPUT
+          else
+            echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
+            echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          fi
+    outputs:
+      branch: ${{ steps.branch.outputs.branch }}
+      publish: ${{ steps.branch.outputs.publish }}
+
   sphinx:
+    needs: branch
     runs-on: ubuntu-latest
     strategy:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_immaterial"]
     env:
-      SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
+      VERSION: ${{ needs.branch.outputs.branch }}
+      PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
       - uses: actions/setup-python@v4
@@ -68,17 +87,17 @@ jobs:
 
   upload:
     if: github.event_name != 'pull_request'
-    needs: sphinx
+    needs: [branch, sphinx]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_immaterial"]
     env:
-      SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
+      VERSION: ${{ needs.branch.outputs.branch }}
+      PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
       - uses: ahmadnassri/action-workflow-queue@v1
@@ -98,5 +117,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          destination_dir: ${{ matrix.language }}/${{ env.VERSION }}
+          destination_dir: ${{ matrix.language }}/${{ env.PUBLISH }}
           keep_files: true
