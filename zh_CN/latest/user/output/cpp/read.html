@@ -1,0 +1,2028 @@
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Reading from an output database - abqpy 2023 文档</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-abaqus-cae-visualization-module-tutorial-output-database" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../index.html" title="abqpy 2023 文档" class="md-header__button md-logo" aria-label="abqpy 2023 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            abqpy 2023 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reading from an output database
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="选择当前语言">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/abqpy/en/2023" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/abqpy/zh_CN/2023" hreflang="zh_CN" class="md-select__link">
+                    简体中文
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/haiiliin/abqpy/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abqpy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../getting_started.html" class="md-tabs__link">
+      <span class="md-ellipsis">用户手册</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../tutorials.html" class="md-tabs__link">
+      <span class="md-ellipsis">教程 &amp; 案例</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../index.html" class="md-tabs__link md-tabs__link--active">
+      <span class="md-ellipsis">参考</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../policy.html" class="md-tabs__link">
+      <span class="md-ellipsis">策略与许可</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="abqpy 2023 文档" class="md-nav__button md-logo" aria-label="abqpy 2023 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    abqpy 2023 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/haiiliin/abqpy/" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    abqpy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">用户手册</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="用户手册" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">用户手册</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started.html" class="md-nav__link">
+        <span class="md-ellipsis">入门指南</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../envvars.html" class="md-nav__link">
+        <span class="md-ellipsis">环境变量</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cli.html" class="md-nav__link">
+        <span class="md-ellipsis">命令行接口</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">教程 &amp; 案例</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="教程 &amp; 案例" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">教程 &amp; 案例</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials.html" class="md-nav__link">
+        <span class="md-ellipsis">教程</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">示例</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">参考</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="参考" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">参考</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../index.html"><span class="md-ellipsis">Abaqus Scripting User’s Guide</span></a>
+          
+            <label for="__nav_3_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Abaqus Scripting User’s Guide" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Abaqus Scripting User’s Guide</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/index.html" class="md-nav__link">
+        <span class="md-ellipsis">About the Abaqus Scripting Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Using the Abaqus Scripting Interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../environment/index.html" class="md-nav__link">
+        <span class="md-ellipsis">The Abaqus Python Development Environment</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Putting it all Together:<wbr> Abaqus Scripting Interface Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_5" type="checkbox" id="__nav_3_1_5" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../index.html"><span class="md-ellipsis">Accessing an Output Database</span></a>
+          
+            <label for="__nav_3_1_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Accessing an Output Database" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Accessing an Output Database</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Using the Abaqus Scripting Interface to access an output database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_5_2" type="checkbox" id="__nav_3_1_5_2" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="index.html"><span class="md-ellipsis">Using C++ to access an output database</span></a>
+          
+            <label for="__nav_3_1_5_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Using C++ to access an output database" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_1_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Using C++ to access an output database</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about.html" class="md-nav__link">
+        <span class="md-ellipsis">About the C++ interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="need-what-access.html" class="md-nav__link">
+        <span class="md-ellipsis">What do you need to access the output database?</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="style.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Scripting Interface documentation style</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="object-model.html" class="md-nav__link">
+        <span class="md-ellipsis">How the object model for the output database relates to commands</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="output-object-model.html" class="md-nav__link">
+        <span class="md-ellipsis">Object model for the output database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="compile-link.html" class="md-nav__link">
+        <span class="md-ellipsis">Compiling and linking your C++ source code</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="access.html" class="md-nav__link">
+        <span class="md-ellipsis">Accessing the C++ interface from an existing application</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture.html" class="md-nav__link">
+        <span class="md-ellipsis">The Abaqus C++ API architecture</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utility.html" class="md-nav__link">
+        <span class="md-ellipsis">Utility interface</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Reading from an output database</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Reading from an output database</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Reading from an output database</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-abaqus-cae-visualization-module-tutorial-output-database" class="md-nav__link">
+    <span class="md-ellipsis">The Abaqus/CAE Visualization module tutorial output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-the-odb-commands-available" class="md-nav__link">
+    <span class="md-ellipsis">Making the Odb commands available</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">Opening an output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-results-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading results data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-field-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading field output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-bulk-data-access-to-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">Using bulk data access to an output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-regions-to-read-a-subset-of-field-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Using regions to read a subset of field output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-history-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading history output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-example-of-reading-field-data-from-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">An example of reading field data from an output database</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="write.html" class="md-nav__link">
+        <span class="md-ellipsis">Writing to an output database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="exceptions.html" class="md-nav__link">
+        <span class="md-ellipsis">Exception handling in an output database</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="computations.html" class="md-nav__link">
+        <span class="md-ellipsis">Computations with Abaqus results</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="improve-efficiency.html" class="md-nav__link">
+        <span class="md-ellipsis">Improving the efficiency of your scripts</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples.html" class="md-nav__link">
+        <span class="md-ellipsis">Example programs that access data from an output database</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus Class References</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CHANGES.html" class="md-nav__link">
+        <span class="md-ellipsis">Abaqus API Changes</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../autoapi/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Abqpy API 参考文档</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../localization.html" class="md-nav__link">
+        <span class="md-ellipsis">文档本地化</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">策略与许可</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="策略与许可" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">策略与许可</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../policy.html" class="md-nav__link">
+        <span class="md-ellipsis">评论策略</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Reading from an output database</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-abaqus-cae-visualization-module-tutorial-output-database" class="md-nav__link">
+    <span class="md-ellipsis">The Abaqus/CAE Visualization module tutorial output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-the-odb-commands-available" class="md-nav__link">
+    <span class="md-ellipsis">Making the Odb commands available</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">Opening an output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-results-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading results data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-field-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading field output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-bulk-data-access-to-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">Using bulk data access to an output database</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-regions-to-read-a-subset-of-field-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Using regions to read a subset of field output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-history-output-data" class="md-nav__link">
+    <span class="md-ellipsis">Reading history output data</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#an-example-of-reading-field-data-from-an-output-database" class="md-nav__link">
+    <span class="md-ellipsis">An example of reading field data from an output database</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+  <a href="https://github.com/haiiliin/abqpy-locale/edit/main/2023/zh_CN/LC_MESSAGES/user/output/cpp/read.po" title="编辑此页" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+  </a>
+
+<h1 id="reading-from-an-output-database">Reading from an output database<a class="headerlink" href="#reading-from-an-output-database" title="此标题的永久链接">¶</a></h1>
+<p>The following sections describe how you use Abaqus C++ API commands to read data from an output database.</p>
+<h2 id="the-abaqus-cae-visualization-module-tutorial-output-database">The Abaqus/CAE Visualization module tutorial output database<a class="headerlink" href="#the-abaqus-cae-visualization-module-tutorial-output-database" title="此标题的永久链接">¶</a></h2>
+<p>The following sections describe how you can access the data in an output database. Examples are included that refer to the Abaqus/CAE Visualization module tutorial output database, <code class="docutils literal notranslate"><span class="pre">viewer_tutorial.odb</span></code>. This database is generated by the input file from Case 2 of the example problem, <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-indentfoamhemipunch.htm?contextscope=all">Indentation of an elastomeric foam specimen with a hemispherical punch</a>. The problem studies the behavior of a soft elastomeric foam block indented by a heavy metal punch. The tutorial shows how you can use the Visualization module to view the data in the output database. The tutorial describes how you can choose the variable to display, how you can step through the steps and frames in the analysis, and how you can create <strong>X - Y</strong> data from history output.</p>
+<p>You are encouraged to copy the tutorial output database to a local directory and experiment with the Abaqus C++ API. The output database and the example scripts from this guide can be copied to the user’s working directory using the <strong>abaqus fetch</strong> utility:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>name
+</code></pre></div>
+</div>
+<p>where <strong>name.C</strong> is the name of the program or <strong>name.odb</strong> is the name of the output database (see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-fetchproc.htm?contextscope=all">Fetching sample input files</a>). For example, use the following command to retrieve the tutorial output database:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewer_tutorial
+</code></pre></div>
+</div>
+<h2 id="making-the-odb-commands-available">Making the Odb commands available<a class="headerlink" href="#making-the-odb-commands-available" title="此标题的永久链接">¶</a></h2>
+<p>To make the Odb commands available to your program, you first need to include the output database interface classes using the following statement:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span>
+</code></pre></div>
+</div>
+<p>To make the material and section Odb commands available to your program, you also need to include their output database classes:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_MaterialTypes.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_SectionTypes.h&gt;</span>
+</code></pre></div>
+</div>
+<h2 id="opening-an-output-database">Opening an output database<a class="headerlink" href="#opening-an-output-database" title="此标题的永久链接">¶</a></h2>
+<p>You use the <code class="docutils literal notranslate"><span class="pre">openOdb</span></code> method to open an existing output database. For example, the following statement opens the output database used by the Abaqus/CAE Visualization module tutorial:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="s">&quot;viewer_tutorial.odb&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>After you open the output database, you can access its contents using the methods and members of the Odb object returned by the <code class="docutils literal notranslate"><span class="pre">openOdb</span></code> method. In the above example the Odb object is referred to by the variable <code class="docutils literal notranslate"><span class="pre">odb</span></code>. For a full description of the <code class="docutils literal notranslate"><span class="pre">openOdb</span></code> command, see <code class="xref py py-func docutils literal notranslate"><span class="pre">openOdb()</span></code>.</p>
+<p>The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find it useful to use the repository iterators to determine the keys of the repositories. For more information on repositories and sequences, see <a class="reference internal" href="utility.html"><span class="doc">Utility interface</span></a>.</p>
+<ul>
+<li><p><strong>The root assembly</strong></p>
+<p>An output database contains only one root assembly. You access the root assembly through the OdbAssembly object.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Assembly</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rootAssy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">();</span>
+</code></pre></div>
+</div>
+</li>
+<li><p><strong>Part instances</strong></p>
+<p>Part instances are stored in the instance repository under the OdbAssembly object. The following statements display the repository keys of the part instances in the tutorial output database:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_InstanceRepositoryIT</span><span class="w"> </span><span class="nf">instIter</span><span class="p">(</span><span class="n">rootAssy</span><span class="p">.</span><span class="n">instances</span><span class="p">());</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">instIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">instIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">instIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">instIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>The output database contains only one part instance, and the resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">PART</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span>
+</code></pre></div>
+</div>
+<p>From a part instance or part you can retrieve the node and element information as follows:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rootAssy</span><span class="p">.</span><span class="n">instances</span><span class="p">()[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_DimensionEnum</span><span class="w"> </span><span class="n">instanceType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance1</span><span class="p">.</span><span class="n">embeddedSpace</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance1</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">nodeListSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeList</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">instanceType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">THREE_D</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nodeListSize</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Node</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeList</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">nodeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="n">label</span><span class="p">();</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">coord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="n">coordinates</span><span class="p">();</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Xcoord: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; , Ycoord: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; , Zcoord: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">coord</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">instanceType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TWO_D_PLANAR</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">instanceType</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">AXISYMMETRIC</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nodeListSize</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Node</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeList</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">nodeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="n">label</span><span class="p">();</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">coord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="p">.</span><span class="n">coordinates</span><span class="p">();</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Xcoord: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; , Ycoord: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elementList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance1</span><span class="p">.</span><span class="n">elements</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">elementListSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elementList</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element Connectivity Data&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element Label : constituent node labels ...&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numNodes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">elementListSize</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Element</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elementList</span><span class="p">[</span><span class="n">e</span><span class="p">];</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">elementLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element</span><span class="p">.</span><span class="n">label</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elementLabel</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; : &quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">odb_String</span><span class="w"> </span><span class="n">elementType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element</span><span class="p">.</span><span class="n">type</span><span class="p">();</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">conn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element</span><span class="p">.</span><span class="n">connectivity</span><span class="p">(</span><span class="n">numNodes</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numNodes</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">conn</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</li>
+<li><p><strong>Regions</strong></p>
+<p>Regions in the output database are OdbSet objects. Regions refer to the part and assembly sets stored in the output database. A part set refers to elements or nodes in an individual part and appears in each instance of the part in the assembly. An assembly set refers to the elements or nodes in part instances in the assembly. A region can be one of the following:</p>
+<ul class="simple">
+<li><p>A node set</p></li>
+<li><p>An element set</p></li>
+<li><p>A surface</p></li>
+</ul>
+<p>For example, the following statement displays the node sets in the OdbAssembly object:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Node set keys:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="n">odb_SetRepositoryIT</span><span class="w"> </span><span class="nf">setIter</span><span class="p">(</span><span class="n">rootAssy</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">());</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">setIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">setIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">setIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">setIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Node</span> <span class="nb">set</span> <span class="n">keys</span> <span class="p">:</span> <span class="n">ALL</span> <span class="n">NODES</span>
+</code></pre></div>
+</div>
+<p>The following statements display the node sets and the element sets in the PART-1-1 part instance:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_InstanceRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">iCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">();</span>
+<span class="w">    </span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iCon</span><span class="p">[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Node set keys:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">odb_SetRepositoryIT</span><span class="w"> </span><span class="nf">setItN</span><span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">());</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">setItN</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">setItN</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">setItN</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">setItN</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element set keys:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">odb_SetRepositoryIT</span><span class="w"> </span><span class="nf">setItE</span><span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">elementSets</span><span class="p">());</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">setItE</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">setItE</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">setItE</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">setItE</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Node</span> <span class="nb">set</span> <span class="n">keys</span> <span class="p">:</span> <span class="n">BOT</span> <span class="n">N481</span> <span class="n">TOP</span> <span class="n">N1</span><span class="o">...</span> <span class="n">Element</span> <span class="nb">set</span> <span class="n">keys</span> <span class="p">:</span> <span class="n">CENT</span> <span class="n">FOAM</span><span class="o">...</span>
+</code></pre></div>
+</div>
+<p>The following statement assigns a variable (topNodeSet) to the ‘TOP’ node set in the PART-1-1 part instance:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_InstanceRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">iCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">();</span>
+<span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iCon</span><span class="p">[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">topNodeSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;TOP&quot;</span><span class="p">];</span>
+</code></pre></div>
+</div>
+<p>The type of the object to which topNodeSet refers is OdbSet. After you create a variable that refers to a region, you can use the variable to refer to a subset of field output data, as described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-odbintroreadregcpp.htm?contextscope=all">Using regions to read a subset of field output data</a>.</p>
+<p>To access the set information on a part instance:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// node set information</span>
+
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;CENTER&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceNode</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeSet</span><span class="p">.</span><span class="n">nodes</span><span class="p">();</span>
+
+<span class="c1">// surface information</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">surface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">surfaces</span><span class="p">()[</span><span class="s">&quot;IMPACTOR&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elementList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">surface</span><span class="p">.</span><span class="n">elements</span><span class="p">();</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElementFace</span><span class="o">&amp;</span><span class="w"> </span><span class="n">faces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">surface</span><span class="p">.</span><span class="n">faces</span><span class="p">();</span>
+
+<span class="c1">// iterators are used to get all sets</span>
+<span class="n">odb_SetRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elementSetRepository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">elementSets</span><span class="p">();</span>
+<span class="n">odb_SetRepositoryIT</span><span class="w"> </span><span class="nf">elSetRepIter</span><span class="p">(</span><span class="n">elementSetRepository</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">elSetRepIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">elSetRepIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">elSetRepIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elementSetRepository</span><span class="p">[</span><span class="n">elSetRepIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">()];</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;element set &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elSetRepIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;        number of elements : &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">set</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The set information in an assembly set is keyed by instance name and can be accessed using the following:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// assembly surface information</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">aSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rootAssy</span><span class="p">.</span><span class="n">surfaces</span><span class="p">()[</span><span class="s">&quot;TARGET&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">instanceNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aSurface</span><span class="p">.</span><span class="n">instanceNames</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">totalNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instanceNames</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">totalNames</span><span class="p">;</span><span class="w"> </span><span class="n">name</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">iName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instanceNames</span><span class="p">[</span><span class="n">name</span><span class="p">];</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">els</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aSurface</span><span class="p">.</span><span class="n">elements</span><span class="p">(</span><span class="n">iName</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElementFace</span><span class="o">&amp;</span><span class="w"> </span><span class="n">face</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aSurface</span><span class="p">.</span><span class="n">faces</span><span class="p">(</span><span class="n">iName</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</li>
+<li><p><strong>Materials</strong></p>
+<p>You can read material data from an output database.</p>
+<p>Materials are stored in the materials repository under the Odb object.</p>
+<p>Extend the Material commands available to the Odb object using the following statement:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_MaterialApi</span><span class="w"> </span><span class="n">materialApi</span><span class="p">;</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_MATERIAL</span><span class="p">,</span><span class="w"> </span><span class="n">materialApi</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>Access the materials repository using the command:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_MaterialContainer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">materialContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">materialApi</span><span class="p">.</span><span class="n">materials</span><span class="p">();</span>
+<span class="n">odb_MaterialContainerIT</span><span class="w"> </span><span class="nf">matIT</span><span class="p">(</span><span class="n">materialContainer</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">matIT</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">matIT</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">matIT</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Material Name : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">matIT</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Material</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myMaterial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matIT</span><span class="p">.</span><span class="n">currentValue</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>To print isotropic elastic material properties in a material object:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Elastic</span><span class="w"> </span><span class="n">elastic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myMaterial</span><span class="p">.</span><span class="n">elastic</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">elastic</span><span class="p">.</span><span class="n">hasValue</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">elastic</span><span class="p">.</span><span class="n">type</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;ISOTROPIC&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;isotropic elastic behavior, type = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elastic</span><span class="p">.</span><span class="n">moduli</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">odb_String</span><span class="w"> </span><span class="n">tableHeader</span><span class="p">(</span><span class="s">&quot;Youngs modulus   Poisson&#39;s ratio &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">elastic</span><span class="p">.</span><span class="n">temperatureDependency</span><span class="p">())</span><span class="w"> </span><span class="n">tableHeader</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot;Temperature  &quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elastic</span><span class="p">.</span><span class="n">dependencies</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="n">tableHeader</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">&quot; field # &quot;</span><span class="p">).</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">tableHeader</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elastic</span><span class="p">.</span><span class="n">table</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">rows</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFloat</span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">table</span><span class="p">[</span><span class="n">r</span><span class="p">];</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">cols</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">cols</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;   &quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>Some Material definitions have suboptions. For example, to access the smoothing type used for biaxial test data specified for a hyperelastic material:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Hyperelastic</span><span class="w"> </span><span class="n">hyperelastic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myMaterial</span><span class="p">.</span><span class="n">hyperelastic</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hyperelastic</span><span class="p">.</span><span class="n">hasValue</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">testData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hyperelastic</span><span class="p">.</span><span class="n">testData</span><span class="p">();</span>
+<span class="w">    </span><span class="n">odb_BiaxialTestData</span><span class="w"> </span><span class="n">biaxialTestData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hyperelastic</span><span class="p">.</span><span class="n">biaxialTestData</span><span class="p">();</span>
+<span class="w">    </span><span class="n">odb_String</span><span class="w"> </span><span class="n">smoothingType</span><span class="p">(</span><span class="s">&quot;smoothing type: &quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">biaxialTestData</span><span class="p">.</span><span class="n">hasValue</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">odb_Union</span><span class="w"> </span><span class="n">smoothing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">biaxialTestData</span><span class="p">.</span><span class="n">smoothing</span><span class="p">();</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">type</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="no">odb_UNION_STRING</span><span class="p">):</span>
+<span class="w">                </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">getString</span><span class="p">());</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="no">odb_UNION_INT</span><span class="p">):</span>
+<span class="w">                </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">getInt</span><span class="p">());</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="no">odb_UNION_FLOAT</span><span class="p">):</span>
+<span class="w">                </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">getFloat</span><span class="p">());</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="no">odb_UNION_DOUBLE</span><span class="p">):</span>
+<span class="w">                </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">getDouble</span><span class="p">());</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="no">odb_UNION_BOOL</span><span class="p">):</span>
+<span class="w">                </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothing</span><span class="p">.</span><span class="n">getBool</span><span class="p">());</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">smoothingType</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p><a class="reference internal" href="../../../reference/mdb/model/material.html"><span class="doc">Material</span></a> describes the Material object commands in more detail; the odb_Union object is defined in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-infunioncpp.htm?contextscope=all">Union object</a>.</p>
+</li>
+<li><p><strong>Sections</strong></p>
+<p>You can read section data from an output database.</p>
+<p>Sections are stored in the sections repository under the Odb object.</p>
+<p>Extend the Section commands available to the Odb object using the following statement:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_SectionApi</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">;</span>
+<span class="n">odb</span><span class="p">.</span><span class="n">extendApi</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_SECTION</span><span class="p">,</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>The following statements display the repository keys of the sections in an output database:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_SectionContainer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sectionContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">.</span><span class="n">sections</span><span class="p">();</span>
+<span class="n">odb_SectionContainerIT</span><span class="w"> </span><span class="nf">scIT</span><span class="p">(</span><span class="n">sectionContainer</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">scIT</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">scIT</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">scIT</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Section Name : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">scIT</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The Section object can be one of the various section types. The odb_isA method can be used to determine the section type. For example, to determine whether a section is of type homogeneous solid section and to print its thickness and associated material name:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">scIT</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">scIT</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">scIT</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Section</span><span class="o">&amp;</span><span class="w"> </span><span class="n">mySection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scIT</span><span class="p">.</span><span class="n">currentValue</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">odb_isA</span><span class="p">(</span><span class="n">odb_HomogeneousSolidSection</span><span class="p">,</span><span class="w"> </span><span class="n">mySection</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">odb_HomogeneousSolidSection</span><span class="w"> </span><span class="n">homogeneousSolidSection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb_dynamicCast</span><span class="p">(</span><span class="n">odb_HomogeneousSolidSection</span><span class="p">,</span><span class="w"> </span><span class="n">mySection</span><span class="p">);</span>
+<span class="w">        </span><span class="n">odb_String</span><span class="w"> </span><span class="n">material</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">homogeneousSolidSection</span><span class="p">.</span><span class="n">material</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;material name = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">material</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">thickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">homogeneousSolidSection</span><span class="p">.</span><span class="n">thickness</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;thickness = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">thickness</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>Similarily, to access the beam profile repository:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_ProfileContainer</span><span class="w"> </span><span class="n">profileContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">.</span><span class="n">profiles</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numProfiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sectionApi</span><span class="p">.</span><span class="n">numProfiles</span><span class="p">();</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Total Number of profiles in the ODB: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">numProfiles</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>The Profile object can be one of the various profile types. The odb_isA method can be used to determine the profile type. For example, to output the radius of all circular profiles in the odb:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_ProfileContainerIT</span><span class="w"> </span><span class="nf">pcIT</span><span class="p">(</span><span class="n">profileContainer</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">pcIT</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">pcIT</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">pcIT</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Profile</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcIT</span><span class="p">.</span><span class="n">currentValue</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">odb_isA</span><span class="p">(</span><span class="n">odb_CircularProfile</span><span class="p">,</span><span class="w"> </span><span class="n">myProfile</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">odb_CircularProfile</span><span class="w"> </span><span class="n">circularProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb_dynamicCast</span><span class="p">(</span><span class="n">odb_CircularProfile</span><span class="p">,</span><span class="w"> </span><span class="n">myProfile</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;profile name = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">myProfile</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; radius = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">circularProfile</span><span class="p">.</span><span class="n">r</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</li>
+<li><p><strong>Section assignments</strong></p>
+<p>Section assignments are stored in the sectionAssignments repository under the OdbAssembly object.</p>
+<p>All elements in an Abaqus analysis need to be associated with section and material properties. Section assignments provide the relationship between elements in a part instance and their section properties. The section properties include the associated material name. To access the sectionAssignments repository from the PartInstance object:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_InstanceRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instanceRepository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">();</span>
+<span class="n">odb_InstanceRepositoryIT</span><span class="w"> </span><span class="nf">instIT</span><span class="p">(</span><span class="n">instanceRepository</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">instIT</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">instIT</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">instIT</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instIT</span><span class="p">.</span><span class="n">currentValue</span><span class="p">();</span>
+<span class="w">    </span><span class="n">odb_SequenceSectionAssignment</span><span class="w"> </span><span class="n">sectionAssignmentSeq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">sectionAssignments</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sects</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sectionAssignmentSeq</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Instance : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sects</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">odb_SectionAssignment</span><span class="w"> </span><span class="n">sa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sectionAssignmentSeq</span><span class="p">[</span><span class="n">s</span><span class="p">];</span>
+<span class="w">        </span><span class="n">odb_String</span><span class="w"> </span><span class="n">sectionName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sa</span><span class="p">.</span><span class="n">sectionName</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  Section : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">sectionName</span><span class="p">.</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="n">odb_Set</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sa</span><span class="p">.</span><span class="n">region</span><span class="p">();</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceElement</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">set</span><span class="p">.</span><span class="n">elements</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elements</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  Elements associated with this section : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elements</span><span class="p">[</span><span class="n">e</span><span class="p">].</span><span class="n">label</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</li>
+</ul>
+<h2 id="reading-results-data">Reading results data<a class="headerlink" href="#reading-results-data" title="此标题的永久链接">¶</a></h2>
+<p>The following list describes the objects in results data and the commands you use to read results data. As with model data you will find it useful to use the repository iterators to determine the keys of the results data repositories.</p>
+<ul>
+<li><p><strong>Steps</strong></p>
+<p>Steps are stored in the steps repository under the Odb object. The key to the steps repository is the name of the step. The following statements print out the keys of each step in the repository:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_StepRepositoryIT</span><span class="w"> </span><span class="nf">stepIter</span><span class="p">(</span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">());</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">stepIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">stepIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">stepIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">stepIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Step</span> <span class="o">-</span> <span class="mi">1</span> <span class="n">Step</span> <span class="o">-</span> <span class="mi">2</span> <span class="n">Step</span> <span class="o">-</span> <span class="mi">3</span>
+</code></pre></div>
+</div>
+</li>
+<li><p><strong>Frames</strong></p>
+<p>Each step contains a sequence of frames, where each increment of the analysis (or each mode in an eigenvalue analysis) that resulted in output to the output database is called a frame. The following statement assigns a variable to the last frame in the first step:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="s">&quot;Step-1&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="n">odb_Frame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lastFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="p">[</span><span class="n">numFrames</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span>
+</code></pre></div>
+</div>
+</li>
+</ul>
+<h2 id="reading-field-output-data">Reading field output data<a class="headerlink" href="#reading-field-output-data" title="此标题的永久链接">¶</a></h2>
+<p>Field output data are stored in the fieldOutputs repository under the OdbFrame object. The key to the repository is the name of the variable. The following statements list all the variables found in the last frame of the first step (the statements use the variable <code class="docutils literal notranslate"><span class="pre">lastFrame</span></code> that we defined previously):</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldOutputRep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span>
+<span class="n">odb_FieldOutputRepositoryIT</span><span class="w"> </span><span class="nf">fieldIter</span><span class="p">(</span><span class="n">fieldOutputRep</span><span class="p">);</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">fieldIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">fieldIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">fieldIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fieldIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">S</span> <span class="n">U</span> <span class="n">LE</span> <span class="n">CSHEAR1</span> <span class="n">ASURF</span> <span class="o">/</span> <span class="n">BSURF</span> <span class="n">CSLIP1</span> <span class="n">ASURF</span> <span class="o">/</span> <span class="n">BSURF</span> <span class="n">CPRESS</span> <span class="n">ASURF</span> <span class="o">/</span> <span class="n">BSURF</span> <span class="n">COPEN</span> <span class="n">ASURF</span> <span class="o">/</span> <span class="n">BSURF</span> <span class="n">UR3</span>
+</code></pre></div>
+</div>
+<p>Different variables can be written to the output database at different frequencies. As a result, not all frames will contain all the field output variables.
+You can use the following to view all the available field data in a frame:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">fieldIter</span><span class="p">.</span><span class="n">first</span><span class="p">();</span><span class="w"> </span><span class="o">!</span><span class="n">fieldIter</span><span class="p">.</span><span class="n">isDone</span><span class="p">();</span><span class="w"> </span><span class="n">fieldIter</span><span class="p">.</span><span class="n">next</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldOutputRep</span><span class="p">[</span><span class="n">fieldIter</span><span class="p">.</span><span class="n">currentKey</span><span class="p">()];</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldLocation</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqLoc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">locations</span><span class="p">();</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">name</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">description</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;    Type: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">field</span><span class="p">.</span><span class="n">type</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numLoc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqLoc</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">loc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numLoc</span><span class="p">;</span><span class="w"> </span><span class="n">loc</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Position: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">seqLoc</span><span class="p">.</span><span class="n">constGet</span><span class="p">(</span><span class="n">loc</span><span class="p">).</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The resulting print output lists all the field output variables in a particular frame, along with their type and position.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">S</span> <span class="p">:</span> <span class="n">Stress</span> <span class="n">components</span> <span class="n">Type</span> <span class="p">:</span> <span class="mi">7</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">fieldValues</span> <span class="p">:</span> <span class="mi">135</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">locations</span> <span class="p">:</span> <span class="mi">1</span> <span class="n">U</span>
+    <span class="p">:</span> <span class="n">Spatial</span> <span class="n">displacement</span> <span class="n">Type</span> <span class="p">:</span> <span class="mi">3</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">fieldValues</span> <span class="p">:</span> <span class="mi">161</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">locations</span> <span class="p">:</span> <span class="mi">1</span>
+</code></pre></div>
+</div>
+<p>In turn, a FieldOutput object has a method values that returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence corresponds to a particular location in the model. You can obtain the data corresponding to each FieldValue object using the data method, which returns a pointer to an array that contains the results at the current location. For example,</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">displacements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;U&quot;</span><span class="p">].</span><span class="n">values</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">displacements</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numValues</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">displacements</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Node = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">nodeLabel</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">U</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">numComp</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, U = &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">U</span><span class="p">[</span><span class="n">comp</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Node</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0000</span><span class="p">,</span> <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">76.4580</span> <span class="n">Node</span> <span class="o">=</span> <span class="mi">3</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.0000</span><span class="p">,</span> <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">64.6314</span> <span class="n">Node</span> <span class="o">=</span> <span class="mi">5</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0000</span><span class="p">,</span>
+         <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">52.0814</span> <span class="n">Node</span> <span class="o">=</span> <span class="mi">7</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.0000</span><span class="p">,</span> <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">39.6389</span> <span class="n">Node</span> <span class="o">=</span> <span class="mi">9</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.0000</span><span class="p">,</span>
+         <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">28.7779</span> <span class="n">Node</span> <span class="o">=</span> <span class="mi">11</span> <span class="n">U</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.0000</span><span class="p">,</span> <span class="n">U</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">20.3237</span><span class="o">...</span>
+</code></pre></div>
+</div>
+<p>The data in the FieldValue object depend on the field output variable, which is displacement in the above example. In the example above the field output for displacements was of type NODAL and there is a FieldValue object for the output at each node. In this case the data method returns a pointer to an array containing the displacements at the node. For INTEGRATION_POINT data each integration point in an element will correspond to a different FieldValue object, and the data method will return a pointer to an array containing the element results data at that particular integration point.</p>
+<div class="note admonition">
+<p class="admonition-title">备注</p>
+<p>Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldBulkData.FieldBulkData" title="abaqus.Odb.FieldBulkData.FieldBulkData (Python 类) — 基类：object"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldBulkData</span></code></a> object and :[using bulk data access to an output database].</p>
+</div>
+<h2 id="using-bulk-data-access-to-an-output-database">Using bulk data access to an output database<a class="headerlink" href="#using-bulk-data-access-to-an-output-database" title="此标题的永久链接">¶</a></h2>
+<p>If you need to access all the data in a field from an output database, you can use the bulkDataBlocks method of the FieldOutput object to read the data in bulk form. The bulkDataBlocks method returns a reference to a sequence of FieldBulkData objects, each of which contains the entire output for a class of nodes or elements, blocked together into an array.</p>
+<p>The data method of the FieldBulkData object returns an array of data corresponding to the output for the entire class of elements or nodes. The length and width methods of theFieldBulkData object return the number of output locations and the number of components at each output location, respectively. For example,</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">disp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqDispBulkData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">disp</span><span class="p">.</span><span class="n">bulkDataBlocks</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numDispBlocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqDispBulkData</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">iblock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">iblock</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numDispBlocks</span><span class="p">;</span><span class="w"> </span><span class="n">iblock</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bulkData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqDispBulkData</span><span class="p">[</span><span class="n">iblock</span><span class="p">];</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numNodes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">width</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">nodeLabels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">nodeLabels</span><span class="p">();</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numNodes</span><span class="p">;</span><span class="w"> </span><span class="n">node</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">nodeLabel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nodeLabels</span><span class="p">[</span><span class="n">node</span><span class="p">];</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Node = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">nodeLabel</span><span class="p">;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; U = &quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">pos</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  &quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">numberOfElements</span></code> method returns the number of elements in a block. When you are accessing the results for elements, the <code class="docutils literal notranslate"><span class="pre">numberOfElements</span></code> method is useful in determining the number of output locations per element. For example, when you are accessing element data at integration points, you may need to determine the number of integration points per element. You can determine the number of integration points per element by dividing the length of the block, which is the total number of output locations, by the number of elements in the block. For example,</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;S&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">seqStressBulkData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stress</span><span class="p">.</span><span class="n">bulkDataBlocks</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numStressBlocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressBulkData</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">jblock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">jblock</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numStressBlocks</span><span class="p">;</span><span class="w"> </span><span class="n">jblock</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldBulkData</span><span class="o">&amp;</span><span class="w"> </span><span class="n">bulkData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seqStressBulkData</span><span class="p">[</span><span class="n">jblock</span><span class="p">];</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numComp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">width</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">nElems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">numberOfElements</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">numIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numValues</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nElems</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">elementLabels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">elementLabels</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">integrationPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">integrationPoints</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_SectionPoint</span><span class="o">&amp;</span><span class="w"> </span><span class="n">myBulkSectionPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">sectionPoint</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sectPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myBulkSectionPoint</span><span class="p">.</span><span class="n">number</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sectPoint</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Section Point: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">sectPoint</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Base Element type: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">bulkData</span><span class="p">.</span><span class="n">baseElementType</span><span class="p">().</span><span class="n">CStr</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">ipPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">dataPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numValues</span><span class="p">;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">numIP</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;El label: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elementLabels</span><span class="p">[</span><span class="n">elem</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">ip</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numIP</span><span class="p">;</span><span class="w"> </span><span class="n">ip</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Int. Point: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">integrationPoints</span><span class="p">[</span><span class="n">ipPosition</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;S = &quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">dataPosition</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldBulkData.FieldBulkData" title="abaqus.Odb.FieldBulkData.FieldBulkData (Python 类) — 基类：object"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldBulkData</span></code></a> object.</p>
+<p>The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in [reading field output data]. The <code class="docutils literal notranslate"><span class="pre">values</span></code> method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model.</p>
+<p>Performance can be increased with the bulk data interface because the field data stored in a bulk data block are made available in a single array of floating point numbers. If you access the same data in nonbulk form, you must loop over a sequence of FieldValue objects and then access the data for each location separately. Traversing an array can prove to be significantly faster than traversing a sequence of objects and extracting data stored within the objects. As a result, accessing the data in an output database using the bulk data interface can be significantly faster than the nonbulk form.</p>
+<p>If you do not need to access large amounts of data, you may get better performance with the nonbulk access method. This is especially true if the number of output locations you are accessing is smaller than the number of elements in a class. Similarly, the nonbulk access method may be faster if the number of nodes you are accessing is smaller than the number of nodes in an instance. The nonbulk access method is also better suited for random access to an output database, where successive output locations to be accessed may lie in completely different blocks.</p>
+<h2 id="using-regions-to-read-a-subset-of-field-output-data">Using regions to read a subset of field output data<a class="headerlink" href="#using-regions-to-read-a-subset-of-field-output-data" title="此标题的永久链接">¶</a></h2>
+<p>After you have created an OdbSet object using model data, you can use the getSubset method to read only the data corresponding to that region. Typically, you will be reading data from a region that refers to a node set or an element set. For example, the following statements create a variable called center that refers to the node set PUNCH at the center of the hemispherical punch. In a previous section you created the displacement variable that refers to the displacement of the entire model in the final frame of the first step. Now you use the getSubset command to get the displacement for only the center region.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;PUNCH&quot;</span><span class="p">];</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">centerDisp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldU</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">center</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">centerValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">centerDisp</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">centerValues</span><span class="p">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">numComp</span><span class="p">);</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Node: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">nodeLabel</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; U = &quot;</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">comp</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  &quot;</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Node</span> <span class="p">:</span> <span class="mi">1000</span> <span class="n">U</span> <span class="o">=</span> <span class="mf">0.0000</span> <span class="o">-</span> <span class="mf">76.4555</span>
+</code></pre></div>
+</div>
+<p>The arguments to <code class="docutils literal notranslate"><span class="pre">getSubset</span></code> are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output for the stress at integration points for CAX4 elements from the element set “CENT”:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">topCenter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">elementSets</span><span class="p">()[</span><span class="s">&quot;CENT&quot;</span><span class="p">];</span>
+<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="s">&quot;Step-2&quot;</span><span class="p">];</span>
+<span class="n">odb_String</span><span class="w"> </span><span class="n">CAX4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;CAX4&quot;</span><span class="p">;</span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stressField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step2</span><span class="p">.</span><span class="n">frames</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;S&quot;</span><span class="p">];</span>
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">fieldCAX4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stressField</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">CAX4</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">fieldIP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldCAX4</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">INTEGRATION_POINT</span><span class="p">);</span>
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">fieldTopCenter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldIP</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">topCenter</span><span class="p">);</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_SequenceFieldValue</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldTopCenter</span><span class="p">.</span><span class="n">values</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">valSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vals</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">dSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">valSize</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">];</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Element label = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">elementLabel</span><span class="p">();</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Integration Point = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">integrationPoint</span><span class="p">();</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">dSize</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; S : &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">dSize</span><span class="p">;</span><span class="w"> </span><span class="n">k</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+    <span class="mi">1</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.01230</span> <span class="o">-</span> <span class="mf">0.05658</span> <span class="mf">0.00892</span> <span class="o">-</span> <span class="mf">0.00015</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+        <span class="mi">2</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.01313</span> <span class="o">-</span> <span class="mf">0.05659</span> <span class="mf">0.00892</span> <span class="o">-</span> <span class="mf">0.00106</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+            <span class="mi">3</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.00619</span> <span class="o">-</span> <span class="mf">0.05642</span> <span class="mf">0.00892</span> <span class="o">-</span> <span class="mf">0.00023</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+                <span class="mi">4</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.00697</span> <span class="o">-</span> <span class="mf">0.05642</span> <span class="mf">0.00892</span> <span class="o">-</span> <span class="mf">0.00108</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">11</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+                    <span class="mi">1</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.01281</span> <span class="o">-</span> <span class="mf">0.05660</span> <span class="mf">0.00897</span> <span class="o">-</span> <span class="mf">0.00146</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">11</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span>
+                        <span class="mi">2</span> <span class="n">S</span> <span class="p">:</span> <span class="mf">0.01183</span> <span class="o">-</span> <span class="mf">0.05651</span> <span class="mf">0.00897</span> <span class="o">-</span> <span class="mf">0.00257</span> <span class="n">Element</span> <span class="n">label</span> <span class="o">=</span> <span class="mi">11</span> <span class="n">Integration</span> <span class="n">Point</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">...</span>
+</code></pre></div>
+</div>
+<p>Possible values for the enumeration for the position are:</p>
+<ul class="simple">
+<li><p>INTEGRATION_POINT</p></li>
+<li><p>NODAL</p></li>
+<li><p>ELEMENT_NODAL</p></li>
+<li><p>CENTROID</p></li>
+</ul>
+<p>If the requested field values are not found in the output database at the specified <code class="docutils literal notranslate"><span class="pre">odb_Enum::ELEMENT_NODAL</span></code> or <code class="docutils literal notranslate"><span class="pre">odb_Enum::CENTROID</span></code> positions, they are extrapolated from the field data at the <code class="docutils literal notranslate"><span class="pre">odb_Enum::INTEGRATION_POINT</span></code> position.</p>
+<h2 id="reading-history-output-data">Reading history output data<a class="headerlink" href="#reading-history-output-data" title="此标题的永久链接">¶</a></h2>
+<p>History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. Depending on the type of output expected, the historyRegions repository contains data from one of the following:</p>
+<ul class="simple">
+<li><p>a node</p></li>
+<li><p>an integration point</p></li>
+<li><p>a region</p></li>
+<li><p>a material point</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">备注</p>
+<p>History data from an analysis cannot contain multiple points.</p>
+</div>
+<p>The history data object model is shown in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-history-nls-3"><span class="std std-numref">图 35</span></a>.</p>
+<figure class="align-center" id="id1">
+<span id="odb-history-nls-3"></span><a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 35 </span><span class="caption-text"><span class="caption-text">
+The history data object model.</span><a class="headerlink" href="#id1" title="此图像的永久链接">¶</a></figcaption>
+</figure>
+<p>In contrast to field output, which is associated with a frame, history output is associated with a step. History output data are stored in the historyRegions repository under an OdbStep object. Abaqus creates keys to the historyRegions repository that describe the region; for example,</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'Node</span> <span class="pre">PART-1-1.1000'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Element</span> <span class="pre">PART-1-1.2</span> <span class="pre">Int</span> <span class="pre">Point</span> <span class="pre">1'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Assembly</span> <span class="pre">ASSEMBLY'</span></code></p></li>
+</ul>
+<p>The output from all history requests that relate to a specified point is collected in one HistoryRegion object. A HistoryRegion object contains multiple HistoryOutput objects. Each HistoryOutput object, in turn, contains a sequence of (<strong>frameValue</strong>, <strong>value</strong>) sequences. In a time domain analysis (<strong>domain</strong> = TIME) the sequence is a tuple of (<strong>stepTime</strong>, <strong>value</strong>). In a frequency domain analysis (<strong>domain</strong> = FREQUENCY) the sequence is a tuple of (<strong>frequency</strong>, <strong>value</strong>). In a modal domain analysis (<strong>domain</strong> = MODAL) the sequence is a tuple of (<strong>mode</strong>, <strong>value</strong>).</p>
+<p>In the analysis that generated the Abaqus/CAE Visualization module tutorial output database, the user asked for the following history output:</p>
+<ul class="simple">
+<li><p><strong>At the rigid body reference point (Node 1000)</strong></p>
+<ul>
+<li><p>U</p></li>
+<li><p>V</p></li>
+<li><p>A</p></li>
+</ul>
+</li>
+<li><p>At the corner element</p>
+<ul>
+<li><p>MISES</p></li>
+<li><p>LE22</p></li>
+<li><p>S22</p></li>
+</ul>
+</li>
+</ul>
+<p>The history output data can be retrieved from the HistoryRegion objects in the output database. The tutorial output database contains HistoryRegion objects that relate to the rigid body reference point and the integration points of the corner element as follows:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'Node</span> <span class="pre">PART-1-1.1000'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Element</span> <span class="pre">PART-1-1.1</span> <span class="pre">Int</span> <span class="pre">Point</span> <span class="pre">1'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Element</span> <span class="pre">PART-1-1.1</span> <span class="pre">Int</span> <span class="pre">Point</span> <span class="pre">2'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Element</span> <span class="pre">PART-1-1.1</span> <span class="pre">Int</span> <span class="pre">Point</span> <span class="pre">3'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Element</span> <span class="pre">PART-1-1.1</span> <span class="pre">Int</span> <span class="pre">Point</span> <span class="pre">4'</span></code></p></li>
+</ul>
+<p>The following statements read the tutorial output database and write the U2 history data from the second step to an ASCII file that can be plotted by Abaqus/CAE:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="s">&quot;Step-2&quot;</span><span class="p">];</span>
+<span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">()[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;PUNCH&quot;</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="n">odb_Node</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nSet</span><span class="p">.</span><span class="n">nodes</span><span class="p">().</span><span class="n">constGet</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">odb_HistoryPoint</span><span class="w"> </span><span class="nf">hPoint</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+<span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">histRegion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">getHistoryRegion</span><span class="p">(</span><span class="n">hPoint</span><span class="p">);</span>
+<span class="n">odb_HistoryOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hoCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">histRegion</span><span class="p">.</span><span class="n">historyOutputs</span><span class="p">();</span>
+<span class="n">odb_HistoryOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">histOutU2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hoCon</span><span class="p">[</span><span class="s">&quot;U2&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceSequenceFloat</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">histOutU2</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numHDat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numHDat</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">odb_SequenceFloat</span><span class="w"> </span><span class="n">pair</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pair</span><span class="p">.</span><span class="n">constGet</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pair</span><span class="p">.</span><span class="n">constGet</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The output in this example is a sequence of tuples containing the frame time and the displacement value. The example uses nodal history data output. If the analysis requested history output from an element, the output database would contain one HistoryRegion object and one HistoryPoint object for each integration point.</p>
+<h2 id="an-example-of-reading-field-data-from-an-output-database">An example of reading field data from an output database<a class="headerlink" href="#an-example-of-reading-field-data-from-an-output-database" title="此标题的永久链接">¶</a></h2>
+<p>The following program illustrates how you read model data and field output data from the output database used by the Abaqus/CAE Visualization module tutorial output database.</p>
+<p>Import the required modules:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span>
+</code></pre></div>
+</div>
+<p>Open the output database used by the tutorial.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="s">&quot;viewer_tutorial.odb&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>Create a variable that refers to the last frame of the first step.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">()[</span><span class="s">&quot;Step-1&quot;</span><span class="p">];</span>
+<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step</span><span class="p">.</span><span class="n">frames</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">numFrames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="n">odb_Frame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">lastFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">allFramesInStep</span><span class="p">[</span><span class="n">numFrames</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span>
+</code></pre></div>
+</div>
+<p>Create a variable that refers to the displacement ‘U’ in the last frame of the first step.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">displacements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">().</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>Create a variable that refers to the node set ‘PUNCH’ in the part instance’PART-1–1’ :</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Instance</span><span class="o">&amp;</span><span class="w"> </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">instances</span><span class="p">()[</span><span class="s">&quot;PART-1-1&quot;</span><span class="p">];</span>
+<span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nodeSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;PUNCH&quot;</span><span class="p">];</span>
+</code></pre></div>
+</div>
+<p>Create a variable that refers to the displacement of the node set in the last frame of the first step:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">myDisplacements</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">displacements</span><span class="p">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">nodeSet</span><span class="p">);</span>
+</code></pre></div>
+</div>
+<p>Finally, print some field output data from each node in the node set (a single node in this example).</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">odb_FieldValue</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">myDisplacements</span><span class="p">.</span><span class="n">values</span><span class="p">()[</span><span class="mi">0</span><span class="p">];</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">data</span><span class="p">(</span><span class="n">numComp</span><span class="p">);</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Node: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">nodeLabel</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; U = &quot;</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">numComp</span><span class="p">;</span><span class="w"> </span><span class="n">comp</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">data</span><span class="p">[</span><span class="n">comp</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  &quot;</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Magnitude = &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">val</span><span class="p">.</span><span class="n">magnitude</span><span class="p">();</span>
+</code></pre></div>
+</div>
+<p>The resulting output is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">Node</span> <span class="p">:</span> <span class="mi">1000</span> <span class="n">U</span> <span class="o">=</span> <span class="mf">0.0000</span><span class="p">,</span> <span class="o">-</span><span class="mf">76.4554</span> <span class="n">Magnitude</span> <span class="o">=</span> <span class="mf">76.4554</span>
+</code></pre></div>
+</div>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="utility.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: Utility interface" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              Utility interface
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="write.html" class="md-footer__link md-footer__link--next" aria-label="下一页: Writing to an output database" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Writing to an output database
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2022, WANG Hailin.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    6.2.1.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/haiiliin/abqpy" target="_blank" rel="noopener" title="Source on github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/abqpy" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+    
+      
+        <script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script src="../../../_static/tabs.js"></script>
+        <script src="../../../_static/js/hoverxref.js"></script>
+        <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../../../_static/js/micromodal.min.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "haiiliin/abqpy");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+        <script src="../../../_static/translations.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../../../_static/design-tabs.js"></script>
+        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+    
+  </body>
+</html>
