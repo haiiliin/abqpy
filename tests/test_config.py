@@ -1,12 +1,10 @@
 from __future__ import annotations
 
 import os
-
-from importlib import reload, import_module
+from importlib import import_module, reload
 
 import pytest
 from typing_extensions import Literal
-
 
 config_module = import_module("abqpy.config")
 
