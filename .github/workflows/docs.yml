@@ -35,14 +35,14 @@ jobs:
         id: branch
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
-            echo ::set-output name=branch::${{ github.event.release.target_commitish }}
-            echo ::set-output name=publish::${{ github.event.release.target_commitish }}
+            echo "branch=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
+            echo "publish=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "push" ]; then
-            echo ::set-output name=branch::${{ github.ref_name }}
-            echo ::set-output name=publish::latest
+            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "publish=latest" >> $GITHUB_OUTPUT
           else
-            echo ::set-output name=branch::${{ github.base_ref }}
-            echo ::set-output name=publish::pr-${{ github.event.pull_request.number }}
+            echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
+            echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           fi
     outputs:
       branch: ${{ steps.branch.outputs.branch }}
