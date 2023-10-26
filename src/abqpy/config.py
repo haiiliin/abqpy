@@ -7,7 +7,6 @@ defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))
 defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
 
 
-
 class AbaqusCAEConfig(BaseModel):
     database: str | None = None
     replay: str | None = None
@@ -37,7 +36,6 @@ class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig):
 
 
 options = AbaqusCommandOptions(**defaults)
-
 
 
 trues = ["true", "1", "on", "yes"]
