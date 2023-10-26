@@ -44,20 +44,40 @@ options = AbaqusCommandOptions(**defaults)
 trues = ["true", "1", "on", "yes"]
 config = AbaqusConfig(
     cae=AbaqusCAEConfig(
-        database=os.environ.get("ABAQUS_CAE_DATABASE", None) or options.database,
-        replay=os.environ.get("ABAQUS_CAE_REPLAY", None) or options.replay,
-        recover=os.environ.get("ABAQUS_CAE_RECOVER", None) or options.recover,
-        gui=os.environ.get("ABAQUS_CAE_GUI", "").lower() in trues or options.gui,
-        envstartup=os.environ.get("ABAQUS_CAE_ENVSTARTUP", "").lower() in trues or options.envstartup,
-        savedOptions=os.environ.get("ABAQUS_CAE_SAVEDOPTIONS", "").lower() in trues or options.savedOptions,
-        savedGuiPrefs=os.environ.get("ABAQUS_CAE_SAVEDGUIPREFS", "").lower() in trues or options.savedGuiPrefs,
-        startupDialog=os.environ.get("ABAQUS_CAE_STARTUPDIALOG", "").lower() in trues or options.startupDialog,
-        custom=os.environ.get("ABAQUS_CAE_CUSTOM", "") or options.custom,
-        guiTester=os.environ.get("ABAQUS_CAE_GUITESTER", None) or options.guiTester,
-        guiRecord=os.environ.get("ABAQUS_CAE_GUIRECORD", "").lower() in trues or options.guiRecord,
+        database=os.environ["ABAQUS_CAE_DATABASE"] if "ABAQUS_CAE_DATABASE" in os.environ else options.database,
+        replay=os.environ["ABAQUS_CAE_REPLAY"] if "ABAQUS_CAE_REPLAY" in os.environ else options.replay,
+        recover=os.environ["ABAQUS_CAE_RECOVER"] if "ABAQUS_CAE_RECOVER" in os.environ else options.recover,
+        gui=os.environ["ABAQUS_CAE_GUI"].lower() in trues if "ABAQUS_CAE_GUI" in os.environ else options.gui,
+        envstartup=(
+            os.environ["ABAQUS_CAE_ENVSTARTUP"].lower() in trues
+            if "ABAQUS_CAE_ENVSTARTUP" in os.environ
+            else options.envstartup
+        ),
+        savedOptions=(
+            os.environ["ABAQUS_CAE_SAVEDOPTIONS"].lower() in trues
+            if "ABAQUS_CAE_SAVEDOPTIONS" in os.environ
+            else options.savedOptions
+        ),
+        savedGuiPrefs=(
+            os.environ["ABAQUS_CAE_SAVEDGUIPREFS"].lower() in trues
+            if "ABAQUS_CAE_SAVEDGUIPREFS" in os.environ
+            else options.savedGuiPrefs
+        ),
+        startupDialog=(
+            os.environ["ABAQUS_CAE_STARTUPDIALOG"].lower() in trues
+            if "ABAQUS_CAE_STARTUPDIALOG" in os.environ
+            else options.startupDialog
+        ),
+        custom=os.environ["ABAQUS_CAE_CUSTOM"] if "ABAQUS_CAE_CUSTOM" in os.environ else options.custom,
+        guiTester=os.environ["ABAQUS_CAE_GUITESTER"] if "ABAQUS_CAE_GUITESTER" in os.environ else options.guiTester,
+        guiRecord=(
+            os.environ["ABAQUS_CAE_GUIRECORD"].lower() in trues
+            if "ABAQUS_CAE_GUIRECORD" in os.environ
+            else options.guiRecord
+        ),
     ),
     python=AbaqusPythonConfig(
-        sim=os.environ.get("ABAQUS_PYTHON_SIM", None) or options.sim,
-        log=os.environ.get("ABAQUS_PYTHON_LOG", None) or options.log,
+        sim=os.environ["ABAQUS_PYTHON_SIM"] if "ABAQUS_PYTHON_SIM" in os.environ else options.sim,
+        log=os.environ["ABAQUS_PYTHON_LOG"] if "ABAQUS_PYTHON_LOG" in os.environ else options.log,
     ),
 )
