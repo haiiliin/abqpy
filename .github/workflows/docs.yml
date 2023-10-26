@@ -36,12 +36,12 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
             echo ::set-output name=version::${{ github.event.release.target_commitish }}
-            echo ::set-output name=tag::${{ github.event.release.tag_name }}
+            echo ::set-output name=tag::${{ github.event.release.target_commitish }}
           elif [ "${{ github.event_name }}" = "push" ]; then
             echo ::set-output name=version::${{ github.ref_name }}
             echo ::set-output name=tag::latest
           else
-            echo ::set-output name=version::${{ github.head_ref }}
+            echo ::set-output name=version::${{ github.base_ref }}
             echo ::set-output name=tag::pr-${{ github.event.pull_request.number }}
           fi
     outputs:
