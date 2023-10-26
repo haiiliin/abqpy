@@ -19,6 +19,7 @@ on:
       - ".github/workflows/docs.yml"
   release:
     types: [published]
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -37,12 +38,15 @@ jobs:
           if [ "${{ github.event_name }}" = "release" ]; then
             echo "branch=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
             echo "publish=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" = "push" ]; then
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
+            echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.ref_name }}" = "2023" ]; then
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=latest" >> $GITHUB_OUTPUT
           else
-            echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
-            echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "publish=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           fi
     outputs:
       branch: ${{ steps.branch.outputs.branch }}
