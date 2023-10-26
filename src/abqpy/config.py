@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import ast
 import os
+from typing import Optional
 
 from pydantic import BaseModel
 
@@ -10,22 +11,22 @@ defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
 
 
 class AbaqusCAEConfig(BaseModel):
-    database: str | None = None
-    replay: str | None = None
-    recover: str | None = None
+    database: Optional[str] = None
+    replay: Optional[str] = None
+    recover: Optional[str] = None
     gui: bool = False
     envstartup: bool = True
     savedOptions: bool = True
     savedGuiPrefs: bool = True
     startupDialog: bool = True
-    custom: str | None = None
-    guiTester: str | None = None
-    guiRecord: bool | None = None
+    custom: Optional[str] = None
+    guiTester: Optional[str] = None
+    guiRecord: Optional[bool] = None
 
 
 class AbaqusPythonConfig(BaseModel):
-    sim: str | None = None
-    log: str | None = None
+    sim: Optional[str] = None
+    log: Optional[str] = None
 
 
 class AbaqusConfig(BaseModel):
