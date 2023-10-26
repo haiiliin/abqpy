@@ -55,9 +55,7 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_immaterial"]
     env:
-      SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
       VERSION: ${{ needs.branch.outputs.branch }}
       PUBLISH: ${{ needs.branch.outputs.publish }}
@@ -96,9 +94,7 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
-        theme: ["sphinx_immaterial"]
     env:
-      SPHINX_THEME: ${{ matrix.theme }}
       LANGUAGE: ${{ matrix.language }}
       VERSION: ${{ needs.branch.outputs.branch }}
       PUBLISH: ${{ needs.branch.outputs.publish }}
