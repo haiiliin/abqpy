@@ -62,6 +62,13 @@ The possible options are:
    ```
 
 One advantage in using this alternative is to change the options at run time inside the code.
+
+```{note}
+The environment variable `ABAQUS_COMMAND_OPTIONS` must be a valid string that can be parsed to a Python dictionary,
+which means that you must use `True` or `False` for boolean options. However, in the following individual environment
+variables, you can use `true`, `on`, `yes` or `1` (or capitalized ones since they are not case sensitive) to set the
+boolean option to `True` and any other values to set it to `False`.
+```
 ````
 
 ```{envvar} ABAQUS_CAE_DATABASE
