@@ -1,11 +1,9 @@
-import ast
 import os
 import sys
 import warnings
 
 from .cli import abaqus
-
-ABAQUS_COMMAND_OPTIONS = {"noGUI": True}
+from .config import config
 
 
 def run(cae: bool = True) -> None:
@@ -19,17 +17,8 @@ def run(cae: bool = True) -> None:
     cae : bool, optional
         Whether to use `abaqus cae` command, True for `abaqus cae`, False for `abaqus python`, by default True
     """
-    # check if in debug mode and run
-    debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
-    gettrace = getattr(sys, "gettrace", None)
-    debug = debug or (gettrace is not None and gettrace())
-
-    # Check if it is imported by sphinx to generate docs or skipped by pytest
-    make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
-    skip = os.environ.get("ABQPY_SKIP_ABAQUS", "false").lower() == "true"
-
-    # If making docs, return
-    if make_docs or skip:
+    # If making docs or skipping abaqus, do nothing
+    if config.make_docs or config.skip_abaqus:
         return
 
     # If it is a jupyter notebook, convert it to python script
@@ -49,16 +38,14 @@ def run(cae: bool = True) -> None:
 
     # Alternative to use abaqus command line options at run time
     print("The script will be submitted to Abaqus next and the current Python session will be closed.")
-    options: dict = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS)))
-    gui, noGUI = options.pop("gui", None), options.pop("noGUI", None)
-    if debug:
+    gettrace = getattr(sys, "gettrace", None)
+    if config.debug or (gettrace is not None and gettrace()):
         warnings.warn(
             "You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it."
         )
-        abaqus.pde(script=filePath, **options)
+        abaqus.pde(script=filePath)
     elif cae:
-        options["gui"] = gui if gui is not None else not noGUI if noGUI is not None else False
-        abaqus.cae(filePath, *sys.argv[1:], **options)
+        abaqus.cae(filePath, *sys.argv[1:], **config.cae.model_dump())
     else:
-        abaqus.python(filePath, *sys.argv[1:], **options)
+        abaqus.python(filePath, *sys.argv[1:], **config.python.model_dump())
     sys.exit(0)
