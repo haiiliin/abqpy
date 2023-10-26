@@ -3,7 +3,6 @@ import os
 
 from pydantic import BaseModel
 
-
 defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))
 defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
 
