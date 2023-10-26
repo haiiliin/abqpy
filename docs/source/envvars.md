@@ -112,7 +112,7 @@ A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiR
 A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `sim` option which has higher priority.
 ```
 
-```{envvar} ABAQUS_PYTHON_SIM
+```{envvar} ABAQUS_PYTHON_LOG
 A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `log` option which has higher priority.
 ```
 
