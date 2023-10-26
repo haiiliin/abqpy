@@ -15,7 +15,7 @@ config_module = import_module("abqpy.config")
     argnames="type, envs, expects",
     argvalues=[
         ("cae", dict(ABAQUS_COMMAND_OPTIONS="{'gui': True}"), dict(gui=True)),
-        ("cae", dict(ABAQUS_COMMAND_OPTIONS="{'gui': True}", ABAQUS_CAE_GUI="on"), dict(gui=True)),
+        ("cae", dict(ABAQUS_COMMAND_OPTIONS="{'gui': True}", ABAQUS_CAE_GUI="off"), dict(gui=False)),
         ("cae", dict(ABAQUS_CAE_GUI="no"), dict(gui=False)),
         ("cae", dict(ABAQUS_CAE_DATABASE="test.odb"), dict(database="test.odb")),
         ("cae", dict(ABAQUS_CAE_REPLAY="test.rpy"), dict(replay="test.rpy")),
