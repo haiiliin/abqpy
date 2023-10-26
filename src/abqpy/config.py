@@ -7,24 +7,6 @@ defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))
 defaults.update(gui=defaults.get("gui", not defaults.pop("noGUI", True)))
 
 
-class AbaqusCommandOptions(BaseModel):
-    database: str | None = None
-    replay: str | None = None
-    recover: str | None = None
-    gui: bool = False
-    envstartup: bool = True
-    savedOptions: bool = True
-    savedGuiPrefs: bool = True
-    startupDialog: bool = True
-    custom: str | None = None
-    guiTester: str | None = None
-    guiRecord: bool | None = None
-    sim: str | None = None
-    log: str | None = None
-
-
-options = AbaqusCommandOptions(**defaults)
-
 
 class AbaqusCAEConfig(BaseModel):
     database: str | None = None
@@ -48,6 +30,14 @@ class AbaqusPythonConfig(BaseModel):
 class AbaqusConfig(BaseModel):
     cae: AbaqusCAEConfig
     python: AbaqusPythonConfig
+
+
+class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig):
+    ...
+
+
+options = AbaqusCommandOptions(**defaults)
+
 
 
 trues = ["true", "1", "on", "yes"]
