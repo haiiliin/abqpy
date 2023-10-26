@@ -65,55 +65,55 @@ One advantage in using this alternative is to change the options at run time ins
 ````
 
 ```{envvar} ABAQUS_CAE_DATABASE
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `database` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `database` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_REPLAY
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `replay` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `replay` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_RECOVER
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `recover` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `recover` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_GUI
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `gui` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `gui` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_ENVSTARTUP
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `envstartup` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `envstartup` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_SAVED_OPTIONS
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedOptions` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedOptions` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_SAVED_GUI_PREFS
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedGuiPrefs` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedGuiPrefs` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_STARTUP_DIALOG
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `startupDialog` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `startupDialog` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_CUSTOM
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `custom` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `custom` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_GUI_TESTER
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiTester` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiTester` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_CAE_GUI_RECORD
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiRecord` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiRecord` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_PYTHON_SIM
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `sim` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `sim` option but has higher priority.
 ```
 
 ```{envvar} ABAQUS_PYTHON_LOG
-A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `log` option which has higher priority.
+A shortcut to the `ABAQUS_COMMAND_OPTIONS` environment variable to set the `log` option but has higher priority.
 ```
 
 ## Example
