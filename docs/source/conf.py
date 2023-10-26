@@ -26,7 +26,10 @@ import typing
 
 from sphinx.builders.html import StandaloneHTMLBuilder
 
-import abqpy
+# Environment variables
+os.environ["ABQPY_MAKE_DOCS"] = "true"
+
+import abqpy  # noqa
 
 project = "abqpy"
 copyright = "2022, WANG Hailin"
@@ -45,9 +48,6 @@ locale_dirs = [f"locale/{major}"]  # path is example but recommended.
 gettext_compact = False  # optional.
 
 # -- General configuration ---------------------------------------------------
-
-# Environment variables
-os.environ["ABQPY_MAKE_DOCS"] = "true"
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
