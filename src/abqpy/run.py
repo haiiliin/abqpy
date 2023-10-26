@@ -17,17 +17,8 @@ def run(cae: bool = True) -> None:
     cae : bool, optional
         Whether to use `abaqus cae` command, True for `abaqus cae`, False for `abaqus python`, by default True
     """
-    # check if in debug mode and run
-    debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
-    gettrace = getattr(sys, "gettrace", None)
-    debug = debug or (gettrace is not None and gettrace())
-
-    # Check if it is imported by sphinx to generate docs or skipped by pytest
-    make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
-    skip = os.environ.get("ABQPY_SKIP_ABAQUS", "false").lower() == "true"
-
-    # If making docs, return
-    if make_docs or skip:
+    # If making docs or skipping abaqus, do nothing
+    if config.make_docs or config.skip_abaqus:
         return
 
     # If it is a jupyter notebook, convert it to python script
@@ -47,7 +38,8 @@ def run(cae: bool = True) -> None:
 
     # Alternative to use abaqus command line options at run time
     print("The script will be submitted to Abaqus next and the current Python session will be closed.")
-    if debug:
+    gettrace = getattr(sys, "gettrace", None)
+    if config.debug or (gettrace is not None and gettrace()):
         warnings.warn(
             "You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it."
         )

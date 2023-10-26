@@ -30,6 +30,11 @@ class AbaqusConfig(BaseModel):
     cae: AbaqusCAEConfig
     python: AbaqusPythonConfig
 
+    debug: bool = False
+    skip_abaqus: bool = False
+    make_docs: bool = False
+    cli_traceback_limit: int = 0
+
 
 class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig):
     ...
@@ -79,4 +84,8 @@ config = AbaqusConfig(
         sim=os.environ["ABAQUS_PYTHON_SIM"] if "ABAQUS_PYTHON_SIM" in os.environ else options.sim,
         log=os.environ["ABAQUS_PYTHON_LOG"] if "ABAQUS_PYTHON_LOG" in os.environ else options.log,
     ),
+    debug=os.environ.get("ABQPY_DEBUG", "false").lower() in trues,
+    skip_abaqus=os.environ.get("ABQPY_SKIP_ABAQUS", "false").lower() in trues,
+    make_docs=os.environ.get("ABQPY_MAKE_DOCS", "false").lower() in trues,
+    cli_traceback_limit=int(os.environ.get("ABQPY_CLI_TRACEBACK_LIMIT", 0)),
 )
