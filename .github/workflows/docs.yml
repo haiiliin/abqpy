@@ -31,7 +31,7 @@ jobs:
   branch:
     runs-on: ubuntu-latest
     steps:
-      - name: Get the version 
+      - name: Get the version
         id: branch
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
