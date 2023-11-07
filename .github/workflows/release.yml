@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -33,6 +33,11 @@ jobs:
           pip install build
       - name: Build package
         run: python -m build
+      - name: Upload binaries to release
+        run: |
+          gh release upload --clobber ${{ github.ref_name }} dist/*.tar.gz dist/*.whl
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@v1.8.5
         with:

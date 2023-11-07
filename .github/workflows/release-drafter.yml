@@ -20,29 +20,3 @@ jobs:
           commitish: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install build
-      - name: Tag the next version
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git tag -a ${{ steps.release_drafter.outputs.tag_name }} -m "Release ${{ steps.release_drafter.outputs.tag_name }}"
-      - name: Build package
-        run: |
-          python -m build
-          cd wrapper && python -m build
-      - name: Upload binaries to release
-        run: |
-          gh release upload --clobber ${{ env.VERSION }} dist/*.tar.gz dist/*.whl
-          gh release upload --clobber ${{ env.VERSION }} wrapper/dist/*.tar.gz wrapper/dist/*.whl
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VERSION: ${{ steps.release_drafter.outputs.tag_name }}
