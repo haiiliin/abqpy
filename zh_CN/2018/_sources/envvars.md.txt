@@ -29,7 +29,7 @@ command and also another options that could be passed to these commands. To defi
 these procedures and options you can create a new system environment variable
 named `ABAQUS_COMMAND_OPTIONS`, and set a **dictionary** to this variable with the
 options you want to use. The values of the dictionary keys would be booleans or
-strings, e.g.: `{'noGUI':True, 'database':'file.odb'}`
+strings, e.g.: `{'gui': True, 'database': 'file.odb'}`
 
 The possible options are:
 
@@ -62,7 +62,66 @@ The possible options are:
    ```
 
 One advantage in using this alternative is to change the options at run time inside the code.
+
+```{note}
+The environment variable {envvar}`ABAQUS_COMMAND_OPTIONS` must be a valid string that can be parsed to a Python dictionary,
+which means that you must use `True` or `False` for boolean options. However, in the following individual environment
+variables, you can use `true`, `on`, `yes` or `1` (or capitalized ones since they are not case sensitive) to set the
+boolean option to `True` and any other values to set it to `False`.
+```
 ````
+
+```{envvar} ABAQUS_CAE_DATABASE
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `database` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_REPLAY
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `replay` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_RECOVER
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `recover` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_GUI
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `gui` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_ENVSTARTUP
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `envstartup` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_SAVED_OPTIONS
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedOptions` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_SAVED_GUI_PREFS
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `savedGuiPrefs` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_STARTUP_DIALOG
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `startupDialog` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_CUSTOM
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `custom` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_GUI_TESTER
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiTester` option but has higher priority.
+```
+
+```{envvar} ABAQUS_CAE_GUI_RECORD
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `guiRecord` option but has higher priority.
+```
+
+```{envvar} ABAQUS_PYTHON_SIM
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `sim` option but has higher priority.
+```
+
+```{envvar} ABAQUS_PYTHON_LOG
+A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `log` option but has higher priority.
+```
 
 ## Example
 
@@ -72,7 +131,7 @@ abaqus cae command procedure, at run time.
 ```python
 import os
 
-os.environ["ABAQUS_COMMAND_OPTIONS"] = str({"noGUI": False, "database": "file.odb"})
+os.environ["ABAQUS_COMMAND_OPTIONS"] = str({"gui": True, "database": "file.odb"})
 
 from abaqus import *
 
