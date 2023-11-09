@@ -32,10 +32,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install build
       - name: Build package
-        run: python -m build
+        run: |
+          python -m build
+          cd wrapper && python -m build
       - name: Upload binaries to release
         run: |
           gh release upload --clobber ${{ github.ref_name }} dist/*.tar.gz dist/*.whl
+          gh release upload --clobber ${{ github.ref_name }} wrapper/dist/*.tar.gz wrapper/dist/*.whl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish package
@@ -43,3 +46,10 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
+          packages-dir: dist
+      - name: Publish wrapper package
+        uses: pypa/gh-action-pypi-publish@v1.8.5
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          packages-dir: wrapper/dist
