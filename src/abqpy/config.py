@@ -2,12 +2,20 @@ from __future__ import annotations
 
 import ast
 import os
-from typing import Optional
+from typing import Any, Optional
 
 from pydantic import BaseModel
 
 
-class AbaqusCAEConfig(BaseModel):
+class CompatibleBaseModel(BaseModel):
+    def model_dump(self, **kwargs) -> dict[str, Any]:
+        try:
+            return super().model_dump(**kwargs)
+        except AttributeError:
+            return super().dict(**kwargs)
+
+
+class AbaqusCAEConfig(CompatibleBaseModel):
     database: Optional[str] = None
     replay: Optional[str] = None
     recover: Optional[str] = None
@@ -21,12 +29,12 @@ class AbaqusCAEConfig(BaseModel):
     guiRecord: Optional[bool] = None
 
 
-class AbaqusPythonConfig(BaseModel):
+class AbaqusPythonConfig(CompatibleBaseModel):
     sim: Optional[str] = None
     log: Optional[str] = None
 
 
-class AbaqusConfig(BaseModel):
+class AbaqusConfig(CompatibleBaseModel):
     cae: AbaqusCAEConfig
     python: AbaqusPythonConfig
 
