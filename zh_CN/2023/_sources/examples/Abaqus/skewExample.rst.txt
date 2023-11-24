@@ -51,7 +51,7 @@ The following shows the contents of the script skewExample.py. The parametric st
 
 .. GENERATED FROM PYTHON SOURCE LINES 33-368
 
-.. code-block:: default
+.. code-block:: Python
 
     import visualization
     from abaqus import *
@@ -390,27 +390,19 @@ The following shows the contents of the script skewExample.py. The parametric st
     createXYPlot((310, 10), "Skew 3", "Min Moment - 4x4 Mesh", minMomentData)
 
 
-.. rst-class:: sphx-glr-timing
-
-   **Total running time of the script:** (0 minutes 0.000 seconds)
-
-
 .. _sphx_glr_download_examples_Abaqus_skewExample.py:
 
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: skewExample.ipynb <skewExample.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: skewExample.py <skewExample.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: skewExample.ipynb <skewExample.ipynb>`
 
 
 .. only:: html
