@@ -2114,6 +2114,9 @@ class StepModel(ModelBase):
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.LCP_CONTACT] = C.FULL_NEWTON,
+        gapDistance: float = 0.0,
+        scaleFactor: float = 1.0,
     ) -> StaticLinearPerturbationStep:
         """This method creates a StaticLinearPerturbationStep object.
 
@@ -2140,6 +2143,27 @@ class StepModel(ModelBase):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+        solutionTechnique
+            A SymbolicConstant specifying the technique used for solving nonlinear equations. Possible values are
+            FULL_NEWTON and LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``solutionTechnique`` was added.
+        gapDistance
+            A Float specifying the zone within which potential contact constraints are exposed to the LCP solver,
+            applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``gapDistance`` was added.
+        scaleFactor
+            A Float specifying the scaling factor for the initial gap distance specified by gapDistance or the
+            internally computed (contact) pair-wise gap distances, applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``scaleFactor`` was added.
 
         Returns
         -------
@@ -2147,7 +2171,15 @@ class StepModel(ModelBase):
             A StaticLinearPerturbationStep object.
         """
         self.steps[name] = step = StaticLinearPerturbationStep(
-            name, previous, description, matrixSolver, matrixStorage, maintainAttributes
+            name,
+            previous,
+            description,
+            matrixSolver,
+            matrixStorage,
+            maintainAttributes,
+            solutionTechnique,
+            gapDistance,
+            scaleFactor,
         )
         return step
 

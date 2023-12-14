@@ -276,6 +276,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        rotationalCoupling: Literal[C.ROTATIONAL_CONTINUUM, C.ROTATIONAL_STRUCTURAL] = C.ROTATIONAL_STRUCTURAL,
         weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: int | None = None,
     ) -> DiscreteFastener:
@@ -310,6 +311,13 @@ class EngineeringFeature(EngineeringFeatureBase):
             rotation of each attachment point to the average motion of the surface nodes within the
             radius of influence from the fastening point. Possible values are CONTINUUM and
             STRUCTURAL. The default value is CONTINUUM.
+        rotationalCoupling
+            A SymbolicConstant specifying the rotational coupling method used. Possible values are ROTATIONAL_CONTINUUM
+            and ROTATIONAL_STRUCTURAL. The default value is ROTATIONAL_STRUCTURAL.
+
+            .. versionadded:: 2024
+
+                The argument ``rotationalCoupling`` was added.
         weightingMethod
             A SymbolicConstant specifying the weighting scheme to be used to weight the contribution
             of the displacements of the surface nodes within the radius of influence to the motion

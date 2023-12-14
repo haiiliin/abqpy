@@ -169,6 +169,15 @@ class BeamSection(Section):
     #: model database but not for the ODB API.
     profileEnd: str = ""
 
+    #: A pair of Floats specifying the X- and Y-coordinates to define an offset for the cross-section origin from
+    #: the beam axis with respect to the default (that is, without an offset) local (1, 2) axis system. The default
+    #: beamSectionOffset is (0, 0).
+    #:
+    #: .. versionadded:: 2024
+    #:
+    #:     The attribute `beamSectionOffset` was added.
+    beamSectionOffset: tuple[float, float] = (0.0, 0.0)
+
     @abaqus_method_doc
     def __init__(
         self,
@@ -200,6 +209,7 @@ class BeamSection(Section):
         centroid: tuple[float, float] = (0.0, 0.0),
         shearCenter: tuple[float, float] = (0.0, 0.0),
         profileEnd: str = "",
+        beamSectionOffset: tuple[float, float] = (0.0, 0.0),
     ) -> None:
         """This method creates a BeamSection object.
 
@@ -298,6 +308,14 @@ class BeamSection(Section):
             same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
+        beamSectionOffset
+            A pair of Floats specifying the X- and Y-coordinates to define an offset for the cross-section origin from
+            the beam axis with respect to the default (that is, without an offset) local (1, 2) axis system. The default
+            beamSectionOffset is (0, 0).
+
+            .. versionadded:: 2024
+
+                The argument `beamSectionOffset` was added.
 
         Returns
         -------
@@ -334,6 +352,7 @@ class BeamSection(Section):
         centroid: tuple[float, float] = (0.0, 0.0),
         shearCenter: tuple[float, float] = (0.0, 0.0),
         profileEnd: str = "",
+        beamSectionOffset: tuple[float, float] = (0.0, 0.0),
     ) -> None:
         """This method modifies the BeamSection object.
 
@@ -418,5 +437,13 @@ class BeamSection(Section):
             same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
+        beamSectionOffset
+            A pair of Floats specifying the X- and Y-coordinates to define an offset for the cross-section origin from
+            the beam axis with respect to the default (that is, without an offset) local (1, 2) axis system. The default
+            beamSectionOffset is (0, 0).
+
+            .. versionadded:: 2024
+
+                The argument `beamSectionOffset` was added.
         """
         ...

@@ -89,7 +89,6 @@ class OptimizationTask(OptimizationTaskBase):
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
-        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: StepOptionArray | None = None,
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
@@ -98,6 +97,10 @@ class OptimizationTask(OptimizationTaskBase):
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
+
+        .. versionchanged:: 2024
+
+            The argument `stepOperation` was removed.
 
         Parameters
         ----------
@@ -121,9 +124,6 @@ class OptimizationTask(OptimizationTaskBase):
         shellLayer
             A SymbolicConstant specifying the location used for shell layer values. Possible values
             are BOTTOM, MAXIMUM, MIDDLE, MINIMUM, and TOP. The default value is MAXIMUM.
-        stepOperation
-            A SymbolicConstant specifying the operation used on values across steps and load cases.
-            Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
             A StepOptionArray object.
 
@@ -140,7 +140,6 @@ class OptimizationTask(OptimizationTaskBase):
             operation,
             region,
             shellLayer,
-            stepOperation,
             stepOptions,
         )
         return singleTermDesignResponse

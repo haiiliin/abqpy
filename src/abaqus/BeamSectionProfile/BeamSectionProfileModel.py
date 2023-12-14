@@ -6,8 +6,10 @@ from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import Boolean
 from .ArbitraryProfile import ArbitraryProfile
 from .BoxProfile import BoxProfile
+from .ChannelProfile import ChannelProfile
 from .CircularProfile import CircularProfile
 from .GeneralizedProfile import GeneralizedProfile
+from .HatProfile import HatProfile
 from .HexagonalProfile import HexagonalProfile
 from .IProfile import IProfile
 from .LProfile import LProfile
@@ -141,6 +143,66 @@ class BeamSectionProfileModel(ModelBase):
         return boxProfile
 
     @abaqus_method_doc
+    def ChannelProfile(
+        self,
+        name: str,
+        l: float,
+        h: float,
+        b1: float,
+        b2: float,
+        t1: float,
+        t2: float,
+        t3: float,
+        o: float,
+    ):
+        """This method creates a ChannelProfile object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].ChannelProfile
+                session.odbs[name].ChannelProfile
+
+        .. versionadded:: 2024
+
+            The ``ChannelProfile`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        l
+            A positive Float specifying the l dimension (offset of 1–axis from the bottom flange surface) of the Channel
+            profile. For more information, see Beam Cross-Section Library.
+        h
+            A positive Float specifying the h dimension (height) of the Channel profile.
+        b1
+            A positive Float specifying the b1 dimension (lower flange width) of the Channel profile.
+        b2
+            A positive Float specifying the b2 dimension (upper flange width) of the Channel profile.
+        t1
+            A positive Float specifying the t1 dimension (lower flange thickness) of the Channel profile.
+        t2
+            A positive Float specifying the t2 dimension (upper flange thickness) of the Channel profile.
+        t3
+            A positive Float specifying the t3 dimension (web thickness) of the Channel profile.
+        o
+            A positive Float specifying the o dimension (offset of 2–axis from the left edge of web) of the Channel
+            profile.
+
+        Returns
+        -------
+        ChannelProfile
+            An ChannelProfile object.
+
+        Raises
+        ------
+        RangeError
+        """
+        self.profiles[name] = channelProfile = ChannelProfile(name, l, h, b1, b2, t1, t2, t3, o)
+        return channelProfile
+
+    @abaqus_method_doc
     def CircularProfile(self, name: str, r: float) -> CircularProfile:
         """This method creates a CircularProfile object.
 
@@ -221,6 +283,65 @@ class BeamSectionProfileModel(ModelBase):
         """
         self.profiles[name] = generalizedProfile = GeneralizedProfile(name, area, i11, i12, i22, j, gammaO, gammaW)
         return generalizedProfile
+
+    @abaqus_method_doc
+    def HatProfile(
+        self,
+        name: str,
+        l: float,
+        h: float,
+        b: float,
+        b1: float,
+        b2: float,
+        t1: float,
+        t2: float,
+        t3: float,
+    ):
+        """This method creates a HatProfile object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].HatProfile
+                session.odbs[name].HatProfile
+
+        .. versionadded:: 2024
+
+            The ``HatProfile`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        l
+            A positive Float specifying the l dimension (offset of 1–axis from the bottom flange surface) of the Hat
+            profile. For more information, see Beam Cross-Section Library.
+        h
+            A positive Float specifying the h dimension (height) of the Hat profile.
+        b
+            A positive Float specifying the b dimension (bottom width) of the Hat profile.
+        b1
+            A positive Float specifying the b1 dimension (upper flange width) of the Hat profile.
+        b2
+            A positive Float specifying the b2 dimension (lower flange width) of the Hat profile.
+        t1
+            A positive Float specifying the t1 dimension (upper flange thickness) of the Hat profile.
+        t2
+            A positive Float specifying the t2 dimension (lower flange thickness) of the Hat profile.
+        t3
+            A positive Float specifying the t3 dimension (web thickness) of the Hat profile.
+
+        Returns
+        -------
+        HatProfile
+            An HatProfile object.
+
+        Raises
+        ------
+        RangeError
+        """
+        self.profiles[name] = hatProfile = HatProfile(name, l, h, b, b1, b2, t1, t2, t3)
+        return hatProfile
 
     @abaqus_method_doc
     def HexagonalProfile(self, name: str, r: float, t: float) -> HexagonalProfile:

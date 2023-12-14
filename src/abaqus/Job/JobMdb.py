@@ -361,6 +361,7 @@ class JobMdb(MdbBase):
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
         saveEvery: int | None = None,
+        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = C.DEFAULT,
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 
@@ -407,6 +408,14 @@ class JobMdb(MdbBase):
             OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
             iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
             and so on. The default value is None.
+        licenseType
+            A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license
+            model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value is DEFAULT.
+            For optimization job submission, the licenseType options are available regardless of the license model.
+
+            .. versionadded:: 2024
+
+                The argument ``licenseType`` was added.
 
         Returns
         -------
@@ -429,5 +438,6 @@ class JobMdb(MdbBase):
             saveFirst,
             saveLast,
             saveEvery,
+            licenseType,
         )
         return optimizationProcess

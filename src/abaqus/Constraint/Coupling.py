@@ -48,6 +48,14 @@ class Coupling(Constraint):
     #: KINEMATIC, DISTRIBUTING, and STRUCTURAL.
     couplingType: SymbolicConstant
 
+    #: A SymbolicConstant specifying the rotational coupling constraint type. Possible values are
+    #: ROTATIONAL_CONTINUUM and ROTATIONAL_STRUCTURAL.
+    #:
+    #: .. versionadded:: 2024
+    #:
+    #:     The ``rotationalCouplingType`` attribute was added.
+    rotationalCouplingType: SymbolicConstant
+
     #: A Boolean specifying if the control point will be adjusted (moved) to the surface. The
     #: point will be adjusted in the direction normal to the specified surface. The default
     #: value is OFF.
@@ -109,6 +117,7 @@ class Coupling(Constraint):
         controlPoint: Region,
         influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
         couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
+        rotationalCouplingType: Literal[C.ROTATIONAL_CONTINUUM, C.ROTATIONAL_STRUCTURAL],
         adjust: Boolean = OFF,
         localCsys: str | None = None,
         u1: Boolean = ON,
@@ -140,6 +149,13 @@ class Coupling(Constraint):
         couplingType
             A SymbolicConstant specifying the coupling constraint type. Possible values are
             KINEMATIC, DISTRIBUTING, and STRUCTURAL.
+        rotationalCouplingType
+            A SymbolicConstant specifying the rotational coupling constraint type. Possible values are
+            ROTATIONAL_CONTINUUM and ROTATIONAL_STRUCTURAL.
+
+            .. versionadded:: 2024
+
+                The ``rotationalCouplingType`` argument was added.
         adjust
             A Boolean specifying if the control point will be adjusted (moved) to the surface. The
             point will be adjusted in the direction normal to the specified surface. The default

@@ -39,6 +39,7 @@ class XYSessionBase(SessionBase):
         curvatureCsys: str = "",
         useCurvatureCsysForOrient: Boolean = OFF,
         saveXy: Boolean = OFF,
+        useMaxStressValue: Boolean = OFF,
         writeReport: Boolean = OFF,
         reportFile: str = "",
         appendToFile: Boolean = OFF,
@@ -108,6 +109,13 @@ class XYSessionBase(SessionBase):
         saveXy
             A Boolean specifying whether to save the xyData objects created during the stress
             linearization operation to the session. The default value is OFF .
+        useMaxStressValue
+            A Boolean specifying whether to use the maximum stress value from available multiple values at a point. The
+            default value is OFF.
+
+            .. versionadded:: 2024
+
+                The argument ``useMaxStressValue`` was added.
         writeReport
             A Boolean specifying whether to write the output from the stress linearization operation
             to a text file. The default value is ON .

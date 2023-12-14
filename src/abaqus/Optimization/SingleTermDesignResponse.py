@@ -20,6 +20,10 @@ class SingleTermDesignResponse(DesignResponse):
 
             import optimization
             mdb.models[name].optimizationTasks[name].designResponses[name]
+
+    .. versionchanged:: 2024
+
+        The attribute `stepOperation` was removed.
     """
 
     #: A String specifying the design response repository key.
@@ -49,10 +53,6 @@ class SingleTermDesignResponse(DesignResponse):
     #: are BOTTOM, MAXIMUM, MIDDLE, MINIMUM, and TOP. The default value is MAXIMUM.
     shellLayer: SymbolicConstant = MAXIMUM
 
-    #: A SymbolicConstant specifying the operation used on values across steps and load cases.
-    #: Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
-    stepOperation: SymbolicConstant = SUM
-
     #: A StepOptionArray object.
     stepOptions: StepOptionArray | None = None
 
@@ -66,7 +66,6 @@ class SingleTermDesignResponse(DesignResponse):
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
-        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: StepOptionArray | None = None,
     ):
         """This method creates a SingleTermDesignResponse object.
@@ -75,6 +74,10 @@ class SingleTermDesignResponse(DesignResponse):
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
+
+        .. versionchanged:: 2024
+
+            The argument `stepOperation` was removed.
 
         Parameters
         ----------
@@ -98,9 +101,6 @@ class SingleTermDesignResponse(DesignResponse):
         shellLayer
             A SymbolicConstant specifying the location used for shell layer values. Possible values
             are BOTTOM, MAXIMUM, MIDDLE, MINIMUM, and TOP. The default value is MAXIMUM.
-        stepOperation
-            A SymbolicConstant specifying the operation used on values across steps and load cases.
-            Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
             A StepOptionArray object.
 
@@ -119,7 +119,6 @@ class SingleTermDesignResponse(DesignResponse):
         operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         region: Literal[C.MODEL] = MODEL,
         shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
-        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: StepOptionArray | None = None,
     ):
         """This method modifies the SingleTermDesignResponse object.
@@ -142,9 +141,6 @@ class SingleTermDesignResponse(DesignResponse):
         shellLayer
             A SymbolicConstant specifying the location used for shell layer values. Possible values
             are BOTTOM, MAXIMUM, MIDDLE, MINIMUM, and TOP. The default value is MAXIMUM.
-        stepOperation
-            A SymbolicConstant specifying the operation used on values across steps and load cases.
-            Possible values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
         stepOptions
             A StepOptionArray object.
         """
