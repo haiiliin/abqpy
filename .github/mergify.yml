@@ -1,4 +1,37 @@
 pull_request_rules:
+  - name: Backport to 2024 (auto-merge)
+    conditions:
+      - label=backport-to-2024
+      - label!=disable-auto-merge
+      - label!=disable-auto-merge-2024
+    actions:
+      backport:
+        title: "{{ title }} (backport #{{ number }})"
+        branches:
+          - "2024"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2024"
+  - name: Backport to 2024 (disable-auto-merge)
+    conditions:
+      - label=backport-to-2024
+      - or:
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2024
+    actions:
+      backport:
+        title: "{{ title }} (backport #{{ number }})"
+        branches:
+          - "2024"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2024"
+          - disable-auto-merge
+
   - name: Backport to 2023 (auto-merge)
     conditions:
       - label=backport-to-2023
