@@ -3,7 +3,7 @@ name: docs
 on:
   push:
     branches:
-      - "2023"
+      - "2024"
     paths:
       - "src/**"
       - "docs/source/**"
@@ -11,7 +11,7 @@ on:
       - ".github/workflows/docs.yml"
   pull_request:
     branches:
-      - "2023"
+      - "2024"
     paths:
       - "src/**"
       - "docs/source/**"
