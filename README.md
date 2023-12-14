@@ -1,8 +1,8 @@
-# abqpy 2023
+# abqpy 2024
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
-[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2023)](https://coveralls.io/github/haiiliin/abqpy?branch=2023)
+[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2024)](https://coveralls.io/github/haiiliin/abqpy?branch=2024)
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
@@ -29,7 +29,7 @@ are installed on your computer,
 open `cmd` or `terminal`, type:
 
 ```
-pip install -U abqpy==2023.*  # change the major version to match your Abaqus version
+pip install -U abqpy==2024.*  # change the major version to match your Abaqus version
 ```
 
 Then, open your Abaqus/Python script in your favorite IDE with Python language support,

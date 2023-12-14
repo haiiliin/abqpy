@@ -72,6 +72,7 @@ from ..UtilityAndView.abaqusConstants import (
     Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .ContactMassScalingExp import ContactMassScalingExp
 from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
@@ -930,6 +931,47 @@ class InteractionModel(
             mainSecondaryAssignments,
             polarityAssignments,
         )
+        return interaction
+
+    @abaqus_method_doc
+    def ContactMassScalingExp(
+        self,
+        name: str,
+        createStepName: str,
+        location: Literal[
+            C.ELEMENT_MASS_SCALING, C.NONE, C.ALL_CONTACT_SURFACES, C.SPECIFIED_SURFACES
+        ] = C.ELEMENT_MASS_SCALING,
+        surfaces: tuple = (),
+    ):
+        """This method creates an ContactMassScalingExp object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].ContactMassScalingExp
+
+        .. versionadded:: 2024
+
+            The ``ContactMassScalingExp`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the ContactMassScalingExp object is created.
+        location
+            A SymbolicConstant specifying the location. Possible values are ELEMENT MASS SCALING (default), NONE,
+            ALL CONTACT SURFACES, and SPECIFIED SURFACES.
+        surfaces
+            A tuple of Region objects specifying the surfaces when LOCATION=SPECIFIED SURFACES.
+
+        Returns
+        -------
+        ContactMassScalingExp
+            An ContactMassScalingExp object.
+        """
+        self.interactions[name] = interaction = ContactMassScalingExp(name, createStepName, location, surfaces)
         return interaction
 
     @abaqus_method_doc

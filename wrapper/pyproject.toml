@@ -6,7 +6,7 @@ requires = ["setuptools", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "abqpy2023"
+name = "abqpy2024"
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
 ]
@@ -43,4 +43,4 @@ jupyter = [
 [tool.setuptools_scm]
 root = ".."
 version_scheme = "post-release"
-fallback_version = "2023.0.0-dev"
+fallback_version = "2024.0.0-dev"

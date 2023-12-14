@@ -157,6 +157,7 @@ class SectionModel(ModelBase):
         centroid: tuple[float, float] = (0.0, 0.0),
         shearCenter: tuple[float, float] = (0.0, 0.0),
         profileEnd: str = "",
+        beamSectionOffset: tuple[float, float] = (0.0, 0.0),
     ) -> BeamSection:
         """This method creates a BeamSection object.
 
@@ -255,6 +256,14 @@ class SectionModel(ModelBase):
             same as that of the start profile. This argument is valid only when **beamShape** = TAPERED.
             The default value is an empty string. This parameter is available for manipulating the
             model database but not for the ODB API.
+        beamSectionOffset
+            A pair of Floats specifying the X- and Y-coordinates to define an offset for the cross-section origin from
+            the beam axis with respect to the default (that is, without an offset) local (1, 2) axis system. The default
+            beamSectionOffset is (0, 0).
+
+            .. versionadded:: 2024
+
+                The argument `beamSectionOffset` was added.
 
         Returns
         -------
@@ -290,6 +299,7 @@ class SectionModel(ModelBase):
             centroid,
             shearCenter,
             profileEnd,
+            beamSectionOffset,
         )
         return section
 

@@ -15,6 +15,10 @@ Python script, even without opening the Abaqus/CAE.
 ```{note}
 The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you
 must write codes that are compatiable with Python 2 and Python 3.
+
+Abaqus 2024 upgrades the Python interpreter to Python 3.10.5, so you can write codes without
+being compatiable with Python 2 from Abaqus 2024. See
+[What's New - SIMULIA User Assistance 2024](https://help.3ds.com/2024/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-r-wn.htm?contextscope=all).
 ```
 
 # Contents

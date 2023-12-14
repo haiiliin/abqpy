@@ -57,6 +57,30 @@ class StaticLinearPerturbationStep(AnalysisStep):
     #: UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
     matrixStorage: SymbolicConstant = SOLVER_DEFAULT
 
+    #: A SymbolicConstant specifying the technique used for solving nonlinear equations. Possible values are
+    #: FULL_NEWTON and LCP_CONTACT.
+    #:
+    #: .. versionadded:: 2024
+    #:
+    #:     The attribute ``solutionTechnique`` was added.
+    solutionTechnique: SymbolicConstant = C.FULL_NEWTON
+
+    #: A Float specifying the zone within which potential contact constraints are exposed to the LCP solver,
+    #: applicable when solutionTechnique is LCP_CONTACT.
+    #:
+    #: .. versionadded:: 2024
+    #:
+    #:     The attribute ``gapDistance`` was added.
+    gapDistance: float = 0.0
+
+    #: A Float specifying the scaling factor for the initial gap distance specified by gapDistance or the
+    #: internally computed (contact) pair-wise gap distances, applicable when solutionTechnique is LCP_CONTACT.
+    #:
+    #: .. versionadded:: 2024
+    #:
+    #:     The attribute ``scaleFactor`` was added.
+    scaleFactor: float = 1.0
+
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
     previous: str = ""
@@ -158,6 +182,9 @@ class StaticLinearPerturbationStep(AnalysisStep):
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.LCP_CONTACT] = C.FULL_NEWTON,
+        gapDistance: float = 0.0,
+        scaleFactor: float = 1.0,
     ):
         """This method creates a StaticLinearPerturbationStep object.
 
@@ -184,7 +211,27 @@ class StaticLinearPerturbationStep(AnalysisStep):
         maintainAttributes
             A Boolean specifying whether to retain attributes from an existing step with the same
             name. The default value is False.
+        solutionTechnique
+            A SymbolicConstant specifying the technique used for solving nonlinear equations. Possible values are
+            FULL_NEWTON and LCP_CONTACT.
 
+            .. versionadded:: 2024
+
+                The argument ``solutionTechnique`` was added.
+        gapDistance
+            A Float specifying the zone within which potential contact constraints are exposed to the LCP solver,
+            applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``gapDistance`` was added.
+        scaleFactor
+            A Float specifying the scaling factor for the initial gap distance specified by gapDistance or the
+            internally computed (contact) pair-wise gap distances, applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``scaleFactor`` was added.
         Returns
         -------
         StaticLinearPerturbationStep
@@ -202,6 +249,9 @@ class StaticLinearPerturbationStep(AnalysisStep):
         description: str = "",
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.LCP_CONTACT] = C.FULL_NEWTON,
+        gapDistance: float = 0.0,
+        scaleFactor: float = 1.0,
     ):
         """This method modifies the StaticLinearPerturbationStep object.
 
@@ -215,6 +265,27 @@ class StaticLinearPerturbationStep(AnalysisStep):
         matrixStorage
             A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
             UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
+        solutionTechnique
+            A SymbolicConstant specifying the technique used for solving nonlinear equations. Possible values are
+            FULL_NEWTON and LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``solutionTechnique`` was added.
+        gapDistance
+            A Float specifying the zone within which potential contact constraints are exposed to the LCP solver,
+            applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``gapDistance`` was added.
+        scaleFactor
+            A Float specifying the scaling factor for the initial gap distance specified by gapDistance or the
+            internally computed (contact) pair-wise gap distances, applicable when solutionTechnique is LCP_CONTACT.
+
+            .. versionadded:: 2024
+
+                The argument ``scaleFactor`` was added.
 
         Raises
         ------
