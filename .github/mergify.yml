@@ -34,7 +34,9 @@ pull_request_rules:
 
   - name: Backport to 2023 (auto-merge)
     conditions:
-      - label=backport-to-2023
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2023
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2023
     actions:
@@ -49,7 +51,9 @@ pull_request_rules:
           - "2023"
   - name: Backport to 2023 (disable-auto-merge)
     conditions:
-      - label=backport-to-2023
+      - or:
+          - label=backport-to-all
+          - label=backport-to-2023
       - or:
           - label=disable-auto-merge
           - label=disable-auto-merge-2023
