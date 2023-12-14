@@ -1,8 +1,8 @@
-# abqpy 2023
+# abqpy 2024
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
-[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2023)](https://coveralls.io/github/haiiliin/abqpy?branch=2023)
+[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2024)](https://coveralls.io/github/haiiliin/abqpy?branch=2024)
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
@@ -26,7 +26,7 @@ Abaqus/Python 脚本的类型提示
 已经安装成功，然后打开 `cmd` 或者 `terminal`，输入：
 
 ```
-pip install -U abqpy==2023.*  # 将主版本号替换为你的 Abaqus 版本号
+pip install -U abqpy==2024.*  # 将主版本号替换为你的 Abaqus 版本号
 ```
 
 然后，在你喜欢的开发环境中使用 Python 3.7+ 运行你的 Abaqus/Python 脚本，看看奇迹如何发生。
