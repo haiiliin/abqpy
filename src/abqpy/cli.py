@@ -38,7 +38,7 @@ class AbqpyCLIBase:
         """
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
         args, options = " ".join(args), self._parse_options(**options)
-        self.run(f"{abaqus} {args} {options}")
+        self.run(abaqus + (f" {args}" if args else "") + (f" {options}" if options else ""))
 
 
 @typechecked
