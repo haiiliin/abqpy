@@ -44,7 +44,7 @@ jobs:
         env:
           version: ${{ matrix.version }}
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: abqpy-locale-${{ matrix.version }}
           path: docs/source/locale/${{ matrix.version }}
