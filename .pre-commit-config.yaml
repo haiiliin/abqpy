@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: "23.11.0"
+    rev: "23.12.1"
     hooks:
       - id: black
 
@@ -21,7 +21,7 @@ repos:
           - --style=file:.clang-format
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: "v3.1.0"
+    rev: "v4.0.0-alpha.8"
     hooks:
       - id: prettier
 
@@ -32,19 +32,19 @@ repos:
         additional_dependencies: ["pangu"]
 
   - repo: https://github.com/pycqa/isort
-    rev: "5.12.0"
+    rev: "5.13.2"
     hooks:
       - id: isort
         args: ["--profile", "black"]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.7.0"
+    rev: "v1.8.0"
     hooks:
       - id: mypy
         files: ^src/
 
   - repo: https://github.com/hakancelikdev/unimport
-    rev: "1.1.0"
+    rev: "1.2.1"
     hooks:
       - id: unimport
         args:
