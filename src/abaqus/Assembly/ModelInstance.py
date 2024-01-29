@@ -14,8 +14,7 @@ from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
 
 # prevent circular imports
-class Model:
-    ...
+class Model: ...
 
 
 @abaqus_class_doc
