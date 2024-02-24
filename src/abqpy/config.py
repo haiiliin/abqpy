@@ -19,6 +19,7 @@ class AbaqusCAEConfig(CompatibleBaseModel):
     database: Optional[str] = None
     replay: Optional[str] = None
     recover: Optional[str] = None
+    startup: Optional[str] = None
     gui: bool = False
     envstartup: bool = True
     savedOptions: bool = True
@@ -59,6 +60,7 @@ config = AbaqusConfig(
         database=os.environ["ABAQUS_CAE_DATABASE"] if "ABAQUS_CAE_DATABASE" in os.environ else options.database,
         replay=os.environ["ABAQUS_CAE_REPLAY"] if "ABAQUS_CAE_REPLAY" in os.environ else options.replay,
         recover=os.environ["ABAQUS_CAE_RECOVER"] if "ABAQUS_CAE_RECOVER" in os.environ else options.recover,
+        startup=os.environ["ABAQUS_CAE_STARTUP"] if "ABAQUS_CAE_STARTUP" in os.environ else options.startup,
         gui=os.environ["ABAQUS_CAE_GUI"].lower() in trues if "ABAQUS_CAE_GUI" in os.environ else options.gui,
         envstartup=(
             os.environ["ABAQUS_CAE_ENVSTARTUP"].lower() in trues
