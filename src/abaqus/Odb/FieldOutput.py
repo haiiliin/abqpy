@@ -162,8 +162,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs):
-        ...
+    def __init__(self, *args, **kwargs): ...
 
     @overload
     def addData(
@@ -313,8 +312,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def addData(self, *args, **kwargs):
-        ...
+    def addData(self, *args, **kwargs): ...
 
     @overload
     def getScalarField(self, invariant: SymbolicConstant):
@@ -358,8 +356,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def getScalarField(self, *args, **kwargs):
-        ...
+    def getScalarField(self, *args, **kwargs): ...
 
     @overload
     @abaqus_method_doc
@@ -673,8 +670,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def getTransformedField(self, *args, **kwargs):
-        ...
+    def getTransformedField(self, *args, **kwargs): ...
 
     def getConnectorFieldXformedToNodeA(self, deformationField: Union["FieldOutput", None] = None):
         """This method generates a new vector field containing the transformed component values of the parent
