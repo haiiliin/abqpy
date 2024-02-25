@@ -5,8 +5,7 @@ from .PartInstance import PartInstance
 
 
 # Prevent circular import
-class ModelBase:
-    ...
+class ModelBase: ...
 
 
 @abaqus_class_doc
