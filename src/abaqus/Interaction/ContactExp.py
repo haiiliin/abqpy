@@ -270,5 +270,4 @@ class ContactExp(Interaction):
         """
         super().__init__()
 
-    def __init__(self, *args, **kwargs):
-        ...
+    def __init__(self, *args, **kwargs): ...
