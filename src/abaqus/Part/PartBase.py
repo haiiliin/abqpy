@@ -280,7 +280,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromBooleanCut
 
         Parameters
         ----------
@@ -317,7 +317,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromBooleanMerge
 
         Parameters
         ----------
@@ -359,7 +359,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromExtrude2DMesh
 
         Parameters
         ----------
@@ -409,7 +409,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromGeometryFile
 
         Parameters
         ----------
@@ -495,7 +495,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromInstanceMesh
 
         Parameters
         ----------
@@ -535,7 +535,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromMesh
 
         Parameters
         ----------
@@ -566,7 +566,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromMeshMirror
 
         Parameters
         ----------
@@ -613,7 +613,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromNodesAndElements
 
         Parameters
         ----------
@@ -665,7 +665,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromOdb
 
         Parameters
         ----------
@@ -739,7 +739,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromSection3DMeshByPlane
 
         Parameters
         ----------
@@ -793,7 +793,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].PartFromSubstructure
 
         Parameters
         ----------
@@ -842,7 +842,7 @@ class PartBase(PartFeature):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].Part
+                mdb.models[name].Part2DGeomFrom2DMesh
 
         Parameters
         ----------
