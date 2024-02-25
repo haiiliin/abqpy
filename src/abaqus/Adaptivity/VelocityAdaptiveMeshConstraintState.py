@@ -102,21 +102,23 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         vr2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         vr3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
-        status: Literal[
-            C.NOT_YET_ACTIVE,
-            C.PROPAGATED_FROM_BASE_STATE,
-            C.DEACTIVATED_FROM_BASE_STATE,
-            C.DEACTIVATED,
-            C.MODIFIED_FROM_BASE_STATE,
-            C.PROPAGATED,
-            C.NO_LONGER_ACTIVE,
-            C.CREATED,
-            C.INSTANCE_NOT_APPLICABLE,
-            C.BUILT_INTO_MODES,
-            C.TYPE_NOT_APPLICABLE,
-            C.MODIFIED,
-        ]
-        | None = None,
+        status: (
+            Literal[
+                C.NOT_YET_ACTIVE,
+                C.PROPAGATED_FROM_BASE_STATE,
+                C.DEACTIVATED_FROM_BASE_STATE,
+                C.DEACTIVATED,
+                C.MODIFIED_FROM_BASE_STATE,
+                C.PROPAGATED,
+                C.NO_LONGER_ACTIVE,
+                C.CREATED,
+                C.INSTANCE_NOT_APPLICABLE,
+                C.BUILT_INTO_MODES,
+                C.TYPE_NOT_APPLICABLE,
+                C.MODIFIED,
+            ]
+            | None
+        ) = None,
         amplitude: str = "",
     ):
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary

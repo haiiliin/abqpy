@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: "23.12.1"
+    rev: "24.2.0"
     hooks:
       - id: black
 
@@ -12,7 +12,11 @@ repos:
           - black
 
   - repo: https://github.com/finsberg/clang-format-docs
+<<<<<<< HEAD
     rev: v0.2.1
+=======
+    rev: v0.3.0
+>>>>>>> 0418c659 ([pre-commit.ci] pre-commit autoupdate (#5488))
     hooks:
       - id: clang-format-docs
         additional_dependencies:
