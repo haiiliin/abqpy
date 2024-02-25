@@ -215,7 +215,8 @@ class Surface(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs) -> None: ...
+    def __init__(self, *args, **kwargs) -> None:
+        ...
 
     def SurfaceByBoolean(
         self,

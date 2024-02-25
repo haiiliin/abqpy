@@ -224,24 +224,36 @@ class Feature:
         spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
         patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = C.PATTERN_ORTHOGONALLY,
         referenceFace: str = "",
-        startPointForPatternDirection: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float]
-        ) = (0.0, 0.0, 0.0),
-        endPointForPatternDirection: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float]
-        ) = (0.0, 0.0, 0.0),
+        startPointForPatternDirection: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
+        endPointForPatternDirection: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
         offsetFromEdges: str = "",
         numberOfRows: int = 1,
         spacingBetweenRows: str = "",
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float]
-        ) = (0.0, 0.0, 0.0),
-        projectionDirEndPt: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float]
-        ) = (0.0, 0.0, 0.0),
+        projectionDirStartPt: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
+        projectionDirEndPt: ConstrainedSketchVertex
+        | Datum
+        | ReferencePoint
+        | MeshNode
+        | InterestingPoint
+        | Sequence[float] = (0.0, 0.0, 0.0),
         setName: str = "",
     ) -> Feature:
         """This method creates a Feature object by creating attachment points along or offset from one or more

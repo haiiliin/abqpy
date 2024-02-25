@@ -21,7 +21,8 @@ from .TangentialBehavior import TangentialBehavior
 
 
 # Prevent circular import
-class DerivedComponent: ...
+class DerivedComponent:
+    ...
 
 
 @abaqus_class_doc

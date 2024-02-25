@@ -56,7 +56,8 @@ from .PartFeature import PartFeature
 
 
 @abaqus_class_doc
-class PartInstance: ...
+class PartInstance:
+    ...
 
 
 class PartBase(PartFeature):
@@ -270,7 +271,8 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs): ...
+    def __init__(self, *args, **kwargs):
+        ...
 
     def PartFromBooleanCut(self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]):
         """This method creates a Part in the parts repository after subtracting or cutting the geometries of a

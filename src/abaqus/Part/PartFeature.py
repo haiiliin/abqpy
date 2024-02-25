@@ -1307,9 +1307,8 @@ class PartFeature(BaseFeature):
         faceList: Sequence[Face],
         distance: float | None = None,
         targetFaces: Sequence[Face] = (),
-        targetFacesMethod: (
-            Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION] | None
-        ) = None,
+        targetFacesMethod: Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
+        | None = None,
         fractionDistance: float | None = None,
         trimToReferenceRep: Boolean = OFF,
     ) -> "Feature":

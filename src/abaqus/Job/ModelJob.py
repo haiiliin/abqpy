@@ -97,9 +97,9 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying whether to use the double precision version of
     #: Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
     #: DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.
-    explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = (
-        SINGLE
-    )
+    explicitPrecision: Literal[
+        C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+    ] = SINGLE
 
     #: A SymbolicConstant specifying the precision of the nodal output written to the output
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.

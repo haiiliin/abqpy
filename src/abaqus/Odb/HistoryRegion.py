@@ -142,10 +142,10 @@ class HistoryRegion:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: (
-            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
-            | None
-        ) = None,
+        validInvariants: Literal[
+            C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS
+        ]
+        | None = None,
     ) -> HistoryOutput:
         """This method creates a HistoryOutput object.
 

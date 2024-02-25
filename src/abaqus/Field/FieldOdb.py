@@ -1,4 +1,5 @@
 from ..Odb.OdbBase import OdbBase
 
 
-class FieldOdb(OdbBase): ...
+class FieldOdb(OdbBase):
+    ...

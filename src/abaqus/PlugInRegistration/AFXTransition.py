@@ -14,7 +14,8 @@ class AFXTransition(FXObject):
     message target.
     """
 
-    class Operator: ...
+    class Operator:
+        ...
 
     #: Equal to.
     EQ: int = hash("EQ")

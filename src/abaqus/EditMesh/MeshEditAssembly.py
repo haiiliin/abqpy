@@ -186,7 +186,8 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def mergeNodes(self, *args, **kwargs): ...
+    def mergeNodes(self, *args, **kwargs):
+        ...
 
     def splitElement(self, elements: tuple):
         """This method splits quadrilateral elements into triangular elements.

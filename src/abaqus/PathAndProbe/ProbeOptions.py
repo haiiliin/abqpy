@@ -117,19 +117,17 @@ class ProbeOptions:
         self,
         options: Union["ProbeOptions", None] = None,
         probeEntity: Literal[C.NODE, C.ODB, C.ELEMENT] = ELEMENT,
-        probeOutputPosition: (
-            Literal[
-                C.ELEMENT_NODAL,
-                C.ELEMENT_FACE,
-                C.ELEMENT,
-                C.NODAL,
-                C.INTEGRATION_POINT,
-                C.NODE,
-                C.ODB,
-                C.ELEMENT_CENTROID,
-            ]
-            | None
-        ) = None,
+        probeOutputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.NODE,
+            C.ODB,
+            C.ELEMENT_CENTROID,
+        ]
+        | None = None,
         partInstance: Boolean = ON,
         elementID: Boolean = ON,
         elementType: Boolean = ON,

@@ -32,23 +32,21 @@ class AdaptivityStep(StepBase):
     def AdaptiveMeshConstraintState(
         self,
         amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
-        status: (
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-            | None
-        ) = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
@@ -112,23 +110,21 @@ class AdaptivityStep(StepBase):
         ur2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         ur3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
-        status: (
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-            | None
-        ) = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
         """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
@@ -198,24 +194,24 @@ class AdaptivityStep(StepBase):
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        self.adaptiveMeshConstraintStates[amplitude] = adaptiveMeshConstraintState = (
-            DisplacementAdaptiveMeshConstraintState(
-                u1,
-                u2,
-                u3,
-                ur1,
-                ur2,
-                ur3,
-                u1State,
-                u2State,
-                u3State,
-                ur1State,
-                ur2State,
-                ur3State,
-                amplitudeState,
-                status,
-                amplitude,
-            )
+        self.adaptiveMeshConstraintStates[
+            amplitude
+        ] = adaptiveMeshConstraintState = DisplacementAdaptiveMeshConstraintState(
+            u1,
+            u2,
+            u3,
+            ur1,
+            ur2,
+            ur3,
+            u1State,
+            u2State,
+            u3State,
+            ur1State,
+            ur2State,
+            ur3State,
+            amplitudeState,
+            status,
+            amplitude,
         )
         return adaptiveMeshConstraintState
 
@@ -235,23 +231,21 @@ class AdaptivityStep(StepBase):
         vr2State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         vr3State: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
         amplitudeState: Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED] | None = None,
-        status: (
-            Literal[
-                C.NOT_YET_ACTIVE,
-                C.PROPAGATED_FROM_BASE_STATE,
-                C.DEACTIVATED_FROM_BASE_STATE,
-                C.DEACTIVATED,
-                C.MODIFIED_FROM_BASE_STATE,
-                C.PROPAGATED,
-                C.NO_LONGER_ACTIVE,
-                C.CREATED,
-                C.INSTANCE_NOT_APPLICABLE,
-                C.BUILT_INTO_MODES,
-                C.TYPE_NOT_APPLICABLE,
-                C.MODIFIED,
-            ]
-            | None
-        ) = None,
+        status: Literal[
+            C.NOT_YET_ACTIVE,
+            C.PROPAGATED_FROM_BASE_STATE,
+            C.DEACTIVATED_FROM_BASE_STATE,
+            C.DEACTIVATED,
+            C.MODIFIED_FROM_BASE_STATE,
+            C.PROPAGATED,
+            C.NO_LONGER_ACTIVE,
+            C.CREATED,
+            C.INSTANCE_NOT_APPLICABLE,
+            C.BUILT_INTO_MODES,
+            C.TYPE_NOT_APPLICABLE,
+            C.MODIFIED,
+        ]
+        | None = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
@@ -321,24 +315,24 @@ class AdaptivityStep(StepBase):
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        self.adaptiveMeshConstraintStates[amplitude] = adaptiveMeshConstraintState = (
-            VelocityAdaptiveMeshConstraintState(
-                v1,
-                v2,
-                v3,
-                vr1,
-                vr2,
-                vr3,
-                v1State,
-                v2State,
-                v3State,
-                vr1State,
-                vr2State,
-                vr3State,
-                amplitudeState,
-                status,
-                amplitude,
-            )
+        self.adaptiveMeshConstraintStates[
+            amplitude
+        ] = adaptiveMeshConstraintState = VelocityAdaptiveMeshConstraintState(
+            v1,
+            v2,
+            v3,
+            vr1,
+            vr2,
+            vr3,
+            v1State,
+            v2State,
+            v3State,
+            vr1State,
+            vr2State,
+            vr3State,
+            amplitudeState,
+            status,
+            amplitude,
         )
         return adaptiveMeshConstraintState
 

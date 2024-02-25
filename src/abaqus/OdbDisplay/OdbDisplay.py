@@ -342,7 +342,8 @@ class OdbDisplay:
         ...
 
     @abaqus_method_doc
-    def setFrame(self, *args, **kwargs): ...
+    def setFrame(self, *args, **kwargs):
+        ...
 
     def setPrimaryVariable(
         self,

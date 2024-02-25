@@ -1,5 +1,4 @@
 """The following commands are used to request data entry from a user."""
-
 from __future__ import annotations
 
 from typing import overload
@@ -85,7 +84,8 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
 
 
 @abaqus_function_doc
-def getInput(*args, **kwargs): ...
+def getInput(*args, **kwargs):
+    ...
 
 
 @abaqus_function_doc

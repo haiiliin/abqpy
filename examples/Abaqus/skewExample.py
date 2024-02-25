@@ -30,7 +30,6 @@ The following shows the contents of the script skewExample.py. The parametric st
 
   The theoretical results are also plotted.
 """
-
 import visualization
 from abaqus import *
 from abaqusConstants import *
