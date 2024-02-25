@@ -25,7 +25,8 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
     @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge: ...
+    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -33,7 +34,8 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         self,
         coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[IgnoredEdge]: ...
+    ) -> list[IgnoredEdge]:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -41,7 +43,8 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         self,
         *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[IgnoredEdge]: ...
+    ) -> list[IgnoredEdge]:
+        ...
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, list[IgnoredEdge]]:

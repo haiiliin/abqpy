@@ -35,7 +35,11 @@ class VersionRole(SphinxRole):
         version = (
             major
             if self.type == "major"
-            else minor if self.type == "minor" else patch if self.type == "patch" else f"{major}.{minor}.{patch}"
+            else minor
+            if self.type == "minor"
+            else patch
+            if self.type == "patch"
+            else f"{major}.{minor}.{patch}"
         )
         text = f"{prefix}{version}{suffix}"
         return [nodes.Text(text, text)], []

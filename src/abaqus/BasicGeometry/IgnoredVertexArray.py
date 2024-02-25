@@ -25,7 +25,8 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
     @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex: ...
+    def findAt(self, coordinates: tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -33,7 +34,8 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         self,
         coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[IgnoredVertex]: ...
+    ) -> list[IgnoredVertex]:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -41,7 +43,8 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         self,
         *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[IgnoredVertex]: ...
+    ) -> list[IgnoredVertex]:
+        ...
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, list[IgnoredVertex]]:

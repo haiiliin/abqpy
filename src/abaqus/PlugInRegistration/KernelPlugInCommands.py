@@ -5,7 +5,6 @@ These functions can be accessed by::
     from abaqusGui import getAFXApp
     toolset=getAFXApp().getAFXMainWindow().getPluginToolset()
 """
-
 from typing import Sequence
 
 from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant

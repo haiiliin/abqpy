@@ -45,7 +45,8 @@ class AbaqusConfig(CompatibleBaseModel):
     cli_traceback_limit: int = 0
 
 
-class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig): ...
+class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig):
+    ...
 
 
 defaults = ast.literal_eval(os.environ.get("ABAQUS_COMMAND_OPTIONS", str({})))

@@ -4,4 +4,5 @@ from .AFXDataComponent import AFXDataComponent
 from .FXScrollArea import FXScrollArea
 
 
-class AFXBaseTable(FXScrollArea, AFXDataComponent): ...
+class AFXBaseTable(FXScrollArea, AFXDataComponent):
+    ...

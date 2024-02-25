@@ -73,4 +73,5 @@ def milestone(message: str, object: str, done: int, total: int):
 
 
 @abaqus_function_doc
-def milestone(*args, **kwargs): ...
+def milestone(*args, **kwargs):
+    ...

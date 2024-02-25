@@ -197,7 +197,8 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs) -> None: ...
+    def __init__(self, *args, **kwargs) -> None:
+        ...
 
     def SetByBoolean(
         self, name: str, sets: Sequence[Set], operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION

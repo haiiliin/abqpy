@@ -1,14 +1,16 @@
 from __future__ import annotations
 
 
-class FeatureSketch: ...
+class FeatureSketch:
+    ...
 
 
 def Sketch(self, sheetSize: float = 200, gridSize: float = 5) -> FeatureSketch:
     return FeatureSketch()
 
 
-def SketchTransform(): ...
+def SketchTransform():
+    ...
 
 
 __all__ = [

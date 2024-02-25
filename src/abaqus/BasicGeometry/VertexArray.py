@@ -64,7 +64,8 @@ class VertexArray(List[Vertex]):
         self,
         coordinates: tuple[float, float, float],
         printWarning: Boolean = True,
-    ) -> ConstrainedSketchVertex: ...
+    ) -> ConstrainedSketchVertex:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -72,7 +73,8 @@ class VertexArray(List[Vertex]):
         self,
         coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[ConstrainedSketchVertex]: ...
+    ) -> list[ConstrainedSketchVertex]:
+        ...
 
     @overload
     @abaqus_method_doc
@@ -80,7 +82,8 @@ class VertexArray(List[Vertex]):
         self,
         *coordinates: tuple[tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> list[ConstrainedSketchVertex]: ...
+    ) -> list[ConstrainedSketchVertex]:
+        ...
 
     @abaqus_method_doc
     def findAt(self, *args, **kwargs) -> Union[ConstrainedSketchVertex, list[ConstrainedSketchVertex]]:
