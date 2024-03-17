@@ -4,8 +4,6 @@ from typing import Sequence, Union, overload
 
 from numpy.typing import NDArray
 from typing_extensions import Literal
-
-from abaqus.BasicGeometry.ReferencePoint import ReferencePoint
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
@@ -14,7 +12,6 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.InterestingPoint import InterestingPoint
 from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Transform import Transform
-from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
 from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumPlane import DatumPlane
