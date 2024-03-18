@@ -4,6 +4,7 @@ from typing import TYPE_CHECKING, Sequence, Union
 
 from typing_extensions import Literal
 
+from abaqus.Datum.Datum import Datum
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
@@ -1307,8 +1308,9 @@ class PartFeature(BaseFeature):
         faceList: Sequence[Face],
         distance: float | None = None,
         targetFaces: Sequence[Face] = (),
-        targetFacesMethod: Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
-        | None = None,
+        targetFacesMethod: (
+            Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION] | None
+        ) = None,
         fractionDistance: float | None = None,
         trimToReferenceRep: Boolean = OFF,
     ) -> "Feature":
@@ -1791,7 +1793,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def ShellLoft(
         self,
-        loftsections: tuple,
+        loftsections: Sequence,
         startCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
         endCondition: Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED] | None = None,
         startTangent: float | None = None,
@@ -2408,9 +2410,9 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def Wire(
         self,
-        sketchPlane: str,
+        sketchPlane: Union[Datum, Face],
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
-        sketchUpEdge: Edge,
+        sketchUpEdge: Union[Edge, Datum],
         sketch: ConstrainedSketch,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> "Feature":

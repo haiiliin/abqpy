@@ -967,16 +967,17 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setElementType(
         self,
-        regions: Union[
-            Sequence[
-                Union[
-                    ConstrainedSketchGeometry,
-                    Sequence[MeshElement],
-                    Sequence[Cell],
-                ]
-            ],
-            Set,
-        ],
+        # regions: Union[
+        #     Sequence[
+        #         Union[
+        #             ConstrainedSketchGeometry,
+        #             Sequence[MeshElement],
+        #             Sequence[Cell],
+        #         ]
+        #     ],
+        #     Set,
+        # ],
+        regions: Union[Sequence[ConstrainedSketchGeometry], Sequence[MeshElement], Set],
         elemTypes: Sequence[ElemType],
     ):
         """This method assigns element types to the specified regions.
@@ -1024,7 +1025,7 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setMeshControls(
         self,
-        regions: tuple,
+        regions: Union[Sequence[Face], Sequence[Cell]],
         elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI] | None = None,
         technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN] | None = None,
         algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT] | None = None,

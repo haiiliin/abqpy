@@ -1,9 +1,12 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import TYPE_CHECKING, Sequence, overload
 
-from numpy.typing import NDArray
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
+
 from typing_extensions import Literal
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
@@ -61,13 +64,13 @@ class Feature:
     def AttachmentPoints(
         self,
         name: str,
-        points: Union[
-            Sequence[ConstrainedSketchVertex],
-            Sequence[DatumPoint],
-            Sequence[MeshNode],
-            Sequence[InterestingPoint],
-            Sequence[Sequence[float]],
-        ],
+        points: (
+            Sequence[ConstrainedSketchVertex]
+            | Sequence[DatumPoint]
+            | Sequence[MeshNode]
+            | Sequence[InterestingPoint]
+            | Sequence[Sequence[float]]
+        ),
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
@@ -230,24 +233,24 @@ class Feature:
         spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
         patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = C.PATTERN_ORTHOGONALLY,
         referenceFace: str = "",
-        startPointForPatternDirection: Union[
-            ConstrainedSketchVertex, Datum, ReferencePoint, MeshNode, InterestingPoint, Sequence[float], NDArray
-        ] = (0.0, 0.0, 0.0),
-        endPointForPatternDirection: Union[
-            ConstrainedSketchVertex, Datum, ReferencePoint, MeshNode, InterestingPoint, Sequence[float], NDArray
-        ] = (0.0, 0.0, 0.0),
+        startPointForPatternDirection: (
+            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+        ) = (0.0, 0.0, 0.0),
+        endPointForPatternDirection: (
+            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+        ) = (0.0, 0.0, 0.0),
         offsetFromEdges: str = "",
         numberOfRows: int = 1,
         spacingBetweenRows: str = "",
         projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
-        projectionDirStartPt: Union[
-            ConstrainedSketchVertex, Datum, ReferencePoint, MeshNode, InterestingPoint, Sequence[float], NDArray
-        ] = (0.0, 0.0, 0.0),
-        projectionDirEndPt: Union[
-            ConstrainedSketchVertex, Datum, ReferencePoint, MeshNode, InterestingPoint, Sequence[float], NDArray
-        ] = (0.0, 0.0, 0.0),
+        projectionDirStartPt: (
+            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+        ) = (0.0, 0.0, 0.0),
+        projectionDirEndPt: (
+            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+        ) = (0.0, 0.0, 0.0),
         setName: str = "",
     ) -> Feature:
         """This method creates a Feature object by creating attachment points along or offset from one or more
@@ -379,8 +382,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByNormalToPlane(
         self,
-        plane: Union[Face, MeshFace, DatumPlane],
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        plane: Face | MeshFace | DatumPlane,
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object normal to the specified plane and passing
         through the specified point.
@@ -412,8 +415,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByParToEdge(
         self,
-        edge: Union[Edge, MeshEdge, DatumAxis],
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        edge: Edge | MeshEdge | DatumAxis,
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object parallel to the specified edge and
         passing through the specified point.
@@ -473,8 +476,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByRotation(
         self,
-        line: Union[Edge, DatumAxis, MeshEdge],
-        axis: Union[Edge, DatumAxis, MeshEdge],
+        line: Edge | DatumAxis | MeshEdge,
+        axis: Edge | DatumAxis | MeshEdge,
         angle: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object in a three-dimensional model by rotating
@@ -512,8 +515,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByRotation(
         self,
-        line: Union[Edge, DatumAxis, MeshEdge],
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        line: Edge | DatumAxis | MeshEdge,
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
         angle: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object in a two-dimensional model by rotating a
@@ -553,9 +556,9 @@ class Feature:
 
     def DatumAxisByThreePoint(
         self,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point3: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point3: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object normal to the circle described by three
         points and through its center.
@@ -590,10 +593,7 @@ class Feature:
         return Feature()
 
     @abaqus_method_doc
-    def DatumAxisByThruEdge(
-        self,
-        edge: Union[Edge, MeshEdge],
-    ) -> Feature:
+    def DatumAxisByThruEdge(self, edge: Edge | MeshEdge) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the specified edge.
 
         .. note::
@@ -621,8 +621,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByTwoPlane(
         self,
-        plane1: Union[Face, MeshFace, DatumPlane],
-        plane2: Union[Face, MeshFace, DatumPlane],
+        plane1: Face | MeshFace | DatumPlane,
+        plane2: Face | MeshFace | DatumPlane,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object at the intersection of two planes.
 
@@ -653,8 +653,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByTwoPoint(
         self,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the line joining two points.
 
@@ -721,8 +721,8 @@ class Feature:
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
         datumCoordSys: Datum,
-        vector: Union[Sequence[float], NDArray],
-        point: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        vector: Sequence[float] | NDArray,
+        point: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
         name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object by offsetting the origin of an existing
@@ -768,11 +768,11 @@ class Feature:
     def DatumCsysByThreePoints(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
-        origin: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        line1: Union[Edge, DatumAxis, MeshEdge],
-        line2: Union[Edge, DatumAxis, MeshEdge],
+        origin: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        line1: Edge | DatumAxis | MeshEdge,
+        line2: Edge | DatumAxis | MeshEdge,
         name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from three points.
@@ -825,8 +825,8 @@ class Feature:
     def DatumCsysByTwoLines(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
-        line1: Union[Edge, MeshEdge, DatumAxis],
-        line2: Union[Edge, MeshEdge, DatumAxis],
+        line1: Edge | MeshEdge | DatumAxis,
+        line2: Edge | MeshEdge | DatumAxis,
         name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from two orthogonal lines. The origin of
@@ -899,7 +899,7 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByOffset(
         self,
-        plane: Union[Face, MeshFace, DatumPlane],
+        plane: Face | MeshFace | DatumPlane,
         flip: Literal[C.SIDE1, C.SIDE2],
         offset: float,
     ) -> Feature:
@@ -937,8 +937,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByOffset(
         self,
-        plane: Union[Face, MeshFace, DatumPlane],
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        plane: Face | MeshFace | DatumPlane,
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset from an existing plane and
         passing through the specified point.
@@ -973,8 +973,8 @@ class Feature:
 
     def DatumPlaneByRotation(
         self,
-        plane: Union[Face, MeshFace, DatumPlane],
-        axis: Union[Edge, MeshEdge, DatumAxis],
+        plane: Face | MeshFace | DatumPlane,
+        axis: Edge | MeshEdge | DatumAxis,
         angle: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object by rotating a plane about the specified
@@ -1009,9 +1009,9 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByThreePoints(
         self,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point3: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point3: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object defined by passing through three points.
 
@@ -1044,8 +1044,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByLinePoint(
         self,
-        line: Union[Edge, DatumAxis, MeshEdge],
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        line: Edge | DatumAxis | MeshEdge,
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object that pass through the specified line and
         through the specified point that does not lie on the line.
@@ -1077,8 +1077,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByPointNormal(
         self,
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        normal: Union[Edge, MeshEdge, DatumAxis],
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        normal: Edge | MeshEdge | DatumAxis,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object normal to the specified line and running
         through the specified point.
@@ -1110,8 +1110,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByTwoPoint(
         self,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object midway between two points and normal to
         the line connecting the points.
@@ -1141,7 +1141,7 @@ class Feature:
         return Feature()
 
     @abaqus_method_doc
-    def DatumPointByCoordinate(self, coords: Union[Sequence[float], NDArray]) -> Feature:
+    def DatumPointByCoordinate(self, coords: Sequence[float] | NDArray) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the specified
         coordinates.
 
@@ -1167,8 +1167,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByOffset(
         self,
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        vector: Union[Sequence[float], NDArray],
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        vector: Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object offset from an existing point by a
         vector.
@@ -1196,8 +1196,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByMidPoint(
         self,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object midway between two points.
 
@@ -1224,10 +1224,10 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByOnFace(
         self,
-        face: Union[Face, DatumPlane],
-        edge1: Union[Edge, DatumAxis],
+        face: Face | DatumPlane,
+        edge1: Edge | DatumAxis,
         offset1: float,
-        edge2: Union[Edge, DatumAxis],
+        edge2: Edge | DatumAxis,
         offset2: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object on the specified face, offset from two
@@ -1297,8 +1297,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByProjOnEdge(
         self,
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        edge: Union[Edge, MeshEdge, DatumAxis],
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        edge: Edge | MeshEdge | DatumAxis,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object along an edge by projecting an existing
         point along the normal to the edge.
@@ -1330,8 +1330,8 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByProjOnFace(
         self,
-        point: Union[ConstrainedSketchVertex, DatumPoint, MeshNode, InterestingPoint, Sequence[float], NDArray],
-        face: Union[Face, DatumPlane],
+        point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
+        face: Face | DatumPlane,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object on a specified face by projecting an
         existing point onto the face.
@@ -1364,11 +1364,11 @@ class Feature:
     @abaqus_method_doc
     def MakeSketchTransform(
         self,
-        sketchPlane: Union[DatumPlane, Face],
+        sketchPlane: DatumPlane | Face,
         origin: tuple = (),
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2] = SIDE1,
-        sketchUpEdge: Union[Edge, DatumAxis, None] = None,
+        sketchUpEdge: Edge | DatumAxis | None = None,
     ) -> Transform:
         """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats that represents
         the transformation from sketch coordinates to part coordinates.
@@ -1472,7 +1472,7 @@ class Feature:
         self,
         cells: Sequence[Cell],
         edges: Edge,
-        line: Union[Edge, DatumAxis],
+        line: Edge | DatumAxis,
         sense: Literal[C.FORWARD, C.REVERSE],
     ) -> Feature:
         """This method partitions one or more cells by extruding selected edges in the given direction.
@@ -1513,7 +1513,7 @@ class Feature:
     def PartitionCellByPatchNCorners(
         self,
         cell: Cell,
-        cornerPoints: Union[Sequence[ConstrainedSketchVertex], Sequence[InterestingPoint], Sequence[DatumPoint]],
+        cornerPoints: Sequence[ConstrainedSketchVertex] | Sequence[InterestingPoint] | Sequence[DatumPoint],
     ) -> Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given corner points.
 
@@ -1580,7 +1580,7 @@ class Feature:
         self,
         cells: Sequence[Cell],
         edge: Edge,
-        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
+        point: ConstrainedSketchVertex | InterestingPoint | DatumPoint,
     ) -> Feature:
         """This method partitions one or more cells using a plane normal to an edge at the given edge point.
 
@@ -1614,8 +1614,8 @@ class Feature:
     def PartitionCellByPlanePointNormal(
         self,
         cells: Sequence[Cell],
-        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
-        normal: Union[Edge, DatumAxis],
+        point: ConstrainedSketchVertex | InterestingPoint | DatumPoint,
+        normal: Edge | DatumAxis,
     ) -> Feature:
         """This method partitions one or more cells using a plane defined by a point and a normal direction.
 
@@ -1649,9 +1649,9 @@ class Feature:
     def PartitionCellByPlaneThreePoints(
         self,
         cells: Sequence[Cell],
-        point1: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
-        point3: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
+        point3: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method partitions one or more cells using a plane defined by three points.
 
@@ -1778,7 +1778,7 @@ class Feature:
     def PartitionEdgeByPoint(
         self,
         edge: Edge,
-        point: Union[DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point: DatumPoint | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method partitions an edge at the given point.
 
@@ -1873,9 +1873,9 @@ class Feature:
         self,
         face: Face,
         edge1: Edge,
-        point1: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
         edge2: Edge,
-        point2: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point2: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method partitions a face normal to two edges, using a curved path between the two given edge
         points.
@@ -2021,8 +2021,8 @@ class Feature:
     def PartitionFaceByShortestPath(
         self,
         faces: Sequence[Face],
-        point1: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
-        point2: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point1: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
+        point2: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method partitions one or more faces using a minimum distance path between the two given points.
 
@@ -2099,7 +2099,7 @@ class Feature:
     def PartitionFaceBySketchDistance(
         self,
         faces: Sequence[Face],
-        sketchPlane: Union[Face, DatumPlane],
+        sketchPlane: Face | DatumPlane,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
@@ -2150,10 +2150,10 @@ class Feature:
     def PartitionFaceBySketchRefPoint(
         self,
         faces: Sequence[Face],
-        sketchPlane: Union[Face, DatumPlane],
+        sketchPlane: Face | DatumPlane,
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        point: Union[ConstrainedSketchVertex, DatumPoint, InterestingPoint, Sequence[float], NDArray],
+        point: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then projecting the
@@ -2245,7 +2245,7 @@ class Feature:
     @abaqus_method_doc
     def ReferencePoint(
         self,
-        point: Union[ConstrainedSketchVertex, InterestingPoint, MeshNode, DatumPoint, Sequence[float], NDArray],
+        point: ConstrainedSketchVertex | InterestingPoint | MeshNode | DatumPoint | Sequence[float] | NDArray,
         instanceName: str = "",
     ) -> Feature:
         """This method creates a Feature object and a ReferencePoint object at the specified location.
@@ -2298,14 +2298,14 @@ class Feature:
     @abaqus_method_doc
     def WirePolyLine(
         self,
-        points: Union[
-            Sequence[ConstrainedSketchVertex],
-            Sequence[DatumPoint],
-            Sequence[MeshNode],
-            Sequence[InterestingPoint],
-            Sequence[Sequence[float]],
-            Sequence[ReferencePoint],
-        ],
+        points: (
+            Sequence[ConstrainedSketchVertex]
+            | Sequence[DatumPoint]
+            | Sequence[MeshNode]
+            | Sequence[InterestingPoint]
+            | Sequence[Sequence[float]]
+            | Sequence[ReferencePoint]
+        ),
         mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
     ) -> Feature:
