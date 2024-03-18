@@ -967,16 +967,6 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setElementType(
         self,
-        # regions: Union[
-        #     Sequence[
-        #         Union[
-        #             ConstrainedSketchGeometry,
-        #             Sequence[MeshElement],
-        #             Sequence[Cell],
-        #         ]
-        #     ],
-        #     Set,
-        # ],
         regions: Union[Sequence[ConstrainedSketchGeometry], Sequence[MeshElement], Set],
         elemTypes: Sequence[ElemType],
     ):
