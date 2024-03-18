@@ -2,9 +2,6 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Sequence, overload
 
-if TYPE_CHECKING:
-    from numpy.typing import NDArray
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -13,7 +10,7 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.InterestingPoint import InterestingPoint
-from ..BasicGeometry.ReferencePoint import ReferencePoint
+from ..BasicGeometry.ReferencePoint import ReferencePoint as ReferencePointType
 from ..BasicGeometry.Transform import Transform
 from ..Datum.Datum import Datum
 from ..Datum.DatumAxis import DatumAxis
@@ -34,6 +31,9 @@ from ..UtilityAndView.abaqusConstants import (
     Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
 
 
 @abaqus_class_doc
@@ -234,10 +234,22 @@ class Feature:
         patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = C.PATTERN_ORTHOGONALLY,
         referenceFace: str = "",
         startPointForPatternDirection: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+            ConstrainedSketchVertex
+            | Datum
+            | ReferencePointType
+            | MeshNode
+            | InterestingPoint
+            | Sequence[float]
+            | NDArray
         ) = (0.0, 0.0, 0.0),
         endPointForPatternDirection: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+            ConstrainedSketchVertex
+            | Datum
+            | ReferencePointType
+            | MeshNode
+            | InterestingPoint
+            | Sequence[float]
+            | NDArray
         ) = (0.0, 0.0, 0.0),
         offsetFromEdges: str = "",
         numberOfRows: int = 1,
@@ -246,10 +258,22 @@ class Feature:
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
         projectionDirStartPt: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+            ConstrainedSketchVertex
+            | Datum
+            | ReferencePointType
+            | MeshNode
+            | InterestingPoint
+            | Sequence[float]
+            | NDArray
         ) = (0.0, 0.0, 0.0),
         projectionDirEndPt: (
-            ConstrainedSketchVertex | Datum | ReferencePoint | MeshNode | InterestingPoint | Sequence[float] | NDArray
+            ConstrainedSketchVertex
+            | Datum
+            | ReferencePointType
+            | MeshNode
+            | InterestingPoint
+            | Sequence[float]
+            | NDArray
         ) = (0.0, 0.0, 0.0),
         setName: str = "",
     ) -> Feature:
@@ -2304,7 +2328,7 @@ class Feature:
             | Sequence[MeshNode]
             | Sequence[InterestingPoint]
             | Sequence[Sequence[float]]
-            | Sequence[ReferencePoint]
+            | Sequence[ReferencePointType]
         ),
         mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
