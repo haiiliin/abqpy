@@ -32,11 +32,11 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css?v=125d5c1c" />
+        <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.custom.css" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
-        <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=61a4c737" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+        <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css?v=08871587" />
+        <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1291,15 +1291,15 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="custom-kernel">Custom Kernel<a class="headerlink" href="#custom-kernel" title="此标题的永久链接">¶</a></h1>
+<h1 id="custom-kernel">Custom Kernel<a class="headerlink" href="#custom-kernel" title="Link to this heading">¶</a></h1>
 <p>The customKernel module augments the mdb, odb, and session objects with an object called customData. The customData object can contain custom data that you created using standard Python objects; for example, dictionaries, strings, numbers, and classes. In addition, the customData object can contain objects that you created using the classes described in this section.</p>
 <p>All objects that you create under the mdb.customData and odb[odbName].customData object will be stored in the Abaqus/CAE model and output database, respectively, when you save the database; all objects that you create under the session.customData object will be lost when you exit Abaqus/CAE.</p>
 <p>The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI.</p>
-<h2 id="other-classes">Other Classes<a class="headerlink" href="#other-classes" title="此标题的永久链接">¶</a></h2>
+<h2 id="other-classes">Other Classes<a class="headerlink" href="#other-classes" title="Link to this heading">¶</a></h2>
 <div class="toggle docutils container">
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RepositorySupport.CommandRegister">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommandRegister</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L4-L30"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="永久链接至目标">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommandRegister</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L4-L30"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="Link to this definition">¶</a></dt>
 <dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This class allows you to derive a general class that can be queried from the GUI and is capable of
 notifying the GUI when the contents of the class change.</p>
@@ -1321,7 +1321,7 @@ notifying the GUI when the contents of the class change.</p>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredDictionary</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L6-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="永久链接至目标">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredDictionary</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L6-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="Link to this definition">¶</a></dt>
 <dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
 <p>This class allows you to create a dictionary that can be queried from the GUI and is capable of notifying
 the GUI when the contents of the dictionary change. The keys to a RegisteredDictionary must be either
@@ -1341,14 +1341,14 @@ strings or integers. The RegisteredDictionary object is derived from the Command
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods">
-<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L34-L41"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="永久链接至目标">¶</a></dt>
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L34-L41"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="Link to this definition">¶</a></dt>
 <dd><p>The RegisteredDictionary object supports the same methods as a Python dictionary.</p>
 <p>In addition, the RegisteredDictionary object supports the changeKey method.</p>
 </dd></dl>
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey">
-<span class="sig-name descname"><span class="pre">changeKey</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName (Python parameter) — A String or an integer specifying the name of the key to be changed."><span class="n"><span class="pre">fromName</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName (Python parameter) — A String or an integer specifying the new name for the key."><span class="n"><span class="pre">toName</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L43-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="永久链接至目标">¶</a></dt>
+<span class="sig-name descname"><span class="pre">changeKey</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName (Python parameter) — A String or an integer specifying the name of the key to be changed."><span class="n"><span class="pre">fromName</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName (Python parameter) — A String or an integer specifying the new name for the key."><span class="n"><span class="pre">toName</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredDictionary.py#L43-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="Link to this definition">¶</a></dt>
 <dd><p>This method changes the name of a key in the dictionary.</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
@@ -1357,9 +1357,9 @@ strings or integers. The RegisteredDictionary object is derived from the Command
 <dl class="field-list simple">
 <dt class="field-odd" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey-">参数<span class="colon">:</span><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey-" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><dl class="simple api-field highlight">
-<dt id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName"><span class="n sig-name">fromName</span><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName" title="永久链接至目标">¶</a></dt><dd><p>A String or an integer specifying the name of the key to be changed.</p>
+<dt id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName"><span class="n sig-name">fromName</span><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.fromName" title="Permalink to this definition">¶</a></dt><dd><p>A String or an integer specifying the name of the key to be changed.</p>
 </dd>
-<dt id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName"><span class="n sig-name">toName</span><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName" title="永久链接至目标">¶</a></dt><dd><p>A String or an integer specifying the new name for the key.</p>
+<dt id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName"><span class="n sig-name">toName</span><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey.toName" title="Permalink to this definition">¶</a></dt><dd><p>A String or an integer specifying the new name for the key.</p>
 </dd>
 </dl>
 </dd>
@@ -1371,7 +1371,7 @@ strings or integers. The RegisteredDictionary object is derived from the Command
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredList.RegisteredList">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredList.py#L6-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="永久链接至目标">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredList.py#L6-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="Link to this definition">¶</a></dt>
 <dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a></p>
 <p>This class allows you to create a list that can be queried from the GUI and is capable of notifying the
 GUI when the contents of the list change. The RegisteredList object is derived from the CommandRegister
@@ -1391,7 +1391,7 @@ object.</p>
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
-<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredList.py#L34-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="永久链接至目标">¶</a></dt>
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredList.py#L34-L38"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="Link to this definition">¶</a></dt>
 <dd><p>The RegisteredList object supports the same methods as a standard Python list object.</p>
 </dd></dl>
 
@@ -1400,7 +1400,7 @@ object.</p>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredTuple</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">tuple</span></span></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredTuple.py#L6-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="永久链接至目标">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredTuple</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">tuple</span></span></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredTuple.py#L6-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="Link to this definition">¶</a></dt>
 <dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.12）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
 <p>This class allows you to create a tuple that can be queried from the GUI and is capable of notifying the
 GUI when the contents of any of the tuple’s members change. The RegisteredTuple object is derived from the
@@ -1420,7 +1420,7 @@ CommandRegister object.</p>
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods">
-<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredTuple.py#L39-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="永久链接至目标">¶</a></dt>
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RegisteredTuple.py#L39-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="Link to this definition">¶</a></dt>
 <dd><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p>
 </dd></dl>
 
@@ -1429,7 +1429,7 @@ CommandRegister object.</p>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L10-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="永久链接至目标">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L10-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="Link to this definition">¶</a></dt>
 <dd><p>基类：<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a></p>
 <p>The class from which you can derive your own classes that are designed to contain custom repositories.
 Instances of this class can be queried from the GUI and are capable of notifying the GUI when the contents
@@ -1452,7 +1452,7 @@ of the instance change. The RepositorySupport object is derived from the Command
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository">
-<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name (Python parameter) — A String specifying the name of the repository."><span class="n"><span class="pre">name</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors (Python parameter) — A constructor or sequence of constructors specifying which classes will store their instances in the repository."><span class="n"><span class="pre">constructors</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L41-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="永久链接至目标">¶</a></dt>
+<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name (Python parameter) — A String specifying the name of the repository."><span class="n"><span class="pre">name</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors (Python parameter) — A constructor or sequence of constructors specifying which classes will store their instances in the repository."><span class="n"><span class="pre">constructors</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2021/src/abaqus/CustomKernel/RepositorySupport.py#L41-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="Link to this definition">¶</a></dt>
 <dd><p>This method installs a repository on the class. The repository is an instance of a
 RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods. The objects stored
 in the repository are assumed to have an attribute called <strong>name</strong> that stores the key used to access
@@ -1464,9 +1464,9 @@ the object in the repository. The name attribute will be modified by the changeK
 <dl class="field-list simple">
 <dt class="field-odd" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository-">参数<span class="colon">:</span><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository-" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><dl class="simple api-field highlight">
-<dt id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name"><span class="n sig-name">name</span><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name" title="永久链接至目标">¶</a></dt><dd><p>A String specifying the name of the repository.</p>
+<dt id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name"><span class="n sig-name">name</span><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.name" title="Permalink to this definition">¶</a></dt><dd><p>A String specifying the name of the repository.</p>
 </dd>
-<dt id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors"><span class="n sig-name">constructors</span><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors" title="永久链接至目标">¶</a></dt><dd><p>A constructor or sequence of constructors specifying which classes will store their
+<dt id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors"><span class="n sig-name">constructors</span><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository.constructors" title="Permalink to this definition">¶</a></dt><dd><p>A constructor or sequence of constructors specifying which classes will store their
 instances in the repository.</p>
 </dd>
 </dl>
@@ -1552,7 +1552,7 @@ instances in the repository.</p>
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1587,20 +1587,22 @@ instances in the repository.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/zh_CN/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
     
       
-        <script src="../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-        <script src="../../_static/clipboard.min.js"></script>
-        <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/tabs.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=f281be69"></script>
+        <script src="../../_static/tabs.js?v=3ee01567"></script>
         <script src="../../_static/js/hoverxref.js"></script>
         <script src="../../_static/js/tooltipster.bundle.min.js"></script>
         <script src="../../_static/js/micromodal.min.js"></script>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../_static/togglebutton.js"></script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
         <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -1635,10 +1637,11 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/translations.js?v=beaddf03"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../_static/design-tabs.js"></script>
-        <script id="MathJax-script" src="../../_static/mathjax/tex-mml-chtml.js"></script>
+        <script src="../../_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script id="MathJax-script" src="../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
   </body>
 </html>
