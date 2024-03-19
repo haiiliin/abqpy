@@ -32,11 +32,11 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
-        <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-        <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-        <link rel="stylesheet" type="text/css" href="_static/sphinx-codeautolink.css" />
-        <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+        <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx-codeautolink.css?v=125d5c1c" />
+        <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster.custom.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster.bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
-        <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
-        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
-        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
-        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css" />
-        <link rel="stylesheet" type="text/css" href="_static/autoclasstoc.css" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
+        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
+        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
+        <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+        <link rel="stylesheet" type="text/css" href="_static/autoclasstoc.css?v=08871587" />
+        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1031,7 +1031,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="此标题的永久链接">¶</a></h1>
+<h1 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">¶</a></h1>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
 <p>The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you must write codes that are compatible with Python 2 and Python 3.</p>
@@ -1043,7 +1043,7 @@
 <li><p>Submit and monitor the job</p></li>
 <li><p>Get the output data and visualize it</p></li>
 </ul>
-<h2 id="build-an-abaqus-model">Build an Abaqus model<a class="headerlink" href="#build-an-abaqus-model" title="此标题的永久链接">¶</a></h2>
+<h2 id="build-an-abaqus-model">Build an Abaqus model<a class="headerlink" href="#build-an-abaqus-model" title="Link to this heading">¶</a></h2>
 <p>The most convenient way to build an Abaqus model is to do it in Abaqus CAE. When we use the
 Abaqus/CAE graphical user interface (GUI) to create a model and to visualize the results,
 commands are issued internally by Abaqus/CAE after every operation. These commands reflect the
@@ -1056,7 +1056,7 @@ it to our script file, this works, but not nicely.</p>
 easier, and that is what <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> does.</p>
 <p>The example model described in the following is simple, there is a square structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:</p>
 <a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" /></a>
-<h3 id="header-of-the-script">Header of the script<a class="headerlink" href="#header-of-the-script" title="此标题的永久链接">¶</a></h3>
+<h3 id="header-of-the-script">Header of the script<a class="headerlink" href="#header-of-the-script" title="Link to this heading">¶</a></h3>
 <p>Usually, when we use Python script to build the model, we need to import the following modules:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1076,7 +1076,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">executeOnCaeStartup</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h3 id="create-parts">Create parts<a class="headerlink" href="#create-parts" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-parts">Create parts<a class="headerlink" href="#create-parts" title="Link to this heading">¶</a></h3>
 <p>First we need to create a sketch that will be used to create the part, we need to use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/sketcher.html#abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch" title="abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch (Python 方法) — This method creates a ConstrainedSketch object. If the sketch cannot be created, the method returns None."><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConstrainedSketch()</span></code></a> to create a sketch:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
 <span class="n">sketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;sketch&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
@@ -1089,7 +1089,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 </code></pre></div>
 </div>
 <p>The first line creates a 3D and deformable part. Then we use the <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/part.html#abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude" title="abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude (Python 方法) — This method creates a first Feature object by extruding the given ConstrainedSketch object by the given depth, creating a solid. The ConstrainedSketch object must define a closed profile."><code class="xref py py-meth docutils literal notranslate"><span class="pre">BaseSolidExtrude()</span></code></a> method to create a part using the sketch.</p>
-<h3 id="create-some-sets-for-boundary-conditions-and-loads">Create some sets for boundary conditions and loads<a class="headerlink" href="#create-some-sets-for-boundary-conditions-and-loads" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-some-sets-for-boundary-conditions-and-loads">Create some sets for boundary conditions and loads<a class="headerlink" href="#create-some-sets-for-boundary-conditions-and-loads" title="Link to this heading">¶</a></h3>
 <p>Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to create sets, when we use a Python script to build the model, we can use coordinates to find nodes/faces we need.</p>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/region.html#abaqus.Region.RegionPart.RegionPart.Set" title="abaqus.Region.RegionPart.RegionPart.Set (Python 方法)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Set()</span></code></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/region.html#abaqus.Region.RegionPart.RegionPart.Surface" title="abaqus.Region.RegionPart.RegionPart.Surface (Python 方法) — This method creates a surface from a sequence of objects in a model database. The surface will apply to the sides specified by the arguments.For example:"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Surface()</span></code></a> to create sets and surfaces:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;set-all&#39;</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="p">)))</span>
@@ -1099,12 +1099,12 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
              <span class="n">side1Faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">)))</span>
 </code></pre></div>
 </div>
-<h3 id="merge-parts-to-assembly">Merge parts to assembly<a class="headerlink" href="#merge-parts-to-assembly" title="此标题的永久链接">¶</a></h3>
+<h3 id="merge-parts-to-assembly">Merge parts to assembly<a class="headerlink" href="#merge-parts-to-assembly" title="Link to this heading">¶</a></h3>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/part_assembly/assembly.html#abaqus.Assembly.AssemblyBase.AssemblyBase.Instance" title="abaqus.Assembly.AssemblyBase.AssemblyBase.Instance (Python 方法) — This method creates a PartInstance object and puts it into the instances repository."><code class="xref py py-meth docutils literal notranslate"><span class="pre">Instance()</span></code></a> to create instances：</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;instance&#39;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="create-materials-and-sections-and-assign-materials-to-sections">Create materials and sections, and assign materials to sections<a class="headerlink" href="#create-materials-and-sections-and-assign-materials-to-sections" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-materials-and-sections-and-assign-materials-to-sections">Create materials and sections, and assign materials to sections<a class="headerlink" href="#create-materials-and-sections-and-assign-materials-to-sections" title="Link to this heading">¶</a></h3>
 <p>First we create a Material object using <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/material.html#abaqus.Material.MaterialModel.MaterialModel.Material" title="abaqus.Material.MaterialModel.MaterialModel.Material (Python 方法) — This method creates a Material object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">Material()</span></code></a>:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">material</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;material&#39;</span><span class="p">)</span>
 </code></pre></div>
@@ -1119,20 +1119,20 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">part</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-all&#39;</span><span class="p">],</span> <span class="n">sectionName</span><span class="o">=</span><span class="s1">&#39;section&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="create-steps">Create steps<a class="headerlink" href="#create-steps" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-steps">Create steps<a class="headerlink" href="#create-steps" title="Link to this heading">¶</a></h3>
 <p>It is easy to create a <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/step/index.html#abaqus.Step.StepModel.StepModel.StaticStep" title="abaqus.Step.StepModel.StepModel.StaticStep (Python 方法) — This method creates a StaticStep object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">StaticStep()</span></code></a>:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">step</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
                         <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">timeIncrementationMethod</span><span class="o">=</span><span class="n">AUTOMATIC</span><span class="p">,</span>
                         <span class="n">maxNumInc</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">minInc</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">maxInc</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="specify-output-requests">Specify output requests<a class="headerlink" href="#specify-output-requests" title="此标题的永久链接">¶</a></h3>
+<h3 id="specify-output-requests">Specify output requests<a class="headerlink" href="#specify-output-requests" title="Link to this heading">¶</a></h3>
 <p>We can use the <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/output.html#abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest (Python 方法) — This method creates a FieldOutputRequest object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">FieldOutputRequest()</span></code></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/output.html#abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest" title="abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest (Python 方法) — This method creates a HistoryOutputRequest object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">HistoryOutputRequest()</span></code></a> to specify field output and history output information.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">field</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="s1">&#39;F-Output-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span>
                                  <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">))</span>
 </code></pre></div>
 </div>
-<h3 id="create-boundary-conditions">Create boundary conditions<a class="headerlink" href="#create-boundary-conditions" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-boundary-conditions">Create boundary conditions<a class="headerlink" href="#create-boundary-conditions" title="Link to this heading">¶</a></h3>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/bc.html#abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC" title="abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC (Python 方法) — This method creates a DisplacementBC object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">DisplacementBC()</span></code></a> to create a displacement boundary condition:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">bottom_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">&#39;set-bottom&#39;</span><span class="p">]</span>
 <span class="n">bc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;BC-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
@@ -1140,14 +1140,14 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 </code></pre></div>
 </div>
 <p>It should be noted that region of the boundary condition should be a region of the instances instead of parts, since sets created in parts are copied to the instance, we can use the sets in the parts that we defined before.</p>
-<h3 id="create-loads">Create loads<a class="headerlink" href="#create-loads" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-loads">Create loads<a class="headerlink" href="#create-loads" title="Link to this heading">¶</a></h3>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/load.html#abaqus.Load.LoadModel.LoadModel.Pressure" title="abaqus.Load.LoadModel.LoadModel.Pressure (Python 方法) — This method creates a Pressure object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">Pressure()</span></code></a> ro create a pressure:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">top_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="s1">&#39;surface-top&#39;</span><span class="p">]</span>
 <span class="n">pressure</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="s1">&#39;pressure&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">top_instance</span><span class="p">,</span>
                           <span class="n">magnitude</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="mesh">Mesh<a class="headerlink" href="#mesh" title="此标题的永久链接">¶</a></h3>
+<h3 id="mesh">Mesh<a class="headerlink" href="#mesh" title="Link to this heading">¶</a></h3>
 <p>To mesh the model, we have to set the <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.ElemType.ElemType (Python 类)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ElemType</span></code></a>, which is defined in the <code class="docutils literal notranslate"><span class="pre">mesh</span></code> module, so we need to import <code class="docutils literal notranslate"><span class="pre">mesh</span></code> module:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">mesh</span>
 
@@ -1159,7 +1159,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">part</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h3 id="create-jobs">Create jobs<a class="headerlink" href="#create-jobs" title="此标题的永久链接">¶</a></h3>
+<h3 id="create-jobs">Create jobs<a class="headerlink" href="#create-jobs" title="Link to this heading">¶</a></h3>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/job.html#abaqus.Job.JobMdb.JobMdb.Job" title="abaqus.Job.JobMdb.JobMdb.Job (Python 方法) — This method creates an analysis job using a model on a model database (MDB) for the model definition."><code class="xref py py-meth docutils literal notranslate"><span class="pre">Job()</span></code></a> to create a job:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Model-1&#39;</span><span class="p">)</span>
 </code></pre></div>
@@ -1173,16 +1173,16 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">job</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h3 id="save-the-abaqus-model-to-a-cae-file">Save the Abaqus model to a <code class="docutils literal notranslate"><span class="pre">.cae</span></code> file<a class="headerlink" href="#save-the-abaqus-model-to-a-cae-file" title="此标题的永久链接">¶</a></h3>
+<h3 id="save-the-abaqus-model-to-a-cae-file">Save the Abaqus model to a <code class="docutils literal notranslate"><span class="pre">.cae</span></code> file<a class="headerlink" href="#save-the-abaqus-model-to-a-cae-file" title="Link to this heading">¶</a></h3>
 <p>We can use <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/mdb/index.html#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs (Python 方法) — This method saves an Mdb object to disk at the specified location."><code class="xref py py-class docutils literal notranslate"><span class="pre">saveAs</span></code></a> to save the Abaqus model to a <code class="docutils literal notranslate"><span class="pre">.cae</span></code> file:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="s1">&#39;compression.cae&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="the-whole-script">The whole script<a class="headerlink" href="#the-whole-script" title="此标题的永久链接">¶</a></h3>
+<h3 id="the-whole-script">The whole script<a class="headerlink" href="#the-whole-script" title="Link to this heading">¶</a></h3>
 <p>The whole script of this example is showed as follows:</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption highlight"><span class="filename"><span class="caption-number">列表 1 </span><span class="caption-text">
-</span>compression.py<a class="headerlink" href="#id1" title="此代码块的永久链接">¶</a></span></div>
+</span>compression.py<a class="headerlink" href="#id1" title="Permalink to this code">¶</a></span></div>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">caeModules</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1259,9 +1259,9 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 </code></pre></div>
 </div>
 </div>
-<h2 id="extract-output-data">Extract output data<a class="headerlink" href="#extract-output-data" title="此标题的永久链接">¶</a></h2>
+<h2 id="extract-output-data">Extract output data<a class="headerlink" href="#extract-output-data" title="Link to this heading">¶</a></h2>
 <p>If we want to extract the output data, we have to write an output script.</p>
-<h3 id="header-of-the-output-script">Header of the output script<a class="headerlink" href="#header-of-the-output-script" title="此标题的永久链接">¶</a></h3>
+<h3 id="header-of-the-output-script">Header of the output script<a class="headerlink" href="#header-of-the-output-script" title="Link to this heading">¶</a></h3>
 <p>Similarly, we have to import some modules:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1270,14 +1270,14 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">executeOnCaeStartup</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h3 id="open-the-output-database">Open the output database<a class="headerlink" href="#open-the-output-database" title="此标题的永久链接">¶</a></h3>
+<h3 id="open-the-output-database">Open the output database<a class="headerlink" href="#open-the-output-database" title="Link to this heading">¶</a></h3>
 <p>We can use <code class="xref py py-meth docutils literal notranslate"><span class="pre">openOdb()</span></code> to open the output database:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">visualization</span>
 <span class="n">odb</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;Job-1.odb&#39;</span><span class="p">)</span>
 <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport: 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">odb</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="extract-the-data">Extract the data<a class="headerlink" href="#extract-the-data" title="此标题的永久链接">¶</a></h3>
+<h3 id="extract-the-data">Extract the data<a class="headerlink" href="#extract-the-data" title="Link to this heading">¶</a></h3>
 <p>We can use the <a class="hxr-hoverxref hxr-tooltip reference internal" href="reference/session/xy.html#abaqus.XY.XYSession.XYSession.xyDataListFromField" title="abaqus.XY.XYSession.XYSession.xyDataListFromField (Python 方法) — This method creates a list of XYData objects by reading field data from an Odb object."><code class="xref py py-meth docutils literal notranslate"><span class="pre">xyDataListFromField()</span></code></a> to extract the output data:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="n">dataList</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">xyDataListFromField</span><span class="p">(</span><span class="n">odb</span><span class="o">=</span><span class="n">odb</span><span class="p">,</span> <span class="n">outputPosition</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span>
                                        <span class="n">variable</span><span class="o">=</span><span class="p">((</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="n">NODAL</span><span class="p">,</span> <span class="p">((</span><span class="n">COMPONENT</span><span class="p">,</span> <span class="s1">&#39;U3&#39;</span><span class="p">),)),),</span>
@@ -1291,16 +1291,16 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">&#39;time,U3&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h3 id="results-of-above-example">Results of above example<a class="headerlink" href="#results-of-above-example" title="此标题的永久链接">¶</a></h3>
+<h3 id="results-of-above-example">Results of above example<a class="headerlink" href="#results-of-above-example" title="Link to this heading">¶</a></h3>
 <p>The distribution of <code class="docutils literal notranslate"><span class="pre">U3</span></code> of above model is showed as follows:</p>
 <a class="reference internal image-reference" href="_images/output.png" id="output"><img alt="_images/output.png" class="align-center" id="output" src="_images/output.png" style="width: 70%;" /></a>
 <p>The distribution of the vertical displacement of a point in the top surface is showed as follows:</p>
 <a class="reference internal image-reference" href="_images/compression.png" id="compression"><img alt="_images/compression.png" class="align-center" id="compression" src="_images/compression.png" style="width: 70%;" /></a>
-<h3 id="the-whole-output-script">The whole output script<a class="headerlink" href="#the-whole-output-script" title="此标题的永久链接">¶</a></h3>
+<h3 id="the-whole-output-script">The whole output script<a class="headerlink" href="#the-whole-output-script" title="Link to this heading">¶</a></h3>
 <p>The whole output script of this example is showed as follows:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption highlight"><span class="filename"><span class="caption-number">列表 2 </span><span class="caption-text">
-</span>compression-output.py<a class="headerlink" href="#id2" title="此代码块的永久链接">¶</a></span></div>
+</span>compression-output.py<a class="headerlink" href="#id2" title="Permalink to this code">¶</a></span></div>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1322,7 +1322,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 </code></pre></div>
 </div>
 </div>
-<h2 id="comments">Comments<a class="headerlink" href="#comments" title="此标题的永久链接">¶</a></h2>
+<h2 id="comments">Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
 <script
    type="text/javascript"
    src="https://utteranc.es/client.js"
@@ -1407,7 +1407,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1442,20 +1442,22 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/zh_CN/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
     
       
-        <script src="_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-        <script src="_static/clipboard.min.js"></script>
-        <script src="_static/copybutton.js"></script>
-        <script src="_static/tabs.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script src="_static/tabs.js?v=3ee01567"></script>
         <script src="_static/js/hoverxref.js"></script>
         <script src="_static/js/tooltipster.bundle.min.js"></script>
         <script src="_static/js/micromodal.min.js"></script>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="_static/togglebutton.js"></script>
+        <script src="_static/togglebutton.js?v=4a39c7ea"></script>
         <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -1490,10 +1492,11 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-        <script src="_static/translations.js"></script>
+        <script src="_static/translations.js?v=beaddf03"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="_static/design-tabs.js"></script>
-        <script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js"></script>
+        <script src="_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
   </body>
 </html>
