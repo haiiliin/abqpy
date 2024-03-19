@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Extending the Abaqus Scripting Interface - abqpy 2021 documentation</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -572,10 +572,10 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2021/docs/source/user/python/python-abaqus/extending.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="extending-the-abaqus-scripting-interface">Extending the Abaqus Scripting Interface<a class="headerlink" href="#extending-the-abaqus-scripting-interface" title="Permalink to this heading">¶</a></h1>
+<h1 id="extending-the-abaqus-scripting-interface">Extending the Abaqus Scripting Interface<a class="headerlink" href="#extending-the-abaqus-scripting-interface" title="Link to this heading">¶</a></h1>
 <p>You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#creating-functions"><span class="std std-ref">Creating functions</span></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#functions-and-modules"><span class="std std-ref">Functions and modules</span></a>.</p>
 <p>This section describes how you can extend the functionality of the Abaqus Scripting Interface.</p>
-<h2 id="storing-custom-data-in-the-model-database-or-in-other-objects">Storing custom data in the model database or in other objects<a class="headerlink" href="#storing-custom-data-in-the-model-database-or-in-other-objects" title="Permalink to this heading">¶</a></h2>
+<h2 id="storing-custom-data-in-the-model-database-or-in-other-objects">Storing custom data in the model database or in other objects<a class="headerlink" href="#storing-custom-data-in-the-model-database-or-in-other-objects" title="Link to this heading">¶</a></h2>
 <p>If you extend the kernel functionality by writing your own classes and functions, you may want to store data required by those classes or functions in the Abaqus/CAE model database so the data are available the next time you open the database. To store custom kernel data in the Abaqus/CAE model database, you must make use of the <code class="docutils literal notranslate"><span class="pre">customKernel</span></code> module. The <code class="docutils literal notranslate"><span class="pre">customKernel</span></code> module augments the mdb object with a member called customData. When you save a model database, Abaqus/CAE also saves any data created below the customData object.</p>
 <p>For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">customKernel</span>
@@ -597,7 +597,7 @@
 <p>You can store almost any type of Python object under <code class="docutils literal notranslate"><span class="pre">mdb.customData</span></code>; for example, strings, numbers, and Python classes. However, there are some restrictions; for example, you cannot store file objects. These restrictions are due to the fact that the Abaqus/CAE infrastructure uses Python’s <code class="docutils literal notranslate"><span class="pre">pickle</span></code> module to store the <code class="docutils literal notranslate"><span class="pre">customData</span></code> object in the model database. The <code class="docutils literal notranslate"><span class="pre">pickle</span></code> module allows the Python programmer to write a data structure to a file and then recreate that data structure when reading from the file. For details on the restrictions imposed by the <code class="docutils literal notranslate"><span class="pre">pickle</span></code> module, see the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>).</p>
 <p>If your code creates a custom class and stores an instance of the class in the model database, the custom module that defined that custom class must be available for Python to unpickle the data when the database is subsequently opened. Consequently, if a user saves custom data to a model database and then passes that model database to another user, the other user must also have access to the custom modules that produced the custom data. Otherwise, they will not be able to load the custom data into their Abaqus/CAE session.</p>
 <p>Abaqus/CAE does not keep track of changes made to the <code class="docutils literal notranslate"><span class="pre">customData</span></code> object. As a result, when the user quits a session, Abaqus/CAE will not prompt them to save their changes if they changed only objects under <code class="docutils literal notranslate"><span class="pre">customData</span></code>.</p>
-<h2 id="interaction-with-the-gui">Interaction with the GUI<a class="headerlink" href="#interaction-with-the-gui" title="Permalink to this heading">¶</a></h2>
+<h2 id="interaction-with-the-gui">Interaction with the GUI<a class="headerlink" href="#interaction-with-the-gui" title="Link to this heading">¶</a></h2>
 <p>In addition to providing a persistence mechanism, the <code class="docutils literal notranslate"><span class="pre">customKernel</span></code> module contains classes that provide the following capabilities:</p>
 <p>Querying custom kernel data values from the GUI. From a GUI script you can access some attribute of your custom kernel object, just as you would from the kernel. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="n">mdb</span><span class="o">.</span><span class="n">customData</span><span class="o">.</span><span class="n">myObject</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
@@ -605,7 +605,7 @@
 </div>
 <p>Notification to the GUI when custom kernel data change. For example, you can have a manager dialog box that lists the objects in a repository. When the contents of the repository change, you can be notified and take the appropriate action to update the list of objects in the manager dialog box.</p>
 <p>To make use of these features, you must derive your custom kernel objects from the classes listed in the following sections. For more details on GUI customization, see the <a class="reference external" href="https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all">Abaqus GUI Toolkit Reference Guide</a>.</p>
-<h2 id="commandregister-class">CommandRegister class<a class="headerlink" href="#commandregister-class" title="Permalink to this heading">¶</a></h2>
+<h2 id="commandregister-class">CommandRegister class<a class="headerlink" href="#commandregister-class" title="Link to this heading">¶</a></h2>
 <p>You can use the CommandRegister class to derive a general class that can be queried from the GUI. In addition, the class can notify the GUI when its contents change. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Block</span><span class="p">(</span><span class="n">CommandRegister</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
@@ -615,7 +615,7 @@
 </div>
 <p>If a query is registered by the GUI on an instance of this class, the GUI will be notified when a member of this instance is changed, added, or deleted, For more details on registering queries, see the <a class="reference external" href="https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGUIRefHtml/simagui-c-ov.htm?contextscope=all">Abaqus GUI Toolkit Reference Guide</a>.</p>
 <p>If your object is to be stored in a repository (see below), the first argument to the constructor must be a string representing the name of the object. That string will automatically be assigned by the infrastructure to a member called name.</p>
-<h2 id="repositories">Repositories<a class="headerlink" href="#repositories" title="Permalink to this heading">¶</a></h2>
+<h2 id="repositories">Repositories<a class="headerlink" href="#repositories" title="Link to this heading">¶</a></h2>
 <p>Repositories are containers that hold objects that are keyed by strings. It may be convenient to store your custom kernel objects in repositories, in the same way that Abaqus/CAE part objects are stored in the Parts repository.</p>
 <p>The customData object is an instance of a <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code> class, which provides a Repository method that allows you to create a repository as an attribute of the instance. For more information, see <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code>. The arguments to the Repository method are the name of the repository and a constructor or a sequence of constructors. Those constructors must have name as their first argument, and the infrastructure will automatically assign that value to a member called name. Instances of these constructors will be stored in the repository. For more information, see Repository object.</p>
 <p>Since repositories are designed to notify the GUI when their contents change, the objects placed inside them should be derived from either CommandRegister or <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code> to extend this capability to its fullest.</p>
@@ -635,7 +635,7 @@
 <span class="k">print</span> <span class="p">(</span><span class="n">mdb</span><span class="o">.</span><span class="n">customData</span><span class="o">.</span><span class="n">blocks</span><span class="p">[</span><span class="s1">'Block-1'</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="c1"># Block-1</span>
 </code></pre></div>
 </div>
-<h2 id="repository-methods">Repository methods<a class="headerlink" href="#repository-methods" title="Permalink to this heading">¶</a></h2>
+<h2 id="repository-methods">Repository methods<a class="headerlink" href="#repository-methods" title="Link to this heading">¶</a></h2>
 <p>Repositories have several useful methods for querying their contents, as shown in the following table:</p>
 <ul class="simple">
 <li><p><strong>keys()</strong>: Returns a list of the keys in the repository.</p></li>
@@ -674,7 +674,7 @@
 <span class="n">The</span> <span class="n">repository</span> <span class="n">size</span> <span class="ow">is</span> <span class="mi">2</span>
 </code></pre></div>
 </div>
-<h2 id="repositorysupport">RepositorySupport<a class="headerlink" href="#repositorysupport" title="Permalink to this heading">¶</a></h2>
+<h2 id="repositorysupport">RepositorySupport<a class="headerlink" href="#repositorysupport" title="Link to this heading">¶</a></h2>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code> class to derive a class that can contain one or more repositories. However, if you do not intend to create a repository as an attribute of your class, you should derive your class from <code class="docutils literal notranslate"><span class="pre">CommandRegister</span></code>, not from <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code>.</p>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code> class allows you to create a hierarchy of repositories; for example, in the Abaqus Scripting Interface the parts repository is a child of the models repository. The first argument passed into your constructor is stored as <code class="docutils literal notranslate"><span class="pre">name</span></code>; it is created automatically by the infrastructure. To create a hierarchy of repositories, derive your class from <code class="docutils literal notranslate"><span class="pre">RepositorySupport</span></code> and use its <code class="docutils literal notranslate"><span class="pre">Repository</span></code> method to create child repositories as shown below. The method is described in [repositories].</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
@@ -698,7 +698,7 @@
 </code></pre></div>
 </div>
 <p>The path to the object being created can be found by calling repr(self) in the constructor of your object.</p>
-<h2 id="registered-dictionaries">Registered dictionaries<a class="headerlink" href="#registered-dictionaries" title="Permalink to this heading">¶</a></h2>
+<h2 id="registered-dictionaries">Registered dictionaries<a class="headerlink" href="#registered-dictionaries" title="Link to this heading">¶</a></h2>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">RegisteredDictionary</span></code> class to create a dictionary that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the dictionary change. The key of a registered dictionary must be either a String or an Int. The values associated with a key must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The <code class="docutils literal notranslate"><span class="pre">RegisteredDictionary</span></code> class has the same methods as a Python dictionary. In addition, the <code class="docutils literal notranslate"><span class="pre">RegisteredDictionary</span></code> class has a changeKey method that you use to rename a key in the dictionary. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">customKernel</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary"><span class="n">RegisteredDictionary</span></a>
 
@@ -707,7 +707,7 @@
 <span class="n">mdb</span><span class="o">.</span><span class="n">customData</span><span class="o">.</span><span class="n">myDictionary</span><span class="o">.</span><span class="n">changeKey</span><span class="p">(</span><span class="s2">"Key-1"</span><span class="p">,</span> <span class="s2">"Key-2"</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="registered-lists">Registered lists<a class="headerlink" href="#registered-lists" title="Permalink to this heading">¶</a></h2>
+<h2 id="registered-lists">Registered lists<a class="headerlink" href="#registered-lists" title="Link to this heading">¶</a></h2>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">RegisteredList</span></code> class to create a list that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of the list change. The values in the list must all be of the same type—all integers or all strings, for example—to prevent errors when accessing them from the GUI. The values must all be of the same type; for example, all integers or all strings. The <code class="docutils literal notranslate"><span class="pre">RegisteredList</span></code> has the same methods as a Python list. For example, appending <code class="docutils literal notranslate"><span class="pre">Item-1</span></code> to the list in the following statements causes the infrastructure to notify the GUI that the contents of the list have changed:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">customKernel</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RegisteredList.RegisteredList" title="abaqus.CustomKernel.RegisteredList.RegisteredList"><span class="n">RegisteredList</span></a>
 
@@ -715,7 +715,7 @@
 <span class="n">mdb</span><span class="o">.</span><span class="n">customData</span><span class="o">.</span><span class="n">myList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Item-1"</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="registered-tuples">Registered tuples<a class="headerlink" href="#registered-tuples" title="Permalink to this heading">¶</a></h2>
+<h2 id="registered-tuples">Registered tuples<a class="headerlink" href="#registered-tuples" title="Link to this heading">¶</a></h2>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">RegisteredTuple</span></code> class to create a tuple that can be queried from the GUI. In addition, the infrastructure can notify the GUI when the contents of any of the members of the tuple change. The members in the tuple must derive from the <code class="docutils literal notranslate"><span class="pre">CommandRegister</span></code> class, and the values in the tuple must all be of the same type; for example, all integers or all strings. For example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">from</span> <span class="nn">customKernel</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><span class="n">CommandRegister</span></a><span class="p">,</span> <a class="sphinx-codeautolink-a" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple"><span class="n">RegisteredTuple</span></a>
@@ -733,10 +733,10 @@
 <span class="n">mdb</span><span class="o">.</span><span class="n">customData</span><span class="o">.</span><span class="n">myTuple</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../../reference/kernel/kernel.html#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple"><span class="n">RegisteredTuple</span></a><span class="p">(</span><span class="nb">tuple</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="session-data">Session data<a class="headerlink" href="#session-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="session-data">Session data<a class="headerlink" href="#session-data" title="Link to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">customKernel</span></code> module also provides a session.customData object that allows you to store data on the session object and query it from the GUI. Data stored on the session object persist only for the current Abaqus/CAE session. When you close the Abaqus/CAE session, Abaqus does not store any of the data below <code class="docutils literal notranslate"><span class="pre">session.customData</span></code> on the model database. As a result, these data will be lost, and you will not be able to retrieve these data when you start a new session and open the model database. The session object is useful for maintaining data relevant to the current session only, such as the current model or output database.</p>
 <p>The same methods and classes that are available for <code class="docutils literal notranslate"><span class="pre">mdb.customData</span></code> are available for <code class="docutils literal notranslate"><span class="pre">session.customData</span></code>.</p>
-<h2 id="saving-application-data-in-a-model-database">Saving application data in a model database<a class="headerlink" href="#saving-application-data-in-a-model-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="saving-application-data-in-a-model-database">Saving application data in a model database<a class="headerlink" href="#saving-application-data-in-a-model-database" title="Link to this heading">¶</a></h2>
 <p>f you have custom kernel scripts that store data in a model database, you may want to store information about your application in the same model database. When the model database is opened subsequently, you can access this information and decide how to proceed. For example, you can store version information and check if you need to upgrade your data in the model database.</p>
 <p>You use the appData object to store custom application-related data in the model database. The appData object is an instance of an AbaqusAppData class. You can add any attributes to the appData object that are necessary to track information about your custom application. The following example illustrates how you can store the version number of your application on the appData object:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">customKernel</span>
@@ -754,7 +754,7 @@
 </div>
 <p>You can call the <code class="docutils literal notranslate"><span class="pre">setAppData</span></code> method only once per application name, which prevents unauthorized changes to the method. However, the <code class="docutils literal notranslate"><span class="pre">setAppData</span></code> method may be called multiple times using different application names to allow more than one application to register with the same model database.</p>
 <p>When the user saves a model database, Abaqus copies the session.customData.appData object to the mdb.customData.appData object.</p>
-<h2 id="checking-a-model-database-when-it-is-opened">Checking a model database when it is opened<a class="headerlink" href="#checking-a-model-database-when-it-is-opened" title="Permalink to this heading">¶</a></h2>
+<h2 id="checking-a-model-database-when-it-is-opened">Checking a model database when it is opened<a class="headerlink" href="#checking-a-model-database-when-it-is-opened" title="Link to this heading">¶</a></h2>
 <p>If you have custom kernel scripts that use custom data in a model database, you may want your application to verify some of the contents of a model database before it is fully opened. For example, you may want to check the database to see if you need to upgrade the data that is stored in it. In addition, you may need to initialize a new model database with your custom data. Two methods are provided for verifying and initializing a model database: <code class="docutils literal notranslate"><span class="pre">verifyMdb</span></code> and <code class="docutils literal notranslate"><span class="pre">initializeMdb</span></code>.</p>
 <ul>
 <li><p><strong>Verifying a model database</strong></p>
@@ -864,7 +864,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -883,18 +883,20 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
-<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="../../../_static/clipboard.min.js"></script>
-<script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/jquery.js?v=5d32c60e"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../../_static/copybutton.js?v=f281be69"></script>
+<script src="../../../_static/tabs.js?v=3ee01567"></script>
 <script src="../../../_static/js/hoverxref.js"></script>
 <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
 <script src="../../../_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="../../../_static/togglebutton.js"></script>
+<script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -930,7 +932,8 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js"></script>
-<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>

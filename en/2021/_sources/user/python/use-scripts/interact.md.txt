@@ -18,8 +18,7 @@ These arguments allow you to associate the callback function with both a particu
 The interface definition of the callback function is
 
 ```python
-def functionName(jobName, messageType, data, userData):
-    ...
+def functionName(jobName, messageType, data, userData): ...
 ```
 
 The arguments to the callback function are:

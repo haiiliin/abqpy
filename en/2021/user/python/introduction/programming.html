@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Programming techniques - abqpy 2021 documentation</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -517,9 +517,9 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2021/docs/source/user/python/introduction/programming.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="programming-techniques">Programming techniques<a class="headerlink" href="#programming-techniques" title="Permalink to this heading">¶</a></h1>
+<h1 id="programming-techniques">Programming techniques<a class="headerlink" href="#programming-techniques" title="Link to this heading">¶</a></h1>
 <p>The following sections introduce you to some of the techniques you will need to program with Python.</p>
-<h2 id="creating-functions"><span id="id1"></span>Creating functions<a class="headerlink" href="#creating-functions" title="Permalink to this heading">¶</a></h2>
+<h2 id="creating-functions"><span id="id1"></span>Creating functions<a class="headerlink" href="#creating-functions" title="Link to this heading">¶</a></h2>
 <p>You can define your own functions in Python. A function is like a subroutine in Fortran. You can pass arguments into a function, it performs the operation, and it can return one or more values. For example, the following function returns the distance of a point from the origin. The def statement starts a function definition.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
@@ -649,7 +649,7 @@
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>Distance<span class="w"> </span>to<span class="w"> </span><span class="nv">origin</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">50</span>.0
 </code></pre></div>
 </div>
-<h2 id="using-dictionaries"><span id="id2"></span>Using dictionaries<a class="headerlink" href="#using-dictionaries" title="Permalink to this heading">¶</a></h2>
+<h2 id="using-dictionaries"><span id="id2"></span>Using dictionaries<a class="headerlink" href="#using-dictionaries" title="Link to this heading">¶</a></h2>
 <p>Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -726,7 +726,7 @@
 <span class="go">cost 10.34</span>
 </code></pre></div>
 </div>
-<h2 id="reading-and-writing-from-files">Reading and writing from files<a class="headerlink" href="#reading-and-writing-from-files" title="Permalink to this heading">¶</a></h2>
+<h2 id="reading-and-writing-from-files">Reading and writing from files<a class="headerlink" href="#reading-and-writing-from-files" title="Link to this heading">¶</a></h2>
 <p>Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myInputFile</span>  <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'crash_test/fender.txt'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'peak_deflection.txt'</span><span class="p">,</span><span class="s1">'w+'</span><span class="p">)</span>
@@ -760,7 +760,7 @@
 </code></pre></div>
 </div>
 <p>The first line opens the input file; you do not need the <code class="docutils literal notranslate"><span class="pre">'r'</span></code> because read-only is the default access mode. The next line opens a new file to which you will write. You read the lines in the input file into a list. Finally, you enter a loop that converts each line to uppercase characters and writes the result to the output file. The final two lines close the files.</p>
-<h2 id="error-handling"><span id="id3"></span>Error handling<a class="headerlink" href="#error-handling" title="Permalink to this heading">¶</a></h2>
+<h2 id="error-handling"><span id="id3"></span>Error handling<a class="headerlink" href="#error-handling" title="Link to this heading">¶</a></h2>
 <p>When a script encounters unusual circumstances, Python allows you to modify the flow of control through the script and to take the necessary action. The action of signaling a problem during execution is called raising or throwing an exception. Recognizing the problem is called catching an exception. Taking appropriate action is called exception handling.</p>
 <p>Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
@@ -797,7 +797,7 @@
 </code></pre></div>
 </div>
 <p>Exception handling is discussed in more detail in Error handling in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>.</p>
-<h2 id="functions-and-modules"><span id="id4"></span>Functions and modules<a class="headerlink" href="#functions-and-modules" title="Permalink to this heading">¶</a></h2>
+<h2 id="functions-and-modules"><span id="id4"></span>Functions and modules<a class="headerlink" href="#functions-and-modules" title="Link to this heading">¶</a></h2>
 <p>When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myName</span> <span class="o">=</span> <span class="s1">'Einstein'</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#len" title="len"><span class="nb">len</span></a><span class="p">(</span><span class="n">myName</span><span class="p">)</span>
@@ -836,7 +836,7 @@
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">import</span></code> approach shown above imports the module as a unit, and you must qualify the name of an object from the module. To access a function from the <code class="docutils literal notranslate"><span class="pre">math</span></code> module in our example, you must prepend the function with <code class="docutils literal notranslate"><span class="pre">math.</span></code>; the <code class="docutils literal notranslate"><span class="pre">math.</span></code> statement is said to qualify the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> function.</p>
 <p>What is the difference between the two approaches to importing modules? If two modules contain an object with the same name, Python cannot distinguish between the objects if you use the <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">modulename</span> <span class="pre">import</span> <span class="pre">*</span></code> approach. If two objects have the same name, Python uses the object most recently imported. However, if you use the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">modulename</span></code> approach, modulename qualifies the name of the object and makes it unique.</p>
-<h2 id="writing-your-own-modules">Writing your own modules<a class="headerlink" href="#writing-your-own-modules" title="Permalink to this heading">¶</a></h2>
+<h2 id="writing-your-own-modules">Writing your own modules<a class="headerlink" href="#writing-your-own-modules" title="Link to this heading">¶</a></h2>
 <p>You can create your own module containing a set of Python functions. You can import this module and make use of its functions. The name of the module to import is the same as the name of the file containing the functions without the <code class="docutils literal notranslate"><span class="pre">.py</span></code> file suffix.</p>
 <p>For example, you can create a module called myUtilities by copying a modified version of the function that calculates the distance from a point to the origin into a file called myUtilities.py.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="sd">""" myUtilities - a module of mathematical functions"""</span>
@@ -940,7 +940,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -959,18 +959,20 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
-<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="../../../_static/clipboard.min.js"></script>
-<script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/jquery.js?v=5d32c60e"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../../_static/copybutton.js?v=f281be69"></script>
+<script src="../../../_static/tabs.js?v=3ee01567"></script>
 <script src="../../../_static/js/hoverxref.js"></script>
 <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
 <script src="../../../_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="../../../_static/togglebutton.js"></script>
+<script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -1006,7 +1008,8 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js"></script>
-<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>
