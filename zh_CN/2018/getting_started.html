@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>入门指南 - abqpy 2018 文档</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -426,10 +426,10 @@
 <a class="md-content__button md-icon" href="https://crowdin.com/translate/abqpy-locale/3181/en-zhcn" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="getting-started">入门指南<a class="headerlink" href="#getting-started" title="此标题的永久链接">¶</a></h1>
-<h2 id="introduction">简介<a class="headerlink" href="#introduction" title="此标题的永久链接">¶</a></h2>
+<h1 id="getting-started">入门指南<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+<h2 id="introduction">简介<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 是一个 Python 包，提供了一些类型提示，用于快速编写你的 Abaqus/Python 脚本，即便不打开 Abaqus/CAE。它还提供了一些简单的 API 用于调用 Abaqus 命令执行你的 Python 脚本，以便使用 Python 脚本快速构建 Abaqus 模型，并提交作业给 Abaqus 进行计算，并从计算结果中提取数据。</p>
-<h2 id="installation">安装<a class="headerlink" href="#installation" title="此标题的永久链接">¶</a></h2>
+<h2 id="installation">安装<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
 <p>在安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 之前，请确保 <a href="https://www.python.org/downloads/"> <img align="center" src="https://img.shields.io/badge/Python-3.7%2B-brightgreen"/> </a> 和 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img align="center" src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen"/> </a> 已安装到您的计算机上。</p>
 <p>你可以使用以下命令安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>。</p>
 <div class="tab-set docutils">
@@ -460,7 +460,7 @@ pip<span class="w"> </span>install<span class="w"> </span>ipynbname<span class="
 <p class="admonition-title">备注</p>
 <p>建议您安装相应版本的 Abaqus 和 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>，以避免兼容性问题。</p>
 </div>
-<h2 id="two-python-interpreters">两个 Python 解释器<a class="headerlink" href="#two-python-interpreters" title="此标题的永久链接">¶</a></h2>
+<h2 id="two-python-interpreters">两个 Python 解释器<a class="headerlink" href="#two-python-interpreters" title="Link to this heading">¶</a></h2>
 <p>在我们进一步讨论之前，我们有必要了解两个 Python 解释器。</p>
 <p>当我们使用 Abaqus/CAE 图形用户界面（GUI）创建模型并可视化结果时，命令由 Abaqus/CAE 在每次操作后在内部发出。这些命令反映您创建的几何图形以及从每个对话框中选择的选项和设置。GUI 使用名为 Python 的面向对象编程语言生成命令。GUI 发出的命令将发送到 Abaqus/CAE 内核。内核解释命令，并使用选项和设置来创建模型的内部表示。内核是 Abaqus/CAE 背后的大脑。GUI 是用户和内核之间的接口。</p>
 <p>总之，Abaqus 使用 Python 语言与 Abaqus 内核进行交互，所有可以在 Abaqus/CAE 中 完成的事情，也可以使用 Python 脚本完成。Abaqus  已经安装了一个 Python 解释器，以便 Abaqus/CAE 可以使用它与 Abaqus 内核进行交互。</p>
@@ -484,7 +484,7 @@ pip<span class="w"> </span>install<span class="w"> </span>ipynbname<span class="
 </div>
 <p>通常，我们可以使用 noGUI-file 或 script-file 选项在 Abaqu 中执行我们的 Python 脚本。</p>
 <p>另一个 Python 解释器是我们自己安装的 Python 解释器，其中安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code>。<code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 提供了一个将我们的 Python 脚本连接到 Abaqus Python 解释器的桥梁，它为 Abaqus 的 Python 脚本提供了类型提示，使我们能够快速编写 Abaqus Python 脚本。</p>
-<h2 id="how-does-this-package-work">这个包是如何工作的？<a class="headerlink" href="#how-does-this-package-work" title="此标题的永久链接">¶</a></h2>
+<h2 id="how-does-this-package-work">这个包是如何工作的？<a class="headerlink" href="#how-does-this-package-work" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 只是一个为 Abaqus/Python 脚本提供类型提示的包，它安装在 Abaqus/Python 环境之外，你可以使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 来编写你的 Abaqus/Python 脚本，并自己在 Abaqus 里面运行脚本。但是，在 Abaqus 命令的帮助下，可以实现一种更简单的方法：** 您实际上可以使用自己的 Python 解释器运行脚本而无需打开 Abaqus**，这是通过 <strong>abaqus</strong> 命令实现的，如下所示：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">noGUI</span><span class="o">=</span>script.py
 </code></pre></div>
@@ -500,11 +500,11 @@ will exit the interpreter, because the script will already run in Abaqus Python 
 </div>
 <p>因此，<code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> 模块也被重新实现以调用带有参数 <code class="docutils literal notranslate"><span class="pre">cae</span> <span class="pre">=</span> <span class="pre">False</span></code> 的 <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/run/index.html#abqpy.run.run" title="abqpy.run.run (Python 函数) — Runs Abaqus command in system's CLI."><code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code></a> 函数。</p>
 <p>总之，当您导入两个模块之一（<code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> 或 <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code>）时，将调用 <a class="hxr-hoverxref hxr-tooltip reference internal" href="autoapi/abqpy/run/index.html#abqpy.run.run" title="abqpy.run.run (Python 函数) — Runs Abaqus command in system's CLI."><code class="xref py py-func docutils literal notranslate"><span class="pre">run()</span></code></a> 函数。 它将在 <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> 模块中传入参数 <code class="docutils literal notranslate"><span class="pre">cae</span> <span class="pre">=</span> <span class="pre">True</span></code>，在 <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> 模块中传入参数 <code class="docutils literal notranslate"><span class="pre">cae</span> <span class="pre">=</span> <span class="pre">False</span></code>。 因此，如果您想在外部 Python 环境中运行您的 Python 脚本，请确保在您的脚本导入这些模块之一。</p>
-<h2 id="write-your-abaqus-python-script">编写你的 Abaqus/Python 脚本<a class="headerlink" href="#write-your-abaqus-python-script" title="此标题的永久链接">¶</a></h2>
+<h2 id="write-your-abaqus-python-script">编写你的 Abaqus/Python 脚本<a class="headerlink" href="#write-your-abaqus-python-script" title="Link to this heading">¶</a></h2>
 <p>安装 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 包后，您可以开始编写自己的 Abaqus/Python 脚本来构建模型。 您可以参考 <a class="reference external" href="https://github.com/hailiin/abqpy/tree/main/examples">abqpy/examples at main・hailiin/abqpy</a> 获取一些脚本示例。 或者你可以去 <a class="reference internal" href="tutorials.html"><span class="doc">教程</span></a> 看一个简单的教程。 有关 Abaqus/Python 脚本的更多文档，请查看 <a class="reference internal" href="reference/index.html"><span class="doc">Abaqus Class References</span></a> 以获取更详细的 API 参考。</p>
-<h2 id="setup-your-abaqus-environment">配置 Abaqus 环境<a class="headerlink" href="#setup-your-abaqus-environment" title="此标题的永久链接">¶</a></h2>
+<h2 id="setup-your-abaqus-environment">配置 Abaqus 环境<a class="headerlink" href="#setup-your-abaqus-environment" title="Link to this heading">¶</a></h2>
 <p>请确保命令行中的 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令是可用的（即您可以在命令行运行 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>），否则你需要添加一个名为 <code class="docutils literal notranslate"><span class="pre">ABAQUS_BAT_PATH</span></code> 的系统环境变量， 并将其设置为 Abaqus 批处理文件的文件路径，例如 <code class="docutils literal notranslate"><span class="pre">C:/SIMULIA/Commands/abaqus.bat</span></code>。</p>
-<h2 id="run-your-abaqus-python-script">运行你的 Abaqus/Python 脚本<a class="headerlink" href="#run-your-abaqus-python-script" title="此标题的永久链接">¶</a></h2>
+<h2 id="run-your-abaqus-python-script">运行你的 Abaqus/Python 脚本<a class="headerlink" href="#run-your-abaqus-python-script" title="Link to this heading">¶</a></h2>
 <p>现在您可以使用以下方法运行您的 Abaqus/Python 脚本：</p>
 <ul>
 <li><p>打开 Abaqus/CAE 并点击菜单栏中的 <code class="docutils literal notranslate"><span class="pre">运行脚本</span></code>，然后选择您的脚本文件， 它是在 Abaqus/CAE 中运行 Python 脚本的最常见方式。</p></li>
@@ -548,7 +548,7 @@ If you run the script under the debug mode, the script will be opened in Abaqus 
 <a class="reference internal image-reference" href="_images/output-code.gif"><img alt="提取输出数据" class="align-center" src="_images/output-code.gif" style="width: 100%;"/></a>
 </li>
 </ul>
-<h2 id="comments">评论<a class="headerlink" href="#comments" title="此标题的永久链接">¶</a></h2>
+<h2 id="comments">评论<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
 <script async="async" crossorigin="anonymous" issue-term="pathname" label="💬 comment" repo="haiiliin/abqpy" src="https://utteranc.es/client.js" theme="github-light" type="text/javascript"></script>
 </article>
 </div>
@@ -598,7 +598,7 @@ If you run the script under the debug mode, the script will be opened in Abaqus 
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -617,18 +617,20 @@ If you run the script under the debug mode, the script will be opened in Abaqus 
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
-<script src="_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="_static/clipboard.min.js"></script>
-<script src="_static/copybutton.js"></script>
-<script src="_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/zh_CN/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+<script src="_static/jquery.js?v=5d32c60e"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="_static/copybutton.js?v=f281be69"></script>
+<script src="_static/tabs.js?v=3ee01567"></script>
 <script src="_static/js/hoverxref.js"></script>
 <script src="_static/js/tooltipster.bundle.min.js"></script>
 <script src="_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="_static/togglebutton.js"></script>
+<script src="_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -663,9 +665,10 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-<script src="_static/translations.js"></script>
+<script src="_static/translations.js?v=beaddf03"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="_static/design-tabs.js"></script>
-<script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js"></script>
+<script src="_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>

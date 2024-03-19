@@ -32,11 +32,11 @@ Attributes
    abqpy.config.config
 
 
-.. py:class:: CompatibleBaseModel(**data: Any)
+.. py:class:: CompatibleBaseModel(/, **data: Any)
 
    Bases: :py:obj:`pydantic.BaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.5/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.6/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -112,31 +112,31 @@ Attributes
 
    .. py:method:: model_dump(**kwargs) -> dict[str, Any]
 
-      Usage docs: https://docs.pydantic.dev/2.5/concepts/serialization/#modelmodel_dump
+      Usage docs: https://docs.pydantic.dev/2.6/concepts/serialization/#modelmodel_dump
 
       Generate a dictionary representation of the model, optionally specifying which fields to include or exclude.
 
       :param mode: The mode in which `to_python` should run.
-                   If mode is 'json', the dictionary will only contain JSON serializable types.
-                   If mode is 'python', the dictionary may contain any Python objects.
+                   If mode is 'json', the output will only contain JSON serializable types.
+                   If mode is 'python', the output may contain non-JSON-serializable Python objects.
       :param include: A list of fields to include in the output.
       :param exclude: A list of fields to exclude from the output.
       :param by_alias: Whether to use the field's alias in the dictionary key if defined.
       :param exclude_unset: Whether to exclude fields that have not been explicitly set.
-      :param exclude_defaults: Whether to exclude fields that are set to their default value from the output.
-      :param exclude_none: Whether to exclude fields that have a value of `None` from the output.
-      :param round_trip: Whether to enable serialization and deserialization round-trip support.
+      :param exclude_defaults: Whether to exclude fields that are set to their default value.
+      :param exclude_none: Whether to exclude fields that have a value of `None`.
+      :param round_trip: If True, dumped values should be valid as input for non-idempotent types such as Json[T].
       :param warnings: Whether to log warnings when invalid fields are encountered.
 
       :returns: A dictionary representation of the model.
 
 
 
-.. py:class:: AbaqusCAEConfig(**data: Any)
+.. py:class:: AbaqusCAEConfig(/, **data: Any)
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.5/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.6/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -225,6 +225,11 @@ Attributes
 
       
 
+   .. py:attribute:: startup
+      :type: Optional[str]
+
+      
+
    .. py:attribute:: gui
       :type: bool
       :value: False
@@ -271,11 +276,11 @@ Attributes
       
 
 
-.. py:class:: AbaqusPythonConfig(**data: Any)
+.. py:class:: AbaqusPythonConfig(/, **data: Any)
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.5/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.6/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -360,11 +365,11 @@ Attributes
       
 
 
-.. py:class:: AbaqusConfig(**data: Any)
+.. py:class:: AbaqusConfig(/, **data: Any)
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.5/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.6/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -473,11 +478,11 @@ Attributes
       
 
 
-.. py:class:: AbaqusCommandOptions(**data: Any)
+.. py:class:: AbaqusCommandOptions(/, **data: Any)
 
    Bases: :py:obj:`AbaqusCAEConfig`, :py:obj:`AbaqusPythonConfig`
 
-   Usage docs: https://docs.pydantic.dev/2.5/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.6/concepts/models/
 
    A base class for creating Pydantic models.
 
