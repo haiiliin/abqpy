@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Interacting with Abaqus/Standard and Abaqus/Explicit - abqpy 2023 documentation</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -497,9 +497,9 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2023/docs/source/user/python/use-scripts/interact.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="interacting-with-abaqus-standard-and-abaqus-explicit">Interacting with Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#interacting-with-abaqus-standard-and-abaqus-explicit" title="Permalink to this heading">¶</a></h1>
+<h1 id="interacting-with-abaqus-standard-and-abaqus-explicit">Interacting with Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#interacting-with-abaqus-standard-and-abaqus-explicit" title="Link to this heading">¶</a></h1>
 <p>The Job commands include methods that allow you to submit jobs to Abaqus/Standard and Abaqus/Explicit. This section describes how you can interact with Abaqus/Standard and Abaqus/Explicit and synchronize your scripts with the analysis job.</p>
-<h2 id="processing-messages-from-abaqus-standard-and-abaqus-explicit">Processing messages from Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit" title="Permalink to this heading">¶</a></h2>
+<h2 id="processing-messages-from-abaqus-standard-and-abaqus-explicit">Processing messages from Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit" title="Link to this heading">¶</a></h2>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">addMessageCallback</span></code> method to associate an event-driven function with a particular message that is retrieved from Abaqus/Standard or Abaqus/Explicit. When Abaqus/CAE retrieves the specific message from Abaqus/Standard or Abaqus/Explicit, the function executes and takes the necessary action. This type of function is called a callback function. The <code class="docutils literal notranslate"><span class="pre">addMessageCallback</span></code> method specifies which callback function to use for which message.</p>
 <p>The arguments to <code class="docutils literal notranslate"><span class="pre">addMessageCallback</span></code> are:</p>
 <ul class="simple">
@@ -510,8 +510,7 @@
 </ul>
 <p>These arguments allow you to associate the callback function with both a particular job and a particular message. Alternatively, you can associate the callback function with all jobs and all messages. The commands are described in <a class="reference internal" href="../../../reference/kernel/messaging.html"><span class="doc">Messaging</span></a>.</p>
 <p>The interface definition of the callback function is</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">functionName</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
-    <span class="o">...</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">functionName</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span> <span class="o">...</span>
 </code></pre></div>
 </div>
 <p>The arguments to the callback function are:</p>
@@ -632,7 +631,7 @@
         <span class="n">monitorManager</span><span class="o">.</span><span class="n">removeMessageCallback</span><span class="p">(</span><span class="n">ANY_JOB</span><span class="p">,</span> <span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">simpleCB</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="waiting-for-a-job-to-complete">Waiting for a job to complete<a class="headerlink" href="#waiting-for-a-job-to-complete" title="Permalink to this heading">¶</a></h2>
+<h2 id="waiting-for-a-job-to-complete">Waiting for a job to complete<a class="headerlink" href="#waiting-for-a-job-to-complete" title="Link to this heading">¶</a></h2>
 <p>You can use the Job object’s <code class="docutils literal notranslate"><span class="pre">waitForCompletion</span></code> method to synchronize your script with a job that has been submitted. If you call the <code class="docutils literal notranslate"><span class="pre">waitForCompletion</span></code> method after you submit a job, the script waits until the analysis is complete before continuing. When the script continues, you should check the status of the job to ensure that the job completed successfully and did not abort. For example, the script described in Reproducing the cantilever beam tutorial uses <code class="docutils literal notranslate"><span class="pre">waitForCompletion</span></code> to ensure that the analysis job has finished executing successfully before the script opens the resulting output database and displays a contour plot of the results.</p>
 <p>In the following example, the script submits myJob1 and waits for it to complete before submitting myJob2.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">myJob1</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"Job-1"</span><span class="p">)</span>
@@ -652,7 +651,7 @@
 <span class="n">myJob2</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="an-example-of-a-callback-function">An example of a callback function<a class="headerlink" href="#an-example-of-a-callback-function" title="Permalink to this heading">¶</a></h2>
+<h2 id="an-example-of-a-callback-function">An example of a callback function<a class="headerlink" href="#an-example-of-a-callback-function" title="Link to this heading">¶</a></h2>
 <p>The following section describes how you can use a callback function as an alternative to the <code class="docutils literal notranslate"><span class="pre">waitForCompletion</span></code> method described in [waiting for a job to complete]. The example uses messaging commands to synchronize a script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging commands set up a callback function that monitors messages from Abaqus/Standard and Abaqus/Explicit. When the desired message is received, the callback function executes.</p>
 <p>he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
@@ -737,7 +736,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -756,18 +755,20 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
-<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="../../../_static/clipboard.min.js"></script>
-<script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/jquery.js?v=5d32c60e"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../../_static/copybutton.js?v=f281be69"></script>
+<script src="../../../_static/tabs.js?v=3ee01567"></script>
 <script src="../../../_static/js/hoverxref.js"></script>
 <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
 <script src="../../../_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="../../../_static/togglebutton.js"></script>
+<script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -803,7 +804,8 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js"></script>
-<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>
