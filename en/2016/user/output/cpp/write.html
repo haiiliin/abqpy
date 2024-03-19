@@ -32,11 +32,11 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=61a4c737" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css?v=08871587" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1204,11 +1204,11 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="writing-to-an-output-database">Writing to an output database<a class="headerlink" href="#writing-to-an-output-database" title="Permalink to this heading">¶</a></h1>
+<h1 id="writing-to-an-output-database">Writing to an output database<a class="headerlink" href="#writing-to-an-output-database" title="Link to this heading">¶</a></h1>
 <p>You can write your own data to an output database, and you can use Abaqus/CAE to view the data. Writing to an output database is very similar to reading from an output database. When you open an existing database, the Odb object contains all the objects found in the output database, such as instances, steps, and field output data. In contrast, when you are writing to a new output database, these objects do not exist. As a result you must use a constructor to create the objects. For example, you use the Part constructor to create a Part object, the Instance constructor to create an OdbInstance object, and the Step constructor to create an OdbStep object.</p>
 <p>After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.</p>
 <p>The example script in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../python/examples.html#creating-an-output-database"><span class="std std-ref">Creating an output database</span></a> also illustrates how you can write to an output database.</p>
-<h2 id="creating-a-new-output-database">Creating a new output database<a class="headerlink" href="#creating-a-new-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="creating-a-new-output-database">Creating a new output database<a class="headerlink" href="#creating-a-new-output-database" title="Link to this heading">¶</a></h2>
 <p>You use the Odb constructor to create a new, empty Odb object.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Odb</span><span class="p">(</span><span class="s">&quot;myData&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;derived data&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;test problem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;testWrite.odb&quot;</span><span class="p">);</span>
 </code></pre></div>
@@ -1219,7 +1219,7 @@
 </code></pre></div>
 </div>
 <p>For a full description of the save command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save (Python method) — This method saves output to an output database (.odb ) file."><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
-<h2 id="writing-model-data">Writing model data<a class="headerlink" href="#writing-model-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="writing-model-data">Writing model data<a class="headerlink" href="#writing-model-data" title="Link to this heading">¶</a></h2>
 <p>To define the geometry of your model, you first create the parts that are used by the model and then you add nodes and elements to the parts. You then define the assembly by creating instances of the parts. If the output database already contains results data, you should not change the geometry of the model. This is to ensure that the results remain synchronized with the model.</p>
 <ul>
 <li><p><strong>Part</strong></p>
@@ -1356,7 +1356,7 @@
 </div>
 </li>
 </ul>
-<h2 id="writing-results-data">Writing results data<a class="headerlink" href="#writing-results-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="writing-results-data">Writing results data<a class="headerlink" href="#writing-results-data" title="Link to this heading">¶</a></h2>
 <p>To write results data to the output database, you first create the Step objects that correspond to each step of the analysis. If you are writing field output data, you also create the Frame objects that will contain the field data. History output data are associated with Step objects.</p>
 <ul>
 <li><p><strong>Steps</strong></p>
@@ -1376,7 +1376,7 @@
 <p>For a full description of the Frame command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbStepBase.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame (Python class)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a>.</p>
 </li>
 </ul>
-<h2 id="writing-field-output-data">Writing field output data<a class="headerlink" href="#writing-field-output-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="writing-field-output-data">Writing field output data<a class="headerlink" href="#writing-field-output-data" title="Link to this heading">¶</a></h2>
 <p>A FieldOutput object contains a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You add field output data to a Frame object by first creating a FieldOutput object using the FieldOutput constructor and then adding data to the FieldOutput object using the <code class="docutils literal notranslate"><span class="pre">addData</span></code> method. For example,</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="c1">// vector</span>
 <span class="n">odb_SequenceString</span><span class="w"> </span><span class="n">vectorCompLabels</span><span class="p">;</span>
@@ -1509,14 +1509,14 @@
 </div>
 <p>For a full description of the <code class="docutils literal notranslate"><span class="pre">addData</span></code> command, see <code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code>.</p>
 <p>As a convenience, <strong>localCoordSystem</strong> can be a single transform or a list of transforms. If <strong>localCoordSystem</strong> is a single transform, it applies to all values. If <strong>localCoordSystem</strong> is a list of transforms, the number of items in the list must match the number of data values.</p>
-<h2 id="default-display-properties">Default display properties<a class="headerlink" href="#default-display-properties" title="Permalink to this heading">¶</a></h2>
+<h2 id="default-display-properties">Default display properties<a class="headerlink" href="#default-display-properties" title="Link to this heading">¶</a></h2>
 <p>The previous examples show how you can use commands to set the default field variable and deformed field variable. Abaqus/CAE uses the default field variable setting to determine the variable to display in a contour plot; for example, stress. Similarly, the default deformed field variable determines the variable that distinguishes a deformed plot from an undeformed plot. Typically, you will use displacement for the default deformed field variable; you cannot specify an invariant or a component. The default variable settings apply for each frame in the step. For example, the following statements use the deformation ‘U’ as the default setting for both field variable and deformed field variable settings during a particular step:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">step1</span><span class="p">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">tensorField</span><span class="p">);</span>
 <span class="n">step1</span><span class="p">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">vectorField</span><span class="p">);</span>
 </code></pre></div>
 </div>
 <p>You can set a different default field variable and deformed field variable for different steps.</p>
-<h2 id="writing-history-output-data">Writing history output data<a class="headerlink" href="#writing-history-output-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="writing-history-output-data">Writing history output data<a class="headerlink" href="#writing-history-output-data" title="Link to this heading">¶</a></h2>
 <p>History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. Depending on the type of output expected, the historyRegions repository contains data from one of the following:</p>
 <ul class="simple">
 <li><p>a node</p></li>
@@ -1636,7 +1636,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1671,20 +1671,22 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
     
       
-        <script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/tabs.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script src="../../../_static/tabs.js?v=3ee01567"></script>
         <script src="../../../_static/js/hoverxref.js"></script>
         <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
         <script src="../../../_static/js/micromodal.min.js"></script>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../../_static/togglebutton.js"></script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
         <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -1720,8 +1722,9 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../../_static/design-tabs.js"></script>
-        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+        <script src="../../../_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
   </body>
 </html>

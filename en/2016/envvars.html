@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Environment Variables - abqpy 2016 documentation</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -228,77 +228,82 @@
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — Type: string">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_DATABASE">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_DATABASE (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the database option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>DATABASE</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_DATABASE (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>DATABASE</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_REPLAY">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_REPLAY (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the replay option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>REPLAY</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_REPLAY (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>REPLAY</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_RECOVER">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_RECOVER (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the recover option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>RECOVER</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_RECOVER (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>RECOVER</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#envvar-ABAQUS_CAE_STARTUP">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>STARTUP</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the gui option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>GUI</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_ENVSTARTUP">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_ENVSTARTUP (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the envstartup option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>ENVSTARTUP</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_ENVSTARTUP (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>ENVSTARTUP</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_SAVED_OPTIONS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_OPTIONS (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the savedOptions option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>OPTIONS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_OPTIONS (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_SAVED_GUI_PREFS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_GUI_PREFS (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the savedGuiPrefs option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>GUI_<wbr/>PREFS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_GUI_PREFS (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>GUI_<wbr/>PREFS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_STARTUP_DIALOG">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP_DIALOG (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the startupDialog option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>STARTUP_<wbr/>DIALOG</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP_DIALOG (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>STARTUP_<wbr/>DIALOG</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_CUSTOM">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_CUSTOM (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the custom option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>CUSTOM</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_CUSTOM (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>CUSTOM</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI_TESTER">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_TESTER (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the guiTester option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>TESTER</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_TESTER (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>TESTER</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI_RECORD">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_RECORD (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the guiRecord option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>RECORD</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_RECORD (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>RECORD</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_PYTHON_SIM">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_SIM (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the sim option but has higher priority.">ABAQUS_<wbr/>PYTHON_<wbr/>SIM</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_SIM (environment variable) — Type: string">ABAQUS_<wbr/>PYTHON_<wbr/>SIM</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_PYTHON_LOG">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_LOG (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the log option but has higher priority.">ABAQUS_<wbr/>PYTHON_<wbr/>LOG</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_LOG (environment variable) — Type: string">ABAQUS_<wbr/>PYTHON_<wbr/>LOG</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -423,77 +428,82 @@
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_BAT_PATH">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — The file path of the abaqus command line batch file (.bat). Only set this environment variable if abaqus is not the default Abaqus command line executable. This variable is used by abqpy to run the Abaqus command line procedure inside the Python interpreter environment where it is installed.">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_BAT_PATH (environment variable) — Type: string">ABAQUS_<wbr/>BAT_<wbr/>PATH</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_COMMAND_OPTIONS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary">ABAQUS_<wbr/>COMMAND_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_DATABASE">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_DATABASE (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the database option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>DATABASE</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_DATABASE (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>DATABASE</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_REPLAY">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_REPLAY (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the replay option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>REPLAY</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_REPLAY (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>REPLAY</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_RECOVER">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_RECOVER (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the recover option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>RECOVER</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_RECOVER (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>RECOVER</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#envvar-ABAQUS_CAE_STARTUP">
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>STARTUP</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the gui option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>GUI</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_ENVSTARTUP">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_ENVSTARTUP (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the envstartup option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>ENVSTARTUP</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_ENVSTARTUP (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>ENVSTARTUP</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_SAVED_OPTIONS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_OPTIONS (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the savedOptions option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>OPTIONS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_OPTIONS (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>OPTIONS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_SAVED_GUI_PREFS">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_GUI_PREFS (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the savedGuiPrefs option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>GUI_<wbr/>PREFS</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_SAVED_GUI_PREFS (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>SAVED_<wbr/>GUI_<wbr/>PREFS</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_STARTUP_DIALOG">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP_DIALOG (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the startupDialog option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>STARTUP_<wbr/>DIALOG</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_STARTUP_DIALOG (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>STARTUP_<wbr/>DIALOG</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_CUSTOM">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_CUSTOM (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the custom option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>CUSTOM</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_CUSTOM (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>CUSTOM</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI_TESTER">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_TESTER (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the guiTester option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>TESTER</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_TESTER (environment variable) — Type: string">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>TESTER</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_CAE_GUI_RECORD">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_RECORD (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the guiRecord option but has higher priority.">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>RECORD</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_CAE_GUI_RECORD (environment variable) — Type: bool {true, false, on, off, yes, no, 1, 0}">ABAQUS_<wbr/>CAE_<wbr/>GUI_<wbr/>RECORD</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_PYTHON_SIM">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_SIM (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the sim option but has higher priority.">ABAQUS_<wbr/>PYTHON_<wbr/>SIM</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_SIM (environment variable) — Type: string">ABAQUS_<wbr/>PYTHON_<wbr/>SIM</span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#envvar-ABAQUS_PYTHON_LOG">
-<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_LOG (environment variable) — A shortcut to the ABAQUS_COMMAND_OPTIONS environment variable to set the log option but has higher priority.">ABAQUS_<wbr/>PYTHON_<wbr/>LOG</span>
+<span aria-label="environment variable" class="objinfo-icon objinfo-icon__alias" title="environment variable">$</span><span class="md-ellipsis" title="ABAQUS_PYTHON_LOG (environment variable) — Type: string">ABAQUS_<wbr/>PYTHON_<wbr/>LOG</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -516,19 +526,21 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2016/docs/source/envvars.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this heading">¶</a></h1>
+<h1 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading">¶</a></h1>
 <p>The following environment variables can be used to configure the package.</p>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_BAT_PATH">
-<span class="sig-name descname"><span class="pre">ABAQUS_BAT_PATH</span></span><a class="headerlink" href="#envvar-ABAQUS_BAT_PATH" title="Permalink to this definition">¶</a></dt>
-<dd><p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
+<span class="sig-name descname"><span class="pre">ABAQUS_BAT_PATH</span></span><a class="headerlink" href="#envvar-ABAQUS_BAT_PATH" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>The file path of the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> command line batch file (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>). Only set this environment variable if <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> is not
 the default Abaqus command line executable. This variable is used by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> to run the Abaqus command line
 procedure inside the Python interpreter environment where it is installed.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_COMMAND_OPTIONS">
-<span class="sig-name descname"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="Permalink to this definition">¶</a></dt>
-<dd><p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
+<span class="sig-name descname"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string of a Python dictionary</strong></p>
+<p>The default execution procedure invoked by <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> inside the Python interpreter
 environment where it is installed is to run one of the two following command lines:</p>
 <ol class="arabic">
 <li><p>When there is a <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">abaqus</span></code> or <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">...</span></code> statement:</p>
@@ -580,7 +592,7 @@ strings, e.g.: <code class="docutils literal notranslate"><span class="pre">{'gu
 <p>One advantage in using this alternative is to change the options at run time inside the code.</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
-<p>The environment variable <span class="target" id="index-0"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> must be a valid string that can be parsed to a Python dictionary,
+<p>The environment variable <span class="target" id="index-0"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> must be a valid string that can be parsed to a Python dictionary,
 which means that you must use <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> for boolean options. However, in the following individual environment
 variables, you can use <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">on</span></code>, <code class="docutils literal notranslate"><span class="pre">yes</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code> (or capitalized ones since they are not case sensitive) to set the
 boolean option to <code class="docutils literal notranslate"><span class="pre">True</span></code> and any other values to set it to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
@@ -588,70 +600,89 @@ boolean option to <code class="docutils literal notranslate"><span class="pre">T
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_DATABASE">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_DATABASE</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_DATABASE" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-1"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">database</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_DATABASE</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_DATABASE" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-1"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">database</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_REPLAY">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_REPLAY</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_REPLAY" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-2"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">replay</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_REPLAY</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_REPLAY" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-2"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">replay</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_RECOVER">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_RECOVER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_RECOVER" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-3"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">recover</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_RECOVER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_RECOVER" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-3"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">recover</span></code> option but has higher priority.</p>
+</dd></dl>
+<dl class="std envvar objdesc">
+<dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_STARTUP">
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_STARTUP</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_STARTUP" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-4"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">startup</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-4"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">gui</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-5"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">gui</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_ENVSTARTUP">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_ENVSTARTUP</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_ENVSTARTUP" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-5"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">envstartup</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_ENVSTARTUP</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_ENVSTARTUP" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-6"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">envstartup</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_SAVED_OPTIONS">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_OPTIONS" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-6"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedOptions</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_OPTIONS" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-7"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedOptions</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_SAVED_GUI_PREFS">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_GUI_PREFS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_GUI_PREFS" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-7"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedGuiPrefs</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_GUI_PREFS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_GUI_PREFS" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-8"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedGuiPrefs</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_STARTUP_DIALOG">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_STARTUP_DIALOG</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_STARTUP_DIALOG" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-8"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">startupDialog</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_STARTUP_DIALOG</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_STARTUP_DIALOG" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-9"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">startupDialog</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_CUSTOM">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_CUSTOM</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_CUSTOM" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-9"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">custom</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_CUSTOM</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_CUSTOM" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-10"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">custom</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI_TESTER">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_TESTER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_TESTER" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-10"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiTester</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_TESTER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_TESTER" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-11"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiTester</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI_RECORD">
-<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_RECORD</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_RECORD" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-11"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiRecord</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_RECORD</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_RECORD" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
+<p>A shortcut to the <span class="target" id="index-12"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiRecord</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_PYTHON_SIM">
-<span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_SIM</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_SIM" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-12"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">sim</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_SIM</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_SIM" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-13"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">sim</span></code> option but has higher priority.</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_PYTHON_LOG">
-<span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_LOG</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_LOG" title="Permalink to this definition">¶</a></dt>
-<dd><p>A shortcut to the <span class="target" id="index-13"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — The default execution procedure invoked by abqpy inside the Python interpreter environment where it is installed is to run one of the two following command lines:"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">log</span></code> option but has higher priority.</p>
+<span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_LOG</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_LOG" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Type: string</strong></p>
+<p>A shortcut to the <span class="target" id="index-14"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (environment variable) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">log</span></code> option but has higher priority.</p>
 </dd></dl>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h2>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Link to this heading">¶</a></h2>
 <p>The snippet bellow changes the default procedure options before calling
 abaqus cae command procedure, at run time.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/os.html#module-os" title="os"><span class="nn">os</span></a>
@@ -668,7 +699,7 @@ and load a <em>database</em> file, i.e., it will run the following command line.
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>cae<span class="w"> </span><span class="nv">script</span><span class="o">=</span>script.py<span class="w"> </span><span class="nv">database</span><span class="o">=</span>file.odb<span class="w"> </span>--<span class="w"> </span><span class="o">[</span>args<span class="w"> </span>...<span class="o">]</span>
 </code></pre></div>
 </div>
-<h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permalink to this heading">¶</a></h2>
+<h2 id="comments">Comments<a class="headerlink" href="#comments" title="Link to this heading">¶</a></h2>
 <script async="async" crossorigin="anonymous" issue-term="pathname" label="💬 comment" repo="haiiliin/abqpy" src="https://utteranc.es/client.js" theme="github-light" type="text/javascript"></script>
 </article>
 </div>
@@ -718,7 +749,7 @@ and load a <em>database</em> file, i.e., it will run the following command line.
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -737,18 +768,20 @@ and load a <em>database</em> file, i.e., it will run the following command line.
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
-<script src="_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="_static/clipboard.min.js"></script>
-<script src="_static/copybutton.js"></script>
-<script src="_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+<script src="_static/jquery.js?v=5d32c60e"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="_static/copybutton.js?v=f281be69"></script>
+<script src="_static/tabs.js?v=3ee01567"></script>
 <script src="_static/js/hoverxref.js"></script>
 <script src="_static/js/tooltipster.bundle.min.js"></script>
 <script src="_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="_static/togglebutton.js"></script>
+<script src="_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -784,7 +817,8 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="_static/design-tabs.js"></script>
-<script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js"></script>
+<script src="_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>
