@@ -32,11 +32,11 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=61a4c737" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css?v=08871587" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1246,9 +1246,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
   </a>
 
-<h1 id="reading-from-an-output-database">Reading from an output database<a class="headerlink" href="#reading-from-an-output-database" title="Permalink to this heading">¶</a></h1>
+<h1 id="reading-from-an-output-database">Reading from an output database<a class="headerlink" href="#reading-from-an-output-database" title="Link to this heading">¶</a></h1>
 <p>The following sections describe how you use Abaqus C++ API commands to read data from an output database.</p>
-<h2 id="the-abaqus-cae-visualization-module-tutorial-output-database">The Abaqus/CAE Visualization module tutorial output database<a class="headerlink" href="#the-abaqus-cae-visualization-module-tutorial-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="the-abaqus-cae-visualization-module-tutorial-output-database">The Abaqus/CAE Visualization module tutorial output database<a class="headerlink" href="#the-abaqus-cae-visualization-module-tutorial-output-database" title="Link to this heading">¶</a></h2>
 <p>The following sections describe how you can access the data in an output database. Examples are included that refer to the Abaqus/CAE Visualization module tutorial output database, <code class="docutils literal notranslate"><span class="pre">viewer_tutorial.odb</span></code>. This database is generated by the input file from Case 2 of the example problem, <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-indentfoamhemipunch.htm?contextscope=all">Indentation of an elastomeric foam specimen with a hemispherical punch</a>. The problem studies the behavior of a soft elastomeric foam block indented by a heavy metal punch. The tutorial shows how you can use the Visualization module to view the data in the output database. The tutorial describes how you can choose the variable to display, how you can step through the steps and frames in the analysis, and how you can create <strong>X - Y</strong> data from history output.</p>
 <p>You are encouraged to copy the tutorial output database to a local directory and experiment with the Abaqus C++ API. The output database and the example scripts from this guide can be copied to the user’s working directory using the <strong>abaqus fetch</strong> utility:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>name
@@ -1258,7 +1258,7 @@
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><code>abaqus<span class="w"> </span>fetch<span class="w"> </span><span class="nv">job</span><span class="o">=</span>viewer_tutorial
 </code></pre></div>
 </div>
-<h2 id="making-the-odb-commands-available">Making the Odb commands available<a class="headerlink" href="#making-the-odb-commands-available" title="Permalink to this heading">¶</a></h2>
+<h2 id="making-the-odb-commands-available">Making the Odb commands available<a class="headerlink" href="#making-the-odb-commands-available" title="Link to this heading">¶</a></h2>
 <p>To make the Odb commands available to your program, you first need to include the output database interface classes using the following statement:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_API.h&gt;</span>
 </code></pre></div>
@@ -1268,7 +1268,7 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;odb_SectionTypes.h&gt;</span>
 </code></pre></div>
 </div>
-<h2 id="opening-an-output-database">Opening an output database<a class="headerlink" href="#opening-an-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="opening-an-output-database">Opening an output database<a class="headerlink" href="#opening-an-output-database" title="Link to this heading">¶</a></h2>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">openOdb</span></code> method to open an existing output database. For example, the following statement opens the output database used by the Abaqus/CAE Visualization module tutorial:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Odb</span><span class="o">&amp;</span><span class="w"> </span><span class="n">odb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openOdb</span><span class="p">(</span><span class="s">&quot;viewer_tutorial.odb&quot;</span><span class="p">);</span>
 </code></pre></div>
@@ -1552,7 +1552,7 @@
 </div>
 </li>
 </ul>
-<h2 id="reading-results-data">Reading results data<a class="headerlink" href="#reading-results-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="reading-results-data">Reading results data<a class="headerlink" href="#reading-results-data" title="Link to this heading">¶</a></h2>
 <p>The following list describes the objects in results data and the commands you use to read results data. As with model data you will find it useful to use the repository iterators to determine the keys of the results data repositories.</p>
 <ul>
 <li><p><strong>Steps</strong></p>
@@ -1576,7 +1576,7 @@
 </div>
 </li>
 </ul>
-<h2 id="reading-field-output-data">Reading field output data<a class="headerlink" href="#reading-field-output-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="reading-field-output-data">Reading field output data<a class="headerlink" href="#reading-field-output-data" title="Link to this heading">¶</a></h2>
 <p>Field output data are stored in the fieldOutputs repository under the OdbFrame object. The key to the repository is the name of the variable. The following statements list all the variables found in the last frame of the first step (the statements use the variable <code class="docutils literal notranslate"><span class="pre">lastFrame</span></code> that we defined previously):</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldOutputRep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">();</span>
 <span class="n">odb_FieldOutputRepositoryIT</span><span class="w"> </span><span class="nf">fieldIter</span><span class="p">(</span><span class="n">fieldOutputRep</span><span class="p">);</span>
@@ -1632,7 +1632,7 @@ You can use the following to view all the available field data in a frame:</p>
 <p class="admonition-title">Note</p>
 <p>Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldBulkData.FieldBulkData" title="abaqus.Odb.FieldBulkData.FieldBulkData (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldBulkData</span></code></a> object and :[using bulk data access to an output database].</p>
 </div>
-<h2 id="using-bulk-data-access-to-an-output-database">Using bulk data access to an output database<a class="headerlink" href="#using-bulk-data-access-to-an-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="using-bulk-data-access-to-an-output-database">Using bulk data access to an output database<a class="headerlink" href="#using-bulk-data-access-to-an-output-database" title="Link to this heading">¶</a></h2>
 <p>If you need to access all the data in a field from an output database, you can use the bulkDataBlocks method of the FieldOutput object to read the data in bulk form. The bulkDataBlocks method returns a reference to a sequence of FieldBulkData objects, each of which contains the entire output for a class of nodes or elements, blocked together into an array.</p>
 <p>The data method of the FieldBulkData object returns an array of data corresponding to the output for the entire class of elements or nodes. The length and width methods of theFieldBulkData object return the number of output locations and the number of components at each output location, respectively. For example,</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">disp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
@@ -1687,7 +1687,7 @@ You can use the following to view all the available field data in a frame:</p>
 <p>The bulkDataBlocks method is an alternative to the values method of a FieldOutput object, described in [reading field output data]. The <code class="docutils literal notranslate"><span class="pre">values</span></code> method of a FieldOutput object returns a reference to a sequence of FieldValue objects that contain data. Each FieldValue object in the sequence provides data for a unique location in the model.</p>
 <p>Performance can be increased with the bulk data interface because the field data stored in a bulk data block are made available in a single array of floating point numbers. If you access the same data in nonbulk form, you must loop over a sequence of FieldValue objects and then access the data for each location separately. Traversing an array can prove to be significantly faster than traversing a sequence of objects and extracting data stored within the objects. As a result, accessing the data in an output database using the bulk data interface can be significantly faster than the nonbulk form.</p>
 <p>If you do not need to access large amounts of data, you may get better performance with the nonbulk access method. This is especially true if the number of output locations you are accessing is smaller than the number of elements in a class. Similarly, the nonbulk access method may be faster if the number of nodes you are accessing is smaller than the number of nodes in an instance. The nonbulk access method is also better suited for random access to an output database, where successive output locations to be accessed may lie in completely different blocks.</p>
-<h2 id="using-regions-to-read-a-subset-of-field-output-data">Using regions to read a subset of field output data<a class="headerlink" href="#using-regions-to-read-a-subset-of-field-output-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="using-regions-to-read-a-subset-of-field-output-data">Using regions to read a subset of field output data<a class="headerlink" href="#using-regions-to-read-a-subset-of-field-output-data" title="Link to this heading">¶</a></h2>
 <p>After you have created an OdbSet object using model data, you can use the getSubset method to read only the data corresponding to that region. Typically, you will be reading data from a region that refers to a node set or an element set. For example, the following statements create a variable called center that refers to the node set PUNCH at the center of the hemispherical punch. In a previous section you created the displacement variable that refers to the displacement of the entire model in the final frame of the first step. Now you use the getSubset command to get the displacement for only the center region.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="n">odb_Set</span><span class="o">&amp;</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">instance</span><span class="p">.</span><span class="n">nodeSets</span><span class="p">()[</span><span class="s">&quot;PUNCH&quot;</span><span class="p">];</span>
 <span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lastFrame</span><span class="p">.</span><span class="n">fieldOutputs</span><span class="p">()[</span><span class="s">&quot;U&quot;</span><span class="p">];</span>
@@ -1748,7 +1748,7 @@ You can use the following to view all the available field data in a frame:</p>
 <li><p>CENTROID</p></li>
 </ul>
 <p>If the requested field values are not found in the output database at the specified <code class="docutils literal notranslate"><span class="pre">odb_Enum::ELEMENT_NODAL</span></code> or <code class="docutils literal notranslate"><span class="pre">odb_Enum::CENTROID</span></code> positions, they are extrapolated from the field data at the <code class="docutils literal notranslate"><span class="pre">odb_Enum::INTEGRATION_POINT</span></code> position.</p>
-<h2 id="reading-history-output-data">Reading history output data<a class="headerlink" href="#reading-history-output-data" title="Permalink to this heading">¶</a></h2>
+<h2 id="reading-history-output-data">Reading history output data<a class="headerlink" href="#reading-history-output-data" title="Link to this heading">¶</a></h2>
 <p>History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. Depending on the type of output expected, the historyRegions repository contains data from one of the following:</p>
 <ul class="simple">
 <li><p>a node</p></li>
@@ -1817,7 +1817,7 @@ The history data object model.</span><a class="headerlink" href="#id1" title="Pe
 </code></pre></div>
 </div>
 <p>The output in this example is a sequence of tuples containing the frame time and the displacement value. The example uses nodal history data output. If the analysis requested history output from an element, the output database would contain one HistoryRegion object and one HistoryPoint object for each integration point.</p>
-<h2 id="an-example-of-reading-field-data-from-an-output-database">An example of reading field data from an output database<a class="headerlink" href="#an-example-of-reading-field-data-from-an-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="an-example-of-reading-field-data-from-an-output-database">An example of reading field data from an output database<a class="headerlink" href="#an-example-of-reading-field-data-from-an-output-database" title="Link to this heading">¶</a></h2>
 <p>The following program illustrates how you read model data and field output data from the output database used by the Abaqus/CAE Visualization module tutorial output database.</p>
 <p>Import the required modules:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream.h&gt;</span>
@@ -1936,7 +1936,7 @@ The history data object model.</span><a class="headerlink" href="#id1" title="Pe
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1971,20 +1971,22 @@ The history data object model.</span><a class="headerlink" href="#id1" title="Pe
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
     
       
-        <script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-        <script src="../../../_static/clipboard.min.js"></script>
-        <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/tabs.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script src="../../../_static/tabs.js?v=3ee01567"></script>
         <script src="../../../_static/js/hoverxref.js"></script>
         <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
         <script src="../../../_static/js/micromodal.min.js"></script>
         <script>let toggleHintShow = 'Click to show';</script>
         <script>let toggleHintHide = 'Click to hide';</script>
         <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../../_static/togglebutton.js"></script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
         <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -2020,8 +2022,9 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../../_static/design-tabs.js"></script>
-        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+        <script src="../../../_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
   </body>
 </html>
