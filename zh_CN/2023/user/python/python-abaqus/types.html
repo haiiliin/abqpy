@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Abaqus Scripting Interface data types - abqpy 2023 文档</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -482,9 +482,9 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy-locale/edit/main/2023/zh_CN/LC_MESSAGES/user/python/python-abaqus/types.po" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="abaqus-scripting-interface-data-types">Abaqus Scripting Interface data types<a class="headerlink" href="#abaqus-scripting-interface-data-types" title="此标题的永久链接">¶</a></h1>
+<h1 id="abaqus-scripting-interface-data-types">Abaqus Scripting Interface data types<a class="headerlink" href="#abaqus-scripting-interface-data-types" title="Link to this heading">¶</a></h1>
 <p>This section describe the most common Abaqus Scripting Interface data type The standard <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/python-basics.html#python-data-types"><span class="std std-ref">Python data types</span></a> described in Python data types include integers, floats, strings, and sequences. The Abaqus Scripting Interface adds over 500 additional data types.</p>
-<h2 id="symbolicconstants">SymbolicConstants<a class="headerlink" href="#symbolicconstants" title="此标题的永久链接">¶</a></h2>
+<h2 id="symbolicconstants">SymbolicConstants<a class="headerlink" href="#symbolicconstants" title="Link to this heading">¶</a></h2>
 <p>Some arguments require that you provide a SymbolicConstant. SymbolicConstants are defined by the Abaqus Scripting Interface and are written in all capital letters. If your script uses a SymbolicConstant defined by the Abaqus Scripting Interface, you must import the SymbolicConstant with the following statement before you refer to it:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 </code></pre></div>
@@ -492,7 +492,7 @@
 <p>When an argument to a command is a SymbolicConstant, the description in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a> lists all its possible values. For example, when you are printing an image, the image can be rendered in one of the following formats: BLACK_AND_WHITE, GREYSCALE, or COLOR.</p>
 <p>Similarly, a data member can be a SymbolicConstant. For example, the type member of the Elastic object can be one of the following SymbolicConstants: ISOTROPIC, ORTHOTROPIC, ANISOTROPIC, ENGINEERING_CONSTANTS, LAMINA, TRACTION, or COUPLED_TRACTION.</p>
 <p>If the SymbolicConstants provided by the Abaqus Scripting Interface do not meet your needs, you can create your own SymbolicConstants using the SymbolicConstant constructor. For more information, see SymbolicConstant object.</p>
-<h2 id="booleans">Booleans<a class="headerlink" href="#booleans" title="此标题的永久链接">¶</a></h2>
+<h2 id="booleans">Booleans<a class="headerlink" href="#booleans" title="Link to this heading">¶</a></h2>
 <p>Python defines two Boolean values, True and False. The type of a Python Boolean is &lt;type ‘bool’&gt;.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPythonBoolean</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#type" title="type"><span class="nb">type</span></a><span class="p">(</span><span class="n">myPythonBoolean</span><span class="p">)</span>
@@ -515,7 +515,7 @@
 <span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Input file will be written with parts and assemblies.'</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="repositories"><span id="id1"></span>Repositories<a class="headerlink" href="#repositories" title="此标题的永久链接">¶</a></h2>
+<h2 id="repositories"><span id="id1"></span>Repositories<a class="headerlink" href="#repositories" title="Link to this heading">¶</a></h2>
 <p>Repositories are containers that store a particular type of object; for example, the steps repository contains all the steps defined in the model. A repository maps to a set of information and is similar to a Python dictionary; for more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#using-dictionaries"><span class="std std-ref">Using dictionaries</span></a>. However, only a constructor can add an object to a repository. In addition, all the objects in a repository are of the same type. For example, the following repository contains all the models in the model database:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">mdb</span><span class="o">.</span><span class="n">models</span>
 </code></pre></div>
@@ -607,7 +607,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -626,18 +626,20 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
-<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="../../../_static/clipboard.min.js"></script>
-<script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/zh_CN/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/zh_CN/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/zh_CN/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/zh_CN/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/zh_CN/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/zh_CN/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/zh_CN/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/zh_CN/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/zh_CN/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/zh_CN/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/jquery.js?v=5d32c60e"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../../_static/copybutton.js?v=f281be69"></script>
+<script src="../../../_static/tabs.js?v=3ee01567"></script>
 <script src="../../../_static/js/hoverxref.js"></script>
 <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
 <script src="../../../_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="../../../_static/togglebutton.js"></script>
+<script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -672,9 +674,10 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-<script src="../../../_static/translations.js"></script>
+<script src="../../../_static/translations.js?v=beaddf03"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js"></script>
-<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>
