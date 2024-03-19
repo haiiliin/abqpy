@@ -8,11 +8,11 @@
 <link href="" rel="icon"/>
 <title>Example scripts that access data from an output database - abqpy 2022 documentation</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="../../../_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster.bundle.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-shadow.min.css" rel="stylesheet" type="text/css"/>
@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-binder.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-dataframe.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/sg_gallery-rendered-html.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/autoclasstoc.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -587,10 +587,10 @@
 <a class="md-content__button md-icon" href="https://github.com/haiiliin/abqpy/edit/2022/docs/source/user/output/python/examples.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<h1 id="example-scripts-that-access-data-from-an-output-database">Example scripts that access data from an output database<a class="headerlink" href="#example-scripts-that-access-data-from-an-output-database" title="Permalink to this heading">¶</a></h1>
+<h1 id="example-scripts-that-access-data-from-an-output-database">Example scripts that access data from an output database<a class="headerlink" href="#example-scripts-that-access-data-from-an-output-database" title="Link to this heading">¶</a></h1>
 <p>The following examples illustrate how you use the output database commands to access data from an output database.</p>
 <p>In addition, the Abaqus Scripting Interface examples, <a class="reference internal" href="../../about/examples/read-output.html"><span class="doc">Reading from an output database</span></a> and <a class="reference internal" href="../../examples/index.html"><span class="doc">Putting it all Together: Abaqus Scripting Interface Examples</span></a> illustrate how to read data from an output database.</p>
-<h2 id="finding-the-maximum-value-of-von-mises-stress">Finding the maximum value of von Mises stress<a class="headerlink" href="#finding-the-maximum-value-of-von-mises-stress" title="Permalink to this heading">¶</a></h2>
+<h2 id="finding-the-maximum-value-of-von-mises-stress">Finding the maximum value of von Mises stress<a class="headerlink" href="#finding-the-maximum-value-of-von-mises-stress" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can iterate through an output database and search for the maximum value of von Mises stress. The script opens the output database specified by the first argument on the command line and iterates through the following:</p>
 <ul class="simple">
 <li><p>Each step.</p></li>
@@ -733,7 +733,7 @@
     <span class="n">getMaxMises</span><span class="p">(</span><span class="n">odbName</span><span class="p">,</span> <span class="n">elsetName</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<h2 id="creating-an-output-database"><span id="id1"></span>Creating an output database<a class="headerlink" href="#creating-an-output-database" title="Permalink to this heading">¶</a></h2>
+<h2 id="creating-an-output-database"><span id="id1"></span>Creating an output database<a class="headerlink" href="#creating-an-output-database" title="Link to this heading">¶</a></h2>
 <p>The following example illustrates how you can use the Abaqus Scripting Interface commands to do the following:</p>
 <ol class="arabic simple">
 <li><p>Create a new output database.</p></li>
@@ -1005,7 +1005,7 @@
     <span class="n">createODB</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="an-abaqus-scripting-interface-version-of-fpert">An Abaqus Scripting Interface version of FPERT<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-fpert" title="Permalink to this heading">¶</a></h2>
+<h2 id="an-abaqus-scripting-interface-version-of-fpert">An Abaqus Scripting Interface version of FPERT<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-fpert" title="Link to this heading">¶</a></h2>
 <p>A Fortran program that reads the Abaqus results file and creates a deformed mesh from the original coordinate data and eigenvectors is described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-fpert.htm?contextscope=all">Creation of a perturbed mesh from original coordinate data and eigenvectors: FPERT</a>. This example illustrates an Abaqus Scripting Interface script that reads an output database and performs similar calculations.</p>
 <p>The command line arguments provide the following:</p>
 <ul class="simple">
@@ -1079,7 +1079,7 @@
 <span class="n">outFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="computations-with-fieldoutput-objects"><span id="id2"></span>Computations with FieldOutput objects<a class="headerlink" href="#computations-with-fieldoutput-objects" title="Permalink to this heading">¶</a></h2>
+<h2 id="computations-with-fieldoutput-objects"><span id="id2"></span>Computations with FieldOutput objects<a class="headerlink" href="#computations-with-fieldoutput-objects" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can operate on FieldOutput objects and save the computed field to the output database. The example script does the following:</p>
 <p>Retrieves two specified fields from the output database.</p>
 <ul class="simple">
@@ -1127,7 +1127,7 @@
 <a class="sphinx-codeautolink-a" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><span class="n">odb</span><span class="o">.</span><span class="n">save</span></a><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="computations-with-fieldvalue-objects">Computations with FieldValue objects<a class="headerlink" href="#computations-with-fieldvalue-objects" title="Permalink to this heading">¶</a></h2>
+<h2 id="computations-with-fieldvalue-objects">Computations with FieldValue objects<a class="headerlink" href="#computations-with-fieldvalue-objects" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can use the fieldValue operators to sum and average fieldValues in a region. The example script does the following:</p>
 <ul class="simple">
 <li><p>Retrieves the stress field for a specified region during the last step and frame of the output database.</p></li>
@@ -1175,7 +1175,7 @@
     <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"</span><span class="si">%s</span><span class="s2">          </span><span class="si">%5.3e</span><span class="s2">      </span><span class="si">%5.3e</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">sum</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ave</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 </code></pre></div>
 </div>
-<h2 id="computations-with-historyoutput-objects">Computations with HistoryOutput objects<a class="headerlink" href="#computations-with-historyoutput-objects" title="Permalink to this heading">¶</a></h2>
+<h2 id="computations-with-historyoutput-objects">Computations with HistoryOutput objects<a class="headerlink" href="#computations-with-historyoutput-objects" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can use the historyOutput operators to compute the displacement magnitude from the components. The example script does the following:</p>
 <ul class="simple">
 <li><p>Retrieves the node of interest using a nodeSet.</p></li>
@@ -1229,7 +1229,7 @@
     <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"</span><span class="si">%5.4f</span><span class="s2">  </span><span class="si">%5.2f</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">dataPair</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataPair</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 </code></pre></div>
 </div>
-<h2 id="creating-a-new-load-combination-from-different-load-cases">Creating a new load combination from different load cases<a class="headerlink" href="#creating-a-new-load-combination-from-different-load-cases" title="Permalink to this heading">¶</a></h2>
+<h2 id="creating-a-new-load-combination-from-different-load-cases">Creating a new load combination from different load cases<a class="headerlink" href="#creating-a-new-load-combination-from-different-load-cases" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can use the frame operators to create a new load combination from existing load cases. The example script does the following:</p>
 <ul class="simple">
 <li><p>Retrieves the information describing the new load combination from the command line.</p></li>
@@ -1287,7 +1287,7 @@
 <a class="sphinx-codeautolink-a" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.close" title="abaqus.Odb.OdbBase.OdbBase.close"><span class="n">odb</span><span class="o">.</span><span class="n">close</span></a><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="stress-range-for-multiple-load-cases">Stress range for multiple load cases<a class="headerlink" href="#stress-range-for-multiple-load-cases" title="Permalink to this heading">¶</a></h2>
+<h2 id="stress-range-for-multiple-load-cases">Stress range for multiple load cases<a class="headerlink" href="#stress-range-for-multiple-load-cases" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can use the envelope operations to compute the stress range over a number of load cases. The example script does the following:</p>
 <ul class="simple">
 <li><p>For each load case during a specified step, the script collects the S11 components of the stress tensor fields into a list of scalar fields.</p></li>
@@ -1330,7 +1330,7 @@
 <a class="sphinx-codeautolink-a" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.close" title="abaqus.Odb.OdbBase.OdbBase.close"><span class="n">odb</span><span class="o">.</span><span class="n">close</span></a><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="transformation-of-field-results"><span id="id3"></span>Transformation of field results<a class="headerlink" href="#transformation-of-field-results" title="Permalink to this heading">¶</a></h2>
+<h2 id="transformation-of-field-results"><span id="id3"></span>Transformation of field results<a class="headerlink" href="#transformation-of-field-results" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how field results can be transformed to a different coordinate system. The example computes deviation of the nodal displacements with respect to a perfectly cylindrical displacement (cylinder bore distortion). The example does the following:</p>
 <ul class="simple">
 <li><p>Creates a cylindrical coordinate system.</p></li>
@@ -1399,7 +1399,7 @@
 <a class="sphinx-codeautolink-a" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.close" title="abaqus.Odb.OdbBase.OdbBase.close"><span class="n">odb</span><span class="o">.</span><span class="n">close</span></a><span class="p">()</span>
 </code></pre></div>
 </div>
-<h2 id="viewing-the-analysis-of-a-meshed-beam-cross-section">Viewing the analysis of a meshed beam cross-section<a class="headerlink" href="#viewing-the-analysis-of-a-meshed-beam-cross-section" title="Permalink to this heading">¶</a></h2>
+<h2 id="viewing-the-analysis-of-a-meshed-beam-cross-section">Viewing the analysis of a meshed beam cross-section<a class="headerlink" href="#viewing-the-analysis-of-a-meshed-beam-cross-section" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can view the results of a meshed beam cross-section analysis that was generated using Timoshenko beams, as described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEANLRefMap/simaanl-c-meshedsection.htm?contextscope=all">Meshed beam cross-sections</a>. Before you execute the example script, you must run two analyses that create the following output database files:</p>
 <ul class="simple">
 <li><p>An output database generated by the two-dimensional cross-section analysis. The script reads cross-section data, including the out-of-plane warping function, from this output database.</p></li>
@@ -1427,7 +1427,7 @@
 </ul>
 <p>You can run the script many times; for example, to create contour data for a particular step, increment, and integration point along each element of the beam. In this case you would also use <strong>Result -&gt; Field Output</strong> to select which element to display.</p>
 <p>The contour data generated by the example script are written back to the output database that was originally created by the two-dimensional, cross-section analysis. If you want to preserve this database in its original form, you must save a copy before you run the example script.</p>
-<h2 id="using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis">Using infinite elements to compute and view the results of an acoustic far-field analysis<a class="headerlink" href="#using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis" title="Permalink to this heading">¶</a></h2>
+<h2 id="using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis">Using infinite elements to compute and view the results of an acoustic far-field analysis<a class="headerlink" href="#using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis" title="Link to this heading">¶</a></h2>
 <p>This example illustrates how you can use the Abaqus Scripting Interface to compute acoustic far-field pressure values from infinite element sets and project the results onto a spherical surface for visualization purposes. This script is designed primarily to compute the acoustic far-field pressure using a layer of infinite acoustic elements that forms a full or partial spherical surface. The script extends the acoustic analysis functionality within Abaqus/Standard, as described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEANLRefMap/simaanl-c-acoustic.htm?contextscope=all">Acoustic, shock, and coupled acoustic-structural analysis</a> and <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-infinite.htm?contextscope=all">Infinite elements</a>. The script writes the acoustic far-field pressure values to an output database, and you can use Abaqus/CAE to view the far-field results.</p>
 <p>The far-field pressure is defined as</p>
 <p>$$
@@ -1523,7 +1523,7 @@ $$</p>
 <p>$$
 p_{F A R}(r)=0.001 k e^{i k}.
 $$</p>
-<h2 id="an-abaqus-scripting-interface-version-of-felbow">An Abaqus Scripting Interface version of FELBOW<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-felbow" title="Permalink to this heading">¶</a></h2>
+<h2 id="an-abaqus-scripting-interface-version-of-felbow">An Abaqus Scripting Interface version of FELBOW<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-felbow" title="Link to this heading">¶</a></h2>
 <p>This example illustrates the use of an Abaqus Scripting Interface script to read selected element integration point records from an output database and to postprocess the elbow element results. The script creates X–Y data that can be plotted with the X–Y plotting capability in Abaqus/CAE. The script performs the same function as the Fortran program described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all">Creation of a data file to facilitate the postprocessing of elbow element results: FELBOW</a>.</p>
 <p>The script reads integration point data for elbow elements from an output database to visualize one of the following:</p>
 <ol class="arabic simple">
@@ -1599,7 +1599,7 @@ $$</p>
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -1618,18 +1618,20 @@ $$</p>
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
-<script src="../../../_static/sphinx_immaterial_theme.1b5b7a2d5891aec19.min.js"></script>
-<script src="../../../_static/clipboard.min.js"></script>
-<script src="../../../_static/copybutton.js"></script>
-<script src="../../../_static/tabs.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": [], "title": "latest", "version": "/abqpy/en/latest"}, {"aliases": [], "title": "2024", "version": "/abqpy/en/2024"}, {"aliases": [], "title": "2023", "version": "/abqpy/en/2023"}, {"aliases": [], "title": "2022", "version": "/abqpy/en/2022"}, {"aliases": [], "title": "2021", "version": "/abqpy/en/2021"}, {"aliases": [], "title": "2020", "version": "/abqpy/en/2020"}, {"aliases": [], "title": "2019", "version": "/abqpy/en/2019"}, {"aliases": [], "title": "2018", "version": "/abqpy/en/2018"}, {"aliases": [], "title": "2017", "version": "/abqpy/en/2017"}, {"aliases": [], "title": "2016", "version": "/abqpy/en/2016"}], "versionPath": null}}</script>
+<script src="../../../_static/jquery.js?v=5d32c60e"></script>
+<script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+<script src="../../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+<script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+<script src="../../../_static/copybutton.js?v=f281be69"></script>
+<script src="../../../_static/tabs.js?v=3ee01567"></script>
 <script src="../../../_static/js/hoverxref.js"></script>
 <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
 <script src="../../../_static/js/micromodal.min.js"></script>
 <script>let toggleHintShow = 'Click to show';</script>
 <script>let toggleHintHide = 'Click to hide';</script>
 <script>let toggleOpenOnPrint = 'true';</script>
-<script src="../../../_static/togglebutton.js"></script>
+<script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
 <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -1665,7 +1667,8 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js"></script>
-<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js"></script>
+<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
 </html>
