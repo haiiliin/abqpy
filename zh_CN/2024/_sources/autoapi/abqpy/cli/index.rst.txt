@@ -75,7 +75,7 @@ Attributes
 
       
 
-   .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, gui: bool = False, envstartup: bool = True, savedOptions: bool = True, savedGuiPrefs: bool = True, startupDialog: bool = True, custom: str | None = None, guiTester: str | None = None, guiRecord: bool | None = None)
+   .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, startup: str | None = None, gui: bool = False, envstartup: bool = True, savedOptions: bool = True, savedGuiPrefs: bool = True, startupDialog: bool = True, custom: str | None = None, guiTester: str | None = None, guiRecord: bool | None = None)
 
       Run Abaqus/CAE command.
 
@@ -89,6 +89,8 @@ Attributes
       :type replay: :class:`str`, *optional*
       :param recover: The name of the journal file to open, by default None
       :type recover: :class:`str`, *optional*
+      :param startup: The name of the startup file to open, by default None
+      :type startup: :class:`str`, *optional*
       :param gui: Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
       :type gui: :class:`bool`, *optional*
       :param envstartup: Execute the Abaqus/CAE startup file, by default True
