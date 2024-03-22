@@ -57,6 +57,7 @@ class AbqpyCLI(AbqpyCLIBase):
         database: str | None = None,
         replay: str | None = None,
         recover: str | None = None,
+        startup: str | None = None,
         gui: bool = False,
         envstartup: bool = True,
         savedOptions: bool = True,
@@ -80,6 +81,8 @@ class AbqpyCLI(AbqpyCLIBase):
             The name of the replay file to open, by default None
         recover : str, optional
             The name of the journal file to open, by default None
+        startup : str, optional
+            The name of the startup file to open, by default None
         gui : bool, optional
             Run Abaqus/CAE command with the graphical user interface (GUI mode), by default False.
         envstartup : bool, optional
@@ -100,9 +103,10 @@ class AbqpyCLI(AbqpyCLIBase):
         """
         # Parse options
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
-                                      database=database, replay=replay, recover=recover, noenvstartup=not envstartup,
-                                      noSavedOptions=not savedOptions, noSavedGuiPrefs=not savedGuiPrefs,
-                                      noStartupDialog=not startupDialog, custom=custom, guiTester=guiTester,
+                                      database=database, replay=replay, recover=recover, startup=startup,
+                                      noenvstartup=not envstartup, noSavedOptions=not savedOptions,
+                                      noSavedGuiPrefs=not savedGuiPrefs, noStartupDialog=not startupDialog,
+                                      custom=custom, guiTester=guiTester,
                                       guiRecord=True if guiRecord is True else None,
                                       guiNoRecord=True if guiRecord is False else None)  # fmt: skip
         args = ("--", *args) if args else ()
