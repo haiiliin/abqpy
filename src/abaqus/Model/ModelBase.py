@@ -137,7 +137,7 @@ class ModelBase:
     keywordBlock: KeywordBlock = KeywordBlock()
 
     #: An Assembly object.
-    rootAssembly: "Assembly"
+    rootAssembly: Assembly
 
     #: A repository of Amplitude objects.
     amplitudes: dict[str, Amplitude] = {}

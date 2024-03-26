@@ -44,7 +44,7 @@ class ConnectorBehaviorOption:
     connectorPotentials: ConnectorPotentialArray = []
 
     #: A DerivedComponent object.
-    derivedComponent: "DerivedComponent"
+    derivedComponent: DerivedComponent
 
     #: A ConnectorPotentialArray object.
     evolutionPotentials: ConnectorPotentialArray = []
@@ -147,7 +147,7 @@ class ConnectorBehaviorOption:
         return tangentialBehavior
 
     @abaqus_method_doc
-    def DerivedComponent(self) -> "DerivedComponent":
+    def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 
         .. note::

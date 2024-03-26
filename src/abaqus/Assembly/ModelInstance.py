@@ -58,7 +58,7 @@ class ModelInstance:
     referencePoints: dict[str, ReferencePoint] = {}
 
     @abaqus_method_doc
-    def __init__(self, name: str, model: "Model", autoOffset: Boolean = OFF):
+    def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):
         """This method creates a ModelInstance object and puts it into the instances repository.
 
         .. note::
@@ -98,7 +98,7 @@ class ModelInstance:
         ...
 
     @abaqus_method_doc
-    def replace(self, instanceOf: "Model", applyConstraints: Boolean = True):
+    def replace(self, instanceOf: Model, applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another model.
 
         .. versionadded:: 2019

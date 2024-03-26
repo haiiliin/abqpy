@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 if TYPE_CHECKING:
-    pass
+    from .ErrorIndicatorResult import ErrorIndicatorResult
 
 
 @abaqus_class_doc
@@ -25,7 +25,7 @@ class RuleResult:
 
     #: A repository of ErrorIndicatorResult objects specifying the calculated results from the
     #: sizing function corresponding to the error indicator variables for the Remeshing Rule.
-    indicatorResults: dict[str, "ErrorIndicatorResult"]
+    indicatorResults: dict[str, ErrorIndicatorResult]
 
     #: An Int specifying the number of elements before remeshing in the region of the Remeshing
     #: Rule.
@@ -43,7 +43,7 @@ class RuleResult:
     def __init__(
         self,
         name: str,
-        indicatorResults: dict[str, "ErrorIndicatorResult"],
+        indicatorResults: dict[str, ErrorIndicatorResult],
         numElems: int,
         minSizeElemCount: int,
         satisfiedVars: tuple = (),
