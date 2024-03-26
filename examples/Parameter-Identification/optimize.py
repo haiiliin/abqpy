@@ -35,6 +35,7 @@ The output of this script is:
 
 The model script of this example can be found :doc:`here <compression>`.
 """
+
 import os
 
 import numpy as np
