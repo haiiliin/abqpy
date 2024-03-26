@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -19,9 +21,8 @@ from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
 
-
-# Prevent circular import
-class DerivedComponent: ...
+if TYPE_CHECKING:
+    from .DerivedComponent import DerivedComponent
 
 
 @abaqus_class_doc
@@ -43,7 +44,7 @@ class ConnectorBehaviorOption:
     connectorPotentials: ConnectorPotentialArray = []
 
     #: A DerivedComponent object.
-    derivedComponent: DerivedComponent = DerivedComponent()
+    derivedComponent: "DerivedComponent"
 
     #: A ConnectorPotentialArray object.
     evolutionPotentials: ConnectorPotentialArray = []
@@ -146,7 +147,7 @@ class ConnectorBehaviorOption:
         return tangentialBehavior
 
     @abaqus_method_doc
-    def DerivedComponent(self) -> DerivedComponent:
+    def DerivedComponent(self) -> "DerivedComponent":
         """This method creates a DerivedComponent object.
 
         .. note::
@@ -164,6 +165,8 @@ class ConnectorBehaviorOption:
         ------
         ValueError and TextError
         """
+        from .DerivedComponent import DerivedComponent
+
         self.derivedComponent = derivedComponent = DerivedComponent()
         return derivedComponent
 

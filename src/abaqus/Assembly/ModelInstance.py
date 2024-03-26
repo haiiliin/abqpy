@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -12,9 +14,8 @@ from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
-
-# prevent circular imports
-class Model: ...
+if TYPE_CHECKING:
+    from ..Model.Model import Model
 
 
 @abaqus_class_doc
@@ -57,7 +58,7 @@ class ModelInstance:
     referencePoints: dict[str, ReferencePoint] = {}
 
     @abaqus_method_doc
-    def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):
+    def __init__(self, name: str, model: "Model", autoOffset: Boolean = OFF):
         """This method creates a ModelInstance object and puts it into the instances repository.
 
         .. note::
@@ -97,7 +98,7 @@ class ModelInstance:
         ...
 
     @abaqus_method_doc
-    def replace(self, instanceOf: Model, applyConstraints: Boolean = True):
+    def replace(self, instanceOf: "Model", applyConstraints: Boolean = True):
         """This method replaces one instance with an instance of another model.
 
         .. versionadded:: 2019

@@ -1,11 +1,10 @@
 from __future__ import annotations
 
-from typing import Sequence, overload
+from typing import TYPE_CHECKING, Sequence, overload
 
 from typing_extensions import Literal
 
-# prevent circular imports
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
@@ -54,9 +53,8 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .AcisFile import AcisFile
 from .PartFeature import PartFeature
 
-
-@abaqus_class_doc
-class PartInstance: ...
+if TYPE_CHECKING:
+    from ..Assembly.PartInstance import PartInstance
 
 
 class PartBase(PartFeature):
@@ -272,7 +270,7 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def __init__(self, *args, **kwargs): ...
 
-    def PartFromBooleanCut(self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]):
+    def PartFromBooleanCut(self, name: str, instanceToBeCut: str, cuttingInstances: Sequence["PartInstance"]):
         """This method creates a Part in the parts repository after subtracting or cutting the geometries of a
         group of part instances from that of a base part instance.
 
@@ -302,7 +300,7 @@ class PartBase(PartFeature):
     def PartFromBooleanMerge(
         self,
         name: str,
-        instances: Sequence[PartInstance],
+        instances: Sequence["PartInstance"],
         keepIntersections: Boolean = False,
         mergeNodes: Literal[C.ALL, C.BOUNDARY_ONLY, C.NONE] = BOUNDARY_ONLY,
         nodeMergingTolerance: float | None = None,
@@ -484,7 +482,7 @@ class PartBase(PartFeature):
     def PartFromInstanceMesh(
         self,
         name: str,
-        partInstances: Sequence[PartInstance] = (),
+        partInstances: Sequence["PartInstance"] = (),
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
