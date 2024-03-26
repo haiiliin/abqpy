@@ -108,19 +108,21 @@ class AnalyticalField(Field):
         sectionPoint: str = "",
         refinementType: Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT] | None = None,
         refinementLabel: str = "",
-        displayOutputPosition: Literal[
-            C.ELEMENT_NODAL,
-            C.ELEMENT_FACE,
-            C.WHOLE_ELEMENT,
-            C.NODAL,
-            C.INTEGRATION_POINT,
-            C.ELEMENT_CENTROID,
-            C.WHOLE_MODEL,
-            C.GENERAL_PARTICLE,
-            C.WHOLE_PART_INSTANCE,
-            C.WHOLE_REGION,
-        ]
-        | None = None,
+        displayOutputPosition: (
+            Literal[
+                C.ELEMENT_NODAL,
+                C.ELEMENT_FACE,
+                C.WHOLE_ELEMENT,
+                C.NODAL,
+                C.INTEGRATION_POINT,
+                C.ELEMENT_CENTROID,
+                C.WHOLE_MODEL,
+                C.GENERAL_PARTICLE,
+                C.WHOLE_PART_INSTANCE,
+                C.WHOLE_REGION,
+            ]
+            | None
+        ) = None,
     ) -> OdbMeshRegionData:
         """This method creates an OdbMeshRegionData object.
 

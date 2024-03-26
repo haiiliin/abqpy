@@ -156,8 +156,7 @@ class OdbPartBase:
         ...
 
     @abaqus_method_doc
-    def addElements(self, *args, **kwargs):
-        ...
+    def addElements(self, *args, **kwargs): ...
 
     @overload
     def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str | None = None):
@@ -193,8 +192,7 @@ class OdbPartBase:
         ...
 
     @abaqus_method_doc
-    def addNodes(self, *args, **kwargs):
-        ...
+    def addNodes(self, *args, **kwargs): ...
 
     def assignBeamOrientation(self, region: str, method: Literal[C.N1_COSINES], vector: tuple):
         """This method assigns a beam section orientation to a region of a part instance.
