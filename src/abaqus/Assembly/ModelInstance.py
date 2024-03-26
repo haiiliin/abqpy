@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -12,9 +14,8 @@ from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
 
-
-# prevent circular imports
-class Model: ...
+if TYPE_CHECKING:
+    from ..Model.Model import Model
 
 
 @abaqus_class_doc

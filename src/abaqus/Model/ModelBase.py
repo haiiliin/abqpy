@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -8,7 +10,6 @@ from ..Adaptivity.AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Adaptivity.AdaptiveMeshControl import AdaptiveMeshControl
 from ..Adaptivity.RemeshingRule import RemeshingRule
 from ..Amplitude.Amplitude import Amplitude
-from ..Assembly.Assembly import Assembly
 from ..BeamSectionProfile.Profile import Profile
 from ..BoundaryCondition.BoundaryCondition import BoundaryCondition
 from ..Calibration.Calibration import Calibration
@@ -53,6 +54,9 @@ from ..UtilityAndView.abaqusConstants import (
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .KeywordBlock import KeywordBlock
+
+if TYPE_CHECKING:
+    from ..Assembly.Assembly import Assembly
 
 
 @abaqus_class_doc
@@ -133,7 +137,7 @@ class ModelBase:
     keywordBlock: KeywordBlock = KeywordBlock()
 
     #: An Assembly object.
-    rootAssembly: Assembly = Assembly()
+    rootAssembly: Assembly
 
     #: A repository of Amplitude objects.
     amplitudes: dict[str, Amplitude] = {}
@@ -304,7 +308,10 @@ class ModelBase:
         Model
             A Model object.
         """
+        from ..Assembly.Assembly import Assembly
+
         self.steps["Initial"] = InitialStep()
+        self.rootAssembly = Assembly()
 
     @abaqus_method_doc
     def ModelFromInputFile(self, name: str, inputFileName: str):
