@@ -182,8 +182,7 @@ class XYData(tuple):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs):
-        ...
+    def __init__(self, *args, **kwargs): ...
 
     def XYDataFromFile(
         self,
@@ -662,23 +661,25 @@ class XYData(tuple):
         includeAllElements: Boolean = False,
         step: int | None = None,
         frame: int | None = None,
-        variable: Literal[
-            C.ELEMENT_FACE,
-            C.ELEMENT_NODAL,
-            C.S22,
-            C.WHOLE_ELEMENT,
-            C.NODAL,
-            C.INTEGRATION_POINT,
-            C.ELEMENT_CENTROID,
-            C.INVARIANT,
-            C.S11,
-            C.WHOLE_MODEL,
-            C.GENERAL_PARTICLE,
-            C.STEEL,
-            C.SNEG,
-            C.WHOLE_PART_INSTANCE,
-        ]
-        | None = None,
+        variable: (
+            Literal[
+                C.ELEMENT_FACE,
+                C.ELEMENT_NODAL,
+                C.S22,
+                C.WHOLE_ELEMENT,
+                C.NODAL,
+                C.INTEGRATION_POINT,
+                C.ELEMENT_CENTROID,
+                C.INVARIANT,
+                C.S11,
+                C.WHOLE_MODEL,
+                C.GENERAL_PARTICLE,
+                C.STEEL,
+                C.SNEG,
+                C.WHOLE_PART_INSTANCE,
+            ]
+            | None
+        ) = None,
         deformedMag: float | None = None,
         numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
