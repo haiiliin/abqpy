@@ -4592,20 +4592,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#abaqus.Assembly.AssemblyModel.ModelBase" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.Assembly.AssemblyModel.ModelBase (Python class) — Bases: object" class="md-ellipsis">Model<wbr>Base</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abaqus.Assembly.ModelInstance.Model" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.Assembly.ModelInstance.Model (Python class) — Bases: object" class="md-ellipsis">Model</span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -8741,20 +8727,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#abaqus.Assembly.AssemblyModel.ModelBase" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.Assembly.AssemblyModel.ModelBase (Python class) — Bases: object" class="md-ellipsis">Model<wbr>Base</span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abaqus.Assembly.ModelInstance.Model" class="md-nav__link">
-    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="abaqus.Assembly.ModelInstance.Model (Python class) — Bases: object" class="md-ellipsis">Model</span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -8783,9 +8755,24 @@
 <p>Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Assembly commands create Feature objects on only the rootAssembly object. The commands that create Feature objects on only the Part object are described in Part commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands.</p>
 <h2 id="create-instances">Create instances<a class="headerlink" href="#create-instances" title="Link to this heading">¶</a></h2>
 <dl class="py class objdesc">
-<dt class="sig sig-object highlight py" id="abaqus.Assembly.AssemblyModel.AssemblyModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AssemblyModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L11-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Assembly.AssemblyModel.ModelBase" title="abaqus.Assembly.AssemblyModel.ModelBase (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
+<dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.AssemblyModel.AssemblyModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AssemblyModel</span></span><span class="sig-paren">(</span>
+
+<dl>
+<span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="s1">&#39;&#39;</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">NOT_SET</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="n">abaqusConstants</span><span class="o">.</span><span class="n">STANDARD_EXPLICIT</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">None</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>,</dd>
+</span><span class="sig-param-decl"><dd><em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">1</span></code></em>,</dd>
+</span></dl>
+
+<span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L8-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
 <p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
@@ -8798,6 +8785,172 @@
 <p class="admonition-title">Note</p>
 <p>Check <a class="reference external" href="https://help.3ds.com/2024/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all">AssemblyModel on help.3ds.com/2024</a>.</p>
 </div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.name" title="abaqus.Model.ModelBase.ModelBase.name (Python attribute) — A String specifying the repository key."><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.stefanBoltzmann" title="abaqus.Model.ModelBase.ModelBase.stefanBoltzmann (Python attribute) — None or a Float specifying the Stefan-Boltzmann constant. The default value is None."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></a></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.absoluteZero" title="abaqus.Model.ModelBase.ModelBase.absoluteZero (Python attribute) — None or a Float specifying the absolute zero constant. The default value is None."><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></a></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.waveFormulation" title="abaqus.Model.ModelBase.ModelBase.waveFormulation (Python attribute) — A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value is NOT_SET."><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.universalGas" title="abaqus.Model.ModelBase.ModelBase.universalGas (Python attribute) — None or a Float specifying the universal gas constant. The default value is None."><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></a></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.noPartsInputFile" title="abaqus.Model.ModelBase.ModelBase.noPartsInputFile (Python attribute) — A Boolean specifying whether an input file should be written without parts and assemblies. The default value is OFF."><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></a></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.endRestartStep" title="abaqus.Model.ModelBase.ModelBase.endRestartStep (Python attribute) — A Boolean specifying that the step specified by restartStep should be terminated at the increment specified by restartIncrement."><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></a></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.shellToSolid" title="abaqus.Model.ModelBase.ModelBase.shellToSolid (Python attribute) — A Boolean specifying that a shell global model drives a solid submodel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></a></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.lastChangedCount" title="abaqus.Model.ModelBase.ModelBase.lastChangedCount (Python attribute) — A Float specifying the time stamp that indicates when the model was last changed."><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></a></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.description" title="abaqus.Model.ModelBase.ModelBase.description (Python attribute) — A String specifying the purpose and contents of the Model object. The default value is an empty string."><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.restartJob" title="abaqus.Model.ModelBase.ModelBase.restartJob (Python attribute) — A String specifying the name of the job that generated the restart data."><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></a></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.restartStep" title="abaqus.Model.ModelBase.ModelBase.restartStep (Python attribute) — A String specifying the name of the step where the restart analysis will start."><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></a></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.globalJob" title="abaqus.Model.ModelBase.ModelBase.globalJob (Python attribute) — A String specifying the name of the job that generated the results for the global model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></a></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.copyConstraints" title="abaqus.Model.ModelBase.ModelBase.copyConstraints (Python attribute) — A boolean specifying the status of constraints created in a model, in the model which instances this model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></a></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.copyConnectors" title="abaqus.Model.ModelBase.ModelBase.copyConnectors (Python attribute) — A boolean specifying the status of connectors created in a model, in the model which instances this model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></a></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.copyInteractions" title="abaqus.Model.ModelBase.ModelBase.copyInteractions (Python attribute) — A boolean specifying the status of interactions created in a model, in the model which instances this model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></a></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.keywordBlock" title="abaqus.Model.ModelBase.ModelBase.keywordBlock (Python attribute) — A KeywordBlock object."><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></a></p></td>
+<td><p>A KeywordBlock object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.amplitudes" title="abaqus.Model.ModelBase.ModelBase.amplitudes (Python attribute) — A repository of Amplitude objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></a></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.profiles" title="abaqus.Model.ModelBase.ModelBase.profiles (Python attribute) — A repository of Profile objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></a></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.boundaryConditions" title="abaqus.Model.ModelBase.ModelBase.boundaryConditions (Python attribute) — A repository of BoundaryCondition objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></a></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.constraints" title="abaqus.Model.ModelBase.ModelBase.constraints (Python attribute) — A repository of ConstrainedSketchConstraint objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></a></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.analyticalFields" title="abaqus.Model.ModelBase.ModelBase.analyticalFields (Python attribute) — A repository of AnalyticalField objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></a></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.discreteFields" title="abaqus.Model.ModelBase.ModelBase.discreteFields (Python attribute) — A repository of DiscreteField objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></a></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.predefinedFields" title="abaqus.Model.ModelBase.ModelBase.predefinedFields (Python attribute) — A repository of PredefinedField objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></a></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.interactions" title="abaqus.Model.ModelBase.ModelBase.interactions (Python attribute) — A repository of Interaction objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></a></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.interactionProperties" title="abaqus.Model.ModelBase.ModelBase.interactionProperties (Python attribute) — A repository of InteractionProperty objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></a></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.contactControls" title="abaqus.Model.ModelBase.ModelBase.contactControls (Python attribute) — A repository of ContactControl objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></a></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.contactInitializations" title="abaqus.Model.ModelBase.ModelBase.contactInitializations (Python attribute) — A repository of ContactInitialization objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></a></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.contactStabilizations" title="abaqus.Model.ModelBase.ModelBase.contactStabilizations (Python attribute) — A repository of ContactStabilization objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></a></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.linkedInstances" title="abaqus.Model.ModelBase.ModelBase.linkedInstances (Python attribute) — A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></a></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.linkedParts" title="abaqus.Model.ModelBase.ModelBase.linkedParts (Python attribute) — A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></a></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.loads" title="abaqus.Model.ModelBase.ModelBase.loads (Python attribute) — A repository of Load objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></a></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.materials" title="abaqus.Model.ModelBase.ModelBase.materials (Python attribute) — A repository of Material objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></a></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.calibrations" title="abaqus.Model.ModelBase.ModelBase.calibrations (Python attribute) — A repository of Calibration objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></a></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.sections" title="abaqus.Model.ModelBase.ModelBase.sections (Python attribute) — A repository of Section objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></a></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.remeshingRules" title="abaqus.Model.ModelBase.ModelBase.remeshingRules (Python attribute) — A repository of RemeshingRule objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></a></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.sketches" title="abaqus.Model.ModelBase.ModelBase.sketches (Python attribute) — A repository of ConstrainedSketch objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></a></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.parts" title="abaqus.Model.ModelBase.ModelBase.parts (Python attribute) — A repository of Part objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></a></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.steps" title="abaqus.Model.ModelBase.ModelBase.steps (Python attribute) — A repository of Step objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></a></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.featureOptions" title="abaqus.Model.ModelBase.ModelBase.featureOptions (Python attribute) — A FeatureOptions object."><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></a></p></td>
+<td><p>A FeatureOptions object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints (Python attribute) — A repository of AdaptiveMeshConstraint objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></a></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls (Python attribute) — A repository of AdaptiveMeshControl objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></a></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.timePoints" title="abaqus.Model.ModelBase.ModelBase.timePoints (Python attribute) — A repository of TimePoint objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></a></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.filters" title="abaqus.Model.ModelBase.ModelBase.filters (Python attribute) — A repository of Filter objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.integratedOutputSections" title="abaqus.Model.ModelBase.ModelBase.integratedOutputSections (Python attribute) — A repository of IntegratedOutputSection objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></a></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.fieldOutputRequests" title="abaqus.Model.ModelBase.ModelBase.fieldOutputRequests (Python attribute) — A repository of FieldOutputRequest objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></a></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.historyOutputRequests" title="abaqus.Model.ModelBase.ModelBase.historyOutputRequests (Python attribute) — A repository of HistoryOutputRequest objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></a></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.optimizationTasks" title="abaqus.Model.ModelBase.ModelBase.optimizationTasks (Python attribute) — A repository of OptimizationTask objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></a></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.tableCollections" title="abaqus.Model.ModelBase.ModelBase.tableCollections (Python attribute) — A repository of TableCollection objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">tableCollections</span></code></a></p></td>
+<td><p>A repository of TableCollection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.eventSeriesTypes" title="abaqus.Model.ModelBase.ModelBase.eventSeriesTypes (Python attribute) — A repository of EventSeriesType objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesTypes</span></code></a></p></td>
+<td><p>A repository of EventSeriesType objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.eventSeriesDatas" title="abaqus.Model.ModelBase.ModelBase.eventSeriesDatas (Python attribute) — A repository of EventSeriesData objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesDatas</span></code></a></p></td>
+<td><p>A repository of EventSeriesData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.restartIncrement" title="abaqus.Model.ModelBase.ModelBase.restartIncrement (Python attribute) — An Int specifying the increment, interval, iteration or cycle where the restart analysis will start. To select the end of the step use the SymbolicConstant STEP_END."><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></a></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly (Python attribute) — An Assembly object."><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></a></p></td>
+<td><p>An Assembly object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable docutils data align-default">
@@ -8813,13 +8966,32 @@
 </tr>
 </tbody>
 </table>
-</div>
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase (Python class) — Bases: object"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.ModelFromInputFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromInputFile (Python method) — This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code></a>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile (Python method) — This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code></a>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile (Python method) — This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects. The default values is discussed in following and can be defined alternatively in the Abaqus environment file as the one used for the translator from Nastran to Abaqus. For more information, see Translating Nastran data to Abaqus files."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code></a>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../index.html#abaqus.Model.ModelBase.ModelBase.setValues" title="abaqus.Model.ModelBase.ModelBase.setValues (Python method) — This method modifies the Model object."><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
 <hr class="docutils" />
 <p class="rubric">Member Details:</p>
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance">
-<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.name" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.name (Python parameter) — A String specifying the repository key."><span class="n"><span class="pre">name</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.objectToCopy" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.objectToCopy (Python parameter) — A PartInstance object to be copied."><span class="n"><span class="pre">objectToCopy</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L21-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">Instance</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.name" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.name (Python parameter) — A String specifying the repository key."><span class="n"><span class="pre">name</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.objectToCopy" title="abaqus.Assembly.AssemblyModel.AssemblyModel.Instance.objectToCopy (Python parameter) — A PartInstance object to be copied."><span class="n"><span class="pre">objectToCopy</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L18-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.Instance" title="Link to this definition">¶</a></dt>
 <dd><p>This method copies a PartInstance object from the specified model and creates a new PartInstance
 object.</p>
 <div class="note admonition">
@@ -8853,7 +9025,7 @@ object.</p>
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches">
-<span class="sig-name descname"><span class="pre">convertAllSketches</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.regenerate" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.regenerate (Python parameter) — A Boolean specifying if all the features in assembly as well as in all the parts in the model should be regenerated after the conversion. The default value is True."><span class="n"><span class="pre">regenerate</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.convertReversedSketches" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.convertReversedSketches (Python parameter) — A Boolean specifying whether sketches in analytic rigid parts should be converted even if they cause the orientation of surfaces defined on them to be flipped. The default value is True."><span class="n"><span class="pre">convertReversedSketches</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L45-L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">convertAllSketches</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.regenerate" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.regenerate (Python parameter) — A Boolean specifying if all the features in assembly as well as in all the parts in the model should be regenerated after the conversion. The default value is True."><span class="n"><span class="pre">regenerate</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.convertReversedSketches" title="abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches.convertReversedSketches (Python parameter) — A Boolean specifying whether sketches in analytic rigid parts should be converted even if they cause the orientation of surfaces defined on them to be flipped. The default value is True."><span class="n"><span class="pre">convertReversedSketches</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L42-L63"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches" title="Link to this definition">¶</a></dt>
 <dd><p>This method converts all sketches from Abaqus 6.5 or earlier to the equivalent ConstrainedSketch
 objects.</p>
 <div class="note admonition">
@@ -8884,7 +9056,7 @@ process.</p>
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances">
-<span class="sig-name descname"><span class="pre">linkInstances</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances.instancesMap" title="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances.instancesMap (Python parameter) — A tuple of tuples containing the instance name to be linked and the corresponding PartInstance object to which it will be linked."><span class="n"><span class="pre">instancesMap</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L68-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">linkInstances</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances.instancesMap" title="abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances.instancesMap (Python parameter) — A tuple of tuples containing the instance name to be linked and the corresponding PartInstance object to which it will be linked."><span class="n"><span class="pre">instancesMap</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L65-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances" title="Link to this definition">¶</a></dt>
 <dd><p>This method links the selected PartInstance objects to the corresponding PartInstance objects from
 the specified models. If all instances of a Part are selected for linking, the Part will be linked as
 well. If not, a new linked child Part object will be created and added to the repository.</p>
@@ -9657,7 +9829,7 @@ an argument, Abaqus/CAE computes the angle using the normal to the plane.</p>
 <dd class="field-odd"><dl class="simple api-field highlight">
 <dt id="abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates.entity"><span class="n sig-name">entity</span><a class="headerlink" href="#abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates.entity" title="Permalink to this definition">¶</a></dt><dd><p>A ConstrainedSketchVertex, Datum point, MeshNode, or ReferencePoint specifying the entity to query.</p>
 </dd>
-<dt><span class="sig-name descname">csys</span><span class="p"> : </span><span class="desctype"><span class="sphinx_autodoc_typehints-type"><a class="hxr-hoverxref hxr-tooltip reference internal" href="datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys (Python class) — Bases: Datum"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumCsys</span></code></a></span>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Datum.DatumCsys.DatumCsys</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2a1374fb10&gt;</span></code></span></dt><dd><p><p>A DatumCsys object specifying the desired coordinate system of the returned coordinates. By default,
+<dt><span class="sig-name descname">csys</span><span class="p"> : </span><span class="desctype"><span class="sphinx_autodoc_typehints-type"><a class="hxr-hoverxref hxr-tooltip reference internal" href="datum.html#abaqus.Datum.DatumCsys.DatumCsys" title="abaqus.Datum.DatumCsys.DatumCsys (Python class) — Bases: Datum"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatumCsys</span></code></a></span>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Datum.DatumCsys.DatumCsys</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f7c4a09f050&gt;</span></code></span></dt><dd><p><p>A DatumCsys object specifying the desired coordinate system of the returned coordinates. By default,
 coordinates are given in the global coordinate system.</p>
 <div class="admonition versionadded">
 <p class="admonition-title"><span class="versionmodified added">New in version 2023: </span>The <code class="docutils literal notranslate"><span class="pre">csys</span></code> argument was added.</p>
@@ -10939,7 +11111,7 @@ reverse aligned (ON).</p>
 
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.ModelInstance">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelInstance</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">0</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L20-L128"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelInstance</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">autoOffset</span></span><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="mi">0</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L21-L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A ModelInstance object is an instance of a Model.</p>
 <div class="note admonition">
@@ -10958,50 +11130,50 @@ reverse aligned (ON).</p>
 <div class="toggle docutils container">
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints">
-<span class="sig-name descname"><span class="pre">ConvertConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L86-L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ConvertConstraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L87-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.ConvertConstraints" title="Link to this definition">¶</a></dt>
 <dd><p>This method converts the position constraints of an instance to absolute positions.</p>
 <p>The method deletes the constraint features on the instance but preserves the position in space.</p>
 </dd></dl>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.datums">
-<span class="sig-name descname"><span class="pre">datums</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Datum.Datum.Datum`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L53-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.datums" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">datums</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Datum.Datum.Datum`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L54-L55"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.datums" title="Link to this definition">¶</a></dt>
 <dd><p>A repository of Datum objects.</p>
 </dd></dl>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.edges">
-<span class="sig-name descname"><span class="pre">edges</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L44-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.edges" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">edges</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L45-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.edges" title="Link to this definition">¶</a></dt>
 <dd><p>An EdgeArray object.</p>
 </dd></dl>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.elements">
-<span class="sig-name descname"><span class="pre">elements</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L47-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.elements" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">elements</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L48-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.elements" title="Link to this definition">¶</a></dt>
 <dd><p>A MeshElementArray object.</p>
 </dd></dl>
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.ModelInstance.getPosition">
-<span class="sig-name descname"><span class="pre">getPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L94-L97"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.getPosition" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">getPosition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L95-L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.getPosition" title="Link to this definition">¶</a></dt>
 <dd><p>This method prints the sum of the translations and rotations applied to the ModelInstance object.</p>
 </dd></dl>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.nodes">
-<span class="sig-name descname"><span class="pre">nodes</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L50-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.nodes" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">nodes</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L51-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.nodes" title="Link to this definition">¶</a></dt>
 <dd><p>A MeshNodeArray object.</p>
 </dd></dl>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.referencePoints">
-<span class="sig-name descname"><span class="pre">referencePoints</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.ReferencePoint.ReferencePoint`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L56-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.referencePoints" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">referencePoints</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.ReferencePoint.ReferencePoint`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L57-L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.referencePoints" title="Link to this definition">¶</a></dt>
 <dd><p>A repository of ReferencePoint objects.</p>
 </dd></dl>
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.ModelInstance.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace.instanceOf" title="abaqus.Assembly.ModelInstance.ModelInstance.replace.instanceOf (Python parameter) — A Model object to be instanced. If the model does not exist, no ModelInstance object is created."><span class="n"><span class="pre">instanceOf</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace.applyConstraints" title="abaqus.Assembly.ModelInstance.ModelInstance.replace.applyConstraints (Python parameter) — A Boolean specifying whether to apply existing constraints on the new instance or to position the new instance in the same place as the original instance. The default value is True. A value of False indicates that constraints applies to the instance are deleted will be deleted from the feature list."><span class="n"><span class="pre">applyConstraints</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L99-L117"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace.instanceOf" title="abaqus.Assembly.ModelInstance.ModelInstance.replace.instanceOf (Python parameter) — A Model object to be instanced. If the model does not exist, no ModelInstance object is created."><span class="n"><span class="pre">instanceOf</span></span></a></em>, </span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace.applyConstraints" title="abaqus.Assembly.ModelInstance.ModelInstance.replace.applyConstraints (Python parameter) — A Boolean specifying whether to apply existing constraints on the new instance or to position the new instance in the same place as the original instance. The default value is True. A value of False indicates that constraints applies to the instance are deleted will be deleted from the feature list."><span class="n"><span class="pre">applyConstraints</span></span></a><span class="o"><span class="pre">=</span></span><code class="code python default_value docutils literal highlight highlight-python"><span class="kc">True</span></code></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L100-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.replace" title="Link to this definition">¶</a></dt>
 <dd><p>This method replaces one instance with an instance of another model.</p>
 <div class="admonition versionadded">
 <p class="admonition-title"><span class="versionmodified added">New in version 2019: </span>The <code class="docutils literal notranslate"><span class="pre">replace</span></code> method was added.</p>
@@ -11028,7 +11200,7 @@ will be deleted from the feature list.</p>
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.sets">
-<span class="sig-name descname"><span class="pre">sets</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Region.Set.Set`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L31-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.sets" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">sets</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Region.Set.Set`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L32-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.sets" title="Link to this definition">¶</a></dt>
 <dd><p>A repository of Set objects specifying the sets created on the assembly. For more
 information, see [Region
 commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
@@ -11036,7 +11208,7 @@ commands](<a class="reference external" href="https://help.3ds.com/2022/english/
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.surfaces">
-<span class="sig-name descname"><span class="pre">surfaces</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Region.Surface.Surface`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L36-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.surfaces" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">surfaces</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`dict`\</span> <span class="pre">\[:py:class:`str`,</span> <span class="pre">:py:class:`~abaqus.Region.Surface.Surface`]</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L37-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.surfaces" title="Link to this definition">¶</a></dt>
 <dd><p>A repository of Surface objects specifying the surfaces created on the assembly. For
 more information, see [Region
 commands](<a class="reference external" href="https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all">https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all</a>).</p>
@@ -11044,7 +11216,7 @@ commands](<a class="reference external" href="https://help.3ds.com/2022/english/
 
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.ModelInstance.translate">
-<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.translate.vector" title="abaqus.Assembly.ModelInstance.ModelInstance.translate.vector (Python parameter) — A sequence of three Floats specifying a translation vector."><span class="n"><span class="pre">vector</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L119-L128"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.translate" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><a class="hxr-hoverxref hxr-tooltip n reference internal" href="#abaqus.Assembly.ModelInstance.ModelInstance.translate.vector" title="abaqus.Assembly.ModelInstance.ModelInstance.translate.vector (Python parameter) — A sequence of three Floats specifying a translation vector."><span class="n"><span class="pre">vector</span></span></a></em></span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L120-L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.translate" title="Link to this definition">¶</a></dt>
 <dd><p>This method translates an instance by the specified amount.</p>
 <div class="note admonition">
 <p class="admonition-title">Note</p>
@@ -11062,7 +11234,7 @@ commands](<a class="reference external" href="https://help.3ds.com/2022/english/
 
 <dl class="py attribute objdesc">
 <dt class="sig sig-object highlight sig-wrap py" id="abaqus.Assembly.ModelInstance.ModelInstance.vertices">
-<span class="sig-name descname"><span class="pre">vertices</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L41-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.vertices" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">vertices</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">--is-rst--:py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray`</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">[]</span></code><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L42-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.ModelInstance.vertices" title="Link to this definition">¶</a></dt>
 <dd><p>A VertexArray object.</p>
 </dd></dl>
 
@@ -11471,24 +11643,6 @@ solving for the actual contact.</p>
 <dd><p>A VertexArray object.</p>
 </dd></dl>
 
-</div>
-</dd></dl>
-
-<dl class="py class objdesc">
-<dt class="sig sig-object highlight py" id="abaqus.Assembly.AssemblyModel.ModelBase">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelBase</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/AssemblyModel.py#L8-L8"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.AssemblyModel.ModelBase" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p class="rubric">Member Details:</p>
-<div class="toggle docutils container">
-</div>
-</dd></dl>
-
-<dl class="py class objdesc">
-<dt class="sig sig-object highlight py" id="abaqus.Assembly.ModelInstance.Model">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Model</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2024/src/abaqus/Assembly/ModelInstance.py#L17-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Assembly.ModelInstance.Model" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p class="rubric">Member Details:</p>
-<div class="toggle docutils container">
 </div>
 </dd></dl>
 
