@@ -117,7 +117,7 @@ jobs:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
       - name: Upload the documentation
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
