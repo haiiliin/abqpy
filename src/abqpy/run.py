@@ -34,7 +34,11 @@ def run(cae: bool = True) -> None:
         main = sys.modules["__main__"]
         if not hasattr(main, "__file__") or main.__file__ is None:
             raise RuntimeError("Cannot find the main script file, please run the script in a file.")
-        filePath = os.path.relpath(main.__file__)
+
+        try:
+            filePath = os.path.relpath(main.__file__)
+        except ValueError:
+            filePath = main.__file__
 
     # Alternative to use abaqus command line options at run time
     print("The script will be submitted to Abaqus next and the current Python session will be closed.")
