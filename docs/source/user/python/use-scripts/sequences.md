@@ -67,16 +67,16 @@ Lists, tuples, strings, and arrays are described in Sequences. In addition, the 
   The following statements display some information about the edges sequence:
 
   ```pycon
-  >>> print ('Single edge type = ', type(switch.edges[0]))
+  >>> print("Single edge type = ", type(switch.edges[0]))
   Single edge type = <type 'Edge'>
 
-  >>> print ('Edge sequence type = ', type(switch.edges))
+  >>> print("Edge sequence type = ", type(switch.edges))
   Edge sequence type = <type 'EdgeArray'>
 
-  >>> print ('Members of edge sequence = ', switch.edges.__members__)
+  >>> print("Members of edge sequence = ", switch.edges.__members__)
   Members of edge sequence =  ['pointsOn']
 
-  >>> print ('Number of edges in sequence = ', len(switch.edges))
+  >>> print("Number of edges in sequence = ", len(switch.edges))
   Number of edges in sequence =  12
   ```
 
