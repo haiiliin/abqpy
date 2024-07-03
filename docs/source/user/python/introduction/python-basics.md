@@ -15,7 +15,7 @@ creates a variable called `myName` that refers to a String object.
 To see the value of a variable or expression, simply type the variable name or the expression at the Python prompt, and press **Enter**. For example,
 
 ```pycon
->>> myName = 'Einstein'
+>>> myName = "Einstein"
 >>> myName
 'Einstein'
 >>> 3.0 / 4.0
@@ -28,9 +28,9 @@ To see the value of a variable or expression, simply type the variable name or t
 Python creates a variable when you assign a value to it. Python provides several forms of the assignment statement; for example,
 
 ```pycon
->>> myName = 'Einstein'
->>> myName, yourName = 'Einstein', 'Newton'
->>> myName = yourName = 'Einstein'
+>>> myName = "Einstein"
+>>> myName, yourName = "Einstein", "Newton"
+>>> myName = yourName = "Einstein"
 ```
 
 The second line assigns the string 'Einstein' to the variable myName and assigns the string 'Newton' to the variable yourName. The third line assigns the string 'Einstein' to both myName and yourName.
@@ -78,14 +78,14 @@ An integer is based on a C long and can be compared to a Fortran integer\*4 or \
 Use int(_n_) to convert a variable to an integer; use long(_n_) to convert a variable to a long integer.
 
 ```pycon
->>> load  = 279.86
+>>> load = 279.86
 >>> iLoad = int(load)
 >>> iLoad
 279
 >>> a = 2
 >>> b = 64
->>> bigNumber = long(a)**b
->>> print ('bigNumber = ', bigNumber)
+>>> bigNumber = long(a) ** b
+>>> print("bigNumber = ", bigNumber)
 bigNumber = 18446744073709551616
 ```
 
@@ -98,10 +98,10 @@ All Abaqus Scripting Interface object types begin with an uppercase character; f
 Floats represent floating-point numbers or real numbers. You can use exponential notation for floats.
 
 ```pycon
->>> pi   = 22.0/7.0
->>> r    = 2.345e-6
+>>> pi = 22.0 / 7.0
+>>> r = 2.345e-6
 >>> area = pi * r * r
->>> print ('Area = ', area)
+>>> print("Area = ", area)
 Area =  1.728265e-11
 ```
 
@@ -132,7 +132,7 @@ Python provides complex math functions to operate on complex variables. You need
 ```pycon
 >>> import cmath
 >>> y = 3 + 4j
->>> print (cmath.sqrt(y))
+>>> print(cmath.sqrt(y))
 (2+1j)
 ```
 
@@ -153,7 +153,7 @@ You use the `type()` function to return the type of the object to which a variab
 >>> a = 1
 >>> type(a)
 <type 'int'>
->>> a = 'chamfer'
+>>> a = "chamfer"
 >>> type(a)
 <type 'string'>
 ```
@@ -174,20 +174,20 @@ Sequences are important and powerful data types in Python. A sequence is an obje
 Lists are mutable heterogeneous sequences (anything that can be modified is called mutable). A list can be a sequence of strings, integers, floats, or any combination of these. In fact, a list can contain any type of object; for example,
 
 ```pycon
->>> myIntegerList = [7,6,5,4]
->>> myFloatList  = [7.1,6.5,5.3,4.8]
+>>> myIntegerList = [7, 6, 5, 4]
+>>> myFloatList = [7.1, 6.5, 5.3, 4.8]
 ```
 
 You can refer to individual items from a sequence using the index of the item. Indices start at zero. Negative indices count backward from the end of a sequence.
 
 ```pycon
->>> myList = [1,2,3]
+>>> myList = [1, 2, 3]
 >>> myList[0]
 1
 >>> myList[1] = 9
 >>> myList
 [1, 9, 3]
->>> myNewList = [1.0,2.0,myList]
+>>> myNewList = [1.0, 2.0, myList]
 >>> myNewList
 [1.0, 2.0, [1, 9, 3]]
 >>> myNewList[-1]
@@ -197,13 +197,13 @@ You can refer to individual items from a sequence using the index of the item. I
 Lists are heterogeneous, which means they can contain objects of different type.
 
 ```pycon
->>> myList=[1,2.5,'steel']
+>>> myList = [1, 2.5, "steel"]
 ```
 
 A list can contain other lists.
 
 ```pycon
->>> myList=[[0,1,2],[3,4,5],[6,7,8]]
+>>> myList = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
 >>> myList[0]
 [0, 1, 2]
 >>> myList[2]
@@ -237,7 +237,7 @@ The following are some additional built-in methods that operate on lists:
   Return the number of times a value appears in the list.
 
   ```pycon
-  >>> myList = [0,1,2,1,2,3,2,3,4,3,4,5]
+  >>> myList = [0, 1, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5]
   >>> myList.count(2)
   3
   ```
@@ -258,7 +258,7 @@ The following are some additional built-in methods that operate on lists:
   Insert a new element into a list at a specified location.
 
   ```pycon
-  >>> myList.insert(2,22)
+  >>> myList.insert(2, 22)
   >>> myList
   [0, 1, 22, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5]
   ```
@@ -302,11 +302,11 @@ You can use the `tuple()` function to convert a list or a string to a tuple.
 ```pycon
 >>> myList = [1, 2, "stress", 4.67]
 >>> myTuple = tuple(myList)
->>> print (myTuple)
+>>> print(myTuple)
 (1, 2, 'stress', 4.67)
->>> myString = 'Failure mode'
+>>> myString = "Failure mode"
 >>> myTuple = tuple(myString)
->>> print (myTuple)
+>>> print(myTuple)
 ('F', 'a', 'i', 'l', 'u', 'r', 'e', ' ', 'm', 'o', 'd', 'e')
 ```
 
@@ -328,9 +328,9 @@ Strings are immutable sequences of characters. Strings are defined by single or 
 
 ```pycon
 >>> odbString = "Symbol plot from "
->>> odb = 'load1.odb'
+>>> odb = "load1.odb"
 >>> annotationString = odbString + odb
->>> print (annotationString)
+>>> print(annotationString)
 Symbol plot from load1.odb
 ```
 
@@ -352,7 +352,7 @@ Python provides a set of functions that operate on strings.
 As with all sequences, you use negative indices to index backward from the end of a string.
 
 ```pycon
->>> axis_label = 'maxstrain'
+>>> axis_label = "maxstrain"
 >>> axis_label[-1]
 'n'
 ```
@@ -373,12 +373,12 @@ Arrays are mutable homogeneous sequences. The numpy module allows you to create 
 
 ```pycon
 >>> from numpy import array
->>> myIntegerArray = array([[1,2],[2,3],[3,4]])
+>>> myIntegerArray = array([[1, 2], [2, 3], [3, 4]])
 >>> myIntegerArray
 array([[1, 2],
        [2, 3],
        [3, 4]])
->>> myRealArray =array([[1.0,2],[2,3],[3,4]])
+>>> myRealArray = array([[1.0, 2], [2, 3], [3, 4]])
 >>> myRealArray
 array([[1., 2.],
        [2., 3.],
@@ -400,10 +400,10 @@ Python provides a set of tools that allow you to operate on a sequence.
 Sequences can be divided into smaller sequences. This operation is called slicing. The expression sequence\[m:n\] returns a copy of sequence from m to n−1. The default value for m is zero; the default value for n is the length of the sequence.
 
 ```pycon
->>> myList = [0,1,2,3,4]
+>>> myList = [0, 1, 2, 3, 4]
 >>> myList[1:4]
 [1, 2, 3]
->>> myString ='linear load'
+>>> myString = "linear load"
 >>> myString[7:]
 'load'
 >>> myString[:6]
@@ -413,21 +413,21 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 ### Repeat a sequence
 
 ```pycon
->>> x=(1,2)
->>> x*2
+>>> x = (1, 2)
+>>> x * 2
 (1, 2, 1, 2)
->>> s = 'Hoop Stress'
->>> s*2
->>> 'Hoop StressHoop Stress'
+>>> s = "Hoop Stress"
+>>> s * 2
+>>> "Hoop StressHoop Stress"
 ```
 
 ### Determine the length of a sequence
 
 ```pycon
->>> myString ='linear load'
+>>> myString = "linear load"
 >>> len(myString)
 11
->>> myList = [0,1,2,3,4]
+>>> myList = [0, 1, 2, 3, 4]
 >>> len(myList)
 5
 ```
@@ -435,13 +435,13 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 ### Concatenate sequences
 
 ```pycon
->>> a = [0,1]
->>> b = [9,8]
+>>> a = [0, 1]
+>>> b = [9, 8]
 >>> a + b
 [0, 1, 9, 8]
->>> test = 'wing34'
->>> fileExtension = '.odb'
->>> test+fileExtension
+>>> test = "wing34"
+>>> fileExtension = ".odb"
+>>> test + fileExtension
 'wing34.odb'
 ```
 
@@ -450,11 +450,11 @@ Sequences can be divided into smaller sequences. This operation is called slicin
 The `range()` function generates a list containing a sequence of integers. You can use the `range()` function to control iterative loops. The arguments to range are start (the starting value), end (the ending value plus one), and step (the step between each value). The start and step arguments are optional; the default start argument is 0, and the default step argument is 1. The arguments must be integers.
 
 ```pycon
->>> range(2,8)
+>>> range(2, 8)
 [2, 3, 4, 5, 6, 7]
 >>> range(4)
 [0, 1, 2, 3]
->>> range(1,8,2)
+>>> range(1, 8, 2)
 [1, 3, 5, 7]
 ```
 
@@ -463,13 +463,13 @@ The `range()` function generates a list containing a sequence of integers. You c
 Convert a sequence to a list or a tuple.
 
 ```pycon
->>> myString='noise'
->>> myList = list(myString) #Convert a string to a list.
->>> myList[0] = 'p'
+>>> myString = "noise"
+>>> myList = list(myString)  # Convert a string to a list.
+>>> myList[0] = "p"
 >>> myList
 ['p', 'o', 'i', 's', 'e']
->>> myTuple = tuple(myString) #Convert a string to a tuple.
->>> print (myTuple)
+>>> myTuple = tuple(myString)  # Convert a string to a tuple.
+>>> print(myTuple)
 ('n', 'o', 'i', 's', 'e')
 ```
 
@@ -481,11 +481,11 @@ Python defines a special object called the None object or Python None that repre
 
 ```pycon
 >>> a = [1, 3, 7, 5]
->>> print (a.sort())
+>>> print(a.sort())
 None
 >>> import sys
->>> x = sys.path.append('.')
->>> print (x)
+>>> x = sys.path.append(".")
+>>> print(x)
 None
 ```
 
@@ -518,7 +518,7 @@ Comments in a Python script begin with the # character and continue to the end o
 
 ```pycon
 >>> # Define material constants
->>> modulus = 1e6 # Define Young's modulus
+>>> modulus = 1e6  # Define Young's modulus
 ```
 
 ## Printing variables using formatted output
@@ -526,32 +526,32 @@ Comments in a Python script begin with the # character and continue to the end o
 Python provides a print function that displays the value of a variable. For example,
 
 ```pycon
->>> freq = 22.0/7.0
+>>> freq = 22.0 / 7.0
 >>> x = 7.234
->>> print ('Vibration frequency = ', freq)
+>>> print("Vibration frequency = ", freq)
 Vibration frequency =  3.14285714286
->>> print ('Vibration frequency = ', freq, 'Displacement = ', x)
+>>> print("Vibration frequency = ", freq, "Displacement = ", x)
 Vibration frequency =  3.14285714286 Displacement = 7.234
 ```
 
 The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.
 
 ```pycon
->>> print ('Vibration frequency = %s Displacement = %s' % (freq, x))
+>>> print("Vibration frequency = %s Displacement = %s" % (freq, x))
 Vibration frequency = 3.14285714286 Displacement = 7.234
 ```
 
 The `%f` operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.
 
 ```pycon
->>> print ('Vibration frequency = %6.2f Displacement = %6.2f' % (freq, x))
+>>> print("Vibration frequency = %6.2f Displacement = %6.2f" % (freq, x))
 Vibration frequency =   3.14 Displacement =   7.23
 ```
 
 The `%E` operator specifies scientific notation and indicates the number of decimal places.
 
 ```pycon
->>> print ('Vibration frequency = %.6E Displacement = %.2E' % (freq, x))
+>>> print("Vibration frequency = %.6E Displacement = %.2E" % (freq, x))
 Vibration frequency = 3.142857E+00 Displacement = 7.23E+00
 ```
 
@@ -565,7 +565,7 @@ The `\\t` escape sequence inserts a tab character.
 For example,
 
 ```pycon
->>> print ('Vibration frequency = %+.6E\nDisplacement = %+.2E' % (freq, x))
+>>> print("Vibration frequency = %+.6E\nDisplacement = %+.2E" % (freq, x))
 Vibration frequency = +3.142857E+00
 Displacement = +7.23E+00
 ```
@@ -592,44 +592,48 @@ When you are using the Python interpreter from the Abaqus/CAE command line inter
 ```pycon
 >>> load = 10
 >>> if load > 6.75:
-...     print ('Reached critical load')
+...     print("Reached critical load")
 ... elif load < 2.75:
-...     print ('Minimal load')
+...     print("Minimal load")
 ... else:
-...     print ('Typical load')
+...     print("Typical load")
+...
 ```
 
 ### while
 
 ```pycon
->>> load   = 10
+>>> load = 10
 >>> length = 3
->>> while load < 1E4:
+>>> while load < 1e4:
 ...     load = load * length
-...     print (load)
+...     print(load)
+...
 ```
 
 Use `break` to break out of a loop.
 
 ```pycon
 >>> while 1:
-...     x = raw_input('Enter a number or 0 to quit:')
-...     if x == '0':
+...     x = raw_input("Enter a number or 0 to quit:")
+...     if x == "0":
 ...         break
 ...     else:
-...         print (x)
+...         print(x)
+...
 ```
 
 Use `continue` to skip the rest of the loop and to go to the next iteration.
 
 ```pycon
->>> load   = 10
+>>> load = 10
 >>> length = -3
->>> while load < 1E6:  #Continue jumps up here
+>>> while load < 1e6:  # Continue jumps up here
 ...     load = load * length
 ...     if load < 0:
-...         continue   #Do not print if negative
-...     print (load)
+...         continue  # Do not print if negative
+...     print(load)
+...
 ```
 
 ### for
@@ -638,7 +642,7 @@ Use a sequence to control the start and the end of for loops. The `range()` func
 
 ```pycon
 >>> for i in range(5):
-...     print (i)
+...     print(i)
 ...
 0
 1
