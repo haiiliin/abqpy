@@ -33,9 +33,9 @@ Abaqus recommends that you use the Python Boolean in your scripts and that you c
 The value of a Boolean argument can appear to be ambiguous; for example,
 
 ```pycon
->>> newModel = mdb.ModelFromInputFile(name='beamTutorial', inputFileName='Deform')
+>>> newModel = mdb.ModelFromInputFile(name="beamTutorial", inputFileName="Deform")
 >>> newModel.setValues(noPartsInputFile=False)
->>> print (newModel.noPartsInputFile)
+>>> print(newModel.noPartsInputFile)
 OFF
 ```
 
@@ -43,9 +43,10 @@ Because of this ambiguity, you should test a Boolean for a positive or negative 
 
 ```pycon
 >>> if newModel.noPartsInputFile:
-...     print ('Input file will be written without parts and assemblies. ')
+...     print("Input file will be written without parts and assemblies. ")
 ... else:
-...     print ('Input file will be written with parts and assemblies.')
+...     print("Input file will be written with parts and assemblies.")
+...
 ```
 
 (repositories)=
@@ -90,11 +91,12 @@ In general, if the user can create the object, its repository key is a string. I
 As with dictionaries, you can use the keys() method to access the repository keys.
 
 ```pycon
->>> session.Viewport(name='Side view')
->>> session.Viewport(name='Top view')
->>> session.Viewport(name='Front view')
+>>> session.Viewport(name="Side view")
+>>> session.Viewport(name="Top view")
+>>> session.Viewport(name="Front view")
 >>> for key in session.viewports.keys():
-...     print (key)
+...     print(key)
+...
 Front view
 Top view
 Side view
