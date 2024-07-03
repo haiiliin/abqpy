@@ -25,7 +25,7 @@ You can assign the return value to a variable:
 
 ```pycon
 >>> d = distance(4.7, 9.1)
->>> print (d)
+>>> print(d)
 10.2420701033
 ```
 
@@ -33,15 +33,16 @@ One of the methods provided by Abaqus uses as many as 50 arguments. Some of the 
 
 ```pycon
 >>> from math import *
->>> def calculateCylinderVolume(radius,height):
+>>> def calculateCylinderVolume(radius, height):
 ...     volume = pi * radius**2 * height
 ...     return volume
+...
 ```
 
 You can call the function with the following line:
 
 ```pycon
->>> volume = calculateCylinderVolume(3.2,27.5)
+>>> volume = calculateCylinderVolume(3.2, 27.5)
 ```
 
 Here the arguments are called positional arguments because you are relying on their position in the function call to determine the variable to which they are assigned in the function—radius followed by height.
@@ -62,9 +63,10 @@ You can define default values for an argument in a function definition. For exam
 
 ```pycon
 >>> from math import *
->>> def calculateCylinderVolume(radius=0.5,height=1.0):
+>>> def calculateCylinderVolume(radius=0.5, height=1.0):
 ...     volume = pi * radius * radius * height
 ...     return volume
+...
 ```
 
 You can now call the function without providing all the arguments. The function assigns the default value to any missing arguments.
@@ -76,10 +78,9 @@ You can now call the function without providing all the arguments. The function 
 It is good programming practice to use a documentation string that indicates the purpose of a function and the arguments expected. A documentation string appears at the top of a function and is delimited by triple quotes """. You can use the \_\_doc\_\_ method to obtain the documentation string from a function while running the Python interpreter. For example,
 
 ```pycon
->>> def calculateCylinderVolume(radius=0.5,height=1.0):
+>>> def calculateCylinderVolume(radius=0.5, height=1.0):
 ...     """
 ...     Calculates the volume of a cylinder.
-...
 ...     Takes two optional arguments, radius (default=0.5)
 ...     and height (default=1.0).
 ...     """
@@ -87,7 +88,7 @@ It is good programming practice to use a documentation string that indicates the
 ...     volume = pi * radius**2 * height
 ...     return volume
 ...
->>> print (calculateCylinderVolume.__doc__)
+>>> print(calculateCylinderVolume.__doc__)
 
 Calculates the volume of a cylinder.
 
@@ -176,7 +177,7 @@ Distance to origin =  50.0
 Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,
 
 ```pycon
->>> myList = [6,2,9]
+>>> myList = [6, 2, 9]
 >>> myList[1]
 2
 ```
@@ -184,27 +185,27 @@ Dictionaries are a powerful tool in Python. A dictionary maps a variable to a se
 In contrast, you access an object in a dictionary through its key, which can be a string, an integer, or any type of immutable Python object. There is no implicit order to the keys in a dictionary. In most cases you will assign a string to the dictionary key. The key then becomes a more intuitive way to access the elements in a dictionary. You use square brackets and the dictionary key to access a particular object. For example,
 
 ```pycon
->>> myPart = {}  #Create an empty dictionary
->>> myPart['size'] = 3.0
->>> myPart['material'] = 'Steel'
->>> myPart['color'] = 'Red'
->>> myPart['number'] = 667
+>>> myPart = {}  # Create an empty dictionary
+>>> myPart["size"] = 3.0
+>>> myPart["material"] = "Steel"
+>>> myPart["color"] = "Red"
+>>> myPart["number"] = 667
 ```
 
 You can add dictionary keys at any time.
 
 ```pycon
->>> myPart['weight'] = 376.0
->>> myPart['cost'] = 10.34
+>>> myPart["weight"] = 376.0
+>>> myPart["cost"] = 10.34
 ```
 
 You use the key to access an item in a dictionary.
 
 ```pycon
->>> costOverWeight = myPart['cost'] / myPart['weight']
+>>> costOverWeight = myPart["cost"] / myPart["weight"]
 >>> costOverWeight
 0.0275
->>> description = myPart['color'] + myPart['material']
+>>> description = myPart["color"] + myPart["material"]
 >>> description
 'RedSteel'
 ```
@@ -242,7 +243,7 @@ The `items()` method returns a list of tuples. Each tuple contains the key and i
 You use the `has_key()` method to see if a key exists. A return value of 1 indicates the key exists in the dictionary. A return value of 0 indicates the key does not exist.
 
 ```pycon
->>> myPart.has_key('color')
+>>> myPart.has_key("color")
 1
 ```
 
@@ -255,8 +256,8 @@ Python's del statement allows you to delete a variable.
 You can also use del to delete an item from a dictionary.
 
 ```pycon
->>> del myPart['color']
->>> myPart.has_key('color')
+>>> del myPart["color"]
+>>> myPart.has_key("color")
 0
 ```
 
@@ -264,7 +265,7 @@ You can use the `keys()`, `values()`, or `items()` methods to loop through a dic
 
 ```pycon
 >>> for property, setting in myPart.items():
-...     print (property, setting)
+...     print(property, setting)
 ...
 size 3.0
 weight 376.0
@@ -278,8 +279,8 @@ cost 10.34
 Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.
 
 ```pycon
->>> myInputFile  = open('crash_test/fender.txt','r')
->>> myOutputFile = open('peak_deflection.txt','w+')
+>>> myInputFile = open("crash_test/fender.txt", "r")
+>>> myOutputFile = open("peak_deflection.txt", "w+")
 ```
 
 The first line opens an existing file in the crash_test directory called fender.txt. The file is opened in read-only mode; myInputFile is a variable that refers to a file object. The second line creates and opens a new file object in the local directory called peak_deflection.txt. This file is opened in read and write mode.
@@ -287,7 +288,7 @@ The first line opens an existing file in the crash_test directory called fender.
 Use the `__methods__` technique that we saw earlier to see the methods of a file object.
 
 ```pycon
->>> myOutputFile = open('peak_deflection.txt','w')
+>>> myOutputFile = open("peak_deflection.txt", "w")
 >>> myOutputFile.__methods__
 ['close', 'fileno', 'flush', 'isatty', 'read',
 'readinto', 'readline', 'readlines', 'seek', 'tell',
@@ -301,11 +302,11 @@ The following example reads each line of a text file and changes the line to upp
 ```pycon
 # Read-only is the default access mode
 
->>> inputFile  = open('foam.txt')
+>>> inputFile = open("foam.txt")
 
 # You must declare write access
 
->>> outputFile = open('upper.txt','w')
+>>> outputFile = open("upper.txt", "w")
 >>> lines = inputFile.readlines()
 >>> for line in lines:
 ...     newLine = line.upper()
@@ -326,13 +327,13 @@ When a script encounters unusual circumstances, Python allows you to modify the 
 Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:
 
 ```pycon
->>> outputFile = open('foam.txt')
+>>> outputFile = open("foam.txt")
 ```
 
 If the file does not exist, the statement fails, and Python displays the following error message:
 
 ```pycon
->>> outputFile = open('foam.txt')
+>>> outputFile = open("foam.txt")
 Traceback (innermost last):
 File "<stdin>", line 1, in ?
 IOError: (2, 'No such file or directory')
@@ -342,9 +343,9 @@ If you use exception handling, you can catch the error, display a helpful messag
 
 ```pycon
 >>> try:
-...     outputFile = open('foam.txt')
+...     outputFile = open("foam.txt")
 ... except IOError as error:
-...     print ('Exception trapped: ', error)
+...     print("Exception trapped: ", error)
 ...
 Exception trapped:  (2, 'No such file or directory')
 ```
@@ -374,7 +375,7 @@ Exception handling is discussed in more detail in Error handling in the {doc}`/r
 When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:
 
 ```pycon
->>> myName = 'Einstein'
+>>> myName = "Einstein"
 >>> len(myName)
 ```
 
@@ -397,7 +398,7 @@ You must first import the module to make its functions, names, and functionality
 
 ```pycon
 >>> from math import *
->>> x = pi/4.0
+>>> x = pi / 4.0
 >>> sin(x)
 0.707106781187
 ```
@@ -418,7 +419,7 @@ Python provides a second approach to importing modules. For example,
 
 ```pycon
 >>> import math
->>> x = 22.0/(7.0 * 4.0)
+>>> x = 22.0 / (7.0 * 4.0)
 >>> math.sin(x)
 0.707330278085
 ```
