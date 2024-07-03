@@ -17,6 +17,7 @@ from .Odb.Odb import Odb  # noqa
 from .Session.Session import Session  # noqa
 from .UtilityAndView import abaqusConstants  # noqa
 from .UtilityAndView.abaqusConstants import OFF, Boolean  # noqa
+from .UtilityAndView.AbaqusException import AbaqusException  # noqa
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility  # noqa
 from .UtilityAndView.SymbolicConstant import SymbolicConstant  # noqa
 from .UtilityAndView.User import *  # noqa
