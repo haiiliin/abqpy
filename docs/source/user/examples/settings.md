@@ -31,7 +31,7 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
   The following statement changes the frame rate to 50. You should confirm that the data type you specify matches the type of the existing value.
 
   ```pycon
-  >>> sessionOptions['session.animationOptions']['frameRate'] = 50
+  >>> sessionOptions["session.animationOptions"]["frameRate"] = 50
   ```
 
   You can save the options you change to the original file by issuing the following command:
@@ -64,12 +64,11 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
   >>> from caePrefsAccess import printValuesList
   >>> guiPrefsFileName = getGuiPrefsFileName()
   >>> dispNames = getDisplayNamesInGuiPreferences(guiPrefsFileName)
-  >>> print (dispNames)
+  >>> print(dispNames)
   ['preludesim']
   >>> displayName = dispNames[0]
   >>> guiPrefs = openGuiPreferences(displayName)
   >>> printValuesList(guiPrefs)
-  ...
   guiPreferences['Abaqus/CAE']['Geometry']['AFXFontSelectorDialog text']:\
       [type:str] '617,298,281,350'
   guiPreferences['Abaqus/CAE']['Geometry']['AFXMainWindow']:[type:str] \
@@ -87,7 +86,7 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
 You can change the geometry of the Abaqus/CAE main window by issuing a command like the following:
 
 ```pycon
->>> guiPrefs['Abaqus/CAE']['Geometry']['AFXMainWindow'] = '193,67,800,600'
+>>> guiPrefs["Abaqus/CAE"]["Geometry"]["AFXMainWindow"] = "193,67,800,600"
 ```
 
 You can save the GUI preferences you change to the original file by issuing the following command:
