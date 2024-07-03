@@ -55,11 +55,13 @@ Members of an Abaqus object are read-only; consequently, you cannot change their
 
 ```pycon
 >>> import section
->>> shellSection = mdb.models['Model-1'].HomogeneousShellSection(name='Steel Shell', thickness=1.0, material='Steel')
->>> print ('Original shell section thickness = ', shellSection.thickness)
+>>> shellSection = mdb.models["Model-1"].HomogeneousShellSection(
+...     name="Steel Shell", thickness=1.0, material="Steel"
+... )
+>>> print("Original shell section thickness = ", shellSection.thickness)
 Original shell section thickness =  1.0
 >>> shellSection.setValues(thickness=2.0)
->>> print ('Final shell section thickness = ', shellSection.thickness)
+>>> print("Final shell section thickness = ", shellSection.thickness)
 Final shell section thickness =  2.0
 ```
 
@@ -74,21 +76,24 @@ The following statements illustrate the use of constructors, methods, and member
 
 ```pycon
 >>> # Create a Section object
->>> mySection = mdb.models['Model-1'].HomogeneousSolidSection(name='solidSteel', material='Steel', thickness=1.0)
+>>> mySection = mdb.models["Model-1"].HomogeneousSolidSection(
+...     name="solidSteel", material="Steel", thickness=1.0
+... )
 >>> # Display the type of the object
->>> print ('Section type = ', type(mySection))
+>>> print("Section type = ", type(mySection))
 Section type = <type 'HomogeneousSolidSection'>
 >>> # List the members of the object
->>> print ('Members of the section are:' , mySection.__members__)
+>>> print("Members of the section are:", mySection.__members__)
 Members of the section are: ['category', 'dimension',
 'layout', 'material', 'name',
 'thickness']
 >>> # List the methods of the object
->>> print ('Methods of the section are: ', mySection.__methods__)
+>>> print("Methods of the section are: ", mySection.__methods__)
 Methods of the section are:  ['setValues']
 >>> # Print the value of each member in a nice format
 >>> for member in mySection.__members__:
-...     print ('mySection.%s = %s' % (member, getattr(mySection, member)))
+...     print("mySection.%s = %s" % (member, getattr(mySection, member)))
+...
 mySection.category = SOLID
 mySection.dimension = THREE_DIM
 mySection.layout = HOMOGENEOUS
