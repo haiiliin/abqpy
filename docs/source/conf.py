@@ -24,6 +24,7 @@ import re
 import sys
 import typing
 
+from packaging.version import Version
 from sphinx.builders.html import StandaloneHTMLBuilder
 
 # Environment variables
@@ -37,7 +38,7 @@ author = "WANG Hailin"
 
 release = abqpy.__version__
 major, minor, patch, *_ = release.split(".")
-release = version = major
+version = major if not Version(release).is_prerelease else "latest"
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
