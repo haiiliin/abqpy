@@ -37,8 +37,9 @@ copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
 release = abqpy.__version__
-major, minor, patch, *_ = release.split(".")
-version = major if not Version(release).is_prerelease else "latest"
+rel = Version(release)
+version, major = rel.base_version, rel.major
+branch = major if not rel.is_prerelease else "latest"
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -279,7 +280,7 @@ html_theme_options = {
     ],
     # END: version_dropdown
     "languages": [
-        {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
+        {"name": alias, "link": f"/{lang}/{branch}" if READTHEDOCS else f"/abqpy/{lang}/{branch}", "lang": lang}
         for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
     ],
     "toc_title_is_page_title": True,
