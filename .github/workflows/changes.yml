@@ -23,6 +23,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: true
       - name: Installing the library
         run: pip install .[dev,docs]
       - name: Build the documentation
