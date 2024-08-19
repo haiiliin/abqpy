@@ -125,5 +125,5 @@ class Mdb(AcisMdb, JobMdb):
         elif "objectToCopy" in kwargs and isinstance(kwargs["objectToCopy"], Model):
             self.models[name] = model = copy.deepcopy(kwargs["objectToCopy"])
         else:
-            self.models[name] = model = self.Model(name, *args, **kwargs)
+            self.models[name] = model = Model(name, *args, **kwargs)
         return model
