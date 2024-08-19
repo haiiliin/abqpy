@@ -84,11 +84,7 @@ class Mdb(AcisMdb, JobMdb):
 
     @overload
     @abaqus_method_doc
-    def Model(
-        self,
-        name: str,
-        objectToCopy: Model,
-    ) -> Model:
+    def Model(self, name: str, objectToCopy: Model) -> Model:
         """This method creates a Model object.
 
         .. note::
