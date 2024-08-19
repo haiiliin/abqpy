@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from typing_extensions import Literal
+import copy
+
+from typing_extensions import Literal, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -22,6 +24,7 @@ class Mdb(AcisMdb, JobMdb):
             mdb
     """
 
+    @overload
     @abaqus_method_doc
     def Model(
         self,
@@ -78,16 +81,45 @@ class Mdb(AcisMdb, JobMdb):
         model: Model
             A Model object
         """
-        self.models[name] = model = Model(
-            name,
-            description,
-            stefanBoltzmann,
-            absoluteZero,
-            waveFormulation,
-            modelType,
-            universalGas,
-            copyConstraints,
-            copyConnectors,
-            copyInteractions,
-        )
+
+    @overload
+    @abaqus_method_doc
+    def Model(self, name: str, objectToCopy: Model) -> Model:
+        """This method creates a Model object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.Model
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        objectToCopy
+            A Model object to copy.
+        """
+
+    @abaqus_method_doc
+    def Model(self, name: str, *args, **kwargs) -> Model:
+        """This method creates a Model object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.Model
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        args, kwargs
+            Positional and keyword arguments to be passed to the Model object.
+        """
+        if len(args) == 1 and isinstance(args[0], Model):
+            self.models[name] = model = copy.deepcopy(args[0])
+        elif "objectToCopy" in kwargs and isinstance(kwargs["objectToCopy"], Model):
+            self.models[name] = model = copy.deepcopy(kwargs["objectToCopy"])
+        else:
+            self.models[name] = model = Model(name, *args, **kwargs)
         return model
