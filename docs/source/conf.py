@@ -39,7 +39,7 @@ author = "WANG Hailin"
 release = abqpy.__version__
 rel = Version(release)
 version, major = rel.base_version, rel.major
-branch = major if not rel.is_prerelease else "latest"
+branch = major if not rel.is_prerelease else "development"
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -220,7 +220,7 @@ html_theme = "sphinx_immaterial"
 # further.  For a list of options available for each theme, see the
 # documentation.
 READTHEDOCS = "READTHEDOCS" in os.environ
-versions = ["latest"] + [str(v) for v in range(2024, 2015, -1)]
+versions = ["development"] + [str(v) for v in range(2024, 2015, -1)]
 with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
     edit_urls = json.load(f)
 html_theme_options = {
