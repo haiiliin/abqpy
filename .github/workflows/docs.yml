@@ -43,7 +43,7 @@ jobs:
             echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "push" ]; then
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
-            echo "publish=latest" >> $GITHUB_OUTPUT
+            echo "publish=development" >> $GITHUB_OUTPUT
           else
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=${{ github.ref_name }}" >> $GITHUB_OUTPUT
