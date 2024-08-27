@@ -30,8 +30,8 @@ class GapRadiation:
     @abaqus_method_doc
     def __init__(
         self,
-        masterSurfaceEmissivity: float,
-        slaveSurfaceEmissivity: float,
+        mainSurfaceEmissivity: float,
+        secondarySurfaceEmissivity: float,
         table: tuple,
     ):
         r"""This method creates a GapRadiation object.
@@ -44,10 +44,16 @@ class GapRadiation:
 
         Parameters
         ----------
-        masterSurfaceEmissivity
+        mainSurfaceEmissivity
             A Float specifying the Emissivity of master surface :math:`\varepsilon_A`.
-        slaveSurfaceEmissivity
+
+            .. versionchanged:: 2022
+                The ``masterSurfaceEmissivity`` argument was renamed to ``mainSurfaceEmissivity``.
+        secondarySurfaceEmissivity
             A Float specifying the Emissivity of the slave surface :math:`\varepsilon_B`.
+
+            .. versionchanged:: 2022
+                The ``slaveSurfaceEmissivity`` argument was renamed to ``secondarySurfaceEmissivity``.
         table
             A sequence of sequences of Floats specifying the items described below.
 
