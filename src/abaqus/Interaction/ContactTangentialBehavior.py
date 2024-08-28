@@ -110,7 +110,7 @@ class ContactTangentialBehavior:
 
     #: A tuple of tuples of Floats specifying tangential behavior. The items in the table data
     #: are described below.
-    table: float | None = None
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(
