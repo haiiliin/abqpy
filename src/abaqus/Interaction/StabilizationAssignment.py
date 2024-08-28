@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -43,7 +44,9 @@ class StabilizationAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
+    def appendInStep(
+        self, stepName: str, assignments: tuple[tuple[Region | Literal[C.GLOBAL], Region | Literal[C.SELF], str], ...]
+    ):
         """This method allows addition of contact stabilization assignments to new domain pairs in a given step.
 
         Parameters
@@ -54,6 +57,7 @@ class StabilizationAssignment:
         assignments
             A sequence of tuples specifying the stabilizations assigned to each surface pair. Each
             tuple contains three entries:
+
             - A region object or the SymbolicConstant GLOBAL.
             - A region object or the SymbolicConstant SELF.
             - A String specifying a StdStabilization object associated with this pair of regions.
