@@ -24,8 +24,8 @@ class DatumAxis(Datum):
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the datum.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying a sequence of three Floats specifying the direction of the
     #: axis.
-    direction: tuple = ()
+    direction: tuple[float, ...] = ()

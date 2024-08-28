@@ -139,10 +139,10 @@ class AxisData:
     quantityType: QuantityType = QuantityType(NONE)
 
     #: A tuple of Floats specifying the read-only major tick values shown.
-    tickValues: float | None = None
+    tickValues: tuple[float, ...] = ()
 
     #: A tuple of Strings specifying the read-only major tick labels shown.
-    tickLabels: tuple = ()
+    tickLabels: tuple[str, ...] = ()
 
     #: A String specifying the system title. The system title is based on the **quantityType** of
     #: the axis and associated curves.

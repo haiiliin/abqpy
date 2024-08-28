@@ -40,7 +40,7 @@ class GeneralStiffnessSection(ShellSection):
 
     #: A sequence of Floats specifying the stiffness matrix for the section in the order D11,
     #: D12, D22, D13, D23, D33, ...., D66. Twenty-one entries must be given.
-    stiffnessMatrix: tuple
+    stiffnessMatrix: tuple[float, ...] = ()
 
     #: None or a Float specifying the reference temperature for thermal expansion. The default
     #: value is None.
@@ -78,12 +78,12 @@ class GeneralStiffnessSection(ShellSection):
     #: A sequence of Floats specifying the generalized stress values caused by a unit
     #: temperature rise. Six entries must be given if the value of **applyThermalStress** is set
     #: to True. The default value is ("").
-    thermalStresses: tuple = ()
+    thermalStresses: tuple[float, ...] = ()
 
     #: A sequence of sequences of Floats specifying the scaling factors for given temperatures
     #: and/or field data. Each row should contain (Y, alpha, T, F1,...,Fn). The default value
     #: is an empty sequence.
-    scalingData: tuple = ()
+    scalingData: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

@@ -137,7 +137,7 @@ class Job:
     messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
-    environment: tuple = ()
+    environment: tuple[str, ...] = ()
 
     #: A SymbolicConstant specifying the type of license type being used in the case of the
     #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default

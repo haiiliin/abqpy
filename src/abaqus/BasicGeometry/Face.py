@@ -62,14 +62,14 @@ class Face:
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face and the
     #: **X**, **Y**, and **Z** components of the normal to the face.For a face of a solid **pointOn**
     #: specifies the **X**, **Y**, and **Z** coordinates of a point located on the face.
-    pointOn: float | None = None
+    pointOn: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of Floats specifying the name of the feature that created this face.
-    featureName: float | None = None
+    featureName: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the name of the part instance for this face (if
     #: applicable).
-    instanceName: float | None = None
+    instanceName: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def getCentroid(self) -> Sequence[float]:

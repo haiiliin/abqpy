@@ -25,7 +25,7 @@ class SubstructureLoadState(LoadState):
     """
 
     #: A tuple of strings specifying the names of the load cases to be activated.
-    loadCaseNames: tuple = ()
+    loadCaseNames: tuple[str, ...] = ()
 
     #: A Float or a Complex specifying the load magnitude.
     magnitude: float | None = None

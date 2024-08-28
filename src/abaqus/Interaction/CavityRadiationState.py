@@ -61,7 +61,7 @@ class CavityRadiationState(InteractionState):
     viewfactorAccuracyTolState: SymbolicConstant
 
     #: A tuple of Strings specifying the surfaces that provide blocking inside the cavity.
-    blockingSurfaces: tuple = ()
+    blockingSurfaces: tuple[str, ...] = ()
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values
