@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_function_doc
 
 from ..Datum.Datum import Datum
