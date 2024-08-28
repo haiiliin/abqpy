@@ -6,6 +6,9 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Material.Material import Material
+from ..Region.Region import Region
+
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -65,7 +68,15 @@ class SurfaceFeatureAssignment:
     def appendInStep(
         self,
         stepName: str,
-        assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
+        assignments: tuple[
+            tuple[
+                Region | Material | Literal[C.GLOBAL],
+                float | Literal[C.ALL, C.NONE, C.PICKED, C.PERIMETER],
+                float | Literal[C.ALL, C.NONE, C.PICKED, C.PERIMETER],
+                Literal[C.CURRENT, C.ORIGINAL],
+            ],
+            ...,
+        ],
     ):
         """This method allows addition of surface feature angle assignments to new surfaces in a given step.
 

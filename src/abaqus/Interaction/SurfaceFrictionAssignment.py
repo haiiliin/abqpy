@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from typing import Union
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -50,7 +50,7 @@ class SurfaceFrictionAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]):
+    def appendInStep(self, stepName: str, assignments: tuple[tuple[Region | Material | Literal[C.GLOBAL], float], ...]):
         """This method allows addition of surface friction assignments to new surfaces in a given step.
 
         Parameters
@@ -61,10 +61,11 @@ class SurfaceFrictionAssignment:
         assignments
             A sequence of tuples specifying the surface friction assignments. Each tuple contains
             two entries:
+
             - A region or a material object or the SymbolicConstant GLOBAL specifying the surface to
-            which the friction coefficient is assigned.
+              which the friction coefficient is assigned.
             - A Float specifying the overriding friction coefficient to be used in the contact
-            definition.
+              definition.
         """
         ...
 

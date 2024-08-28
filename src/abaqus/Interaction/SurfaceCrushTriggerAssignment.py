@@ -6,6 +6,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -56,7 +58,18 @@ class SurfaceCrushTriggerAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER, C.GLOBAL], float]
+        self,
+        stepName: str,
+        assignments: tuple[
+            tuple[
+                Region | Material | Literal[C.GLOBAL],
+                Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER, C.GLOBAL],
+                float,
+                float,
+                float,
+            ],
+            ...,
+        ],
     ):
         """This method allows addition of surface crush trigger assignments to new surfaces in a given step.
 
@@ -68,10 +81,11 @@ class SurfaceCrushTriggerAssignment:
         assignments
             A sequence of tuples specifying the surface crush trigger assignments. Each tuple
             contains four entries:
+
             - A region or a material object or the SymbolicConstant GLOBAL specifying the surface to
-            which the feature angle is assigned.
+              which the feature angle is assigned.
             - A SymbolicConstant specifying the trigger option to be used for the surface. Possible
-            values of the SymbolicConstant are TRIGGER, NO_TRIGGER, or NO_CRUSH.
+              values of the SymbolicConstant are TRIGGER, NO_TRIGGER, or NO_CRUSH.
             - A Float specifying the crush stress value to be used for the surface.
             - A Float specifying the crush initiation angle value to be used for the surface.
             - A Float specifying the crush continuation angle value to be used for the surface.
