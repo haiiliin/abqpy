@@ -48,7 +48,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
     #: analyses, a tuple of Complexes specifying the fluid pressure magnitude.
-    penetrationPressure: float | None = None
+    penetrationPressure: tuple[float, ...] = ()
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.
@@ -56,7 +56,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A tuple of Floats specifying the critical contact pressure below which fluid penetration
     #: starts to occur.
-    criticalPressure: float | None = None
+    criticalPressure: tuple[float, ...] = ()
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:

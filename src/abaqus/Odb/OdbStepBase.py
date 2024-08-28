@@ -50,23 +50,23 @@ class OdbStepBase:
     loadCases: dict[str, OdbLoadCase] = {}
 
     #: A tuple of Floats specifying the coordinates of the center of mass.
-    massCenter: float | None = None
+    massCenter: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the moments and products of inertia about the center of
     #: mass. For 3-D models inertia quantities are written in the following order: I(XX),
     #: I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
     #: outputted.
-    inertiaAboutCenter: float | None = None
+    inertiaAboutCenter: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the moments and products of inertia about the origin of the
     #: global coordinate system. For 3-D models inertia quantities are written in the following
     #: order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
     #: are outputted.
-    inertiaAboutOrigin: float | None = None
+    inertiaAboutOrigin: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the coordinates of the center of mass of the acoustic
     #: media.
-    acousticMassCenter: float | None = None
+    acousticMassCenter: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(

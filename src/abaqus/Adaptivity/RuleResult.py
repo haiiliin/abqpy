@@ -37,7 +37,7 @@ class RuleResult:
 
     #: A sequence of Strings specifying the error indicator variables that have satisfied the
     #: Remeshing Rule.
-    satisfiedVars: tuple = ()
+    satisfiedVars: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(

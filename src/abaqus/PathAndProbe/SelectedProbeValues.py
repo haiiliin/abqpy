@@ -25,7 +25,7 @@ class SelectedProbeValues:
     fieldOutputAvailable: Boolean = OFF
 
     #: A tuple of tuples of Floats specifying the selected probe values.
-    values: float | None = None
+    values: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of Floats specifying the last sequence of the **values** member.
-    lastValues: tuple = ()
+    lastValues: tuple[float, ...] = ()

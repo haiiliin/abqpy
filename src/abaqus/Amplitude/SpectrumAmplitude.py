@@ -45,7 +45,7 @@ class SpectrumAmplitude(Amplitude):
 
     #: A sequence of sequences of Floats specifying the magnitude, frequency, and damping
     #: values.
-    data: tuple
+    data: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the units used for specifying the spectrum. Possible
     #: values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is
