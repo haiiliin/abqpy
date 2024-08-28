@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Sequence
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ....UtilityAndView.abaqusConstants import OFF, Boolean
@@ -34,7 +32,7 @@ class CrushStress:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressTable: Sequence[Sequence[float]]
+    crushStressTable: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
@@ -48,7 +46,7 @@ class CrushStress:
     @abaqus_method_doc
     def __init__(
         self,
-        crushStressTable: Sequence[Sequence[float]],
+        crushStressTable: tuple[tuple[float, ...], ...],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
@@ -76,7 +74,7 @@ class CrushStress:
     @abaqus_method_doc
     def setValues(
         self,
-        crushStressTable: Sequence[Sequence[float]] = ((),),
+        crushStressTable: tuple[tuple[float, ...], ...] = (),
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

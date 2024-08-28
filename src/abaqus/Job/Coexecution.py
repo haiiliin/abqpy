@@ -83,7 +83,7 @@ class Coexecution:
     #:
     #: .. versionchanged:: 2022
     #:     The ``slaveModels`` attribute was changed to ``secondaryModels``.
-    secondaryModels: tuple = ()
+    secondaryModels: tuple[str, ...] = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the secondary
     #: models for the co-execution. The default value is an empty sequence.

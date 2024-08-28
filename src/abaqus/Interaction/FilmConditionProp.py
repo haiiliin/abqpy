@@ -39,7 +39,7 @@ class FilmConditionProp(ContactProperty):
     #: - Value of the first field variable, if the data depend on field variables.
     #: - Value of the second field variable.
     #: - Etc.
-    property: tuple = ()
+    property: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

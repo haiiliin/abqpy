@@ -1009,7 +1009,7 @@ class EngineeringFeature(EngineeringFeatureBase):
     def DataImperfection(
         self,
         name: str,
-        imperfectionTable: Sequence[Sequence[Union[int, float]]],
+        imperfectionTable: tuple[tuple[int | float, ...], ...],
         system: Literal[C.R, C.C, C.S] = R,
     ):
         """This method creates a DataImperfection object.
@@ -1023,7 +1023,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         ----------
         name
             A String specifying the repository key.
-        imperfectionTable: Sequence[Sequence[Union[int, float]]]
+        imperfectionTable: tuple[tuple[int | float, ...], ...]
             A sequence of sequences of Ints and Floats specifying the imperfection components at a given node. The
             items in the table data are described below.
         system
