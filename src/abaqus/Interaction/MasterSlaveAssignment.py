@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -44,7 +45,11 @@ class MasterSlaveAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.BALANCED, C.SECONDARY, C.MAIN, C.GLOBAL]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[tuple[Region | Literal[C.GLOBAL], Literal[C.BALANCED, C.SECONDARY, C.MAIN, C.GLOBAL]], ...],
+    ):
         """This method allows addition of master-slave assignments to new surface pairs in a given step.
 
         Parameters
