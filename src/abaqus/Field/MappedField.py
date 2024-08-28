@@ -97,12 +97,12 @@ class MappedField(AnalyticalField):
 
     #: A tuple of tuples of Floats specifying the point cloud source data of grid format. The
     #: default value is an empty sequence.
-    gridPointData: tuple = ()
+    gridPointData: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of tuples of Floats specifying the point cloud source data of XYZ format. Each
     #: data item is defining the XYZ coordinates of a point and its field value. The default
     #: value is an empty sequence.
-    xyzPointData: tuple = ()
+    xyzPointData: tuple[tuple[float, ...], ...] = ()
 
     #: An OdbMeshRegionData object specifying the external source data from ODB mesh region.
     odbMeshRegionData: OdbMeshRegionData = OdbMeshRegionData("", "")

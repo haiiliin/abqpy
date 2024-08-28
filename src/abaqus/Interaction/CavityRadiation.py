@@ -117,7 +117,7 @@ class CavityRadiation(Interaction):
     #: A tuple of Strings specifying the names of the Cavity Radiation properties containing
     #: the surface emissivity data. One name per specified surface. The emissivity data is
     #: ignored when **surfaceReflection** = OFF.
-    surfaceEmissivities: tuple = ()
+    surfaceEmissivities: tuple[str, ...] = ()
 
     #: A ModelDot object specifying the rotation axis point. This argument applies only when
     #: **cyclicSymmetry** = ON.
@@ -135,19 +135,19 @@ class CavityRadiation(Interaction):
     #: periodic distance for the first periodic symmetry. Each point is defined by a tuple of
     #: three coordinates indicating its position. This argument applies only when
     #: **periodicSymmetries** is greater than zero. The default value is an empty sequence.
-    periodicDistance_1: tuple = ()
+    periodicDistance_1: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of tuples of Floats specifying the two points of the vector that describes the
     #: periodic distance for the second periodic symmetry. Each point is defined by a tuple of
     #: three coordinates indicating its position. This argument applies only when
     #: **periodicSymmetries** is greater than one. The default value is an empty sequence.
-    periodicDistance_2: tuple = ()
+    periodicDistance_2: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of tuples of Floats specifying the two points of the vector that describes the
     #: periodic distance for the third periodic symmetry. Each point is defined by a tuple of
     #: three coordinates indicating its position. This argument applies only when
     #: **periodicSymmetries** = 3. The default value is an empty sequence.
-    periodicDistance_3: tuple = ()
+    periodicDistance_3: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

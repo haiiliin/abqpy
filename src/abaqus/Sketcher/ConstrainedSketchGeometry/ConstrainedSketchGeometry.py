@@ -31,4 +31,4 @@ class ConstrainedSketchGeometry:
 
     #: A tuple of Floats specifying the **X**  and*Y*-coordinates of a point located on the
     #: geometry.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()

@@ -106,7 +106,7 @@ class MaterialOrientation:
 
     #: A sequence of Floats specifying the vector that defines the direction of the normal axis
     #: of the discrete orientation.
-    normalAxisVector: tuple = ()
+    normalAxisVector: tuple[float, ...] = ()
 
     #: A SymbolicConstant specifying the axis that is defined by the primary axis direction for
     #: a discrete orientation. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default
@@ -132,7 +132,7 @@ class MaterialOrientation:
 
     #: A sequence of Floats specifying the vector that defines the direction of the primary
     #: axis of the discrete orientation.
-    primaryAxisVector: tuple = ()
+    primaryAxisVector: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(
