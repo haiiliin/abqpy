@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union
+from typing import Union
 
 from typing_extensions import Literal
 
@@ -53,7 +53,9 @@ class SurfaceOffsetAssignment:
     def appendInStep(
         self,
         stepName: str,
-        assignments: Sequence[tuple[Union[Region, Material, Literal[C.SPOS, C.ORIGINAL, C.SNEG, C.GLOBAL]], float]],
+        assignments: tuple[
+            tuple[Region | Material | Literal[C.GLOBAL], float | Literal[C.SPOS, C.ORIGINAL, C.SNEG, C.GLOBAL]], ...
+        ],
     ):
         """This method allows addition of surface offset fraction assignments to new surfaces in a given step.
 
