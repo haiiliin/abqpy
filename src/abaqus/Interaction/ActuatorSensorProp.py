@@ -26,11 +26,11 @@ class ActuatorSensorProp(ContactProperty):
 
     #: A sequence of Floats specifying the PROPS array used by user subroutine UEL. The default
     #: value is an empty sequence.
-    realProperties: tuple = ()
+    realProperties: tuple[float, ...] = ()
 
     #: A sequence of Ints specifying the JPROPS array used by user subroutine UEL. The default
     #: value is an empty sequence.
-    integerProperties: tuple = ()
+    integerProperties: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, name: str, realProperties: tuple = (), integerProperties: tuple = ()):

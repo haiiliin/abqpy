@@ -93,17 +93,18 @@ class TemperatureState(PredefinedFieldState):
     #: A tuple of Floats specifying the temperature values when **distributionType** = UNIFORM or
     #: **distributionType** = FIELD. The value of the **magnitudes** argument is a function of the
     #: **crossSectionDistribution** argument, as shown in the following list:
+    #:
     #: - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
-    #: specifying the temperature.
+    #:   specifying the temperature.
     #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
-    #: sequence of Doubles specifying the mean value and the gradient in the thickness
-    #: direction.
+    #:   sequence of Doubles specifying the mean value and the gradient in the thickness
+    #:   direction.
     #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a
-    #: sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
-    #: gradient in the N2 direction.
+    #:   sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the
+    #:   gradient in the N2 direction.
     #: - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence
-    #: of Doubles specifying the temperature at each point.
-    magnitudes: tuple = ()
+    #:   of Doubles specifying the temperature at each point.
+    magnitudes: tuple[float, ...] = ()
 
     #: A SymbolicConstant specifying the propagation state of the PredefinedFieldState object.
     #: Possible values are:

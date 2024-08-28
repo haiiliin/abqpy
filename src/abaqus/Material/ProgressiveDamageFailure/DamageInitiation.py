@@ -236,7 +236,7 @@ class DamageInitiation:
     direction: SymbolicConstant = NMORI
 
     #: A tuple of tuples of Floats specifying the items described in the "Table data" section.
-    table: float | None = None
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A DamageEvolution object.
     damageEvolution: DamageEvolution | None = None

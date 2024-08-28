@@ -20,4 +20,4 @@ class SectorDefinition:
 
     #: A tuple of tuples of Floats specifying the coordinates of two points on the axis of
     #: symmetry.
-    symmetryAxis: float | None = None
+    symmetryAxis: tuple[tuple[float, ...], ...] = ()

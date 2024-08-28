@@ -45,15 +45,15 @@ class KinematicHardening(PredefinedField):
     numBackStress: int = 1
 
     #: A sequence of Floats specifying the initial equivalent Plastic strain.
-    equivPlasticStrain: tuple = ()
+    equivPlasticStrain: tuple[float, ...] = ()
 
     #: A sequence of sequences of Floats specifying the initial backstress tensor for kinematic
     #: hardening models. The default value is an empty sequence.
-    backStress: tuple = ()
+    backStress: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of Ints specifying section point numbers. This argument is valid only when
     #: **definition** = SECTION_PTS.
-    sectPtNum: tuple = ()
+    sectPtNum: tuple[int, ...] = ()
 
     #: A SymbolicConstant specifying different types of kinematic hardening. Possible values
     #: are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The
@@ -62,7 +62,7 @@ class KinematicHardening(PredefinedField):
 
     #: A sequence of Strings specifying rebar layer names. This argument is valid only when
     #: **definition** = REBAR.
-    rebarLayerNames: tuple = ()
+    rebarLayerNames: tuple[str, ...] = ()
 
     #: A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE
     #: and ANALYTICAL_FIELD. The default value is MAGNITUDE.

@@ -65,7 +65,7 @@ class NormalBehavior:
     #: A sequence of sequences of Floats specifying the normal behavior properties. This
     #: argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
     #: the table data are described below.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the method for enforcement of the contact constraint.
     #: Possible values are DEFAULT, AUGMENTED_LAGRANGE, PENALTY, and DIRECT. The default value
