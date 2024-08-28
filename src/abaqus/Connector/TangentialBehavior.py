@@ -96,7 +96,7 @@ class TangentialBehavior:
 
     #: A sequence of sequences of Floats specifying the tangential properties. Items in the
     #: table data are described below. The default value is an empty sequence.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

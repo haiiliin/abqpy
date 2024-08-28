@@ -49,10 +49,10 @@ class OdbMeshElement:
     #: node cannot be ascertained. This is a limitation. It is important to note the difference
     #: with MeshElement object of MDB where the connectivity is node indices instead of node
     #: labels.
-    connectivity: int | None = None
+    connectivity: tuple[int, ...] = ()
 
     #: A tuple of Strings specifying the instance names for nodes in the element connectivity.
-    instanceNames: tuple = ()
+    instanceNames: tuple[str, ...] = ()
 
     #: A String specifying the instance name.
     instanceName: str = ""
