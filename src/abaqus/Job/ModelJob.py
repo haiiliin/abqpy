@@ -155,7 +155,7 @@ class ModelJob(Job):
     messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
-    environment: tuple = ()
+    environment: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(

@@ -66,7 +66,20 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #:
     #: The default value is BOTTOM_LEFT.
-    anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
+    anchor: Union[
+        Literal[
+            C.CENTER_RIGHT,
+            C.TOP_CENTER,
+            C.BOTTOM_RIGHT,
+            C.BOTTOM_LEFT,
+            C.CENTER,
+            C.TOP_RIGHT,
+            C.CENTER_LEFT,
+            C.TOP_LEFT,
+            C.BOTTOM_CENTER,
+        ],
+        tuple[float, ...],
+    ] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
     #: Floats specifies the **X**  and **Y** coordinates of the reference point of the Text
@@ -84,7 +97,20 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #:
     #: The default value is BOTTOM_LEFT.
-    referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT
+    referencePoint: Union[
+        Literal[
+            C.CENTER_RIGHT,
+            C.TOP_CENTER,
+            C.BOTTOM_RIGHT,
+            C.BOTTOM_LEFT,
+            C.CENTER,
+            C.TOP_RIGHT,
+            C.CENTER_LEFT,
+            C.TOP_LEFT,
+            C.BOTTOM_CENTER,
+        ],
+        tuple[float, ...],
+    ] = BOTTOM_LEFT
 
     #: A Float specifying the amount of rotation in degrees about **referencePoint**. The default
     #: value is 0.0.
@@ -132,7 +158,7 @@ class Text(Annotation, _OptionsBase):
                 C.TOP_LEFT,
                 C.BOTTOM_CENTER,
             ],
-            float,
+            tuple[float, ...],
         ] = BOTTOM_LEFT,
         referencePoint: Union[
             Literal[
@@ -146,7 +172,7 @@ class Text(Annotation, _OptionsBase):
                 C.TOP_LEFT,
                 C.BOTTOM_CENTER,
             ],
-            float,
+            tuple[float, ...],
         ] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
