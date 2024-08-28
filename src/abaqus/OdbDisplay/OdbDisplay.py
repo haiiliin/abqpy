@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import Union, overload
 
 from typing_extensions import Literal
 
@@ -88,7 +88,7 @@ class OdbDisplay:
     #:   defined.
     #: - **element10**: A sequence of machine readable strings encoding the currently active
     #:   frame numbers.
-    fieldSteps: tuple = ()
+    fieldSteps: tuple[str, ...] = ()
 
     #: An OdbFieldVarList object.
     fieldVariables: OdbFieldVarList = OdbFieldVarList()
@@ -151,7 +151,7 @@ class OdbDisplay:
     #: A tuple of Strings specifying the step label and the frame label when the current step
     #: is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
     #: step index and the frame index, when the current step is defined in the analysis.
-    fieldFrame: Sequence[str] = ()
+    fieldFrame: tuple[str, ...] = ()
 
     #: A tuple specifying variables.
     #: Each item in the sequence consists of a tuple containing the following elements:
@@ -248,10 +248,10 @@ class OdbDisplay:
     statusInsideRange: SymbolicConstant
 
     #: A tuple of Floats specifying a Float value for the minimum status range value.
-    statusMinimum: float | None = None
+    statusMinimum: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying a Float value for the maximum status range value.
-    statusMaximum: float | None = None
+    statusMaximum: tuple[float, ...] = ()
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed based on the status variable

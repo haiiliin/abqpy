@@ -92,14 +92,14 @@ class ViewCut:
     #: SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
     #: cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
-    normal: Union[SymbolicConstant, float]
+    normal: Union[SymbolicConstant, tuple[float, ...]] = ()
 
     #: A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
     #: of the plane defining the cut, when the plane is defined using the **origin** argument or
     #: a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
     #: plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
-    axis2: Union[SymbolicConstant, float]
+    axis2: Union[SymbolicConstant, tuple[tuple[float, float, float], ...]] = ()
 
     #: A String specifying the name of the DatumCsys object to be used to define the cut. This
     #: name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
@@ -111,7 +111,7 @@ class ViewCut:
     #: SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
     #: cut **shape** is PLANE, SPHERE, or ISOSURFACE.
-    cylinderAxis: Union[SymbolicConstant, float]
+    cylinderAxis: Union[SymbolicConstant, tuple[float, ...]] = ()
 
     #: A Boolean specifying whether the cut will follow the deformation or be static. The
     #: default value is OFF.

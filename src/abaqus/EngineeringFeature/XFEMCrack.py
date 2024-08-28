@@ -56,25 +56,25 @@ class XFEMCrack(Crack):
 
     #: A sequence of Ints specifying the labels of the elements that are intersected by the
     #: initial crack location. This argument is used only by the input file reader.
-    elemId: tuple = ()
+    elemId: tuple[int, ...] = ()
 
     #: A sequence of Ints specifying the position of a node in the corresponding element
     #: connectivity. This argument is used only by the input file reader.
-    nodeId: tuple = ()
+    nodeId: tuple[int, ...] = ()
 
     #: A sequence of Ints specifying the values indicating the inclusion/exclusion of the
     #: **crackFrontDist** values. A zero value indicates that **crackFrontDist** is not specified
     #: for the ith pair **elemId** and *nodeId*. This argument is used only by the input file
     #: reader.
-    hasCrackFront: tuple = ()
+    hasCrackFront: tuple[int, ...] = ()
 
     #: A sequence of Floats specifying the values of the first signed distance function. This
     #: argument is used by the input file reader.
-    crackPlaneDist: tuple = ()
+    crackPlaneDist: tuple[float, ...] = ()
 
     #: A sequence of Floats specifying the values of the second signed distance function. This
     #: argument is used only by the input file reader.
-    crackFrontDist: tuple = ()
+    crackFrontDist: tuple[float, ...] = ()
 
     #: An integer specifying the number of element layers around the crack location, to which
     #: the crack domain is shrunk.

@@ -38,7 +38,7 @@ class AcousticImpedanceProp(ContactProperty):
     #: depend on frequency.If **tableType** = ADMITTANCE, each sequence of the table data
     #: specifies:The real part of the complex admittance.The imaginary part of the complex
     #: admittance.Frequency, if the data depend on frequency.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether the **table** data depend on frequency. The default value is
     #: OFF.

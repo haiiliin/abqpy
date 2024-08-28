@@ -30,7 +30,7 @@ class LeafFromModelElemLabels(Leaf):
     #: expressions can be any of the following:An Int specifying a single element label; for
     #: example, `1`.A String specifying a single element label; for example, `'7'`.A String
     #: specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
-    elementLabels: tuple
+    elementLabels: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, elementLabels: tuple):

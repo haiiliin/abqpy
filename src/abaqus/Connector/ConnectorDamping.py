@@ -109,19 +109,19 @@ class ConnectorDamping(ConnectorBehaviorOption):
 
     #: A sequence of sequences of Floats specifying damping properties. Items in the table data
     #: are described below. The default value is an empty sequence.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of Ints specifying the list of independent components that are included in
     #: the definition of the connector damping data. This argument is applicable only if
     #: **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION. When this
     #: argument is applicable, at least one value must be specified. Only available components
     #: can be specified. The default value is an empty sequence.
-    independentComponents: tuple = ()
+    independentComponents: tuple[int, ...] = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
     #: specified. The default value is an empty sequence.
-    components: tuple = ()
+    components: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def __init__(

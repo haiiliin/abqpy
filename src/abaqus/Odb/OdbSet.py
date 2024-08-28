@@ -38,7 +38,7 @@ class OdbSet:
 
     #: A tuple of Strings specifying the namespaces for the nodes, elements, and faces; None if
     #: the set is on a Part or an OdbInstance object.
-    instanceNames: tuple = ()
+    instanceNames: tuple[str, ...] = ()
 
     #: An OdbMeshNodeArray object specifying the nodes of an OdbSet. If a set spans more than
     #: one part instance, this member is a sequence of sequences for each part instance.
