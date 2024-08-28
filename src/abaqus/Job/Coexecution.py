@@ -75,8 +75,11 @@ class Coexecution:
     #: A repository of Job objects specifying the jobs that comprise this co-execution.
     jobs: dict[str, Job] = {}
 
-    #: A tuple of Strings specifying the names of the slave models for the co-execution.
-    slaveModels: tuple = ()
+    #: A tuple of Strings specifying the names of the secondary models for the co-execution.
+    #:
+    #: .. versionchanged:: 2022
+    #:     The ``slaveModels`` attribute was changed to ``secondaryModels``.
+    slaveModels: tuple[str, ...] = ()
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the slave
     #: models for the co-execution. The default value is an empty sequence.

@@ -37,7 +37,7 @@ class MullinsEffect:
 
     #: A tuple of tuples of Floats specifying the items described below. The default value is
     #: an empty sequence.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A UniaxialTestDataArray object.
     uniaxialTests: UniaxialTestDataArray = []

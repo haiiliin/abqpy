@@ -137,7 +137,7 @@ class ContourOptions(DGContourOptions):
     reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
-    intervalValues: float | None = None
+    intervalValues: tuple[float, ...] = ()
 
     #: A SymbolicConstant specifying the contour rendering method. Possible values are
     #: TEXTURE_MAPPED and TESSELLATED. The default value is TEXTURE_MAPPED.

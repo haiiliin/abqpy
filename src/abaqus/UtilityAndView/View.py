@@ -38,7 +38,7 @@ class View:
 
     #: A tuple of Floats specifying a transformation matrix used to position the contents of
     #: the Layer within a viewport.
-    layerTransform: float | None = None
+    layerTransform: tuple[float, ...] = ()
 
     #: A String specifying the name of the view (also used as the repository key). Possible
     #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
