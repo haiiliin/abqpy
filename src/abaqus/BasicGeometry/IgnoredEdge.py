@@ -23,7 +23,7 @@ class IgnoredEdge:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the edge.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def getSize(self, printResults: bool = True):

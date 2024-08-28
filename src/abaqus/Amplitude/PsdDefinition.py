@@ -33,7 +33,7 @@ class PsdDefinition(Amplitude):
     #: A sequence of sequences of Floats specifying the real part of the frequency function,
     #: the imaginary part of the frequency function, and the frequency or frequency band number
     #: values, depending on the value of **unitType**.
-    data: tuple
+    data: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the type of units for specifying the frequency function.
     #: FORCE implies power units. BASE implies gravity used to define base motion. DB implies

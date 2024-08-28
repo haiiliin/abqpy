@@ -81,7 +81,7 @@ class FluidCavityProperty(ContactProperty):
     #: - Value of the first field variable, if the data depend on field variables.
     #: - Value of the second field variable.
     #: - Etc.
-    expansionTable: tuple = ()
+    expansionTable: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether fluid bulk modulus values will be defined. This argument is
     #: applicable only when **definition** = HYDRAULIC. The default value is OFF.
@@ -106,7 +106,7 @@ class FluidCavityProperty(ContactProperty):
     #: - Value of the first field variable, if the data depend on field variables.
     #: - Value of the second field variable.
     #: - Etc.
-    bulkModulusTable: tuple = ()
+    bulkModulusTable: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether molar heat capacity values will be defined. This argument
     #: is applicable only when **definition** = PNEUMATIC. The default value is OFF.
@@ -147,7 +147,7 @@ class FluidCavityProperty(ContactProperty):
     #: - Value of the first field variable, if the data depend on field variables.
     #: - Value of the second field variable.
     #: - Etc.
-    capacityTable: tuple = ()
+    capacityTable: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

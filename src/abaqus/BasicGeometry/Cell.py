@@ -37,14 +37,14 @@ class Cell:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the cell.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the name of the feature that created this cell.
-    featureName: float | None = None
+    featureName: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the name of the part instance for this cell (if
     #: applicable).
-    instanceName: float | None = None
+    instanceName: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def getSize(self, printResults: Boolean = True):

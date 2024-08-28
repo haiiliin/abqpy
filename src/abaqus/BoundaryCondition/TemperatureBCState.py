@@ -37,7 +37,7 @@ class TemperatureBCState(BoundaryConditionState):
 
     #: A tuple of Ints specifying the degrees of freedom to which the boundary condition is
     #: applied.
-    dof: int | None = None
+    dof: tuple[int, ...] = ()
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.

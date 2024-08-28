@@ -32,7 +32,7 @@ class SmoothStepAmplitude(Amplitude):
 
     #: A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
     #: values for time/frequency are positive numbers.
-    data: tuple
+    data: tuple[tuple[float, float], ...] = ()
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.
