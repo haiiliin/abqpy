@@ -64,7 +64,7 @@ class FieldOutput:
     #: the suffixes ('11', '22', '33', '12', '13', '23'). If **type** = VECTOR, the default value
     #: is **name** with the suffixes ('1', '2', '3'). If **type** = SCALAR, the default value is an
     #: empty sequence.
-    componentLabels: tuple = ()
+    componentLabels: tuple[str, ...] = ()
 
     #: A sequence of SymbolicConstants specifying which invariants should be calculated for
     #: this field. An empty sequence indicates that no invariants are valid for this field.

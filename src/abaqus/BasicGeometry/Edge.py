@@ -57,14 +57,14 @@ class Edge:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of a point located on
     #: the edge.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the name of the feature that created this edge.
-    featureName: float | None = None
+    featureName: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the name of the part instance for this edge (if
     #: applicable).
-    instanceName: float | None = None
+    instanceName: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def isTangentFlipped(self) -> Boolean:

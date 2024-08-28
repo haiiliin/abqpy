@@ -103,7 +103,7 @@ class FieldState(PredefinedFieldState):
     #:   the N2 direction.
     #: - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
     #:   Doubles specifying the field at each point.
-    magnitudes: tuple = ()
+    magnitudes: tuple[float, ...] = ()
 
     #: A SymbolicConstant specifying the propagation state of the PredefinedFieldState object.
     #: Possible values are:

@@ -29,4 +29,4 @@ class BeamOrientation:
 
     #: A tuple of Floats specifying direction cosines of the n1-direction of the beam
     #: cross-section.
-    vector: float | None = None
+    vector: tuple[float, ...] = ()
