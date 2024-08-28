@@ -149,11 +149,11 @@ class BeamSection(Section):
 
     #: A sequence of sequences of Floats specifying the items described below. The default
     #: value is an empty sequence.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of pairs of Floats specifying the positions at which output is requested. The
     #: default value is an empty sequence.
-    outputPts: tuple = ()
+    outputPts: tuple[tuple[float, float], ...] = ()
 
     #: A pair of Floats specifying the **X - Y** coordinates of the centroid. The default value is
     #: (0.0, 0.0).

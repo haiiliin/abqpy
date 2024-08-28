@@ -63,7 +63,7 @@ class PointFastener(Fastener):
     directionVector: tuple | None = None
 
     #: A RegionArray object specifying surfaces to be fastened. The default value is MODEL.
-    targetSurfaces: RegionArray = MODEL
+    targetSurfaces: RegionArray | SymbolicConstant = MODEL
 
     #: A Boolean specifying whether to constrain rotational displacement component about the
     #: 1-direction. The default value is ON.
@@ -181,7 +181,7 @@ class PointFastener(Fastener):
         region: Region,
         physicalRadius: float,
         directionVector: tuple | None = None,
-        targetSurfaces: RegionArray = MODEL,
+        targetSurfaces: RegionArray | SymbolicConstant = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
@@ -327,7 +327,7 @@ class PointFastener(Fastener):
     def setValues(
         self,
         directionVector: tuple | None = None,
-        targetSurfaces: RegionArray = MODEL,
+        targetSurfaces: RegionArray | SymbolicConstant = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
