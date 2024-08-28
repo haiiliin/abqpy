@@ -4,6 +4,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -43,7 +45,11 @@ class ContactPropertyAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[tuple[Region | Material | Literal[C.GLOBAL], Region | Material | Literal[C.SELF], str], ...],
+    ):
         """This method allows addition of contact property assignments to new domain pairs in a given step.
 
         Parameters
