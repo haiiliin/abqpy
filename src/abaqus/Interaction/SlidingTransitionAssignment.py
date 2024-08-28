@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -52,7 +53,13 @@ class SlidingTransitionAssignment:
     def appendInStep(
         self,
         stepName: str,
-        assignments: Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING, C.GLOBAL],
+        assignments: tuple[
+            tuple[
+                Region | Literal[C.GLOBAL],
+                Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING, C.GLOBAL],
+            ],
+            ...,
+        ],
     ):
         """This method allows you to add sliding transition assignments to new surface pairs in a given step.
 
@@ -63,10 +70,13 @@ class SlidingTransitionAssignment:
             to be defined.
         assignments
             A sequence of tuples specifying the sliding transition assignments. Each tuple contains
-            two entries:A region object or the SymbolicConstant GLOBAL specifying the surface to
-            which the sliding transition attribute is assigned.A SymbolicConstant specifying the
-            overriding the smoothness value to be used for the first surface. Possible values of the
-            SymbolicConstant are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING, and QUADRATIC_SMOOTHING.
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the sliding
+              transition attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the first
+              surface. Possible values of the SymbolicConstant are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING,
+              and QUADRATIC_SMOOTHING.
         """
         ...
 

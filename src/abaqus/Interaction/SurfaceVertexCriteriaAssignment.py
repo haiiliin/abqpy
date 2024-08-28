@@ -6,6 +6,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -52,7 +54,13 @@ class SurfaceVertexCriteriaAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[
+            tuple[Region | Material | Literal[C.GLOBAL], float | Literal[C.NO_VERTICES, C.ALL_VERTICES]], ...
+        ],
+    ):
         """This method allows addition of surface vertex criteria assignments to new surfaces in a given step.
 
         Parameters
@@ -63,10 +71,11 @@ class SurfaceVertexCriteriaAssignment:
         assignments
             A sequence of tuples specifying the surface vertex criteria assignments. Each tuple
             contains two entries:
+
             - A region or a material object or the SymbolicConstant GLOBAL specifying the surface to
-            which the vertex criteria is assigned.
+              which the vertex criteria is assigned.
             - A Float or a SymbolicConstant specifying the vertex criteria value to be used for the
-            surface. Possible values of the SymbolicConstant are ALL_VERTICES or NO_VERTICES.
+              surface. Possible values of the SymbolicConstant are ALL_VERTICES or NO_VERTICES.
         """
         ...
 

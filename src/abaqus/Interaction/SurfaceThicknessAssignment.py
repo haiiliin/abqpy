@@ -8,7 +8,6 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Material.Material import Material
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -59,12 +58,7 @@ class SurfaceThicknessAssignment:
         self,
         stepName: str,
         assignments: tuple[
-            tuple[
-                Union[Region, Material, Literal[C.THINNING, C.ORIGINAL, C.GLOBAL]],
-                Union[SymbolicConstant, float],
-                float,
-            ],
-            ...,
+            tuple[Region | Material | Literal[C.GLOBAL], float | Literal[C.THINNING, C.ORIGINAL], float], ...
         ],
     ):
         """This method allows addition of surface thickness assignments to new surfaces in a given step.
