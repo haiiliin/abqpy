@@ -153,7 +153,7 @@ class AssemblyDisplayOptions:
 
     #: A tuple of Strings specifying the names of the part instances that are visible in the
     #: viewport. The default value is an empty sequence.
-    visibleInstances: tuple = ()
+    visibleInstances: tuple[str, ...] = ()
 
     #: A String specifying the step for which objects are to be displayed. Possible values are
     #: any valid step name. The default value is "Initial".

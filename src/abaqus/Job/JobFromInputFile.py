@@ -51,7 +51,7 @@ class JobFromInputFile(Job):
     messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
-    environment: tuple = ()
+    environment: tuple[str, ...] = ()
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
     #: name.

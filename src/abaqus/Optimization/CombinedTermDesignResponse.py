@@ -25,7 +25,7 @@ class CombinedTermDesignResponse(DesignResponse):
     name: str
 
     #: A sequence of Strings specifying the names of the design responses to combine.
-    terms: tuple
+    terms: tuple[str, ...] = ()
 
     #: None or a sequence of Floats specifying the maximum radius of influence used when
     #: **method** is FILTER. The default value is None.
@@ -87,7 +87,7 @@ class CombinedTermDesignResponse(DesignResponse):
 
     #: A sequence of Floats specifying the weights to apply to the list of design responses
     #: used when **method** is WEIGHTED_ADD. The default value is an empty sequence.
-    weights: tuple = ()
+    weights: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(

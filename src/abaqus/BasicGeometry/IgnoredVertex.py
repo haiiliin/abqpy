@@ -22,4 +22,4 @@ class IgnoredVertex:
     index: int | None = None
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the vertex.
-    pointOn: float | None = None
+    pointOn: tuple[float, ...] = ()

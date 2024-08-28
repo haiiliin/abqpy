@@ -35,7 +35,7 @@ class Ratios:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
