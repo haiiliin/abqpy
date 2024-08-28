@@ -74,7 +74,7 @@ class DiscreteFastener(Fastener):
     #: decreasing, quadratic polynomial decreasing, and cubic polynomial monotonic decreasing
     #: weight distributions. Possible values are UNIFORM, LINEAR, QUADRATIC, and CUBIC. The
     #: default value is UNIFORM.
-    weightingMethod: SymbolicConstant = UNIFORM
+    weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM
 
     #: None or a DatumCsys object specifying the local coordinate system of fastener couplings.
     #: If **localCsys** = None, couplings are defined in the global coordinate system. When this

@@ -52,7 +52,7 @@ class DataImperfection(Imperfection):
     def __init__(
         self,
         name: str,
-        imperfectionTable: Sequence[Sequence[Union[int, float]]],
+        imperfectionTable: tuple[tuple[int | float, ...], ...],
         system: Literal[C.R, C.C, C.S] = R,
     ):
         """This method creates a DataImperfection object.
