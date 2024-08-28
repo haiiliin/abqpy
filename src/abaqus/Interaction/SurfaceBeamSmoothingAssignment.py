@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
+
 
 @abaqus_class_doc
 class SurfaceBeamSmoothingAssignment:
@@ -43,7 +45,7 @@ class SurfaceBeamSmoothingAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: tuple):
+    def appendInStep(self, stepName: str, assignments: tuple[tuple[Region, float], ...]):
         """This method allows addition of surface beam smoothing assignments to new surfaces in a given step.
 
         Parameters
@@ -53,8 +55,10 @@ class SurfaceBeamSmoothingAssignment:
             are to be defined.
         assignments
             A sequence of tuples specifying the surface beam smoothing assignments. Each tuple
-            contains two entries:A region object specifying the surface to which the smoothing is
-            assigned.A Float specifying the surface smoothing value to be used for the surface.
+            contains two entries:
+
+            - A region object specifying the surface to which the smoothing is assigned.
+            - A Float specifying the surface smoothing value to be used for the surface.
         """
         ...
 
