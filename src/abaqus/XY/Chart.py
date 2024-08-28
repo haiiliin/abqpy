@@ -88,7 +88,7 @@ class Chart:
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the Chart.
-    transform: float | None = None
+    transform: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):

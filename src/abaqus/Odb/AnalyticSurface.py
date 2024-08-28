@@ -37,4 +37,4 @@ class AnalyticSurface:
 
     #: A tuple of tuples of Floats specifying the global coordinates of points representing the
     #: local coordinate system, if used.
-    localCoordData: float | None = None
+    localCoordData: tuple[tuple[float, ...], ...] = ()

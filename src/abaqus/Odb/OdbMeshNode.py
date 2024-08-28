@@ -30,4 +30,4 @@ class OdbMeshNode:
 
     #: A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate
     #: system.
-    coordinates: float | None = None
+    coordinates: tuple[float, ...] = ()

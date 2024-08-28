@@ -155,18 +155,18 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     #: A sequence of sequences of Floats specifying isotropic plasticity properties. Items in
     #: the **isotropicTable** data are described below. This argument is applicable only if
     #: **isotropic** = ON. The default value is an empty sequence.
-    isotropicTable: tuple = ()
+    isotropicTable: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of sequences of Floats specifying kinematic plasticity properties. Items in
     #: the **kinematicTable** data are described below. This argument is applicable only if
     #: **kinematic** = ON. The default value is an empty sequence.
-    kinematicTable: tuple = ()
+    kinematicTable: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
     #: specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
     #: value is an empty sequence.
-    components: tuple = ()
+    components: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def __init__(
