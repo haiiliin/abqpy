@@ -22,6 +22,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: Implementation :: PyPy",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -102,7 +103,7 @@ addopts = """-rf -s --cov=src --cov-report=xml --cov-report=html --cov-report=te
 
 [tool.black]
 line-length = 120
-target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312']
 include = '(src/abaqus/.*\.py|src/abqpy/.*\.py|tests/.*\.py|setup\.py)'
 
 [tool.isort]
