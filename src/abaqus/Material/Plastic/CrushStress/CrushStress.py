@@ -34,7 +34,7 @@ class CrushStress:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressTable: Sequence[Sequence[float]]
+    crushStressTable: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF

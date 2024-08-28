@@ -61,7 +61,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #:
     #: The default value is BOTTOM_LEFT.
-    startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
+    startAnchor: Union[SymbolicConstant, tuple[float, ...]] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**  and **Y** coordinates as percentages of the viewport width and height.
@@ -80,7 +80,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #:
     #: The default value is BOTTOM_LEFT.
-    endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
+    endAnchor: Union[SymbolicConstant, tuple[float, ...]] = BOTTOM_LEFT
 
     #: A SymbolicConstant specifying the style of the start head. Possible values are:
     #:

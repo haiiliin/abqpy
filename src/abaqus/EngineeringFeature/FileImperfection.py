@@ -42,7 +42,7 @@ class FileImperfection(Imperfection):
 
     #: A sequence of sequences of Integers and Floats specifying linearSuperpositions. The items in the table data
     #: are described below.
-    linearSuperpositions: Sequence[Sequence[int]]
+    linearSuperpositions: tuple[tuple[int | float, ...], ...] = ()
 
     #: A Region object specifying the region to which the file imperfection is applied. By default, the
     #: imperfection will be applied to all nodes in the model.

@@ -65,7 +65,7 @@ class HistoryOutputRequestState:
     #: A tuple of Strings specifying output request variable or component names, or the
     #: SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
     #: the given step. ALL represents all valid output variables.
-    variables: SymbolicConstant
+    variables: tuple[str, ...] | SymbolicConstant = ()
 
     #: The SymbolicConstant ALL or a tuple of Ints specifying a list of eigenmodes for which
     #: output is desired. The default value is ALL.

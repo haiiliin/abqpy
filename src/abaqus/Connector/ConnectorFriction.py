@@ -147,14 +147,14 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: specified by **tangentDirection**, if the data depend on accumulated slip.Temperature, if
     #: the data depend on temperature.Value of the first field variable, if the data depend on
     #: field variables.Value of the second field variable.Etc.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of Ints specifying the independent components. Possible values are 1 ≤
     #: **independentComponents** ≤ 6. In addition, each independent component value must be
     #: unique. The **independentComponents** argument applies only if
     #: **frictionModel** = USER_CUSTOMIZED. Only available components can be specified. The default
     #: value is an empty sequence.
-    independentComponents: tuple = ()
+    independentComponents: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def __init__(

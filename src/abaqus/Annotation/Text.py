@@ -66,7 +66,7 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #:
     #: The default value is BOTTOM_LEFT.
-    anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
+    anchor: Union[SymbolicConstant, tuple[float, ...]] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
     #: Floats specifies the **X**  and **Y** coordinates of the reference point of the Text

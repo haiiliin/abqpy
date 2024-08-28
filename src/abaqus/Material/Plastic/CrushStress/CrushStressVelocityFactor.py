@@ -32,7 +32,7 @@ class CrushStressVelocityFactor:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressVelocityFactorTable: Sequence[Sequence[float]]
+    crushStressVelocityFactorTable: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, crushStressVelocityFactorTable: Sequence[Sequence[float]]):

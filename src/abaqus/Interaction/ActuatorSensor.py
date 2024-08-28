@@ -55,7 +55,7 @@ class ActuatorSensor(Interaction):
     dof: str
 
     #: A sequence of Floats specifying the initial values of the solution-dependent variables.
-    solutionDepVars: tuple
+    solutionDepVars: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(
