@@ -38,7 +38,7 @@ class TabularAmplitude(Amplitude):
 
     #: A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
     #: values for time/frequency are positive numbers.
-    data: Sequence[Sequence[float]]
+    data: tuple[tuple[float, float], ...] = ()
 
     #: The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
     #: Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default

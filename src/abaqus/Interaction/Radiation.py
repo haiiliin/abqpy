@@ -26,7 +26,7 @@ class Radiation:
 
     #: A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
     #: clearance, dd.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, masterEmissivity: float, slaveEmissivity: float, table: tuple):

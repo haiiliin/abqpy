@@ -90,7 +90,7 @@ class FractureCriterion:
 
     #: A sequence of sequences of Floats specifying the value defining the fracture criterion.
     #: The items in the table data are described below.
-    initTable: tuple
+    initTable: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the type of data used to define the fracture criterion.
     #: Possible values are VCCT and ENHANCED VCCT. The default value is VCCT.

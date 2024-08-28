@@ -31,7 +31,7 @@ class AnalyticSurfaceSegment:
     #: point. If **type** = PARABOLA, the first row contains coordinates of the middle point and
     #: the second row contains coordinates of the end point. If **type** = START or **type** = LINE, a
     #: single row contains coordinates of the start/end point.
-    data: tuple
+    data: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, type: Literal[C.CIRCLE, C.START, C.LINE, C.PARABOLA], data: tuple):

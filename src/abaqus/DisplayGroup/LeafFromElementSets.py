@@ -25,7 +25,7 @@ class LeafFromElementSets(Leaf):
 
     #: A sequence of Strings specifying element sets or a String specifying a single element
     #: set.
-    elementSets: tuple
+    elementSets: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, elementSets: tuple):
