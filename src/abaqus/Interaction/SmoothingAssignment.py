@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -47,7 +48,13 @@ class SmoothingAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[
+            tuple[Region | Literal[C.GLOBAL], Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]], ...
+        ],
+    ):
         """This method allows addition of surface smoothing assignments to new surfaces in a given step.
 
         Parameters

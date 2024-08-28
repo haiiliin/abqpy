@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -44,7 +45,11 @@ class InitializationAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.CLEARANCE, C.SELF, C.GLOBAL]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[tuple[Region | Literal[C.GLOBAL], Region | Literal[C.SELF], str, str], ...],
+    ):
         """This method allows addition of contact initialization assignments to new domain pairs in a given
         step.
 
@@ -56,6 +61,7 @@ class InitializationAssignment:
         assignments
             A sequence of tuples specifying the initializations assigned to each surface pair. Each
             tuple contains four entries (fourth entry is for Abaqus/Explicit and is optional):
+
             - A region object or the SymbolicConstant GLOBAL (for Abaqus/Standard only).
             - A region object or the SymbolicConstant SELF (for Abaqus/Standard only).
             - A String specifying a StdInitialization or ExpInitializationobject associated with this pair of regions.
