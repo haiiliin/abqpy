@@ -63,9 +63,9 @@ class SlidingFormulationAssignment:
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the sliding
-            formulation attribute is assigned.
+              formulation attribute is assigned.
             - A SymbolicConstant specifying the overriding the smoothness value to be used for the first
-            surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
+              surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
         """
         ...
 

@@ -71,11 +71,10 @@ class SlidingTransitionAssignment:
             two entries:
 
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the sliding
-            transition attribute is assigned.
-
+              transition attribute is assigned.
             - A SymbolicConstant specifying the overriding the smoothness value to be used for the first
-            surface. Possible values of the SymbolicConstant are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING,
-            and QUADRATIC_SMOOTHING.
+              surface. Possible values of the SymbolicConstant are ELEMENT_ORDER_SMOOTHING, LINEAR_SMOOTHING,
+              and QUADRATIC_SMOOTHING.
         """
         ...
 
