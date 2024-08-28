@@ -9,9 +9,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2024"
@@ -31,9 +31,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2024"
@@ -56,9 +56,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2023"
@@ -80,9 +80,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2023"
@@ -105,9 +105,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2022"
@@ -129,9 +129,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2022"
@@ -154,9 +154,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2021"
@@ -178,9 +178,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2021"
@@ -203,9 +203,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2020"
@@ -227,9 +227,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2020"
@@ -252,9 +252,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2019"
@@ -276,9 +276,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2019"
@@ -301,9 +301,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2018"
@@ -325,9 +325,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2018"
@@ -350,9 +350,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2017"
@@ -374,9 +374,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2017"
@@ -399,9 +399,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2016"
@@ -423,9 +423,9 @@ pull_request_rules:
         title: "{{ title }} (backport #{{ number }})"
         body: |
           {{ body }}
-          
+
           This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
-          
+
           {{ cherry_pick_error }}
         branches:
           - "2016"
