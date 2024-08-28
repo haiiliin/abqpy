@@ -11,6 +11,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Material.Material import Material
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import ON, Boolean
+
 >>>>>>> 4e9388ed ([typing] Fix typing errors for argument `assignments` in `appendInStep` (#5734))
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
