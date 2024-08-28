@@ -46,10 +46,10 @@ class RotationalBodyForce(Load):
     rotaryAcceleration: Boolean = OFF
 
     #: A tuple of Floats specifying the first point on the axis of rotation for the load.
-    point1: float | None = None
+    point1: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying the second point on the axis of rotation for the load.
-    point2: float | None = None
+    point2: tuple[float, ...] = ()
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an

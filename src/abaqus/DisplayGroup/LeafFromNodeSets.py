@@ -24,7 +24,7 @@ class LeafFromNodeSets(Leaf):
     leafType: SymbolicConstant
 
     #: A sequence of Strings specifying node sets or a String specifying a single node set.
-    nodeSets: tuple
+    nodeSets: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, nodeSets: tuple):

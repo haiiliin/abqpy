@@ -216,12 +216,12 @@ class ContactDamage:
 
     #: A tuple of tuples of Floats specifying the values defining the damage initiation. The
     #: items in the table data are described below.
-    initTable: float | None = None
+    initTable: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of tuples of Floats specifying the values defining the damage evolution. The
     #: items in the table data are described below. This argument is valid only when
     #: **useEvolution** = ON.
-    evolTable: float | None = None
+    evolTable: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

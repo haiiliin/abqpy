@@ -27,4 +27,4 @@ class OdbPretensionSection:
     surface: OdbSet = OdbSet("set", ())
 
     #: A tuple of Floats specifying the components of the normal to the pretension section.
-    normal: float | None = None
+    normal: tuple[float, ...] = ()

@@ -41,7 +41,7 @@ class EquallySpacedAmplitude(Amplitude):
     fixedInterval: float
 
     #: A sequence of Floats specifying the amplitude values.
-    data: tuple
+    data: tuple[float, ...] = ()
 
     #: A Float specifying the time at which the first amplitude data are given. Possible values
     #: are non-negative numbers. The default value is 0.0.
