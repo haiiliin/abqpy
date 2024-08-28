@@ -44,11 +44,11 @@ class AssembledFastener(Fastener):
 
     #: A sequence of Strings specifying the names of the template model surfaces that are
     #: referenced by tie or coupling constraints.
-    templateSurfaces: tuple
+    templateSurfaces: tuple[str, ...] = ()
 
     #: A sequence of Strings specifying the names of the master model surfaces that will be
     #: substituted for the template model constraint surfaces.
-    assignedSurfaces: tuple
+    assignedSurfaces: tuple[str, ...] = ()
 
     #: A String specifying the name of the property prefix string. This string will be
     #: prepended to every property name as it is copied to the master model from the template

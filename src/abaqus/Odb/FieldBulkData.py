@@ -46,35 +46,35 @@ class FieldBulkData:
     #: A sequence of Ints specifying the element labels of the elements in the block.
     #: **elementLabels** is valid only if **position** = INTEGRATION_POINT, CENTROID, ELEMENT_NODAL,
     #: or ELEMENT_FACE.
-    elementLabels: tuple = ()
+    elementLabels: tuple[int, ...] = ()
 
     #: A sequence of Ints specifying the node labels of the nodes in the block. **nodelabels** is
     #: valid only if **position** = ELEMENT_NODAL or NODAL.
-    nodeLabels: tuple = ()
+    nodeLabels: tuple[int, ...] = ()
 
     #: A sequence of Strings specifying the component labels.
-    componentLabels: tuple = ()
+    componentLabels: tuple[str, ...] = ()
 
     #: A sequence of Ints specifying the integration points in the elements in the block.
     #: **integrationPoints** is available only if **position** = INTEGRATION_POINT.
-    integrationPoints: tuple = ()
+    integrationPoints: tuple[int, ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **data** is a sequence containing the components for each element or node in the
     #: block. If the underlying data are in double precision, an exception will be thrown.
-    data: tuple = ()
+    data: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **conjugateData** is a sequence containing the imaginary part of the components
     #: for each element or node in the block. If the underlying data are in double precision,
     #: an exception will be thrown.
-    conjugateData: tuple = ()
+    conjugateData: tuple[float, ...] = ()
 
     #: A sequence of Floats specifying the calculated von Mises stress at each output location
     #: in the block of element data, or NULL. The value is valid only when the
     #: **validInvariants** member includes MISES; otherwise, the value is indeterminate.
     #: Conjugate data will be ignored in invariant calculation.
-    mises: tuple = ()
+    mises: tuple[float, ...] = ()
 
     #: A pointer to an array of Floats specifying the quaternion representing the local
     #: coordinate system (the rotation from global to local) at each output location. The
