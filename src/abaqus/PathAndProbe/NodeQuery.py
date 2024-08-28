@@ -21,4 +21,4 @@ class NodeQuery:
 
     #: A tuple of Floats specifying the **X**, **Y**, and **Z** coordinates of the most recently
     #: queried node.
-    nodePos: float | None = None
+    nodePos: tuple[float, ...] = ()

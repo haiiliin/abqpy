@@ -70,14 +70,14 @@ class ContourIntegral(Crack):
     #: the crack normal direction. Each point is defined by a tuple of two or three coordinates
     #: indicating its position. This argument is required only when
     #: **extensionDirectionMethod** = CRACK_NORMAL. The default value is an empty sequence.
-    crackNormal: tuple = ()
+    crackNormal: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of sequences of sequences of Floats specifying the vectors that indicate the
     #: set of crack extension directions. Each vector is described by a tuple of two points,
     #: and each point is described by a tuple of two or three coordinates indicating its
     #: position. This argument is required only when **extensionDirectionMethod** = Q_VECTORS. The
     #: default value is an empty sequence.
-    qVectors: tuple = ()
+    qVectors: tuple[tuple[float, ...], ...] = ()
 
     #: A Float specifying the position of the midside node along the edges of the second-order
     #: elements that radiate from the crack tip. Possible values are 0.0 < **midNodeParameter**

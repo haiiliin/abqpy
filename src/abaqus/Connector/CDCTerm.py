@@ -47,7 +47,7 @@ class CDCTerm:
     #: available components can be specified if the DerivedComponent object is being referenced
     #: by a Potential object. This is not the case if the DerivedComponent object is referenced
     #: by a ConnectorFriction object directly. The default value is an empty sequence.
-    intrinsicComponents: tuple
+    intrinsicComponents: tuple[int, ...] = ()
 
     #: A sequence of sequences of Floats specifying components numbers and temperature and
     #: field values. Each sequence of the table data specifies:The first intrinsic component
@@ -56,7 +56,7 @@ class CDCTerm:
     #: number.Etc.If applicable, the temperature value.If applicable, the value of the first
     #: field variable.If applicable, the value of the second field variable.Etc.The default
     #: value is an empty sequence.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the method for combining contributing terms: square root
     #: of a sum of the squares, direct sum, or Macauley sum. Possible values are RSS, SUM, and
@@ -81,7 +81,7 @@ class CDCTerm:
     #: component definition. Possible values are 1 ≤ **indepComponents** ≤ 6. Only available
     #: components can be specified. The **indepComponents** argument applies only if
     #: **localDependency** = ON. The default value is an empty sequence.
-    indepComponents: tuple = ()
+    indepComponents: tuple[int, ...] = ()
 
     #: A Boolean specifying whether the table data depend on temperature. The default value is
     #: OFF.

@@ -25,7 +25,7 @@ class LeafFromSurfaceSets(Leaf):
 
     #: A sequence of Strings specifying surface sets, or a String specifying a single surface
     #: set.
-    surfaceSets: tuple
+    surfaceSets: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, surfaceSets: tuple):

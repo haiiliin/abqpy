@@ -44,7 +44,7 @@ class HeatCapacitance(Inertia):
 
     #: A sequence of sequences of Floats specifying heat capacitance properties. The items in
     #: the table data are described below.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
