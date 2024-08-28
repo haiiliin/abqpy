@@ -130,7 +130,7 @@ class FieldValue:
     #: VECTOR data for connector element outputs. For connector element outputs the rotation is
     #: from local to global. If the underlying data are in double precision, an exception will
     #: be thrown.
-    localCoordSystem: tuple = ()
+    localCoordSystem: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of tuples of Floats specifying the 3 x 3 matrix of Doubles specifying the
     #: direction cosines of the local coordinate system (the rotation from global to local).
@@ -139,24 +139,24 @@ class FieldValue:
     #: for VECTOR data for connector element outputs. For connector element outputs the
     #: rotation is from local to global. If the underlying data are in single precision, an
     #: exception will be thrown.
-    localCoordSystemDouble: tuple = ()
+    localCoordSystemDouble: tuple[tuple[float, ...], ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **data** is a sequence containing the components. If the underlying data are in
     #: double precision an exception will be thrown.
-    data: tuple = ()
+    data: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **data** is a sequence containing the components. If the underlying data are in
     #: single precision, an exception will be thrown.
-    dataDouble: tuple = ()
+    dataDouble: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **conjugateData** is a sequence containing the components. If the underlying data
     #: are in double precision, an exception will be thrown.
-    conjugateData: tuple = ()
+    conjugateData: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying data in the form described by **type**. If **type** = TENSOR or
     #: VECTOR, **conjugateData** is a sequence containing the components. If the underlying data
     #: are in single precision, an exception will be thrown.
-    conjugateDataDouble: tuple = ()
+    conjugateDataDouble: tuple[float, ...] = ()

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Sequence
-
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -209,24 +207,24 @@ class ConnectorDamage(ConnectorBehaviorOption):
 
     #: A sequence of sequences of Floats specifying the initiation properties. The default
     #: value is an empty sequence.Items in the **initiationTable** data are described below.
-    initiationTable: Sequence[Sequence[float]] = ()
+    initiationTable: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of sequences of Floats specifying the evolution properties. The default value
     #: is an empty sequence.Items in the **evolutionTable** data are described below. This
     #: argument is only applicable if **evolution** = ON.
-    evolutionTable: tuple = ()
+    evolutionTable: tuple[tuple[float, ...], ...] = ()
 
     #: A sequence of Ints specifying the components of relative motion that will be damaged.
     #: Possible values are 1 ≤ **components** ≤ 6. Only available components can be specified.
     #: This argument is applicable only if **evolution** = ON and **useAffected** = ON. The default
     #: value is an empty sequence.
-    affectedComponents: Sequence[int] = ()
+    affectedComponents: tuple[int, ...] = ()
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
     #: specified. This argument can be specified only if **coupling** = UNCOUPLED. The default
     #: value is an empty sequence.
-    components: tuple = ()
+    components: tuple[int, ...] = ()
 
     @abaqus_method_doc
     def __init__(

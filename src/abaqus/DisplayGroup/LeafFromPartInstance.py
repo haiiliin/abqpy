@@ -24,7 +24,7 @@ class LeafFromPartInstance(Leaf):
     leafType: SymbolicConstant
 
     #: A sequence of Strings specifying the names of the part instances.
-    partInstanceName: tuple
+    partInstanceName: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, partInstanceName: tuple):
