@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -47,7 +48,11 @@ class SlidingFormulationAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: Literal[C.SMALL_SLIDING, C.NONE, C.GLOBAL]):
+    def appendInStep(
+        self,
+        stepName: str,
+        assignments: tuple[tuple[Region | Literal[C.GLOBAL], Literal[C.SMALL_SLIDING, C.NONE, C.GLOBAL]], ...],
+    ):
         """This method allows you to add sliding formulation assignments to new surface pairs in a given step.
 
         Parameters
@@ -57,10 +62,12 @@ class SlidingFormulationAssignment:
             are to be defined.
         assignments
             A sequence of tuples specifying the sliding formulation assignments. Each tuple contains
-            two entries:A region object or the SymbolicConstant GLOBAL specifying the surface to
-            which the sliding formulation attribute is assigned.A SymbolicConstant specifying the
-            overriding the smoothness value to be used for the first surface. Possible values of the
-            SymbolicConstant are NONE and SMALL_SLIDING.
+            two entries:
+
+            - A region object or the SymbolicConstant GLOBAL specifying the surface to which the sliding
+              formulation attribute is assigned.
+            - A SymbolicConstant specifying the overriding the smoothness value to be used for the first
+              surface. Possible values of the SymbolicConstant are NONE and SMALL_SLIDING.
         """
         ...
 
