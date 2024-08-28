@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from .FXColor import FXColor
 
 
