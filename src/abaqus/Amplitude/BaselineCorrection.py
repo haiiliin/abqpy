@@ -24,7 +24,7 @@ class BaselineCorrection:
     #: A sequence of Floats specifying the correction time interval end points. Possible values
     #: are positive and monotonically increasing Floats. The default value is an empty
     #: sequence.
-    intervals: tuple = ()
+    intervals: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, intervals: tuple = ()):

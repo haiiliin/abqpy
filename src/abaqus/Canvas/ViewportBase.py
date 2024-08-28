@@ -316,18 +316,18 @@ class ViewportBase(_OptionsBase):
 
     #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
     #: when **displayMode** = OVERLAY.
-    visibleLayers: tuple = ()
+    visibleLayers: tuple[str, ...] = ()
 
     #: A pair of Floats specifying the **X**  and **Y** coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
-    currentOrigin: Sequence[float] = ()
+    currentOrigin: tuple[float, float] = (0.0, 0.0)
 
     #: A pair of Floats specifying the **X**  and **Y** coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
-    iconOrigin: Sequence[float] = ()
+    iconOrigin: tuple[float, float] = (0.0, 0.0)
 
     #: A LightOptions object.
     lightOptions: LightOptions = LightOptions()
@@ -346,7 +346,7 @@ class ViewportBase(_OptionsBase):
 
     #: A tuple of Strings specifying keys to the session.drawings repository. The default value
     #: is an empty sequence.
-    drawings: tuple = ()
+    drawings: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(
