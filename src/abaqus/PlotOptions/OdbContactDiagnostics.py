@@ -25,7 +25,7 @@ class OdbContactDiagnostics:
 
     #: A sequence of strings specifying the nature of each of the contact pair. This attribute
     #: is read-only.
-    detailStrings: tuple = ()
+    detailStrings: tuple[str, ...] = ()
 
     #: A string specifying the type of contact initialization. This attribute is read-only.
     type: str = ""

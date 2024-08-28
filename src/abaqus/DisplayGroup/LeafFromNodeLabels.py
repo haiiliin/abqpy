@@ -30,7 +30,7 @@ class LeafFromNodeLabels(Leaf):
     #: be any of the following:An Int specifying a single node label; for example, `1`.A String
     #: specifying a single node label; for example, `'7'`.A String specifying a sequence of
     #: node labels; for example, `'3:5'` and `'3:15:3'`.
-    nodeLabels: tuple
+    nodeLabels: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, partInstanceName: str, nodeLabels: tuple):

@@ -25,7 +25,7 @@ class DataTable:
     instanceName: str = ""
 
     #: A tuple of Ints specifying the domain node, element or integration point identifiers.
-    domain: int | None = None
+    domain: tuple[int, ...] = ()
 
     #: A tuple of Floats specifying the data within the domain.
-    table: float | None = None
+    table: tuple[float, ...] = ()

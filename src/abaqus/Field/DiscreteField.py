@@ -36,7 +36,7 @@ class DiscreteField(Field):
     name: str
 
     #: A sequence of Floats specifying a sequence of floats specifying the default values.
-    defaultValues: tuple
+    defaultValues: tuple[float, ...] = ()
 
     #: A SymbolicConstant or an Int specifying the type of data represented by this discrete
     #: field. Possible values are SCALAR, ORIENTATION, and PRESCRIBEDCONDITION_DOF.

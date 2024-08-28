@@ -63,7 +63,7 @@ class GapElectricalConductance:
 
     #: A sequence of sequences of Floats specifying clearance dependency data. The items in the
     #: table data are described below.
-    clearanceDepTable: tuple = ()
+    clearanceDepTable: tuple[tuple[float, ...], ...] = ()
 
     #: A Boolean specifying whether to use temperature-dependent data with pressure dependency.
     #: The default value is OFF.
@@ -75,7 +75,7 @@ class GapElectricalConductance:
 
     #: A sequence of sequences of Floats specifying pressure dependency data. The items in the
     #: table data are described below.
-    pressureDepTable: tuple = ()
+    pressureDepTable: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(
