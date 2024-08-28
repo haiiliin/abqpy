@@ -7,6 +7,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2024"
         assignees:
@@ -23,6 +29,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2024"
         assignees:
@@ -42,6 +54,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2023"
         assignees:
@@ -60,6 +78,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2023"
         assignees:
@@ -79,6 +103,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2022"
         assignees:
@@ -97,6 +127,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2022"
         assignees:
@@ -116,6 +152,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2021"
         assignees:
@@ -134,6 +176,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2021"
         assignees:
@@ -153,6 +201,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2020"
         assignees:
@@ -171,6 +225,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2020"
         assignees:
@@ -190,6 +250,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2019"
         assignees:
@@ -208,6 +274,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2019"
         assignees:
@@ -227,6 +299,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2018"
         assignees:
@@ -245,6 +323,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2018"
         assignees:
@@ -264,6 +348,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2017"
         assignees:
@@ -282,6 +372,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2017"
         assignees:
@@ -301,6 +397,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2016"
         assignees:
@@ -319,6 +421,12 @@ pull_request_rules:
     actions:
       backport:
         title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
         branches:
           - "2016"
         assignees:
