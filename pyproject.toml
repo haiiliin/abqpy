@@ -93,9 +93,11 @@ abqpy = "abqpy.__main__:main"
 where = ["src"]
 
 [tool.setuptools_scm]
-version_scheme = "guess-next-dev"
 write_to = "src/abqpy/_version.py"
+<<<<<<< HEAD
 fallback_version = "2019.0.0-dev"
+=======
+>>>>>>> 773f0279 ([bugfix] Update version configurations (#5771))
 
 [tool.pytest.ini_options]
 testpaths = ["src", "tests"]
