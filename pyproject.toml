@@ -94,10 +94,6 @@ where = ["src"]
 
 [tool.setuptools_scm]
 write_to = "src/abqpy/_version.py"
-<<<<<<< HEAD
-fallback_version = "2018.0.0-dev"
-=======
->>>>>>> 773f0279 ([bugfix] Update version configurations (#5771))
 
 [tool.pytest.ini_options]
 testpaths = ["src", "tests"]
