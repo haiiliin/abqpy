@@ -108,8 +108,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs) -> None:
-        ...
+    def __init__(self, *args, **kwargs) -> None: ...
 
     def ConstrainedSketchFromGeometryFile(self, name: str, geometryFile: AcisFile) -> ConstrainedSketch:
         """This method creates a ConstrainedSketch object and places it in the sketches repository.

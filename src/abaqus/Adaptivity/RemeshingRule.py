@@ -41,7 +41,7 @@ class RemeshingRule:
 
     #: A sequence of Strings specifying the output request variables that Abaqus will use as
     #: error indicators.
-    variables: tuple
+    variables: tuple[str, ...] = ()
 
     #: A String specifying a descriptive string for this rule. The default value is an empty
     #: string.

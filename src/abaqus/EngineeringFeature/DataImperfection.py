@@ -39,7 +39,7 @@ class DataImperfection(Imperfection):
 
     #: A sequence of sequences of Ints and Floats specifying the imperfection components at a given node. The
     #: items in the table data are described below.
-    imperfectionTable: Sequence[Sequence[Union[int, float]]]
+    imperfectionTable: tuple[tuple[int | float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the coordinate system. The imperfection values in the data lines would be
     #: treated as perturbation values of the respective coordinates. Possible values are R, C, and S. The default
@@ -52,7 +52,7 @@ class DataImperfection(Imperfection):
     def __init__(
         self,
         name: str,
-        imperfectionTable: Sequence[Sequence[Union[int, float]]],
+        imperfectionTable: tuple[tuple[int | float, ...], ...],
         system: Literal[C.R, C.C, C.S] = R,
     ):
         """This method creates a DataImperfection object.

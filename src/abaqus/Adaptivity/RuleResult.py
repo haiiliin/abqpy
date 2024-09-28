@@ -1,11 +1,11 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-
-# Prevent circular import
-class ErrorIndicatorResult:
-    ...
+if TYPE_CHECKING:
+    from .ErrorIndicatorResult import ErrorIndicatorResult
 
 
 @abaqus_class_doc
@@ -37,7 +37,7 @@ class RuleResult:
 
     #: A sequence of Strings specifying the error indicator variables that have satisfied the
     #: Remeshing Rule.
-    satisfiedVars: tuple = ()
+    satisfiedVars: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(

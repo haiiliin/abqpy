@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -80,7 +82,7 @@ class CohesiveBehavior:
     #: A sequence of sequences of Floats specifying the traction-separation coefficients. The
     #: items in the table data are described below. This argument is valid only for
     #: **defaultPenalties** = OFF.
-    table: tuple = ()
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

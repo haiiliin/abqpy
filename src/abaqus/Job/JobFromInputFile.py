@@ -54,7 +54,7 @@ class JobFromInputFile(Job):
     messages: MessageArray = []
 
     #: A tuple of Strings specifying the environment variables and their values.
-    environment: tuple = ()
+    environment: tuple[str, ...] = ()
 
     #: A String specifying the name of the new job. The name must be a valid Abaqus/CAE object
     #: name.
@@ -116,9 +116,9 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying whether to use the double precision version of
     #: Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
     #: DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.
-    explicitPrecision: Literal[
-        C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
-    ] = SINGLE
+    explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = (
+        SINGLE
+    )
 
     #: A SymbolicConstant specifying the precision of the nodal output written to the output
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.

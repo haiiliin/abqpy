@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
@@ -37,7 +39,7 @@ class FilmConditionProp(ContactProperty):
     #: - Value of the first field variable, if the data depend on field variables.
     #: - Value of the second field variable.
     #: - Etc.
-    property: tuple = ()
+    property: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(

@@ -2085,8 +2085,8 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-        master: Region,
-        slave: Region,
+        main: Region,
+        secondary: Region,
         sliding: Literal[C.SMALL, C.FINITE],
         interactionProperty: str,
         interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
@@ -2131,10 +2131,16 @@ class InteractionModel(
         createStepName
             A String specifying the name of the step in which the SurfaceToSurfaceContactStd object
             is created.
-        master
-            A Region object specifying the main surface.
-        slave
-            A Region object specifying the secondary surface.
+        main
+            A Region object specifying the name of the main surface.
+
+            .. versionchanged:: 2022
+                The ``master`` argument was renamed to ``main``.
+        secondary
+            A Region object specifying the name of the secondary surface.
+
+            .. versionchanged:: 2022
+                The ``slave`` argument was renamed to ``secondary``.
         sliding
             A SymbolicConstant specifying the contact formulation. Possible values are FINITE and
             SMALL.
@@ -2254,8 +2260,8 @@ class InteractionModel(
         self.interactions[name] = interaction = SurfaceToSurfaceContactStd(
             name,
             createStepName,
-            master,
-            slave,
+            main,
+            secondary,
             sliding,
             interactionProperty,
             interferenceType,

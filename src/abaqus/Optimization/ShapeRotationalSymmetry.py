@@ -77,7 +77,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: A tuple of Floats representing the coordinates of a start point of the rotational
     #: symmetry.
-    startPoint: float | None = None
+    startPoint: tuple[float, ...] = ()
 
     #: A Float specifying the geometric tolerance in the 1-direction. The default value is
     #: 0.01.

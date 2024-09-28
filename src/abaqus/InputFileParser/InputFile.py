@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
@@ -22,11 +24,11 @@ class InputFile:
 
     #: A sequence of Strings specifying any additional input files included in the specified
     #: input file.
-    includes: tuple = ()
+    includes: tuple[str, ...] = ()
 
     #: A sequence of Strings for input files included in the specified input file that could
     #: not be located.
-    missingIncludes: tuple = ()
+    missingIncludes: tuple[str, ...] = ()
 
     @abaqus_method_doc
     def __init__(self, file: str, directory: str = ""):

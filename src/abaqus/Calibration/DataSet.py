@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -17,7 +19,7 @@ class DataSet:
 
     #: A sequence of pairs of Floats specifying data set type pairs. Possible values are for
     #: stress/strain, force/displacement, or transverse strain/axial strain pairs.
-    data: tuple = ()
+    data: tuple[tuple[float, float], ...] = ()
 
     #: A String specifying the type of the new dataset. Values can be "STRESS/STRAIN",
     #: "FORCE/DISPLACEMENT", or "AXIALSTRAIN/TRANSVERSESTRAIN". The default value is

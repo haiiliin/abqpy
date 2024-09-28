@@ -55,7 +55,7 @@ class Surface(Region):
 
     #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
     #: object on an output database.
-    instances: int | None = None
+    instances: tuple[int, ...] = ()
 
     @overload
     @abaqus_method_doc
@@ -215,8 +215,7 @@ class Surface(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs) -> None:
-        ...
+    def __init__(self, *args, **kwargs) -> None: ...
 
     def SurfaceByBoolean(
         self,

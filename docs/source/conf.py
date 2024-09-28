@@ -24,6 +24,7 @@ import re
 import sys
 import typing
 
+from packaging.version import Version
 from sphinx.builders.html import StandaloneHTMLBuilder
 
 # Environment variables
@@ -36,8 +37,9 @@ copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
 release = abqpy.__version__
-major, minor, patch, *_ = release.split(".")
-release = version = major
+rel = Version(release)
+version, major = rel.base_version, rel.major
+branch = major if not rel.is_prerelease else "dev"
 
 sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.insert(0, os.path.abspath("./_ext"))
@@ -218,7 +220,7 @@ html_theme = "sphinx_immaterial"
 # further.  For a list of options available for each theme, see the
 # documentation.
 READTHEDOCS = "READTHEDOCS" in os.environ
-versions = ["latest"] + [str(v) for v in range(2024, 2015, -1)]
+versions = ["dev"] + [str(v) for v in range(2024, 2015, -1)]
 with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
     edit_urls = json.load(f)
 html_theme_options = {
@@ -278,7 +280,7 @@ html_theme_options = {
     ],
     # END: version_dropdown
     "languages": [
-        {"name": alias, "link": f"/{lang}/{version}" if READTHEDOCS else f"/abqpy/{lang}/{version}", "lang": lang}
+        {"name": alias, "link": f"/{lang}/{branch}" if READTHEDOCS else f"/abqpy/{lang}/{branch}", "lang": lang}
         for lang, alias in zip(("en", "zh_CN"), ("English", "简体中文"))
     ],
     "toc_title_is_page_title": True,

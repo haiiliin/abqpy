@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Profile import Profile
@@ -37,7 +39,7 @@ class ArbitraryProfile(Profile):
     name: str
 
     #: A sequence of sequences of Floats specifying the items described below.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, name: str, table: tuple):

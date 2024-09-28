@@ -18,8 +18,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
-class Node(MeshNode):
-    ...
+class Node(MeshNode): ...
 
 
 class MeshEditPart(PartBase):
@@ -377,8 +376,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def mergeNodes(self, *args, **kwargs):
-        ...
+    def mergeNodes(self, *args, **kwargs): ...
 
     def orientElements(self, pickedElements: Sequence[MeshElement], referenceRegion: MeshFace):
         """This method orients the stack direction of elements in a continuum shell or gasket mesh.

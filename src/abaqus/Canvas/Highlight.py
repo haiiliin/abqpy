@@ -1,5 +1,6 @@
 """The Highlight commands are used to highlight objects in the current viewport and to remove the
 highlighting."""
+
 from abqpy.decorators import abaqus_function_doc
 
 

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc
 
 from .OdbAuxiliaryData import OdbAuxiliaryData

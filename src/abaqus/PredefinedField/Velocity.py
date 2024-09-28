@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -44,11 +46,11 @@ class Velocity(PredefinedField):
 
     #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the starting
     #: point of the axis about which **omega** is defined.
-    axisBegin: tuple
+    axisBegin: tuple[float, ...] = ()
 
     #: A sequence of Floats specifying the *X-*, *Y-*, and **Z**  coordinates of the end point of
     #: the axis about which **omega** is defined.
-    axisEnd: tuple
+    axisEnd: tuple[float, ...] = ()
 
     #: A String specifying the name of the AnalyticalField object associated with this
     #: predefined field. The **field** argument applies only when

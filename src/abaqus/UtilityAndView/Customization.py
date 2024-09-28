@@ -1,4 +1,5 @@
 """The following command is used to record a user-defined command in the Abaqus journal file."""
+
 from abqpy.decorators import abaqus_function_doc
 
 

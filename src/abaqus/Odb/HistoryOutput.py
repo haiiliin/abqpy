@@ -51,10 +51,10 @@ class HistoryOutput:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Literal[
-            C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS
-        ]
-        | None = None,
+        validInvariants: (
+            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
+            | None
+        ) = None,
     ) -> None:
         """This method creates a HistoryOutput object.
 
@@ -133,5 +133,4 @@ class HistoryOutput:
         """
         ...
 
-    def addData(self, *args, **kwargs) -> None:
-        ...
+    def addData(self, *args, **kwargs) -> None: ...

@@ -32,16 +32,16 @@ class OdbDatumCsys:
 
     #: A tuple of Floats specifying the coordinates of the origin of the datum coordinate
     #: system.
-    origin: float | None = None
+    origin: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying a point on the **X** axis.
-    xAxis: float | None = None
+    xAxis: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying a point on the **Y** axis.
-    yAxis: float | None = None
+    yAxis: tuple[float, ...] = ()
 
     #: A tuple of Floats specifying a point on the **Z** axis.
-    zAxis: float | None = None
+    zAxis: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def DatumCsysByThreePoints(

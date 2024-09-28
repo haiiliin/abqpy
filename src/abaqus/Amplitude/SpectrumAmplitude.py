@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -43,7 +45,7 @@ class SpectrumAmplitude(Amplitude):
 
     #: A sequence of sequences of Floats specifying the magnitude, frequency, and damping
     #: values.
-    data: tuple
+    data: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the units used for specifying the spectrum. Possible
     #: values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is

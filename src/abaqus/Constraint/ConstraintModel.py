@@ -504,16 +504,16 @@ class ConstraintModel(ModelBase):
         ----------
         name
             A String specifying the constraint repository key.
-
-            .. versionchanged:: 2022
-                The ``master`` argument was renamed to ``main``.
         main
             A Region object specifying the name of the main surface.
 
             .. versionchanged:: 2022
-                The ``slave`` argument was renamed to ``secondary``.
+                The ``master`` argument was renamed to ``main``.
         secondary
             A Region object specifying the name of the secondary surface.
+
+            .. versionchanged:: 2022
+                The ``slave`` argument was renamed to ``secondary``.
         adjust
             A Boolean specifying whether initial positions of tied secondary nodes are adjusted to
             lie on the main surface. The default value is ON.

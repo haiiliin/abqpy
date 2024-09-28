@@ -1,4 +1,5 @@
 """GUI plug-in commands register GUI plug-ins either in the **Plug-ins** menu or in a toolbox."""
+
 from typing import Sequence
 
 from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -38,7 +40,7 @@ class PeriodicAmplitude(Amplitude):
     a_0: float
 
     #: A sequence of pairs of Floats specifying AiAi and BiBi pairs.
-    data: tuple
+    data: tuple[tuple[float, float], ...] = ()
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.

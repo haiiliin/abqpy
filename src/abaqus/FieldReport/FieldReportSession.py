@@ -48,8 +48,9 @@ class FieldReportSession(SessionBase):
             C.GENERAL_PARTICLE,
             C.WHOLE_PART_INSTANCE,
         ],
-        numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
-        | None = None,
+        numericForm: (
+            Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE] | None
+        ) = None,
         complexAngle: float | None = None,
         stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
     ):

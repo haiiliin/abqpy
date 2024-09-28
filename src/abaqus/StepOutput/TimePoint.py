@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -22,7 +24,7 @@ class TimePoint:
 
     #: A sequence of sequences of Floats specifying time points at which data are written to
     #: the output database or restart files.
-    points: tuple
+    points: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, name: str, points: tuple):

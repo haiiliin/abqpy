@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
@@ -55,7 +57,7 @@ class ActuatorSensor(Interaction):
     dof: str
 
     #: A sequence of Floats specifying the initial values of the solution-dependent variables.
-    solutionDepVars: tuple
+    solutionDepVars: tuple[float, ...] = ()
 
     @abaqus_method_doc
     def __init__(

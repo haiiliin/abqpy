@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -81,7 +83,7 @@ class FluidExchangeProperty(ContactProperty):
     #: - The value of the first field variable, if the data depend on field variables.
     #: - The value of the second field variable.
     #: - Etc.
-    dataTable: tuple
+    dataTable: tuple[tuple[float, ...], ...] = ()
 
     #: A SymbolicConstant specifying the type of fluid exchange property to be defined.
     #: Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and

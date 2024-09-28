@@ -30,8 +30,9 @@ class ConstrainedSketcherOptions:
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
         autoConstrainLinearTolerance: float | None = None,
-        autoConstrainOptions: Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
-        | None = None,
+        autoConstrainOptions: (
+            Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC] | None
+        ) = None,
         dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
         editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):

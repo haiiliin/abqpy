@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -30,7 +32,7 @@ class Radiation:
 
     #: A sequence of sequences of Floats specifying the following:Effective viewfactor, FF.Gap
     #: clearance, dd.
-    table: tuple
+    table: tuple[tuple[float, ...], ...] = ()
 
     @abaqus_method_doc
     def __init__(self, mainEmissivity: float, secondaryEmissivity: float, table: tuple):
