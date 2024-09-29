@@ -1,12 +1,6 @@
 from __future__ import annotations
 
-<<<<<<< HEAD
-from typing import Union
-
-=======
 from typing import TYPE_CHECKING, Sequence, Union
-
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
 
 from typing_extensions import Literal
 
