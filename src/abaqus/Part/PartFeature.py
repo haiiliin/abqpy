@@ -11,7 +11,6 @@ from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
-from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumPlane import DatumPlane
 from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
