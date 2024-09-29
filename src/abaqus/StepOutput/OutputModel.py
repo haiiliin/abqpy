@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union
+from typing import TYPE_CHECKING, Sequence, Union
 
 from typing_extensions import Literal
 
@@ -31,6 +31,9 @@ from .HistoryOutputRequest import HistoryOutputRequest
 from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
+
 
 @abaqus_class_doc
 class OutputModel(ModelBase):
@@ -54,6 +57,7 @@ class OutputModel(ModelBase):
         timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
+        timePoint: str | None = None,
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
         interactions: str | None = None,
@@ -110,6 +114,10 @@ class OutputModel(ModelBase):
             output is written immediately after the time dictated by the specified number of
             intervals. ON indicates that output is written at the exact times dictated by the
             specified number of intervals. The default value is OFF.
+        timePoint
+            A String specifying the name of a time point object. The default value is equal to
+            the number of intervals during the step at which output database states are to be
+            written. The default value is None.
         boltLoad
             A String specifying a bolt load from which output is requested.
         sectionPoints
@@ -172,6 +180,7 @@ class OutputModel(ModelBase):
             timeInterval,
             numIntervals,
             timeMarks,
+            timePoint,
             boltLoad,
             sectionPoints,
             interactions,
@@ -409,7 +418,7 @@ class OutputModel(ModelBase):
         return integratedOutputSection
 
     @abaqus_method_doc
-    def TimePoint(self, name: str, points: tuple) -> TimePoint:
+    def TimePoint(self, name: str, points: tuple | NDArray) -> TimePoint:
         """This method creates a TimePoint object.
 
         .. note::

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union
+from typing import TYPE_CHECKING
 
 from typing_extensions import Literal
 
@@ -103,6 +103,9 @@ from .Regularization import Regularization
 from .User.Depvar import Depvar
 from .User.UserMaterial import UserMaterial
 from .User.UserOutputVariables import UserOutputVariables
+
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
 
 
 @abaqus_class_doc
@@ -208,7 +211,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def BrittleCracking(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: Literal[C.STRAIN, C.DISPLACEMENT, C.GFI] = STRAIN,
@@ -308,7 +311,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def ClayPlasticity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         intercept: float | None = None,
         hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
@@ -417,7 +420,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Conductivity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -502,7 +505,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def CrushableFoam(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         hardening: Literal[C.VOLUMETRIC, C.ISOTROPIC] = VOLUMETRIC,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -614,7 +617,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Density(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD, C.DISCRETE_FIELD] = UNIFORM,
@@ -691,7 +694,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Dielectric(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         frequencyDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -730,7 +733,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Diffusivity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         law: Literal[C.GENERAL, C.FICK] = GENERAL,
         temperatureDependency: Boolean = OFF,
@@ -774,7 +777,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def DruckerPrager(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         shearCriterion: Literal[C.LINEAR, C.HYPERBOLIC, C.EXPONENTIAL] = LINEAR,
         eccentricity: float = 0,
         testData: Boolean = OFF,
@@ -834,7 +837,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Elastic(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[
             C.ISOTROPIC,
             C.ORTHOTROPIC,
@@ -914,7 +917,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def ElectricalConductivity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         frequencyDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -1151,7 +1154,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def GapFlow(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         kmax: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1225,7 +1228,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def GasketThicknessBehavior(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tensileStiffnessFactor: float | None = None,
@@ -1313,7 +1316,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def GasketTransverseShearElastic(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         variableUnits: Literal[C.STRESS, C.FORCE] = STRESS,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1353,7 +1356,7 @@ class Material(MaterialBase):
         return self.gasketTransverseShearElastic
 
     @abaqus_method_doc
-    def Gel(self, table: tuple) -> Gel:
+    def Gel(self, table: tuple | NDArray) -> Gel:
         """This method creates a Gel object.
 
         .. note::
@@ -1378,7 +1381,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Hyperelastic(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[
             C.ARRUDA_BOYCE,
             C.MARLOW,
@@ -1646,7 +1649,7 @@ class Material(MaterialBase):
         return self.jouleHeatFraction
 
     @abaqus_method_doc
-    def LatentHeat(self, table: tuple) -> LatentHeat:
+    def LatentHeat(self, table: tuple | NDArray) -> LatentHeat:
         """This method creates a LatentHeat object.
 
         .. note::
@@ -1736,9 +1739,9 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MagneticPermeability(
         self,
-        table: tuple,
-        table2: tuple,
-        table3: tuple,
+        table: tuple | NDArray,
+        table2: tuple | NDArray,
+        table3: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         frequencyDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -1804,7 +1807,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MohrCoulombPlasticity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         deviatoricEccentricity: float | None = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
@@ -1858,7 +1861,7 @@ class Material(MaterialBase):
         return self.mohrCoulombPlasticity
 
     @abaqus_method_doc
-    def MoistureSwelling(self, table: tuple) -> MoistureSwelling:
+    def MoistureSwelling(self, table: tuple | NDArray) -> MoistureSwelling:
         """This method creates a MoistureSwelling object.
 
         .. note::
@@ -1885,7 +1888,7 @@ class Material(MaterialBase):
         self,
         specificWeight: float,
         inertialDragCoefficient: float,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1936,7 +1939,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Piezoelectric(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.STRESS, C.STRAIN] = STRESS,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1972,7 +1975,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Plastic(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         hardening: Literal[C.ISOTROPIC, C.KINEMATIC, C.COMBINED, C.JOHNSON_COOK, C.USER] = ISOTROPIC,
         rate: Boolean = OFF,
         dataType: Literal[C.HALF_CYCLE, C.PARAMETERS, C.STABILIZED] = HALF_CYCLE,
@@ -2037,7 +2040,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def PoreFluidExpansion(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         zero: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2101,7 +2104,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def PorousElastic(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         shear: Literal[C.POISSON, C.G] = POISSON,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2141,7 +2144,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def PorousMetalPlasticity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         relativeDensity: float | None = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2246,7 +2249,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Sorption(
         self,
-        absorptionTable: tuple,
+        absorptionTable: tuple | NDArray,
         lawAbsorption: Literal[C.TABULAR, C.LOG] = TABULAR,
         exsorption: Boolean = OFF,
         lawExsorption: Literal[C.TABULAR, C.LOG] = TABULAR,
@@ -2303,7 +2306,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def SpecificHeat(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         law: Literal[C.CONSTANTVOLUME, C.CONSTANTPRESSURE] = CONSTANTVOLUME,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2343,7 +2346,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Swelling(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         law: Literal[C.INPUT, C.USER] = INPUT,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2477,7 +2480,7 @@ class Material(MaterialBase):
     def Viscoelastic(
         self,
         domain: Literal[C.FREQUENCY, C.TIME],
-        table: tuple,
+        table: tuple | NDArray,
         frequency: Literal[C.FORMULA, C.TABULAR, C.PRONY, C.CREEP_TEST_DATA, C.RELAXATION_TEST_DATA] = FORMULA,
         type: Literal[C.ISOTROPIC, C.ISOTROPIC, C.TRACTION] = ISOTROPIC,
         preload: Literal[C.NONE, C.UNIAXIAL, C.VOLUMETRIC, C.UNIAXIAL_VOLUMETRIC] = NONE,
@@ -2548,7 +2551,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Viscosity(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         type: Literal[C.NEWTONIAN] = NEWTONIAN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2628,7 +2631,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def DuctileDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -2709,7 +2712,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def FldDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -2790,7 +2793,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def FlsdDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -2871,7 +2874,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def JohnsonCookDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -2952,7 +2955,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MaxeDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3037,7 +3040,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MaxsDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3122,7 +3125,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MkDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3203,7 +3206,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MsfldDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3284,7 +3287,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def QuadeDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3369,7 +3372,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def QuadsDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3454,7 +3457,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MaxpeDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3539,7 +3542,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MaxpsDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3624,7 +3627,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def ShearDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
@@ -3705,7 +3708,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def HashinDamageInitiation(
         self,
-        table: tuple,
+        table: tuple | NDArray,
         definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
