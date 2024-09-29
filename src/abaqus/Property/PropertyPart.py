@@ -99,7 +99,7 @@ class PropertyPart(PartBase):
     @abaqus_method_doc
     def SectionAssignment(
         self,
-        region: Set,
+        region: Set | Region,
         sectionName: str,
         thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
