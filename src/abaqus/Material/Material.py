@@ -1,12 +1,6 @@
 from __future__ import annotations
 
-<<<<<<< HEAD
-from typing import Union
-
-=======
-from typing import TYPE_CHECKING, Sequence, Union
-
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
+from typing import TYPE_CHECKING
 
 from typing_extensions import Literal
 
@@ -470,23 +464,8 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Creep(
         self,
-<<<<<<< HEAD
         table: tuple,
         law: Literal[C.STRAIN, C.TIME, C.HYPERBOLIC_SINE, C.USER] = STRAIN,
-=======
-        table: tuple | NDArray,
-        law: Literal[
-            C.STRAIN,
-            C.TIME,
-            C.HYPERBOLIC_SINE,
-            C.USER,
-            C.ANAND,
-            C.DARVEAUX,
-            C.DOUBLE_POWER,
-            C.POWER_LAW,
-            C.TIME_POWER_LAW,
-        ] = STRAIN,
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
@@ -2615,15 +2594,8 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Viscous(
         self,
-<<<<<<< HEAD
         table: tuple,
         law: Literal[C.STRAIN, C.TIME, C.USER] = STRAIN,
-=======
-        table: tuple | NDArray,
-        law: Literal[
-            C.STRAIN, C.TIME, C.USER, C.ANAND, C.DARVEAUX, C.DOUBLE_POWER, C.POWER_LAW, C.TIME_POWER_LAW
-        ] = STRAIN,
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
@@ -3861,115 +3833,3 @@ class Material(MaterialBase):
         RangeError
         """
         return MeanFieldHomogenization()
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def GapConductance(
-        self,
-        pressureDependency: Boolean = OFF,
-        dependencies: int = 0,
-        table: tuple = (),
-    ) -> GapConductance:
-        """This method creates a GapConductance object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].GapConductance
-                session.odbs[name].materials[name].GapConductance
-
-        .. versionadded:: 2021
-            The ``GapConductance`` method was added.
-
-        Parameters
-        ----------
-        pressureDependency
-            A Boolean specifying whether the data depend on pressure. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-
-        Returns
-        -------
-            A GapConductance object.
-        """
-        return GapConductance(pressureDependency, dependencies, table)
-
-    @abaqus_method_doc
-    def GapConvection(
-        self,
-        type: str,
-        table: tuple = (),
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-    ) -> GapConvection:
-        """This method creates a GapConvection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].GapConvection
-                session.odbs[name].materials[name].GapConvection
-
-        .. versionadded:: 2021
-            The ``GapConvection`` method was added.
-
-        Parameters
-        ----------
-        type
-            An odb_String specifying the type of gap convection. Possible values are FLUX,
-            TEMPERATURE, and TABULAR. The default value is FLUX.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-
-        Returns
-        -------
-            A GapConvection object.
-        """
-        return GapConvection(type, table, temperatureDependency, dependencies)
-
-    @abaqus_method_doc
-    def GapRadiation(
-        self,
-        mainSurfaceEmissivity: float,
-        secondarySurfaceEmissivity: float,
-        table: tuple | NDArray,
-    ) -> GapRadiation:
-        r"""This method creates a GapRadiation object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].Gapradiation
-                session.odbs[name].materials[name].Gapradiation
-
-        .. versionadded:: 2021
-            The ``GapRadiation`` method was added.
-
-        Parameters
-        ----------
-        mainSurfaceEmissivity
-            A Float specifying the Emissivity of master surface :math:`\varepsilon_A`.
-
-            .. versionchanged:: 2022
-                The ``masterSurfaceEmissivity`` argument was renamed to ``mainSurfaceEmissivity``.
-        secondarySurfaceEmissivity
-            A Float specifying the Emissivity of the slave surface :math:`\varepsilon_B`.
-
-            .. versionchanged:: 2022
-                The ``slaveSurfaceEmissivity`` argument was renamed to ``secondarySurfaceEmissivity``.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-
-        Returns
-        -------
-            A Gapradiation object.
-        """
-        return GapRadiation(mainSurfaceEmissivity, secondarySurfaceEmissivity, table)
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
