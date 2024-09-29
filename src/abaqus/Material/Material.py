@@ -3933,15 +3933,9 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def GapRadiation(
         self,
-<<<<<<< HEAD
         masterSurfaceEmissivity: float,
         slaveSurfaceEmissivity: float,
-        table: tuple,
-=======
-        mainSurfaceEmissivity: float,
-        secondarySurfaceEmissivity: float,
         table: tuple | NDArray,
->>>>>>> 2e02a2eb ([typing] Fix typing errors about part features (#5807))
     ) -> GapRadiation:
         """This method creates a GapRadiation object.
 
