@@ -58,7 +58,7 @@ class Feature:
     name: str = ""
 
     #: An Int specifying the ID of the feature.
-    id: int | None = None
+    id: int
 
     @abaqus_method_doc
     def AttachmentPoints(
