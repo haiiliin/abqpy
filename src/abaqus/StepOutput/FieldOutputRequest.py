@@ -72,6 +72,7 @@ class FieldOutputRequest:
         timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
+        timePoint: str | None = None,
         boltLoad: str = "",
         sectionPoints: Union[Sequence[int], Literal[C.DEFAULT]] = DEFAULT,
         interactions: str | None = None,
@@ -128,6 +129,10 @@ class FieldOutputRequest:
             output is written immediately after the time dictated by the specified number of
             intervals. ON indicates that output is written at the exact times dictated by the
             specified number of intervals. The default value is OFF.
+        timePoint
+            A String specifying the name of a time point object. The default value is equal to
+            the number of intervals during the step at which output database states are to be
+            written. The default value is None.
         boltLoad
             A String specifying a bolt load from which output is requested.
         sectionPoints
