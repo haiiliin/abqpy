@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Sequence, Union
+from typing import TYPE_CHECKING, Sequence
 
 from typing_extensions import Literal
 
@@ -736,9 +736,9 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def CutExtrude(
         self,
-        sketchPlane: str,
+        sketchPlane: DatumPlane | Face,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
-        sketchUpEdge: Edge,
+        sketchUpEdge: Edge | Datum,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM],
         sketch: ConstrainedSketch,
         depth: float | None = None,
@@ -1640,7 +1640,12 @@ class PartFeature(BaseFeature):
         return Feature()
 
     @abaqus_method_doc
-    def Round(self, radius: float, edgeList: Sequence[Edge], vertexList: Sequence[Vertex]) -> "Feature":
+    def Round(
+        self,
+        radius: float,
+        edgeList: Sequence[Edge] | None = None,
+        vertexList: Sequence[Vertex] | None = None,
+    ) -> "Feature":
         """This method creates an additional Feature object by rounding (filleting) the given list of entities
         with the given radius.
 
@@ -2050,9 +2055,9 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def SolidExtrude(
         self,
-        sketchPlane: Union[DatumPlane, Face],
+        sketchPlane: DatumPlane | Face,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
-        sketchUpEdge: Union[Edge, DatumAxis],
+        sketchUpEdge: Edge | Datum,
         sketch: ConstrainedSketch,
         depth: float | None = None,
         upToFace: Face | None = None,
@@ -2410,9 +2415,9 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def Wire(
         self,
-        sketchPlane: Union[Datum, Face],
+        sketchPlane: Datum | Face,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
-        sketchUpEdge: Union[Edge, Datum],
+        sketchUpEdge: Edge | Datum,
         sketch: ConstrainedSketch,
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> "Feature":
