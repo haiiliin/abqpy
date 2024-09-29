@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import Sequence, Union, ValuesView, overload
 
 from typing_extensions import Literal
 
@@ -208,7 +208,7 @@ class RegionPart(RegionPartBase):
         xVertices: Sequence[Vertex] | None = None,
         xEdges: Sequence[Edge] | None = None,
         xFaces: Sequence[Face] | None = None,
-        referencePoints: Sequence[ReferencePoint] = (),
+        referencePoints: Sequence[ReferencePoint] | ValuesView[ReferencePoint] | None = None,
         skinFaces: tuple[tuple[str, Sequence[Face]], ...] = ...,
         skinEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,
         stringerEdges: tuple[tuple[str, Sequence[Edge]], ...] = ...,

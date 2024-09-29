@@ -364,11 +364,11 @@ class ConstraintModel(ModelBase):
     def RigidBody(
         self,
         name: str,
-        refPointRegion: Region,
-        bodyRegion: str | None = None,
-        tieRegion: str | None = None,
-        pinRegion: str | None = None,
-        surfaceRegion: str | None = None,
+        refPointRegion: Region | None,
+        bodyRegion: Region | None = None,
+        tieRegion: Region | None = None,
+        pinRegion: Region | None = None,
+        surfaceRegion: Region | None = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ) -> RigidBody:
