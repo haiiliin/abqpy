@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import Sequence, Union, ValuesView, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -65,7 +65,7 @@ class Region:
         edges: Sequence[Edge] | None = None,
         faces: Sequence[Face] | None = None,
         cells: Sequence[Cell] | None = None,
-        referencePoints: Sequence[ReferencePoint] = (),
+        referencePoints: Sequence[ReferencePoint] | ValuesView[ReferencePoint] | None = None,
         xVertices: Sequence[Vertex] | None = None,
         xEdges: Sequence[Vertex] | None = None,
         xFaces: Sequence[Vertex] | None = None,
