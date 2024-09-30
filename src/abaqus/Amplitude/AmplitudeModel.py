@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union
+from typing import TYPE_CHECKING, Sequence, Union
 
 from typing_extensions import Literal
 
@@ -28,6 +28,9 @@ from .SmoothStepAmplitude import SmoothStepAmplitude
 from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
+
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
 
 
 @abaqus_class_doc
@@ -231,7 +234,7 @@ class AmplitudeModel(ModelBase):
         frequency: float,
         start: float,
         a_0: float,
-        data: tuple,
+        data: tuple | NDArray,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ) -> PeriodicAmplitude:
         """This method creates a PeriodicAmplitude object.
@@ -521,7 +524,7 @@ class AmplitudeModel(ModelBase):
     def TabularAmplitude(
         self,
         name: str,
-        data: Sequence[Sequence[float]],
+        data: Sequence[Sequence[float]] | NDArray,
         smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ) -> TabularAmplitude:

@@ -935,7 +935,7 @@ class StepModel(ModelBase):
         ] = AUTOMATIC_GLOBAL,
         maxIncrement: float | None = None,
         scaleFactor: float = 1,
-        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
+        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] | tuple = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: float | None = None,
