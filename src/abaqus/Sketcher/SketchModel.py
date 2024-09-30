@@ -1,9 +1,14 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Model.ModelBase import ModelBase
 from .ConstrainedSketch import ConstrainedSketch
+
+if TYPE_CHECKING:
+    from numpy.typing import NDArray
 
 
 @abaqus_class_doc
@@ -22,7 +27,7 @@ class SketchModel(ModelBase):
         name: str,
         sheetSize: float,
         gridSpacing: float | None = None,
-        transform: tuple = (),
+        transform: tuple | NDArray = (),
     ) -> ConstrainedSketch:
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the method returns
         None.

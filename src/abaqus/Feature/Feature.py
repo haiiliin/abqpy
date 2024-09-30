@@ -13,8 +13,6 @@ from ..BasicGeometry.InterestingPoint import InterestingPoint
 from ..BasicGeometry.ReferencePoint import ReferencePoint as ReferencePointType
 from ..BasicGeometry.Transform import Transform
 from ..Datum.Datum import Datum
-from ..Datum.DatumAxis import DatumAxis
-from ..Datum.DatumPlane import DatumPlane
 from ..Datum.DatumPoint import DatumPoint
 from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshFace import MeshFace
@@ -406,7 +404,7 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByNormalToPlane(
         self,
-        plane: Face | MeshFace | DatumPlane,
+        plane: Face | MeshFace | Datum,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object normal to the specified plane and passing
@@ -439,7 +437,7 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByParToEdge(
         self,
-        edge: Edge | MeshEdge | DatumAxis,
+        edge: Edge | MeshEdge | Datum,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object parallel to the specified edge and
@@ -500,8 +498,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByRotation(
         self,
-        line: Edge | DatumAxis | MeshEdge,
-        axis: Edge | DatumAxis | MeshEdge,
+        line: Edge | Datum | MeshEdge,
+        axis: Edge | Datum | MeshEdge,
         angle: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object in a three-dimensional model by rotating
@@ -539,7 +537,7 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByRotation(
         self,
-        line: Edge | DatumAxis | MeshEdge,
+        line: Edge | Datum | MeshEdge,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
         angle: float,
     ) -> Feature:
@@ -645,8 +643,8 @@ class Feature:
     @abaqus_method_doc
     def DatumAxisByTwoPlane(
         self,
-        plane1: Face | MeshFace | DatumPlane,
-        plane2: Face | MeshFace | DatumPlane,
+        plane1: Face | MeshFace | Datum,
+        plane2: Face | MeshFace | Datum,
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object at the intersection of two planes.
 
@@ -795,8 +793,8 @@ class Feature:
         origin: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
         point1: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
         point2: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
-        line1: Edge | DatumAxis | MeshEdge,
-        line2: Edge | DatumAxis | MeshEdge,
+        line1: Edge | Datum | MeshEdge,
+        line2: Edge | Datum | MeshEdge,
         name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from three points.
@@ -849,8 +847,8 @@ class Feature:
     def DatumCsysByTwoLines(
         self,
         coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
-        line1: Edge | MeshEdge | DatumAxis,
-        line2: Edge | MeshEdge | DatumAxis,
+        line1: Edge | MeshEdge | Datum,
+        line2: Edge | MeshEdge | Datum,
         name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from two orthogonal lines. The origin of
@@ -923,7 +921,7 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByOffset(
         self,
-        plane: Face | MeshFace | DatumPlane,
+        plane: Face | MeshFace | Datum,
         flip: Literal[C.SIDE1, C.SIDE2],
         offset: float,
     ) -> Feature:
@@ -961,7 +959,7 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByOffset(
         self,
-        plane: Face | MeshFace | DatumPlane,
+        plane: Face | MeshFace | Datum,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset from an existing plane and
@@ -997,8 +995,8 @@ class Feature:
 
     def DatumPlaneByRotation(
         self,
-        plane: Face | MeshFace | DatumPlane,
-        axis: Edge | MeshEdge | DatumAxis,
+        plane: Face | MeshFace | Datum,
+        axis: Edge | MeshEdge | Datum,
         angle: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object by rotating a plane about the specified
@@ -1068,7 +1066,7 @@ class Feature:
     @abaqus_method_doc
     def DatumPlaneByLinePoint(
         self,
-        line: Edge | DatumAxis | MeshEdge,
+        line: Edge | Datum | MeshEdge,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object that pass through the specified line and
@@ -1102,7 +1100,7 @@ class Feature:
     def DatumPlaneByPointNormal(
         self,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
-        normal: Edge | MeshEdge | DatumAxis,
+        normal: Edge | MeshEdge | Datum,
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object normal to the specified line and running
         through the specified point.
@@ -1248,10 +1246,10 @@ class Feature:
     @abaqus_method_doc
     def DatumPointByOnFace(
         self,
-        face: Face | DatumPlane,
-        edge1: Edge | DatumAxis,
+        face: Face | Datum,
+        edge1: Edge | Datum,
         offset1: float,
-        edge2: Edge | DatumAxis,
+        edge2: Edge | Datum,
         offset2: float,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object on the specified face, offset from two
@@ -1322,7 +1320,7 @@ class Feature:
     def DatumPointByProjOnEdge(
         self,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
-        edge: Edge | MeshEdge | DatumAxis,
+        edge: Edge | MeshEdge | Datum,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object along an edge by projecting an existing
         point along the normal to the edge.
@@ -1355,7 +1353,7 @@ class Feature:
     def DatumPointByProjOnFace(
         self,
         point: ConstrainedSketchVertex | DatumPoint | MeshNode | InterestingPoint | Sequence[float] | NDArray,
-        face: Face | DatumPlane,
+        face: Face | Datum,
     ) -> Feature:
         """This method creates a Feature object and a DatumPoint object on a specified face by projecting an
         existing point onto the face.
@@ -1388,11 +1386,11 @@ class Feature:
     @abaqus_method_doc
     def MakeSketchTransform(
         self,
-        sketchPlane: DatumPlane | Face,
+        sketchPlane: Datum | Face,
         origin: tuple = (),
         sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2] = SIDE1,
-        sketchUpEdge: Edge | DatumAxis | None = None,
+        sketchUpEdge: Edge | Datum | None = None,
     ) -> Transform:
         """This method creates a Transform object. A Transform object is a 4x3 matrix of Floats that represents
         the transformation from sketch coordinates to part coordinates.
@@ -1435,7 +1433,7 @@ class Feature:
         return Transform()
 
     @abaqus_method_doc
-    def PartitionCellByDatumPlane(self, cells: Sequence[Cell], datumPlane: DatumPlane) -> Feature:
+    def PartitionCellByDatumPlane(self, cells: Sequence[Cell], datumPlane: Datum) -> Feature:
         """This method partitions one or more cells using the given datum plane.
 
         .. note::
@@ -1496,7 +1494,7 @@ class Feature:
         self,
         cells: Sequence[Cell],
         edges: Edge,
-        line: Edge | DatumAxis,
+        line: Edge | Datum,
         sense: Literal[C.FORWARD, C.REVERSE],
     ) -> Feature:
         """This method partitions one or more cells by extruding selected edges in the given direction.
@@ -1639,7 +1637,7 @@ class Feature:
         self,
         cells: Sequence[Cell],
         point: ConstrainedSketchVertex | InterestingPoint | DatumPoint,
-        normal: Edge | DatumAxis,
+        normal: Edge | Datum,
     ) -> Feature:
         """This method partitions one or more cells using a plane defined by a point and a normal direction.
 
@@ -1742,7 +1740,7 @@ class Feature:
         return Feature()
 
     @abaqus_method_doc
-    def PartitionEdgeByDatumPlane(self, edges: Sequence[Edge], datumPlane: DatumPlane) -> Feature:
+    def PartitionEdgeByDatumPlane(self, edges: Sequence[Edge], datumPlane: Datum) -> Feature:
         """This method partitions an edge where it intersects with a datum plane.
 
         .. note::
@@ -1935,7 +1933,7 @@ class Feature:
         return Feature()
 
     @abaqus_method_doc
-    def PartitionFaceByDatumPlane(self, faces: Sequence[Face], datumPlane: DatumPlane) -> Feature:
+    def PartitionFaceByDatumPlane(self, faces: Sequence[Face], datumPlane: Datum) -> Feature:
         """This method partitions one or more faces using the given datum plane.
 
         .. note::
@@ -2123,7 +2121,7 @@ class Feature:
     def PartitionFaceBySketchDistance(
         self,
         faces: Sequence[Face],
-        sketchPlane: Face | DatumPlane,
+        sketchPlane: Face | Datum,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
@@ -2174,7 +2172,7 @@ class Feature:
     def PartitionFaceBySketchRefPoint(
         self,
         faces: Sequence[Face],
-        sketchPlane: Face | DatumPlane,
+        sketchPlane: Face | Datum,
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         point: ConstrainedSketchVertex | DatumPoint | InterestingPoint | Sequence[float] | NDArray,
@@ -2222,7 +2220,7 @@ class Feature:
     def PartitionFaceBySketchThruAll(
         self,
         faces: Sequence[Face],
-        sketchPlane: str,
+        sketchPlane: Face | Datum,
         sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: str,
         sketch: ConstrainedSketch,
