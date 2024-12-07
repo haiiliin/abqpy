@@ -1465,7 +1465,7 @@ class InteractionModel(
 
                 mdb.models[name].FluidExchangeActivation
 
-        .. versionadded:: 2024
+        .. versionadded:: 2025
             The ``FluidExchangeActivation`` method was added.
 
         Parameters
@@ -1567,7 +1567,7 @@ class InteractionModel(
 
                 mdb.models[name].FluidExchangeActivation
 
-        .. versionadded:: 2024
+        .. versionadded:: 2025
             The ``FluidExchangeActivation`` method was added.
 
         Parameters
@@ -2416,7 +2416,7 @@ class InteractionModel(
 
                 mdb.models[name].WearProperty
 
-        .. versionadded:: 2024
+        .. versionadded:: 2025
             The ``WearProperty`` method was added.
 
         Parameters

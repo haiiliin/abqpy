@@ -22,7 +22,7 @@ class WearProperty(InteractionProperty):
 
         - FLUID INFLATOR ACTIVATION
 
-    .. versionadded:: 2024
+    .. versionadded:: 2025
         The ``WearProperty`` class was added.
     """
 

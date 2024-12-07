@@ -159,6 +159,9 @@ class FreeBody:
 
                 session.freeBodies[name].getFreeBodyData
 
+        .. versionadded:: 2025
+            The ``getFreeBodyData`` method was added.
+
         Parameters
         ----------
         step

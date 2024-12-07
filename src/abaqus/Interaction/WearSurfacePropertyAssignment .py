@@ -17,7 +17,7 @@ class WearSurfacePropertyAssignment(InteractionProperty):
             import interaction
             mdb.models[name].interactions[name].wearSurfacePropertyAssignments
 
-    .. versionadded:: 2024
+    .. versionadded:: 2025
         The ``WearSurfacePropertyAssignment`` class was added.
     """
 

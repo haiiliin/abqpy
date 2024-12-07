@@ -25,7 +25,7 @@ class FluidExchangeActivation(Interaction):
 
         - FLUID EXCHANGE ACTIVATION
 
-    .. versionadded:: 2024
+    .. versionadded:: 2025
         The ``FluidExchangeActivation`` class was added.
     """
 

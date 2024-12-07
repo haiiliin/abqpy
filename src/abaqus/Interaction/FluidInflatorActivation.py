@@ -25,7 +25,7 @@ class FluidInflatorActivation(Interaction):
 
         - FLUID INFLATOR ACTIVATION
 
-    .. versionadded:: 2024
+    .. versionadded:: 2025
         The ``FluidInflatorActivation`` class was added.
     """
 

@@ -25,7 +25,7 @@ class FluidExchangeActivationState(InteractionState):
             import interaction
             mdb.models[name].steps[name].interactionStates[name]
 
-    .. versionadded:: 2024
+    .. versionadded:: 2025
         The ``FluidExchangeActivationState`` class was added.
     """
 
