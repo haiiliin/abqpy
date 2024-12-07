@@ -220,7 +220,7 @@ html_theme = "sphinx_immaterial"
 # further.  For a list of options available for each theme, see the
 # documentation.
 READTHEDOCS = "READTHEDOCS" in os.environ
-versions = ["dev"] + [str(v) for v in range(2024, 2015, -1)]
+versions = ["dev"] + [str(v) for v in range(2025, 2015, -1)]
 with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
     edit_urls = json.load(f)
 html_theme_options = {
