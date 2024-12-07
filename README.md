@@ -2,8 +2,13 @@
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
+<<<<<<< HEAD
 [![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2021)](https://coveralls.io/github/haiiliin/abqpy?branch=2021)
 [![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
+=======
+[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2024)](https://coveralls.io/github/haiiliin/abqpy?branch=2024)
+[![python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)](https://www.python.org/downloads/)
+>>>>>>> 13f87e76 ([chore] Remove Python 3.7 support (#5844))
 [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
 [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
 
@@ -23,7 +28,7 @@ Python script, even without opening the Abaqus/CAE.
 
 ## Quick Start
 
-Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.7%2B-brightgreen" align=center /> </a> and
+Make sure <a href="https://www.python.org/downloads/"> <img src="https://img.shields.io/badge/Python-3.8%2B-brightgreen" align=center /> </a> and
 <a href="https://www.3ds.com/products-services/simulia/products/abaqus/"> <img src="https://img.shields.io/badge/Abaqus-2016%2B-brightgreen" align=center /> </a>
 are installed on your computer,
 open `cmd` or `terminal`, type:
@@ -33,7 +38,7 @@ pip install -U abqpy==2021.*  # change the major version to match your Abaqus ve
 ```
 
 Then, open your Abaqus/Python script in your favorite IDE with Python language support,
-run the script with Python 3.7+ (just do it!), see the magic happens.
+run the script with Python 3.8+ (just do it!), see the magic happens.
 For more information, please refer to the [documentation](https://haiiliin.github.io/abqpy).
 
 ## Pull Requests are Welcome
