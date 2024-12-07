@@ -40,7 +40,7 @@ class RotationalBodyForce(Load):
     #: **rotorDynamicloadsmust** must be specified and only one must have the value ON.
     #:
     #: .. versionchanged:: 2025
-    #:     The **rotorDynamicloadsmust** argument was added.
+    #:     The ``rotorDynamicloadsmust`` argument was added.
     centrifugal: Boolean = OFF
 
     #: A Boolean specifying whether or not the effect of the load is rotary acceleration. The
@@ -48,7 +48,7 @@ class RotationalBodyForce(Load):
     #: **rotaryAcceleration** must be specified and only one must have the value ON.
     #:
     #: .. versionchanged:: 2025
-    #:     The **rotorDynamicloadsmust** argument was added.
+    #:     The ``rotorDynamicloadsmust`` argument was added.
     rotaryAcceleration: Boolean = OFF
 
     #: A Boolean specifying whether or not the effect of the load is rotordynamic. The default
@@ -56,7 +56,7 @@ class RotationalBodyForce(Load):
     #: **rotorDynamicloads** must be specified and only one must have the value ON.
     #:
     #: .. versionadded:: 2025
-    #:     The **rotorDynamicloadsmust** argument was added.
+    #:     The ``rotorDynamicloadsmust`` argument was added.
     rotorDynamicloads: Boolean = OFF
 
     #: A tuple of Floats specifying the first point on the axis of rotation for the load.
