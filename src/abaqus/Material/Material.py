@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from typing_extensions import Literal
+from typing_extensions import Literal, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
