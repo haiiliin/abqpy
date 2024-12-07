@@ -232,7 +232,7 @@ html_theme_options = {
     "repo_url": "https://github.com/haiiliin/abqpy/",
     "repo_name": "abqpy",
     "edit_uri": f"edit/{major}/docs/source",
-    "edit_url_pages": edit_urls[f"{major}"].get(language, {}),
+    "edit_url_pages": edit_urls.get(f"{major}", {}).get(language, {}),
     "globaltoc_collapse": True,
     "features": [
         "navigation.expand",
