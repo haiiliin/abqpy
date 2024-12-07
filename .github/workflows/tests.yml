@@ -7,12 +7,14 @@ on:
     paths:
       - "src/**"
       - ".github/workflows/tests.yml"
+      - "pyproject.toml"
   push:
     branches:
       - 20**
     paths:
       - "src/**"
       - ".github/workflows/tests.yml"
+      - "pyproject.toml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
