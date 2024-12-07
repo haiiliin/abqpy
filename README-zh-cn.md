@@ -8,9 +8,10 @@
 =======
 [![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2024)](https://coveralls.io/github/haiiliin/abqpy?branch=2024)
 [![python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)](https://www.python.org/downloads/)
->>>>>>> 13f87e76 ([chore] Remove Python 3.7 support (#5844))
-[![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
-[![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
+
+> > > > > > > 13f87e76 ([chore] Remove Python 3.7 support (#5844))
+> > > > > > > [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
+> > > > > > > [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
