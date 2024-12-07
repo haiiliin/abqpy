@@ -31,7 +31,7 @@ Here are a couple of friendly tutorials you can include: http://makeapullrequest
 
 Working on your first Pull Request? You can learn how from this _free_ series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
-As a side note, it helps to use newcomer-friendly language throughout the rest of your document. Here are a couple of examples from [Active Admin](https://github.com/haiiliin/abqpy/blob/2024/CONTRIBUTING.md):
+As a side note, it helps to use newcomer-friendly language throughout the rest of your document. Here are a couple of examples from [Active Admin](https://github.com/haiiliin/abqpy/blob/2025/CONTRIBUTING.md):
 
 At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first :smile_cat:
 
