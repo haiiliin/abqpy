@@ -1,7 +1,54 @@
 pull_request_rules:
+  - name: Backport to 2025 (auto-merge)
+    conditions:
+      - label=backport-to-2025
+      - label!=disable-auto-merge
+      - label!=disable-auto-merge-2025
+    actions:
+      backport:
+        title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
+        branches:
+          - "2025"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2025"
+  - name: Backport to 2025 (disable-auto-merge)
+    conditions:
+      - label=backport-to-2025
+      - or:
+          - label=disable-auto-merge
+          - label=disable-auto-merge-2025
+    actions:
+      backport:
+        title: "{{ title }} (backport #{{ number }})"
+        body: |
+          {{ body }}
+
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+
+          {{ cherry_pick_error }}
+        branches:
+          - "2025"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2025"
+          - disable-auto-merge
+
   - name: Backport to 2024 (auto-merge)
     conditions:
-      - label=backport-to-2024
+      - or:
+          - label=backport-to-all
+          - label=backport-to-2024
       - label!=disable-auto-merge
       - label!=disable-auto-merge-2024
     actions:
@@ -22,7 +69,9 @@ pull_request_rules:
           - "2024"
   - name: Backport to 2024 (disable-auto-merge)
     conditions:
-      - label=backport-to-2024
+      - or:
+          - label=backport-to-all
+          - label=backport-to-2024
       - or:
           - label=disable-auto-merge
           - label=disable-auto-merge-2024
