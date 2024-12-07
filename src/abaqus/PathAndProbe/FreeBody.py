@@ -4,8 +4,8 @@ from typing_extensions import Dict, Literal, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import CENTROID, NORMAL_TANGENTIAL
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C, Boolean, OFF
+from ..UtilityAndView.abaqusConstants import CENTROID, NORMAL_TANGENTIAL, OFF, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
