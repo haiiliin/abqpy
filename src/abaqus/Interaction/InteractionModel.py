@@ -2,10 +2,11 @@ from __future__ import annotations
 
 from typing import Sequence, Union
 
-from typing_extensions import Literal
-
+from typing_extensions import Literal, List
+from .WearProperty import WearProperty
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-
+from .FluidInflatorActivation import FluidInflatorActivation
+from .FluidExchangeActivation import FluidExchangeActivation
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -1445,6 +1446,63 @@ class InteractionModel(
         return interaction
 
     @abaqus_method_doc
+    def FluidExchangeActivation(
+        self,
+        name: str,
+        createStepName: str,
+        exchanges: List[FluidExchange],
+        amplitude: str,
+        isBlockage: Boolean = OFF,
+        isOnlyOutflow: Boolean = OFF,
+        deltaLeakageArea: float = 0.0,
+    ):
+        """This method creates an FluidExchangeActivation object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidExchangeActivation
+
+        .. versionadded:: 2024
+            The ``FluidExchangeActivation`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the FluidExchangeActivation object is created.
+        exchanges
+            A List specifying fluid exchanges to be activated.
+        amplitude
+            A String specifying the name of the amplitude curve defining a mapping between the inflation time and the actual
+            time.
+        isBlockage
+            A Boolean specifying the vent and leakage area obstruction by contacted surfaces.
+        isOnlyOutflow
+            A Boolean specifying if the flow of fluid is only from the first fluid cavity to the second fluid cavity defined
+            in the FluidExchange object.
+        deltaLeakageArea
+            A Float specifying the ratio of the actual surface area over the initial surface area at which you want the fluid
+            to leak.
+
+        Returns
+        -------
+        FluidExchangeActivation
+            A FluidExchangeActivation object.
+        """
+        self.interactions[name] = interaction = FluidExchangeActivation(
+            name,
+            createStepName,
+            exchanges,
+            amplitude,
+            isBlockage,
+            isOnlyOutflow,
+            deltaLeakageArea,
+        )
+        return interaction
+
+    @abaqus_method_doc
     def FluidInflator(
         self,
         name: str,
@@ -1490,6 +1548,53 @@ class InteractionModel(
             createStepName,
             cavity,
             interactionProperty,
+            inflationTimeAmplitude,
+            massFlowAmplitude,
+        )
+        return interaction
+
+    @abaqus_method_doc
+    def FluidInflatorActivation(
+        self,
+        name: str,
+        createStepName: str,
+        inflators: List[FluidInflator],
+        inflationTimeAmplitude: str = "",
+        massFlowAmplitude: str = "",
+    ):
+        """This method creates an FluidExchangeActivation object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidExchangeActivation
+
+        .. versionadded:: 2024
+            The ``FluidExchangeActivation`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the FluidInflator object is created.
+        inflators
+            A list specifying fluid inflators to be activated.
+        inflationTimeAmplitude
+            A string specifying the name of the amplitude curve defining a mapping between the inflation time
+            and the actual time.
+        massFlowAmplitude
+            A string specifying the name of the amplitude curve by which to modify the mass flow rate.
+
+        Returns
+        -------
+        FluidInflatorActivation
+            A FluidInflatorActivation object.
+        """
+        self.interactions[name] = interaction = FluidInflatorActivation(
+            name,
+            createStepName,
+            inflators,
             inflationTimeAmplitude,
             massFlowAmplitude,
         )
@@ -2293,6 +2398,69 @@ class InteractionModel(
             normalAdjustment,
         )
         return interaction
+
+    @abaqus_method_doc
+    def WearProperty(
+        self,
+        name: str,
+        fricCoefDependency: Boolean = OFF,
+        unitlessWearCoefDependency: Boolean = OFF,
+        referenceStress: float = None,
+        surfaceWearDistanceDependency: Boolean = OFF,
+        temperatureDependency: Boolean = OFF,
+        contactPressureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates an WearProperty object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].WearProperty
+
+        .. versionadded:: 2024
+            The ``WearProperty`` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the interaction property repository key.
+        fricCoefDependency
+            A Boolean specifying whether the Archard's wear equation depends explicitly on the friction coefficient.
+            The default value is OFF.
+        unitlessWearCoefDependency
+            A Boolean specifying whether the wear coefficient is dimensionless. The default value is OFF.
+        referenceStress
+            A Float specifying the value of the reference stress. This parameter is required if
+            unitlessWearCoefDependency is ON.
+        surfaceWearDistanceDependency
+            A Boolean specifying whether the wear coefficient is dependent on the wear distance. The default value is
+            OFF.
+        temperatureDependency
+            A Boolean specifying whether the wear coefficient is dependent on the surface temperature. The default
+            value is OFF.
+        contactPressureDependency
+            A Boolean specifying whether the wear coefficient is dependent on the contact pressure. The default value
+            is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        WearProperty
+            A WearProperty object.
+        """
+        self.interactionProperties[name] = interactionProperty = WearProperty(
+            name,
+            fricCoefDependency,
+            unitlessWearCoefDependency,
+            referenceStress,
+            surfaceWearDistanceDependency,
+            temperatureDependency,
+            contactPressureDependency,
+            dependencies,
+        )
+        return interactionProperty
 
     @abaqus_method_doc
     def XFEMCrackGrowth(

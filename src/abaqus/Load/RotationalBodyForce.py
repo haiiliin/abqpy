@@ -36,15 +36,29 @@ class RotationalBodyForce(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     #: A Boolean specifying whether or not the effect of the load is centrifugal. The default
-    #: value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-    #: specified and only one must have the value ON.
+    #: value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+    #: **rotorDynamicloadsmust** must be specified and only one must have the value ON.
+    #:
+    #: .. versionchanged:: 2024
+    #:     The **rotorDynamicloadsmust** argument was added.
     centrifugal: Boolean = OFF
 
     #: A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-    #: default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-    #: specified and only one must have the value ON.
+    #: default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+    #: **rotaryAcceleration** must be specified and only one must have the value ON.
+    #:
+    #: .. versionchanged:: 2024
+    #:     The **rotorDynamicloadsmust** argument was added.
     rotaryAcceleration: Boolean = OFF
-
+    
+    #: A Boolean specifying whether or not the effect of the load is rotordynamic. The default
+    #: value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+    #: **rotorDynamicloads** must be specified and only one must have the value ON.
+    #:
+    #: .. versionadded:: 2024
+    #:     The **rotorDynamicloadsmust** argument was added.
+    rotorDynamicloads: Boolean = OFF
+    
     #: A tuple of Floats specifying the first point on the axis of rotation for the load.
     point1: tuple[float, ...] = ()
 
@@ -72,6 +86,7 @@ class RotationalBodyForce(Load):
         field: str = "",
         centrifugal: Boolean = OFF,
         rotaryAcceleration: Boolean = OFF,
+        rotorDynamicloads: Boolean = OFF,
         amplitude: str = UNSET,
     ):
         """This method creates a RotationalBodyForce object.
@@ -105,12 +120,25 @@ class RotationalBodyForce(Load):
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
-            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-            specified and only one must have the value ON.
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionchanged:: 2024
+                The **rotorDynamicloads** argument was added.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-            specified and only one must have the value ON.
+            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionchanged:: 2024
+                The **rotorDynamicloads** argument was added.
+        rotorDynamicloads
+            A Boolean specifying whether or not the effect of the load is rotordynamic. The default
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionadded:: 2024
+                The **rotorDynamicloads** argument was added.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
@@ -130,6 +158,7 @@ class RotationalBodyForce(Load):
         field: str = "",
         centrifugal: Boolean = OFF,
         rotaryAcceleration: Boolean = OFF,
+        rotorDynamicloads: Boolean = OFF,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing RotationalBodyForce object in the step where it is
@@ -146,12 +175,25 @@ class RotationalBodyForce(Load):
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
-            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-            specified and only one must have the value ON.
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionchanged:: 2024
+                The **rotorDynamicloads** argument was added.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
-            specified and only one must have the value ON.
+            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionchanged:: 2024
+                The **rotorDynamicloads** argument was added.
+        rotorDynamicloads
+            A Boolean specifying whether or not the effect of the load is rotordynamic. The default
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
+            **rotorDynamicloads** must be specified and only one must have the value ON.
+            
+            .. versionadded:: 2024
+                The **rotorDynamicloads** argument was added.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the load has no amplitude reference. The default value is UNSET.
