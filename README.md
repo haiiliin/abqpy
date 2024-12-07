@@ -2,16 +2,10 @@
 
 [![tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yml)
 [![rtd](https://readthedocs.org/projects/abqpy/badge/?version=latest)](https://readthedocs.org/projects/abqpy/)
-<<<<<<< HEAD
 [![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2023)](https://coveralls.io/github/haiiliin/abqpy?branch=2023)
-[![python](https://img.shields.io/badge/Python-3.7%2B-brightgreen)](https://www.python.org/downloads/)
-=======
-[![coveralls](https://coveralls.io/repos/github/haiiliin/abqpy/badge.svg?branch=2024)](https://coveralls.io/github/haiiliin/abqpy?branch=2024)
 [![python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)](https://www.python.org/downloads/)
-
-> > > > > > > 13f87e76 ([chore] Remove Python 3.7 support (#5844))
-> > > > > > > [![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
-> > > > > > > [![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
+[![abaqus](https://img.shields.io/badge/Abaqus-2016%2B-brightgreen)](https://www.3ds.com/products-services/simulia/products/abaqus/)
+[![Crowdin](https://badges.crowdin.net/abqpy-locale/localized.svg)](https://crowdin.com/project/abqpy-locale)
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
 
