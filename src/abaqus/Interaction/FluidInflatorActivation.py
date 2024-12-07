@@ -5,9 +5,8 @@ from typing_extensions import List
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean
-from .Interaction import Interaction
-
 from .FluidInflator import FluidInflator
+from .Interaction import Interaction
 
 
 @abaqus_class_doc
@@ -36,14 +35,14 @@ class FluidInflatorActivation(Interaction):
 
     #: A String specifying the name of the step in which the FluidInflator object is created.
     createStepName: str
-    
+
     #: A List specifying fluid inflators to be activated.
     inflators: List[FluidInflator]
-    
+
     #: A String specifying the name of the amplitude curve defining a mapping between the inflation time and the actual
     #: time.
     inflationTimeAmplitude: str
-    
+
     #: A String specifying the name of the amplitude curve by which to modify the mass flow rate.
     massFlowAmplitude: str
 

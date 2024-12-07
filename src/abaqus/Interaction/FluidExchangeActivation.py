@@ -4,9 +4,10 @@ from typing_extensions import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import Boolean, OFF
-from .Interaction import Interaction
+from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from .FluidExchange import FluidExchange
+from .Interaction import Interaction
+
 
 @abaqus_class_doc
 class FluidExchangeActivation(Interaction):
@@ -33,21 +34,21 @@ class FluidExchangeActivation(Interaction):
 
     #: A String specifying the name of the step in which the FluidExchange object is created.
     createStepName: str
-    
+
     #: A List specifying fluid exchanges to be activated.
     exchanges: List[FluidExchange]
-    
+
     #: A String specifying the name of the amplitude curve defining a mapping between the inflation time and the actual
     #: time.
     amplitude: str
-    
+
     #: A Boolean specifying the vent and leakage area obstruction by contacted surfaces.
     isBlockage: Boolean
-    
+
     #: A Boolean specifying if the flow of fluid is only from the first fluid cavity to the second fluid cavity defined
     #: in the FluidExchange object.
     isOnlyOutflow: Boolean
-    
+
     #: A Float specifying the ratio of the actual surface area over the initial surface area at which you want the fluid
     #: to leak.
     deltaLeakageArea: float

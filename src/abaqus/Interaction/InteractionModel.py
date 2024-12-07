@@ -2,11 +2,10 @@ from __future__ import annotations
 
 from typing import Sequence, Union
 
-from typing_extensions import Literal, List
-from .WearProperty import WearProperty
+from typing_extensions import List, Literal
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from .FluidInflatorActivation import FluidInflatorActivation
-from .FluidExchangeActivation import FluidExchangeActivation
+
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Datum.DatumAxis import DatumAxis
 from ..Interaction.AcousticImpedance import AcousticImpedance
@@ -74,6 +73,8 @@ from ..UtilityAndView.abaqusConstants import (
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .ContactMassScalingExp import ContactMassScalingExp
+from .FluidExchangeActivation import FluidExchangeActivation
+from .FluidInflatorActivation import FluidInflatorActivation
 from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
 from .InteractionContactStabilizationModel import InteractionContactStabilizationModel
@@ -84,6 +85,7 @@ from .SurfaceBeamSmoothingAssignment import SurfaceBeamSmoothingAssignment
 from .SurfaceCrushTriggerAssignment import SurfaceCrushTriggerAssignment
 from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
+from .WearProperty import WearProperty
 
 
 @abaqus_class_doc
@@ -1509,8 +1511,6 @@ class InteractionModel(
         createStepName: str,
         cavity: str,
         interactionProperty: str,
-        inflationTimeAmplitude: str = "",
-        massFlowAmplitude: str = "",
     ) -> FluidInflator:
         """This method creates a FluidInflator object.
 

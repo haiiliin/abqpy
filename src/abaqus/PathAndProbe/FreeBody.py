@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing_extensions import Literal, Tuple, Dict
+from typing_extensions import Dict, Literal, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -144,7 +144,7 @@ class FreeBody:
             A FreeBody object.
         """
         ...
-    
+
     @abaqus_method_doc
     def getFreeBodyData(
         self,

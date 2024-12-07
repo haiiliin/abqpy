@@ -1621,21 +1621,21 @@ class LoadModel(ModelBase):
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
             value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
             **rotorDynamicloads** must be specified and only one must have the value ON.
-            
+
             .. versionchanged:: 2024
                 The **rotorDynamicloads** argument was added.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
             default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
             **rotorDynamicloads** must be specified and only one must have the value ON.
-            
+
             .. versionchanged:: 2024
                 The **rotorDynamicloads** argument was added.
         rotorDynamicloads
             A Boolean specifying whether or not the effect of the load is rotordynamic. The default
             value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** or
             **rotorDynamicloads** must be specified and only one must have the value ON.
-            
+
             .. versionadded:: 2024
                 The **rotorDynamicloads** argument was added.
         amplitude
