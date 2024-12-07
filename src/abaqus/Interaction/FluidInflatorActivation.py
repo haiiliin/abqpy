@@ -3,8 +3,6 @@ from __future__ import annotations
 from typing_extensions import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-
-from ..UtilityAndView.abaqusConstants import Boolean
 from .FluidInflator import FluidInflator
 from .Interaction import Interaction
 
