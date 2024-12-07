@@ -7,12 +7,14 @@ on:
     paths:
       - "src/**"
       - ".github/workflows/tests.yml"
+      - "pyproject.toml"
   push:
     branches:
       - 20**
     paths:
       - "src/**"
       - ".github/workflows/tests.yml"
+      - "pyproject.toml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -27,7 +29,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: |
-            3.7
             3.8
             3.9
             3.10
