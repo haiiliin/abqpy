@@ -12,11 +12,10 @@ authors = [
 description = "Type hints for Abaqus/Python scripting"
 readme = "README.md"
 dynamic = ["version"]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -101,7 +100,7 @@ addopts = """-rf -s --cov=src --cov-report=xml --cov-report=html --cov-report=te
 
 [tool.black]
 line-length = 120
-target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312']
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
 include = '(src/abaqus/.*\.py|src/abqpy/.*\.py|tests/.*\.py|setup\.py)'
 
 [tool.isort]
