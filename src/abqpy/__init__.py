@@ -9,7 +9,7 @@ from .run import run
 try:
     from ._version import version as _default_version
 except ImportError:
-    _default_version = "2024.0.0-dev"
+    _default_version = "2025.0.0-dev"
 
 
 def _get_version():
