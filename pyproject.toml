@@ -33,7 +33,7 @@ dependencies = [
     "pydantic",
     "typeguard",
     "typing-extensions<=4.7.1; python_version <= '3.7'",
-    "typing-extensions",
+    "typing-extensions; python_version > '3.7'",
 ]
 
 [project.optional-dependencies]
