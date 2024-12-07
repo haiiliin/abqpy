@@ -32,7 +32,7 @@ class WearProperty(InteractionProperty):
         name: str,
         fricCoefDependency: Boolean = OFF,
         unitlessWearCoefDependency: Boolean = OFF,
-        referenceStress: float = None,
+        referenceStress: float = 0.0,
         surfaceWearDistanceDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         contactPressureDependency: Boolean = OFF,

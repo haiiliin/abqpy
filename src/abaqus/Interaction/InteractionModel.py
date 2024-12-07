@@ -20,8 +20,8 @@ from ..Interaction.CyclicSymmetry import CyclicSymmetry
 from ..Interaction.ElasticFoundation import ElasticFoundation
 from ..Interaction.FilmCondition import FilmCondition
 from ..Interaction.FluidCavity import FluidCavity
-from ..Interaction.FluidExchange import FluidExchange
-from ..Interaction.FluidInflator import FluidInflator
+from ..Interaction.FluidExchange import FluidExchange as FluidExchangeType
+from ..Interaction.FluidInflator import FluidInflator as FluidInflatorType
 from ..Interaction.IncidentWave import IncidentWave
 from ..Interaction.InitializationAssignment import InitializationAssignment
 from ..Interaction.MainSecondaryAssignment import MainSecondaryAssignment
@@ -1403,7 +1403,7 @@ class InteractionModel(
         definition: Literal[C.BETWEEN_CAVITIES, C.TO_ENVIRONMENT] = TO_ENVIRONMENT,
         secondCavity: str = "",
         exchangeArea: float = 1,
-    ) -> FluidExchange:
+    ) -> FluidExchangeType:
         """This method creates an FluidExchange object.
 
         .. note::
@@ -1436,7 +1436,7 @@ class InteractionModel(
         FluidExchange
             A FluidExchange object.
         """
-        self.interactions[name] = interaction = FluidExchange(
+        self.interactions[name] = interaction = FluidExchangeType(
             name,
             createStepName,
             firstCavity,
@@ -1452,7 +1452,7 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-        exchanges: List[FluidExchange],
+        exchanges: List[FluidExchangeType],
         amplitude: str,
         isBlockage: Boolean = OFF,
         isOnlyOutflow: Boolean = OFF,
@@ -1511,7 +1511,7 @@ class InteractionModel(
         createStepName: str,
         cavity: str,
         interactionProperty: str,
-    ) -> FluidInflator:
+    ) -> FluidInflatorType:
         """This method creates a FluidInflator object.
 
         .. note::
@@ -1543,7 +1543,7 @@ class InteractionModel(
         -------
             A FluidInflator object.
         """
-        self.interactions[name] = interaction = FluidInflator(
+        self.interactions[name] = interaction = FluidInflatorType(
             name,
             createStepName,
             cavity,
@@ -1556,7 +1556,7 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-        inflators: List[FluidInflator],
+        inflators: List[FluidInflatorType],
         inflationTimeAmplitude: str = "",
         massFlowAmplitude: str = "",
     ):
@@ -2403,7 +2403,7 @@ class InteractionModel(
         name: str,
         fricCoefDependency: Boolean = OFF,
         unitlessWearCoefDependency: Boolean = OFF,
-        referenceStress: float = None,
+        referenceStress: float = 0.0,
         surfaceWearDistanceDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         contactPressureDependency: Boolean = OFF,

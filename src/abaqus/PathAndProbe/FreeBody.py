@@ -5,7 +5,7 @@ from typing_extensions import Dict, Literal, Tuple
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import CENTROID, NORMAL_TANGENTIAL
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C, Boolean, OFF
 
 
 @abaqus_class_doc
@@ -148,9 +148,9 @@ class FreeBody:
     @abaqus_method_doc
     def getFreeBodyData(
         self,
-        step: int = None,
-        frame: int = None,
-        allActiveStepFrame: bool = False,
+        step: int = 0,
+        frame: int = 0,
+        allActiveStepFrame: Boolean = OFF,
     ) -> Tuple[Tuple[Dict, ...], ...]:
         """This method returns the force and moment data of a FreeBody object.
 
