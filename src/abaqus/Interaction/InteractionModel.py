@@ -1548,8 +1548,6 @@ class InteractionModel(
             createStepName,
             cavity,
             interactionProperty,
-            inflationTimeAmplitude,
-            massFlowAmplitude,
         )
         return interaction
 
