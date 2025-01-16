@@ -12,7 +12,7 @@ repos:
           - black
 
   - repo: https://github.com/finsberg/clang-format-docs
-    rev: "v0.3.0"
+    rev: "v0.3.1"
     hooks:
       - id: clang-format-docs
         additional_dependencies:
@@ -38,7 +38,7 @@ repos:
         args: ["--profile", "black"]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.13.0"
+    rev: "v1.14.1"
     hooks:
       - id: mypy
         files: ^src/
