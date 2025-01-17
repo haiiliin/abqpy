@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import auto_all
 
-from abqpy import run  # noqa
+from abqpy import run, version_info  # noqa
 
 run(cae=True)
 auto_all.start_all()
@@ -24,6 +24,7 @@ from .UtilityAndView.User import *  # noqa
 
 session = Session()
 mdb = Mdb()
+version = version_info[0]
 
 backwardCompatibility = BackwardCompatibility()
 
