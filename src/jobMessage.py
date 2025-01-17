@@ -1,0 +1,43 @@
+import auto_all
+
+auto_all.start_all()
+
+from abaqus.UtilityAndView.abaqusConstants import (  # noqa
+    ABORTED,
+    ANY_JOB,
+    ANY_MESSAGE_TYPE,
+    BATCHPRE_PHASE,
+    CALCULATOR_PHASE,
+    CFD_PHASE,
+    CHECK_SUBMITTED,
+    COMPLETED,
+    END_STEP,
+    ERROR,
+    EXPLICIT_PHASE,
+    HEADING,
+    HEALER_JOB,
+    HEALER_PHASE,
+    HEALER_TYPE,
+    INTERRUPTED,
+    ITERATION,
+    JOB_ABORTED,
+    JOB_COMPLETED,
+    JOB_INTERRUPTED,
+    JOB_SUBMITTED,
+    MONITOR_DATA,
+    ODB_FILE,
+    ODB_FRAME,
+    PACKAGER_PHASE,
+    SIMULATION_ABORTED,
+    SIMULATION_COMPLETED,
+    SIMULATION_INTERRUPTED,
+    SIMULATION_STARTED,
+    STANDARD_PHASE,
+    STARTED,
+    STATUS,
+    STEP,
+    U1,
+    WARNING,
+)
+
+auto_all.end_all()
