@@ -82,7 +82,7 @@ jobs:
           pdm run python -m pip show abqpy
       - name: Build the documentation
         run: |
-          cd docs && make ${{ matrix.builder }}
+          cd docs && pdm run make ${{ matrix.builder }}
         env:
           SPHINXOPTS: -j auto
       - name: Upload artifacts
