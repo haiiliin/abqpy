@@ -1280,6 +1280,7 @@ class abaqusConstants(SymbolicConstant, Enum):
     HARMONIC = "HARMONIC"
     HEADING = "HEADING"
     HEALER_TYPE = "HEALER_TYPE"
+    HEALER_PHASE = "HEALER_PHASE"
     HEATCAP = "HEATCAP"
     HEAT_FLUX = "HEAT_FLUX"
     HEAT_FLUX_AREA = "HEAT_FLUX_AREA"
