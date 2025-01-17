@@ -65,21 +65,24 @@ jobs:
       PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: recursive
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v3
+        with:
+          python-version: "3.11"
+          cache: true
       - name: Installing the library
         run: |
-          pip install .[docs]
-          pip install git+https://github.com/haiiliin/sphinx-immaterial.git
-          pip show abqpy
+          pdm install --group docs
+          pdm run python -m ensurepip
+          pdm run python -m pip install git+https://github.com/haiiliin/sphinx-immaterial.git
+          pdm run python -m pip show abqpy
       - name: Build the documentation
         run: |
-          cd docs && make ${{ matrix.builder }}
+          cd docs && pdm run make ${{ matrix.builder }}
         env:
           SPHINXOPTS: -j auto
       - name: Upload artifacts
