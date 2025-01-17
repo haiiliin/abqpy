@@ -121,3 +121,6 @@ ignore_missing_imports = true
 
 [tool.unimport]
 include = "src"
+
+[tool.pdm]
+ignore_package_warnings = ["*"]
