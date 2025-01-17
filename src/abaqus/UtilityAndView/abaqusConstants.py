@@ -1234,6 +1234,7 @@ HARDWARE_OVERLAY = abaqusConstants.HARDWARE_OVERLAY
 HARMONIC = abaqusConstants.HARMONIC
 HEADING = abaqusConstants.HEADING
 HEALER_TYPE = abaqusConstants.HEALER_TYPE
+HEALER_PHASE = abaqusConstants.HEALER_PHASE
 HEATCAP = abaqusConstants.HEATCAP
 HEAT_FLUX = abaqusConstants.HEAT_FLUX
 HEAT_FLUX_AREA = abaqusConstants.HEAT_FLUX_AREA
