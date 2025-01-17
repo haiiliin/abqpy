@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Sequence, Union, overload
+from typing import List, Sequence, Union, overload
 
 from typing_extensions import Literal
 
@@ -8,6 +8,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import OFF, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from .FieldBulkData import FieldBulkData
 from .FieldLocation import FieldLocation
 from .FieldLocationArray import FieldLocationArray
 from .FieldValueArray import FieldValueArray
@@ -78,6 +79,9 @@ class FieldOutput:
     #: the off-diagonal components of tensor are halved for invariants computation. This
     #: parameter applies only to tensor field outputs. The default value is OFF.
     isEngineeringTensor: Boolean = OFF
+
+    #: A sequence of FieldBulkData objects.
+    bulkDataBlocks: List[FieldBulkData]
 
     @overload
     @abaqus_method_doc
