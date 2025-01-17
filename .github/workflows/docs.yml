@@ -65,15 +65,15 @@ jobs:
       PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v3
         with:
           python-version: "3.11"
           cache: true
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          submodules: recursive
       - name: Installing the library
         run: |
           pdm install --group docs
