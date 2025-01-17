@@ -30,12 +30,14 @@ jobs:
           ref: ${{ matrix.version }}
           fetch-depth: 0
           submodules: recursive
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v3
         with:
-          python-version: 3.11
+          python-version: "3.11"
+          cache: true
       - name: Install dependencies
-        run: pip install .[dev,docs]
+        run: |
+          pdm install --group dev,docs
       - name: Update submodules
         run: |
           git pull --recurse-submodules
