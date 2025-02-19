@@ -6,6 +6,10 @@ from .cli import abaqus
 from .config import config
 
 
+class AbaqusError(Exception):
+    pass
+
+
 def run(cae: bool = True) -> None:
     """Runs Abaqus command in system's CLI.
 
@@ -47,9 +51,12 @@ def run(cae: bool = True) -> None:
         warnings.warn(
             "You are running the script in debug mode, the script will be opened in Abaqus PDE where you can debug it."
         )
-        abaqus.pde(script=filePath)
+        ret = abaqus.pde(script=filePath)
     elif cae:
-        abaqus.cae(filePath, *sys.argv[1:], **config.cae.model_dump())
+        ret = abaqus.cae(filePath, *sys.argv[1:], **config.cae.model_dump())
     else:
-        abaqus.python(filePath, *sys.argv[1:], **config.python.model_dump())
+        ret = abaqus.python(filePath, *sys.argv[1:], **config.python.model_dump())
+    if config.execution_method == "subprocess":
+        if ret.returncode != 0 or "Abaqus Error:" in ret.stdout:
+            raise AbaqusError(f"Abaqus Error: {ret.stdout}, {ret.stderr}")
     sys.exit(0)

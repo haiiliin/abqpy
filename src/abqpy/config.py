@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import ast
 import os
-from typing import Any, Optional
+from typing import Any, Optional, Literal
 
 from pydantic import BaseModel
 
@@ -43,6 +43,7 @@ class AbaqusConfig(CompatibleBaseModel):
     skip_abaqus: bool = False
     make_docs: bool = False
     cli_traceback_limit: int = 0
+    execution_method: Literal["os", "subprocess"] = "os"
 
 
 class AbaqusCommandOptions(AbaqusCAEConfig, AbaqusPythonConfig): ...
@@ -97,4 +98,5 @@ config = AbaqusConfig(
     skip_abaqus=os.environ.get("ABQPY_SKIP_ABAQUS", "false").lower() in trues,
     make_docs=os.environ.get("ABQPY_MAKE_DOCS", "false").lower() in trues,
     cli_traceback_limit=int(os.environ.get("ABQPY_CLI_TRACEBACK_LIMIT", 0)),
+    execution_method=os.environ.get("ABQPY_EXECUTION_METHOD", "os"),
 )
