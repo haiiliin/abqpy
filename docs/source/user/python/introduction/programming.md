@@ -435,7 +435,7 @@ You can create your own module containing a set of Python functions. You can imp
 For example, you can create a module called myUtilities by copying a modified version of the function that calculates the distance from a point to the origin into a file called myUtilities.py.
 
 ```python
-"""myUtilities - a module of mathematical functions"""
+""" myUtilities - a module of mathematical functions"""
 
 import math
 
