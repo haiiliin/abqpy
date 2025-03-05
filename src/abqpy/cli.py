@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import os
+import subprocess
 
 from typeguard import typechecked
 from typing_extensions import Self
+
+from .config import config
 
 
 @typechecked
@@ -25,7 +28,12 @@ class AbqpyCLIBase:
         cmd = cmd.strip()
         message = f"Running the following command: {cmd}"
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
-        os.system(cmd)
+        if config.execution_method == "os":
+            return os.system(cmd)
+        elif config.execution_method == "subprocess":
+            return subprocess.run(cmd, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+        else:
+            raise ValueError(f"Invalid execution method: {config.execution_method}")
 
     def abaqus(self, *args, **options):
         """Run custom Abaqus command: ``abaqus {args} {options}``, arguments are separated by space, options are
@@ -38,7 +46,11 @@ class AbqpyCLIBase:
         """
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
         args, options = " ".join(args), self._parse_options(**options)
+<<<<<<< HEAD
         self.run(f"{abaqus} {args} {options}")
+=======
+        return self.run(abaqus + (f" {args}" if args else "") + (f" {options}" if options else ""))
+>>>>>>> 0f5826f6 ([feature] Detect if the abaqus command is executed normally (#5967))
 
 
 @typechecked
@@ -112,7 +124,7 @@ class AbqpyCLI(AbqpyCLIBase):
         args = ("--", *args) if args else ()
 
         # Execute command
-        self.abaqus("cae", options, *args)
+        return self.abaqus("cae", options, *args)
 
     viewer = cae
 
@@ -130,7 +142,7 @@ class AbqpyCLI(AbqpyCLIBase):
         """
         cae_opts = self._parse_options(**options)
         args = (*scripts,) + ((f"script={script}",) if script else ()) + ("-pde",) + ((cae_opts,) if cae_opts else ())
-        self.abaqus("pde", *args)
+        return self.abaqus("pde", *args)
 
     def python(
         self,
@@ -156,7 +168,7 @@ class AbqpyCLI(AbqpyCLIBase):
         options = self._parse_options(sim=sim, log=log)
 
         # Execute command
-        self.abaqus("python", script, options, *args)
+        return self.abaqus("python", script, options, *args)
 
     @typechecked
     def optimization(
@@ -193,140 +205,140 @@ class AbqpyCLI(AbqpyCLIBase):
             The name of the directory used for scratch files.
         """
         # Execute command
-        self.abaqus("optimization", task=task, job=job, cpus=cpus, gpus=gpus, memory=memory,
-                    interactive=interactive, globalmodel=globalmodel, scratch=scratch)  # fmt: skip
+        return self.abaqus("optimization", task=task, job=job, cpus=cpus, gpus=gpus, memory=memory,
+                           interactive=interactive, globalmodel=globalmodel, scratch=scratch)  # fmt: skip
 
     def help(self, *args, **options):
-        self.abaqus("help", *args, **options)
+        return self.abaqus("help", *args, **options)
 
     def information(self, *args, **options):
-        self.abaqus("information", *args, **options)
+        return self.abaqus("information", *args, **options)
 
     def whereami(self, *args, **options):
-        self.abaqus("whereami", *args, **options)
+        return self.abaqus("whereami", *args, **options)
 
     def cse(self, *args, **options):
-        self.abaqus("cse", *args, **options)
+        return self.abaqus("cse", *args, **options)
 
     def cosimulation(self, *args, **options):
-        self.abaqus("cosimulation", *args, **options)
+        return self.abaqus("cosimulation", *args, **options)
 
     def fmu(self, *args, **options):
-        self.abaqus("fmu", *args, **options)
+        return self.abaqus("fmu", *args, **options)
 
     def script(self, *args, **options):
-        self.abaqus("script", *args, **options)
+        return self.abaqus("script", *args, **options)
 
     def doc(self, *args, **options):
-        self.abaqus("doc", *args, **options)
+        return self.abaqus("doc", *args, **options)
 
     def licensing(self, *args, **options):
-        self.abaqus("licensing", *args, **options)
+        return self.abaqus("licensing", *args, **options)
 
     def ascfil(self, *args, **options):
-        self.abaqus("ascfil", *args, **options)
+        return self.abaqus("ascfil", *args, **options)
 
     def append(self, *args, **options):
-        self.abaqus("append", *args, **options)
+        return self.abaqus("append", *args, **options)
 
     def findkeyword(self, *args, **options):
-        self.abaqus("findkeyword", *args, **options)
+        return self.abaqus("findkeyword", *args, **options)
 
     def fetch(self, *args, **options):
-        self.abaqus("fetch", *args, **options)
+        return self.abaqus("fetch", *args, **options)
 
     def make(self, *args, **options):
-        self.abaqus("make", *args, **options)
+        return self.abaqus("make", *args, **options)
 
     def upgrade(self, *args, **options):
-        self.abaqus("upgrade", *args, **options)
+        return self.abaqus("upgrade", *args, **options)
 
     def sim_version(self, *args, **options):
-        self.abaqus("sim_version", *args, **options)
+        return self.abaqus("sim_version", *args, **options)
 
     def odb2sim(self, *args, **options):
-        self.abaqus("odb2sim", *args, **options)
+        return self.abaqus("odb2sim", *args, **options)
 
     def odbreport(self, *args, **options):
-        self.abaqus("odbReport", *args, **options)
+        return self.abaqus("odbReport", *args, **options)
 
     def restartjoin(self, *args, **options):
-        self.abaqus("restartjoin", *args, **options)
+        return self.abaqus("restartjoin", *args, **options)
 
     def substructurecombine(self, *args, **options):
-        self.abaqus("substructurecombine", *args, **options)
+        return self.abaqus("substructurecombine", *args, **options)
 
     def substructurerecover(self, *args, **options):
-        self.abaqus("substructurerecover", *args, **options)
+        return self.abaqus("substructurerecover", *args, **options)
 
     def odbcombine(self, *args, **options):
-        self.abaqus("odbcombine", *args, **options)
+        return self.abaqus("odbcombine", *args, **options)
 
     def networkDBConnector(self, *args, **options):
-        self.abaqus("networkDBConnector", *args, **options)
+        return self.abaqus("networkDBConnector", *args, **options)
 
     def emloads(self, *args, **options):
-        self.abaqus("emloads", *args, **options)
+        return self.abaqus("emloads", *args, **options)
 
     def mtxasm(self, *args, **options):
-        self.abaqus("mtxasm", *args, **options)
+        return self.abaqus("mtxasm", *args, **options)
 
     def fromnastran(self, *args, **options):
-        self.abaqus("fromnastran", *args, **options)
+        return self.abaqus("fromnastran", *args, **options)
 
     def tonastran(self, *args, **options):
-        self.abaqus("tonastran", *args, **options)
+        return self.abaqus("tonastran", *args, **options)
 
     def fromansys(self, *args, **options):
-        self.abaqus("fromansys", *args, **options)
+        return self.abaqus("fromansys", *args, **options)
 
     def frompamcrash(self, *args, **options):
-        self.abaqus("frompamcrash", *args, **options)
+        return self.abaqus("frompamcrash", *args, **options)
 
     def fromradioss(self, *args, **options):
-        self.abaqus("fromradioss", *args, **options)
+        return self.abaqus("fromradioss", *args, **options)
 
     def toOutput2(self, *args, **options):
-        self.abaqus("toOutput2", *args, **options)
+        return self.abaqus("toOutput2", *args, **options)
 
     def fromdyna(self, *args, **options):
-        self.abaqus("fromdyna", *args, **options)
+        return self.abaqus("fromdyna", *args, **options)
 
     def tozaero(self, *args, **options):
-        self.abaqus("tozaero", *args, **options)
+        return self.abaqus("tozaero", *args, **options)
 
     def adams(self, *args, **options):
-        self.abaqus("adams", *args, **options)
+        return self.abaqus("adams", *args, **options)
 
     def tosimpack(self, *args, **options):
-        self.abaqus("tosimpack", *args, **options)
+        return self.abaqus("tosimpack", *args, **options)
 
     def fromsimpack(self, *args, **options):
-        self.abaqus("fromsimpack", *args, **options)
+        return self.abaqus("fromsimpack", *args, **options)
 
     def toexcite(self, *args, **options):
-        self.abaqus("toexcite", *args, **options)
+        return self.abaqus("toexcite", *args, **options)
 
     def moldflow(self, *args, **options):
-        self.abaqus("moldflow", *args, **options)
+        return self.abaqus("moldflow", *args, **options)
 
     def encrypt(self, *args, **options):
-        self.abaqus("encrypt", *args, **options)
+        return self.abaqus("encrypt", *args, **options)
 
     def decrypt(self, *args, **options):
-        self.abaqus("decrypt", *args, **options)
+        return self.abaqus("decrypt", *args, **options)
 
     def suspend(self, *args, **options):
-        self.abaqus("suspend", *args, **options)
+        return self.abaqus("suspend", *args, **options)
 
     def resume(self, *args, **options):
-        self.abaqus("resume", *args, **options)
+        return self.abaqus("resume", *args, **options)
 
     def terminate(self, *args, **options):
-        self.abaqus("terminate", *args, **options)
+        return self.abaqus("terminate", *args, **options)
 
     def sysVerify(self, *args, **options):
-        self.abaqus("sysVerify", *args, **options)
+        return self.abaqus("sysVerify", *args, **options)
 
 
 #: The abqpy command line interface, use this object to run abqpy commands from the python scripts
