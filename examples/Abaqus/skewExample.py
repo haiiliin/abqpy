@@ -4,8 +4,8 @@ Parametric Study
 
 `skewExample.py` from `Using a script to perform a parametric study <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-intexaaclskewparametric.htm?contextscope=all&id=c78341a7f00b493caa61a4c530165d52>`_.
 
-This script performs a parameter study of element type versus 
-skew angle. For more details, see Problem 2.3.4 in the 
+This script performs a parameter study of element type versus
+skew angle. For more details, see Problem 2.3.4 in the
 Abaqus Benchmarks manual.
 
 Run the following command before running this script:
