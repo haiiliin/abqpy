@@ -46,11 +46,7 @@ class AbqpyCLIBase:
         """
         abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
         args, options = " ".join(args), self._parse_options(**options)
-<<<<<<< HEAD
-        self.run(f"{abaqus} {args} {options}")
-=======
         return self.run(abaqus + (f" {args}" if args else "") + (f" {options}" if options else ""))
->>>>>>> 0f5826f6 ([feature] Detect if the abaqus command is executed normally (#5967))
 
 
 @typechecked
