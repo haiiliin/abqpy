@@ -37,7 +37,7 @@ jobs:
             3.13
           allow-prereleases: true
       - name: Setup PDM
-        uses: pdm-project/setup-pdm@v3
+        uses: pdm-project/setup-pdm@v4
         with:
           python-version: "3.11"
       - name: Install dependencies
