@@ -175,6 +175,41 @@ A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set t
 A shortcut to the {envvar}`ABAQUS_COMMAND_OPTIONS` environment variable to set the `log` option but has higher priority.
 ```
 
+```{envvar} ABQPY_DEBUG
+
+**Type: bool {true, false, on, off, yes, no, 1, 0}**
+
+Set this environment variable to `True` to enable debug mode in `abqpy`.
+```
+
+```{envvar} ABQPY_SKIP_ABAQUS
+
+**Type: bool {true, false, on, off, yes, no, 1, 0}**
+
+Set this environment variable to `True` to skip the Abaqus command line procedure execution.
+```
+
+```{envvar} ABQPY_MAKE_DOCS
+
+**Type: bool {true, false, on, off, yes, no, 1, 0}**
+
+This environment variable is set to true when the `abqpy` package is being used to generate the documentation.
+```
+
+```{envvar} ABQPY_CLI_TRACEBACK_LIMIT
+
+**Type: int**
+
+The maximum number of levels of the traceback (`sys.tracebacklimit`) to show in the command line interface. The default value is 0.
+```
+
+```{envvar} ABQPY_EXECUTION_METHOD
+
+**Type: string {os, subprocess}**
+
+Method to run the Abaqus command line procedure. The default method is `os` which uses the `os.system` function to run the command. The `subprocess` method uses the `subprocess.run` function to run the command.
+```
+
 ## Example
 
 The snippet bellow changes the default procedure options before calling
