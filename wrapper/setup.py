@@ -8,8 +8,8 @@ def get_abqpy_version():
         import setuptools_scm
 
         version = setuptools_scm.get_version(root="..", version_scheme="post-release")
-        major, minor, patch, *rest = re.match(r"(\d+)\.(\d+)\.(\d+)(.*)", version).groups()
-        return f"{major}.{minor}.{patch}"
+        major, minor, *_ = re.match(r"(\d+)\.(\d+)(.*)", version).groups()
+        return f"{major}.{minor}"
     except (LookupError, ImportError):
         return "2022.*"
 
