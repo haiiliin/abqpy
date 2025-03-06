@@ -1,6 +1,6 @@
 name-template: "v$RESOLVED_VERSION 🌈"
 tag-template: "v$RESOLVED_VERSION"
-version-template: "$MAJOR.$MINOR.$PATCH"
+version-template: "$MAJOR.$MINOR"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 filter-by-commitish: true
@@ -49,16 +49,11 @@ categories:
       - "release"
       - "workflow"
 version-resolver:
-  major:
-    labels:
-      - "major"
   minor:
     labels:
       - "minor"
-  patch:
-    labels:
       - "patch"
-  default: patch
+  default: minor
 template: |
   ## Changes
 
