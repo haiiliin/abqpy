@@ -121,9 +121,10 @@ jobs:
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
       - uses: ahmadnassri/action-workflow-queue@v1
       - name: Upload the documentation
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          destination_dir: ${{ matrix.language }}/${{ env.PUBLISH }}
-          keep_files: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: docs/build/${{ matrix.builder }}/${{ matrix.language }}
+          target-folder: ${{ matrix.language }}/${{ env.PUBLISH }}
+          single-commit: true
+          clean: false
