@@ -110,6 +110,7 @@ class AbqpyCLI(AbqpyCLIBase):
             Record the GUI commands to a file, by default None
         """
         # Parse options
+        script = f'"{script}"'.replace('""', '"') if " " in script else script
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
                                       database=database, replay=replay, recover=recover, startup=startup,
                                       noenvstartup=not envstartup, noSavedOptions=not savedOptions,
@@ -136,6 +137,8 @@ class AbqpyCLI(AbqpyCLIBase):
         options
             Abaqus/CAE command line arguments
         """
+        script = f'"{script}"'.replace('""', '"') if script is not None and " " in script else script
+        scripts = tuple(f'"{s}"'.replace('""', '"') if " " in s else s for s in scripts)
         cae_opts = self._parse_options(**options)
         args = (*scripts,) + ((f"script={script}",) if script else ()) + ("-pde",) + ((cae_opts,) if cae_opts else ())
         return self.abaqus("pde", *args)
@@ -164,6 +167,7 @@ class AbqpyCLI(AbqpyCLIBase):
         options = self._parse_options(sim=sim, log=log)
 
         # Execute command
+        script = f'"{script}"'.replace('""', '"') if " " in script else script
         return self.abaqus("python", script, options, *args)
 
     @typechecked
