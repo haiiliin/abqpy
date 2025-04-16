@@ -18,22 +18,14 @@ You can install `abqpy` with the following commands.
 
 ````{tab} pip
 ```{code-block} shell
-<<<<<<< HEAD
 pip install -U abqpy==2023.*
-=======
-pip install -U abqpy==2025.*
-pip install -U abqpy2025
->>>>>>> 05f1ac3 ([docs] Add installation method with conda (#6057))
+pip install -U abqpy2023
 ```
 ````
 
 ````{tab} conda
 ```{code-block} shell
-<<<<<<< HEAD
-pip install -U abqpy2023
-=======
-conda install conda-forge::abqpy=2025
->>>>>>> 05f1ac3 ([docs] Add installation method with conda (#6057))
+conda install conda-forge::abqpy=2023
 ```
 ````
 
