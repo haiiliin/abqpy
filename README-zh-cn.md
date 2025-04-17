@@ -17,6 +17,7 @@ Abaqus/Python 脚本的类型提示
 
 - GitHub 仓库: [https://github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [https://pypi.org/project/abqpy](https://pypi.org/project/abqpy)
+- Conda: [https://anaconda.org/conda-forge/abqpy](https://anaconda.org/conda-forge/abqpy)
 - 中文文档: [https://haiiliin.github.io/abqpy](https://haiiliin.github.io/abqpy)
 
 ## 快速开始
