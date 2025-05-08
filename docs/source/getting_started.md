@@ -43,6 +43,11 @@ pip install ipynbname nbconvert
 ```
 ````
 
+```{warning}
+Do not install abqpy in the Abaqus's built-in Python interpreter, it may cause the
+Abaqus/Python interpreter to crash and you may not be able to open Abaqus/CAE anymore.
+```
+
 ```{note}
 You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
