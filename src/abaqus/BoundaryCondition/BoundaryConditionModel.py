@@ -1906,7 +1906,7 @@ class BoundaryConditionModel(ModelBase):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].EncastreBC
+                mdb.models[name].XsymmBC
 
         Parameters
         ----------
@@ -2004,7 +2004,7 @@ class BoundaryConditionModel(ModelBase):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].EncastreBC
+                mdb.models[name].ZsymmBC
 
         Parameters
         ----------
@@ -2053,7 +2053,7 @@ class BoundaryConditionModel(ModelBase):
         .. note::
             This function can be accessed by::
 
-                mdb.models[name].EncastreBC
+                mdb.models[name].XasymmBC
 
         Parameters
         ----------
