@@ -102,7 +102,7 @@ class PartInstance:
     cells: CellArray = CellArray([])
 
     #: A repository of Datum objects.
-    datums: list[Datum] = []
+    datums: dict[int, Datum] = {}
 
     #: A MeshElementArray object.
     elements: MeshElementArray = MeshElementArray([])
