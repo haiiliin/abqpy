@@ -93,7 +93,7 @@ class AssemblyBase(AssemblyFeature):
     instances: dict[str, PartInstance] = {}
 
     #: A repository of Datum objects specifying all Datum objects in the assembly.
-    datums: list[Datum] = []
+    datums: dict[int, Datum] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.
     features: dict[str, AssemblyFeature] = {}
