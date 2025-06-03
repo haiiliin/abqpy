@@ -52,7 +52,7 @@ class ModelInstance:
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Datum objects.
-    datums: dict[str, Datum] = {}
+    datums: dict[int, Datum] = {}
 
     #: A repository of ReferencePoint objects.
     referencePoints: dict[str, ReferencePoint] = {}
