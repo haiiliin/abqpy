@@ -109,7 +109,7 @@ class PartBase(PartFeature):
     featuresById: dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: list[Datum] = []
+    datums: dict[int, Datum] = {}
 
     #: A MeshElementArray object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
