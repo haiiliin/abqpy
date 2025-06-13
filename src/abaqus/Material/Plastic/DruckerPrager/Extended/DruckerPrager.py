@@ -4,8 +4,15 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .....UtilityAndView.abaqusConstants import LINEAR, OFF, Boolean
-from .....UtilityAndView.abaqusConstants import abaqusConstants as C, STRAIN, COMPRESSION, POWER_LAW
+from .....UtilityAndView.abaqusConstants import (
+    COMPRESSION,
+    LINEAR,
+    OFF,
+    POWER_LAW,
+    STRAIN,
+    Boolean,
+)
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...Metal.RateDependent.RateDependent import RateDependent
 from .DruckerPragerCreep import DruckerPragerCreep
 from .DruckerPragerHardening import DruckerPragerHardening
