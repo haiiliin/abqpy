@@ -89,6 +89,65 @@ class MohrCoulombPlasticity:
         ...
 
     @abaqus_method_doc
+    def MohrCoulombHardening(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
+        """This method creates a MohrCoulombHardening object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].mohrCoulombPlasticity.MohrCoulombHardening.MohrCoulombHardeningmaterials[name].mohrCoulombPlasticity.MohrCoulombHardening
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        MohrCoulombHardening
+            A MohrCoulombHardening object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def TensionCutOff(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
+        """This method creates a TensionCutOff object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].mohrCoulombPlasticity.TensionCutOff
+                session.odbs[name].materials[name].mohrCoulombPlasticity.TensionCutOff
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        TensionCutOff
+            A TensionCutOff object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the MohrCoulombPlasticity object.
 

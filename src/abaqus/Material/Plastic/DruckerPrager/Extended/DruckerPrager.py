@@ -4,7 +4,14 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from .....UtilityAndView.abaqusConstants import LINEAR, OFF, Boolean
+from .....UtilityAndView.abaqusConstants import (
+    COMPRESSION,
+    LINEAR,
+    OFF,
+    POWER_LAW,
+    STRAIN,
+    Boolean,
+)
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...Metal.RateDependent.RateDependent import RateDependent
 from .DruckerPragerCreep import DruckerPragerCreep
@@ -119,6 +126,167 @@ class DruckerPrager:
         -------
         DruckerPrager
             A DruckerPrager object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def DruckerPragerCreep(
+        self,
+        table: tuple,
+        law: Literal[C.STRAIN] = STRAIN,
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a DruckerPragerCreep object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].druckerPrager.DruckerPragerCreep
+                session.odbs[name].materials[name].druckerPrager.DruckerPragerCreep
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        law
+            A SymbolicConstant specifying the type of data defining the creep law. Possible values
+            are:STRAIN, specifying a strain-hardening power law.TIME, specifying a time-hardening
+            power law.SINGHM, specifying a Singh-Mitchell type law.USER, specifying the creep law is
+            input from user subroutine CREEP.The default value is STRAIN.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        DruckerPragerCreep
+            A DruckerPragerCreep object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def DruckerPragerHardening(
+        self,
+        table: tuple,
+        type: Literal[C.SHEAR, C.TENSION, C.COMPRESSION] = COMPRESSION,
+        rate: Boolean = OFF,
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a DruckerPragerHardening object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].druckerPrager.DruckerPragerHardening
+                    session.odbs[name].materials[name].druckerPrager.DruckerPragerHardening
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        type
+            A SymbolicConstant specifying the type of data defining the hardening behavior. Possible
+            values are COMPRESSION, TENSION, and SHEAR. The default value is COMPRESSION.
+        rate
+            A Boolean specifying whether the data depend on rate. The default value is OFF.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        DruckerPragerHardening
+            A DruckerPragerHardening object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def RateDependent(
+        self,
+        table: tuple,
+        type: Literal[C.JOHNSON_COOK, C.POWER_LAW, C.YIELD_RATIO] = POWER_LAW,
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a RateDependent object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].crushableFoam.RateDependent
+                mdb.models[name].materials[name].druckerPrager.RateDependent
+                mdb.models[name].materials[name].Plastic.RateDependent
+                session.odbs[name].materials[name].crushableFoam.RateDependent
+                session.odbs[name].materials[name].druckerPrager.RateDependent
+                session.odbs[name].materials[name].Plastic.RateDependent
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        type
+            A SymbolicConstant specifying the type of rate-dependent data. Possible values are
+            POWER_LAW, YIELD_RATIO, and JOHNSON_COOK. The default value is POWER_LAW.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+        RateDependent
+            A RateDependent object.
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def TriaxialTestData(self, table: tuple, a: float | None = None, b: float | None = None, pt: float | None = None):
+        """This method creates a TriaxialTestData object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].druckerPrager.TriaxialTestData
+                session.odbs[name].materials[name].druckerPrager.TriaxialTestData
+
+        Parameters
+        ----------
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        a
+            None or a Float specifying the value of the material constant aa. None is used when the
+            value is unknown or it is not held fixed at the input value. The default value is None.
+        b
+            None or a Float specifying the value of the material constant bb. None is used when the
+            value is unknown or it is not held fixed at the input value. The default value is None.
+        pt
+            None or a Float specifying the value of the material constant pt. None is used when the
+            value is unknown or it is not held fixed at the input value. The default value is None.
+
+        Returns
+        -------
+        TriaxialTestData
+            A TriaxialTestData object.
 
         Raises
         ------
