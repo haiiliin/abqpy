@@ -1,0 +1,15 @@
+prune .github
+prune docs
+prune examples
+prune tests
+prune wrapper
+
+exclude .clang-format
+exclude .gitattributes
+exclude .gitignore
+exclude .gitmodules
+exclude .pre-commit-config.yaml
+exclude .prettierignore
+exclude .readthedocs.yml
+exclude pdm.lock
+exclude tox.ini
