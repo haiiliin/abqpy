@@ -5,8 +5,9 @@ prune tests
 prune wrapper
 
 exclude .clang-format
+exclude .gitattributes
 exclude .gitignore
-exclude .gitmodulus
+exclude .gitmodules
 exclude .pre-commit-config.yaml
 exclude .prettierignore
 exclude .readthedocs.yml
