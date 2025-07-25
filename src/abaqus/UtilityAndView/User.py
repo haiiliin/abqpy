@@ -45,7 +45,7 @@ def getInput(prompt: str, default: str = ""):
 
 @abaqus_function_doc
 @overload
-def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
+def getInputs(fields: tuple, label: str = "", dialogTitle: str = ""):
     """This method is used to obtain multiple inputs from a user from a dialog box. The method
     displays a modal dialog box with a column of text fields prefaced by the specified
     labels. The user enters data in the text fields or accepts the optional default values
