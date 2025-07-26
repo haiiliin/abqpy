@@ -111,7 +111,6 @@ Results data describe the results of your analysis. Abaqus organizes the analysi
   History output is output defined for a single point or for values calculated for a portion of the model as a whole, such as energy. History output is intended for relatively frequent output requests for small portions of the model and can be displayed in the form of **X - Y** data plots in the Visualization module of Abaqus/CAE. Individual variables (such as a particular stress component) can be requested.
 
   Depending on the type of output expected, a HistoryRegion object can be defined for one of the following:
-
   - a node
   - an integration point
   - a region

@@ -9,7 +9,6 @@ The object model is an important concept in object-oriented programming. The obj
 - A definition of each Abaqus Scripting Interface object including its methods and data members. The object definitions are found in the {doc}`/reference/index`.
 
 - Definitions of the relationships between the objects. These relationships form the structure or the hierarchy of the object model. The relationships between the objects are summarized in the following list:
-
   - **Ownership**
 
     The ownership hierarchy defines the access path to the objects in the Abaqus model.
