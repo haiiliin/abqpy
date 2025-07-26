@@ -11,7 +11,6 @@ The following interface classes are provided:
 - **Sequences**
 
   An `odb_Sequence` class is a container used to hold an ordered list of objects of a specific type. Data can be appended and retrieved from the sequence. The following `odb_Sequence` objects are provided to store integer, float, and enumeration data:
-
   - `odb_SequenceInt`
   - `odb_SequenceFloat`
   - `odb_SequenceString`
@@ -19,14 +18,12 @@ The following interface classes are provided:
   - `odb_SequenceElementFace`
 
   Sequences of sequences are also available in the following forms:
-
   - `odb_SequenceSequenceFloat`
   - `odb_SequenceSequenceSequenceFloat`
   - `odb_SequenceSequenceInt`
   - `odb_SequenceSequenceElementFace`
 
   The following Abaqus objects are also stored as sequences:
-
   - `odb_SequenceNode`
   - `odb_SequenceElement`
   - `odb_SequenceFieldValue`
@@ -35,13 +32,11 @@ The following interface classes are provided:
   - `odb_SequenceLoadCase`
 
   The following Abaqus object can be collected in a sequence for utility operations:
-
   - `odb_SequenceFieldOutput`
 
 - **Repositories**
 
   Repositories are provided to store objects retrieved by name. Both the repositories and the content of the repositories are created by the API; the user can only retrieve objects from repositories. Iterators are provided to navigate the repositories. The following Abaqus repositories are provided:
-
   - `odb_PartRepository`
   - `odb_FieldOutputRepository`
   - `odb_SectionCategoryRepository`

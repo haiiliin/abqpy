@@ -149,7 +149,6 @@ The following shows the contents of the script skewExample.py. The parametric st
 - Calculates the maximum moment and displacement at the center of the shell.
 
 - Displays **X - Y** plots in separate viewports of the following:
-
   - Displacement versus skew angle
   - Maximum bending moment versus skew angle
   - Minimum bending moment versus skew angle

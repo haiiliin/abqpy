@@ -47,7 +47,6 @@ You can retrieve the location of your `abaqus_2021.gpr` file using the `getGuiPr
   Abaqus/CAE saves `guiPreferences` settings to your home directory when you exit the application. A separate `guiPreferences` record is stored in the preferences file for each display you use, so you must specify the **displayName** you want to modify when you open the `guiPreferences` settings. You can obtain a list of the available **displayName** settings by calling the `getDisplayNamesInGuiPreferences` function, and you can edit these settings by using the `openGuiPreferences` function and specifying the **displayName** of the settings that you want to modify.
 
   In the following example, the `openGuiPreferences` function is used to examine the **X** - and **Y** -location and the height and width of the following components of Abaqus/CAE:
-
   - **Select Font** dialog box
   - Abaqus/CAE main window
   - **Adaptivity Plotter** plug-in
