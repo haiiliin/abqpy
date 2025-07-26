@@ -17,7 +17,6 @@ The standard Abaqus Scripting Interface exception types are listed below:
 - **InvalidNameError**
 
   You specified an invalid name. Abaqus/CAE enforces a naming convention for objects that you create. Names must adhere to the following rules:
-
   - Part, model, instance, set, surface, feature, and job names can have up to 80 characters; other object names can have up to 38 characters. Instance names of models that have been instantiated as model instances in another model still have a 38-character limit. For imported sets/surfaces, parts, and model instances, the names are generated internally in Abaqus/CAE by combining part/instance/set names. You must ensure that the combined length will not exceed 80 characters; otherwise, the data check analysis will fail.
 
   - The name can include spaces and most punctuation marks and special characters; however, only 7-bit ASCII characters are supported.
