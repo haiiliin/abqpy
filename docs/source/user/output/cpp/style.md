@@ -7,7 +7,6 @@ The following list describes the order in which commands are documented in the {
 - Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, {doc}`/reference/session/animation`, and {doc}`/reference/mdb/model/part_assembly/assembly`.
 
 - Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in {doc}`/reference/mdb/model/mesh` the objects are listed in the following order:
-
   - Assembly
   - Part
   - ElemType
@@ -18,7 +17,6 @@ The following list describes the order in which commands are documented in the {
   - MeshStats
 
 - Within each object description, the commands are listed in the following order:
-
   - Constructors (in alphabetical order)
   - Methods (in alphabetical order)
   - Members
