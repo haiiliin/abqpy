@@ -950,7 +950,6 @@ The script uses getInputs to display a dialog box that prompts you for the follo
 - The coordinates of the center of the sphere. By default, the script uses (0,0,0).
 
 - The analysis steps. You can enter one of the following:
-
   - An Int
   - A comma-separated list of Ints
   - A range; for example, 1:20

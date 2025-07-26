@@ -7,7 +7,6 @@ This guide is a part of the Abaqus® documentation collection, which describes a
 The guide consists of the following sections:
 
 - {doc}`about/index`
-
   - {doc}`about/interface`
 
     This section provides an overview of the Abaqus Scripting Interface and describes how Abaqus/CAE executes scripts.
@@ -15,12 +14,10 @@ The guide consists of the following sections:
   - {doc}`about/examples/index`
 
     Two simple examples are provided to introduce you to programming with the Abaqus Scripting Interface.
-
     - {doc}`about/examples/create-part`
     - {doc}`about/examples/read-output`
 
 - {doc}`python/index`
-
   - {doc}`python/introduction/index`
 
     This section is intended as a basic introduction to the Python programming language and is not an exhaustive description of the language. There are several books on the market that describe Python, and these books are listed as references. Additional resources, such as Python-related sites, are also listed.
@@ -40,13 +37,11 @@ The guide consists of the following sections:
   This section provides a set of example scripts that lead you through the cantilever beam tutorial found in [Creating and Analyzing a Simple Model in Abaqus/CAE](https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb). The following section is a basic tutorial for the experienced Abaqus user. It leads you through the Abaqus/CAE modeling process by visiting each of the modules and showing you the basic steps to create and analyze a simple model."). Additional examples are provided that read from an output database, display a contour plot, and print a contour plot from each step of the analysis. The final example illustrates how you can read from a model database created by Abaqus/CAE, parameterize the model, submit a set of analysis jobs, and generate results from the resulting output databases.
 
 - {doc}`output/index`
-
   - {doc}`output/python/index`
 
     When you execute an analysis job, Abaqus/Standard and Abaqus/Explicit store the results of the analysis in an output database (.odb file) that can be viewed in the Visualization module of Abaqus/CAE or in Abaqus/Viewer. This section describes how you use the Abaqus Scripting Interface to access the data stored in an output database.
 
     You can do the following with the Abaqus Scripting Interface:
-
     - Read model data describing the geometry of the parts and the assembly; for example, nodal coordinates, element connectivity, and element type and shape.
     - Read model data describing the sections and materials and where they are used in an assembly.
     - Read field output data from selected steps, frames, and regions.

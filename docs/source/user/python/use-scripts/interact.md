@@ -26,7 +26,6 @@ The arguments to the callback function are:
 - **jobName**: A String specifying the name of the job to be monitored. You can also use the SymbolicConstant ANY_JOB that specifies that the callback function will monitor messages from all jobs.
 
 - **messageType**: A SymbolicConstant specifying the message type that will call the callback function. You can also use the SymbolicConstant ANY_MESSAGE_TYPE that specifies that all messages will call the callback function. The following is a list of the message types issued by Abaqus/Standard and Abaqus/Explicit:
-
   - ABORTED
   - ANY_JOB
   - ANY_MESSAGE_TYPE
@@ -55,11 +54,9 @@ The arguments to the callback function are:
   - WARNING
 
 - **data**: A DataObject object containing the message data. The following list describes the members of the DataObject object:
-
   - **clientHost**: A String specifying the host name of the machine that is running the analysis.
 
   - **clientName**: A String specifying the name of the client that sent the message. Possible values are
-
     - "BatchPre" (the input file preprocessor)
     - "Packager" (the Abaqus/Explicit preprocessor packager)
     - "Standard" (the Abaqus/Standard analysis)
@@ -67,7 +64,6 @@ The arguments to the callback function are:
     - "Calculator" (the postprocessing calculator)
 
   - **phase**: A SymbolicConstant specifying the phase of the analysis. Possible values are
-
     - BATCHPRE_PHASE
     - PACKAGER_PHASE
     - STANDARD_PHASE
