@@ -2,13 +2,10 @@
 
 from __future__ import annotations
 
-from typing import overload
-
 from abqpy.decorators import abaqus_function_doc
 
 
 @abaqus_function_doc
-@overload
 def getInput(prompt: str, default: str = ""):
     r"""This method is used to obtain a single input from a user from a dialog box. The method displays a modal
     dialog box with a text field prefaced by the specified label. The user enters data in the text field or
@@ -44,8 +41,7 @@ def getInput(prompt: str, default: str = ""):
 
 
 @abaqus_function_doc
-@overload
-def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
+def getInputs(fields: tuple, label: str = "", dialogTitle: str = ""):
     """This method is used to obtain multiple inputs from a user from a dialog box. The method
     displays a modal dialog box with a column of text fields prefaced by the specified
     labels. The user enters data in the text fields or accepts the optional default values
@@ -82,10 +78,6 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
         objects.
     """
     ...
-
-
-@abaqus_function_doc
-def getInput(*args, **kwargs): ...
 
 
 @abaqus_function_doc
