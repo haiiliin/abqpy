@@ -178,7 +178,6 @@ The following items are available from the **Settings** menu:
 - **Line Animation**
 
   Highlight the line currently being executed in the main window. The following animation settings are available:
-
   - No animation.
   - Animate main file (default). Highlights only the statements in the main function or method. Functions called from the main script are not highlighted.
   - Animate main file functions. Highlights the main script statements and the statements in functions that are defined within the main file.
@@ -187,7 +186,6 @@ The following items are available from the **Settings** menu:
 - **Python Code**
 
   Control the appearance and editing behavior of Python scripts in the Abaqus PDE main window.
-
   - **Syntax Coloring**
 
     Display the code using various font colors according to its purpose. This option is selected by default.You can view or change the color selections with the Choose Syntax Colors option.

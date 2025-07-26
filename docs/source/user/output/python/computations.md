@@ -17,7 +17,6 @@ The following rules apply:
 - Multiplication and division are not supported between two vector objects nor between two tensor objects.
 
 - The types in an expression must be compatible. For example,
-
   - A vector cannot be added to a tensor.
   - A three-dimensional surface tensor cannot be added to a three-dimensional planar tensor.
   - INTEGRATION_POINT data cannot be added to ELEMENT_NODAL data.
@@ -119,7 +118,6 @@ The following rules apply to envelope calculations:
 - Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the MAGNITUDE invariant and for tensors you can supply the MISES invariant.
 
 - The fields being compared must be similar. For example,
-
   - VECTOR and TENSOR_3D_FULL fields cannot appear in the same list.
   - The output region of all the fields must be the same. All the fields must apply to the whole model, or all the fields must apply to the same set.
 
@@ -145,12 +143,10 @@ The following rules apply to the transformation of results:
   ```
 
 - When you are transforming a tensor, the location or integration point always takes into account the deformation. The location of the coordinate system depends on the model, as follows:
-
   - If the system is fixed, the coordinate system is fixed.
   - If the system is model based, you must supply a displacement field that determines the instantaneous location and orientation of the coordinate system.
 
 - Abaqus will perform transformations of tensor results for shells, membranes, and planar elements as rotations of results about the element normal at the element result location. The element normal is the normal computed for the frame associated with the field by Abaqus, and you cannot redefine the normal. Abaqus defines the location of the results location from the nodal locations. You specify optional arguments if you want to use the deformed nodal locations to transform results. For rectangular, cylindrical, and spherical coordinate systems the second component direction for the transformed results will be determined by one of the following:
-
   - The **Y** - axis in a rectangular coordinate system.
   - The $\theta$-axis in a cylindrical coordinate system.
   - The $\theta$-axis in a spherical coordinate system.
