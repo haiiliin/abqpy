@@ -112,7 +112,6 @@ The following list describes the objects in model data and the commands you use 
 - **Regions**
 
   Regions in the output database are OdbSet objects. Regions refer to the part and assembly sets stored in the output database. A part set refers to elements or nodes in an individual part and appears in each instance of the part in the assembly. An assembly set refers to the elements or nodes in part instances in the assembly. A region can be one of the following:
-
   - A node set
   - An element set
   - A surface
@@ -639,13 +638,11 @@ The output from all history requests that relate to a specified point is collect
 In the analysis that generated the Abaqus/CAE Visualization module tutorial output database, the user asked for the following history output:
 
 - **At the rigid body reference point (Node 1000)**
-
   - U
   - V
   - A
 
 - At the corner element
-
   - MISES
   - LE22
   - S22
