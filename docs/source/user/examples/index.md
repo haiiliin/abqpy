@@ -7,7 +7,6 @@ The Abaqus/CAE example scripts in this section illustrate:
 - How you can use commands from the Abaqus Scripting Interface to create a simple model, submit it for analysis, and view the results. {doc}`cantilever` uses Abaqus Scripting Interface commands to reproduce the cantilever beam tutorial described in [Understanding Abaqus/CAE modules](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-c-caebeammodel.htm?contextscope=all#simagsa-c-caebeammodel).
 
 - How you can use the Abaqus Scripting Interface to control the output from the Visualization module in Abaqus/CAE (Abaqus/Viewer).
-
   - {ref}`opening-the-tutorial-output-database` explains how to use **abaqus fetch** to retrieve the Abaqus/CAE tutorial output database.
   - {ref}`opening-an-output-database-and-displaying-a-contour-plot` explains how to open the tutorial output database, display a contour plot, and print the resulting viewport to a file.
   - {ref}`printing-a-contour-plot-at-the-end-of-each-step` explains how to open the tutorial output database, customize the legend, display a contour plot at the end of each step, and print the resulting viewports to a file.
