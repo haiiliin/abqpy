@@ -222,9 +222,7 @@ class VertexArray(List[Vertex]):
         return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(
-        self, center: tuple[float, float, float], radius: float
-    ) -> VertexArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding sphere.
 
         Parameters

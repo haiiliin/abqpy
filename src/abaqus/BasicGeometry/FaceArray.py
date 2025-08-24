@@ -244,9 +244,7 @@ class FaceArray(List[Face]):
         return FaceArray([Face()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(
-        self, center: tuple[float, float, float], radius: float
-    ) -> FaceArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding sphere.
 
         Parameters

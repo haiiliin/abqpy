@@ -174,9 +174,7 @@ class MeshElementArray(List[MeshElement]):
         return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(
-        self, center: tuple[float, float, float], radius: float
-    ) -> MeshElementArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding sphere.
 
         Parameters
