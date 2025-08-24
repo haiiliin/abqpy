@@ -148,7 +148,12 @@ class MeshElementArray(List[MeshElement]):
         return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> MeshElementArray:
+    def getByBoundingCylinder(
+        self,
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
+        radius: float,
+    ) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding cylinder.
 
         Parameters
@@ -169,7 +174,9 @@ class MeshElementArray(List[MeshElement]):
         return MeshElementArray([MeshElement()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshElementArray:
+    def getByBoundingSphere(
+        self, center: tuple[float, float, float], radius: float
+    ) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding sphere.
 
         Parameters

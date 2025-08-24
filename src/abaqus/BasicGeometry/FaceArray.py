@@ -217,7 +217,12 @@ class FaceArray(List[Face]):
         return FaceArray([Face()])
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> FaceArray:
+    def getByBoundingCylinder(
+        self,
+        center1: tuple[float, float, float],
+        center2: tuple[float, float, float],
+        radius: float,
+    ) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding cylinder.
 
         Parameters
@@ -239,7 +244,9 @@ class FaceArray(List[Face]):
         return FaceArray([Face()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str) -> FaceArray:
+    def getByBoundingSphere(
+        self, center: tuple[float, float, float], radius: float
+    ) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding sphere.
 
         Parameters

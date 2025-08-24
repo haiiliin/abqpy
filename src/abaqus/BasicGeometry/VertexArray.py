@@ -195,7 +195,9 @@ class VertexArray(List[Vertex]):
         return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> VertexArray:
+    def getByBoundingCylinder(
+        self, center1: tuple, center2: tuple, radius: float
+    ) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding cylinder.
 
         Parameters
@@ -217,7 +219,9 @@ class VertexArray(List[Vertex]):
         return VertexArray([Vertex()])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str) -> VertexArray:
+    def getByBoundingSphere(
+        self, center: tuple[float, float, float], radius: float
+    ) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding sphere.
 
         Parameters
