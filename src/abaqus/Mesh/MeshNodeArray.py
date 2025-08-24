@@ -169,7 +169,7 @@ class MeshNodeArray(List[MeshNode]):
         return MeshNodeArray([MeshNode((0.0, 0.0, 0.0))])
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str) -> MeshNodeArray:
+    def getByBoundingSphere(self, center: tuple[float, float, float], radius: float) -> MeshNodeArray:
         """This method returns an array of node objects that lie within the specified bounding sphere.
 
         Parameters
