@@ -4,6 +4,7 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import OFF, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
@@ -31,8 +32,8 @@ class RegionPairs:
         self,
         stepName: str,
         useAllstar: Boolean = OFF,
-        addPairs: Literal[C.SELF, C.GLOBAL] | None = None,
-        removePairs: Literal[C.SELF, C.GLOBAL] | None = None,
+        addPairs: Literal[C.SELF, C.GLOBAL] | tuple[tuple[Region, ...], ...] | None = None,
+        removePairs: Literal[C.SELF, C.GLOBAL] | tuple[tuple[Region, ...], ...] | None = None,
     ):
         """This method allows addition and removal of domain pairs in a given step.
 
