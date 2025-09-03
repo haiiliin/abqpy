@@ -969,11 +969,13 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setElementType(
         self,
-        regions: Sequence[ConstrainedSketchGeometry]
-        | Sequence[MeshElement]
-        | Sequence[CellArray]
-        | Sequence[FaceArray]
-        | Set,
+        regions: (
+            Sequence[ConstrainedSketchGeometry]
+            | Sequence[MeshElement]
+            | Sequence[CellArray]
+            | Sequence[FaceArray]
+            | Set
+        ),
         elemTypes: Sequence[ElemType],
     ):
         """This method assigns element types to the specified regions.
