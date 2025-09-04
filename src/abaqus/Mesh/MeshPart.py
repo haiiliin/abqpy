@@ -1,14 +1,16 @@
 from __future__ import annotations
 
-from typing import Sequence, Union
+from typing import Sequence
 
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..BasicGeometry.Cell import Cell
+from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
+from ..BasicGeometry.FaceArray import FaceArray
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 from ..Datum.DatumCsys import DatumCsys
 from ..Feature.Feature import Feature
@@ -460,7 +462,7 @@ class MeshPart(PartBase):
             C.SMALLEST_ELEM_LOCATION,
             C.CONSTRAINT,
         ],
-    ) -> Union[float, int, SymbolicConstant]:
+    ) -> float | int | SymbolicConstant:
         """This method returns an edge seed parameter for a specified edge of a part.
 
         Parameters
@@ -486,7 +488,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        Union[float, int, SymbolicConstant]
+        float | int | SymbolicConstant
             The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
             **attribute** argument.
 
@@ -616,7 +618,7 @@ class MeshPart(PartBase):
             C.STRUCTURED,
             C.TECHNIQUE,
         ],
-    ) -> Union[Boolean, SymbolicConstant]:
+    ) -> Boolean | SymbolicConstant:
         """This method returns a mesh control parameter for the specified region of a part.
 
         Parameters
@@ -646,7 +648,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        Union[bool, SymbolicConstant]
+        bool | SymbolicConstant
             The return value is a SymbolicConstant or a Boolean depending on the value of the
             **attribute** argument.
 
@@ -722,7 +724,7 @@ class MeshPart(PartBase):
         return 0.0
 
     @abaqus_method_doc
-    def getUnmeshedRegions(self) -> Union[Region, None]:
+    def getUnmeshedRegions(self) -> Region | None:
         """This method returns all geometric regions in the part that require a mesh for submitting an analysis
         but are either unmeshed or are meshed incompletely.
 
@@ -967,7 +969,13 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setElementType(
         self,
-        regions: Union[Sequence[ConstrainedSketchGeometry], Sequence[MeshElement], Set],
+        regions: (
+            Sequence[ConstrainedSketchGeometry]
+            | Sequence[MeshElement]
+            | Sequence[CellArray]
+            | Sequence[FaceArray]
+            | Set
+        ),
         elemTypes: Sequence[ElemType],
     ):
         """This method assigns element types to the specified regions.
@@ -1015,7 +1023,7 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setMeshControls(
         self,
-        regions: Union[Sequence[Face], Sequence[Cell]],
+        regions: Sequence[Face] | Sequence[Cell],
         elemShape: Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI] | None = None,
         technique: Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN] | None = None,
         algorithm: Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT] | None = None,
