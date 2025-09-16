@@ -62,18 +62,18 @@ class AbqpyCLI(AbqpyCLIBase):
         self,
         script: str,
         *args,
-        database: str | None = config.cae.database,
-        replay: str | None = config.cae.replay,
-        recover: str | None = config.cae.recover,
-        startup: str | None = config.cae.startup,
-        gui: bool = config.cae.gui,
-        envstartup: bool = config.cae.envstartup,
-        savedOptions: bool = config.cae.savedOptions,
-        savedGuiPrefs: bool = config.cae.savedGuiPrefs,
-        startupDialog: bool = config.cae.startupDialog,
-        custom: str | None = config.cae.custom,
-        guiTester: str | None = config.cae.guiTester,
-        guiRecord: bool | None = config.cae.guiRecord,
+        database: str | None = None,
+        replay: str | None = None,
+        recover: str | None = None,
+        startup: str | None = None,
+        gui: bool = None,
+        envstartup: bool = None,
+        savedOptions: bool = None,
+        savedGuiPrefs: bool = None,
+        startupDialog: bool = None,
+        custom: str | None = None,
+        guiTester: str | None = None,
+        guiRecord: bool | None = None,
     ):
         """Run Abaqus/CAE command.
 
@@ -109,6 +109,20 @@ class AbqpyCLI(AbqpyCLIBase):
         guiRecord : bool, optional
             Record the GUI commands to a file, by default None
         """
+        # Option defaults
+        database = database if database is not None else config.cae.database
+        replay = replay if replay is not None else config.cae.replay
+        recover = recover if recover is not None else config.cae.recover
+        startup = startup if startup is not None else config.cae.startup
+        gui = gui if gui is not None else config.cae.gui
+        envstartup = envstartup if envstartup is not None else config.cae.envstartup
+        savedOptions = savedOptions if savedOptions is not None else config.cae.savedOptions
+        savedGuiPrefs = savedGuiPrefs if savedGuiPrefs is not None else config.cae.savedGuiPrefs
+        startupDialog = startupDialog if startupDialog is not None else config.cae.startupDialog
+        custom = custom if custom is not None else config.cae.custom
+        guiTester = guiTester if guiTester is not None else config.cae.guiTester
+        guiRecord = guiRecord if guiRecord is not None else config.cae.guiRecord
+
         # Parse options
         script = f'"{script}"'.replace('""', '"') if " " in script else script
         options = self._parse_options(script=script if gui else None, noGUI=script if not gui else None,
@@ -147,8 +161,8 @@ class AbqpyCLI(AbqpyCLIBase):
         self,
         script: str,
         *args,
-        sim: str | None = config.python.sim,
-        log: str | None = config.python.log,
+        sim: str | None = None,
+        log: str | None = None,
     ):
         """Run Abaqus/Python command.
 
@@ -163,6 +177,10 @@ class AbqpyCLI(AbqpyCLIBase):
         log : str, optional
             The name of the log file to open, by default None
         """
+        # Option defaults
+        sim = sim if sim is not None else config.python.sim
+        log = log if log is not None else config.python.log
+
         # Parse options
         options = self._parse_options(sim=sim, log=log)
 
