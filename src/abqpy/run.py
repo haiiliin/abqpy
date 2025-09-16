@@ -53,9 +53,9 @@ def run(cae: bool = True) -> None:
         )
         ret = abaqus.pde(script=filePath)
     elif cae:
-        ret = abaqus.cae(filePath, *sys.argv[1:], **config.cae.model_dump())
+        ret = abaqus.cae(filePath, *sys.argv[1:])
     else:
-        ret = abaqus.python(filePath, *sys.argv[1:], **config.python.model_dump())
+        ret = abaqus.python(filePath, *sys.argv[1:])
     if config.execution_method == "subprocess":
         if ret.returncode != 0 or "Abaqus Error:" in ret.stdout:
             raise AbaqusError(f"The abaqus command exited with an error: {ret.stdout}, {ret.stderr}")
