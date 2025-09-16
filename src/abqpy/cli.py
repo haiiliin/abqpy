@@ -62,18 +62,18 @@ class AbqpyCLI(AbqpyCLIBase):
         self,
         script: str,
         *args,
-        database: str | None = None,
-        replay: str | None = None,
-        recover: str | None = None,
-        startup: str | None = None,
-        gui: bool = False,
-        envstartup: bool = True,
-        savedOptions: bool = True,
-        savedGuiPrefs: bool = True,
-        startupDialog: bool = True,
-        custom: str | None = None,
-        guiTester: str | None = None,
-        guiRecord: bool | None = None,
+        database: str | None = config.cae.database,
+        replay: str | None = config.cae.replay,
+        recover: str | None = config.cae.recover,
+        startup: str | None = config.cae.startup,
+        gui: bool = config.cae.gui,
+        envstartup: bool = config.cae.envstartup,
+        savedOptions: bool = config.cae.savedOptions,
+        savedGuiPrefs: bool = config.cae.savedGuiPrefs,
+        startupDialog: bool = config.cae.startupDialog,
+        custom: str | None = config.cae.custom,
+        guiTester: str | None = config.cae.guiTester,
+        guiRecord: bool | None = config.cae.guiRecord,
     ):
         """Run Abaqus/CAE command.
 
@@ -147,8 +147,8 @@ class AbqpyCLI(AbqpyCLIBase):
         self,
         script: str,
         *args,
-        sim: str | None = None,
-        log: str | None = None,
+        sim: str | None = config.python.sim,
+        log: str | None = config.python.log,
     ):
         """Run Abaqus/Python command.
 
