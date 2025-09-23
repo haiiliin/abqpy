@@ -3,7 +3,7 @@
 ## Introduction
 
 `abqpy` is a Python package that provides type hints for Abaqus Python scripting. You can
-use it to write your Abaqus Python scripts fluently, even without having Abaqus installed.
+use it to write your Abaqus Python scripts fluently.
 It also provides simple APIs to execute Abaqus commands, enabling you to build models,
 submit jobs, and extract output data in a single Python script, all without opening Abaqus/CAE.
 
