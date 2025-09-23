@@ -89,7 +89,7 @@ abaqus cae
     [guiNoRecord]
 ```
 
-Typically, you can use the `noGUI-file` or `script-file` options to execute your Python script in Abaqus.
+Typically, we can use the `noGUI-file` or `script-file` options to execute your Python script in Abaqus.
 
 The second Python interpreter is the one you install yourself, where `abqpy`
 is installed. `abqpy` provides a bridge connecting your Python script to the Abaqus Python
