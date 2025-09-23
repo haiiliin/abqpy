@@ -2,11 +2,10 @@
 
 ## Introduction
 
-`abqpy` is a Python package providing type hints for Python scripting of Abaqus, you can
-use it to write you Python script of Abaqus fluently, even without doing anything in Abaqus.
-It also provides some simple APIs to execute the Abaqus commands so that you can run your
-Python script to build the model, submit the job and extract the output data in just one
-Python script, even without opening the Abaqus/CAE.
+`abqpy` is a Python package that provides type hints for Abaqus Python scripting. You can
+use it to write your Abaqus Python scripts fluently.
+It also provides simple APIs to execute Abaqus commands, enabling you to build models,
+submit jobs, and extract output data in a single Python script, all without opening Abaqus/CAE.
 
 ## Installation
 
@@ -44,33 +43,33 @@ pip install ipynbname nbconvert
 ````
 
 ```{warning}
-Do not install abqpy in the Abaqus's built-in Python interpreter, it may cause the
-Abaqus/Python interpreter to crash and you may not be able to open Abaqus/CAE anymore.
+Do not install abqpy in Abaqus's built-in Python interpreter, as it may cause the
+Abaqus Python interpreter to crash and you may not be able to open Abaqus/CAE anymore.
 ```
 
 ```{note}
-You are recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
+It is recommended to install the corresponding version of Abaqus and `abqpy` to avoid any compatibility issues.
 ```
 
 ## Two Python interpreters
 
-Before we go any further, it is necessary for us to understand two Python interpreters.
+Before proceeding, it's important to understand the concept of two different Python interpreters.
 
-When we use the Abaqus/CAE graphical user interface (GUI) to create a model and to visualize
-the results, commands are issued internally by Abaqus/CAE after every operation. These
+When you use the Abaqus/CAE graphical user interface (GUI) to create a model and visualize
+results, Abaqus/CAE internally issues commands after every operation. These
 commands reflect the geometry you created along with the options and settings you selected
-from each dialog box. The GUI generates commands in an object-oriented programming language
-called Python. The commands issued by the GUI are sent to the Abaqus/CAE kernel. The kernel
+from each dialog box. The GUI generates commands in the Python programming language.
+The commands issued by the GUI are sent to the Abaqus/CAE kernel, which
 interprets the commands and uses the options and settings to create an internal representation
-of our model. The kernel is the brains behind Abaqus/CAE. The GUI is the interface between the
-user and the kernel.
+of your model. The kernel is the computational engine behind Abaqus/CAE, while the GUI serves as the interface between you
+and the kernel.
 
-In a word, Abaqus use Python language to interact with the Abaqus kernel, everything that can
-be done in Abaqus/CAE, can also be done using Python script. Abaqus has already installed a
-Python interpreter so that Abaqus/CAE can use it to interact with the Abaqus kernel.
+In summary, Abaqus uses the Python language to interact with the Abaqus kernel. Everything that can
+be done in Abaqus/CAE can also be accomplished using Python scripts. Abaqus comes with a
+Python interpreter that enables Abaqus/CAE to interact with the Abaqus kernel.
 
-For some reasons, we cannot directly use the Python interpreter inside Abaqus to build an
-Abaqus model. But fortunately, we can use the commands provided by Abaqus to access it. i.e.
+For various reasons, we cannot directly use the Python interpreter inside Abaqus to build an
+Abaqus model independently. However, we can access it using commands provided by Abaqus:
 
 ```sh
 abaqus cae
@@ -90,33 +89,33 @@ abaqus cae
     [guiNoRecord]
 ```
 
-Usually, we can use the noGUI-file or script-file to execute our Python script in Abaqus.
+Typically, we can use the `noGUI-file` or `script-file` options to execute your Python script in Abaqus.
 
-Another Python interpreter, is the Python interpreter installed by ourselves, where `abqpy`
-is installed. `abqpy` provides a bridge to connect our Python script to Abaqus Python
-interpreter, it provides type hints for Python scripting for Abaqus, enabling us to write a
-Abaqus Python script quickly.
+The second Python interpreter is the one you install yourself, where `abqpy`
+is installed. `abqpy` provides a bridge connecting your Python script to the Abaqus Python
+interpreter. It provides type hints for Abaqus Python scripting, enabling you to write
+Abaqus Python scripts efficiently.
 
 ## How does this package work?
 
-`abqpy` is just a package to provide type hints for Abaqus/Python scripting, it is installed outside Abaqus/Python
-environment, you can use `abqpy` to write your Abaqus/Python scripts, and run the scripts inside Abaqus on your own.
-However, with the help of Abaqus command, an easier way can be achieved: **you can actually run the script using your
-own Python interpreter without opening Abaqus**, which is achieved via the **abaqus** command like this:
+`abqpy` is a package that provides type hints for Abaqus Python scripting. It is installed outside the Abaqus Python
+environment. You can use `abqpy` to write your Abaqus Python scripts and then run those scripts inside Abaqus manually.
+However, with the help of Abaqus commands, there's an easier approach: **you can actually run the script using your
+own Python interpreter without opening Abaqus**. This is achieved via the **abaqus** command like this:
 
 ```sh
 abaqus cae noGUI=script.py
 ```
 
-The secret is hided in the {py:func}`~abqpy.run.run` function.  
-In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
-script (i.e., `from abaqus import *`), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
-**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, {py:func}`~abqpy.run.run`
-will exit the interpreter, because the script will already run in Abaqus Python interpreter.
+The mechanism is implemented in the {py:func}`~abqpy.run.run` function.  
+In this package, the {py:mod}`~abaqus` module is reimplemented to automatically call this function. When you import this module at the top of your
+script (i.e., `from abaqus import *`), your Python interpreter (not the Abaqus Python interpreter) will call this function and use the
+**abaqus** command to submit the script to Abaqus. After the script is submitted to Abaqus, {py:func}`~abqpy.run.run`
+will exit the interpreter, because the script will already be running in the Abaqus Python interpreter.
 
-In the output script, we might not want to always use the {py:mod}`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license).
-Instead, we use the module {py:mod}`~odbAccess` (i.e., `from odbAccess import *`), which requires only the Abaqus Python interpreter.
-Then, another similar **abaqus** command line is needed:
+In output scripts, you might not always want to use the {py:mod}`~abaqus` module, since it requires the Abaqus/CAE kernel (and its license).
+Instead, you can use the {py:mod}`~odbAccess` module (i.e., `from odbAccess import *`), which only requires the Abaqus Python interpreter.
+For this, a different **abaqus** command line is needed:
 
 ```sh
 abaqus python script.py
@@ -124,30 +123,30 @@ abaqus python script.py
 
 So, the {py:mod}`~odbAccess` module is also reimplemented to call the {py:func}`~abqpy.run.run` function with the argument `cae = False`.
 
-In summary, the {py:func}`~abqpy.run.run` function will be called when you import one of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the argument `cae = True`
-in {py:mod}`~abaqus` module and `cae = False` in {py:mod}`~odbAccess` module.
-Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
-on the top of your script.
+In summary, the {py:func}`~abqpy.run.run` function is called when you import either of the two modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It passes the argument `cae = True`
+for the {py:mod}`~abaqus` module and `cae = False` for the {py:mod}`~odbAccess` module.
+Therefore, if you want to run your Python script in the Abaqus Python environment, make sure to import one of these modules
+at the top of your script.
 
-## Write your Abaqus/Python script
+## Write your Abaqus Python script
 
-After installing the `abqpy` package, you can start writing your own Abaqus/Python script
-to build your model. You can refer
+After installing the `abqpy` package, you can start writing your own Abaqus Python scripts
+to build your models. You can refer to the
 [abqpy/examples at main · haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples)
-for some script examples. Or you may go {doc}`/tutorials` for a simple tutorial. For more documentation about
-Abaqus/Python scripting, please check {doc}`/reference/index` for more detailed API references.
+repository for script examples. Alternatively, you can check out {doc}`/tutorials` for a simple tutorial. For more detailed documentation about
+Abaqus Python scripting, please see {doc}`/reference/index` for comprehensive API references.
 
-## Setup your Abaqus Environment
+## Set up your Abaqus environment
 
-Make sure the `abaqus` command is available in the command line (i.e., you can run `abaqus` in the command line), otherwise,
-add a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, for example,
+Ensure the `abaqus` command is available in the command line (i.e., you can run `abaqus` from the command line). If not,
+add a new system environment variable named `ABAQUS_BAT_PATH` and set its value to the file path of the Abaqus command. For example:
 `C:/SIMULIA/Commands/abaqus.bat`.
 
-## Run your Abaqus/Python script
+## Run your Abaqus Python script
 
-Now you can run your Abaqus/Python script with the following methods:
+Now you can run your Abaqus Python script using the following methods:
 
-- Open Abaqus/CAE and click `Run Script` in the menu bar, then select your script file, which is the most common way to
+- Open Abaqus/CAE and click **Run Script** in the menu bar, then select your script file. This is the most common way to
   run a Python script in Abaqus/CAE.
 - Use the `abaqus` command in the command line:
   ```sh
@@ -159,13 +158,13 @@ Now you can run your Abaqus/Python script with the following methods:
   ```sh
   [python -m] abqpy cae script.py
   ```
-  The advantage using `abqpy` command instead of using `abaqus` command directly is that you are able to customize the
-  default python launch command. See {doc}`cli` for more information about the `abqpy` command.
+  The advantage of using the `abqpy` command instead of the `abaqus` command directly is that you can customize the
+  default Python launch command. See {doc}`cli` for more information about the `abqpy` command.
 - Use the Python 3 interpreter to run the script directly:
   ```sh
   python script.py
   ```
-  This is the most convenient way to run the script, it is equivalent to the `abqpy` command with some default
+  This is the most convenient way to run the script. It is equivalent to the `abqpy` command with some default
   predefined arguments.
 - Use the {py:obj}`abqpy.cli.abaqus` object (an {py:obj}`abqpy.cli.AbqpyCLI` object) to run the script:
 
@@ -175,14 +174,14 @@ Now you can run your Abaqus/Python script with the following methods:
   abaqus.cae(script="script.py")
   ```
 
-  The {py:obj}`abqpy.cli.abaqus` object is the object used for the `abqpy` command, you can call the methods in this
-  object directly to run the script. This method is convenient when you want to call the Abaqus/Python script in another
-  Python script since typing annotations are provided for the methods, so you can check the docstring of the methods for
+  The {py:obj}`abqpy.cli.abaqus` object is used for the `abqpy` command. You can call the methods in this
+  object directly to run the script. This method is convenient when you want to call the Abaqus Python script from another
+  Python script, since typing annotations are provided for the methods. You can check the docstring of the methods for
   more information.
 
 ```{warning}
-`abqpy` does not support debugging since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
-If you run the script under the debug mode, the script will be opened in Abaqus PDE where you can debug it.
+`abqpy` does not support debugging, since Abaqus does not provide a debugger for Python scripting outside Abaqus/CAE.
+If you run the script in debug mode, it will be opened in Abaqus PDE where you can debug it.
 ```
 
 - Create an Abaqus Model
