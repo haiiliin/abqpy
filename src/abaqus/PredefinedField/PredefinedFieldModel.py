@@ -24,7 +24,9 @@ from ..UtilityAndView.abaqusConstants import (
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Field import Field
 from .FluidCavityPressure import FluidCavityPressure
+from .FluidElectricPotential import FluidElectricPotential
 from .InitialState import InitialState
+from .IonConcentration import IonConcentration
 from .KinematicHardening import KinematicHardening
 from .MaterialAssignment import MaterialAssignment
 from .PorePressure import PorePressure
@@ -69,6 +71,48 @@ class PredefinedFieldModel(ModelBase):
             A FluidCavityPressure object.
         """
         self.predefinedFields[name] = predefinedField = FluidCavityPressure(name, fluidCavity, fluidPressure)
+        return predefinedField
+
+    @abaqus_method_doc
+    def FluidElectricPotential(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FIELD, C.DISCRETE_FIELD] = C.UNIFORM,
+        field: str = "",
+        value: float = 0.0,
+    ):
+        """This method creates a FluidElectricPotential predefined field object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidElectricPotential
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+            are UNIFORM, FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The field argument applies only when distributionType is FIELD
+            or distributionType is DISCRETE_FIELD. The default value is an empty string.
+        value
+            A Float specifying the initial value of fluid electric potential.
+
+        Returns
+        -------
+        FluidElectricPotential
+            A FluidElectricPotential object.
+        """
+        self.predefinedFields[name] = predefinedField = FluidElectricPotential(
+            name, region, distributionType, field, value
+        )
         return predefinedField
 
     @abaqus_method_doc
@@ -122,6 +166,46 @@ class PredefinedFieldModel(ModelBase):
             endIncrement,
             updateReferenceConfiguration,
         )
+        return predefinedField
+
+    @abaqus_method_doc
+    def IonConcentration(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FIELD, C.DISCRETE_FIELD] = C.UNIFORM,
+        field: str = "",
+        value: float = 0.0,
+    ):
+        """This method creates an IonConcentration predefined field object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].IonConcentration
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+            are UNIFORM, FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The field argument applies only when distributionType is FIELD
+            or distributionType is DISCRETE_FIELD. The default value is an empty string.
+        value
+            A Float specifying the initial value of ion concentration.
+
+        Returns
+        -------
+        IonConcentration
+            An IonConcentration object.
+        """
+        self.predefinedFields[name] = predefinedField = IonConcentration(name, region, distributionType, field, value)
         return predefinedField
 
     @abaqus_method_doc

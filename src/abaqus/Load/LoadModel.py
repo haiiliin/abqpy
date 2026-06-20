@@ -38,9 +38,12 @@ from .ConcPoreFluid import ConcPoreFluid
 from .ConnectorForce import ConnectorForce
 from .ConnectorMoment import ConnectorMoment
 from .CoriolisForce import CoriolisForce
+from .DistIonConcBodyFlux import DistIonConcBodyFlux
+from .FluidSurfaceCurrent import FluidSurfaceCurrent
 from .Gravity import Gravity
 from .InertiaRelief import InertiaRelief
 from .InwardVolAccel import InwardVolAccel
+from .IonConcentrationFlux import IonConcentrationFlux
 from .LineLoad import LineLoad
 from .Moment import Moment
 from .PEGLoad import PEGLoad
@@ -1016,6 +1019,121 @@ class LoadModel(ModelBase):
         return load
 
     @abaqus_method_doc
+    def DistIonConcBodyFlux(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        magnitude: float,
+        field: str = "",
+        distributionType: Literal[C.UNIFORM, C.USER_DEFINED, C.FIELD] = C.UNIFORM,
+        amplitude: str = UNSET,
+    ):
+        """This method creates a DistIonConcBodyFlux object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].DistIonConcBodyFlux
+
+        Parameters
+        ----------
+        name
+            A String specifying the load repository key.
+        createStepName
+            A String specifying the name of the step in which the load is created.
+        region
+            A Region object specifying the region to which the load is applied.
+        magnitude
+            A Float specifying the body heat flux magnitude. magnitude is optional if
+            distributionType is USER_DEFINED.
+        field
+            A String specifying the name of the AnalyticalField object associated with this load.
+            The field argument applies only when distributionType is FIELD. The default value is
+            an empty string.
+        distributionType
+            A SymbolicConstant specifying how the distributed ion concentration body flux is
+            distributed spatially. Possible values are UNIFORM, USER_DEFINED, and FIELD. The
+            default value is UNIFORM.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the load has no amplitude reference. The default value is UNSET.
+            You should provide the amplitude argument only if it is valid for the specified step.
+
+        Returns
+        -------
+        DistIonConcBodyFlux
+            A DistIonConcBodyFlux object.
+        """
+        self.loads[name] = load = DistIonConcBodyFlux(
+            name,
+            createStepName,
+            region,
+            magnitude,
+            field,
+            distributionType,
+            amplitude,
+        )
+        return load
+
+    @abaqus_method_doc
+    def FluidSurfaceCurrent(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        magnitude: float,
+        distributionType: Literal[C.UNIFORM, C.FIELD] = C.UNIFORM,
+        field: str = "",
+        amplitude: str = UNSET,
+    ):
+        """This method creates a FluidSurfaceCurrent object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidSurfaceCurrent
+
+        Parameters
+        ----------
+        name
+            A String specifying the load repository key.
+        createStepName
+            A String specifying the name of the step in which the load is created. This must be
+            the first analysis step name.
+        region
+            A Region object specifying the region to which the load is applied.
+        magnitude
+            A Float specifying the load magnitude.
+        distributionType
+            A SymbolicConstant specifying how the load is distributed spatially. Possible values
+            are UNIFORM and FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField object associated with this load.
+            The field argument applies only when distributionType is FIELD. The default value is
+            an empty string.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the load has no amplitude reference. The default value is UNSET.
+            You should provide the amplitude argument only if it is valid for the specified step.
+
+        Returns
+        -------
+        FluidSurfaceCurrent
+            A FluidSurfaceCurrent object.
+        """
+        self.loads[name] = load = FluidSurfaceCurrent(
+            name,
+            createStepName,
+            region,
+            magnitude,
+            distributionType,
+            field,
+            amplitude,
+        )
+        return load
+
+    @abaqus_method_doc
     def Gravity(
         self,
         name: str,
@@ -1201,6 +1319,63 @@ class LoadModel(ModelBase):
         """
         self.loads[name] = load = InwardVolAccel(
             name, createStepName, region, magnitude, distributionType, field, amplitude
+        )
+        return load
+
+    @abaqus_method_doc
+    def IonConcentrationFlux(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        magnitude: float,
+        distributionType: Literal[C.UNIFORM, C.FIELD] = C.UNIFORM,
+        field: str = "",
+        amplitude: str = UNSET,
+    ):
+        """This method creates an IonConcentrationFlux object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].IonConcentrationFlux
+
+        Parameters
+        ----------
+        name
+            A String specifying the load repository key.
+        createStepName
+            A String specifying the name of the step in which the load is created. This must be
+            the first analysis step name.
+        region
+            A Region object specifying the region to which the load is applied.
+        magnitude
+            A Float specifying the load magnitude.
+        distributionType
+            A SymbolicConstant specifying how the load is distributed spatially. Possible values
+            are UNIFORM and FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField object associated with this load.
+            The field argument applies only when distributionType = FIELD. The default value is
+            an empty string.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the load has no amplitude reference. The default value is UNSET.
+            You should provide the amplitude argument only if it is valid for the specified step.
+
+        Returns
+        -------
+        IonConcentrationFlux
+            An IonConcentrationFlux object.
+        """
+        self.loads[name] = load = IonConcentrationFlux(
+            name,
+            createStepName,
+            region,
+            magnitude,
+            distributionType,
+            field,
+            amplitude,
         )
         return load
 

@@ -4,7 +4,14 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import OFF, ON, TABULAR, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    OFF,
+    ON,
+    SOLID,
+    TABULAR,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -81,12 +88,15 @@ class GapElectricalConductance:
     def __init__(
         self,
         definition: Literal[C.USER_DEFINED, C.TABULAR] = TABULAR,
+        Type: Literal[C.SOLID, C.LIQUID] = SOLID,
         clearanceDependency: Boolean = ON,
         pressureDependency: Boolean = OFF,
         temperatureDependencyC: Boolean = OFF,
+        ionConcentrationDependencyC: Boolean = OFF,
         dependenciesC: int = 0,
         clearanceDepTable: tuple = (),
         temperatureDependencyP: Boolean = OFF,
+        ionConcentrationDependencyP: Boolean = OFF,
         dependenciesP: int = 0,
         pressureDepTable: tuple = (),
     ):
@@ -102,6 +112,12 @@ class GapElectricalConductance:
         definition
             A SymbolicConstant specifying how the electrical conductance is defined. Possible values
             are TABULAR and USER_DEFINED. The default value is TABULAR.
+        Type
+            A SymbolicConstant specifying the Type of material. Possible values are SOLID and LIQUID. The default value is SOLID.
+
+            .. versionadded:: 2025
+
+                The ``Type`` argument was added.
         clearanceDependency
             A Boolean specifying whether to use clearance-dependent data. The default value is ON.
         pressureDependency
@@ -109,6 +125,12 @@ class GapElectricalConductance:
         temperatureDependencyC
             A Boolean specifying whether to use temperature-dependent data with clearance
             dependency. The default value is OFF.
+        ionConcentrationDependencyC
+            A Boolean specifying whether to use ion-concentration-dependent data with clearance dependency. The default value is OFF.
+
+            .. versionadded:: 2025
+
+                The ``ionConcentrationDependencyC`` argument was added.
         dependenciesC
             An Int specifying the number of field variables to use with clearance dependency. The
             default value is 0.
@@ -118,6 +140,12 @@ class GapElectricalConductance:
         temperatureDependencyP
             A Boolean specifying whether to use temperature-dependent data with pressure dependency.
             The default value is OFF.
+        ionConcentrationDependencyP
+            A Boolean specifying whether to use ion-concentration–dependent data with pressure dependency. The default value is OFF.
+
+            .. versionadded:: 2025
+
+                The ``ionConcentrationDependencyP`` argument was added.
         dependenciesP
             An Int specifying the number of field variables to use with pressure dependency. The
             default value is 0.

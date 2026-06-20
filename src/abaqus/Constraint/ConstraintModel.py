@@ -19,6 +19,7 @@ from ..UtilityAndView.abaqusConstants import (
     ON,
     SOLVER_DEFAULT,
     UNIFORM,
+    WARP_AMPLITUDE,
     Boolean,
 )
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
@@ -76,10 +77,22 @@ class ConstraintModel(ModelBase):
         surface: Region,
         controlPoint: Region,
         influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
-        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
+        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC, C.UNIFORM],
         rotationalCouplingType: Literal[C.ROTATIONAL_CONTINUUM, C.ROTATIONAL_STRUCTURAL],
         adjust: Boolean = OFF,
         localCsys: str | None = None,
+        temperatureDOFType: int = 0,
+        uniformConstraint: Literal[
+            C.WARP_AMPLITUDE,
+            C.PORE_PRESSURE,
+            C.ELECTRIC_POTENTIAL,
+            C.CONNECTOR_MATERIAL_FLOW,
+            C.DOF_TEMPERATURE,
+            C.SLURRY_CONCENTRATION,
+            C.ELECTROLYTE_ELECTRIC_POTENTIAL,
+            C.ION_CONCENTRATION,
+            C.SPECIES_CONCENTRATION,
+        ] = WARP_AMPLITUDE,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -124,6 +137,22 @@ class ConstraintModel(ModelBase):
             None or a DatumCsys object specifying the initial orientation of the local coordinate
             system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
             defined in the global coordinate system. The default value is None.
+        temperatureDOFType
+            An integer specifying the temperature degree of freedom to be coupled. Possible values range from 1 to 20. The default value is 0.
+
+            The temperatureDOFType argument applies only when couplingType=UNIFORM and uniformConstraint=DOF_TEMPERATURE.
+
+            .. versionadded:: 2025
+
+                The ``temperatureDOFType`` argument was added.
+        uniformConstraint
+            A SymbolicConstant specifying the nonmechanical degrees of freedom of surface nodes to be coupled to the same degree of freedom of a reference node. Possible values are WARP_AMPLITUDE, PORE_PRESSURE, ELECTRIC_POTENTIAL, CONNECTOR_MATERIAL_FLOW, DOF_TEMPERATURE, SLURRY_CONCENTRATION, ELECTROLYTE_ELECTRIC_POTENTIAL, ION_CONCENTRATION, and SPECIES_CONCENTRATION.
+
+            The uniformConstraint argument applies only when couplingType=UNIFORM.
+
+            .. versionadded:: 2025
+
+                The ``uniformConstraint`` argument was added.
         u1
             A Boolean specifying if the displacement component in the 1-direction is constrained to
             the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
@@ -171,8 +200,11 @@ class ConstraintModel(ModelBase):
             controlPoint,
             influenceRadius,
             couplingType,
+            rotationalCouplingType,
             adjust,
             localCsys,
+            temperatureDOFType,
+            uniformConstraint,
             u1,
             u2,
             u3,
@@ -488,6 +520,11 @@ class ConstraintModel(ModelBase):
         positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
         tieRotations: Boolean = ON,
+        tieTemperature: Boolean = ON,
+        tiePore: Boolean = ON,
+        electricPotential: Boolean = ON,
+        fluidElectricPotential: Boolean = ON,
+        ionConcentration: Boolean = ON,
         constraintRatioMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         constraintRatio: float = 0,
         constraintEnforcement: Literal[C.NODE_TO_SURFACE, C.SOLVER_DEFAULT, C.SURFACE_TO_SURFACE] = SOLVER_DEFAULT,
@@ -526,6 +563,41 @@ class ConstraintModel(ModelBase):
         tieRotations
             A Boolean specifying whether rotation degrees of freedom should be tied. The default
             value is ON.
+        tieTemperature
+            A Boolean specifying whether temperature degrees of freedom should be tied. The default
+            value is True.
+
+            .. versionadded:: 2025
+
+                The ``tieTemperature`` was added.
+        tiePore
+            A Boolean specifying whether pore pressure degrees of freedom should be tied. The default
+            value is True.
+
+            .. versionadded:: 2025
+
+                The ``tiePore`` was added.
+        electricPotential
+            A Boolean specifying whether electric potential in solid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``electricPotential`` was added.
+        fluidElectricPotential
+            A Boolean specifying whether electric potential in fluid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``fluidElectricPotential`` was added.
+        ionConcentration
+            A Boolean specifying whether ion concentration in fluid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``ionConcentration`` was added.
         constraintRatioMethod
             A SymbolicConstant specifying the method used to determine the constraint ratio.
             Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
@@ -554,6 +626,11 @@ class ConstraintModel(ModelBase):
             positionToleranceMethod,
             positionTolerance,
             tieRotations,
+            tieTemperature,
+            tiePore,
+            electricPotential,
+            fluidElectricPotential,
+            ionConcentration,
             constraintRatioMethod,
             constraintRatio,
             constraintEnforcement,
