@@ -178,6 +178,7 @@ history data, performs an operation on the data, and writes
 the result back to the output database.
 usage: abaqus python odbWrite.py
 """
+
 from odbAccess import *
 from odbMaterial import *
 from odbSection import *
@@ -849,12 +850,8 @@ distortion = radialDisp - aveDisp
 # Save computed results to the database.
 
 frame.FieldOutput(field=radialDisp)
-fieldDescription = (
-    "Distortion ( \
-    average radial displacement = "
-    + str(aveDisp)
-    + ")"
-)
+fieldDescription = "Distortion ( \
+    average radial displacement = " + str(aveDisp) + ")"
 frame.FieldOutput(name="Distortion", description=fieldDescription, field=distortion)
 
 odb.save()
