@@ -65,7 +65,7 @@ jobs:
       PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           submodules: recursive
@@ -111,7 +111,7 @@ jobs:
         with:
           timeout: 1200000
           delay: 60000
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: Download artifacts
