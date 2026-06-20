@@ -171,6 +171,7 @@ class ConstraintModel(ModelBase):
             controlPoint,
             influenceRadius,
             couplingType,
+            rotationalCouplingType,
             adjust,
             localCsys,
             u1,
