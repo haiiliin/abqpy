@@ -7,7 +7,14 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import OFF, ON, UNIFORM, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    OFF,
+    ON,
+    UNIFORM,
+    WARP_AMPLITUDE,
+    Boolean,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Constraint import Constraint
 
@@ -116,10 +123,22 @@ class Coupling(Constraint):
         surface: Region,
         controlPoint: Region,
         influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
-        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
+        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC, C.UNIFORM],
         rotationalCouplingType: Literal[C.ROTATIONAL_CONTINUUM, C.ROTATIONAL_STRUCTURAL],
         adjust: Boolean = OFF,
         localCsys: str | None = None,
+        temperatureDOFType: int = 0,
+        uniformConstraint: Literal[
+            C.WARP_AMPLITUDE,
+            C.PORE_PRESSURE,
+            C.ELECTRIC_POTENTIAL,
+            C.CONNECTOR_MATERIAL_FLOW,
+            C.DOF_TEMPERATURE,
+            C.SLURRY_CONCENTRATION,
+            C.ELECTROLYTE_ELECTRIC_POTENTIAL,
+            C.ION_CONCENTRATION,
+            C.SPECIES_CONCENTRATION,
+        ] = WARP_AMPLITUDE,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,

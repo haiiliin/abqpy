@@ -5,7 +5,7 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import UNIFORM, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import OFF, UNIFORM, Boolean, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .Interaction import Interaction
 
@@ -95,6 +95,7 @@ class FilmCondition(Interaction):
         field: str = "",
         sinkFieldName: str = "",
         sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        dynamicSurfaceActivation: Boolean = OFF,
     ):
         """This method creates a FilmCondition object.
 
@@ -151,6 +152,12 @@ class FilmCondition(Interaction):
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
             are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+        dynamicSurfaceActivation
+            A Boolean specifying the activation of an element-based film condition on evolving faces of an element.
+
+            .. versionadded:: 2025
+
+                The ``dynamicSurfaceActivation`` was added.
 
         Returns
         -------

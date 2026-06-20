@@ -1,0 +1,51 @@
+from __future__ import annotations
+
+from abqpy.decorators import abaqus_class_doc
+
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from .BoundaryConditionState import BoundaryConditionState
+
+
+@abaqus_class_doc
+class IonConcentrationBCState(BoundaryConditionState):
+    """The IonConcentrationBCState object stores the propagating data for an ion concentration
+    boundary condition in a step. One instance of this object is created internally by the
+    IonConcentrationBC object for each step. The instance is also deleted internally by the
+    IonConcentrationBC object.
+    The IonConcentrationBCState object is derived from the BoundaryConditionState object.
+
+    .. note::
+        This object can be accessed by::
+
+            import load
+            mdb.models[name].steps[name].boundaryConditionStates[name]
+
+        The corresponding analysis keywords are:
+
+        - BOUNDARY
+
+    .. versionadded:: 2025
+        The ``ElectricPotentialElectrolyteBCState`` class was added.
+    """
+
+    #: A Float specifying the ion concentration magnitude.
+    magnitude: float | None = None
+
+    #: A SymbolicConstant specifying the propagation state of the ion concentration magnitude.
+    #: Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
+    magnitudeState: SymbolicConstant
+
+    #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
+    #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
+    amplitudeState: SymbolicConstant
+
+    #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object.
+    #: Possible values are NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED,
+    #: NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE, INSTANCE_NOT_APPLICABLE,
+    #: PROPAGATED_FROM_BASE_STATE, MODIFIED_FROM_BASE_STATE, DEACTIVATED_FROM_BASE_STATE, and
+    #: BUILT_INTO_MODES.
+    status: SymbolicConstant
+
+    #: A String specifying the name of the amplitude reference. The String is empty if the
+    #: boundary condition has no amplitude reference.
+    amplitude: str = ""

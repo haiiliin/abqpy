@@ -16,6 +16,7 @@ from ..Step.CoupledThermalElectricalStructuralStep import (
     CoupledThermalElectricalStructuralStep,
 )
 from ..Step.CoupledThermalElectricStep import CoupledThermalElectricStep
+from ..Step.CoupledThermalElectrochemicalStep import CoupledThermalElectrochemicalStep
 from ..Step.DirectCyclicStep import DirectCyclicStep
 from ..Step.EmagTimeHarmonicStep import EmagTimeHarmonicStep
 from ..Step.ExplicitDynamicsStep import ExplicitDynamicsStep
@@ -34,6 +35,7 @@ from ..Step.StaticStep import StaticStep
 from ..Step.SteadyStateDirectStep import SteadyStateDirectStep
 from ..Step.SteadyStateModalStep import SteadyStateModalStep
 from ..Step.SteadyStateSubspaceStep import SteadyStateSubspaceStep
+from ..Step.StepControl import StepControl
 from ..Step.SubspaceDynamicsStep import SubspaceDynamicsStep
 from ..Step.SubstructureGenerateStep import SubstructureGenerateStep
 from ..Step.TempDisplacementDynamicsStep import TempDisplacementDynamicsStep
@@ -725,6 +727,114 @@ class StepModel(ModelBase):
             extrapolation,
             maintainAttributes,
             convertSDI,
+        )
+        return step
+
+    @abaqus_method_doc
+    def CoupledThermalElectrochemicalStep(
+        self,
+        name: str,
+        previous: str,
+        description: str = "",
+        response: Literal[C.STEADY_STATE, C.TRANSIENT] = C.TRANSIENT,
+        timePeriod: float = 1.0,
+        timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = C.AUTOMATIC,
+        maxNumInc: int = 100,
+        initialInc: float | None = None,
+        minInc: float | None = None,
+        maxInc: float | None = None,
+        deltmx: float = 0.0,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.SEPARATED] = C.FULL_NEWTON,
+        matrixStorage: Literal[C.SYMMETRIC, C.UNSYMMETRIC, C.SOLVER_DEFAULT] = C.SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = C.STEP,
+        extrapolation: Literal[C.NONE, C.LINEAR, C.PARABOLIC] = C.LINEAR,
+        maintainAttributes: bool = False,
+        convertSDI: Literal[C.PROPAGATED, C.CONVERT_SDI_OFF, C.CONVERT_SDI_ON] = C.PROPAGATED,
+    ):
+        """This method creates a CoupledThermalElectrochemicalStep object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].CoupledThermalElectrochemicalStep
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        previous
+            A String specifying the name of the previous step. The new step appears after this step in
+            the list of analysis steps.
+        description
+            A String specifying a description of the new step. The default value is an empty string.
+        response
+            A SymbolicConstant specifying the analysis type. Possible values are STEADY_STATE and
+            TRANSIENT. The default value is TRANSIENT.
+        timePeriod
+            A Float specifying the total time period for the step. The default value is 1.0.
+        timeIncrementationMethod
+            A SymbolicConstant specifying the time incrementation method to be used. Possible values
+            are FIXED and AUTOMATIC. The default value is AUTOMATIC.
+        maxNumInc
+            An Int specifying the maximum number of increments in a step. The default value is 100.
+        initialInc
+            A Float specifying the initial time increment. The default value is the total time period
+            for the step.
+        minInc
+            A Float specifying the minimum time increment allowed. The default value is the smaller of
+            the suggested initial time increment or 10−5 times the total time period.
+        maxInc
+            A Float specifying the maximum time increment allowed. The default value is the total time
+            period for the step.
+        deltmx
+            A Float specifying the maximum temperature change to be allowed in an increment in a
+            transiant analysis. The default value is 0.0.
+        solutionTechnique
+            A SymbolicConstant specifying the type of solution technique. Possible values are
+            FULL_NEWTON and SEPARATED. The default value is FULL_NEWTON.
+        matrixStorage
+            A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
+            UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
+        amplitude
+            A SymbolicConstant specifying the amplitude variation for loading magnitudes during the
+            step. The default value is STEP. Possible values are STEP and RAMP.
+        extrapolation
+            A SymbolicConstant specifying the type of extrapolation to use in determining the
+            incremental solution for a nonlinear analysis. Possible values are NONE, LINEAR, and
+            PARABOLIC. The default value is LINEAR.
+        maintainAttributes
+            A Boolean specifying whether to retain attributes from an existing step with the same name.
+            The default value is False.
+        convertSDI
+            A SymbolicConstant specifying whether to force a new iteration if severe discontinuities
+            occur during an iteration. Possible values are PROPAGATED, CONVERT_SDI_OFF, and
+            CONVERT_SDI_ON. The default value is PROPAGATED.
+
+        Returns
+        -------
+        CoupledThermalElectrochemicalStep
+            A CoupledThermalElectrochemicalStep object.
+
+        Exceptions
+        ----------
+        RangeError
+        """
+        self.steps[name] = step = CoupledThermalElectrochemicalStep(
+            name=name,
+            previous=previous,
+            description=description,
+            timePeriod=timePeriod,
+            timeIncrementationMethod=timeIncrementationMethod,
+            maxNumInc=maxNumInc,
+            initialInc=initialInc,
+            minInc=minInc,
+            maxInc=maxInc,
+            deltmx=deltmx,
+            solutionTechnique=solutionTechnique,
+            matrixStorage=matrixStorage,
+            amplitude=amplitude,
+            extrapolation=extrapolation,
+            convertSDI=convertSDI,
         )
         return step
 
@@ -2723,6 +2833,52 @@ class StepModel(ModelBase):
             maxStiffnessChange,
             frictionDamping,
         )
+        return step
+
+    @abaqus_method_doc
+    def StepControl(
+        self,
+        name: str,
+        data: tuple,
+        action: SymbolicConstant = C.CONTINUE,
+        dtRefinement: SymbolicConstant = C.YES,
+        tolerance: float = 0.001,
+    ):
+        """This method creates a step control in a step.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].steps[name].StepControl
+
+        Parameters
+        ----------
+        name
+            A String specifying the name of the object.
+        data
+            A Tuple of tuples specifying the values according to the data lines given in STEP CONTROL.
+            Example: If DT REFINEMENT = YES and ACTION = CONTINUE, then data = ((sensor name, Time
+            increment value, sensor limit when the time increment refinement starts, Sensor limit
+            value when the time increment refinement ends),). You can specify multiple tuples
+            according to the number of sensors to be introduced; each inner tuple is considered as a
+            new data line.
+        action
+            A SymbolicConstant defining a value of ACTION. The default value is CONTINUE.
+        dtRefinement
+            A SymbolicConstant defining a value of DT REFINEMENT. The default value is YES.
+        tolerance
+            A float defining a value of TOLERANCE. The default value is 0.001.
+
+        Returns
+        -------
+        StepControl
+            A StepControl object.
+
+        Exceptions
+        ----------
+        RangeError
+        """
+        self.steps[name] = step = StepControl(name, data, action, dtRefinement, tolerance)
         return step
 
     @abaqus_method_doc

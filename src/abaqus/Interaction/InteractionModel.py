@@ -1252,6 +1252,7 @@ class InteractionModel(
         field: str = "",
         sinkFieldName: str = "",
         sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        dynamicSurfaceActivation: Boolean = OFF,
     ) -> FilmCondition:
         """This method creates a FilmCondition object.
 
@@ -1308,6 +1309,12 @@ class InteractionModel(
         sinkDistributionType
             A SymbolicConstant specifying how the sink temperature is distributed. Possible values
             are UNIFORM, ANALYTICAL_FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+        dynamicSurfaceActivation
+            A Boolean specifying the activation of an element-based film condition on evolving faces of an element.
+
+            .. versionadded:: 2025
+
+                The ``dynamicSurfaceActivation`` was added.
 
         Returns
         -------
@@ -1327,6 +1334,7 @@ class InteractionModel(
             field,
             sinkFieldName,
             sinkDistributionType,
+            dynamicSurfaceActivation,
         )
         return interaction
 

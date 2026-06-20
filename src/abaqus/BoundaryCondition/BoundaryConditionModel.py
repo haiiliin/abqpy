@@ -42,12 +42,16 @@ from .DisplacementBC import DisplacementBC
 from .DisplacementBCState import DisplacementBCState
 from .ElectricPotentialBC import ElectricPotentialBC
 from .ElectricPotentialBCState import ElectricPotentialBCState
+from .ElectricPotentialElectrolyteBC import ElectricPotentialElectrolyteBC
+from .ElectricPotentialElectrolyteBCState import ElectricPotentialElectrolyteBCState
 from .EulerianBC import EulerianBC
 from .EulerianBCState import EulerianBCState
 from .EulerianMotionBC import EulerianMotionBC
 from .EulerianMotionBCState import EulerianMotionBCState
 from .FluidCavityPressureBC import FluidCavityPressureBC
 from .FluidCavityPressureBCState import FluidCavityPressureBCState
+from .IonConcentrationBC import IonConcentrationBC
+from .IonConcentrationBCState import IonConcentrationBCState
 from .MagneticVectorPotentialBC import MagneticVectorPotentialBC
 from .MaterialFlowBC import MaterialFlowBC
 from .MaterialFlowBCState import MaterialFlowBCState
@@ -927,6 +931,71 @@ class BoundaryConditionModel(ModelBase):
         return boundaryCondition
 
     @abaqus_method_doc
+    def ElectricPotentialElectrolyteBC(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        fieldName: str = "",
+        magnitude: float = 0.0,
+        distributionType: Literal[C.UNIFORM, C.USER_DEFINED, C.FIELD] = C.UNIFORM,
+        amplitude: str = UNSET,
+        fixed: Boolean = OFF,
+    ):
+        """This method creates an ElectricPotentialElectrolyteBC object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].ElectricPotentialElectrolyteBC
+
+        Parameters
+        ----------
+        name
+            A String specifying the boundary condition repository key.
+        createStepName
+            A String specifying the name of the step in which the boundary condition is created.
+        region
+            A Region object specifying the region to which the boundary condition is applied.
+        fieldName
+            A String specifying the name of the AnalyticalField object associated with this boundary
+            condition. The **fieldName** argument applies only when **distributionType** = FIELD.
+            The default value is an empty string.
+        magnitude
+            A Float specifying the magnitude of the electrical potential of the electrolyte. The
+            default value is 0. The **magnitude** argument is optional if
+            **distributionType** = USER_DEFINED.
+        distributionType
+            A SymbolicConstant specifying how the boundary condition is distributed spatially.
+            Possible values are UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the boundary condition has no amplitude reference. The default
+            value is UNSET. You should provide the **amplitude** argument only if it is valid for the
+            specified step.
+        fixed
+            A Boolean specifying whether the boundary condition should remain fixed at the current
+            values at the start of the step. The default value is OFF.
+
+        Returns
+        -------
+        bc: ElectricPotentialElectrolyteBC
+            An ElectricPotentialElectrolyteBC object.
+        """
+        self.boundaryConditions[name] = boundaryCondition = ElectricPotentialElectrolyteBC(
+            name,
+            createStepName,
+            region,
+            fieldName,
+            magnitude,
+            distributionType,
+            amplitude,
+            fixed,
+        )
+        self.steps[createStepName].boundaryConditionStates[name] = ElectricPotentialElectrolyteBCState()
+        return boundaryCondition
+
+    @abaqus_method_doc
     def EulerianBC(
         self,
         name: str,
@@ -1177,6 +1246,53 @@ class BoundaryConditionModel(ModelBase):
             name, createStepName, fluidCavity, magnitude, amplitude, fixed
         )
         self.steps[createStepName].boundaryConditionStates[name] = FluidCavityPressureBCState()
+        return boundaryCondition
+
+    @abaqus_method_doc
+    def IonConcentrationBC(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FIELD, C.DISCRETE_FIELD] = C.UNIFORM,
+        field: str = "",
+        value: float = 0.0,
+    ):
+        """This method creates an IonConcentrationBC object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].IonConcentrationBC
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the boundary condition is created.
+        region
+            A Region object specifying the region to which the predefined field is applied.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible
+            values are UNIFORM, FIELD, and DISCRETE_FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default
+            value is an empty string.
+        value
+            A Float specifying the initial value of ion concentration.
+
+        Returns
+        -------
+        bc: IonConcentrationBC
+            An IonConcentrationBC object.
+        """
+        self.boundaryConditions[name] = boundaryCondition = IonConcentrationBC(
+            name, createStepName, region, distributionType, field, value
+        )
+        self.steps[createStepName].boundaryConditionStates[name] = IonConcentrationBCState()
         return boundaryCondition
 
     @abaqus_method_doc

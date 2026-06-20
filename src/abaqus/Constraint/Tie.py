@@ -97,6 +97,11 @@ class Tie(Constraint):
         positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
         tieRotations: Boolean = ON,
+        tieTemperature: Boolean = ON,
+        tiePore: Boolean = ON,
+        electricPotential: Boolean = ON,
+        fluidElectricPotential: Boolean = ON,
+        ionConcentration: Boolean = ON,
         constraintRatioMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         constraintRatio: float = 0,
         constraintEnforcement: Literal[C.NODE_TO_SURFACE, C.SOLVER_DEFAULT, C.SURFACE_TO_SURFACE] = SOLVER_DEFAULT,
@@ -135,6 +140,41 @@ class Tie(Constraint):
         tieRotations
             A Boolean specifying whether rotation degrees of freedom should be tied. The default
             value is ON.
+        tieTemperature
+            A Boolean specifying whether temperature degrees of freedom should be tied. The default
+            value is True.
+
+            .. versionadded:: 2025
+
+                The ``tieTemperature`` was added.
+        tiePore
+            A Boolean specifying whether pore pressure degrees of freedom should be tied. The default
+            value is True.
+
+            .. versionadded:: 2025
+
+                The ``tiePore`` was added.
+        electricPotential
+            A Boolean specifying whether electric potential in solid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``electricPotential`` was added.
+        fluidElectricPotential
+            A Boolean specifying whether electric potential in fluid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``fluidElectricPotential`` was added.
+        ionConcentration
+            A Boolean specifying whether ion concentration in fluid degrees of freedom should be
+            tied. The default value is True.
+
+            .. versionadded:: 2025
+
+                The ``ionConcentration`` was added.
         constraintRatioMethod
             A SymbolicConstant specifying the method used to determine the constraint ratio.
             Possible values are DEFAULT and SPECIFIED. The default value is DEFAULT.
