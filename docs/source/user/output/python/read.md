@@ -584,10 +584,8 @@ import sys
 # Check that an output database was specified.
 
 if len(sys.argv) != 2:
-    print(
-        "Error: you must supply the name \
-        of an odb on the command line"
-    )
+    print("Error: you must supply the name \
+        of an odb on the command line")
     sys.exit(1)
 
 # Get the command line argument.
