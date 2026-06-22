@@ -13,7 +13,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: release-drafter/release-drafter@v6
+      - uses: release-drafter/release-drafter@v7
         id: release_drafter
         with:
           config-name: release-drafter.yml
