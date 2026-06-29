@@ -97,7 +97,7 @@ Example: In
 you can specify the following setting:
 
 ```json
-"python.terminal.launchArgs": [ "-m", "abqpy", "cae", "--gui=True" ]
+"python.terminal.launchArgs" : [ "-m", "abqpy", "cae", "--gui=True" ]
 ```
 
 That setting will make VS Code Python Extension run by default all python script
