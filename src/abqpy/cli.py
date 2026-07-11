@@ -61,6 +61,7 @@ class AbqpyCLI(AbqpyCLIBase):
     def cae(
         self,
         script: str,
+        /,
         *args,
         database: str | None = None,
         replay: str | None = None,
@@ -160,6 +161,7 @@ class AbqpyCLI(AbqpyCLIBase):
     def python(
         self,
         script: str,
+        /,
         *args,
         sim: str | None = None,
         log: str | None = None,
