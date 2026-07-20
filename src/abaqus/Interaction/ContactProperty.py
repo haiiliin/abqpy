@@ -35,6 +35,7 @@ from .ContactDamage import ContactDamage
 from .ContactDamping import ContactDamping
 from .ContactTangentialBehavior import ContactTangentialBehavior
 from .FractureCriterion import FractureCriterion
+from .GapDiffusivity import GapDiffusivity
 from .GapElectricalConductance import GapElectricalConductance
 from .GapHeatGeneration import GapHeatGeneration
 from .GeometricProperties import GeometricProperties
@@ -92,6 +93,9 @@ class ContactProperty(InteractionProperty):
 
     #: A GapElectricalConductance object.
     electricalConductance: GapElectricalConductance = GapElectricalConductance()
+
+    #: A GapDiffusivity object.
+    gapDiffusivity: GapDiffusivity = GapDiffusivity(type=C.ION_CONCENTRATION)
 
     @abaqus_method_doc
     def __init__(self, name: str):

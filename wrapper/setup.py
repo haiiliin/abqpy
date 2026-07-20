@@ -11,7 +11,7 @@ def get_abqpy_version():
         major, minor, *_ = re.match(r"(\d+)\.(\d+)(.*)", version).groups()
         return f"{major}.{minor}"
     except (LookupError, ImportError):
-        return "2025.*"
+        return "2026.*"
 
 
 setup(install_requires=[f"abqpy=={get_abqpy_version()}"])
