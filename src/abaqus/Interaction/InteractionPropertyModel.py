@@ -24,6 +24,7 @@ from .FilmConditionProp import FilmConditionProp
 from .FluidCavityProperty import FluidCavityProperty
 from .FluidExchangeProperty import FluidExchangeProperty
 from .FluidInflatorProperty import FluidInflatorProperty
+from .GapDiffusivity import GapDiffusivity
 from .IncidentWaveProperty import IncidentWaveProperty
 
 
@@ -541,6 +542,73 @@ class InteractionPropertyModel(ModelBase):
             inflationTime,
             fluidbehaviorName,
             massFraction,
+        )
+        return interactionProperty
+
+    @abaqus_method_doc
+    def GapDiffusivity(
+        self,
+        type: Literal[C.ION_CONCENTRATION, C.SPECIES_CONCENTRATION],
+        cutoffFlowAcrossDist: float | None = None,
+        cutoffGapFillDist: float | None = None,
+        dependencies: int = 0,
+        concentrationDepTable: tuple = (),
+    ):
+        """This method creates a GapDiffusivity object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].interactionProperties[name].Diffusivity
+
+        Parameters
+        ----------
+        type
+            A SymbolicConstant specifying how the contact diffusivity is
+            defined. Possible values are ``ION_CONCENTRATION`` and
+            ``SPECIES_CONCENTRATION``.
+        cutoffFlowAcrossDist
+            A Float specifying a cutoff clearance distance above which no ion
+            or species diffusion occurs across a contact interface.
+        cutoffGapFillDist
+            A Float specifying a cutoff clearance distance above which no ion
+            or species diffusion occurs into or out of a contact interface due
+            to changes in the clearance distance.
+        dependencies
+            An Int specifying the number of field variables to use with
+            clearance dependency. The default value is 0.
+        concentrationDepTable
+            A sequence of sequences of Floats specifying concentration
+            dependency data.
+
+            For ``type=ION_CONCENTRATION``, each sequence contains the
+            following values:
+
+            - Contact diffusivity.
+            - Contact pressure.
+            - Average ion concentration.
+            - Average temperature.
+            - Values of the field variables, if applicable.
+
+            For ``type=SPECIES_CONCENTRATION``, each sequence contains the
+            following values:
+
+            - Contact diffusivity.
+            - Contact pressure.
+            - Average species concentration.
+            - Average temperature.
+            - Values of the field variables, if applicable.
+
+        Returns
+        -------
+            A GapDiffusivity object.
+        """
+        self.interactionProperties[""] = interactionProperty = GapDiffusivity(
+            type,
+            cutoffFlowAcrossDist,
+            cutoffGapFillDist,
+            dependencies,
+            concentrationDepTable,
         )
         return interactionProperty
 

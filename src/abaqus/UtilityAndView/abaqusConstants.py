@@ -2647,6 +2647,11 @@ ELECTROLYTE_ELECTRIC_POTENTIAL = abaqusConstants.ELECTROLYTE_ELECTRIC_POTENTIAL
 ION_CONCENTRATION = abaqusConstants.ION_CONCENTRATION
 SPECIES_CONCENTRATION = abaqusConstants.SPECIES_CONCENTRATION
 LIQUID = abaqusConstants.LIQUID
+
+ANODE = abaqusConstants.ANODE
+CATHODE = abaqusConstants.CATHODE
+SEPARATOR = abaqusConstants.SEPARATOR
+
 # okay decompiling abaqusConstants.pyc
 
 CODE = Literal[

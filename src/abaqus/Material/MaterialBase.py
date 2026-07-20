@@ -14,6 +14,8 @@ from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
 from .Electromagnetic.Dielectric import Dielectric
 from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
+from .Electromagnetic.Electrode import Electrode
+from .Electromagnetic.Electrolyte import Electrolyte
 from .Electromagnetic.MagneticPermeability import MagneticPermeability
 from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
@@ -193,6 +195,12 @@ class MaterialBase:
 
     #: An ElectricalConductivity object.
     electricalConductivity: ElectricalConductivity = ElectricalConductivity(((),))
+
+    #: An Electrode object.
+    electrode: Electrode = Electrode()
+
+    #: An Electrolyte object.
+    electrolyte: Electrolyte = Electrolyte(0)
 
     #: An Eos object.
     eos: Eos = Eos()

@@ -8,6 +8,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import (
     ALLISO,
+    ANODE,
     CENTROID,
     COEFFICIENTS,
     CONSTANT,
@@ -62,6 +63,8 @@ from .Elastic.LowDensityFoam.LowDensityFoam import LowDensityFoam
 from .Elastic.Porous.PorousElastic import PorousElastic
 from .Electromagnetic.Dielectric import Dielectric
 from .Electromagnetic.ElectricalConductivity import ElectricalConductivity
+from .Electromagnetic.Electrode import Electrode
+from .Electromagnetic.Electrolyte import Electrolyte
 from .Electromagnetic.MagneticPermeability import MagneticPermeability
 from .Electromagnetic.Piezoelectric import Piezoelectric
 from .Eos.Eos import Eos
@@ -1022,6 +1025,107 @@ class Material(MaterialBase):
             table, type, frequencyDependency, temperatureDependency, dependencies
         )
         return self.electricalConductivity
+
+    @abaqus_method_doc
+    def Electrode(
+        self,
+        type: Literal[C.ANODE, C.CATHODE, C.SEPARATOR] = ANODE,
+        solidPhaseVolFraction: float = 0,
+        liqPhaseVolFraction: float = 0,
+        binderVolFraction: float = 0,
+        inactiveSolidPhaseVolFraction: float = 0,
+        utilizationFraction: float = 0,
+        bruggemanZ: float = 0,
+        bruggemanX: float = 0,
+        bruggemanY: float = 0,
+        convection: float = 0,
+    ):
+        """This method creates an Electrode object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].Electrode
+
+        Parameters
+        ----------
+        type
+            A SymbolicConstant specifying the type of electrode. Possible
+            values are ``ANODE``, ``CATHODE``, and ``SEPERATOR``.
+        solidPhaseVolFraction
+            A Float specifying the volume fraction of the solid phase in the
+            electrode. The default value is 0.
+        liqPhaseVolFraction
+            A Float specifying the volume fraction of the liquid phase or
+            electrolyte in the electrode. The default value is 0.
+        binderVolFraction
+            A Float specifying the volume fraction of the binder material in
+            the electrode. The default value is 0.
+        inactiveSolidPhaseVolFraction
+            A Float specifying the volume fraction of the inactive solid phase
+            in the electrode. The default value is 0.
+        utilizationFraction
+            A Float specifying the fraction of utilization of the cathode and
+            anode regions. The default value is 0.
+        bruggemanZ
+            A Float specifying the Bruggeman exponent in the thickness
+            direction. The default value is 0.
+        bruggemanX
+            A Float specifying the Bruggeman exponent in the manufacturing
+            direction. The default value is 0.
+        bruggemanY
+            A Float specifying the Bruggeman exponent in the transverse
+            direction. The default value is 0.
+        convection
+            A Float specifying the convection effects of the electrolyte due
+            to swelling in the electrode. The default value is 0.
+
+        Returns
+        -------
+            An Electrode object.
+
+        Raises
+        ------
+        RangeError
+            If a specified value is outside the valid range.
+        """
+        self.electrode = Electrode(
+            type=type,
+            solidPhaseVolFraction=solidPhaseVolFraction,
+            liqPhaseVolFraction=liqPhaseVolFraction,
+            binderVolFraction=binderVolFraction,
+            inactiveSolidPhaseVolFraction=inactiveSolidPhaseVolFraction,
+            utilizationFraction=utilizationFraction,
+            bruggemanZ=bruggemanZ,
+            bruggemanX=bruggemanX,
+            bruggemanY=bruggemanY,
+            convection=convection,
+        )
+
+    @abaqus_method_doc
+    def Electrolyte(self, chargeNum: float):
+        """This method creates an Electrolyte object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].Electrolyte
+
+        Parameters
+        ----------
+        chargeNum
+            A Float specifying the charge number of the lithium ion battery.
+
+        Returns
+        -------
+            An Electrolyte object.
+
+        Raises
+        ------
+        RangeError
+            If a specified value is outside the valid range.
+        """
+        self.electrolyte = Electrolyte(chargeNum=chargeNum)
 
     @abaqus_method_doc
     def Eos(
