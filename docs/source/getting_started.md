@@ -17,27 +17,27 @@ You can install `abqpy` with the following commands.
 
 ````{tab} pip
 ```{code-block} shell
-pip install -U abqpy==2025.*
-pip install -U abqpy2025
+pip install -U abqpy==2026.*
+pip install -U abqpy2026
 ```
 ````
 
 ````{tab} conda
 ```{code-block} shell
-conda install conda-forge::abqpy=2025
+conda install conda-forge::abqpy=2026
 ```
 ````
 
 ````{tab} Source
 ```{code-block} shell
-pip install git+https://github.com/haiiliin/abqpy@2025
+pip install git+https://github.com/haiiliin/abqpy@2026
 ```
 ````
 
 ````{tab} Jupyter
 ```{code-block} shell
-pip install -U abqpy[jupyter]==2025.*
-pip install -U abqpy2025[jupyter]
+pip install -U abqpy[jupyter]==2026.*
+pip install -U abqpy2026[jupyter]
 pip install ipynbname nbconvert
 ```
 ````
@@ -152,7 +152,7 @@ Now you can run your Abaqus Python script using the following methods:
   ```sh
   abaqus cae script=script.py
   ```
-  See [here](https://help.3ds.com/2025/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all)
+  See [here](https://help.3ds.com/2026/English/DSSIMULIA_Established/SIMACAEEXCRefMap/simaexc-c-caeproc.htm?contextscope=all)
   for more information about the `abaqus` command.
 - Use the `abqpy` command in the command line:
   ```sh
