@@ -25,12 +25,14 @@ jobs:
           - "2026"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the repository
+      - name: Checkout repository
         uses: actions/checkout@v7
         with:
           ref: ${{ matrix.version }}
           fetch-depth: 0
-          submodules: recursive
+      - name: Clone locale repository
+        run: |
+          git clone https://github.com/haiiliin/abqpy-locale.git docs/source/locale
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v4
         with:
