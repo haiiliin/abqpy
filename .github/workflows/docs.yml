@@ -3,7 +3,7 @@ name: docs
 on:
   push:
     branches:
-      - "2025"
+      - "2026"
     paths:
       - "src/**"
       - "docs/source/**"
@@ -11,7 +11,7 @@ on:
       - ".github/workflows/docs.yml"
   pull_request:
     branches:
-      - "2025"
+      - "2026"
     paths:
       - "src/**"
       - "docs/source/**"
@@ -42,6 +42,9 @@ jobs:
             echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
             echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "push" ]; then
+            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "publish=dev" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=dev" >> $GITHUB_OUTPUT
           else
