@@ -65,10 +65,13 @@ jobs:
       PUBLISH: ${{ needs.branch.outputs.publish }}
 
     steps:
-      - uses: actions/checkout@v7
+      - name: Checkout repository
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          submodules: recursive
+      - name: Clone locale repository
+        run: |
+          git clone https://github.com/haiiliin/abqpy-locale.git docs/source/locale
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v4
         with:
