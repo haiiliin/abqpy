@@ -377,6 +377,7 @@ pull_request_rules:
           - label!=conflicts
           - label!=disable-auto-merge
           - and:
+              - label!=disable-auto-merge-2025
               - label!=disable-auto-merge-2024
               - label!=disable-auto-merge-2023
               - label!=disable-auto-merge-2022
@@ -398,6 +399,7 @@ pull_request_rules:
           - label!=conflicts
           - label!=disable-auto-merge
           - and:
+              - label!=disable-auto-merge-2025
               - label!=disable-auto-merge-2024
               - label!=disable-auto-merge-2023
               - label!=disable-auto-merge-2022
@@ -419,6 +421,7 @@ pull_request_rules:
           - label!=conflicts
           - label!=disable-auto-merge
           - and:
+              - label!=disable-auto-merge-2025
               - label!=disable-auto-merge-2024
               - label!=disable-auto-merge-2023
               - label!=disable-auto-merge-2022
@@ -440,6 +443,7 @@ pull_request_rules:
           - label!=conflicts
           - label!=disable-auto-merge
           - and:
+              - label!=disable-auto-merge-2025
               - label!=disable-auto-merge-2024
               - label!=disable-auto-merge-2023
               - label!=disable-auto-merge-2022
