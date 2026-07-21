@@ -44,9 +44,6 @@ jobs:
           elif [ "${{ github.event_name }}" = "push" ]; then
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=dev" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
-            echo "publish=dev" >> $GITHUB_OUTPUT
           else
             echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "publish=${{ github.ref_name }}" >> $GITHUB_OUTPUT
