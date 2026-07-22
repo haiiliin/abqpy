@@ -42,3 +42,6 @@ jupyter = [
 
 [tool.setuptools_scm]
 root = ".."
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
