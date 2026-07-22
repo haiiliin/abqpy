@@ -34,7 +34,11 @@ jobs:
       - name: Build package
         run: |
           python -m build
-          cd wrapper && python -m build
+
+          cd wrapper
+          version=${GITHUB_REF_NAME#v}
+          echo "abqpy==$version" > requirements.txt
+          python -m build
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
