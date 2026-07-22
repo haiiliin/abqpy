@@ -34,7 +34,11 @@ jobs:
       - name: Build package
         run: |
           python -m build
-          cd wrapper && python -m build
+
+          cd wrapper
+          version=${GITHUB_REF#refs/tags/v}
+          sed -i "s/{version}/$version/g" pyproject.toml
+          python -m build
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
