@@ -36,7 +36,7 @@ jobs:
           python -m build
 
           cd wrapper
-          version=${GITHUB_REF#refs/tags/v}
+          version=${GITHUB_REF_NAME#v}
           echo "abqpy==$version" > requirements.txt
           python -m build
       - name: Publish package
