@@ -26,8 +26,6 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Operating System :: OS Independent",
 ]
-dependencies = ["abqpy=={version}"]
-
 [project.optional-dependencies]
 jupyter = [
     "ipynbname",
@@ -43,3 +41,6 @@ jupyter = [
 
 [tool.setuptools_scm]
 root = ".."
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

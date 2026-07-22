@@ -37,7 +37,7 @@ jobs:
 
           cd wrapper
           version=${GITHUB_REF#refs/tags/v}
-          sed -i "s/{version}/$version/g" pyproject.toml
+          echo "abqpy==$version" > requirements.txt
           python -m build
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
