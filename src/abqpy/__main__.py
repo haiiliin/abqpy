@@ -2,14 +2,14 @@ import sys
 
 import fire
 
-from .cli import AbqpyCLI
+from .cli import abaqus
 from .config import config
 
 
 def main():
     """The abqpy command line interface."""
     sys.tracebacklimit = config.cli_traceback_limit
-    fire.Fire(AbqpyCLI())
+    fire.Fire(abaqus)
 
 
 if __name__ == "__main__":
