@@ -38,8 +38,7 @@ author = "WANG Hailin"
 
 __version__ = abqpy.__version__
 rel = Version(__version__)
-major = rel.major
-release = version = major
+release = version = major = rel.major
 branch = major if not rel.is_prerelease else "dev"
 
 sys.path.insert(0, os.path.abspath("../../src"))
