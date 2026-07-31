@@ -1,13 +1,12 @@
 from __future__ import annotations
 
-from .cli import AbqpyCLI, abaqus
-from .run import run
-<<<<<<< HEAD
+from pathlib import Path
+from re import error as RegexError
 
 try:
     from ._version import version as _default_version
 except ImportError:
-    _default_version = "2020.0.0-dev"
+    _default_version = "0.0.1-dev"
 
 
 def _get_version():
@@ -26,14 +25,8 @@ def _get_version():
 __version__ = _get_version()
 __semver__ = __version__.split("+")[0]
 version_info = __semver__.split(".")
-=======
-from .version import __semver__, __version__, version_info
->>>>>>> 773b7a8b (Add separate version module (#6660))
 
 __all__ = [
-    "run",
-    "abaqus",
-    "AbqpyCLI",
     "version_info",
     "__version__",
     "__semver__",
