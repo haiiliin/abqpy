@@ -33,12 +33,12 @@ os.environ["ABQPY_MAKE_DOCS"] = "true"
 import abqpy  # noqa
 
 project = "abqpy"
-copyright = "2022, WANG Hailin"
+copyright = "2022-2026, WANG Hailin"
 author = "WANG Hailin"
 
-release = abqpy.__version__
-rel = Version(release)
-version, major = rel.base_version, rel.major
+__version__ = abqpy.__version__
+rel = Version(__version__)
+release = version = major = rel.major
 branch = major if not rel.is_prerelease else "dev"
 
 sys.path.insert(0, os.path.abspath("../../src"))
@@ -272,7 +272,7 @@ html_theme_options = {
     "version_info": [
         {
             "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
-            "title": release if (branch == "dev" and ver == "dev") or (branch != "dev" and ver == major) else ver,
+            "title": __version__ if branch != "dev" and ver == major else ver,
             "aliases": [],
         }
         for ver in ["dev"] + [v for v in range(2026, 2015, -1)]
