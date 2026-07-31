@@ -220,7 +220,6 @@ html_theme = "sphinx_immaterial"
 # further.  For a list of options available for each theme, see the
 # documentation.
 READTHEDOCS = "READTHEDOCS" in os.environ
-versions = ["dev"] + [str(v) for v in range(2026, 2015, -1)]
 with open(os.path.join(os.path.dirname(__file__), "locale", "edit-urls.json")) as f:
     edit_urls = json.load(f)
 html_theme_options = {
@@ -273,10 +272,10 @@ html_theme_options = {
     "version_info": [
         {
             "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
-            "title": ver,
+            "title": release if ver == major else ver,
             "aliases": [],
         }
-        for ver in versions
+        for ver in ["dev"] + [v for v in range(2026, 2015, -1)]
     ],
     # END: version_dropdown
     "languages": [
