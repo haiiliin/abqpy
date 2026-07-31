@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .cli import AbqpyCLI, abaqus
 from .run import run
+
 <<<<<<< HEAD
 
 try:
@@ -28,6 +29,7 @@ __semver__ = __version__.split("+")[0]
 version_info = __semver__.split(".")
 =======
 from .version import __semver__, __version__, version_info
+
 >>>>>>> 773b7a8 (Add separate version module (#6660))
 
 __all__ = [
