@@ -53,6 +53,19 @@ class AbqpyCLIBase:
 class AbqpyCLI(AbqpyCLIBase):
     """The abqpy command line interface."""
 
+    def __call__(self, *, version: bool = False):
+        """Print project metadata
+
+        Parameters
+        ----------
+        version : bool, optional
+            Print the version number, by default False
+        """
+        if version:
+            from abqpy import __version__
+
+            print(__version__)
+
     @property
     def misc(self) -> Self:
         """Miscellaneous commands for backward compatibility."""
