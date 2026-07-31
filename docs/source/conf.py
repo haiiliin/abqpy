@@ -36,8 +36,10 @@ project = "abqpy"
 copyright = "2022-2026, WANG Hailin"
 author = "WANG Hailin"
 
-rel = Version(abqpy.__version__)
-release = version = rel.base_version
+__version__ = abqpy.__version__
+rel = Version(__version__)
+release = rel.base_version
+version = rel.base_version
 major = rel.major
 branch = major if not rel.is_prerelease else "dev"
 
@@ -272,7 +274,7 @@ html_theme_options = {
     "version_info": [
         {
             "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
-            "title": release if (branch == "dev" and ver == "dev") or (branch != "dev" and ver == major) else ver,
+            "title": __version__ if (branch == "dev" and ver == "dev") or (branch != "dev" and ver == major) else ver,
             "aliases": [],
         }
         for ver in ["dev"] + [v for v in range(2026, 2015, -1)]
