@@ -33,12 +33,12 @@ os.environ["ABQPY_MAKE_DOCS"] = "true"
 import abqpy  # noqa
 
 project = "abqpy"
-copyright = "2022, WANG Hailin"
+copyright = "2022-2026, WANG Hailin"
 author = "WANG Hailin"
 
-release = abqpy.__version__
-rel = Version(release)
-version, major = rel.base_version, rel.major
+rel = Version(abqpy.__version__)
+release = version = rel.base_version
+major = rel.major
 branch = major if not rel.is_prerelease else "dev"
 
 sys.path.insert(0, os.path.abspath("../../src"))
