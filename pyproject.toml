@@ -94,6 +94,7 @@ where = ["src"]
 
 [tool.setuptools_scm]
 write_to = "src/abqpy/_version.py"
+version_scheme = "no-guess-dev"
 
 [tool.pytest.ini_options]
 testpaths = ["src", "tests"]
