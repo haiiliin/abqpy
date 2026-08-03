@@ -55,7 +55,6 @@ jobs:
     needs: update
     strategy:
       fail-fast: true
-      max-parallel: 1
       matrix:
         version:
           - "2016"
@@ -69,6 +68,9 @@ jobs:
           - "2024"
           - "2025"
           - "2026"
+    concurrency:
+      group: translations
+      queue: max
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifacts
