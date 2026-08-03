@@ -272,7 +272,7 @@ html_theme_options = {
     "version_info": [
         {
             "version": f"/{language}/{ver}" if READTHEDOCS else f"/abqpy/{language}/{ver}",
-            "title": rel.base_version if branch != "dev" and ver == major else ver,
+            "title": ver,
             "aliases": [],
         }
         for ver in ["dev"] + [v for v in range(2026, 2015, -1)]
