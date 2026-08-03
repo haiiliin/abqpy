@@ -98,16 +98,16 @@ jobs:
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
+    concurrency:
+      group: gh-pages
+      queue: max
     env:
       LANGUAGE: ${{ matrix.language }}
       VERSION: ${{ needs.version.outputs.version }}
 
     steps:
-      - uses: ahmadnassri/action-workflow-queue@v1
-        with:
-          timeout: 1200000
-          delay: 60000
-      - uses: actions/checkout@v7
+      - name: Checkout repository
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Download artifacts
