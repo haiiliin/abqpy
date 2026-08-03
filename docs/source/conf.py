@@ -275,7 +275,7 @@ html_theme_options = {
             "title": ver,
             "aliases": [],
         }
-        for ver in ["dev"] + [v for v in range(2026, 2015, -1)]
+        for ver in ["dev"] + [str(v) for v in range(2026, 2015, -1)]
     ],
     # END: version_dropdown
     "languages": [
