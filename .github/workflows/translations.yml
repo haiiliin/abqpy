@@ -69,7 +69,7 @@ jobs:
           - "2025"
           - "2026"
     concurrency:
-      group: gh-pages
+      group: translations
       queue: max
     runs-on: ubuntu-latest
     steps:
