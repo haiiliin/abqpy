@@ -29,31 +29,26 @@ env:
   REPO_NAME: ${{ github.event.repository.name }}
 
 jobs:
-  branch:
+  version:
     runs-on: ubuntu-latest
     steps:
       - name: Get the version
-        id: branch
+        id: version
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
-            echo "branch=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
-            echo "publish=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
+            echo "version=${{ github.event.release.target_commitish }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "pull_request" ]; then
-            echo "branch=${{ github.base_ref }}" >> $GITHUB_OUTPUT
-            echo "publish=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+            echo "version=pr-${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" = "push" ]; then
-            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
-            echo "publish=dev" >> $GITHUB_OUTPUT
+            echo "version=dev" >> $GITHUB_OUTPUT
           else
-            echo "branch=${{ github.ref_name }}" >> $GITHUB_OUTPUT
-            echo "publish=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           fi
     outputs:
-      branch: ${{ steps.branch.outputs.branch }}
-      publish: ${{ steps.branch.outputs.publish }}
+      version: ${{ steps.version.outputs.version }}
 
   sphinx:
-    needs: branch
+    needs: version
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -61,8 +56,7 @@ jobs:
         builder: ["html"]
     env:
       LANGUAGE: ${{ matrix.language }}
-      VERSION: ${{ needs.branch.outputs.branch }}
-      PUBLISH: ${{ needs.branch.outputs.publish }}
+      VERSION: ${{ needs.version.outputs.version }}
 
     steps:
       - name: Checkout repository
@@ -97,7 +91,7 @@ jobs:
 
   upload:
     if: github.event_name != 'pull_request'
-    needs: [branch, sphinx]
+    needs: [version, sphinx]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
@@ -106,8 +100,7 @@ jobs:
         builder: ["html"]
     env:
       LANGUAGE: ${{ matrix.language }}
-      VERSION: ${{ needs.branch.outputs.branch }}
-      PUBLISH: ${{ needs.branch.outputs.publish }}
+      VERSION: ${{ needs.version.outputs.version }}
 
     steps:
       - uses: ahmadnassri/action-workflow-queue@v1
@@ -127,6 +120,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           folder: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-          target-folder: ${{ matrix.language }}/${{ env.PUBLISH }}
+          target-folder: ${{ matrix.language }}/${{ env.VERSION }}
           single-commit: true
           clean: false
