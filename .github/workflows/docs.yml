@@ -94,7 +94,6 @@ jobs:
     needs: [version, sphinx]
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 1
       matrix:
         language: ["en", "zh_CN"]
         builder: ["html"]
