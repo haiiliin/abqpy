@@ -114,7 +114,6 @@ jobs:
         with:
           name: docs-${{ matrix.language }}-${{ env.VERSION }}
           path: docs/build/${{ matrix.builder }}/${{ matrix.language }}
-      - uses: ahmadnassri/action-workflow-queue@v1
       - name: Upload the documentation
         uses: JamesIves/github-pages-deploy-action@v4
         with:
