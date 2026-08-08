@@ -119,7 +119,7 @@ Thus `--gui=True` instead of `--gui` is used here to prevent this problem.
 
 ## References
 
-```{command-output} abqpy
+```{command-output} abqpy --help
 
 ```
 
