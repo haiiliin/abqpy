@@ -1,0 +1,280 @@
+:orphan:
+
+Examples
+========
+
+Below are some examples of the Abaqus/Python scripts.
+
+To add a new example, add the script to the examples directory and add docstring to the top of the script.
+The docstring should contain the following information:
+
+* A title for the example
+* A description of the example
+
+See the examples in the examples directory for examples of docstrings.
+
+
+.. raw:: html
+
+  <div id='sg-tag-list' class='sphx-glr-tag-list'></div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+Examples from Abaqus Documentation
+----------------------------------
+
+Below are some examples from Abaqus documentation.
+
+
+.. raw:: html
+
+  <div id='sg-tag-list' class='sphx-glr-tag-list'></div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="viewerOpenOdbAndContour.py from Opening an output database and displaying a contour plot.">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_viewerOpenOdbAndContour_thumb.png
+    :alt:
+
+  :doc:`/examples/Abaqus/viewerOpenOdbAndContour`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Open Odb and Display a Contour Plot</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="viewerPrintContours.py from Printing a contour plot at the end of each step.">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_viewerPrintContours_thumb.png
+    :alt:
+
+  :doc:`/examples/Abaqus/viewerPrintContours`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Print Contour Plots</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="beamExample.py from Reproducing the cantilever beam tutorial.">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_cantilever_thumb.png
+    :alt:
+
+  :doc:`/examples/Abaqus/cantilever`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Cantilever Beam</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="skewExample.py from Using a script to perform a parametric study.">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_skewExample_thumb.png
+    :alt:
+
+  :doc:`/examples/Abaqus/skewExample`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Parametric Study</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/Abaqus/viewerOpenOdbAndContour
+   /examples/Abaqus/viewerPrintContours
+   /examples/Abaqus/cantilever
+   /examples/Abaqus/skewExample
+
+Compression Model
+-----------------
+
+Below are examples of the compression model. 
+
+
+.. raw:: html
+
+  <div id='sg-tag-list' class='sphx-glr-tag-list'></div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A script to get the output of the compression model.">
+
+.. only:: html
+
+  .. image:: /examples/Compression/images/thumb/sphx_glr_compression-output_thumb.png
+    :alt:
+
+  :doc:`/examples/Compression/compression-output`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Compression Output Script</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A simple example to establish a compression model.">
+
+.. only:: html
+
+  .. image:: /examples/Compression/images/thumb/sphx_glr_compression_thumb.png
+    :alt:
+
+  :doc:`/examples/Compression/compression`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Compression Model</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/Compression/compression-output
+   /examples/Compression/compression
+
+Parameter Identification
+------------------------
+
+Below is a parameter identification for the compression model.
+
+
+.. raw:: html
+
+  <div id='sg-tag-list' class='sphx-glr-tag-list'></div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This is a simple example of parameter identification. The compression model is a simple model with a cube of 1x1x1 m. The lower surface is fixed and the upper surface is loaded with a pressure of 100 Pa. The goal is to find the Young&#x27;s modulus of the material that gives a maximum displacement of -0.1 m.">
+
+.. only:: html
+
+  .. image:: /examples/Parameter-Identification/images/thumb/sphx_glr_optimize_thumb.png
+    :alt:
+
+  :doc:`/examples/Parameter-Identification/optimize`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Parameter Identification</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Script to build the compression model for the parameter identification">
+
+.. only:: html
+
+  .. image:: /examples/Parameter-Identification/images/thumb/sphx_glr_compression_thumb.png
+    :alt:
+
+  :doc:`/examples/Parameter-Identification/compression`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Parameter Identification: Model Script</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/Parameter-Identification/optimize
+   /examples/Parameter-Identification/compression
+
+
+.. only:: html
+
+  .. container:: sphx-glr-footer sphx-glr-footer-gallery
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download all examples in Python source code: examples_python.zip </examples/examples_python.zip>`
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download all examples in Jupyter notebooks: examples_jupyter.zip </examples/examples_jupyter.zip>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
