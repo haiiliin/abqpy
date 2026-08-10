@@ -5,7 +5,7 @@
 groups = ["default", "dev", "docs", "jupyter"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:75530af8380f6f38453fcb339414fa5430e5f82f993771e95c8809c10338801d"
+content_hash = "sha256:add2981ba449f8319f71402ce5cbe7a1e7d42b42d47be970102e4e1eee66c240"
 
 [[metadata.targets]]
 requires_python = ">=3.8,<3.10"
@@ -1468,43 +1468,6 @@ dependencies = [
 files = [
     {file = "flake8-7.3.0-py2.py3-none-any.whl", hash = "sha256:b9696257b9ce8beb888cdbe31cf885c90d31928fe202be0889a7cdafad32f01e"},
     {file = "flake8-7.3.0.tar.gz", hash = "sha256:fe044858146b9fc69b551a4b490d69cf960fcb78ad1edcb84e7fbb1b4a8e3872"},
-]
-
-[[package]]
-name = "furo"
-version = "2024.8.6"
-requires_python = ">=3.8"
-summary = "A clean customisable Sphinx documentation theme."
-groups = ["docs"]
-marker = "python_version < \"3.10\" and python_version >= \"3.8\""
-dependencies = [
-    "beautifulsoup4",
-    "pygments>=2.7",
-    "sphinx-basic-ng>=1.0.0.beta2",
-    "sphinx<9.0,>=6.0",
-]
-files = [
-    {file = "furo-2024.8.6-py3-none-any.whl", hash = "sha256:6cd97c58b47813d3619e63e9081169880fbe331f0ca883c871ff1f3f11814f5c"},
-    {file = "furo-2024.8.6.tar.gz", hash = "sha256:b63e4cee8abfc3136d3bc03a3d45a76a850bada4d6374d24c1716b0e01394a01"},
-]
-
-[[package]]
-name = "furo"
-version = "2025.12.19"
-requires_python = ">=3.8"
-summary = "A clean customisable Sphinx documentation theme."
-groups = ["docs"]
-marker = "python_version >= \"3.10\" and python_version < \"3.15\""
-dependencies = [
-    "accessible-pygments>=0.0.5",
-    "beautifulsoup4",
-    "pygments>=2.7",
-    "sphinx-basic-ng>=1.0.0.beta2",
-    "sphinx<10.0,>=7.0",
-]
-files = [
-    {file = "furo-2025.12.19-py3-none-any.whl", hash = "sha256:bb0ead5309f9500130665a26bee87693c41ce4dbdff864dbfb6b0dae4673d24f"},
-    {file = "furo-2025.12.19.tar.gz", hash = "sha256:188d1f942037d8b37cd3985b955839fea62baa1730087dc29d157677c857e2a7"},
 ]
 
 [[package]]
@@ -4654,21 +4617,6 @@ dependencies = [
 files = [
     {file = "sphinx_autodoc_typehints-3.0.1-py3-none-any.whl", hash = "sha256:4b64b676a14b5b79cefb6628a6dc8070e320d4963e8ff640a2f3e9390ae9045a"},
     {file = "sphinx_autodoc_typehints-3.0.1.tar.gz", hash = "sha256:b9b40dd15dee54f6f810c924f863f9cf1c54f9f3265c495140ea01be7f44fa55"},
-]
-
-[[package]]
-name = "sphinx-basic-ng"
-version = "1.0.0b2"
-requires_python = ">=3.7"
-summary = "A modern skeleton for Sphinx themes."
-groups = ["docs"]
-marker = "python_version < \"3.15\" and python_version >= \"3.8\""
-dependencies = [
-    "sphinx>=4.0",
-]
-files = [
-    {file = "sphinx_basic_ng-1.0.0b2-py3-none-any.whl", hash = "sha256:eb09aedbabfb650607e9b4b68c9d240b90b1e1be221d6ad71d61c52e29f7932b"},
-    {file = "sphinx_basic_ng-1.0.0b2.tar.gz", hash = "sha256:9ec55a47c90c8c002b5960c57492ec3021f5193cb26cebc2dc4ea226848651c9"},
 ]
 
 [[package]]
