@@ -8,6 +8,7 @@ on:
       - "src/**"
       - "docs/source/**"
       - "examples/**"
+      - "pyproject.toml"
       - ".github/workflows/docs.yml"
   pull_request:
     branches:
@@ -16,6 +17,7 @@ on:
       - "src/**"
       - "docs/source/**"
       - "examples/**"
+      - "pyproject.toml"
       - ".github/workflows/docs.yml"
   release:
     types: [published]
