@@ -30,6 +30,9 @@ Abaqus/Python 脚本的类型提示
 pip install -U abqpy==2024.*  # 将主版本号替换为你的 Abaqus 版本号
 ```
 
+> [!WARNING]
+> 不要将 `abqpy` 安装到 Abaqus 内置的 Python 解释器上。
+
 然后，在你喜欢的开发环境中使用 Python 3.8+ 运行你的 Abaqus/Python 脚本，看看奇迹如何发生。
 更多信息，请参阅 [文档](https://haiiliin.github.io/abqpy).
 
