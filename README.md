@@ -33,8 +33,11 @@ open `cmd` or `terminal`, type:
 pip install -U abqpy==2021.*  # change the major version to match your Abaqus version
 ```
 
+> [!WARNING]
+> Do not install the `abqpy` package in Abaqus's built-in Python interpreter.
+
 Then, open your Abaqus/Python script in your favorite IDE with Python language support,
-run the script with Python 3.8+ (just do it!), see the magic happens.
+run the script with Python 3.8+, see the magic happens.
 For more information, please refer to the [documentation](https://haiiliin.github.io/abqpy).
 
 ## Pull Requests are Welcome
